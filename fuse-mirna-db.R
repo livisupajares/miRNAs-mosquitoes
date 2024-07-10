@@ -4,6 +4,14 @@
 library("tidyverse")
 
 # ===== Importing data =====
+# Drosophila Melanogaster --> more variables, todas tienen que tener el mismo
+# número de variables
+dme <- read.table("mirbase-diptera-scrapped/dme.csv",
+                  header = TRUE,
+                  sep = ",",
+                  quote = "\"", 
+                  fill = TRUE,
+                  na.strings = c(NA, "Unknown"))
 # Aedes aegypti
 aae <- read.table("mirbase-diptera-scrapped/aae.csv",
                   header = TRUE,
@@ -38,13 +46,6 @@ der <- read.table("mirbase-diptera-scrapped/der.csv",
 dgr <- read.table("mirbase-diptera-scrapped/dgr.csv",
                   header = TRUE,
                   sep = ",",
-                  na.strings = c(NA, "Unknown"))
-# Drosophila Melanogaster --> more variables
-dme <- read.table("mirbase-diptera-scrapped/dme.csv",
-                  header = TRUE,
-                  sep = ",",
-                  quote = "\"", 
-                  fill = TRUE,
                   na.strings = c(NA, "Unknown"))
 # Drosophila mojavensis
 dmo <- read.table("mirbase-diptera-scrapped/dmo.csv",
