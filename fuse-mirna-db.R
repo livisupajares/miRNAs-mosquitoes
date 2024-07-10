@@ -12,11 +12,13 @@ dme <- read.table("mirbase-diptera-scrapped/dme.csv",
                   quote = "\"", 
                   fill = TRUE,
                   na.strings = c(NA, "Unknown"))
+
 # Aedes aegypti
 aae <- read.table("mirbase-diptera-scrapped/aae.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 aae <- aae %>% 
   mutate(db_link1 = NA,
@@ -31,6 +33,7 @@ aae <- aae %>%
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 aae <- aae %>%
   relocate(db_link1:db_link3, 
@@ -41,11 +44,13 @@ aae <- aae %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Anopheles gambiae
 aga <- read.table("mirbase-diptera-scrapped/aga.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 aga <- aga %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -59,6 +64,7 @@ aga <- aga %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 aga <- aga %>%
   relocate(db_link1:db_link3, 
@@ -69,11 +75,13 @@ aga <- aga %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Bactrocera dorsalis
 bdo <- read.table("mirbase-diptera-scrapped/bdo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 bdo <- bdo %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -87,6 +95,7 @@ bdo <- bdo %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 bdo <- bdo %>%
   relocate(db_link1:db_link3, 
@@ -97,11 +106,13 @@ bdo <- bdo %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Culex quinquefasciatus
 cqu <- read.table("mirbase-diptera-scrapped/cqu.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 cqu <- cqu %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -115,6 +126,7 @@ cqu <- cqu %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 cqu <- cqu %>%
   relocate(db_link1:db_link3, 
@@ -125,11 +137,13 @@ cqu <- cqu %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila ananassae
 dan <- read.table("mirbase-diptera-scrapped/dan.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dan <- dan %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -143,6 +157,7 @@ dan <- dan %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dan <- dan %>%
   relocate(db_link1:db_link3, 
@@ -153,11 +168,13 @@ dan <- dan %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila erecta
 der <- read.table("mirbase-diptera-scrapped/der.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 der <- der %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -171,6 +188,7 @@ der <- der %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 der <- der %>%
   relocate(db_link1:db_link3, 
@@ -181,11 +199,13 @@ der <- der %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila grimshawi
 dgr <- read.table("mirbase-diptera-scrapped/dgr.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dgr <- dgr %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -199,6 +219,7 @@ dgr <- dgr %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dgr <- dgr %>%
   relocate(db_link1:db_link3, 
@@ -209,11 +230,13 @@ dgr <- dgr %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila mojavensis
 dmo <- read.table("mirbase-diptera-scrapped/dmo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dmo <- dmo %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -227,6 +250,7 @@ dmo <- dmo %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dmo <- dmo %>%
   relocate(db_link1:db_link3, 
@@ -237,11 +261,13 @@ dmo <- dmo %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila persimilis
 dpe <- read.table("mirbase-diptera-scrapped/dpe.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dpe <- dpe %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -255,6 +281,7 @@ dpe <- dpe %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dpe <- dpe %>%
   relocate(db_link1:db_link3, 
@@ -265,11 +292,13 @@ dpe <- dpe %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila pseudoobscura
 dps <- read.table("mirbase-diptera-scrapped/dps.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dps <- dps %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -283,6 +312,7 @@ dps <- dps %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dps <- dps %>%
   relocate(db_link1:db_link3, 
@@ -293,11 +323,13 @@ dps <- dps %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila sechellia
 dse <- read.table("mirbase-diptera-scrapped/dse.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dse <- dse %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -311,6 +343,7 @@ dse <- dse %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dse <- dse %>%
   relocate(db_link1:db_link3, 
@@ -321,11 +354,13 @@ dse <- dse %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila simulans
 dsi <- read.table("mirbase-diptera-scrapped/dsi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dsi <- dsi %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -339,6 +374,7 @@ dsi <- dsi %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dsi <- dsi %>%
   relocate(db_link1:db_link3, 
@@ -349,11 +385,13 @@ dsi <- dsi %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila virilis
 dvi <- read.table("mirbase-diptera-scrapped/dvi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dvi <- dvi %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -367,6 +405,7 @@ dvi <- dvi %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dvi <- dvi %>%
   relocate(db_link1:db_link3, 
@@ -377,11 +416,13 @@ dvi <- dvi %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila willistoni
 dwi <- read.table("mirbase-diptera-scrapped/dwi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dwi <- dwi %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -395,6 +436,7 @@ dwi <- dwi %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dwi <- dwi %>%
   relocate(db_link1:db_link3, 
@@ -405,11 +447,13 @@ dwi <- dwi %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # Drosophila yakuba
 dya <- read.table("mirbase-diptera-scrapped/dya.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+
 ## Añadir columnas que tiene dme
 dya <- dya %>% mutate(db_link1 = NA,
                       db_link2 = NA,
@@ -423,6 +467,7 @@ dya <- dya %>% mutate(db_link1 = NA,
                       ref5_link = NA,
                       ref6_link = NA,
                       ref7_link = NA)
+
 ## Moviendo columnas para igualar dme
 dya <- dya %>%
   relocate(db_link1:db_link3, 
@@ -433,6 +478,7 @@ dya <- dya %>%
            .after = evidence2) %>%
   relocate(ref3_link:ref7_link,
            .after = ref2_link)
+
 # ===== Merging data =====
 # Inspeccionar los dataframes para ver
 # donde son iguales y en cuáles difieren
