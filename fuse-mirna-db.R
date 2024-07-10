@@ -34,7 +34,7 @@ aae <- aae %>%
                       ref6_link = NA,
                       ref7_link = NA)
 
-## Moviendo columnas para igualar dme
+## Reordenar columnas para que coincidan con dme (referencia)
 aae <- aae %>%
   relocate(db_link1:db_link3, 
            .after = comment_conf) %>%
