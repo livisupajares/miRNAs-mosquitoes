@@ -481,6 +481,23 @@ dya <- dya %>%
 
 # ===== Merging data =====
 # 
+# # Formar la base de datos díptera
+diptera <- bind_rows(aae,
+                     aga,
+                     bdo,
+                     cqu,
+                     dan,
+                     der,
+                     dgr,
+                     dme,
+                     dmo,
+                     dpe,
+                     dps,
+                     dse,
+                     dsi,
+                     dvi,
+                     dwi,
+                     dya)
 
 # Download merged csv and create another script
 # to add more miRNAs from papers
