@@ -17,76 +17,272 @@ aae <- read.table("mirbase-diptera-scrapped/aae.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+aae <- aae %>% 
+  mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Anopheles gambiae
 aga <- read.table("mirbase-diptera-scrapped/aga.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+aga <- aga %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Bactrocera dorsalis
 bdo <- read.table("mirbase-diptera-scrapped/bdo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+bdo <- bdo %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Culex quinquefasciatus
 cqu <- read.table("mirbase-diptera-scrapped/cqu.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+cqu <- cqu %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila ananassae
 dan <- read.table("mirbase-diptera-scrapped/dan.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dan <- dan %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila erecta
 der <- read.table("mirbase-diptera-scrapped/der.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+der <- der %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila grimshawi
 dgr <- read.table("mirbase-diptera-scrapped/dgr.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dgr <- dgr %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila mojavensis
 dmo <- read.table("mirbase-diptera-scrapped/dmo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dmo <- dmo %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila persimilis
 dpe <- read.table("mirbase-diptera-scrapped/dpe.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dpe <- dpe %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila pseudoobscura
 dps <- read.table("mirbase-diptera-scrapped/dps.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dps <- dps %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila sechellia
 dse <- read.table("mirbase-diptera-scrapped/dse.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dse <- dse %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila simulans
 dsi <- read.table("mirbase-diptera-scrapped/dsi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dsi <- dsi %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila virilis
 dvi <- read.table("mirbase-diptera-scrapped/dvi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dvi <- dvi %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila willistoni
 dwi <- read.table("mirbase-diptera-scrapped/dwi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dwi <- dwi %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # Drosophila yakuba
 dya <- read.table("mirbase-diptera-scrapped/dya.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
+## Añadir columnas que tiene dme
+dya <- dya %>% mutate(db_link1 = NA,
+                      db_link2 = NA,
+                      db_link3 = NA,
+                      mat1_db_link = NA,
+                      mat1_pred_target_link = NA,
+                      mat2_db_link = NA,
+                      mat2_pred_target_link = NA,
+                      ref3_link = NA,
+                      ref4_link = NA,
+                      ref5_link = NA,
+                      ref6_link = NA,
+                      ref7_link = NA)
 # ===== Merging data =====
 # Inspeccionar los dataframes para ver
 # donde son iguales y en cuáles difieren
