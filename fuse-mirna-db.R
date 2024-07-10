@@ -36,14 +36,7 @@ aae <- aae %>%
 
 ## Reordenar columnas para que coincidan con dme (referencia)
 aae <- aae %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Anopheles gambiae
 aga <- read.table("mirbase-diptera-scrapped/aga.csv",
@@ -67,14 +60,7 @@ aga <- aga %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 aga <- aga %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Bactrocera dorsalis
 bdo <- read.table("mirbase-diptera-scrapped/bdo.csv",
@@ -98,14 +84,7 @@ bdo <- bdo %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 bdo <- bdo %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Culex quinquefasciatus
 cqu <- read.table("mirbase-diptera-scrapped/cqu.csv",
@@ -129,14 +108,7 @@ cqu <- cqu %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 cqu <- cqu %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila ananassae
 dan <- read.table("mirbase-diptera-scrapped/dan.csv",
@@ -160,14 +132,7 @@ dan <- dan %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dan <- dan %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila erecta
 der <- read.table("mirbase-diptera-scrapped/der.csv",
@@ -191,14 +156,7 @@ der <- der %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 der <- der %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila grimshawi
 dgr <- read.table("mirbase-diptera-scrapped/dgr.csv",
@@ -222,14 +180,7 @@ dgr <- dgr %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dgr <- dgr %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila mojavensis
 dmo <- read.table("mirbase-diptera-scrapped/dmo.csv",
@@ -253,14 +204,7 @@ dmo <- dmo %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dmo <- dmo %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila persimilis
 dpe <- read.table("mirbase-diptera-scrapped/dpe.csv",
@@ -284,14 +228,7 @@ dpe <- dpe %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dpe <- dpe %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila pseudoobscura
 dps <- read.table("mirbase-diptera-scrapped/dps.csv",
@@ -315,14 +252,7 @@ dps <- dps %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dps <- dps %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila sechellia
 dse <- read.table("mirbase-diptera-scrapped/dse.csv",
@@ -346,14 +276,7 @@ dse <- dse %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dse <- dse %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila simulans
 dsi <- read.table("mirbase-diptera-scrapped/dsi.csv",
@@ -377,14 +300,7 @@ dsi <- dsi %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dsi <- dsi %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila virilis
 dvi <- read.table("mirbase-diptera-scrapped/dvi.csv",
@@ -408,14 +324,7 @@ dvi <- dvi %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dvi <- dvi %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila willistoni
 dwi <- read.table("mirbase-diptera-scrapped/dwi.csv",
@@ -439,14 +348,7 @@ dwi <- dwi %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dwi <- dwi %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # Drosophila yakuba
 dya <- read.table("mirbase-diptera-scrapped/dya.csv",
@@ -470,14 +372,7 @@ dya <- dya %>% mutate(db_link1 = NA,
 
 ## Moviendo columnas para igualar dme
 dya <- dya %>%
-  relocate(db_link1:db_link3, 
-           .after = comment_conf) %>%
-  relocate(mat1_db_link:mat1_pred_target_link,
-           .after = evidence1) %>%
-  relocate(mat2_db_link:mat2_pred_target_link,
-           .after = evidence2) %>%
-  relocate(ref3_link:ref7_link,
-           .after = ref2_link)
+  select(names(dme))
 
 # ===== Merging data =====
 # 
