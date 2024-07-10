@@ -397,5 +397,5 @@ diptera <- bind_rows(aae,
 # Download merged csv and create another script
 # to add more miRNAs from papers
 write.csv(diptera,
-          "/home/cayetano/livisu/git/miRNAs-mosquitoes/diptera.csv", 
-          row.names = TRUE)
+          "/home/cayetano/livisu/git/miRNAs-mosquitoes/diptera.csv",
+          row.names = FALSE)
