@@ -6,7 +6,7 @@ library("tidyverse")
 # ===== Importing data =====
 # Drosophila Melanogaster --> more variables, todas tienen que tener el mismo
 # número de variables
-dme <- read.table("mirbase-diptera-scrapped/dme.csv",
+dme <- read.table("databases/mirbase-diptera-scrapped/dme.csv",
                   header = TRUE,
                   sep = ",",
                   quote = "\"", 
@@ -14,7 +14,7 @@ dme <- read.table("mirbase-diptera-scrapped/dme.csv",
                   na.strings = c(NA, "Unknown"))
 
 # Aedes aegypti
-aae <- read.table("mirbase-diptera-scrapped/aae.csv",
+aae <- read.table("databases/mirbase-diptera-scrapped/aae.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -39,7 +39,7 @@ aae <- aae %>%
   select(names(dme))
 
 # Anopheles gambiae
-aga <- read.table("mirbase-diptera-scrapped/aga.csv",
+aga <- read.table("databases/mirbase-diptera-scrapped/aga.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -63,7 +63,7 @@ aga <- aga %>%
   select(names(dme))
 
 # Bactrocera dorsalis
-bdo <- read.table("mirbase-diptera-scrapped/bdo.csv",
+bdo <- read.table("databases/mirbase-diptera-scrapped/bdo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -87,7 +87,7 @@ bdo <- bdo %>%
   select(names(dme))
 
 # Culex quinquefasciatus
-cqu <- read.table("mirbase-diptera-scrapped/cqu.csv",
+cqu <- read.table("databases/mirbase-diptera-scrapped/cqu.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -111,7 +111,7 @@ cqu <- cqu %>%
   select(names(dme))
 
 # Drosophila ananassae
-dan <- read.table("mirbase-diptera-scrapped/dan.csv",
+dan <- read.table("databases/mirbase-diptera-scrapped/dan.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -135,7 +135,7 @@ dan <- dan %>%
   select(names(dme))
 
 # Drosophila erecta
-der <- read.table("mirbase-diptera-scrapped/der.csv",
+der <- read.table("databases/mirbase-diptera-scrapped/der.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -159,7 +159,7 @@ der <- der %>%
   select(names(dme))
 
 # Drosophila grimshawi
-dgr <- read.table("mirbase-diptera-scrapped/dgr.csv",
+dgr <- read.table("databases/mirbase-diptera-scrapped/dgr.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -183,7 +183,7 @@ dgr <- dgr %>%
   select(names(dme))
 
 # Drosophila mojavensis
-dmo <- read.table("mirbase-diptera-scrapped/dmo.csv",
+dmo <- read.table("databases/mirbase-diptera-scrapped/dmo.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -207,7 +207,7 @@ dmo <- dmo %>%
   select(names(dme))
 
 # Drosophila persimilis
-dpe <- read.table("mirbase-diptera-scrapped/dpe.csv",
+dpe <- read.table("databases/mirbase-diptera-scrapped/dpe.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -231,7 +231,7 @@ dpe <- dpe %>%
   select(names(dme))
 
 # Drosophila pseudoobscura
-dps <- read.table("mirbase-diptera-scrapped/dps.csv",
+dps <- read.table("databases/mirbase-diptera-scrapped/dps.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -255,7 +255,7 @@ dps <- dps %>%
   select(names(dme))
 
 # Drosophila sechellia
-dse <- read.table("mirbase-diptera-scrapped/dse.csv",
+dse <- read.table("databases/mirbase-diptera-scrapped/dse.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -279,7 +279,7 @@ dse <- dse %>%
   select(names(dme))
 
 # Drosophila simulans
-dsi <- read.table("mirbase-diptera-scrapped/dsi.csv",
+dsi <- read.table("databases/mirbase-diptera-scrapped/dsi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -303,7 +303,7 @@ dsi <- dsi %>%
   select(names(dme))
 
 # Drosophila virilis
-dvi <- read.table("mirbase-diptera-scrapped/dvi.csv",
+dvi <- read.table("databases/mirbase-diptera-scrapped/dvi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -327,7 +327,7 @@ dvi <- dvi %>%
   select(names(dme))
 
 # Drosophila willistoni
-dwi <- read.table("mirbase-diptera-scrapped/dwi.csv",
+dwi <- read.table("databases/mirbase-diptera-scrapped/dwi.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
@@ -351,7 +351,7 @@ dwi <- dwi %>%
   select(names(dme))
 
 # Drosophila yakuba
-dya <- read.table("mirbase-diptera-scrapped/dya.csv",
+dya <- read.table("databases/mirbase-diptera-scrapped/dya.csv",
                   header = TRUE,
                   sep = ",",
                   na.strings = c(NA, "Unknown"))
