@@ -5,3 +5,7 @@ library("tidyverse")
 diptera <- read.table("databases/diptera.csv",
                       header = TRUE,
                       sep = ",")
+# ===== FILTER DATA =====
+# Filter diptera by conf high
+conf_high <- filter(diptera,
+                    conf == "High")
