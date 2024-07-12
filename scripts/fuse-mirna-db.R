@@ -12,6 +12,18 @@ dme <- read.table("databases/mirbase-diptera-scrapped/dme.csv",
                   quote = "\"", 
                   fill = TRUE,
                   na.strings = c(NA, "Unknown"))
+# Add missing links
+if (is.na(dme[12, "db_link1"])) {
+  dme[12, "db_link1"] <- "https://rfam.org/family/RF00053"
+}
+
+if (is.na(dme[12, "db_link2"])) {
+  dme[12, "db_link2"] <- "https://www.ncbi.nlm.nih.gov/gene/3772237"
+}
+
+if (is.na(dme[12, "db_link3"])) {
+  dme[12, "db_link3"] <- "https://www.rnacentral.org/rna/URS00005F4704/7227"
+}
 
 # Aedes aegypti
 aae <- read.table("databases/mirbase-diptera-scrapped/aae.csv",
