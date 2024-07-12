@@ -26,7 +26,7 @@ conf_low <- filter(diptera,
                     conf == "Not enough data")
 
 ## Delete unused rows
-conf_low <- delete_empty_cols(conf_high)
+conf_low <- delete_empty_cols(conf_low)
 
 ## Save conf_low to .csv
 write.csv(conf_low,
