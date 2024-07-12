@@ -19,3 +19,8 @@ print(all_na_column_names)
 # ===== Borrar columna =====
 # Borrar columna "ref7_link" del dataframe diptera
 diptera$ref7_link <- NULL
+
+# ===== Guardar nueva diptera =====
+write.csv(diptera,
+          "databases/diptera.csv",
+          row.names = FALSE)
