@@ -1,7 +1,8 @@
 # ~~~~~ FUSING DATA ~~~~~
 # 
-# ===== Load libraries =====
+# ===== Load libraries and files =====
 library("tidyverse")
+source("scripts/functions.R")
 
 # ===== Importing data =====
 # Drosophila Melanogaster --> more variables, todas tienen que tener el mismo
