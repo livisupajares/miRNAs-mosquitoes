@@ -17,6 +17,8 @@ all_col_NA <- function(df) {
   print(all_na_column_names)
 }
 
+# ===== Usar función en díptera =====
+all_col_NA(diptera)
 
 # Borrar columna "ref7_link" del dataframe diptera
 diptera$ref7_link <- NULL
