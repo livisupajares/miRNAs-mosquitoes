@@ -20,6 +20,7 @@ all_col_NA <- function(df) {
 # ===== Usar función en díptera =====
 all_col_NA(diptera)
 
+# ===== Borrar columnas problemáticas =====
 # Borrar columna "ref7_link" del dataframe diptera
 diptera$ref7_link <- NULL
 
