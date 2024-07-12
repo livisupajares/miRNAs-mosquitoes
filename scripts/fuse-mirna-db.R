@@ -407,6 +407,9 @@ diptera <- bind_rows(aae,
                      dwi,
                      dya)
 
+# Borrar columnas extra donde los valores de todas las filas son NA
+diptera <- delete_empty_cols(diptera)
+
 # Download merged csv and create another script
 write.csv(diptera,
           "databases/diptera.csv",
