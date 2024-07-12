@@ -16,3 +16,6 @@ all_na_columns <- which(na_counts == nrow(diptera))
 all_na_column_names <- names(all_na_columns)
 print(all_na_column_names)
 
+# ===== Borrar columna =====
+# Borrar columna "ref7_link" del dataframe diptera
+diptera$ref7_link <- NULL
