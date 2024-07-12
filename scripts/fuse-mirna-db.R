@@ -389,7 +389,7 @@ dya <- dya %>%
 
 # ===== Merging data =====
 # 
-# # Formar la base de datos díptera
+# Formar la base de datos díptera
 diptera <- bind_rows(aae,
                      aga,
                      bdo,
