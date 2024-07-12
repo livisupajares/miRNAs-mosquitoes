@@ -9,3 +9,6 @@ diptera <- read.table("databases/diptera.csv",
 # Filter diptera by conf high
 conf_high <- filter(diptera,
                     conf == "High")
+# Filter diptera by conf not enough data
+conf_low <- filter(diptera,
+                    conf == "Not enough data")
