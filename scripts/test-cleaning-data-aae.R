@@ -20,3 +20,5 @@ aae_mirna_seq <- aae_mirna_seq[complete.cases(aae_mirna_seq), ]
 
 # ==== Deleting duplicated rows based on miRNA_name ====
 aae_mirna_seq <- aae_mirna_seq[!duplicated(aae_mirna_seq$mirna_name), ]
+
+# ==== Save the data into a csv ==== 
