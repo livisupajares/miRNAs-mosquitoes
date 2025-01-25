@@ -18,3 +18,5 @@ aae_mirna_seq <- aae_mirna[-c(1,5:39)]
 # ==== Deleting all data with NA strings ==== 
 aae_mirna_seq <- aae_mirna_seq[complete.cases(aae_mirna_seq), ]
 
+# ==== Deleting duplicated rows based on miRNA_name
+aae_mirna_seq <- aae_mirna_seq[!duplicated(aae_mirna_seq$mirna_name), ]
