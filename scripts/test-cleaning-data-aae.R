@@ -15,3 +15,6 @@ colnames(aae_mirna)
 # # Remove columns with index 1 and from 5 to 39
 aae_mirna_seq <- aae_mirna[-c(1,5:39)]
 
+# ==== Deleting all data with NA strings ==== 
+aae_mirna_seq <- aae_mirna_seq[complete.cases(aae_mirna_seq), ]
+
