@@ -29,3 +29,5 @@ aae_mirna_seq$mat_seq <- gsub("-", "", aae_mirna_seq$mat_seq)
 # Delete blank spaces
 aae_mirna_seq$mat_seq <- gsub(" ", "", aae_mirna_seq$mat_seq)
 
+# ==== Convert df to fasta ====
+df_2_fasta(aae_mirna_seq, "databases/test/aae_test_mirna.fasta")
