@@ -18,9 +18,14 @@ aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
 
 ## Mature sequence of aae infected with DENV-2
 aae_mirna_mat_denv <- aae_mirna[-c(1,3,5:21,23:39)]
+
 # ==== Deleting all data with NA strings ==== 
 aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
+aae_mirna_mat_denv <- aae_mirna_mat_denv[complete.cases(aae_mirna_mat_denv), ]
 
+# ==== Deleting data that is not from DENV-2 ====
+aae_mirna_mat_denv <- aae_mirna_mat_denv[grepl("denv",aae_mirna_mat_denv$infection),]
+  
 # ==== Deleting duplicated rows based on miRNA_name ====
 aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_mat), ]
 
