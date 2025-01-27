@@ -2,6 +2,7 @@
 #
 # ===== Load libraries & files ===== 
 library("tidyverse")
+source("scripts/functions.R")
 # ===== Importing data ===== 
 # Add NA to all empty spaces
 aae_mirna <- read.csv("databases/test/aae-mirna-seq.csv",
