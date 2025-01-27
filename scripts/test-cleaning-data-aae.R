@@ -27,7 +27,8 @@ aae_mirna_mat_denv <- aae_mirna_mat_denv[complete.cases(aae_mirna_mat_denv), ]
 aae_mirna_mat_denv <- aae_mirna_mat_denv[grepl("denv",aae_mirna_mat_denv$infection),]
   
 # ==== Deleting duplicated rows based on miRNA_name ====
-aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_mat), ]
+aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
+aae_mirna_mat_denv <- aae_mirna_mat_denv[!duplicated(aae_mirna_mat_denv$mirna_name), ]
 
 # ==== Delete the numbers from miRNA strings ====
 # Delete numbers
