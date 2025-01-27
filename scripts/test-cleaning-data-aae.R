@@ -23,11 +23,11 @@ aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_mat), ]
 
 # ==== Delete the numbers from miRNA strings ====
 # Delete numbers
-aae_mirna_seq$mat_seq <- gsub("[0-9]", "", aae_mirna_mat$mat_seq)
+aae_mirna_mat$mat_seq <- gsub("[0-9]", "", aae_mirna_mat$mat_seq)
 # Delete hyphens
-aae_mirna_seq$mat_seq <- gsub("-", "", aae_mirna_mat$mat_seq)
+aae_mirna_mat$mat_seq <- gsub("-", "", aae_mirna_mat$mat_seq)
 # Delete blank spaces
-aae_mirna_seq$mat_seq <- gsub(" ", "", aae_mirna_mat$mat_seq)
+aae_mirna_mat$mat_seq <- gsub(" ", "", aae_mirna_mat$mat_seq)
 
 # ==== Convert df to fasta ====
 df_2_fasta(aae_mirna_mat, "databases/test/aae_test_mat.fasta")
