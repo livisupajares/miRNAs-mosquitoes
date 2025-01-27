@@ -12,7 +12,8 @@ aae_mirna <- read.csv("databases/test/aae-mirna-seq.csv",
 # Show name of columns
 colnames(aae_mirna)
 # Isolating miRNA sequences
-# # Remove columns with index 1, 3 and from 5 to 39
+## Mature sequence of all aae
+### Remove columns with index 1, 3 and from 5 to 39
 aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
 
 # ==== Deleting all data with NA strings ==== 
