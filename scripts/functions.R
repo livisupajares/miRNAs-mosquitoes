@@ -17,3 +17,17 @@ delete_empty_cols <- function(df) {
   # Retornar el dataframe modificado
   return(df)
 }
+
+# ==== Dataframe to FASTA ====
+df_2_fasta <- function(df, file_name) {
+  # Abrir conección con el archivo
+  con <- file(file_name, open = "w")
+  
+  # Loop para cambiar de df a fasta
+  for (i in 1:nrow(df)) {
+    writeLines(paste(">", df[i, 1]), con)  # Escribe el encabezado
+    writeLines(df[i, 2], con)   # Escribe la secuencia
+  }
+  # Cerrar conección
+  close(con)
+}
