@@ -42,3 +42,5 @@ aae_mirna_mat$mat_seq <- gsub(" ", "", aae_mirna_mat$mat_seq)
 aae_mirna_mat_denv$mat_seq <- gsub(" ", "", aae_mirna_mat_denv$mat_seq)
 
 # ==== Convert df to fasta ====
+df_2_fasta(aae_mirna_mat, "databases/test/aae_test_mat.fasta")
+df_2_fasta(aae_mirna_mat_denv, "databases/test/aae_test_mat_denv.fasta")
