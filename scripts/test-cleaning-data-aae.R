@@ -21,4 +21,11 @@ aae_mirna_seq <- aae_mirna_seq[complete.cases(aae_mirna_seq), ]
 # ==== Deleting duplicated rows based on miRNA_name ====
 aae_mirna_seq <- aae_mirna_seq[!duplicated(aae_mirna_seq$mirna_name), ]
 
-# ==== Save the data into a csv ==== 
+# ==== Delete the numbers from miRNA strings ====
+# Delete numbers
+aae_mirna_seq$mat_seq <- gsub("[0-9]", "", aae_mirna_seq$mat_seq)
+# Delete hyphens
+aae_mirna_seq$mat_seq <- gsub("-", "", aae_mirna_seq$mat_seq)
+# Delete blank spaces
+aae_mirna_seq$mat_seq <- gsub(" ", "", aae_mirna_seq$mat_seq)
+
