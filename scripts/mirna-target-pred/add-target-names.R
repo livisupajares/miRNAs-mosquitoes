@@ -5,7 +5,6 @@
 # BiocManager::install("ensembldb")
 # BiocManager::install("EnsDb.Hsapiens.v86")
 
-# TODO : For the full database
 # https://www.bioconductor.org/packages/devel/bioc/manuals/ensembldb/man/ensembldb.pdf
 
 # ===== Load libraries & files ===== 
