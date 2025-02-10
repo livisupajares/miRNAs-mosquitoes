@@ -5,3 +5,5 @@
 # BiocManager::install("ensembldb")
 
 # TODO : For the full database
+# https://www.bioconductor.org/packages/devel/bioc/manuals/ensembldb/man/ensembldb.pdf
+
