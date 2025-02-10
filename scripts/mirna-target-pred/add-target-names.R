@@ -60,3 +60,10 @@ tcontrol_final <- tcontrol_final[, c(1, (n_cols - 1):n_cols, 2:(n_cols - 2))]
 
 # View the result
 head(tcontrol_final)
+
+# ==== DOWNLOAD DATABASE ==== #
+# save tcontrol_final to csv
+write.csv(tcontrol_final,
+          "results/filtar-results/control/
+          controles_mirna_t.csv",
+          row.names = FALSE)
