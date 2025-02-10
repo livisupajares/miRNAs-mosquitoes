@@ -5,7 +5,7 @@ library("tidyverse")
 source("scripts/functions.R")
 # ===== Importing data ===== 
 # Add NA to all empty spaces
-aae_mirna <- read.csv("databases/test/aae-mirna-seq.csv",
+aae_mirna <- read.csv("sequences/test/aae-mirna-seq.csv",
                       na.strings = c("","NA"))
 
 # ===== Deleting extra columns =====
@@ -42,5 +42,5 @@ aae_mirna_mat$mat_seq <- gsub(" ", "", aae_mirna_mat$mat_seq)
 aae_mirna_mat_denv$mat_seq <- gsub(" ", "", aae_mirna_mat_denv$mat_seq)
 
 # ==== Convert df to fasta ====
-df_2_fasta(aae_mirna_mat, "databases/test/aae_test_mat.fasta")
-df_2_fasta(aae_mirna_mat_denv, "databases/test/aae_test_mat_denv.fasta")
+df_2_fasta(aae_mirna_mat, "sequences/test/aae_test_mat.fasta")
+df_2_fasta(aae_mirna_mat_denv, "sequences/test/aae_test_mat_denv.fasta")
