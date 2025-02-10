@@ -20,7 +20,7 @@ control <- read.delim("results/filtar-results/control/control_miranda_target_pre
 control$transcript_ID <- sub("\\..*", "", control$transcript_ID)
 
 # ===== Subset df for testing ===== #
-test_control <- head(control, 50)
+# test_control <- head(control, 50)
 
 # ===== CHECK PROT DATA ==== #
 hsa <- EnsDb.Hsapiens.v86
