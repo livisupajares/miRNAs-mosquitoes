@@ -26,3 +26,7 @@ test_control <- head(control, 50)
 hsa <- EnsDb.Hsapiens.v86
 hasProteinData(hsa)
 
+# ===== API ENSEMBL ===== #
+# test only for one transcript ID
+tx <- transcripts(hsa, filter = TxIdFilter(test_control$transcript_ID), columns = c("tx_id", "uniprot_id", "gene_name"))
+
