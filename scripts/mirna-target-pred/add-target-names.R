@@ -28,7 +28,7 @@ hasProteinData(hsa)
 
 # ===== API ENSEMBL ===== #
 # test only for one transcript ID
-tx <- transcripts(hsa, filter = TxIdFilter(test_control$transcript_ID), columns = c("tx_id", "uniprot_id", "gene_name"))
+tx <- transcripts(hsa, filter = TxIdFilter(control$transcript_ID), columns = c("tx_id", "uniprot_id", "gene_name"))
 
 # ==== FIX DATABASE PRESENTATION ==== #
 # Ensure you have a valid result
@@ -45,9 +45,9 @@ df <- df %>%
 # Ensure `df` exists and contains transcript information
 if (exists("df") && nrow(df) > 0) {
   # Merge both dataframes by matching `transcript_id` with `tx_id`
-  tcontrol_final <- merge(test_control, df, by.x = "transcript_ID", by.y = "tx_id", all.x = TRUE)
+  tcontrol_final <- merge(control, df, by.x = "transcript_ID", by.y = "tx_id", all.x = TRUE)
 } else {
-  tcontrol_final <- test_control  # If df is empty, keep only transcript_id_df
+  tcontrol_final <- control  # If df is empty, keep only transcript_id_df
 }
 
 # ==== REORDER COLUMNS ==== #
