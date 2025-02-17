@@ -32,4 +32,13 @@ df_2_fasta <- function(df, file_name) {
   close(con)
 }
 
+# ==== Convert GRanges to dataframes =====
+granges_to_df <- function(tx) {
+  if (length(tx) > 0) {
+    df <- as.data.frame(mcols(tx))  # Extract metadata columns and convert to data.frame
+  } else {
+    df <- data.frame()  # Create an empty data frame if no results are found
+  }
+}
+
 }
