@@ -30,6 +30,8 @@ aae_mirna_mat_denv <- aae_mirna[-c(1,3,5:21,23:39)]
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
 aae_mirna_mat_denv <- aae_mirna_mat_denv[complete.cases(aae_mirna_mat_denv), ]
 
+# ==== Deleting data that is not from DENV-2 ====
+aae_mirna_mat_denv <- aae_mirna_mat_denv[grepl("denv",aae_mirna_mat_denv$infection),]
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
 # aae_mirna_mat$mat_seq <- gsub("[0-9]", "", aae_mirna_mat$mat_seq)
 # aae_mirna_mat$mat_seq <- gsub("-", "", aae_mirna_mat$mat_seq)
