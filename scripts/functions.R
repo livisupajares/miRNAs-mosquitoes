@@ -1,4 +1,5 @@
 # ~~~~~ FUNCTIONS ~~~~~
+library(dplyr)
 # ===== Crear una función  que encuentre todas las columnas NA =====
 delete_empty_cols <- function(df) {
   # Contar valores NA en cada columna
