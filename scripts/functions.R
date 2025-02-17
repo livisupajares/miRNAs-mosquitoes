@@ -41,4 +41,14 @@ granges_to_df <- function(tx) {
   }
 }
 
+# ==== Merge transcript name ensembl with results df ====
+merge_ensembl_to_df <- function(df, original) {
+  # Ensure `df` exists and contains transcript information
+  if (exists("df") && nrow(df) > 0) {
+    # Merge both dataframes by matching `transcript_id` with `tx_id`
+    tcontrol <- merge(original, df, by.x = "mRNA", by.y = "tx_id", all.x = TRUE)
+  } else {
+    tcontrol <- original  # If df is empty, keep only transcript_id_df
+  }
+}
 }
