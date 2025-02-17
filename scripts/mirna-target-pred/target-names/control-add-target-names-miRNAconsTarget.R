@@ -22,3 +22,9 @@ control_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_
 # PITA
 control_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/pita.csv")
 
+# ==== FIX DATA ==== #
+# Eliminate all decimal parts without rounding
+control_miranda$mRNA <- sub("\\..*", "", control_miranda$mRNA)
+control_ts$mRNA <- sub("\\..*", "", control_ts$mRNA)
+control_pita$mRNA <- sub("\\..*", "", control_pita$mRNA)
+
