@@ -38,3 +38,10 @@ tx_miranda <- transcripts(hsa, filter = TxIdFilter(control_miranda$mRNA), column
 tx_ts <- transcripts(hsa, filter = TxIdFilter(control_ts$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
 tx_pita <- transcripts(hsa, filter = TxIdFilter(control_pita$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
 
+# ==== FIX DATABASE PRESENTATION ==== #
+# Ensure you have a valid result and convert to dataframes.
+# Convert each GRanges object to a data frame
+df_miranda <- granges_to_df(tx_miranda)
+df_ts <- granges_to_df(tx_ts)
+df_pita <- granges_to_df(tx_pita)
+
