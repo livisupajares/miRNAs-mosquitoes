@@ -28,3 +28,13 @@ control_miranda$mRNA <- sub("\\..*", "", control_miranda$mRNA)
 control_ts$mRNA <- sub("\\..*", "", control_ts$mRNA)
 control_pita$mRNA <- sub("\\..*", "", control_pita$mRNA)
 
+# ===== CHECK PROT DATA ==== #
+hsa <- EnsDb.Hsapiens.v86
+hasProteinData(hsa)
+
+# ===== API ENSEMBL ===== #
+# test only for one transcript ID
+tx_miranda <- transcripts(hsa, filter = TxIdFilter(control_miranda$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
+tx_ts <- transcripts(hsa, filter = TxIdFilter(control_ts$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
+tx_pita <- transcripts(hsa, filter = TxIdFilter(control_pita$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
+
