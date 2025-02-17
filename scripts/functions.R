@@ -51,4 +51,18 @@ merge_ensembl_to_df <- function(df, original) {
     tcontrol <- original  # If df is empty, keep only transcript_id_df
   }
 }
+# ==== Reorder columns ====
+# Function to move the last two columns between the first and second column
+reorder_columns <- function(df) {
+  # Get the column names
+  col_names <- colnames(df)
+  
+  # Identify the last two columns
+  last_two <- col_names[(ncol(df) - 1):ncol(df)]
+  
+  # Reorder columns: first column, last two columns, then the rest
+  df_reordered <- df %>%
+    dplyr::select(1, all_of(last_two), everything())
+  
+  return(df_reordered)
 }
