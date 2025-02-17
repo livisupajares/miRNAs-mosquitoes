@@ -26,7 +26,10 @@ colnames(aae_mirna)
 ## Mature sequence of aae infected with DENV-2
 aae_mirna_mat_denv <- aae_mirna[-c(1,3,5:21,23:39)]
 
+# ==== Deleting all data with NA strings ==== 
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
+aae_mirna_mat_denv <- aae_mirna_mat_denv[complete.cases(aae_mirna_mat_denv), ]
+
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
 # aae_mirna_mat$mat_seq <- gsub("[0-9]", "", aae_mirna_mat$mat_seq)
 # aae_mirna_mat$mat_seq <- gsub("-", "", aae_mirna_mat$mat_seq)
