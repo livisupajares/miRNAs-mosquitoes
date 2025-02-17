@@ -15,7 +15,17 @@ aae_mirna <- read.csv("sequences/aae-complete/aae-mirna-seq.csv",
 # Add aae- before miRNA name
 aae_mirna$mirna_name <- paste0("aae-", aae_mirna$mirna_name)
 
+# ===== Deleting extra columns =====
+# Show name of columns
+colnames(aae_mirna)
+# Isolating miRNA sequences
+## Mature sequence of all aae
+### Remove columns with index 1, 3 and from 5 to 39
 # aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
+
+## Mature sequence of aae infected with DENV-2
+aae_mirna_mat_denv <- aae_mirna[-c(1,3,5:21,23:39)]
+
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
 # aae_mirna_mat$mat_seq <- gsub("[0-9]", "", aae_mirna_mat$mat_seq)
