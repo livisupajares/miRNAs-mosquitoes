@@ -25,9 +25,11 @@ df_2_fasta <- function(df, file_name) {
   
   # Loop para cambiar de df a fasta
   for (i in 1:nrow(df)) {
-    writeLines(paste(">", df[i, 1]), con)  # Escribe el encabezado
+    writeLines(paste0(">", df[i, 1]), con)  # Escribe el encabezado
     writeLines(df[i, 2], con)   # Escribe la secuencia
   }
   # Cerrar conección
   close(con)
+}
+
 }
