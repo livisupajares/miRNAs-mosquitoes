@@ -12,6 +12,9 @@ source("scripts/functions.R")
 aae_mirna <- read.csv("sequences/aae-complete/aae-mirna-seq.csv",
                       na.strings = c("","NA"))
 
+# Add aae- before miRNA name
+aae_mirna$mirna_name <- paste0("aae-", aae_mirna$mirna_name)
+
 # aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
