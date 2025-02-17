@@ -13,3 +13,12 @@ library("ensembldb")
 library("EnsDb.Hsapiens.v86") # Homo sapiens database
 source("scripts/functions.R")
 
+# ===== Importing data ===== #
+# Add NA to all empty spaces
+# Miranda
+control_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/miranda.csv")
+# ts
+control_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/ts.csv")
+# PITA
+control_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/pita.csv")
+
