@@ -80,6 +80,50 @@ head(t_control_miranda)
 head(t_control_ts)
 head(t_control_pita)
 
+# ==== FIND WHERE A PREDICTED PROTEINS ====
+# Filter rows where gene_name is
+vtargets_hsa_miR_548ba <- c("LIFR", "PTEN", "NEO1", "SP110")
+vtargets_hsa_let_7b <- c("CDC25A", "BCL7A")
+
+# Find rows where gene_name is in the target list
+## miranda
+matching_rows_miranda_miR_548ba <- which(t_control_miranda$gene_name %in% vtargets_hsa_miR_548ba)
+matching_rows_miranda_let_7b <- which(t_control_miranda$gene_name %in% vtargets_hsa_let_7b)
+## TS
+matching_rows_ts_miR_548ba <- which(t_control_ts$gene_name %in% vtargets_hsa_miR_548ba)
+matching_rows_ts_let_7b <- which(t_control_ts$gene_name %in% vtargets_hsa_let_7b)
+## PITA
+matching_rows_pita_miR_548ba <- which(t_control_pita$gene_name %in% vtargets_hsa_miR_548ba)
+matching_rows_pita_let_7b <- which(t_control_pita$gene_name %in% vtargets_hsa_let_7b)
+
+# Extract corresponding rows with microRNA information
+## miranda
+result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c("gene_name", "microRNA", "score")]
+result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score")]
+## TS
+result_ts_miR_548ba <- t_control_ts[matching_rows_ts_miR_548ba, c("gene_name", "microRNA", "score")]
+result_ts_let_7b <- t_control_ts[matching_rows_ts_let_7b, c("gene_name", "microRNA", "score")]
+## PITA
+result_pita_miR_548ba <- t_control_pita[matching_rows_pita_miR_548ba, c("gene_name", "microRNA", "energy")]
+result_pita_let_7b <- t_control_pita[matching_rows_pita_let_7b, c("gene_name", "microRNA", "energy")]
+
+# Print the result
+## miranda
+paste("miranda - miR_548ba")
+print(result_miranda_miR_548ba)
+paste("miranda - let_7b")
+print(result_miranda_let_7b)
+## TS
+paste("TS - miR_548ba")
+print(result_ts_miR_548ba)
+paste("TS - let_7b")
+print(result_ts_let_7b)
+## PITA
+paste("PITA - miR_548ba")
+print(result_pita_miR_548ba)
+paste("PITA - let_7b")
+print(result_pita_let_7b)
+
 # ==== DOWNLOAD DATABASE ====
 # save tcontrol_final to csv
 # miranda
@@ -97,3 +141,15 @@ write.csv(t_control_pita,
           "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-control-pita.csv",
           row.names = FALSE)
 
+# save mRNA predicted proteins location
+# miranda
+write.csv(result_miranda_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-mir-548ba.csv", row.names = FALSE)
+write.csv(result_miranda_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-let-7b.csv", row.names = FALSE)
+
+# ts
+write.csv(result_ts_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-mir-548ba.csv", row.names = FALSE)
+write.csv(result_ts_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-let-7b.csv", row.names = FALSE)
+
+# PITA
+write.csv(result_pita_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-mir-548ba.csv", row.names = FALSE)
+write.csv(result_pita_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-let-7b.csv", row.names = FALSE)
