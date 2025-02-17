@@ -53,3 +53,30 @@ df_ts <- df_ts %>%
 df_pita <- df_pita %>%
   distinct(tx_id, .keep_all = TRUE)
 
+# ==== MERGE DATABASES ==== #
+# Merge transcript name df with initial df
+t_control_miranda <- merge_ensembl_to_df(df_miranda, control_miranda)
+t_control_ts <- merge_ensembl_to_df(df_ts, control_ts)
+t_control_pita<- merge_ensembl_to_df(df_pita, control_pita)
+
+# Get the number of columns in merged_df
+# n_cols_miranda <- ncol(t_control_miranda)
+# n_cols_ts <- ncol(t_control_ts)
+# n_cols_pita <- ncol(t_control_pita)
+
+# Reorder columns: first column, then the last two columns, then the remaining columns
+t_control_miranda <- reorder_columns(t_control_miranda)
+t_control_ts <- reorder_columns(t_control_ts)
+t_control_pita <- reorder_columns(t_control_pita)
+
+# Filter by score highest to lowest score value
+t_control_miranda <- t_control_miranda %>% arrange(desc(score))
+t_control_ts <- t_control_ts %>% arrange(desc(score))
+# Filter by energy lowest to highest value
+t_control_pita <- t_control_pita %>% arrange(energy)
+
+# View the result
+head(t_control_miranda)
+head(t_control_ts)
+head(t_control_pita)
+
