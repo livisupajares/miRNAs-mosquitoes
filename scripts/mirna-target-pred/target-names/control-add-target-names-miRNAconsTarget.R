@@ -80,3 +80,20 @@ head(t_control_miranda)
 head(t_control_ts)
 head(t_control_pita)
 
+# ==== DOWNLOAD DATABASE ====
+# save tcontrol_final to csv
+# miranda
+write.csv(t_control_miranda,
+          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-control-miranda.csv",
+          row.names = FALSE)
+
+# ts
+write.csv(t_control_ts,
+          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-control-ts.csv",
+          row.names = FALSE)
+
+# PITA
+write.csv(t_control_pita,
+          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-control-pita.csv",
+          row.names = FALSE)
+
