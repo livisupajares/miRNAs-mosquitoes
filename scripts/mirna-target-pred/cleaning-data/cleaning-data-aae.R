@@ -9,6 +9,9 @@ source("scripts/functions.R")
 ## Test 
 # aae_mirna <- read.csv("sequences/test/aae-mirna-seq.csv",
 #                       na.strings = c("","NA"))
+aae_mirna <- read.csv("sequences/aae-complete/aae-mirna-seq.csv",
+                      na.strings = c("","NA"))
+
 # aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
