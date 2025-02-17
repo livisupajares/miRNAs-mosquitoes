@@ -45,3 +45,11 @@ df_miranda <- granges_to_df(tx_miranda)
 df_ts <- granges_to_df(tx_ts)
 df_pita <- granges_to_df(tx_pita)
 
+# Remove duplicates based on tx_id
+df_miranda <- df_miranda %>%
+  distinct(tx_id, .keep_all = TRUE)
+df_ts <- df_ts %>%
+  distinct(tx_id, .keep_all = TRUE)
+df_pita <- df_pita %>%
+  distinct(tx_id, .keep_all = TRUE)
+
