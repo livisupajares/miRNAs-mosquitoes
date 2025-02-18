@@ -1,0 +1,229 @@
+mirna_name,pre_seq,mat_seq,species,sex,exp_female,exp_male,stage,exp_egg,exp_embryo,exp_larva,exp_pupa,exp_adult,location,exp_midgut,exp_salivary_gland,exp_blood_meal,blood_meal_location,pbm_time_h,log2fc_blood_meal,infection,exp_DENV,DENV_location,cell_line_denv,DENV_serotype,exp_CHIKV,cell_line_chikv,CHIKV_location,exp_ZIKA,ZIKA_location,exp_wolbachia,cell_line_wolbachia,wolbachia_location,pred_target,target_function,efect_path,citation_exp,doi_exp
+miR-184,NA,TGGACGGAGAACTGATAAGGGC,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-184,NA,TGGACGGAGAACTGATAAGGGC,Aedes albopictus,,,,,,,,,,,,,,,,,chik,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-184,NA,TGGACGGAGAACTGATAAGGGC,Aedes albopictus,,,,,,,,,,,,,,,,,chik,,,,,up-regulated,c6/36,cells,,,,,,,,,"Dubey et al., 2017",10.1038/s41598-017-18043-0
+miR-184,NA,TGGACGGAGAACTGATAAGGGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-184,NA,TGGACGGAGAACTGATAAGGGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c7/10,,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-275-3p,NA,TCAGGTACCTGAAGTAGCGCG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-275-5p,NA,CGCGCTAAGCAGGAACCGAGACT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,,,,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-317-3p,NA,TGAACACAGCTGGTGGTATCTCA(G),Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,up-regulated,singh,cells,,,,,,,,,,
+miR-317-3p,NA,TGAACACAGCTGGTGGTATCTCA(G),Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-317-3p,NA,TGAACACAGCTGGTGGTATCTCA(G),Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-317-3p,NA,TGAACACAGCTGGTGGTATCTCA(G),Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,down-regulated,,,,,,,,,,,,,,,,,,,,,
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c7/10,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-8-3p,NA,TAATACTGTCAGGTAAAGATGTC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-1174-3p,NA,TGACGTCATGCTCGATTGGCTC,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-1175-5p,NA,AAGTGGAGTAGTGGTCTCATCG,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-1175-5p,NA,AAGTGGAGTAGTGGTCTCATCG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-1175-3p,NA,AAGTGGAGTAGTGGTCTCATCG,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-1175-3p,NA,AAGTGGAGTAGTGGTCTCATCG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-1175-3p,NA,AAGTGGAGTAGTGGTCTCATCG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-12-5p,NA,TGAGTATTACATCAGGTACTGGT,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-12-5p,NA,TGAGTATTACATCAGGTACTGGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-12-5p,NA,TGAGTATTACATCAGGTACTGGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-1767,NA,AGACAGGAGAACAGCAAGGT,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,NA,,"Enhancing DENV-2 replication (Su et al., 2019)",,
+mR-1767,NA,AGACAGGAGAACAGCAAGGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,midgut,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+mR-1767,NA,AGACAGGAGAACAGCAAGGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,midgut,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-193-5p,NA,TGGGCTTGCGGGCGACTTG,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-193-5p,NA,TGGGCTTGCGGGCGACTTG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-193-3p,NA,TGGGCTTGCGGGCGACTTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-1951,NA,GATAGTAAGACTGCTGTGGCTA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,48,,,,,,,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-1951,NA,GATAGTAAGACTGCTGTGGCTA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-281-5p,NA,AAGAGAGCTATCCGTCGACAGT,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,5’-UTR SLA structure of DENV-2 (nt37–nt55),"Enhancing DENV-2 replication (Zhou et al., 2014)","Enhancing DENV-2 replication (Zhou et al., 2014)",,
+miR-281-5p,NA,AAGAGAGCTATCCGTCGACAGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,5’-UTR SLA structure of DENV-2 (nt37–nt55),"Enhancing DENV-2 replication (Zhou et al., 2014)","Enhancing DENV-2 replication (Zhou et al., 2014)","Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-281-5p,NA,AAGAGAGCTATCCGTCGACAGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,5’-UTR SLA structure of DENV-2 (nt37–nt55),"Enhancing DENV-2 replication (Zhou et al., 2014)","Enhancing DENV-2 replication (Zhou et al., 2014)","Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-281-5p,NA,AAGAGAGCTATCCGTCGACAGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,5’-UTR SLA structure of DENV-2 (nt37–nt55),"Enhancing DENV-2 replication (Zhou et al., 2014)","Enhancing DENV-2 replication (Zhou et al., 2014)","Su et al., 2017",10.1186/s13071-017-1966-2
+miR-283-5p,NA,AATATCAGCTGGTAATTCTG,Aedes albopictus,,,,larva,,,up-regulated,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-283-5p,NA,AATATCAGCTGGTAATTCTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,midgut,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-283-5p,NA,AATATCAGCTGGTAATTCTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-283,NA,TAGCACCATTCGAAATCAGTAC,Aedes albopictus,female,up-regulated,,adult,,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,"Feng et al., 2018",10.1371/journal.pntd.0006463
+miR-2942,NA,TATTCGAGACTTCACGAGTTAAT,Aedes albopictus,,,,larva,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,,,,
+miR-2951-5p,NA,AAGAGCTCAGCACGCAGGGGCGA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-34-5p,NA,TGGCAGTGTGGTTAGCTGGTT,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,Activation of type I interferon signaling,,"inhibits multiple flaviviruses (Smith et al., 2017)",,
+miR-34-5p,NA,TGGCAGTGTGGTTAGCTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,Activation of type I interferon signaling,,"inhibits multiple flaviviruses (Smith et al., 2017)","Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-34-5p,NA,TGGCAGTGTGGTTAGCTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,Activation of type I interferon signaling,,"inhibits multiple flaviviruses (Smith et al., 2017)","Su et al., 2017",10.1186/s13071-017-1966-2
+miR-34-5p,NA,TGGCAGTGTGGTTAGCTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,Activation of type I interferon signaling,,"inhibits multiple flaviviruses (Smith et al., 2017)","Su et al., 2019",10.1186/s13071-018-3261-2
+miR-375,NA,TTTGTTCGTTCGGCTCGCGTGA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-375,NA,TTTGTTCGTTCGGCTCGCGTGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-375,NA,TTTGTTCGTTCGGCTCGCGTGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-3809-3p,NA,GTAGGTCAGTTGGTTGGA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-3809-5p,NA,TCAGAACTTGCACGGCTGA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-424-3p,NA,CAAGAAGATGAGGCCTGCTAT,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-424-3p,NA,CAAGAAGATGAGGCCTGCTAT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-4448,NA,GGCTCGTTGGTCTAGGGGT,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,NA,,"Inhibiting DENV-2 infection (Su et al., 2019)",,
+miR-4448,NA,GGCTCGTTGGTCTAGGGGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,NA,,"Inhibiting DENV-2 infection (Su et al., 2019)","Su et al., 2017",10.1186/s13071-017-1966-2
+miR-4448,NA,GGCTCGTTGGTCTAGGGGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,NA,,"Inhibiting DENV-2 infection (Su et al., 2019)","Su et al., 2019",10.1186/s13071-018-3261-2
+miR-4728-5p,NA,TGGGAGGGCAGAGGGGCAGCA,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,NA,,"Enhancing DENV infections (Su et al., 2017)",,
+miR-4728-5p,NA,TGGGAGGGCAGAGGGGCAGCA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,NA,,"Enhancing DENV infections (Su et al., 2017)","Su et al., 2017",10.1186/s13071-017-1966-2
+miR-622,NA,AGAGTTCACTGGGTTGGAGGC,Aedes albopictus,,,,,,,,,,,,,up-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-71-3p,NA,TCTCACTACCTTGTCTTTCATG,Aedes albopictus,,,,,,,,,,,,,down-regulated,midgut,,,,,,,,,,,,,,,,,,,,
+miR-71-3p,NA,TCTCACTACCTTGTCTTTCATG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-71-3p,NA,TCTCACTACCTTGTCTTTCATG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-71-3p,NA,TCTCACTACCTTGTCTTTCATG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-956-3p,NA,TTTCGAGACCACTGCAAATCATT,Aedes albopictus,,,,,,,,,,,,,down-regulated,,,,,,,,,,,,,,,,,,,,,
+miR-956-3p,NA,TTTCGAGACCACTGCAAATCATT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-976-5p,NA,CTCTATGCAGTGCGCGCGGCT,Aedes albopictus,,,,,,,,,,,,,up-regulated,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-989,NA,TGTGATGTGACGTAGTGGTAC,Aedes albopictus,,,,,,,,,,,,,down-regulated,,,,,,,,,,,,,,,,,,,,,
+miR-989,NA,TGTGATGTGACGTAGTGGTAC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-989,NA,TGTGATGTGACGTAGTGGTAC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Liu et al., 2016",10.1111/1744-7917.12339
+miR-989,NA,TGTGATGTGACGTAGTGGTAC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-989,NA,TGTGATGTGACGTAGTGGTAC,Aedes albopictus,female,up-regulated,,adult,,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,"Feng et al., 2018",10.1371/journal.pntd.0006463
+miR-998,NA,TAGCACCATGAGATTCAGC,Aedes albopictus,,,,,,,,,,,,,down-regulated,,,,,,,,,,,,,,,,,,,,,
+miR-998,NA,TAGCACCATGAGATTCAGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-998,NA,TAGCACCATGAGATTCAGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,pupa,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,,,
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,down-regulated,,,,,,,,,,,,,,,,,,,,,
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,singh,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+let-7b-5p,NA,TGAGGTAGTAGGTTGTGTGGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+let-7,NA,TGAGGTAGTTGGTTGTATAGT,Aedes albopictus,male,,up-regulated,adult,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,,"Feng et al., 2018",10.1371/journal.pntd.0006463
+let-7,NA,TGAGGTAGTTGGTTGTATAGT,Aedes albopictus,female,up-regulated,,adult,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,,"Feng et al., 2018",10.1371/journal.pntd.0006463
+miR-1-3p,NA,TGGAATGTAAAGAAGTATGGAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,,
+miR-1-3p,NA,TGGAATGTAAAGAAGTATGGAG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,,2,,,,,,,,,,,,,
+miR-1-3p,NA,TGGAATGTAAAGAAGTATGGAG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,,,,,,,,,,,,,,,
+miR-10-5p,NA,ACCCTGTAGATCCGAATTTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,,
+miR-10-5p,NA,ACCCTGTAGATCCGAATTTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c6/36,2,,,,,,,,,,,,,
+miR-100-5p,NA,AACCCGTAGATCCGAACTTGTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-100-5p,NA,AACCCGTAGATCCGAACTTGTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-100-5p,NA,AACCCGTAGATCCGAACTTGTG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,,,,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+miR-11-3p,NA,CATCACAGTCTGAGTTCTTGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-11-5p,NA,CAAGAACTCCGGCTGTGACCTGTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-1174-3p,NA,TGACGTCATGCTCGATTGGCTC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-124,NA,TAAGGCACGCGGTGAATGCCAA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,C6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-125-5p,NA,TCCCTGAGACCCTAACTTGTGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-125-5p,NA,TCCCTGAGACCCTAACTTGTGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-125-3p,NA,ACAAGTTTTGATCTCCGGTAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-127,NA,GUAGCCAGAGGAAGAGAAA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-13-3p,NA,TATCACAGCCATTTTGACGAGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-13-3p,NA,TATCACAGCCATTTTGACGAGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-13-5p,NA,TCGTAAAAATGGTTGTGCTGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-133-3p,NA,TTGGTCCCCTTCAACCAGCTGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-133-3p,NA,TTGGTCCCCTTCAACCAGCTGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-137-3p,NA,TATTGCTTGAGAATACACGTAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-137-3p,NA,TATTGCTTGAGAATACACGTAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-14,NA,TCAGTCTTTTTCTCTCTCCTA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-14,NA,TCAGTCTTTTTCTCTCTCCTA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-143,NA,ACCCCUGAAGGAGUUUUCGGAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-157,NA,UGUGGCGUAGUUGGUAAC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-1889-3p,NA,CACGTTACAGATTGGGGTTTCC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+miR-1889-3p,NA,CACGTTACAGATTGGGGTTTCC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+miR-1889-3p,NA,CACGTTACAGATTGGGGTTTCC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-1890,NA,TGAAATCTTTGATTAGGTCTGG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c6/36,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Yan et al., 2014",10.1002/jmv.23815
+miR-1891,NA,TGAGGAGTTAATTTGCGTGTT,Aedes albopictus,female,up-regulated,,adult,,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,"Puthiyakunnon et al., 2013",10.1186/1756-3305-6-230
+miR-190-5p,NA,AGATATGTTTGATATTCTTGGTTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-190-5p,NA,AGATATGTTTGATATTCTTGGTTG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-210-3p,NA,TTGTGCGTGTGACAACGGCTAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-210-3p,NA,TTGTGCGTGTGACAACGGCTAT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-210-3p,NA,TTGTGCGTGTGACAACGGCTAT,Aedes albopictus,,,,,,,,,,,,,,,,,wolbachia,,,,,,,,,,down-regulated,c6/36,cell cytoplasm,,,,"Mayoral et al., 2014",10.1371/journal.pone.0096107
+miR-210-5p,NA,AGCTGCTGACCACTGCACAAGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-214,NA,UUCCCGGACGAGCCCCCA,Aedes albopictus,,,,,,,,,,,,,,,,,chiv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-219,NA,TGATTGTCCAAACGCAATTCTTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-2308,NA,GGUCGGUGGUUCGAAUCC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-249,NA,UCAGUCUUUUUCUCUCUCCU,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-252-5p,NA,CTAAGTACTAGTGCCGCAGGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,DENV E protein gene,Regulates gene expression of DENV-2 E protein,"Inhibiting DENV replication (Yan et al., 2014)","Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-252-5p,NA,CTAAGTACTAGTGCCGCAGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,DENV E protein gene,Regulates gene expression of DENV-2 E protein,"Inhibiting DENV replication (Yan et al., 2014)","Yan et al., 2014",10.1002/jmv.23815
+miR-252-5p,NA,CTAAGTACTAGTGCCGCAGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c6/36,2,,,,,,,,,DENV E protein gene,Regulates gene expression of DENV-2 E protein,"Inhibiting DENV replication (Yan et al., 2014)","Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-252-3p,NA,CTAAGTACTAGTGCCGCAGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,singh,2,,,,,,,,,DENV E protein gene,Regulates gene expression of DENV-2 E protein,"Inhibiting DENV replication (Yan et al., 2014)","Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-263a-3p,NA,CUAAGUACUAGUGCCGCAGGAG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-276-3p,NA,TAGGAACTTCATACCGTGCTCT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-276-3p,NA,TAGGAACTTCATACCGTGCTCT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-276-3p,NA,TAGGAACTTCATACCGTGCTCT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-276-5p,NA,AGCGAGGTATAGAGTTCCTACG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,NA,"Enhancing DENV-2 infection (Su et al., 2019)","Enhancing DENV-2 infection (Su et al., 2019)","Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-276-5p,NA,AGCGAGGTATAGAGTTCCTACG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,NA,"Enhancing DENV-2 infection (Su et al., 2019)","Enhancing DENV-2 infection (Su et al., 2019)","Su et al., 2019",10.1186/s13071-018-3261-2
+miR-276-5p,NA,AGCGAGGTATAGAGTTCCTACG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,NA,"Enhancing DENV-2 infection (Su et al., 2019)","Enhancing DENV-2 infection (Su et al., 2019)","Su et al., 2017",10.1186/s13071-017-1966-2
+miR-2765,NA,TGGTAACTCCACCACCGTTGGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-277-3p,NA,TAAATGCACTATCTGGTACGAC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-277-3p,NA,TAAATGCACTATCTGGTACGAC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-277-3p,NA,TAAATGCACTATCTGGTACGAC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-278-3p,NA,TCGGTGGGACTTTCGTCCGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-278-5p,NA,TCGGTGGGACTTTCGTCCGTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-279,NA,TGACTAGATCCACACTCATT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-279,NA,TGACTAGATCCACACTCATT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-2796,NA,GTAGGCCGGCGGAAACTACTTGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-2796,NA,GTAGGCCGGCGGAAACTACTTGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-28,NA,GUGGAGCAGUAUGGAAGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-281-3p,NA,TGTCATGGAATTGCTCTCTTTA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,5’-UTR SLA structure of DENV-2 (nt37–nt55),"Enhancing DENV-2 replication (Zhou et al., 2014)","Enhancing DENV-2 replication (Zhou et al., 2014)","Zhou et al., 2014",10.1186/s13071-014-0488-4
+miR-285,NA,TAGCACCATTCGAAATCAGTAC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-286b,NA,UGACUAGACCGAACACUCGUAUCCC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-286a-3p,NA,UGACUAGACCGAACACUCGCGUCC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-2940-5p,NA,TGGTTTATCTTATCTGTCGAGGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,"AaDnmt 2, AaArgM3","Facilitating Wolbachia infection (Hussain et al., 2011; Zhang et al., 2014) and subsequent inhibition of DENV replication (Zhang et al., 2013)","Facilitating Wolbachia infection (Hussain et al., 2011; Zhang et al., 2014) and subsequent inhibition of DENV replication (Zhang et al., 2013)","Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-2940-5p,NA,TGGTTTATCTTATCTGTCGAGGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,"AaDnmt 2, AaArgM3","Facilitating Wolbachia infection (Hussain et al., 2011; Zhang et al., 2014) and subsequent inhibition of DENV replication (Zhang et al., 2013)","Facilitating Wolbachia infection (Hussain et al., 2011; Zhang et al., 2014) and subsequent inhibition of DENV replication (Zhang et al., 2013)","Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-2940-3p,NA,GTCGACAGGGAGATAAATCACT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-2941,NA,TAGTACGGCTAGAACTCCACGGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-2941,NA,TAGTACGGCTAGAACTCCACGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-2941,NA,TAGTACGGCTAGAACTCCACGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-2941,NA,TAGTACGGCTAGAACTCCACGGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Liu et al., 2016",10.1111/1744-7917.12339
+miR-2943,NA,TTAAGTAGGCACTTGCAGGCAA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Liu et al., 2016",10.1111/1744-7917.12339
+miR-2945-3p,NA,TGACTAGAGGCAGACTCGTTT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cells,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-2945-3p,NA,TGACTAGAGGCAGACTCGTTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,,,,,,,,,,,,,"Yan et al.,  2014",10.1002/jmv.23815
+miR-2945-3p,NA,TGACTAGAGGCAGACTCGTTT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-2a-3p,NA,TATCACAGCCAGCTTTGAAGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-305-5p,NA,ATTGTACTTCATCAGGTGCTCTGG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-305-5p,NA,ATTGTACTTCATCAGGTGCTCTGG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-306-5p,NA,TCAGGTACTGAGTGACTCTCA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-306-5p,NA,TCAGGTACTGAGTGACTCTCA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-308-5p,NA,CGCGGTATATTCTTGTGGCTTG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,c6/36,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-309a,NA,TCACTGGGCAAAGTTTGTCGC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-315,NA,TTTTGATTGTTGCTCAGAAAGCC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-317-5p,NA,GGGATACACCCTGTGCTCGCT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-33-5p,NA,GTGCATTGTAGTTGCATTGCA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-33-5p,NA,GTGCATTGTAGTTGCATTGCA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,NA,NA,2,,,,,,,,,,,,"Yan et al.,  2014",10.1002/jmv.23815
+miR-4110-5p,NA,AACCAGAGAATAGCAGTGTG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-5,NA,UAGGAACUUCAUACCGUGCUCU,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-5706,NA,TCTGGATACAATGCTGAACT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-62,NA,ACGUCAAAUCAUCAUGUC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-622,NA,AGAGTTCACTGGGTTGGAGGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-622,NA,AGAGTTCACTGGGTTGGAGGC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-7-5p,NA,TGGAAGACTAGTGATTTTGTTGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-778,NA,UUGGUCCCCUUCAACCAGCUGU,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,midgut,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-8-5p,NA,CATCTTACCGGGCAGCATTAGA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-8-5p,NA,CATCTTACCGGGCAGCATTAGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,,,,,down-regulated,NA,NA,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-87,NA,GTGAGCAAATTTTCAGGTGTGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-87,NA,GTGAGCAAATTTTCAGGTGTGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-87,NA,GTGAGCAAATTTTCAGGTGTGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-87,NA,GTGAGCAAATTTTCAGGTGTGT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2019",10.1186/s13071-018-3261-2
+miR-927-5p,NA,TTTAGAATTCCTACGCTTTACC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,FLN filamin,,"Reguating antimicrobial peptides, promoting DENV infection","Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-927-5p,NA,TTTAGAATTCCTACGCTTTACC,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,midgut,,,,,,FLN filamin,,"Reguating antimicrobial peptides, promoting DENV infection","Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-927-5p,NA,TTTAGAATTCCTACGCTTTACC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,FLN filamin,,"Reguating antimicrobial peptides, promoting DENV infection","Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-927-5p,NA,TTTAGAATTCCTACGCTTTACC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,FLN filamin,,"Reguating antimicrobial peptides, promoting DENV infection","Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-927-5p,NA,TTTAGAATTCCTACGCTTTACC,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,FLN filamin,,"Reguating antimicrobial peptides, promoting DENV infection","Avila-Bonilla et al., 2020",10.1099/jgv.0.001441
+miR-927-3p,NA,TAAGGCTTTGGATTGCTAA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-92b-3p,NA,AATTGCACTTGTCCCGGCCTG,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-932-5p,NA,TCAATTCCGTAGTGCATTGCAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-932-5p,NA,TCAATTCCGTAGTGCATTGCAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-957-3p,NA,NO HAY SECUENCIA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-957-3p,NA,NO HAY SECUENCIA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-970-3p,NA,TCATAAGACACACGCGGCTAT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,cells,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-970-3p,NA,TCATAAGACACACGCGGCTAT,Aedes albopictus,male,,up-regulated,adult,,,,,up-regulated,,,,,,,,,,,,,,,,,,,,,,,,"Feng et al., 2018",10.1371/journal.pntd.0006463
+miR-980-3p,NA,TAGCTGCCTAGTGAAGGGCAAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-980-5p,NA,GGGTTCGTGACTGGGGTAG,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-988-5p,NA,GTGTGCTTTGTGACAATGAGAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-988-5p,NA,GTGTGCTTTGTGACAATGAGAT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,midgut,NA,2,,,,,,,,,,,,"Su et al., 2017",10.1186/s13071-017-1966-2
+miR-988-3p,NA,GTGTGCTTTGTGACAATGAGAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-993-3p,NA,GAAGCTCGTCTCTACAGGTAT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,up-regulated,midgut,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
+miR-996,NA,TGACTAGATTACATGCTCGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-996,NA,TGACTAGATTACATGCTCGT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-998-5p,NA,ACTGAACTCTCGTGGGTCTGCA,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,up-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-999-3p,NA,TGTTAACTGTAAGACTGTGTCT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+miR-999-3p,NA,TGTTAACTGTAAGACTGTGTCT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+miR-9a-5p,NA,TCTTTGGTTATCTAGCTGTATGA,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,cell,c6/36,2,,,,,,,,,,,,"Avila-Bonilla et al., 2017",10.1016/j.virusres.2017.03.005
+miR-iab-8-5p,NA,TTACGTATACTGAAGGTAT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,singh,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+bantam-3p,NA,TGAGATCATTTTGAAAGCTGATT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,c6/36,cell,,,,,,,,,"Shrinet et al., 2014",10.1371/journal.pntd.0002616
+bantam-3p,NA,TGAGATCATTTTGAAAGCTGATT,Aedes albopictus,,,,,,,,,,,,,,,,,chikv,,,,,down-regulated,NA,saliva,,,,,,,,,"Maharaj et al., 2015",10.1371/journal.pntd.0003386
+bantam-5p,NA,CCGGTTTTCATTTTCGATCTGACT,Aedes albopictus,,,,,,,,,,,,,,,,,denv,down-regulated,NA,NA,2,,,,,,,,,,,,"Liu et al., 2015",10.1186/s13578-015-0009-y
