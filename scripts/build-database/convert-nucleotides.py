@@ -5,7 +5,8 @@ from Bio.Seq import Seq
 
 # Import database
 aal_miRNAs = pd.read_csv(
-    "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/aal-complete/aal-mirna-seq.csv"
+    "/Users/skinofmyeden/Documents/01-livs/14-programming/git/"
+    "miRNAs-mosquitoes/sequences/aal-complete/aal-mirna-seq.csv"
 )
 
 
@@ -22,5 +23,6 @@ print(aal_miRNAs)
 
 # saving the dataframe
 aal_miRNAs.to_csv(
-    "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/aal-complete/aal-mirna-seq-U.csv"
+    "/Users/skinofmyeden/Documents/01-livs/14-programming/git/"
+    "miRNAs-mosquitoes/sequences/aal-complete/aal-mirna-seq-U.csv"
 )
