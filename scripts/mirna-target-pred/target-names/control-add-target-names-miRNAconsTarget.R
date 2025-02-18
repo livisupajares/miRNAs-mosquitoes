@@ -128,7 +128,7 @@ print(result_pita_let_7b)
 # save tcontrol_final to csv
 # miranda
 write.csv(t_control_miranda,
-          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-control-miranda.csv",
+          "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-control-miranda.csv",
           row.names = FALSE)
 
 # ts
@@ -143,13 +143,13 @@ write.csv(t_control_pita,
 
 # save mRNA predicted proteins location
 # miranda
-write.csv(result_miranda_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-mir-548ba.csv", row.names = FALSE)
-write.csv(result_miranda_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-let-7b.csv", row.names = FALSE)
+write.csv(result_miranda_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-mir-548ba.csv", row.names = TRUE)
+write.csv(result_miranda_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-let-7b.csv", row.names = TRUE)
 
 # ts
-write.csv(result_ts_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-mir-548ba.csv", row.names = FALSE)
-write.csv(result_ts_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-let-7b.csv", row.names = FALSE)
+write.csv(result_ts_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-mir-548ba.csv", row.names = TRUE)
+write.csv(result_ts_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-let-7b.csv", row.names = TRUE)
 
 # PITA
-write.csv(result_pita_miR_548ba, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-mir-548ba.csv", row.names = FALSE)
-write.csv(result_pita_let_7b, "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-let-7b.csv", row.names = FALSE)
+write.csv(result_pita_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-mir-548ba.csv", row.names = TRUE)
+write.csv(result_pita_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-let-7b.csv", row.names = TRUE)
