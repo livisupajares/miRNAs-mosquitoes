@@ -10,6 +10,5 @@ aal_miRNAs = pd.read_csv("/Users/skinofmyeden/Documents/01-livs/14-programming/g
 def transcribe_dna_to_rna(miRNA_seq):
     return str(Seq(miRNA_seq).transcribe())
 
-my_seq = Seq('ACTGactgACTG')
-my_seq = my_seq.transcribe()
-print(my_seq)
+# Use the function above directly into the data frame
+aal_miRNAs['mat_seq'] = aal_miRNAs['mat_seq'].apply(transcribe_dna_to_rna)
