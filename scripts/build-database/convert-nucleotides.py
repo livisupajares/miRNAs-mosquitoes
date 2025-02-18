@@ -15,3 +15,6 @@ aal_miRNAs['mat_seq'] = aal_miRNAs['mat_seq'].apply(transcribe_dna_to_rna)
 
 # Print final database
 print(aal_miRNAs)
+
+# saving the dataframe
+aal_miRNAs.to_csv('/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/aal-complete/aal-mirna-seq-U.csv')
