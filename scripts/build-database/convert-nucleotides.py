@@ -12,3 +12,6 @@ def transcribe_dna_to_rna(miRNA_seq):
 
 # Use the function above directly into the data frame
 aal_miRNAs['mat_seq'] = aal_miRNAs['mat_seq'].apply(transcribe_dna_to_rna)
+
+# Print final database
+print(aal_miRNAs)
