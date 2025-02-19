@@ -22,3 +22,6 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl("NO HAY SECUENCIA" ,aal_mirna_ma
 
 # ==== Deleting data that is not from DENV-2 ====
 aal_mirna_mat_denv <- aal_mirna_mat_denv[grepl("denv",aal_mirna_mat_denv$infection),]
+
+# Deleting the infection column
+aal_mirna_mat_denv <- aal_mirna_mat_denv[-c(3)]
