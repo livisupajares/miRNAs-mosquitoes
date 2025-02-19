@@ -17,5 +17,8 @@ aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
 colnames(aal_mirna)
 aal_mirna_mat_denv <- aal_mirna[-c(1,3,5:21,23:39)]
 
+# ==== Deleting data that aren't nucleotides ==== 
+aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl("NO HAY SECUENCIA" ,aal_mirna_mat_denv$mat_seq),]
+
 # ==== Deleting data that is not from DENV-2 ====
 aal_mirna_mat_denv <- aal_mirna_mat_denv[grepl("denv",aal_mirna_mat_denv$infection),]
