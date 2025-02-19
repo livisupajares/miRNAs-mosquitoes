@@ -16,3 +16,6 @@ aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
 # Show name of columns
 colnames(aal_mirna)
 aal_mirna_mat_denv <- aal_mirna[-c(1,3,5:21,23:39)]
+
+# ==== Deleting data that is not from DENV-2 ====
+aal_mirna_mat_denv <- aal_mirna_mat_denv[grepl("denv",aal_mirna_mat_denv$infection),]
