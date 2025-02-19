@@ -11,3 +11,9 @@ aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miran
 aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/ts/ts.csv")
 # PITA
 aae_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/pita/pita.csv")
+
+# ==== FIX DATA ==== #
+# Eliminate all decimal parts without rounding
+aae_miranda$mRNA <- sub("\\..*", "", aae_miranda$mRNA)
+aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
+aae_pita$mRNA <- sub("\\..*", "", aae_pita$mRNA)
