@@ -11,3 +11,4 @@ aal_mirna <- read.csv("sequences/aal-complete/aal-mirna-seq-U.csv",
 
 # Add aal- before miRNA name
 aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
+
