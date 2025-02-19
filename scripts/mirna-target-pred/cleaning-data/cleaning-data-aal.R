@@ -28,3 +28,7 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv[-c(3)]
 
 # ==== Deleting duplicated rows based on miRNA_name ====
 aal_mirna_mat_denv <- aal_mirna_mat_denv[!duplicated(aal_mirna_mat_denv$mirna_name), ]
+
+# ==== Delete the numbers from miRNA strings ====
+# Delete parenthesis
+aal_mirna_mat_denv$mat_seq <- gsub("\\(G\\)", "", aal_mirna_mat_denv$mat_seq)
