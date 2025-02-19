@@ -25,3 +25,6 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv[grepl("denv",aal_mirna_mat_denv$infecti
 
 # Deleting the infection column
 aal_mirna_mat_denv <- aal_mirna_mat_denv[-c(3)]
+
+# ==== Deleting duplicated rows based on miRNA_name ====
+aal_mirna_mat_denv <- aal_mirna_mat_denv[!duplicated(aal_mirna_mat_denv$mirna_name), ]
