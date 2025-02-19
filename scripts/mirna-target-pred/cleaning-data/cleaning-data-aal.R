@@ -12,3 +12,7 @@ aal_mirna <- read.csv("sequences/aal-complete/aal-mirna-seq-U.csv",
 # Add aal- before miRNA name
 aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
 
+# ===== Deleting extra columns =====
+# Show name of columns
+colnames(aal_mirna)
+aal_mirna_mat_denv <- aal_mirna[-c(1,3,5:21,23:39)]
