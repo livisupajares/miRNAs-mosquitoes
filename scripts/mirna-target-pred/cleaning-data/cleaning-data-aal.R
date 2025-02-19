@@ -32,3 +32,7 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv[!duplicated(aal_mirna_mat_denv$mirna_na
 # ==== Delete the numbers from miRNA strings ====
 # Delete parenthesis
 aal_mirna_mat_denv$mat_seq <- gsub("\\(G\\)", "", aal_mirna_mat_denv$mat_seq)
+
+# ==== Convert df to fasta ====
+# convert df to fasta and save output into a custom location for subsequent analysis
+df_2_fasta(aal_mirna_mat_denv, "sequences/aal-complete/aal_test_mat_denv.fasta")
