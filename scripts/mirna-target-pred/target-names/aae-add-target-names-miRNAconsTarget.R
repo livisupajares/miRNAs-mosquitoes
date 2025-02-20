@@ -1,10 +1,10 @@
 # ~~~~~ ADD TARGET NAMES ~~~~~ #
 # if (!require("BiocManager", quietly = TRUE))
 #   install.packages("BiocManager")
-# 
+#
 # BiocManager::install("biomaRt")
 
-# ===== Load libraries & files ===== 
+# ===== Load libraries & files =====
 library("dplyr")
 library("biomaRt")
 source("scripts/functions.R")
@@ -12,11 +12,14 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda/miranda.csv")
+aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/
+                          miranda/miranda.csv")
 # ts
-aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/ts/ts.csv")
+aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/ts/
+                     ts.csv")
 # PITA
-aae_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/pita/pita.csv")
+aae_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/pita/
+                       pita.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding

@@ -19,7 +19,10 @@ colnames(aal_mirna)
 aal_mirna_mat_denv <- aal_mirna[-c(1, 3, 5:21, 23:39)]
 
 # ==== Deleting data that aren't nucleotides ====
-aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl("NO HAY SECUENCIA", aal_mirna_mat_denv$mat_seq), ]
+aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl(
+  "NO HAY SECUENCIA",
+  aal_mirna_mat_denv$mat_seq
+), ]
 
 # ==== Deleting data that is not from DENV-2 ====
 aal_mirna_mat_denv <- aal_mirna_mat_denv[grepl(
@@ -40,5 +43,6 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv[!duplicated(
 aal_mirna_mat_denv$mat_seq <- gsub("\\(G\\)", "", aal_mirna_mat_denv$mat_seq)
 
 # ==== Convert df to fasta ====
-# convert df to fasta and save output into a custom location for subsequent analysis
+# convert df to fasta and save output into a custom location for
+# subsequent analysis
 df_2_fasta(aal_mirna_mat_denv, "sequences/aal-complete/aal_test_mat_denv.fasta")

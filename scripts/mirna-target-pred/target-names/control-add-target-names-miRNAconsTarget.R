@@ -1,13 +1,14 @@
 # ~~~~~ ADD TARGET NAMES ~~~~~ #
 # if (!require("BiocManager", quietly = TRUE))
 #   install.packages("BiocManager")
-# 
+#
 # BiocManager::install("ensembldb")
 # BiocManager::install("EnsDb.Hsapiens.v86")
 
-# https://www.bioconductor.org/packages/devel/bioc/manuals/ensembldb/man/ensembldb.pdf
+# https://www.bioconductor.org/packages/devel/bioc/manuals/ensembldb/man/
+# ensembldb.pdf
 
-# ===== Load libraries & files ===== 
+# ===== Load libraries & files =====
 library("dplyr")
 library("ensembldb")
 library("EnsDb.Hsapiens.v86") # Homo sapiens database
@@ -16,11 +17,15 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-control_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/miranda.csv")
+control_miranda <- read.delim("results/miRNAconsTarget/
+                              miRNAconsTarget_hsa_controles_all/miranda/
+                              miranda.csv")
 # ts
-control_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/ts.csv")
+control_ts <- read.delim("results/miRNAconsTarget/
+                         miRNAconsTarget_hsa_controles_all/targetspy/ts.csv")
 # PITA
-control_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/pita.csv")
+control_pita <- read.delim("results/miRNAconsTarget/
+                           miRNAconsTarget_hsa_controles_all/pita/pita.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
@@ -34,9 +39,18 @@ hasProteinData(hsa)
 
 # ===== API ENSEMBL ===== #
 # test only for one transcript ID
-tx_miranda <- transcripts(hsa, filter = TxIdFilter(control_miranda$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
-tx_ts <- transcripts(hsa, filter = TxIdFilter(control_ts$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
-tx_pita <- transcripts(hsa, filter = TxIdFilter(control_pita$mRNA), columns = c("tx_id", "uniprot_id", "gene_name"))
+tx_miranda <- transcripts(hsa,
+  filter = TxIdFilter(control_miranda$mRNA),
+  columns = c("tx_id", "uniprot_id", "gene_name")
+)
+tx_ts <- transcripts(hsa,
+  filter = TxIdFilter(control_ts$mRNA),
+  columns = c("tx_id", "uniprot_id", "gene_name")
+)
+tx_pita <- transcripts(hsa,
+  filter = TxIdFilter(control_pita$mRNA),
+  columns = c("tx_id", "uniprot_id", "gene_name")
+)
 
 # ==== FIX DATABASE PRESENTATION ==== #
 # Ensure you have a valid result and convert to dataframes.
@@ -57,14 +71,15 @@ df_pita <- df_pita %>%
 # Merge transcript name df with initial df
 t_control_miranda <- merge_ensembl_to_df(df_miranda, control_miranda)
 t_control_ts <- merge_ensembl_to_df(df_ts, control_ts)
-t_control_pita<- merge_ensembl_to_df(df_pita, control_pita)
+t_control_pita <- merge_ensembl_to_df(df_pita, control_pita)
 
 # Get the number of columns in merged_df
 # n_cols_miranda <- ncol(t_control_miranda)
 # n_cols_ts <- ncol(t_control_ts)
 # n_cols_pita <- ncol(t_control_pita)
 
-# Reorder columns: first column, then the last two columns, then the remaining columns
+# Reorder columns: first column, then the last two columns,
+# then the remaining columns
 t_control_miranda <- reorder_columns(t_control_miranda)
 t_control_ts <- reorder_columns(t_control_ts)
 t_control_pita <- reorder_columns(t_control_pita)
@@ -87,25 +102,52 @@ vtargets_hsa_let_7b <- c("CDC25A", "BCL7A")
 
 # Find rows where gene_name is in the target list
 ## miranda
-matching_rows_miranda_miR_548ba <- which(t_control_miranda$gene_name %in% vtargets_hsa_miR_548ba)
-matching_rows_miranda_let_7b <- which(t_control_miranda$gene_name %in% vtargets_hsa_let_7b)
+matching_rows_miranda_miR_548ba <- which(t_control_miranda$gene_name %in%
+  vtargets_hsa_miR_548ba)
+matching_rows_miranda_let_7b <- which(t_control_miranda$gene_name %in%
+  vtargets_hsa_let_7b)
 ## TS
-matching_rows_ts_miR_548ba <- which(t_control_ts$gene_name %in% vtargets_hsa_miR_548ba)
-matching_rows_ts_let_7b <- which(t_control_ts$gene_name %in% vtargets_hsa_let_7b)
+matching_rows_ts_miR_548ba <- which(t_control_ts$gene_name %in%
+  vtargets_hsa_miR_548ba)
+matching_rows_ts_let_7b <- which(t_control_ts$gene_name %in%
+  vtargets_hsa_let_7b)
 ## PITA
-matching_rows_pita_miR_548ba <- which(t_control_pita$gene_name %in% vtargets_hsa_miR_548ba)
-matching_rows_pita_let_7b <- which(t_control_pita$gene_name %in% vtargets_hsa_let_7b)
+matching_rows_pita_miR_548ba <- which(t_control_pita$gene_name %in%
+  vtargets_hsa_miR_548ba)
+matching_rows_pita_let_7b <- which(t_control_pita$gene_name %in%
+  vtargets_hsa_let_7b)
 
 # Extract corresponding rows with microRNA information
 ## miranda
-result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c("gene_name", "microRNA", "score")]
-result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score")]
+result_miranda_miR_548ba <- t_control_miranda[
+  matching_rows_miranda_miR_548ba,
+  c(
+    "gene_name", "microRNA",
+    "score"
+  )
+]
+result_miranda_let_7b <- t_control_miranda[
+  matching_rows_miranda_let_7b,
+  c("gene_name", "microRNA", "score")
+]
 ## TS
-result_ts_miR_548ba <- t_control_ts[matching_rows_ts_miR_548ba, c("gene_name", "microRNA", "score")]
-result_ts_let_7b <- t_control_ts[matching_rows_ts_let_7b, c("gene_name", "microRNA", "score")]
+result_ts_miR_548ba <- t_control_ts[
+  matching_rows_ts_miR_548ba,
+  c("gene_name", "microRNA", "score")
+]
+result_ts_let_7b <- t_control_ts[
+  matching_rows_ts_let_7b,
+  c("gene_name", "microRNA", "score")
+]
 ## PITA
-result_pita_miR_548ba <- t_control_pita[matching_rows_pita_miR_548ba, c("gene_name", "microRNA", "energy")]
-result_pita_let_7b <- t_control_pita[matching_rows_pita_let_7b, c("gene_name", "microRNA", "energy")]
+result_pita_miR_548ba <- t_control_pita[
+  matching_rows_pita_miR_548ba,
+  c("gene_name", "microRNA", "energy")
+]
+result_pita_let_7b <- t_control_pita[
+  matching_rows_pita_let_7b,
+  c("gene_name", "microRNA", "energy")
+]
 
 # Print the result
 ## miranda
@@ -128,28 +170,50 @@ print(result_pita_let_7b)
 # save tcontrol_final to csv
 # miranda
 write.csv(t_control_miranda,
-          "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-control-miranda.csv",
-          row.names = FALSE)
+  "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/
+  t-control-miranda.csv",
+  row.names = FALSE
+)
 
 # ts
 write.csv(t_control_ts,
-          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-control-ts.csv",
-          row.names = FALSE)
+  "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-control-ts.csv",
+  row.names = FALSE
+)
 
 # PITA
 write.csv(t_control_pita,
-          "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-control-pita.csv",
-          row.names = FALSE)
+  "/home/cayetano/livisu/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-control-pita.csv",
+  row.names = FALSE
+)
 
 # save mRNA predicted proteins location
 # miranda
-write.csv(result_miranda_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-mir-548ba.csv", row.names = TRUE)
-write.csv(result_miranda_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/miranda/t-let-7b.csv", row.names = TRUE)
+write.csv(result_miranda_miR_548ba, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/miranda/t-mir-548ba.csv",
+  row.names = TRUE
+)
+write.csv(result_miranda_let_7b, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/miranda/t-let-7b.csv",
+  row.names = TRUE
+)
 
 # ts
-write.csv(result_ts_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-mir-548ba.csv", row.names = TRUE)
-write.csv(result_ts_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/targetspy/t-let-7b.csv", row.names = TRUE)
+write.csv(result_ts_miR_548ba, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/targetspy/t-mir-548ba.csv",
+  row.names = TRUE
+)
+write.csv(result_ts_let_7b, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/targetspy/t-let-7b.csv",
+  row.names = TRUE
+)
 
 # PITA
-write.csv(result_pita_miR_548ba, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-mir-548ba.csv", row.names = TRUE)
-write.csv(result_pita_let_7b, "results/miRNAconsTarget/miRNAconsTarget_hsa_controles_all/pita/t-let-7b.csv", row.names = TRUE)
+write.csv(result_pita_miR_548ba, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/pita/t-mir-548ba.csv",
+  row.names = TRUE
+)
+write.csv(result_pita_let_7b, "results/miRNAconsTarget/
+          miRNAconsTarget_hsa_controles_all/pita/t-let-7b.csv",
+  row.names = TRUE
+)
