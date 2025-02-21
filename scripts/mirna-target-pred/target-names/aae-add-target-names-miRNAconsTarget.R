@@ -24,4 +24,4 @@ aae_miranda$mRNA <- sub("\\..*", "", aae_miranda$mRNA)
 aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
 
 # Change variable name to match the other databases
-aae_vectorbase <- aae_vectorbase %>% rename(source_id = transcript_id)
+colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
