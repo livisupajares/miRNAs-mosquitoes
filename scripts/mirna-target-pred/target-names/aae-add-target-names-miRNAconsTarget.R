@@ -15,7 +15,7 @@ aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miran
 # ts
 aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/targetspy-aae.csv")
 
-# vectorbase aae transcripts
+# vectorbase aae transcripts Foshan strain
 aae_vectorbase <- read.csv("databases/vector-base-mosquitos/aae-transcript-names-vectorbase.csv")
 
 # ==== FIX DATA ==== #
