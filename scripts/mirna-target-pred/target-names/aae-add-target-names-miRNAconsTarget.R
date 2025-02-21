@@ -41,6 +41,12 @@ aae_ts_tx_names <- merge(aae_ts, aal_important_transcr, by.x = "mRNA", by.y = "t
 aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
 aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
 
+# TODO: select by each miRNA
+# TODO: then filter by highest score and lowest energy
+# TODO: if there are multiple miRNAs in the same target, pick by highest score
+# and lowest energy.
+# https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
+# https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
 # Filter by highest to lowest score value
 aae_miranda_tx_names <- aae_miranda_tx_names %>% arrange(desc(score))
 aae_ts_tx_names <- aae_ts_tx_names %>% arrange(desc(score))
