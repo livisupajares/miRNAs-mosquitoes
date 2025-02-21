@@ -15,9 +15,6 @@ source("scripts/functions.R")
 aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/
                           miranda-aae/miranda-aae.csv")
 # ts
-# PITA
-aae_pita <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/pita/
-                       pita.csv")
 aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy/
                      targetspy-aae.csv")
 
