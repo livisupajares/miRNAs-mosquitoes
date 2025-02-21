@@ -32,3 +32,6 @@ aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_
 # ==== MERGE DATABASES ====
 # merge aae_miranda with aal_vectorbase matching transcript_ID
 aae_miranda_tx_names <- merge(aae_miranda, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
+
+# merge aae_ts with aal_vectorbase matching transcript_ID
+aae_ts_tx_names <- merge(aae_ts, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
