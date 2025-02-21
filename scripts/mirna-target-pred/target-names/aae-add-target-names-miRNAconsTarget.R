@@ -25,3 +25,6 @@ aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
 
 # Change variable name to match the other databases
 colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
+
+# Filter the columns we will add to the aae_miranda and aae_ts dataframes
+aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_product_descrip", "uniprot_id")
