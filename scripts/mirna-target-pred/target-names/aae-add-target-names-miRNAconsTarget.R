@@ -17,7 +17,7 @@ aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miran
 aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/targetspy-aae.csv")
 
 # vectorbase aae transcripts
-aae_vectorbase <- read.delim("databases/vector-base-mosquitos/aae-transcript-names-vectorbase.csv")
+aae_vectorbase <- read.csv("databases/vector-base-mosquitos/aae-transcript-names-vectorbase.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
