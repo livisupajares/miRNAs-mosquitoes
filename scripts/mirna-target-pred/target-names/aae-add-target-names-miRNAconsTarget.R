@@ -6,7 +6,6 @@
 
 # ===== Load libraries & files =====
 library("dplyr")
-library("biomaRt")
 source("scripts/functions.R")
 
 # ===== Importing data ===== #
