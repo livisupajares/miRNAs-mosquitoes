@@ -12,11 +12,9 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/
-                          miranda-aae/miranda-aae.csv")
+aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/miranda-aae.csv")
 # ts
-aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy/
-                     targetspy-aae.csv")
+aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/targetspy-aae.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
