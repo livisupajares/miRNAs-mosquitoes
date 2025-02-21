@@ -44,3 +44,8 @@ aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
 # Filter by highest to lowest score value
 aae_miranda_tx_names <- aae_miranda_tx_names %>% arrange(desc(score))
 aae_ts_tx_names <- aae_ts_tx_names %>% arrange(desc(score))
+
+# ==== DOWNLOAD DATABASE ====
+# save filtered database
+aae_miranda_tx_names <- write.csv(aae_miranda_tx_names, "results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/aae-miranda-tx-names.csv")
+aae_ts_tx_names <- write.csv(aae_ts_tx_names, "results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/aae-targetspy-tx-names.csv")
