@@ -22,7 +22,6 @@ aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names
 # Eliminate all decimal parts without rounding
 aae_miranda$mRNA <- sub("\\..*", "", aae_miranda$mRNA)
 aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
-aae_pita$mRNA <- sub("\\..*", "", aae_pita$mRNA)
 
 # Change variable name to match the other databases
 aae_vectorbase <- aae_vectorbase %>% rename(source_id = transcript_id)
