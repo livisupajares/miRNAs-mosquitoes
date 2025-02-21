@@ -39,7 +39,4 @@ aae_ts_tx_names <- merge(aae_ts, aal_important_transcr, by.x = "mRNA", by.y = "t
 # reorder columns so transcript product description and uniprot_id are 
 # between mRNA and miRNA columns.
 aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
-
-# reorder columns so transcript product description and uniprot_id are 
-# between mRNA and miRNA columns.
 aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
