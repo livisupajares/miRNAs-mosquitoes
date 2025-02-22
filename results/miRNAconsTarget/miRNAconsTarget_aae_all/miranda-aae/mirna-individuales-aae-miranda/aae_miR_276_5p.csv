@@ -1,21 +1,37 @@
 "mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF006320-RA","unspecified product","A0A182GAE4","aae-miR-276-5p",-16.44,338,358,159
-"AALF008773-RA","unspecified product","A0A182GF02","aae-miR-276-5p",-16.38,36,57,159
-"AALF026098-RA","unspecified product","A0A182HBR2,A0A1W7R6V5,A0A1W7R6Y6","aae-miR-276-5p",-17.47,751,771,157
 "AALF002156-RA","protein tyrosine phosphatase, non-receptor type nt1 [Source:Projected from Aedes aegypti (AAEL001919) VB Community Annotation]","A0A023ET57,A0A182G3J1","aae-miR-276-5p",-16.91,122,142,157
-"AALF016069-RA","unspecified product","A0A182GUM5","aae-miR-276-5p",-15.15,456,476,156
-"AALF002274-RA","unspecified product","A0A182G3R0","aae-miR-276-5p",-24.09,641,661,155
 "AALF020979-RA","U2 snRNP auxiliary factor large subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H3K3]","A0A182H3K3","aae-miR-276-5p",-24.09,640,660,155
-"AALF027910-RA","unspecified product","A0A182HEI5","aae-miR-276-5p",-15.29,457,477,155
 "AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-miR-276-5p",-24.39,7268,7289,154
-"AALF004148-RA","unspecified product","A0A182G6Q0","aae-miR-276-5p",-23.87,507,528,154
 "AALF022536-RA","Gamma-tubulin complex component [Source:UniProtKB/TrEMBL;Acc:A0A182H666]","A0A182H666","aae-miR-276-5p",-19.06,543,564,154
-"AALF012214-RA","unspecified product","A0A023ELL2,A0A182GLZ3","aae-miR-276-5p",-18.46,15,37,154
-"AALF016050-RA","unspecified product","A0A182GUL1","aae-miR-276-5p",-18.4,6644,6664,154
 "AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-276-5p",-16.05,6025,6045,154
 "AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-276-5p",-17.58,18377,18396,153
 "AALF027349-RA","short-chain dehydrogenase [Source:Projected from Aedes aegypti (AAEL003959) VB Community Annotation]","A0A182HDN9","aae-miR-276-5p",-23.36,8,28,151
-"AALF027396-RA","unspecified product","A0A182HDQ7","aae-miR-276-5p",-21.96,122,142,151
-"AALF010842-RA","unspecified product","A0A182H373","aae-miR-276-5p",-21.53,951,971,151
-"AALF007211-RA","unspecified product","A0A182GBY5,A0A1W7R654,A0A1W7R6I8","aae-miR-276-5p",-19.79,2352,2372,151
-"AALF018296-RA","unspecified product","A0A023EKJ1,A0A023EST1,A0A182GYR3","aae-miR-276-5p",-18.18,302,322,151
+"AALF017552-RA","Transporter [Source:UniProtKB/TrEMBL;Acc:A0A182GXE6]","A0A182GXE6","aae-miR-276-5p",-22.96,1524,1543,149
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-276-5p",-20.4,17920,17939,149
+"AALF015184-RA","protein oskar [Source:Projected from Aedes aegypti (AAEL000442) VB Community Annotation]","A0A182GSX8","aae-miR-276-5p",-16.36,27,47,149
+"AALF020491-RA","sulphate transporter [Source:Projected from Aedes aegypti (AAEL003548) VB Community Annotation]","A0A182H2P2","aae-miR-276-5p",-23.1,456,476,147
+"AALF026099-RA","glutamate cysteine ligase [Source:Projected from Aedes aegypti (AAEL008105) VB Community Annotation]","A0A023EVH1,A0A182HBR3","aae-miR-276-5p",-18.59,625,646,147
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aae-miR-276-5p",-15.98,5809,5829,147
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aae-miR-276-5p",-19.24,15769,15790,146
+"AALF015580-RA","cyclophilin-6 [Source:Projected from Aedes aegypti (AAEL005690) VB Community Annotation]","A0A023EVR1,A0A182GTN3","aae-miR-276-5p",-21.18,311,330,145
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-276-5p",-16.43,9524,9546,145
+"AALF005741-RA","Protein kinase C [Source:UniProtKB/TrEMBL;Acc:A0A182G9G7]","A0A182G9G7","aae-miR-276-5p",-16.19,1339,1357,145
+"AALF023595-RA","transportin [Source:Projected from Aedes aegypti lvpagwg (AAEL003573) VB Community Annotation]","A0A182H7T2","aae-miR-276-5p",-14.75,399,420,145
+"AALF006898-RA","leucine rich repeat protein [Source:Projected from Aedes aegypti (AAEL003554) VB Community Annotation]","A0A023EPT7,A0A182GBE1,A0A1W7R6P9","aae-miR-276-5p",-21.14,17,37,144
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-276-5p",-18.31,1078,1098,143
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-276-5p",-16.25,11896,11916,143
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-miR-276-5p",-17.37,11540,11560,142
+"AALF022918-RA","DNA topoisomerase type I [Source:Projected from Aedes aegypti (AAEL002551) VB Community Annotation]","A0A182H6T8","aae-miR-276-5p",-16.97,728,749,142
+"AALF008414-RA","Non-specific serine/threonine protein kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GE93]","A0A182GE93","aae-miR-276-5p",-14.83,516,536,142
+"AALF027460-RA","folate carrier protein [Source:Projected from Aedes aegypti (AAEL006879) VB Community Annotation]","A0A023EIT4,A0A023EN89,A0A182HDU3","aae-miR-276-5p",-19.04,1641,1659,141
+"AALF019046-RA","prolyl endopeptidase (prolyl oligopeptidase) [Source:Projected from Aedes aegypti (AAEL009142) VB Community Annotation]","A0A182H044","aae-miR-276-5p",-18.04,405,425,141
+"AALF002937-RA","Exocyst complex component [Source:UniProtKB/TrEMBL;Acc:A0A182G4S8]","A0A182G4S8","aae-miR-276-5p",-16.58,2163,2185,141
+"AALF016238-RA","valyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL004327) VB Community Annotation]","A0A182GV15","aae-miR-276-5p",-18.24,2086,2106,140
+"AALF009781-RA","troponin C [Source:Projected from Aedes aegypti (AAEL006572) VB Community Annotation]","A0A023ED55,A0A023EEV3,A0A023EF90,A0A023EFH0,A0A023ELU9,A0A182GH33,A0A1W7R6S5,A0A1W7R6T1","aae-miR-276-5p",-15.87,117,137,140
+"AALF012687-RA","Palmitoyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GMW0]","A0A182GMW0","aae-miR-276-5p",-15.7,797,819,140
+"AALF025919-RA","PIWI [Source:Projected from Aedes aegypti lvpagwg (AAEL007823) VB Community Annotation]","A0A182HBG7","aae-miR-276-5p",-15.12,317,337,140
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aae-miR-276-5p",-15.09,1772,1792,140
+"AALF003084-RA","Histone H2A [Source:UniProtKB/TrEMBL;Acc:A0A023EFG2]","A0A023EFG2,A0A023EG71","aae-miR-276-5p",-14.78,111,131,140
+"AALF009115-RA","Histone H2A [Source:UniProtKB/TrEMBL;Acc:A0A023EFG2]","A0A023EFG2","aae-miR-276-5p",-14.78,111,131,140
+"AALF028388-RA","Histone H2A [Source:UniProtKB/TrEMBL;Acc:A0A182HF66]","A0A182HF66","aae-miR-276-5p",-14.78,111,131,140
+"AALF011270-RA","cleavage and polyadenylation specificity factor cpsf [Source:Projected from Aedes aegypti (AAEL000832) VB Community Annotation]","A0A182GK16","aae-miR-276-5p",-14.2,281,303,140

@@ -1,21 +1,35 @@
 "mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF011564-RA","unspecified product","A0A182GKN9","aae-miR-308-3p",-18.11,3505,3522,168
 "AALF004127-RA","phosphatase and actin regulator [Source:Projected from Aedes aegypti (AAEL014792) VB Community Annotation]","A0A182G6N4","aae-miR-308-3p",-14.8,696,713,162
 "AALF020334-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL011578) VB Community Annotation]","A0A182H2D3","aae-miR-308-3p",-18.56,3134,3151,161
 "AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-308-3p",-17.47,33032,33049,160
-"AALF026192-RA","unspecified product","A0A023EIT7,A0A182HBW5","aae-miR-308-3p",-18.79,93,111,159
 "AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-308-3p",-18,817,834,159
 "AALF014954-RA","Putative piopio [Source:UniProtKB/TrEMBL;Acc:A0A023ERW3]","A0A023EMB8,A0A023ENI3,A0A023ERW3,A0A023ETS9","aae-miR-308-3p",-17.21,115,133,159
 "AALF016309-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL012219) VB Community Annotation]","A0A023EVM9,A0A182GV58","aae-miR-308-3p",-20.87,208,225,158
 "AALF022742-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti lvpagwg (AAEL012219) VB Community Annotation]","A0A182H6G9","aae-miR-308-3p",-20.87,208,225,158
-"AALF007205-RA","unspecified product","A0A182GBX9","aae-miR-308-3p",-16.37,35,52,158
-"AALF023165-RA","unspecified product","A0A182H759","aae-miR-308-3p",-15.99,328,345,158
-"AALF017499-RA","unspecified product","A0A182GXA5","aae-miR-308-3p",-15.97,8123,8140,158
-"AALF023105-RA","unspecified product","A0A182H715","aae-miR-308-3p",-15.97,9843,9860,158
-"AALF023105-RA","unspecified product","A0A182H715","aae-miR-308-3p",-15.97,9745,9762,158
-"AALF012688-RA","unspecified product","A0A023EVA3,A0A182GMW1","aae-miR-308-3p",-15.72,680,697,158
-"AALF006142-RA","unspecified product","A0A182GA48","aae-miR-308-3p",-14.06,138,155,158
 "AALF008947-RA","heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]","A0A023ET39,A0A182GFC6","aae-miR-308-3p",-14.4,6450,6466,157
-"AALF000690-RA","unspecified product","A0A182G1H0","aae-miR-308-3p",-14.17,422,438,157
 "AALF011387-RA","Serine Protease Inhibitor (serpin)  likely cleavage at S/L. [Source:Projected from Aedes aegypti (AAEL014138) VB Community Annotation]","A0A023ERY6,A0A023ETU8,A0A182GK97","aae-miR-308-3p",-19.28,86,103,156
 "AALF021961-RA","Serine Protease Inhibitor (serpin)  likely cleavage at S/L. [Source:Projected from Aedes aegypti lvpagwg (AAEL014138) VB Community Annotation]","A0A182H581","aae-miR-308-3p",-19.28,86,103,156
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aae-miR-308-3p",-15.52,1188,1205,156
+"AALF008319-RA","Serine/threonine-protein phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A182GE26]","A0A023EQX8,A0A023ERS1,A0A182GE26,A0A1W7R702","aae-miR-308-3p",-18.64,407,424,155
+"AALF025948-RA","Glucosamine-6-phosphate isomerase [Source:UniProtKB/TrEMBL;Acc:A0A182HBI6]","A0A023EP88,A0A182HBI6","aae-miR-308-3p",-17.86,10768,10784,154
+"AALF011377-RA","Vesicle transport protein [Source:UniProtKB/TrEMBL;Acc:A0A023EIA8]","A0A023EIA8","aae-miR-308-3p",-15.61,104,120,154
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-miR-308-3p",-14.25,1992,2009,153
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-308-3p",-19.59,7954,7971,152
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-308-3p",-16.72,20613,20630,152
+"AALF003291-RA","Putative espl region transcript mgamma [Source:UniProtKB/TrEMBL;Acc:A0A023EKD4]","A0A023EKD4","aae-miR-308-3p",-16.05,366,383,152
+"AALF022845-RA","IAP-antagonist Michelob_x-like Protein [Source:Projected from Aedes aegypti (AAEL004392) VB Community Annotation]","A0A182H6P7","aae-miR-308-3p",-18.81,308,325,151
+"AALF005153-RA","Histone-lysine N-methyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182G8G8]","A0A182G8G8","aae-miR-308-3p",-15.02,2949,2966,151
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aae-miR-308-3p",-16.51,15118,15135,150
+"AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-miR-308-3p",-14.27,5401,5418,150
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-308-3p",-14.53,23577,23594,149
+"AALF014553-RA","hemomucin [Source:Projected from Aedes aegypti (AAEL006196) VB Community Annotation]","A0A023EV07,A0A023EVJ8,A0A182GRP8","aae-miR-308-3p",-18.83,260,276,146
+"AALF025888-RA","Eukaryotic translation initiation factor 3 subunit M [Source:UniProtKB/TrEMBL;Acc:A0A023ETD6]","A0A023ETD6","aae-miR-308-3p",-18.86,375,392,144
+"AALF023467-RA","Putative gtp-binding adp-ribosylation factor arf6 darf3 [Source:UniProtKB/TrEMBL;Acc:A0A023EID3]","A0A023EID3","aae-miR-308-3p",-16.17,328,345,144
+"AALF007610-RA","uroporphyrinogen iii synthase [Source:Projected from Aedes aegypti (AAEL001978) VB Community Annotation]","A0A023EMJ6,A0A182GCN4","aae-miR-308-3p",-14.17,304,321,144
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-308-3p",-15.37,25149,25166,143
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aae-miR-308-3p",-17.49,1010,1027,142
+"AALF016956-RA","Sodium/hydrogen exchanger [Source:UniProtKB/TrEMBL;Acc:A0A182GWA7]","A0A023EUT3,A0A182GWA7","aae-miR-308-3p",-15.37,60,77,142
+"AALF018617-RA","DNA-directed RNA polymerase subunit [Source:UniProtKB/TrEMBL;Acc:A0A182GZD4]","A0A182GZD4","aae-miR-308-3p",-15,1765,1782,142
+"AALF020977-RA","leucine-rich transmembrane protein [Source:Projected from Aedes aegypti (AAEL002307) VB Community Annotation]","A0A023EQP1,A0A023EUJ3,A0A182H3K1","aae-miR-308-3p",-14.82,1055,1072,142
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aae-miR-308-3p",-15.56,984,1000,141
+"AALF018626-RA","Receptor protein serine/threonine kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GZD7]","A0A023EU41,A0A182GZD7","aae-miR-308-3p",-15.15,118,135,140

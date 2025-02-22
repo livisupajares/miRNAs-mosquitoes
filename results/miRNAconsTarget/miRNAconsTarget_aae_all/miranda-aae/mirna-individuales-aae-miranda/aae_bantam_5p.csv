@@ -1,21 +1,136 @@
 "mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF025812-RA","unspecified product","A0A182HBA6","aae-bantam-5p",-20.75,765,788,179
 "AALF004362-RA","rac serine/threonine kinase [Source:Projected from Aedes aegypti (AAEL008823) VB Community Annotation]","A0A182G722","aae-bantam-5p",-24.5,1512,1532,174
-"AALF011613-RA","unspecified product","A0A023EFX4,A0A182GKR7","aae-bantam-5p",-25.1,141,165,172
-"AALF015869-RA","unspecified product","A0A182GU89","aae-bantam-5p",-21.81,1360,1384,170
 "AALF005731-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL002390) VB Community Annotation]","A0A182G9G0","aae-bantam-5p",-17.84,2311,2333,170
-"AALF005838-RA","unspecified product","A0A182G9M1,A0A1W7R6A9","aae-bantam-5p",-17.84,2309,2331,170
-"AALF026764-RA","unspecified product","A0A182HCT5","aae-bantam-5p",-14.9,345,367,169
-"AALF019162-RA","unspecified product","A0A182H0C6","aae-bantam-5p",-14.7,610,632,169
-"AALF024211-RA","unspecified product","A0A182H8Q6","aae-bantam-5p",-18.32,828,850,168
-"AALF009951-RA","unspecified product","A0A182GHF2","aae-bantam-5p",-23.94,6828,6851,167
 "AALF022187-RA","PHD finger domain [Source:Projected from Aedes aegypti lvpagwg (AAEL009416) UniProtKB/TrEMBL;Acc:A0A1S4FM94]","A0A182H5K2","aae-bantam-5p",-19.68,62,83,167
-"AALF002747-RA","unspecified product","A0A182G4I3,A0A1W7R6H8","aae-bantam-5p",-18.5,31,57,167
 "AALF024740-RA","cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008827) VB Community Annotation]","A0A182H9K9","aae-bantam-5p",-16.17,884,906,167
-"AALF021323-RA","unspecified product","A0A182H443","aae-bantam-5p",-19.72,2850,2874,166
-"AALF020574-RA","unspecified product","A0A182H2V6","aae-bantam-5p",-18.8,11089,11111,166
-"AALF024530-RA","unspecified product","A0A182H991","aae-bantam-5p",-17.9,214,234,166
 "AALF027200-RA","ADP-ribosylation factor [Source:Projected from Aedes aegypti (AAEL007065) VB Community Annotation]","A0A023EIG2,A0A182HDH0","aae-bantam-5p",-18.37,248,271,165
 "AALF005612-RA","macroglobulin/complement [Source:Projected from Aedes aegypti (AAEL012267) VB Community Annotation]","A0A023EWE3,A0A182G988,A0A1W7R8N4","aae-bantam-5p",-18.1,4,26,165
-"AALF018452-RA","unspecified product","A0A182GZ31","aae-bantam-5p",-15.75,433,455,165
-"AALF008955-RA","unspecified product","A0A182GFD4","aae-bantam-5p",-23.58,922,945,164
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aae-bantam-5p",-16.38,8332,8354,163
+"AALF028084-RA","Putative dnaj chaperone [Source:UniProtKB/TrEMBL;Acc:A0A023EQF7]","A0A023EQF7","aae-bantam-5p",-21.23,717,737,162
+"AALF026471-RA","Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023EQI8]","A0A023EQI8","aae-bantam-5p",-15.12,67,88,162
+"AALF019823-RA","peptidyl-prolyl cis-trans isomerase (cyclophilin) [Source:Projected from Aedes aegypti (AAEL009282) VB Community Annotation]","A0A182H1F5","aae-bantam-5p",-17.74,828,852,161
+"AALF012249-RA","Aconitate hydratase, mitochondrial [Source:UniProtKB/TrEMBL;Acc:A0A182GM09]","A0A023EW32,A0A023EXR0,A0A023EXU2,A0A182GM09,G8GID4","aae-bantam-5p",-15.64,573,596,161
+"AALF023350-RA","Aconitate hydratase, mitochondrial [Source:UniProtKB/TrEMBL;Acc:A0A182H7F2]","A0A182H7F2","aae-bantam-5p",-15.64,623,646,161
+"AALF013437-RA","Pyridoxal phosphate homeostasis protein [Source:UniProtKB/TrEMBL;Acc:A0A182GPG5]","A0A023ELI6,A0A182GPG5","aae-bantam-5p",-26.33,158,179,160
+"AALF016804-RA","proline synthetase associated protein [Source:Projected from Aedes aegypti (AAEL003491) VB Community Annotation]","A0A182GPG5","aae-bantam-5p",-26.33,155,176,160
+"AALF013183-RA","Putative trypsin [Source:UniProtKB/TrEMBL;Acc:A0A023EST5]","A0A023EST5","aae-bantam-5p",-16.64,58,81,160
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-bantam-5p",-14.47,19653,19678,160
+"AALF004603-RA","brefeldin a-inhibited guanine nucleotide-exchange protein [Source:Projected from Aedes aegypti (AAEL013012) VB Community Annotation]","A0A182G7F5","aae-bantam-5p",-14.12,1525,1548,160
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-bantam-5p",-18.88,17438,17462,159
+"AALF002028-RA","ran-binding protein [Source:Projected from Aedes aegypti (AAEL009884) VB Community Annotation]","A0A182G3B9","aae-bantam-5p",-28.49,203,225,158
+"AALF019386-RA","Putative cytochrome c oxidase subunit viia [Source:UniProtKB/TrEMBL;Acc:A0A023EED7]","A0A023EED7","aae-bantam-5p",-22.32,53,78,158
+"AALF006215-RA","alanyl aminopeptidase [Source:Projected from Aedes aegypti (AAEL005821) VB Community Annotation]","A0A182GA81,A0A1W7R8K5","aae-bantam-5p",-17.86,273,293,158
+"AALF013058-RA","Putative signal transduction [Source:UniProtKB/TrEMBL;Acc:A0A023ERS7]","A0A023ERS7","aae-bantam-5p",-15.44,843,865,158
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aae-bantam-5p",-24.53,220,240,157
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-bantam-5p",-24.53,219,239,157
+"AALF014779-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL013028) VB Community Annotation]","A0A023EUS3,A0A023EW10,A0A182GS49","aae-bantam-5p",-19.86,1396,1420,157
+"AALF000856-RA","Rab GDP dissociation inhibitor [Source:UniProtKB/TrEMBL;Acc:A0A182G1N6]","A0A023EWM5,A0A182G1N6,A0A1W7R713","aae-bantam-5p",-18.39,785,811,157
+"AALF025102-RA","Putative ecdysone-inducible protein l2 [Source:UniProtKB/TrEMBL;Acc:A0A023ELU8]","A0A023ELU8","aae-bantam-5p",-16.72,152,173,157
+"AALF017164-RA","P21-activated kinase, pak [Source:Projected from Aedes aegypti (AAEL000489) VB Community Annotation]","A0A182GWN6","aae-bantam-5p",-14.18,86,108,157
+"AALF021651-RA","Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]","A0A023EVU3,A0A182H4P9","aae-bantam-5p",-14.09,10832,10853,157
+"AALF009351-RA","40S ribosomal protein S23","Q5MIS0","aae-bantam-5p",-16.95,9,28,156
+"AALF012962-RA","odd Oz protein [Source:Projected from Aedes aegypti (AAEL000405) VB Community Annotation]","A0A182GNI2","aae-bantam-5p",-14.56,1265,1288,156
+"AALF014147-RA","Putative glutamate/leucine/phenylalanine/valine dehydrogenase [Source:UniProtKB/TrEMBL;Acc:A0A023ETW6]","A0A023ESQ8,A0A023ETW6","aae-bantam-5p",-14.29,879,901,156
+"AALF018351-RA","ABC transporter [Source:Projected from Aedes aegypti (AAEL008632) VB Community Annotation]","A0A182GYW0","aae-bantam-5p",-23.56,1237,1258,155
+"AALF018204-RA","RNA binding motif protein 4,lark [Source:Projected from Aedes aegypti (AAEL013982) VB Community Annotation]","A0A023ER06,A0A182GYJ6","aae-bantam-5p",-22.8,47,68,155
+"AALF008942-RA","Putative vacuolar assembly/sorting protein did2 [Source:UniProtKB/TrEMBL;Acc:A0A023EJE6]","A0A023EJE6","aae-bantam-5p",-21.4,3662,3688,154
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-bantam-5p",-21.22,6742,6762,154
+"AALF028352-RA","Putative e3 ubiquitin-protein ligase herc2 [Source:Projected from Aedes aegypti (AAEL006116) UniProtKB/TrEMBL;Acc:A0A0P6J635]","A0A182HF47","aae-bantam-5p",-25.46,24,45,153
+"AALF013439-RA","cationic amino acid transporter [Source:Projected from Aedes aegypti (AAEL003387) VB Community Annotation]","A0A023ESK2,A0A182GPG7","aae-bantam-5p",-20.67,631,653,153
+"AALF001217-RA","Ubiquitinyl hydrolase 1 [Source:UniProtKB/TrEMBL;Acc:A0A182G277]","A0A182G277","aae-bantam-5p",-19.99,857,879,153
+"AALF005441-RA","Ubiquitinyl hydrolase 1 [Source:UniProtKB/TrEMBL;Acc:A0A182G8Z3]","A0A182G8Z3","aae-bantam-5p",-19.99,865,887,153
+"AALF021891-RA","forkhead protein/ forkhead protein domain [Source:Projected from Aedes aegypti (AAEL003163) VB Community Annotation]","A0A182H540","aae-bantam-5p",-19.38,826,848,153
+"AALF025948-RA","Glucosamine-6-phosphate isomerase [Source:UniProtKB/TrEMBL;Acc:A0A182HBI6]","A0A023EP88,A0A182HBI6","aae-bantam-5p",-18.71,3803,3825,153
+"AALF021348-RA","nucleolar complex protein [Source:Projected from Aedes aegypti lvpagwg (AAEL003367) VB Community Annotation]","A0A023ETC8,A0A182H461","aae-bantam-5p",-17.48,927,948,153
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-bantam-5p",-17.21,9799,9819,153
+"AALF015143-RA","ABC transporter [Source:Projected from Aedes aegypti (AAEL014428) VB Community Annotation]","A0A182GSV9","aae-bantam-5p",-20.36,355,377,152
+"AALF015294-RA","ubiquitin-protein ligase [Source:Projected from Aedes aegypti (AAEL004790) VB Community Annotation]","A0A182GT51","aae-bantam-5p",-14.79,36,58,152
+"AALF020977-RA","leucine-rich transmembrane protein [Source:Projected from Aedes aegypti (AAEL002307) VB Community Annotation]","A0A023EQP1,A0A023EUJ3,A0A182H3K1","aae-bantam-5p",-14.38,1130,1151,152
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-bantam-5p",-26.21,35696,35721,151
+"AALF024599-RA","Adenosylhomocysteinase [Source:UniProtKB/TrEMBL;Acc:A0A182H9C7]","A0A182H9C7","aae-bantam-5p",-21.55,377,401,151
+"AALF000855-RA","Phospholipid-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182G1N5]","A0A023EWS1,A0A182G1N5,A0A1W7R5G6","aae-bantam-5p",-15.48,1651,1672,151
+"AALF001630-RA","Putative cargo transport protein erv29 [Source:UniProtKB/TrEMBL;Acc:A0A023EN48]","A0A023EIR7,A0A023EN48","aae-bantam-5p",-21.04,506,530,150
+"AALF002001-RA","developmentally regulated RNA-binding protein [Source:Projected from Aedes aegypti (AAEL000385) VB Community Annotation]","A0A023EI42,A0A023ERT5,A0A023ETN3,A0A182G3A0","aae-bantam-5p",-20.31,283,305,150
+"AALF000636-RA","Putative rho-associated coiled-coil [Source:UniProtKB/TrEMBL;Acc:A0A023EN14]","A0A023EN14","aae-bantam-5p",-16.9,296,318,150
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aae-bantam-5p",-16.63,35436,35462,150
+"AALF023668-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-bantam-5p",-15.42,1908,1930,150
+"AALF018404-RA","Putative prohibitins and stomatins of the pid superfamily protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004490) UniProtKB/TrEMBL;Acc:A0A0P6ITV8]","A0A023ET54,A0A182GYZ6","aae-bantam-5p",-14.72,73,95,150
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aae-bantam-5p",-14.42,3409,3431,150
+"AALF014586-RA","calcium/calmodulin-dependent serine protein kinase membrane-associated guanylate kinase (cask) [Source:Projected from Aedes aegypti (AAEL009937) VB Community Annotation]","A0A182GRR4","aae-bantam-5p",-17.33,536,558,149
+"AALF004020-RA","chitinase [Source:Projected from Aedes aegypti lvpagwg (AAEL011496) VB Community Annotation]","A0A023ERF5,A0A182G6H4","aae-bantam-5p",-17.01,15,37,149
+"AALF000066-RA","peroxisomal n1-acetyl-spermine/spermidine oxidase [Source:Projected from Aedes aegypti lvpagwg (AAEL007523) VB Community Annotation]","A0A182G0L6","aae-bantam-5p",-16.44,978,1000,149
+"AALF022326-RA","Putative ferric-chelate reductase 1 [Source:UniProtKB/TrEMBL;Acc:A0A023EXF7]","A0A023EV19,A0A023EV28,A0A023EXF7","aae-bantam-5p",-16.42,752,774,149
+"AALF004132-RA","development and differentiation-enhancing factor, ddef [Source:Projected from Aedes aegypti (AAEL003487) VB Community Annotation]","A0A182G6N6","aae-bantam-5p",-16.17,2080,2100,149
+"AALF007786-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GD08]","A0A023ESJ7,A0A182GD08","aae-bantam-5p",-15.6,813,838,149
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aae-bantam-5p",-15.15,22272,22294,149
+"AALF004530-RA","UDP-glucuronosyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182G7B7]","A0A182G7B7","aae-bantam-5p",-19.53,1360,1383,148
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-bantam-5p",-17.39,15188,15209,148
+"AALF023323-RA","hydroxymethylglutaryl-coa synthase [Source:Projected from Aedes aegypti (AAEL005201) VB Community Annotation]","A0A023ETR7,A0A182H7D3","aae-bantam-5p",-17.11,545,564,148
+"AALF000617-RA","exonuclease nef-sp [Source:Projected from Aedes aegypti (AAEL006744) VB Community Annotation]","A0A023EVG1,A0A182G1E7","aae-bantam-5p",-15.42,1291,1313,148
+"AALF017522-RA","Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial [Source:UniProtKB/TrEMBL;Acc:A0A182GXB9]","A0A182GXB9","aae-bantam-5p",-15.42,86,108,148
+"AALF003825-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL009887) VB Community Annotation]","A0A182G659","aae-bantam-5p",-14.99,238,260,148
+"AALF002860-RA","supervillin [Source:Projected from Aedes aegypti (AAEL003105) VB Community Annotation]","A0A023ER95,A0A023ESF2,A0A182G4P6","aae-bantam-5p",-14.67,1983,2005,148
+"AALF024617-RA","Putative nedd8-conjugating enzyme ubc12 [Source:UniProtKB/TrEMBL;Acc:A0A023EIJ3]","A0A023EIJ3,A0A1W7R7U1","aae-bantam-5p",-15.52,590,615,147
+"AALF012725-RA","Mucin-like peritrophin [Source:Projected from Aedes aegypti lvpagwg (AAEL004798) UniProtKB/TrEMBL;Acc:Q9GPU9]","A0A182GMZ1,A0A1W7R7I5","aae-bantam-5p",-14.86,148,169,147
+"AALF003852-RA","Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitochondrial [Source:UniProtKB/TrEMBL;Acc:A0A023EPT6]","A0A023EPT6","aae-bantam-5p",-14.04,44,65,147
+"AALF007937-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL010184) VB Community Annotation]","A0A182GDA5","aae-bantam-5p",-20.69,5465,5485,146
+"AALF004351-RA","Putative lateral inhibition [Source:UniProtKB/TrEMBL;Acc:A0A023ECZ6]","A0A023ECU0,A0A023ECZ6","aae-bantam-5p",-20.4,24,44,146
+"AALF000925-RA","calicylin binding protein [Source:Projected from Aedes aegypti (AAEL013314) VB Community Annotation]","A0A023EKU1,A0A182G1Q6","aae-bantam-5p",-16.68,92,118,146
+"AALF018047-RA","beta-hexosaminidase [Source:Projected from Aedes aegypti (AAEL011517) VB Community Annotation]","A0A023EUW0,A0A182GY98","aae-bantam-5p",-16.26,243,266,146
+"AALF016238-RA","valyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL004327) VB Community Annotation]","A0A182GV15","aae-bantam-5p",-15.97,1990,2012,146
+"AALF027634-RA","dual specificity mitogen-activated protein kinase kinase hemipterous MAPKK [Source:Projected from Aedes aegypti (AAEL003359) VB Community Annotation]","A0A182HE32","aae-bantam-5p",-15.21,2385,2407,146
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-bantam-5p",-14.49,6047,6067,146
+"AALF011805-RA","Putative alternative splicing factor srp20/9g8 rrm superfamily [Source:UniProtKB/TrEMBL;Acc:A0A023EKJ0]","A0A023EKJ0","aae-bantam-5p",-19.04,236,256,145
+"AALF025916-RA","PIWI [Source:Projected from Aedes aegypti (AAEL007823) VB Community Annotation]","A0A023EVW0,A0A182HBG4","aae-bantam-5p",-17.18,451,475,145
+"AALF013202-RA","Putative gtpase rab1/ypt1 small g protein superfamily [Source:UniProtKB/TrEMBL;Acc:A0A023EJS4]","A0A023EJS4","aae-bantam-5p",-14.93,189,210,145
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aae-bantam-5p",-14.78,1492,1512,145
+"AALF016307-RA","Mothers against decapentaplegic homolog [Source:UniProtKB/TrEMBL;Acc:A0A182GV56]","A0A182GV56","aae-bantam-5p",-14.69,505,528,145
+"AALF028503-RA","Defense repressor [Source:Projected from Aedes aegypti (AAEL000590) VB Community Annotation]","A0A023EW89,A0A146BIV4,A0A182HFD4","aae-bantam-5p",-14.5,194,216,145
+"AALF008894-RA","fatty acid synthase [Source:Projected from Aedes aegypti (AAEL001194) VB Community Annotation]","A0A182GF80","aae-bantam-5p",-14.06,277,299,145
+"AALF008758-RA","poly(a) polymerase cid (pap) (caffein-induced death protein) [Source:Projected from Aedes aegypti (AAEL006249) VB Community Annotation]","A0A182GEY8","aae-bantam-5p",-21.4,987,1011,144
+"AALF025015-RA","phosphorylase b kinase [Source:Projected from Aedes aegypti (AAEL007651) VB Community Annotation]","A0A023EYC1,A0A182H9Z8","aae-bantam-5p",-16.33,504,526,144
+"AALF023524-RA","Eukaryotic translation initiation factor 3 subunit A [Source:UniProtKB/TrEMBL;Acc:A0A182H7N7]","A0A182H7N7","aae-bantam-5p",-16.16,663,684,144
+"AALF001576-RA","pre-mRNA cleavage factor im, 25kD subunit [Source:Projected from Aedes aegypti (AAEL001371) VB Community Annotation]","A0A023EHR3,A0A182G2Q1","aae-bantam-5p",-15.17,293,316,144
+"AALF013877-RA","hairy protein [Source:Projected from Aedes aegypti (AAEL005480) VB Community Annotation]","A0A023EQ79,A0A182GQD4","aae-bantam-5p",-15.05,611,634,144
+"AALF020710-RA","amino acid transporter [Source:Projected from Aedes aegypti (AAEL007197) VB Community Annotation]","A0A023ETB6,A0A023EUT6,A0A023EWJ0,A0A182H342","aae-bantam-5p",-14.93,663,688,144
+"AALF014954-RA","Putative piopio [Source:UniProtKB/TrEMBL;Acc:A0A023ERW3]","A0A023EMB8,A0A023ENI3,A0A023ERW3,A0A023ETS9","aae-bantam-5p",-14.23,275,298,144
+"AALF012680-RA","sin3a-associated protein sap130 [Source:Projected from Aedes aegypti (AAEL007252) VB Community Annotation]","A0A182GMV3","aae-bantam-5p",-14.15,510,533,144
+"AALF004055-RA","Katanin p60 ATPase-containing subunit A1 [Source:UniProtKB/TrEMBL;Acc:A0A182G6J7]","A0A182G6J7","aae-bantam-5p",-19.21,9,34,143
+"AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-bantam-5p",-17.36,7422,7443,143
+"AALF008385-RA","single-stranded DNA-binding protein mssp-1 [Source:Projected from Aedes aegypti (AAEL007091) VB Community Annotation]","A0A023EUB8,A0A182GE72","aae-bantam-5p",-17.33,810,835,143
+"AALF020334-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL011578) VB Community Annotation]","A0A182H2D3","aae-bantam-5p",-17.11,714,735,143
+"AALF013738-RA","Putative gtp-binding protein [Source:UniProtKB/TrEMBL;Acc:A0A023EJY2]","A0A023EJY2","aae-bantam-5p",-16.51,234,258,143
+"AALF027967-RA","Defective in cullin neddylation protein [Source:UniProtKB/TrEMBL;Acc:A0A182HEK7]","A0A182HEK7","aae-bantam-5p",-15.36,296,320,143
+"AALF007691-RA","sodium-dependent phosphate transporter [Source:Projected from Aedes aegypti (AAEL012522) VB Community Annotation]","A0A182GCT3","aae-bantam-5p",-14.78,1052,1075,143
+"AALF023545-RA","metalloprotease [Source:Projected from Aedes aegypti (AAEL012278) VB Community Annotation]","A0A182H7Q2","aae-bantam-5p",-14.25,21,42,143
+"AALF013503-RA","IMD pathway signalling  I-Kappa-B Kinase 2 (IKK2  IKK-gamma). [Source:Projected from Aedes aegypti (AAEL012510) VB Community Annotation]","A0A023ETA4,A0A182GPL9","aae-bantam-5p",-14.2,337,359,143
+"AALF020230-RA","leucine aminopeptidase [Source:Projected from Aedes aegypti lvpagwg (AAEL000424) VB Community Annotation]","A0A182H264","aae-bantam-5p",-19.28,22,43,142
+"AALF002033-RA","Putative vesicle transport protein sec20 [Source:UniProtKB/TrEMBL;Acc:A0A023EKQ3]","A0A023EKQ3","aae-bantam-5p",-18.19,101,123,142
+"AALF016583-RA","rest corepressor (corest) protein [Source:Projected from Aedes aegypti lvpagwg (AAEL001126) VB Community Annotation]","A0A023EVK7,A0A182GVN2","aae-bantam-5p",-17.15,778,803,142
+"AALF010457-RA","kelch repeat protein [Source:Projected from Aedes aegypti (AAEL006525) VB Community Annotation]","A0A023ELZ8,A0A182GIF8","aae-bantam-5p",-16.77,343,364,142
+"AALF016202-RA","Phospholipid-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182GUY8]","A0A182GUY8","aae-bantam-5p",-15.25,1716,1738,142
+"AALF011160-RA","Putative histone h3 lys4 methyltransferase complex subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EBK1]","A0A023EBK1","aae-bantam-5p",-15.01,1820,1841,142
+"AALF007358-RA","myotubularin [Source:Projected from Aedes aegypti lvpagwg (AAEL000564) VB Community Annotation]","A0A182GC74","aae-bantam-5p",-14.33,2,25,142
+"AALF020475-RA","clathrin coat assembly protein [Source:Projected from Aedes aegypti (AAEL001405) VB Community Annotation]","A0A023EJ74,A0A182H2N2","aae-bantam-5p",-20.84,157,182,141
+"AALF015766-RA","epsilon-trimethyllysine 2-oxoglutarate dioxygenase [Source:Projected from Aedes aegypti (AAEL001707) VB Community Annotation]","A0A182GU18","aae-bantam-5p",-18.63,688,713,141
+"AALF026400-RA","calpain 4, 6, 7, invertebrate [Source:Projected from Aedes aegypti lvpagwg (AAEL003963) VB Community Annotation]","A0A182HC76","aae-bantam-5p",-18.14,967,989,141
+"AALF004462-RA","ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]","A0A182G786","aae-bantam-5p",-17.78,4933,4958,141
+"AALF017498-RA","sorting nexin [Source:Projected from Aedes aegypti (AAEL008020) VB Community Annotation]","A0A182GXA4","aae-bantam-5p",-17.06,46,68,141
+"AALF016915-RA","eukaryotic peptide chain release factor subunit [Source:Projected from Aedes aegypti (AAEL011742) VB Community Annotation]","A0A023ES91,A0A182GW91","aae-bantam-5p",-15.92,472,494,141
+"AALF003361-RA","nucleosome assembly protein [Source:Projected from Aedes aegypti (AAEL005567) VB Community Annotation]","A0A182G5F1","aae-bantam-5p",-15.28,538,560,141
+"AALF009142-RA","ATP synthase-coupling factor 6, mitochondrial [Source:UniProtKB/TrEMBL;Acc:Q5MIP9]","Q5MIP9","aae-bantam-5p",-14.95,31,53,141
+"AALF027265-RA","RNA 3' terminal phosphate cyclase [Source:Projected from Aedes aegypti (AAEL001080) VB Community Annotation]","A0A182HDK6","aae-bantam-5p",-14.88,453,475,141
+"AALF023649-RA","sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]","A0A182H7W6","aae-bantam-5p",-14.5,6145,6167,141
+"AALF008617-RA","Acyl-coenzyme A oxidase [Source:UniProtKB/TrEMBL;Acc:A0A182GEP3]","A0A023EVR9,A0A182GEP3","aae-bantam-5p",-14.08,4,27,141
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aae-bantam-5p",-14.08,21732,21755,141
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-bantam-5p",-23.9,17306,17329,140
+"AALF014290-RA","Nibrin [Source:UniProtKB/TrEMBL;Acc:A0A182GR75]","A0A182GR75","aae-bantam-5p",-19.33,1103,1124,140
+"AALF003755-RA","ribosomal RNA methyltransferase [Source:Projected from Aedes aegypti (AAEL001037) VB Community Annotation]","A0A023EVV2,A0A182G625","aae-bantam-5p",-18.21,1,21,140
+"AALF018244-RA","adhesion regulating molecule 1 (110 kda cell membrane glycoprotein) [Source:Projected from Aedes aegypti (AAEL011554) VB Community Annotation]","A0A023ESD4,A0A182GYM0","aae-bantam-5p",-17.56,139,162,140
+"AALF008582-RA","PIWI [Source:Projected from Aedes aegypti (AAEL007698) VB Community Annotation]","A0A182GAF7","aae-bantam-5p",-17.21,177,201,140
+"AALF002335-RA","Putative ef-hand domain family member d2 [Source:UniProtKB/TrEMBL;Acc:A0A023EHS3]","A0A023EHS3,A0A023EIR1","aae-bantam-5p",-16.02,678,701,140
+"AALF020313-RA","multidrug resistance protein 2 (ATP-binding cassette protein c) [Source:Projected from Aedes aegypti (AAEL004743) VB Community Annotation]","A0A182H2B8","aae-bantam-5p",-15.18,3,26,140
+"AALF008698-RA","DEAD box ATP-dependent RNA helicase [Source:Projected from Aedes aegypti (AAEL009913) VB Community Annotation]","A0A182GEU8","aae-bantam-5p",-14.75,218,244,140
+"AALF026429-RA","Dolichol phosphate-mannose biosynthesis regulatory protein [Source:UniProtKB/TrEMBL;Acc:A0A182HC90]","A0A182HC90","aae-bantam-5p",-14.64,3008,3030,140
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aae-bantam-5p",-14.43,2143,2165,140
+"AALF003622-RA","heparan sulphate n-deacetylase/n-sulfotransferase [Source:Projected from Aedes aegypti (AAEL012539) VB Community Annotation]","A0A182G5V2","aae-bantam-5p",-14.01,1555,1577,140
