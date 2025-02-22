@@ -42,9 +42,6 @@ aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
 aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
 
 # ==== FINDING THE BEST mRNA TARGET CANDIDATES ====
-# TODO: then filter by highest score and lowest energy
-# TODO: if there are multiple miRNAs in the same target, pick by highest score
-# and lowest energy.
 # https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
 # https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
 
@@ -59,23 +56,28 @@ microRNA_list_miranda <- c(
 )
 
 # Filter the dataset for all microRNAs in one step
-# filtered_data_miranda <- aae_miranda_tx_names %>%
-#   filter(microRNA %in% microRNA_list)
+filtered_data_miranda <- aae_miranda_tx_names %>%
+  filter(microRNA %in% microRNA_list_miranda)
 
 # Split the filtered data into a list of data frames, one for each microRNA
-mirna_list_miranda <- split(aae_miranda_tx_names, aae_miranda_tx_names$microRNA)
+mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
 # Assuming 'score' and 'energy' are columns in the dataset
 candidates_miranda <- lapply(mirna_list_miranda, function(df) {
   df %>%
-    arrange(desc(score), energy) # Sort by highest score and lowest energy
+    arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
+    filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+    slice_head(n = 20) # Keep the top 20 candidates
 })
 
 # Assign each miRNA's data frame to a separate variable in the global environment
+# names(candidates_miranda) <- names(mirna_list_miranda)
 # list2env(candidates_miranda, envir = .GlobalEnv)
+
+# Access each miRNA data frame by its name
+View(candidates_miranda[["aae-miR-210-5p"]])
+# View(candidates_miranda[["aae-miR-276-3p"]])
 
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
-aae_miranda_tx_names <- write.csv(aae_miranda_tx_names, "results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/aae-miranda-tx-names.csv")
-aae_ts_tx_names <- write.csv(aae_ts_tx_names, "results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/aae-targetspy-tx-names.csv")
