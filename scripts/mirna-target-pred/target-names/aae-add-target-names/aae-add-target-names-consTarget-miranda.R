@@ -68,6 +68,7 @@ candidates_miranda <- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
     filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol and remove unspecified products
+    filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
 # Assign each miRNA's data frame to a separate variable in the global environment
