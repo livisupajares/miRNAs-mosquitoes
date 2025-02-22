@@ -48,97 +48,32 @@ aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
 # https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
 # https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
 
-# aae-miR-210-5p
-# 1. Filter by microRNA
-aae_miranda_miR_210_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-210-5p")
+# List of microRNAs to filter by
+microRNA_list_miranda <- c(
+  "aae-miR-210-5p", "aae-miR-276-3p", "aae-miR-276-5p", "aae-miR-2945-3p",
+  "aae-miR-305-5p", "aae-miR-34-5p", "aae-miR-1000-5p", "aae-miR-308-3p",
+  "aae-miR-999-3p", "aae-bantam-3p", "aae-bantam-5p", "aae-let-7",
+  "aae-miR-10-5p", "aae-miR-1175-3p", "aae-miR-11900", "aae-miR-124-3p",
+  "aae-miR-3368-5p", "aae-miR-3722-5p", "aae-miR-4275-5p", "aae-miR-5108-5p",
+  "aae-miR-5119-5p", "aae-miR-932-5p"
+)
 
-# aae-miR-276-3p
-# # 1. Filter by microRNA
-aae_miranda_miR_276_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-276-3p")
+# Filter the dataset for all microRNAs in one step
+# filtered_data_miranda <- aae_miranda_tx_names %>%
+#   filter(microRNA %in% microRNA_list)
 
-# aae-miR-276-5p
-# 1. Filter by microRNA
-aae_miranda_miR_276_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-276-5p")
+# Split the filtered data into a list of data frames, one for each microRNA
+mirna_list_miranda <- split(aae_miranda_tx_names, aae_miranda_tx_names$microRNA)
 
-# aae-miR-2945-3p
-# 1. Filter by microRNA
-aae_miranda_miR_2945_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-2945-3p")
+# Apply additional filtering (e.g., highest score and lowest energy)
+# Assuming 'score' and 'energy' are columns in the dataset
+candidates_miranda <- lapply(mirna_list_miranda, function(df) {
+  df %>%
+    arrange(desc(score), energy) # Sort by highest score and lowest energy
+})
 
-# aae-miR-305-5p
-# 1. Filter by microRNA
-aae_miranda_miR_305_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-305-5p")
-
-# aae-miR-34-5p
-# 1. Filter by microRNA
-aae_miranda_miR_34_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-34-5p")
-
-# aae-miR-1000-5p
-# 1. Filter by microRNA
-aae_miranda_miR_1000_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-1000-5p")
-
-# aae-miR-308-3p
-# 1. Filter by microRNA
-aae_miranda_miR_308_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-308-3p")
-
-# aae-miR-999-3p
-# 1. Filter by microRNA
-aae_miranda_miR_999_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-999-3p")
-
-# aae-bantam-3p
-# 1. Filter by microRNA
-aae_miranda_bantam_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-bantam-3p")
-
-# aae-bantam-5p
-# 1. Filter by microRNA
-aae_miranda_bantam_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-bantam-5p")
-
-# aae-let-7
-# 1. Filter by microRNA
-aae_miranda_let_7 <- aae_miranda_tx_names %>% filter(microRNA == "aae-let-7")
-
-# aae-miR-10-5p
-# 1. Filter by microRNA
-aae_miranda_miR_10_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-10-5p")
-
-# aae-miR-1175-3p
-# 1. Filter by microRNA
-aae_miranda_miR_1175_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-1175-3p")
-
-# aae-miR-11900
-# 1. Filter by microRNA
-aae_miranda_miR_11900 <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-11900")
-
-# aae-miR-124-3p
-# 1. Filter by microRNA
-aae_miranda_miR_124_3p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-124-3p")
-
-# aae-miR-3368-5p
-# 1. Filter by microRNA
-aae_miranda_miR_3368_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-3368-5p")
-
-# aae-miR-3722-5p
-# 1. Filter by microRNA
-aae_miranda_miR_3722_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-3722-5p")
-
-# aae-miR-4275-5p
-# 1. Filter by microRNA
-aae_miranda_miR_4275_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-4275-5p")
-
-# aae-miR-5108-5p
-# 1. Filter by microRNA
-aae_miranda_miR_5108_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-5108-5p")
-
-# aae-miR-5119-5p
-# 1. Filter by microRNA
-aae_miranda_miR_5119_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-5119-5p")
-
-# aae-miR-932-5p
-# 1. Filter by microRNA
-aae_miranda_miR_932_5p <- aae_miranda_tx_names %>% filter(microRNA == "aae-miR-932-5p")
-
-# Filter by highest to lowest score value
-aae_miranda_tx_names <- aae_miranda_tx_names %>% arrange(desc(score))
-aae_ts_tx_names <- aae_ts_tx_names %>% arrange(desc(score))
+# Assign each miRNA's data frame to a separate variable in the global environment
+# list2env(candidates_miranda, envir = .GlobalEnv)
 
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
