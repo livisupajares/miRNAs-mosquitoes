@@ -67,8 +67,6 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
-    slice_head(n = 20) # Keep the top 20 candidates
 })
 
 # Assign each miRNA's data frame to a separate variable in the global environment
