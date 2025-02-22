@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF008622-RA","DNA helicase recq1 [Source:Projected from Aedes aegypti (AAEL007256) VB Community Annotation]","A0A182GEP8","aae-miR-305-5p",-30.67,892,915,187
+"AALF014735-RA","unspecified product","A0A182GS11","aae-miR-305-5p",-28.45,73,97,172
+"AALF016243-RA","unspecified product","A0A182GV17","aae-miR-305-5p",-28.45,73,97,172
+"AALF016385-RA","60S ribosomal protein L29 [Source:UniProtKB/TrEMBL;Acc:A0A023EB57]","A0A023EB57","aae-miR-305-5p",-27.05,118,140,172
+"AALF008947-RA","heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]","A0A023ET39,A0A182GFC6","aae-miR-305-5p",-19.42,1,22,170
+"AALF025134-RA","unspecified product","A0A023ELK5,A0A023EPD3,A0A023EVR7,A0A182HA63","aae-miR-305-5p",-14.58,1,22,170
+"AALF010077-RA","unspecified product","A0A182GHP0","aae-miR-305-5p",-22.86,477,502,169
+"AALF021541-RA","unspecified product","A0A182H4I8","aae-miR-305-5p",-21.02,521,547,169
+"AALF022771-RA","unspecified product","A0A182H6J3","aae-miR-305-5p",-18.34,19629,19652,169
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-miR-305-5p",-18.17,6652,6676,169
+"AALF012061-RA","Anion exchange protein [Source:UniProtKB/TrEMBL;Acc:A0A182GLN1]","A0A182GLN1","aae-miR-305-5p",-19.33,264,286,166
+"AALF025534-RA","unspecified product","A0A182HAV2","aae-miR-305-5p",-18.2,40,63,166
+"AALF001159-RA","unspecified product","A0A182G244","aae-miR-305-5p",-20.86,695,718,165
+"AALF013063-RA","malate dehydrogenase [Source:Projected from Aedes aegypti (AAEL008166) VB Community Annotation]","A0A023EQ02,A0A182GNQ1","aae-miR-305-5p",-17.23,46,68,165
+"AALF009760-RA","unspecified product","A0A182GH18","aae-miR-305-5p",-16.33,408,432,165
+"AALF013867-RA","unspecified product","A0A182GQC7,A0A1W7R637","aae-miR-305-5p",-16.33,408,432,165
+"AALF001159-RA","unspecified product","A0A182G244","aae-miR-305-5p",-14.83,196,219,164
+"AALF019454-RA","unspecified product","A0A182H0V3","aae-miR-305-5p",-18.71,1551,1573,163
+"AALF020212-RA","unspecified product","A0A182H253","aae-miR-305-5p",-18.11,6,30,163
+"AALF016798-RA","unspecified product","A0A182GW15","aae-miR-305-5p",-17.95,61,84,163

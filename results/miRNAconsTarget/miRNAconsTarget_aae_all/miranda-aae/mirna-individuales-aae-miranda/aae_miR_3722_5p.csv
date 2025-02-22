@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF007988-RA","unspecified product","A0A023EX39,A0A182GDD5","aae-miR-3722-5p",-26,162,181,178
+"AALF025079-RA","unspecified product","A0A182HA33","aae-miR-3722-5p",-19.69,52,71,166
+"AALF011072-RA","unspecified product","A0A182GJL9","aae-miR-3722-5p",-20.5,66,85,165
+"AALF005248-RA","unspecified product","A0A182G8M1","aae-miR-3722-5p",-22.26,1615,1633,164
+"AALF027144-RA","unspecified product","A0A182HDE5","aae-miR-3722-5p",-20.84,6931,6950,162
+"AALF004385-RA","unspecified product","A0A023EWL3,A0A023EXX8,A0A182G735","aae-miR-3722-5p",-21.4,2,22,161
+"AALF020160-RA","Transmembrane 9 superfamily member [Source:UniProtKB/TrEMBL;Acc:A0A023EVR6]","A0A023EVR6","aae-miR-3722-5p",-20.47,89,108,161
+"AALF019692-RA","unspecified product","A0A023EHT6,A0A023EI65,A0A023EJF7,A0A023EMA2,A0A023EN63,A0A182H186","aae-miR-3722-5p",-23.33,1609,1630,160
+"AALF025470-RA","arf6 guanine nucleotide exchange factor [Source:Projected from Aedes aegypti (AAEL004236) VB Community Annotation]","A0A182HAS2","aae-miR-3722-5p",-22.19,419,437,159
+"AALF005836-RA","unspecified product","A0A182G9M0","aae-miR-3722-5p",-21.47,874,893,159
+"AALF004796-RA","unspecified product","A0A182G7S7","aae-miR-3722-5p",-18.73,98,115,159
+"AALF018617-RA","DNA-directed RNA polymerase subunit [Source:UniProtKB/TrEMBL;Acc:A0A182GZD4]","A0A182GZD4","aae-miR-3722-5p",-22.67,267,285,158
+"AALF011480-RA","Carboxylic ester hydrolase [Source:UniProtKB/TrEMBL;Acc:A0A182GKH5]","A0A182GKH5","aae-miR-3722-5p",-20.79,113,132,158
+"AALF013501-RA","Partner of Y14 and mago (Protein wibg homolog) [Source:Projected from Aedes aegypti (AAEL012503) VB Community Annotation]","A0A182GPL7","aae-miR-3722-5p",-19.39,91,110,158
+"AALF008306-RA","unspecified product","A0A182GE19","aae-miR-3722-5p",-18.28,47,66,158
+"AALF014696-RA","unspecified product","A0A182GRX9","aae-miR-3722-5p",-18.28,47,66,158
+"AALF006899-RA","unspecified product","A0A182GBE2","aae-miR-3722-5p",-23.99,214,233,157
+"AALF025417-RA","unspecified product","A0A182HAP5","aae-miR-3722-5p",-23.69,92,112,157
+"AALF007211-RA","unspecified product","A0A182GBY5,A0A1W7R654,A0A1W7R6I8","aae-miR-3722-5p",-23.33,1812,1832,157
+"AALF024985-RA","unspecified product","A0A182H9Y3,A0A1W7R6C1,A0A1W7R6F9,A0A1W7R6G3","aae-miR-3722-5p",-20.18,357,377,157

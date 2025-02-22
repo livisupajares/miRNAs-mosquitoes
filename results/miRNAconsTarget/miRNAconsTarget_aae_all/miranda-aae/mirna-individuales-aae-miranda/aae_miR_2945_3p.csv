@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF027072-RA","unspecified product","A0A182HDA0","aae-miR-2945-3p",-21.12,64,85,168
+"AALF004462-RA","ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]","A0A182G786","aae-miR-2945-3p",-21.12,4246,4265,165
+"AALF010077-RA","unspecified product","A0A182GHP0","aae-miR-2945-3p",-18.87,349,370,164
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-2945-3p",-20.57,3345,3366,163
+"AALF010798-RA","unspecified product","A0A023EM62,A0A182GJ48","aae-miR-2945-3p",-18.98,261,282,160
+"AALF016583-RA","rest corepressor (corest) protein [Source:Projected from Aedes aegypti lvpagwg (AAEL001126) VB Community Annotation]","A0A023EVK7,A0A182GVN2","aae-miR-2945-3p",-27.44,213,235,159
+"AALF013131-RA","Phosphatidylinositol-glycan biosynthesis class W protein [Source:UniProtKB/TrEMBL;Acc:A0A182GNU9]","A0A182GNU9","aae-miR-2945-3p",-19.67,24,45,159
+"AALF014059-RA","unspecified product","A0A182GQP9","aae-miR-2945-3p",-16.84,745,766,159
+"AALF020428-RA","unspecified product","A0A182H2J8","aae-miR-2945-3p",-16.23,13972,13993,159
+"AALF015467-RA","Polypeptide N-acetylgalactosaminyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GTH0]","A0A023EUU3,A0A182GTH0","aae-miR-2945-3p",-25.08,537,559,158
+"AALF018227-RA","unspecified product","A0A182GYL1","aae-miR-2945-3p",-20.9,324,346,158
+"AALF012688-RA","unspecified product","A0A023EVA3,A0A182GMW1","aae-miR-2945-3p",-20.25,815,835,158
+"AALF023661-RA","unspecified product","A0A182H7X3","aae-miR-2945-3p",-21.68,40,61,157
+"AALF008879-RA","type IV inositol 5-phosphatase [Source:Projected from Aedes aegypti (AAEL001367) VB Community Annotation]","A0A182GF70","aae-miR-2945-3p",-21.28,376,397,157
+"AALF024430-RA","unspecified product","A0A182H922","aae-miR-2945-3p",-20.69,844,863,157
+"AALF021922-RA","unspecified product","A0A182H561","aae-miR-2945-3p",-17.69,1654,1674,157
+"AALF028181-RA","ubiquitin-conjugating enzyme E2-230k [Source:Projected from Aedes aegypti (AAEL006073) VB Community Annotation]","A0A182HEW6","aae-miR-2945-3p",-20.82,528,549,156
+"AALF023214-RA","unspecified product","A0A023EUK0,A0A182H786","aae-miR-2945-3p",-20.44,281,301,156
+"AALF024083-RA","unspecified product","A0A182H8I6","aae-miR-2945-3p",-19.61,89,110,156
+"AALF013840-RA","unspecified product","A0A182GQA4","aae-miR-2945-3p",-19.16,312,331,156

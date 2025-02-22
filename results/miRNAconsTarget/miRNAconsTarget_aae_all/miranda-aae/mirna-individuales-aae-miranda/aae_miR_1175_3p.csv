@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF025297-RA","unspecified product","A0A182HAG7","aae-miR-1175-3p",-21.45,15733,15757,173
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aae-miR-1175-3p",-19.47,23835,23857,169
+"AALF025297-RA","unspecified product","A0A182HAG7","aae-miR-1175-3p",-19.79,529,552,167
+"AALF004994-RA","unspecified product","A0A182G853","aae-miR-1175-3p",-25.91,96,123,165
+"AALF004202-RA","unspecified product","A0A182G6T0","aae-miR-1175-3p",-17.2,54,76,165
+"AALF014727-RA","unspecified product","A0A023EFX5,A0A023EHN3,A0A182GS04","aae-miR-1175-3p",-20.11,11134,11156,164
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-1175-3p",-19.52,23305,23327,164
+"AALF009997-RA","histone deacetylase [Source:Projected from Aedes aegypti (AAEL004416) VB Community Annotation]","A0A182GHI8","aae-miR-1175-3p",-17.61,195,218,164
+"AALF010110-RA","unspecified product","A0A182GHQ3","aae-miR-1175-3p",-17,2,23,163
+"AALF006763-RA","unspecified product","A0A182GB50","aae-miR-1175-3p",-21.63,602,625,162
+"AALF016469-RA","unspecified product","A0A182GVH5","aae-miR-1175-3p",-16.18,2822,2845,162
+"AALF000617-RA","exonuclease nef-sp [Source:Projected from Aedes aegypti (AAEL006744) VB Community Annotation]","A0A023EVG1,A0A182G1E7","aae-miR-1175-3p",-21.7,1856,1878,161
+"AALF019692-RA","unspecified product","A0A023EHT6,A0A023EI65,A0A023EJF7,A0A023EMA2,A0A023EN63,A0A182H186","aae-miR-1175-3p",-21.01,6614,6634,161
+"AALF021651-RA","Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]","A0A023EVU3,A0A182H4P9","aae-miR-1175-3p",-20.79,3619,3645,161
+"AALF001094-RA","Putative microtubule-binding protein mip-t3 [Source:UniProtKB/TrEMBL;Acc:A0A023EG63]","A0A023EG63","aae-miR-1175-3p",-20.29,89,111,161
+"AALF015609-RA","unspecified product","A0A023EWE1,A0A182GTQ3","aae-miR-1175-3p",-18.95,63,88,161
+"AALF001556-RA","unspecified product","A0A182G2N8","aae-miR-1175-3p",-14.81,2798,2822,161
+"AALF018484-RA","unspecified product","A0A182GZ53","aae-miR-1175-3p",-22.26,22,42,160
+"AALF025035-RA","GPCR Methuselah Family [Source:Projected from Aedes aegypti (AAEL011526) VB Community Annotation]","A0A182HA10","aae-miR-1175-3p",-18.75,35,61,160
+"AALF020156-RA","unspecified product","A0A182H211","aae-miR-1175-3p",-16.06,87,109,160

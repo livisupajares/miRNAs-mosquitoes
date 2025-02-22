@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF016469-RA","unspecified product","A0A182GVH5","aae-miR-5119-5p",-24.05,4494,4511,168
+"AALF005377-RA","unspecified product","A0A182G8V3","aae-miR-5119-5p",-21.78,21052,21070,159
+"AALF022820-RA","unspecified product","A0A182H6N0","aae-miR-5119-5p",-19.54,575,594,159
+"AALF003172-RA","Putative peroxisomal long-chain acyl-coa transporter abc superfamily [Source:UniProtKB/TrEMBL;Acc:A0A023EXI0]","A0A023EXI0","aae-miR-5119-5p",-31.51,136,153,156
+"AALF024589-RA","unspecified product","A0A182H9C1","aae-miR-5119-5p",-19.89,20,37,156
+"AALF003282-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL014948) VB Community Annotation]","A0A023EFH8,A0A182G5B0","aae-miR-5119-5p",-23.43,91,109,155
+"AALF007317-RA","unspecified product","A0A182GC48","aae-miR-5119-5p",-21.78,52,70,155
+"AALF012982-RA","unspecified product","A0A182GNJ5","aae-miR-5119-5p",-19.89,376,393,155
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-5119-5p",-16.37,9446,9463,155
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-miR-5119-5p",-16.15,6604,6621,155
+"AALF025812-RA","unspecified product","A0A182HBA6","aae-miR-5119-5p",-14.74,417,434,155
+"AALF025311-RA","Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023EES3]","A0A023EES3","aae-miR-5119-5p",-20.68,76,93,154
+"AALF003172-RA","Putative peroxisomal long-chain acyl-coa transporter abc superfamily [Source:UniProtKB/TrEMBL;Acc:A0A023EXI0]","A0A023EXI0","aae-miR-5119-5p",-19.86,8,24,154
+"AALF027188-RA","unspecified product","A0A182HDG6","aae-miR-5119-5p",-18.89,9059,9076,152
+"AALF003954-RA","unspecified product","A0A182G6D8","aae-miR-5119-5p",-17.54,1062,1079,152
+"AALF012038-RA","unspecified product","A0A023EVM5,A0A182GLL2","aae-miR-5119-5p",-16.78,1818,1835,152
+"AALF004658-RA","unspecified product","A0A182G7J1","aae-miR-5119-5p",-16.13,355,372,152
+"AALF021922-RA","unspecified product","A0A182H561","aae-miR-5119-5p",-14.49,793,810,152
+"AALF023649-RA","sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]","A0A182H7W6","aae-miR-5119-5p",-21.71,5746,5764,151
+"AALF025782-RA","unspecified product","A0A182HB86","aae-miR-5119-5p",-19.03,5769,5787,151

@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF014961-RA","unspecified product","A0A182GSH8","aae-miR-999-3p",-21.67,12564,12585,168
+"AALF013392-RA","unspecified product","A0A182GPC9","aae-miR-999-3p",-18.27,706,727,168
+"AALF019692-RA","unspecified product","A0A023EHT6,A0A023EI65,A0A023EJF7,A0A023EMA2,A0A023EN63,A0A182H186","aae-miR-999-3p",-17.76,13280,13301,168
+"AALF014445-RA","unspecified product","A0A023EXB9,A0A182GRH9","aae-miR-999-3p",-19.18,8725,8748,165
+"AALF004132-RA","development and differentiation-enhancing factor, ddef [Source:Projected from Aedes aegypti (AAEL003487) VB Community Annotation]","A0A182G6N6","aae-miR-999-3p",-22.5,1846,1867,164
+"AALF018958-RA","unspecified product","A0A023EVH8,A0A023EWB3,A0A023EWJ7,A0A182GZY2,A0A1W7R886,A0A1W7R8A8,A0A1W7R8C5","aae-miR-999-3p",-18.16,350,372,163
+"AALF027145-RA","unspecified product","A0A023ENC9,A0A182HDE6","aae-miR-999-3p",-15.58,112,134,163
+"AALF018027-RA","unspecified product","A0A182GY87","aae-miR-999-3p",-15.06,409,433,163
+"AALF009825-RA","unspecified product","A0A182GH64","aae-miR-999-3p",-17.91,40,65,162
+"AALF003188-RA","unspecified product","A0A182G565","aae-miR-999-3p",-16.72,597,617,162
+"AALF020595-RA","unspecified product","A0A182H2X0","aae-miR-999-3p",-15.99,912,932,162
+"AALF010411-RA","xenotropic and polytropic murine leukemia virus receptor xpr1 [Source:Projected from Aedes aegypti lvpagwg (AAEL011204) VB Community Annotation]","A0A182GIC7","aae-miR-999-3p",-18.34,561,582,160
+"AALF027101-RA","xenotropic and polytropic murine leukemia virus receptor xpr1 [Source:Projected from Aedes aegypti (AAEL011204) VB Community Annotation]","A0A182HDB8","aae-miR-999-3p",-18.34,563,584,160
+"AALF023425-RA","unspecified product","A0A182H7J3","aae-miR-999-3p",-16.26,219,240,160
+"AALF017867-RA","carbonic anhydrase [Source:Projected from Aedes aegypti (AAEL004930) VB Community Annotation]","A0A023EM65,A0A023ENB2,A0A182GXZ3","aae-miR-999-3p",-19.39,778,800,159
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aae-miR-999-3p",-18.94,17171,17193,159
+"AALF003534-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-miR-999-3p",-18.35,760,782,159
+"AALF023668-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-miR-999-3p",-18.35,748,770,159
+"AALF022862-RA","unspecified product","A0A182H6Q6","aae-miR-999-3p",-18.04,791,813,159
+"AALF009556-RA","unspecified product","A0A182GGL1","aae-miR-999-3p",-17.79,98,120,159

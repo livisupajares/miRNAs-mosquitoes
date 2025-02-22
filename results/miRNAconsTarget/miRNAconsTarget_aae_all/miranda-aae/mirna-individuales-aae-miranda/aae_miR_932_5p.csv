@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF007107-RA","unspecified product","A0A182H3B1","aae-miR-932-5p",-25.68,245,266,179
+"AALF020653-RA","unspecified product","A0A182H306","aae-miR-932-5p",-25.16,7,29,174
+"AALF014285-RA","unspecified product","A0A182GR70","aae-miR-932-5p",-23.53,268,289,172
+"AALF014226-RA","unspecified product","A0A182GR17","aae-miR-932-5p",-21.69,3343,3364,172
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-932-5p",-23.06,29933,29955,171
+"AALF025782-RA","unspecified product","A0A182HB86","aae-miR-932-5p",-19.02,2483,2504,170
+"AALF008321-RA","unspecified product","A0A182GE28","aae-miR-932-5p",-17.94,27,48,167
+"AALF026570-RA","tryptophanyl-tRNA synthetase [Source:Projected from Aedes aegypti lvpagwg (AAEL013521) VB Community Annotation]","A0A182HCH8","aae-miR-932-5p",-17.94,27,48,167
+"AALF005207-RA","unspecified product","A0A182G8J8","aae-miR-932-5p",-27.56,89,110,166
+"AALF008942-RA","Putative vacuolar assembly/sorting protein did2 [Source:UniProtKB/TrEMBL;Acc:A0A023EJE6]","A0A023EJE6","aae-miR-932-5p",-20.84,272,294,166
+"AALF028215-RA","unspecified product","A0A023ERA9,A0A182HEX6","aae-miR-932-5p",-24.39,2508,2532,165
+"AALF018247-RA","unspecified product","A0A023EQK6,A0A182GYM3","aae-miR-932-5p",-19.26,470,490,165
+"AALF018970-RA","Putative mitochondrial fatty acid anion carrier protein/uncoupling protein [Source:UniProtKB/TrEMBL;Acc:A0A023EPV9]","A0A023EKS0,A0A023EPV9","aae-miR-932-5p",-20.53,6,25,164
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aae-miR-932-5p",-15.52,1459,1480,164
+"AALF007509-RA","unspecified product","A0A182GCH6","aae-miR-932-5p",-24.09,590,614,163
+"AALF017715-RA","arylsulfatase b [Source:Projected from Aedes aegypti (AAEL005134) VB Community Annotation]","A0A182GXP3","aae-miR-932-5p",-21.04,215,237,163
+"AALF004230-RA","unspecified product","A0A182G6U7,A0A1W7R8L4","aae-miR-932-5p",-23.71,146,166,162
+"AALF025782-RA","unspecified product","A0A182HB86","aae-miR-932-5p",-20.01,2414,2435,162
+"AALF009825-RA","unspecified product","A0A182GH64","aae-miR-932-5p",-18.13,671,691,161
+"AALF016099-RA","Spastin [Source:UniProtKB/TrEMBL;Acc:A0A182GUQ1]","A0A182GUQ1","aae-miR-932-5p",-18.11,1849,1869,161

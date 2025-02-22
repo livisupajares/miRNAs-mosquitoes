@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF009645-RA","unspecified product","A0A182GGS4","aae-miR-11900",-14.67,148,171,182
+"AALF025658-RA","unspecified product","A0A182HB25,A0A1W7R5W5,A0A1W7R5Z1","aae-miR-11900",-15.85,363,386,180
+"AALF008334-RA","Cation-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182GE35]","A0A182GE35","aae-miR-11900",-14.93,2669,2690,179
+"AALF018893-RA","Histone H3 [Source:UniProtKB/TrEMBL;Acc:A0A023EEH5]","A0A023EEH5","aae-miR-11900",-20.44,235,259,177
+"AALF008103-RA","unspecified product","A0A182GDM7","aae-miR-11900",-15.52,8,33,176
+"AALF016401-RA","unspecified product","A0A182GVC4","aae-miR-11900",-14,12842,12867,176
+"AALF003622-RA","heparan sulphate n-deacetylase/n-sulfotransferase [Source:Projected from Aedes aegypti (AAEL012539) VB Community Annotation]","A0A182G5V2","aae-miR-11900",-14.39,1237,1258,175
+"AALF015143-RA","ABC transporter [Source:Projected from Aedes aegypti (AAEL014428) VB Community Annotation]","A0A182GSV9","aae-miR-11900",-15.92,547,570,174
+"AALF002156-RA","protein tyrosine phosphatase, non-receptor type nt1 [Source:Projected from Aedes aegypti (AAEL001919) VB Community Annotation]","A0A023ET57,A0A182G3J1","aae-miR-11900",-14.26,710,733,174
+"AALF012953-RA","unspecified product","A0A182GNH3","aae-miR-11900",-17.56,31,57,173
+"AALF005068-RA","unspecified product","A0A182G8A6","aae-miR-11900",-14.35,1162,1184,173
+"AALF027144-RA","unspecified product","A0A182HDE5","aae-miR-11900",-14.13,2165,2188,173
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-11900",-15.39,24697,24720,170
+"AALF005616-RA","Putative vitellogenin [Source:UniProtKB/TrEMBL;Acc:A0A023ER10]","A0A023EPW5,A0A023ER10,A0A023ER26","aae-miR-11900",-16.07,252,276,169
+"AALF016161-RA","ancient conserved domain protein 2 (cyclin m2) [Source:Projected from Aedes aegypti (AAEL014059) VB Community Annotation]","A0A023EVD1,A0A182GUV4","aae-miR-11900",-14.33,934,958,165
+"AALF018904-RA","unspecified product","A0A182GZU2","aae-miR-11900",-14.28,6086,6111,165
+"AALF003603-RA","ga binding protein beta chain (transcription factor e4tf1-47) [Source:Projected from Aedes aegypti (AAEL013278) VB Community Annotation]","A0A182G5U1","aae-miR-11900",-14,1534,1558,165
+"AALF004754-RA","unspecified product","A0A182G7Q7","aae-miR-11900",-19.8,7794,7819,164
+"AALF023105-RA","unspecified product","A0A182H715","aae-miR-11900",-15.87,14862,14885,164
+"AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-miR-11900",-15.59,8735,8761,164

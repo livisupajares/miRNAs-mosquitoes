@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF022771-RA","unspecified product","A0A182H6J3","aae-miR-276-3p",-21.24,19596,19616,166
+"AALF020428-RA","unspecified product","A0A182H2J8","aae-miR-276-3p",-25.8,8626,8645,165
+"AALF021911-RA","myosin-VIIa (Protein crinkled) [Source:Projected from Aedes aegypti (AAEL001220) VB Community Annotation]","A0A182H556,A0A1W7R928","aae-miR-276-3p",-20.67,339,359,164
+"AALF023425-RA","unspecified product","A0A182H7J3","aae-miR-276-3p",-20.02,6961,6982,164
+"AALF023425-RA","unspecified product","A0A182H7J3","aae-miR-276-3p",-20.02,6359,6380,164
+"AALF025658-RA","unspecified product","A0A182HB25,A0A1W7R5W5,A0A1W7R5Z1","aae-miR-276-3p",-24.82,1398,1418,163
+"AALF003534-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-miR-276-3p",-22.67,1419,1439,162
+"AALF023668-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-miR-276-3p",-22.62,1488,1508,162
+"AALF001505-RA","cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008340) VB Community Annotation]","A0A182G2L9","aae-miR-276-3p",-21.17,1720,1740,162
+"AALF001556-RA","unspecified product","A0A182G2N8","aae-miR-276-3p",-18.73,2106,2127,162
+"AALF022771-RA","unspecified product","A0A182H6J3","aae-miR-276-3p",-21.95,298,318,160
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-276-3p",-21.69,22980,22999,160
+"AALF015869-RA","unspecified product","A0A182GU89","aae-miR-276-3p",-20.63,933,954,160
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-miR-276-3p",-19.68,5393,5413,160
+"AALF016161-RA","ancient conserved domain protein 2 (cyclin m2) [Source:Projected from Aedes aegypti (AAEL014059) VB Community Annotation]","A0A023EVD1,A0A182GUV4","aae-miR-276-3p",-17.37,909,928,160
+"AALF001650-RA","unspecified product","A0A023ERC5,A0A023ESN6,A0A182G2V5","aae-miR-276-3p",-16.28,8895,8915,160
+"AALF023668-RA","ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]","A0A023EJP8","aae-miR-276-3p",-15.66,1181,1200,160
+"AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-miR-276-3p",-14.09,1274,1294,160
+"AALF023775-RA","DNA-directed RNA polymerase subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H837]","A0A182H837","aae-miR-276-3p",-20.49,1,19,159
+"AALF027226-RA","unspecified product","A0A182HDI7","aae-miR-276-3p",-17.81,210,228,159

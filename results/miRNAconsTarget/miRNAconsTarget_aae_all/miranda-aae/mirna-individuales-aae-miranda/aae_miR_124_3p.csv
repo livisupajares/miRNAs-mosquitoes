@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF007527-RA","unspecified product","A0A182GCI3","aae-miR-124-3p",-35.18,12123,12141,181
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-124-3p",-24.77,1386,1404,164
+"AALF007976-RA","unspecified product","A0A023EDA0,A0A182GDC3","aae-miR-124-3p",-23.9,495,513,161
+"AALF025855-RA","pak-interacting exchange factor, beta-pix/cool-1 [Source:Projected from Aedes aegypti (AAEL000719) VB Community Annotation]","A0A182HBC6","aae-miR-124-3p",-17.74,166,183,158
+"AALF023425-RA","unspecified product","A0A182H7J3","aae-miR-124-3p",-20.39,3384,3404,156
+"AALF021333-RA","unspecified product","A0A182H448","aae-miR-124-3p",-18.8,2157,2174,156
+"AALF011532-RA","unspecified product","A0A023EHR1,A0A182GKL0","aae-miR-124-3p",-17.01,4206,4224,156
+"AALF012319-RA","unspecified product","A0A182GIS9","aae-miR-124-3p",-16.25,8297,8317,156
+"AALF011128-RA","Mitochondrial GTPase 1 [Source:UniProtKB/TrEMBL;Acc:A0A182GJQ3]","A0A182GJQ3","aae-miR-124-3p",-21.25,203,222,155
+"AALF022728-RA","unspecified product","A0A182H6F6","aae-miR-124-3p",-18.99,401,418,155
+"AALF027132-RA","unspecified product","A0A023ETA1,A0A182HDD4","aae-miR-124-3p",-18.99,4011,4028,155
+"AALF009668-RA","unspecified product","A0A182GGU3","aae-miR-124-3p",-17.72,565,583,155
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aae-miR-124-3p",-19.69,34244,34263,154
+"AALF009748-RA","unspecified product","A0A023ETJ8,A0A182GH12","aae-miR-124-3p",-18.98,170,188,154
+"AALF007988-RA","unspecified product","A0A023EX39,A0A182GDD5","aae-miR-124-3p",-18.86,5323,5341,154
+"AALF007988-RA","unspecified product","A0A023EX39,A0A182GDD5","aae-miR-124-3p",-18.86,5835,5853,154
+"AALF009737-RA","unspecified product","A0A182GH02","aae-miR-124-3p",-18.86,5064,5082,154
+"AALF022069-RA","unspecified product","A0A182H5D8","aae-miR-124-3p",-17.86,127,145,154
+"AALF006899-RA","unspecified product","A0A182GBE2","aae-miR-124-3p",-22.72,1525,1543,153
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-124-3p",-20.24,17933,17951,153

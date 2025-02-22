@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF025812-RA","unspecified product","A0A182HBA6","aae-bantam-5p",-20.75,765,788,179
+"AALF004362-RA","rac serine/threonine kinase [Source:Projected from Aedes aegypti (AAEL008823) VB Community Annotation]","A0A182G722","aae-bantam-5p",-24.5,1512,1532,174
+"AALF011613-RA","unspecified product","A0A023EFX4,A0A182GKR7","aae-bantam-5p",-25.1,141,165,172
+"AALF015869-RA","unspecified product","A0A182GU89","aae-bantam-5p",-21.81,1360,1384,170
+"AALF005731-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL002390) VB Community Annotation]","A0A182G9G0","aae-bantam-5p",-17.84,2311,2333,170
+"AALF005838-RA","unspecified product","A0A182G9M1,A0A1W7R6A9","aae-bantam-5p",-17.84,2309,2331,170
+"AALF026764-RA","unspecified product","A0A182HCT5","aae-bantam-5p",-14.9,345,367,169
+"AALF019162-RA","unspecified product","A0A182H0C6","aae-bantam-5p",-14.7,610,632,169
+"AALF024211-RA","unspecified product","A0A182H8Q6","aae-bantam-5p",-18.32,828,850,168
+"AALF009951-RA","unspecified product","A0A182GHF2","aae-bantam-5p",-23.94,6828,6851,167
+"AALF022187-RA","PHD finger domain [Source:Projected from Aedes aegypti lvpagwg (AAEL009416) UniProtKB/TrEMBL;Acc:A0A1S4FM94]","A0A182H5K2","aae-bantam-5p",-19.68,62,83,167
+"AALF002747-RA","unspecified product","A0A182G4I3,A0A1W7R6H8","aae-bantam-5p",-18.5,31,57,167
+"AALF024740-RA","cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008827) VB Community Annotation]","A0A182H9K9","aae-bantam-5p",-16.17,884,906,167
+"AALF021323-RA","unspecified product","A0A182H443","aae-bantam-5p",-19.72,2850,2874,166
+"AALF020574-RA","unspecified product","A0A182H2V6","aae-bantam-5p",-18.8,11089,11111,166
+"AALF024530-RA","unspecified product","A0A182H991","aae-bantam-5p",-17.9,214,234,166
+"AALF027200-RA","ADP-ribosylation factor [Source:Projected from Aedes aegypti (AAEL007065) VB Community Annotation]","A0A023EIG2,A0A182HDH0","aae-bantam-5p",-18.37,248,271,165
+"AALF005612-RA","macroglobulin/complement [Source:Projected from Aedes aegypti (AAEL012267) VB Community Annotation]","A0A023EWE3,A0A182G988,A0A1W7R8N4","aae-bantam-5p",-18.1,4,26,165
+"AALF018452-RA","unspecified product","A0A182GZ31","aae-bantam-5p",-15.75,433,455,165
+"AALF008955-RA","unspecified product","A0A182GFD4","aae-bantam-5p",-23.58,922,945,164

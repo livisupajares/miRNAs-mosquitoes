@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF005248-RA","unspecified product","A0A182G8M1","aae-bantam-3p",-21.76,3343,3364,173
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-bantam-3p",-20.61,13196,13216,169
+"AALF026228-RA","unspecified product","A0A182HBZ8","aae-bantam-3p",-19.85,7010,7031,168
+"AALF007988-RA","unspecified product","A0A023EX39,A0A182GDD5","aae-bantam-3p",-18.7,7107,7128,168
+"AALF009787-RA","unspecified product","A0A182GH36","aae-bantam-3p",-17.78,924,946,167
+"AALF026420-RA","unspecified product","A0A182HC84","aae-bantam-3p",-17.78,706,728,167
+"AALF020959-RA","unspecified product","A0A182H3I4","aae-bantam-3p",-16.79,642,663,167
+"AALF027188-RA","unspecified product","A0A182HDG6","aae-bantam-3p",-21.02,7755,7775,166
+"AALF020280-RA","unspecified product","A0A182H296","aae-bantam-3p",-19.12,9,30,164
+"AALF014648-RA","unspecified product","A0A023EKV7,A0A182GRU9","aae-bantam-3p",-15.76,49,71,164
+"AALF006880-RA","unspecified product","A0A182GBC6","aae-bantam-3p",-22.2,4247,4270,163
+"AALF003891-RA","unspecified product","A0A182G6A9,A0A1W7R6A7","aae-bantam-3p",-21.88,797,819,163
+"AALF002636-RA","unspecified product","A0A182G4C1","aae-bantam-3p",-17.61,82,103,163
+"AALF021922-RA","unspecified product","A0A182H561","aae-bantam-3p",-17.53,3280,3301,163
+"AALF013028-RA","Histone deacetylase [Source:UniProtKB/TrEMBL;Acc:A0A182GNN5]","A0A023EUU4,A0A182GNN5","aae-bantam-3p",-15.96,1224,1245,163
+"AALF025468-RA","unspecified product","A0A182HAS1","aae-bantam-3p",-23.18,124,148,162
+"AALF005864-RA","unspecified product","A0A182G9N5","aae-bantam-3p",-20.25,385,405,162
+"AALF012410-RA","unspecified product","A0A023ERE6,A0A182GMB6","aae-bantam-3p",-20.22,9,31,162
+"AALF004045-RA","unspecified product","A0A023ELG6,A0A182G6I8","aae-bantam-3p",-19.92,104,125,161
+"AALF005399-RA","unspecified product","A0A182G8W6","aae-bantam-3p",-19.92,104,125,161

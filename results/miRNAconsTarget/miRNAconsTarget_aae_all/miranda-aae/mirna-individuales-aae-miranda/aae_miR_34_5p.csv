@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aae-miR-34-5p",-30.39,10190,10216,167
+"AALF008942-RA","Putative vacuolar assembly/sorting protein did2 [Source:UniProtKB/TrEMBL;Acc:A0A023EJE6]","A0A023EJE6","aae-miR-34-5p",-24.54,1794,1817,166
+"AALF020438-RA","serine protease htra2 [Source:Projected from Aedes aegypti (AAEL006373) VB Community Annotation]","A0A023ET05,A0A182H2K1","aae-miR-34-5p",-24.19,107,128,166
+"AALF009404-RA","unspecified product","A0A182GGA3","aae-miR-34-5p",-20.55,2243,2264,165
+"AALF022363-RA","beta-1,4-galactosyltransferase [Source:Projected from Aedes aegypti (AAEL006426) VB Community Annotation]","A0A182H5W3","aae-miR-34-5p",-29.09,652,673,164
+"AALF009526-RA","translation initiation factor eif-2b gamma subunit [Source:Projected from Aedes aegypti (AAEL011442) VB Community Annotation]","A0A182GGI8","aae-miR-34-5p",-28.72,168,190,163
+"AALF013111-RA","MICOS complex subunit MIC13 [Source:UniProtKB/TrEMBL;Acc:A0A023EFH1]","A0A023EDK2,A0A023EFH1","aae-miR-34-5p",-24.35,1914,1937,163
+"AALF023790-RA","unspecified product","A0A182H845","aae-miR-34-5p",-20.13,18602,18624,163
+"AALF028469-RA","unspecified product","A0A182HFB7","aae-miR-34-5p",-25.85,9387,9411,162
+"AALF018789-RA","unspecified product","A0A182GZN0","aae-miR-34-5p",-25.84,1023,1043,162
+"AALF023286-RA","protein-glutamine gamma-glutamyltransferase [Source:Projected from Aedes aegypti (AAEL006978) VB Community Annotation]","A0A182H7B1","aae-miR-34-5p",-25.1,456,478,162
+"AALF005731-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL002390) VB Community Annotation]","A0A182G9G0","aae-miR-34-5p",-24.74,950,970,162
+"AALF005838-RA","unspecified product","A0A182G9M1,A0A1W7R6A9","aae-miR-34-5p",-24.74,945,965,162
+"AALF021651-RA","Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]","A0A023EVU3,A0A182H4P9","aae-miR-34-5p",-22.13,4499,4519,162
+"AALF026228-RA","unspecified product","A0A182HBZ8","aae-miR-34-5p",-21.93,10094,10114,162
+"AALF019454-RA","unspecified product","A0A182H0V3","aae-miR-34-5p",-21.34,147,168,162
+"AALF000066-RA","peroxisomal n1-acetyl-spermine/spermidine oxidase [Source:Projected from Aedes aegypti lvpagwg (AAEL007523) VB Community Annotation]","A0A182G0L6","aae-miR-34-5p",-26.76,296,317,160
+"AALF007997-RA","sugar transporter [Source:Projected from Aedes aegypti (AAEL014207) VB Community Annotation]","A0A182GDE4","aae-miR-34-5p",-24.38,361,383,160
+"AALF001521-RA","unspecified product","A0A182G2M7","aae-miR-34-5p",-23.07,252,273,160
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-34-5p",-23.01,19381,19401,160

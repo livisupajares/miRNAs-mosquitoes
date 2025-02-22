@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF005775-RA","unspecified product","A0A182G9J3","aae-miR-5108-5p",-21.87,48,66,165
+"AALF021003-RA","unspecified product","A0A182H3L9","aae-miR-5108-5p",-21.87,48,66,165
+"AALF018290-RA","Malic enzyme [Source:UniProtKB/TrEMBL;Acc:A0A182GYQ8]","A0A023EXF3,A0A182GYQ8,G8GID5","aae-miR-5108-5p",-24.84,283,300,159
+"AALF023825-RA","unspecified product","A0A023EFE3,A0A023EGK6,A0A182H867","aae-miR-5108-5p",-21.94,51,69,158
+"AALF001505-RA","cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008340) VB Community Annotation]","A0A182G2L9","aae-miR-5108-5p",-21.58,75,94,158
+"AALF028158-RA","unspecified product","A0A182HEV2","aae-miR-5108-5p",-21.29,1121,1137,158
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-5108-5p",-20.08,2301,2319,157
+"AALF024803-RA","enhancer of zeste, ezh [Source:Projected from Aedes aegypti (AAEL013213) VB Community Annotation]","A0A182H9M9","aae-miR-5108-5p",-20.02,225,243,157
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-5108-5p",-16.13,28189,28207,157
+"AALF011919-RA","unspecified product","A0A182GLC9","aae-miR-5108-5p",-19.03,4656,4676,156
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-miR-5108-5p",-21.65,10931,10950,155
+"AALF002576-RA","unspecified product","A0A182G476","aae-miR-5108-5p",-21.38,57,74,154
+"AALF020797-RA","unspecified product","A0A023EWG6,A0A182H388","aae-miR-5108-5p",-21.38,57,74,154
+"AALF016706-RA","unspecified product","A0A182GVV9","aae-miR-5108-5p",-20.48,67,86,154
+"AALF018534-RA","unspecified product","A0A182GZ82","aae-miR-5108-5p",-18.63,24,40,154
+"AALF019314-RA","unspecified product","A0A182H0M0","aae-miR-5108-5p",-17.89,307,327,154
+"AALF010133-RA","Elongation factor 1-alpha [Source:UniProtKB/TrEMBL;Acc:A0A182GHS1]","A0A023ETR3,A0A182GHS1","aae-miR-5108-5p",-17.7,674,692,154
+"AALF024872-RA","F-box only protein [Source:Projected from Aedes aegypti (AAEL004875) VB Community Annotation]","A0A023EXX2,A0A182H9S0","aae-miR-5108-5p",-20.12,232,250,153
+"AALF018741-RA","unspecified product","A0A182GZK6,A0A1W7R657,A0A1W7R663,A0A1W7R664,A0A1W7R670,A0A1W7R6H6","aae-miR-5108-5p",-17.6,827,843,153
+"AALF010847-RA","unspecified product","A0A182GJ68","aae-miR-5108-5p",-17.56,204,222,153

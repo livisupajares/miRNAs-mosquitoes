@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF011564-RA","unspecified product","A0A182GKN9","aae-miR-308-3p",-18.11,3505,3522,168
+"AALF004127-RA","phosphatase and actin regulator [Source:Projected from Aedes aegypti (AAEL014792) VB Community Annotation]","A0A182G6N4","aae-miR-308-3p",-14.8,696,713,162
+"AALF020334-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL011578) VB Community Annotation]","A0A182H2D3","aae-miR-308-3p",-18.56,3134,3151,161
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-308-3p",-17.47,33032,33049,160
+"AALF026192-RA","unspecified product","A0A023EIT7,A0A182HBW5","aae-miR-308-3p",-18.79,93,111,159
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-308-3p",-18,817,834,159
+"AALF014954-RA","Putative piopio [Source:UniProtKB/TrEMBL;Acc:A0A023ERW3]","A0A023EMB8,A0A023ENI3,A0A023ERW3,A0A023ETS9","aae-miR-308-3p",-17.21,115,133,159
+"AALF016309-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL012219) VB Community Annotation]","A0A023EVM9,A0A182GV58","aae-miR-308-3p",-20.87,208,225,158
+"AALF022742-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti lvpagwg (AAEL012219) VB Community Annotation]","A0A182H6G9","aae-miR-308-3p",-20.87,208,225,158
+"AALF007205-RA","unspecified product","A0A182GBX9","aae-miR-308-3p",-16.37,35,52,158
+"AALF023165-RA","unspecified product","A0A182H759","aae-miR-308-3p",-15.99,328,345,158
+"AALF017499-RA","unspecified product","A0A182GXA5","aae-miR-308-3p",-15.97,8123,8140,158
+"AALF023105-RA","unspecified product","A0A182H715","aae-miR-308-3p",-15.97,9843,9860,158
+"AALF023105-RA","unspecified product","A0A182H715","aae-miR-308-3p",-15.97,9745,9762,158
+"AALF012688-RA","unspecified product","A0A023EVA3,A0A182GMW1","aae-miR-308-3p",-15.72,680,697,158
+"AALF006142-RA","unspecified product","A0A182GA48","aae-miR-308-3p",-14.06,138,155,158
+"AALF008947-RA","heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]","A0A023ET39,A0A182GFC6","aae-miR-308-3p",-14.4,6450,6466,157
+"AALF000690-RA","unspecified product","A0A182G1H0","aae-miR-308-3p",-14.17,422,438,157
+"AALF011387-RA","Serine Protease Inhibitor (serpin)  likely cleavage at S/L. [Source:Projected from Aedes aegypti (AAEL014138) VB Community Annotation]","A0A023ERY6,A0A023ETU8,A0A182GK97","aae-miR-308-3p",-19.28,86,103,156
+"AALF021961-RA","Serine Protease Inhibitor (serpin)  likely cleavage at S/L. [Source:Projected from Aedes aegypti lvpagwg (AAEL014138) VB Community Annotation]","A0A182H581","aae-miR-308-3p",-19.28,86,103,156

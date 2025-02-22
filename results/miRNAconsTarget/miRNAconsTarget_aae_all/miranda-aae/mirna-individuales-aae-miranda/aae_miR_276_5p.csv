@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF006320-RA","unspecified product","A0A182GAE4","aae-miR-276-5p",-16.44,338,358,159
+"AALF008773-RA","unspecified product","A0A182GF02","aae-miR-276-5p",-16.38,36,57,159
+"AALF026098-RA","unspecified product","A0A182HBR2,A0A1W7R6V5,A0A1W7R6Y6","aae-miR-276-5p",-17.47,751,771,157
+"AALF002156-RA","protein tyrosine phosphatase, non-receptor type nt1 [Source:Projected from Aedes aegypti (AAEL001919) VB Community Annotation]","A0A023ET57,A0A182G3J1","aae-miR-276-5p",-16.91,122,142,157
+"AALF016069-RA","unspecified product","A0A182GUM5","aae-miR-276-5p",-15.15,456,476,156
+"AALF002274-RA","unspecified product","A0A182G3R0","aae-miR-276-5p",-24.09,641,661,155
+"AALF020979-RA","U2 snRNP auxiliary factor large subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H3K3]","A0A182H3K3","aae-miR-276-5p",-24.09,640,660,155
+"AALF027910-RA","unspecified product","A0A182HEI5","aae-miR-276-5p",-15.29,457,477,155
+"AALF021374-RA","rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]","A0A182H480","aae-miR-276-5p",-24.39,7268,7289,154
+"AALF004148-RA","unspecified product","A0A182G6Q0","aae-miR-276-5p",-23.87,507,528,154
+"AALF022536-RA","Gamma-tubulin complex component [Source:UniProtKB/TrEMBL;Acc:A0A182H666]","A0A182H666","aae-miR-276-5p",-19.06,543,564,154
+"AALF012214-RA","unspecified product","A0A023ELL2,A0A182GLZ3","aae-miR-276-5p",-18.46,15,37,154
+"AALF016050-RA","unspecified product","A0A182GUL1","aae-miR-276-5p",-18.4,6644,6664,154
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-276-5p",-16.05,6025,6045,154
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-276-5p",-17.58,18377,18396,153
+"AALF027349-RA","short-chain dehydrogenase [Source:Projected from Aedes aegypti (AAEL003959) VB Community Annotation]","A0A182HDN9","aae-miR-276-5p",-23.36,8,28,151
+"AALF027396-RA","unspecified product","A0A182HDQ7","aae-miR-276-5p",-21.96,122,142,151
+"AALF010842-RA","unspecified product","A0A182H373","aae-miR-276-5p",-21.53,951,971,151
+"AALF007211-RA","unspecified product","A0A182GBY5,A0A1W7R654,A0A1W7R6I8","aae-miR-276-5p",-19.79,2352,2372,151
+"AALF018296-RA","unspecified product","A0A023EKJ1,A0A023EST1,A0A182GYR3","aae-miR-276-5p",-18.18,302,322,151

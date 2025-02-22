@@ -81,3 +81,15 @@ View(candidates_miranda[["aae-miR-210-5p"]])
 
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
+# Write each miRNA data frame to a separate CSV file
+output_dir_mir <- "results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/mirna-individuales-aae-miranda" # Directory to save the CSV files
+
+lapply(names(candidates_miranda), function(miRNA_name) {
+  df <- candidates_miranda[[miRNA_name]]
+  # Construct the file name
+  file_name <- paste0(output_dir_mir, "/", gsub("-", "_", miRNA_name), ".csv")
+  # Write the data frame to a CSV file
+  write.csv(df, file = file_name, row.names = FALSE)
+  # Optional: Print a message to confirm the file was written
+  cat("Wrote CSV file for:", miRNA_name, "\n")
+})

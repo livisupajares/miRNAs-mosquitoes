@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF014293-RA","unspecified product","A0A023EW33,A0A182GR77","aae-let-7",-25.71,130,151,162
+"AALF013157-RA","unspecified product","A0A023EQB6,A0A182GNX0","aae-let-7",-26.42,3677,3696,161
+"AALF023047-RA","unspecified product","A0A182H6Y9","aae-let-7",-20.19,1743,1764,161
+"AALF012181-RA","unspecified product","A0A182GLX2","aae-let-7",-19.57,125,146,161
+"AALF013904-RA","unspecified product","A0A182H8M7","aae-let-7",-19.57,125,146,161
+"AALF006774-RA","electron transfer flavoprotein-ubiquinone oxidoreductase [Source:Projected from Aedes aegypti (AAEL007526) VB Community Annotation]","A0A182GB59","aae-let-7",-19.3,2,21,161
+"AALF016469-RA","unspecified product","A0A182GVH5","aae-let-7",-17.44,4231,4252,161
+"AALF019047-RA","unspecified product","A0A023EQC8,A0A182H045","aae-let-7",-17.05,621,642,161
+"AALF004565-RA","unspecified product","A0A023EHU7,A0A182G7D5,Q4VZQ4,Q4VZQ5","aae-let-7",-23.95,64,83,160
+"AALF000101-RA","unspecified product","A0A182G0N5","aae-let-7",-22.96,1279,1299,159
+"AALF013880-RA","high density lipoprotien binding protein / vigilin [Source:Projected from Aedes aegypti (AAEL001421) VB Community Annotation]","A0A023ENA3,A0A023ER27,A0A023ESN0,A0A023EVS8,A0A182GQD7","aae-let-7",-23.82,167,188,158
+"AALF015857-RA","unspecified product","A0A182GU79","aae-let-7",-22.27,278,298,158
+"AALF005248-RA","unspecified product","A0A182G8M1","aae-let-7",-23.46,3041,3062,157
+"AALF026806-RA","unspecified product","A0A182HCV8","aae-let-7",-17.61,9,29,157
+"AALF004173-RA","unspecified product","A0A182G6R6","aae-let-7",-18.35,138,157,156
+"AALF025583-RA","unspecified product","A0A182HAY4","aae-let-7",-22.45,179,199,155
+"AALF020954-RA","unspecified product","A0A023EVM2,A0A182H3H9","aae-let-7",-21.75,896,916,155
+"AALF021255-RA","unspecified product","A0A182H405","aae-let-7",-21.55,64,84,155
+"AALF019692-RA","unspecified product","A0A023EHT6,A0A023EI65,A0A023EJF7,A0A023EMA2,A0A023EN63,A0A182H186","aae-let-7",-18.97,1910,1928,155
+"AALF017132-RA","unspecified product","A0A182GWL4","aae-let-7",-23.84,167,188,154

@@ -1,0 +1,21 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF000419-RA","unspecified product","A0A182G141","aae-miR-210-5p",-21.88,11,28,172
+"AALF000377-RA","unspecified product","A0A182G113","aae-miR-210-5p",-24.28,245,262,164
+"AALF019459-RA","unspecified product","A0A182H0V8","aae-miR-210-5p",-21.65,535,552,164
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aae-miR-210-5p",-23.52,7310,7329,162
+"AALF026609-RA","unspecified product","A0A182HCK4","aae-miR-210-5p",-19.8,1954,1971,162
+"AALF008894-RA","fatty acid synthase [Source:Projected from Aedes aegypti (AAEL001194) VB Community Annotation]","A0A182GF80","aae-miR-210-5p",-19.44,40,57,162
+"AALF009787-RA","unspecified product","A0A182GH36","aae-miR-210-5p",-22.84,800,817,160
+"AALF026420-RA","unspecified product","A0A182HC84","aae-miR-210-5p",-22.84,584,601,160
+"AALF002350-RA","unspecified product","A0A023EUX1,A0A182G3V4","aae-miR-210-5p",-21.65,396,413,160
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-210-5p",-20.32,27279,27296,160
+"AALF008966-RA","unspecified product","A0A023ERX5,A0A023EUR1,A0A182GFE4","aae-miR-210-5p",-18.67,233,250,160
+"AALF026400-RA","calpain 4, 6, 7, invertebrate [Source:Projected from Aedes aegypti lvpagwg (AAEL003963) VB Community Annotation]","A0A182HC76","aae-miR-210-5p",-21.34,1071,1089,159
+"AALF005432-RA","unspecified product","A0A182G8Y9,Q6A4R3","aae-miR-210-5p",-16.67,1013,1030,159
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-210-5p",-17.46,17217,17236,158
+"AALF022771-RA","unspecified product","A0A182H6J3","aae-miR-210-5p",-21.72,1276,1292,157
+"AALF004045-RA","unspecified product","A0A023ELG6,A0A182G6I8","aae-miR-210-5p",-18.42,1389,1405,156
+"AALF005399-RA","unspecified product","A0A182G8W6","aae-miR-210-5p",-18.42,1378,1394,156
+"AALF012504-RA","unspecified product","A0A182GMH2","aae-miR-210-5p",-17.59,137,154,156
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-miR-210-5p",-16.2,5287,5304,156
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aae-miR-210-5p",-16.2,5882,5899,156
