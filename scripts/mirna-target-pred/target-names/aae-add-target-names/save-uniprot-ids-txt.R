@@ -2,7 +2,7 @@
 library(dplyr)
 # ==== IMPORT DF ====
 # Load the miRNA dataframes inside of a list to iterate over them
-# source("scripts/mirna-target-pred/target-names/aae-add-target-names/aae-add-target-names-consTarget-miranda.R")
+source("scripts/mirna-target-pred/target-names/aae-add-target-names/aae-add-target-names-consTarget-miranda.R")
 
 # ==== EXTRACT UNIPROT IDS ====
 # Extract Uniprot IDs from each miRNA and save them to txt files
