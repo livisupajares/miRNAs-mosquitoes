@@ -1,0 +1,13 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	PANTHER version 19.0 Released 2024-06-20
+Analyzed List:	aae-miR-999-3p-upid-aae-miranda_output.txt
+Reference List:	Aedes aegypti (AEDAE)
+Test Type:	FISHER
+Correction:	FDR
+PANTHER GO-Slim Molecular Function	Aedes aegypti (AEDAE) - REFLIST (14081)	aae-miR-999-3p-upid-aae-miranda_output.txt (96)	aae-miR-999-3p-upid-aae-miranda_output.txt (expected)	aae-miR-999-3p-upid-aae-miranda_output.txt (over/under)	aae-miR-999-3p-upid-aae-miranda_output.txt (fold Enrichment)	aae-miR-999-3p-upid-aae-miranda_output.txt (raw P-value)	aae-miR-999-3p-upid-aae-miranda_output.txt (FDR)
+Unclassified (UNCLASSIFIED)	6696	18	45.65	-	.39	6.29E-09	3.63E-06

@@ -1,0 +1,42 @@
+{"overrepresentation": {
+    "reference": "",
+    "upload_lists": {"input_list": {"list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt"}},
+    "tool_release_date": 20240807,
+    "data_version_release_date": "PANTHER version 19.0 Released 2024-06-20",
+    "annotation_type": "PANTHER GO-Slim Molecular Function",
+    "correction": "FDR",
+    "test_type": "FISHER",
+    "group": {"result": {
+        "input_list": {
+            "number_in_list": 18,
+            "fold_enrichment": 0.39429323476702505,
+            "fdr": 3.630452530181363E-6,
+            "expected": 45.65130317449045,
+            "pValue": 6.291945459586418E-9,
+            "mapped_id_list": {"mapped_id": [
+                "A0A023EV13",
+                "A0A182GTQ5",
+                "A0A182GX03",
+                "A0A182G1M6",
+                "A0A023EID7",
+                "A0A182H3L7",
+                "A0A182GIM3",
+                "A0A182GW91",
+                "A0A182GR74",
+                "A0A182G1Q2",
+                "A0A182H446",
+                "A0A182G5Y8",
+                "A0A182GQ69",
+                "A0A182GC06",
+                "A0A182HAJ2",
+                "A0A182G6N6",
+                "A0A023EFH1",
+                "A0A182G819"
+            ]},
+            "list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt",
+            "plus_minus": "-"
+        },
+        "number_in_reference": 6696,
+        "term": {"label": "UNCLASSIFIED"}
+    }}
+}}

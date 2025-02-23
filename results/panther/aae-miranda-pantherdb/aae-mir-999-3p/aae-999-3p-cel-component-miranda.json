@@ -1,0 +1,114 @@
+{"overrepresentation": {
+    "reference": "",
+    "upload_lists": {"input_list": {"list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt"}},
+    "tool_release_date": 20240807,
+    "data_version_release_date": "PANTHER version 19.0 Released 2024-06-20",
+    "annotation_type": "PANTHER GO-Slim Cellular Component",
+    "correction": "FDR",
+    "test_type": "FISHER",
+    "group": [
+        {"result": {
+            "input_list": {
+                "number_in_list": 19,
+                "fold_enrichment": 0.4807425536196883,
+                "fdr": 0.0015481847173661417,
+                "expected": 39.52219302606349,
+                "pValue": 9.798637451684442E-6,
+                "mapped_id_list": {"mapped_id": [
+                    "A0A023EV13",
+                    "A0A182G2M3",
+                    "A0A182GX03",
+                    "A0A182G0L6",
+                    "A0A023EID7",
+                    "A0A182H3G2",
+                    "A0A182H3L7",
+                    "A0A182GW91",
+                    "A0A182GAE9",
+                    "A0A182G5Y8",
+                    "A0A023EHS3",
+                    "A0A182GAG3",
+                    "A0A182GCM7",
+                    "A0A182G6N6",
+                    "A0A182H4D2",
+                    "A0A182G819",
+                    "A0A182GGW0",
+                    "A0A023ETW6",
+                    "A0A182HE32"
+                ]},
+                "list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt",
+                "plus_minus": "-"
+            },
+            "number_in_reference": 5797,
+            "term": {"label": "UNCLASSIFIED"}
+        }},
+        {"result": [
+            {
+                "input_list": {
+                    "number_in_list": 3,
+                    "fold_enrichment": 0.20381252894858728,
+                    "fdr": 0.021019799721088,
+                    "expected": 14.719409132874087,
+                    "pValue": 1.773822761273249E-4,
+                    "mapped_id_list": {"mapped_id": [
+                        "A0A182GIM3",
+                        "A0A182G5U1",
+                        "A0A182GE72"
+                    ]},
+                    "list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt",
+                    "plus_minus": "-"
+                },
+                "number_in_reference": 2159,
+                "term": {
+                    "level": 0,
+                    "id": "GO:0005634",
+                    "label": "nucleus"
+                }
+            },
+            {
+                "input_list": {
+                    "number_in_list": 26,
+                    "fold_enrichment": 0.5448005952380953,
+                    "fdr": 0.001838158121363567,
+                    "expected": 47.72388324692848,
+                    "pValue": 7.755941440352604E-6,
+                    "mapped_id_list": {"mapped_id": [
+                        "A0A182GTN5",
+                        "A0A182G1M6",
+                        "A0A182GR74",
+                        "A0A023EE72",
+                        "A0A182G5U1",
+                        "A0A182G1Q2",
+                        "A0A023EBK1",
+                        "A0A182GC06",
+                        "A0A182HAJ2",
+                        "Q5MIS0",
+                        "A0A182HBP1",
+                        "A0A182GDW5",
+                        "A0A182HCV9",
+                        "A0A182HDB8",
+                        "A0A182GTQ5",
+                        "A0A182GIM3",
+                        "A0A182H342",
+                        "A0A182GUQ1",
+                        "A0A182H446",
+                        "A0A182GQ69",
+                        "A0A182GCN4",
+                        "A0A182GMX7",
+                        "A0A182HA23",
+                        "A0A023EFH1",
+                        "A0A182GE72",
+                        "A0A023EJP8"
+                    ]},
+                    "list_name": "aae-miR-999-3p-upid-aae-miranda_output.txt",
+                    "plus_minus": "-"
+                },
+                "number_in_reference": 7000,
+                "term": {
+                    "level": 4,
+                    "id": "GO:0110165",
+                    "label": "cellular anatomical entity"
+                }
+            }
+        ]}
+    ]
+}}
