@@ -1,0 +1,22 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF015087-RA","protein transport protein sec23 [Source:Projected from Aedes aegypti (AAEL007484) VB Community Annotation]","A0A182GSS4","aae-miR-999-3p",-16.12,2369,2417,0.999906490809016
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aae-miR-999-3p",-14.12,9961,10006,0.999742621034716
+"AALF010225-RA","sugar transporter [Source:Projected from Aedes aegypti (AAEL012443) VB Community Annotation]","A0A182GHY4","aae-miR-999-3p",-14,403,445,0.999176113768441
+"AALF003361-RA","nucleosome assembly protein [Source:Projected from Aedes aegypti (AAEL005567) VB Community Annotation]","A0A182G5F1","aae-miR-999-3p",-14.35,215,256,0.999107989257511
+"AALF027634-RA","dual specificity mitogen-activated protein kinase kinase hemipterous MAPKK [Source:Projected from Aedes aegypti (AAEL003359) VB Community Annotation]","A0A182HE32","aae-miR-999-3p",-14.89,994,1034,0.99905064581473
+"AALF022794-RA","facilitated trehalose transporter Tret1 [Source:Projected from Aedes aegypti (AAEL000567) VB Community Annotation]","A0A023EU84,A0A182H6L1,A0A1W7R5Q7","aae-miR-999-3p",-14.59,782,829,0.999045834214879
+"AALF008228-RA","Adenylosuccinate synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182GDW5]","A0A023ETL6,A0A182GDW5","aae-miR-999-3p",-15.89,435,480,0.998731276674399
+"AALF022171-RA","amino acids transporter [Source:Projected from Aedes aegypti (AAEL002525) VB Community Annotation]","A0A182H5J8","aae-miR-999-3p",-15.01,56,101,0.998731276674399
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aae-miR-999-3p",-14.15,2590,2629,0.998370314227587
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-999-3p",-14.92,1645,1679,0.998281515052838
+"AALF027416-RA","Alpha-1,4 glucan phosphorylase [Source:UniProtKB/TrEMBL;Acc:A0A182HDR9]","A0A182HDR9","aae-miR-999-3p",-14.71,128,176,0.998187729470203
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-999-3p",-15.61,26732,26779,0.997510440349918
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aae-miR-999-3p",-16,17173,17193,0.997346897501179
+"AALF007802-RA","Putative rrm motif-containing protein [Source:UniProtKB/TrEMBL;Acc:A0A023ELN1]","A0A023ELN1","aae-miR-999-3p",-15.29,177,198,0.996971601123472
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-999-3p",-14.19,14595,14617,0.996971601123472
+"AALF020491-RA","sulphate transporter [Source:Projected from Aedes aegypti (AAEL003548) VB Community Annotation]","A0A182H2P2","aae-miR-999-3p",-14.5,121,154,0.996423745592297
+"AALF006329-RA","glycosyltransferase [Source:Projected from Aedes aegypti (AAEL007982) VB Community Annotation]","A0A182GAE9","aae-miR-999-3p",-14.2,77,91,0.996423745592297
+"AALF001509-RA","DNA-directed RNA polymerase subunit beta [Source:UniProtKB/TrEMBL;Acc:A0A182G2M3]","A0A182G2M3","aae-miR-999-3p",-14.3,106,127,0.995388467577979
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aae-miR-999-3p",-14.4,5255,5278,0.995124147178571
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aae-miR-999-3p",-14.4,20066,20091,0.993934178015161
+"AALF026517-RA","GTP-binding protein sar1 [Source:Projected from Aedes aegypti (AAEL010012) VB Community Annotation]","A0A023EHF4,A0A182HCE3","aae-miR-999-3p",-16.2,584,633,0.99195327929403

@@ -1,0 +1,30 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF025948-RA","Glucosamine-6-phosphate isomerase [Source:UniProtKB/TrEMBL;Acc:A0A182HBI6]","A0A023EP88,A0A182HBI6","aae-miR-1175-3p",-14.06,14713,14750,0.99991763526212
+"AALF012962-RA","odd Oz protein [Source:Projected from Aedes aegypti (AAEL000405) VB Community Annotation]","A0A182GNI2","aae-miR-1175-3p",-14.49,3707,3745,0.999869171786234
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aae-miR-1175-3p",-14.1,23184,23209,0.999863094122807
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aae-miR-1175-3p",-14.85,5723,5767,0.999796056573155
+"AALF007937-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL010184) VB Community Annotation]","A0A182GDA5","aae-miR-1175-3p",-15.05,3644,3682,0.999754709545665
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aae-miR-1175-3p",-14,1767,1779,0.999716049184399
+"AALF023599-RA","spliceosomal protein sap [Source:Projected from Aedes aegypti (AAEL002709) VB Community Annotation]","A0A182H7T4","aae-miR-1175-3p",-18.9,1,28,0.999541712598995
+"AALF018436-RA","Enolase-phosphatase E1 (EC 3.1.3.77)(2,3-diketo-5-methylthio-1-phosphopentane phosphatase) [Source:Projected from Aedes aegypti (AAEL000109) VB Community Annotation]","A0A023ER21,A0A023ETU6,A0A182GZ21","aae-miR-1175-3p",-18.13,1096,1127,0.999518675981259
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-1175-3p",-15.55,3902,3939,0.999482192558365
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aae-miR-1175-3p",-14.5,633,662,0.999461768186198
+"AALF004462-RA","ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]","A0A182G786","aae-miR-1175-3p",-15.03,979,1011,0.999459555283648
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aae-miR-1175-3p",-15.7,6431,6470,0.999300086035647
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-1175-3p",-16.25,15113,15151,0.999196512493806
+"AALF016199-RA","Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023EQG7]","A0A023EQG7","aae-miR-1175-3p",-16.7,106,117,0.998026393517395
+"AALF018786-RA","Putative nogo-b receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EMB0]","A0A023EMB0","aae-miR-1175-3p",-15.8,359,379,0.997799390426772
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-1175-3p",-14.9,11391,11413,0.99757877298918
+"AALF024898-RA","integrin alpha-ps [Source:Projected from Aedes aegypti lvpagwg (AAEL013600) VB Community Annotation]","A0A182H9T5","aae-miR-1175-3p",-14.1,703,734,0.99757877298918
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-1175-3p",-14.15,21758,21802,0.997371115457125
+"AALF015564-RA","Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023ES90]","A0A023ES90","aae-miR-1175-3p",-15.2,386,411,0.997361573875677
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aae-miR-1175-3p",-14.8,15401,15440,0.997361573875677
+"AALF027638-RA","mitochondrial carrier protein [Source:Projected from Aedes aegypti (AAEL011842) VB Community Annotation]","A0A023EMP9,A0A182HE36","aae-miR-1175-3p",-15.84,683,721,0.997238581396434
+"AALF023646-RA","Protein-L-isoaspartate O-methyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A023EKA2]","A0A023EKA2","aae-miR-1175-3p",-18.5,101,132,0.996423745592297
+"AALF022171-RA","amino acids transporter [Source:Projected from Aedes aegypti (AAEL002525) VB Community Annotation]","A0A182H5J8","aae-miR-1175-3p",-17.8,124,145,0.996423745592297
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-miR-1175-3p",-16.9,7559,7580,0.996423745592297
+"AALF022348-RA","chromosome region maintenance protein 1/exportin [Source:Projected from Aedes aegypti (AAEL001484) VB Community Annotation]","A0A023EWQ8,A0A182H5U8","aae-miR-1175-3p",-14.8,938,965,0.996423745592297
+"AALF009997-RA","histone deacetylase [Source:Projected from Aedes aegypti (AAEL004416) VB Community Annotation]","A0A182GHI8","aae-miR-1175-3p",-16.2,53,82,0.995106293349215
+"AALF005612-RA","macroglobulin/complement [Source:Projected from Aedes aegypti (AAEL012267) VB Community Annotation]","A0A023EWE3,A0A182G988,A0A1W7R8N4","aae-miR-1175-3p",-14.9,65,89,0.991759651730091
+"AALF018617-RA","DNA-directed RNA polymerase subunit [Source:UniProtKB/TrEMBL;Acc:A0A182GZD4]","A0A182GZD4","aae-miR-1175-3p",-14.1,647,665,0.991396926885564
+"AALF001094-RA","Putative microtubule-binding protein mip-t3 [Source:UniProtKB/TrEMBL;Acc:A0A023EG63]","A0A023EG63","aae-miR-1175-3p",-18,89,110,0.991187005909185

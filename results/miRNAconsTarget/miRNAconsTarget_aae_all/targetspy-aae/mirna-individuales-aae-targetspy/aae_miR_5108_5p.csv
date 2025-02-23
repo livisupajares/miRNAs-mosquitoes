@@ -1,0 +1,17 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF007750-RA","peptidyl-prolyl cis-trans isomerase (cyclophilin) [Source:Projected from Aedes aegypti (AAEL006054) VB Community Annotation]","A0A182GCX7","aae-miR-5108-5p",-14.84,907,927,0.999945112512645
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-5108-5p",-16.43,36214,36245,0.999719871565046
+"AALF017790-RA","cytochrome oxidase biogenesis protein (oxa1 mitochondrial) [Source:Projected from Aedes aegypti (AAEL006734) VB Community Annotation]","A0A023ESV1,A0A182GXU9","aae-miR-5108-5p",-17.4,412,438,0.999706243011833
+"AALF002028-RA","ran-binding protein [Source:Projected from Aedes aegypti (AAEL009884) VB Community Annotation]","A0A182G3B9","aae-miR-5108-5p",-19.38,267,314,0.999704715478025
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-5108-5p",-17.11,8122,8164,0.999704715478025
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aae-miR-5108-5p",-15.01,3679,3728,0.999510547221702
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-5108-5p",-14.33,12228,12270,0.999435980707144
+"AALF013877-RA","hairy protein [Source:Projected from Aedes aegypti (AAEL005480) VB Community Annotation]","A0A023EQ79,A0A182GQD4","aae-miR-5108-5p",-17.1,1489,1506,0.998885632899069
+"AALF022022-RA","cdkl1/4 [Source:Projected from Aedes aegypti (AAEL004700) VB Community Annotation]","A0A182H5B4","aae-miR-5108-5p",-19.61,91,114,0.998582833880158
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-5108-5p",-14.6,11817,11855,0.998106622764228
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-5108-5p",-14.5,27238,27252,0.99801582660983
+"AALF016683-RA","Adenylate kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GVU5]","A0A023EKV1,A0A182GVU5","aae-miR-5108-5p",-19.1,593,609,0.997922416579484
+"AALF001881-RA","Kinesin-like protein [Source:UniProtKB/TrEMBL;Acc:A0A182G352]","A0A182G352","aae-miR-5108-5p",-16.88,98,147,0.996808136586983
+"AALF006943-RA","GPCR Frizzled/Smoothened Family [Source:Projected from Aedes aegypti (AAEL009983) VB Community Annotation]","A0A182GBG7","aae-miR-5108-5p",-18.7,302,331,0.995434379297057
+"AALF008947-RA","heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]","A0A023ET39,A0A182GFC6","aae-miR-5108-5p",-14.2,2804,2826,0.99131303549548
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aae-miR-5108-5p",-19.6,11634,11649,0.991077393219586

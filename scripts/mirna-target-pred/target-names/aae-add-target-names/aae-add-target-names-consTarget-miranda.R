@@ -14,25 +14,20 @@ aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
 aae_miranda$mRNA <- sub("\\..*", "", aae_miranda$mRNA)
-aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
 
 # Change variable name to match the other databases
 colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
 
-# Filter the columns we will add to the aae_miranda and aae_ts dataframes
+# Filter the columns we will add to the aae_miranda dataframes
 aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_product_descrip", "uniprot_id")
 
 # ==== MERGE DATABASES ====
 # merge aae_miranda with aal_vectorbase matching transcript_ID
 aae_miranda_tx_names <- merge(aae_miranda, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
 
-# merge aae_ts with aal_vectorbase matching transcript_ID
-aae_ts_tx_names <- merge(aae_ts, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
-
 # reorder columns so transcript product description and uniprot_id are
 # between mRNA and miRNA columns.
 aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
-aae_ts_tx_names <- reorder_columns(aae_ts_tx_names)
 
 # ==== FINDING THE BEST mRNA TARGET CANDIDATES ====
 # https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
@@ -56,7 +51,6 @@ filtered_data_miranda <- aae_miranda_tx_names %>%
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
-# Assuming 'score' and 'energy' are columns in the dataset
 candidates_miranda <- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy

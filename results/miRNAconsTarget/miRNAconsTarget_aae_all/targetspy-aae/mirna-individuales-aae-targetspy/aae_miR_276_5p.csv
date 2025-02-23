@@ -1,0 +1,8 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF015184-RA","protein oskar [Source:Projected from Aedes aegypti (AAEL000442) VB Community Annotation]","A0A182GSX8","aae-miR-276-5p",-17.4,30,46,0.999827220162893
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aae-miR-276-5p",-17.49,1737,1791,0.999671114412582
+"AALF016238-RA","valyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL004327) VB Community Annotation]","A0A182GV15","aae-miR-276-5p",-15.91,1839,1868,0.999536910918837
+"AALF005741-RA","Protein kinase C [Source:UniProtKB/TrEMBL;Acc:A0A182G9G7]","A0A182G9G7","aae-miR-276-5p",-16,1318,1357,0.999471365505007
+"AALF007203-RA","Proline dehydrogenase [Source:UniProtKB/TrEMBL;Acc:A0A182GBX7]","A0A182GBX7","aae-miR-276-5p",-15.8,272,287,0.996379027551356
+"AALF025916-RA","PIWI [Source:Projected from Aedes aegypti (AAEL007823) VB Community Annotation]","A0A023EVW0,A0A182HBG4","aae-miR-276-5p",-15.74,305,339,0.995434379297057
+"AALF025919-RA","PIWI [Source:Projected from Aedes aegypti lvpagwg (AAEL007823) VB Community Annotation]","A0A182HBG7","aae-miR-276-5p",-15.44,303,337,0.995434379297057

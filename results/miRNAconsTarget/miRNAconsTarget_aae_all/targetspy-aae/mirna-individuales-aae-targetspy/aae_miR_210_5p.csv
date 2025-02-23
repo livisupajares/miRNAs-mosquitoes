@@ -1,0 +1,15 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aae-miR-210-5p",-14.18,27844,27891,0.999889487217714
+"AALF014553-RA","hemomucin [Source:Projected from Aedes aegypti (AAEL006196) VB Community Annotation]","A0A023EV07,A0A023EVJ8,A0A182GRP8","aae-miR-210-5p",-14.64,88,106,0.999847349227647
+"AALF027309-RA","signal transduction protein lnk-realted [Source:Projected from Aedes aegypti (AAEL004125) VB Community Annotation]","A0A182HDN0","aae-miR-210-5p",-14.1,764,800,0.999806558028274
+"AALF022363-RA","beta-1,4-galactosyltransferase [Source:Projected from Aedes aegypti (AAEL006426) VB Community Annotation]","A0A182H5W3","aae-miR-210-5p",-14.54,830,858,0.999758924425546
+"AALF026807-RA","microtubule associated-protein orbit [Source:Projected from Aedes aegypti (AAEL005211) VB Community Annotation]","A0A182HCV9","aae-miR-210-5p",-14.74,608,647,0.999704715478025
+"AALF022326-RA","Putative ferric-chelate reductase 1 [Source:UniProtKB/TrEMBL;Acc:A0A023EXF7]","A0A023EV19,A0A023EV28,A0A023EXF7","aae-miR-210-5p",-15.74,89,139,0.999542114427819
+"AALF027187-RA","syntenin [Source:Projected from Aedes aegypti (AAEL005391) VB Community Annotation]","A0A023ENS9,A0A182HDG5","aae-miR-210-5p",-15.65,125,162,0.999381904281916
+"AALF009997-RA","histone deacetylase [Source:Projected from Aedes aegypti (AAEL004416) VB Community Annotation]","A0A182GHI8","aae-miR-210-5p",-14.55,157,196,0.999125527907125
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aae-miR-210-5p",-17.3,4625,4643,0.998885632899069
+"AALF013058-RA","Putative signal transduction [Source:UniProtKB/TrEMBL;Acc:A0A023ERS7]","A0A023ERS7","aae-miR-210-5p",-16.7,164,178,0.997309925147977
+"AALF017917-RA","WD-repeat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL013866) VB Community Annotation]","A0A182GY22","aae-miR-210-5p",-14.56,875,909,0.996630779320098
+"AALF018351-RA","ABC transporter [Source:Projected from Aedes aegypti (AAEL008632) VB Community Annotation]","A0A182GYW0","aae-miR-210-5p",-14.1,1170,1196,0.995852624557941
+"AALF026400-RA","calpain 4, 6, 7, invertebrate [Source:Projected from Aedes aegypti lvpagwg (AAEL003963) VB Community Annotation]","A0A182HC76","aae-miR-210-5p",-18.1,1071,1089,0.991131211063384
+"AALF005903-RA","organic anion transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL001808) VB Community Annotation]","A0A023EWR7,A0A182G9Q2","aae-miR-210-5p",-14.8,706,718,0.991101192929277

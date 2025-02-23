@@ -1,0 +1,17 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF023649-RA","sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]","A0A182H7W6","aae-miR-124-3p",-14.1,5007,5023,0.99988858778822
+"AALF017164-RA","P21-activated kinase, pak [Source:Projected from Aedes aegypti (AAEL000489) VB Community Annotation]","A0A182GWN6","aae-miR-124-3p",-18.71,27,58,0.999805010549663
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aae-miR-124-3p",-14.41,33721,33759,0.999794053338765
+"AALF027668-RA","Toll-like receptor [Source:Projected from Aedes aegypti (AAEL007619) VB Community Annotation]","A0A182HE56","aae-miR-124-3p",-18.1,637,669,0.999527281910072
+"AALF005903-RA","organic anion transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL001808) VB Community Annotation]","A0A023EWR7,A0A182G9Q2","aae-miR-124-3p",-15.51,781,823,0.998416150608756
+"AALF007886-RA","protein cactus (TOLL pathway signalling)","A0A023EQW0,A0A182GD72","aae-miR-124-3p",-14.9,233,257,0.998403665417155
+"AALF016282-RA","protein cactus (TOLL pathway signalling)","A0A182GD72","aae-miR-124-3p",-14.9,233,257,0.998403665417155
+"AALF006348-RA","amino acids transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL014161) VB Community Annotation]","A0A023ETB0,A0A182GAG3","aae-miR-124-3p",-15,157,171,0.997309925147977
+"AALF016307-RA","Mothers against decapentaplegic homolog [Source:UniProtKB/TrEMBL;Acc:A0A182GV56]","A0A182GV56","aae-miR-124-3p",-15.2,1626,1647,0.99723813996175
+"AALF012147-RA","Sorting nexin [Source:UniProtKB/TrEMBL;Acc:A0A023EU45]","A0A023EU45","aae-miR-124-3p",-15.5,124,139,0.995542988261075
+"AALF016238-RA","valyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL004327) VB Community Annotation]","A0A182GV15","aae-miR-124-3p",-15.4,1207,1220,0.995542988261075
+"AALF003129-RA","Phospholipase B-like [Source:UniProtKB/TrEMBL;Acc:A0A182G537]","A0A023EVL4,A0A023EVM6,A0A182G537","aae-miR-124-3p",-17.5,1,14,0.995290418538033
+"AALF005612-RA","macroglobulin/complement [Source:Projected from Aedes aegypti (AAEL012267) VB Community Annotation]","A0A023EWE3,A0A182G988,A0A1W7R8N4","aae-miR-124-3p",-16.2,781,796,0.994629027685669
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aae-miR-124-3p",-18.9,12171,12194,0.992726998983238
+"AALF025855-RA","pak-interacting exchange factor, beta-pix/cool-1 [Source:Projected from Aedes aegypti (AAEL000719) VB Community Annotation]","A0A182HBC6","aae-miR-124-3p",-19.2,163,182,0.992684739870122
+"AALF026429-RA","Dolichol phosphate-mannose biosynthesis regulatory protein [Source:UniProtKB/TrEMBL;Acc:A0A182HC90]","A0A182HC90","aae-miR-124-3p",-15.6,3073,3086,0.991282309455402
