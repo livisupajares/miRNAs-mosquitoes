@@ -7,8 +7,6 @@ source("scripts/functions.R")
 # Add NA to all empty spaces
 # Miranda
 aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/miranda-aae.csv")
-# ts
-aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/targetspy-aae.csv")
 
 # vectorbase aal transcripts Foshan strain
 aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names-vectorbase.csv")
