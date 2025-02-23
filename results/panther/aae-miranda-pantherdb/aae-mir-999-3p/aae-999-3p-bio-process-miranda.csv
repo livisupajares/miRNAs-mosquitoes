@@ -1,38 +1,8 @@
-﻿Analysis Type:,PANTHER Overrepresentation Test (Released 20240807),,,,,,
+Analysis Type:,PANTHER Overrepresentation Test (Released 20240807),,,,,,
 Annotation Version and Release Date:,PANTHER version 19.0 Released 2024-06-20,,,,,,
 Analyzed List:,aae-miR-999-3p-upid-aae-miranda_output.txt,,,,,,
 Reference List:,Aedes aegypti (AEDAE),,,,,,
 Test Type:,FISHER,,,,,,
 Correction:,FDR,,,,,,
-PANTHER GO-Slim Biological Process,Aedes aegypti (AEDAE) - REFLIST (14081),aae-miR-999-3p-upid-aae-miranda_output.txt (95),aae-miR-999-3p-upid-aae-miranda_output.txt (expected),aae-miR-999-3p-upid-aae-miranda_output.txt (over/under),aae-miR-999-3p-upid-aae-miranda_output.txt (fold Enrichment),aae-miR-999-3p-upid-aae-miranda_output.txt (raw P-value),aae-miR-999-3p-upid-aae-miranda_output.txt (FDR)
-nitrogen compound metabolic process (GO:0006807),2266,0,15.29,-, < 0.01,1.21E-07,2.78E-05
-localization (GO:0051179),1203,0,8.12,-, < 0.01,3.27E-04,2.74E-02
-regulation of nitrogen compound metabolic process (GO:0051171),1232,0,8.31,-, < 0.01,3.36E-04,2.58E-02
-regulation of metabolic process (GO:0019222),1418,0,9.57,-, < 0.01,9.14E-05,1.12E-02
-regulation of nucleobase-containing compound metabolic process (GO:0019219),1104,0,7.45,-, < 0.01,7.86E-04,4.83E-02
-protein metabolic process (GO:0019538),1193,0,8.05,-, < 0.01,3.29E-04,2.63E-02
-macromolecule metabolic process (GO:0043170),1943,0,13.11,-, < 0.01,1.37E-06,2.10E-04
-cellular biosynthetic process (GO:0044249),1235,0,8.33,-, < 0.01,3.38E-04,2.49E-02
-biosynthetic process (GO:0009058),1255,0,8.47,-, < 0.01,2.12E-04,2.16E-02
-primary metabolic process (GO:0044238),2461,0,16.6,-, < 0.01,1.54E-08,4.73E-06
-cellular metabolic process (GO:0044237),2043,0,13.78,-, < 0.01,5.14E-07,8.60E-05
-regulation of macromolecule biosynthetic process (GO:0010556),1246,0,8.41,-, < 0.01,3.49E-04,2.29E-02
-cellular component organization or biogenesis (GO:0071840),1260,0,8.5,-, < 0.01,2.11E-04,2.29E-02
-Unclassified (UNCLASSIFIED),6420,0,43.31,-, < 0.01,7.81E-26,7.19E-23
-cellular process (GO:0009987),4304,0,29.04,-, < 0.01,9.61E-16,5.90E-13
-regulation of gene expression (GO:0010468),1241,0,8.37,-, < 0.01,3.44E-04,2.34E-02
-regulation of macromolecule metabolic process (GO:0060255),1365,0,9.21,-, < 0.01,1.45E-04,1.67E-02
-establishment of localization (GO:0051234),1110,0,7.49,-, < 0.01,7.93E-04,4.71E-02
-metabolic process (GO:0008152),2782,0,18.77,-, < 0.01,1.06E-09,4.87E-07
-biological_process (GO:0008150),6533,0,44.08,-, < 0.01,1.75E-26,3.23E-23
-cellular component organization (GO:0016043),1144,0,7.72,-, < 0.01,5.05E-04,3.21E-02
-organic substance metabolic process (GO:0071704),2634,0,17.77,-, < 0.01,5.26E-09,1.94E-06
-regulation of cellular process (GO:0050794),2094,0,14.13,-, < 0.01,3.18E-07,5.85E-05
-regulation of biosynthetic process (GO:0009889),1255,0,8.47,-, < 0.01,2.12E-04,2.05E-02
-regulation of biological process (GO:0050789),2191,0,14.78,-, < 0.01,1.94E-07,3.97E-05
-regulation of primary metabolic process (GO:0080090),1240,0,8.37,-, < 0.01,3.43E-04,2.43E-02
-biological regulation (GO:0065007),2310,0,15.58,-, < 0.01,7.03E-08,1.85E-05
-regulation of cellular biosynthetic process (GO:0031326),1251,0,8.44,-, < 0.01,2.12E-04,1.86E-02
-organic substance biosynthetic process (GO:1901576),1255,0,8.47,-, < 0.01,2.12E-04,1.95E-02
-regulation of cellular metabolic process (GO:0031323),1376,0,9.28,-, < 0.01,8.71E-05,1.15E-02
-organonitrogen compound metabolic process (GO:1901564),1582,0,10.67,-, < 0.01,2.28E-05,3.23E-03
+PANTHER GO-Slim Biological Process,Aedes aegypti (AEDAE) - REFLIST (14081),aae-miR-999-3p-upid-aae-miranda_output.txt (96),aae-miR-999-3p-upid-aae-miranda_output.txt (expected),aae-miR-999-3p-upid-aae-miranda_output.txt (over/under),aae-miR-999-3p-upid-aae-miranda_output.txt (fold Enrichment),aae-miR-999-3p-upid-aae-miranda_output.txt (raw P-value),aae-miR-999-3p-upid-aae-miranda_output.txt (FDR)
+Unclassified (UNCLASSIFIED),6420,18,43.77,-,0.41,4.36E-08,8.03E-05
