@@ -6,7 +6,7 @@ root_folder_miranda=" /Users/skinofmyeden/Documents/01-livs/14-programming/git/m
 root_folder_ts="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-targetspy-pantherdb/uniprots-aae-targetspy"
 
 # Loop through all .txt files in the root folder
-for input_file in "$root_folder"/*.txt; do
+for input_file in "$root_folder_ts"/*.txt; do
     # Generate the output file name by appending "_output" to the input file name
     output_file="${input_file%.txt}_output.txt"
 
