@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# ~~~~~~ TXT PARSER FOR PANTHER DB ~~~~~~ #
+# This program parses all .txt files with UniprotKB IDs from a specific folder. 
+# It removes their quotation marks, commas and puts one ID per line.
+# TODO: Refactor this file into a better cli where it lets you pick which root
+# folder you want to work with. Might use the gum package for eye candy.
+
 # Define the root folder where your input files are located
 root_folder_miranda=" /Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-miranda-pantherdb/uniprots-aae-miranda"
 
