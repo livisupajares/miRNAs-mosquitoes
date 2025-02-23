@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the root folder where your input files are located
-root_folder="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/uniprot-ids-aae/uniprots-aae-miranda"  # Replace with the actual path to your folder
+root_folder=" /Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-miranda-pantherdb/uniprots-aae-miranda" # Replace with the actual path to your folder
 
 # Loop through all .txt files in the root folder
 for input_file in "$root_folder"/*.txt; do

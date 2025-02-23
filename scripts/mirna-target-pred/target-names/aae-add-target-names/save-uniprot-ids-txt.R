@@ -10,5 +10,5 @@ lapply(names(candidates_miranda), function(miRNA_name) {
   # Extract Uniprot IDs from uniprot_id column
   uniprot_ids <- candidates_miranda[[miRNA_name]]$uniprot_id
   # Save to txt file
-  write.table(uniprot_ids, file = paste0("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/uniprot-ids-aae/uniprots-aae-miranda/", miRNA_name, "-upid-aae-miranda", ".txt"), row.names = FALSE, col.names = FALSE)
+  write.table(uniprot_ids, file = paste0("results/panther/aae-miranda-pantherdb/uniprots-aae-miranda/", miRNA_name, "-upid-aae-miranda", ".txt"), row.names = FALSE, col.names = FALSE)
 })
