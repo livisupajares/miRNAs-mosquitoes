@@ -65,9 +65,6 @@ def main():
         # Define the output FASTA filename for the current miRNA
         fasta_filename = os.path.join(output_dir, f"{mirna}.fasta")
         
-        # Save the protein sequences to the FASTA file
-        save_fasta_file(protein_records, fasta_filename)
-        
         print(f"Saved {len(protein_records)} sequences to {fasta_filename}")
 
 #  Allow the script to be executed as a standalone program
