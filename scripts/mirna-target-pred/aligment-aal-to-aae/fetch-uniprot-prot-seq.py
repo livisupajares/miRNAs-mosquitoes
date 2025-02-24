@@ -52,7 +52,7 @@ def save_fasta_file(records, output_filename):
 # Main function
 def main():
     # Create a directory to store the FASTA files if it doesn't exist
-    output_dir = "/sequences/test/miRNAtarget_prot_seq"
+    output_dir = "/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
     os.makedirs(output_dir, exist_ok=True)
 
     # Iterate over each miRNA and its associated accession numbers
