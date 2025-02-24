@@ -43,8 +43,10 @@ def fetch_protein_sequences(accession_numbers):
     for acc in accession_numbers:
         fasta_sequence = fetch_uniprot_sequence(acc)
         if fasta_sequence:
+            print(f"Successfully fetched sequence for accession: {acc}")
             protein_records.append(fasta_sequence)
         else:
+            print(f"Failed to fetch sequence for accession: {acc}")
             invalid_accessions.append(acc)
         
         # Add a delay to avoid hitting rate limits
@@ -53,6 +55,9 @@ def fetch_protein_sequences(accession_numbers):
     # Log invalid accession numbers
     if invalid_accessions:
         print(f"Invalid accession numbers: {invalid_accessions}")
+    
+    # Log the total number of sequences fetched
+    print(f"Total valid sequences fetched: {len(protein_records)}")
 
     return protein_records
 
