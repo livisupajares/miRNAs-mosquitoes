@@ -43,3 +43,8 @@ def fetch_protein_sequences(accession_numbers):
                 print(f"Error fetching {acc}: {e}")
     
     return protein_records
+
+# Save a list of SeqRecord objects into a FASTA file.
+def save_fasta_file(records, output_filename):
+    with open(output_filename, "w") as output_handle:
+        SeqIO.write(records, output_handle, "fasta")
