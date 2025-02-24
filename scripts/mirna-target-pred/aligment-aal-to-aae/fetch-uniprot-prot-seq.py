@@ -69,3 +69,7 @@ def main():
         save_fasta_file(protein_records, fasta_filename)
         
         print(f"Saved {len(protein_records)} sequences to {fasta_filename}")
+
+#  Allow the script to be executed as a standalone program
+if __name__ == "__main__":
+    main()
