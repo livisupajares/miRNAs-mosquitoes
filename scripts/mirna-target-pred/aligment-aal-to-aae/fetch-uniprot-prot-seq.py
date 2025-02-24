@@ -48,3 +48,24 @@ def fetch_protein_sequences(accession_numbers):
 def save_fasta_file(records, output_filename):
     with open(output_filename, "w") as output_handle:
         SeqIO.write(records, output_handle, "fasta")
+
+# Main function
+def main():
+    # Create a directory to store the FASTA files if it doesn't exist
+    output_dir = "/sequences/test/miRNAtarget_prot_seq"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Iterate over each miRNA and its associated accession numbers
+    for mirna, accessions in miRNA_to_accessions.items():
+        print(f"Processing {mirna}...")
+        
+        # Fetch protein sequences for the current miRNA's accession numbers
+        protein_records = fetch_protein_sequences(accessions)
+        
+        # Define the output FASTA filename for the current miRNA
+        fasta_filename = os.path.join(output_dir, f"{mirna}.fasta")
+        
+        # Save the protein sequences to the FASTA file
+        save_fasta_file(protein_records, fasta_filename)
+        
+        print(f"Saved {len(protein_records)} sequences to {fasta_filename}")
