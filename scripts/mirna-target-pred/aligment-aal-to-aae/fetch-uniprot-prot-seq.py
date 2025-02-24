@@ -7,7 +7,24 @@ import pandas as pd
 # Set your email address (required by NCBI)
 Entrez.email = "livisu.pajares.r@upch.pe"
 
-# 
+# Test data: Dictionary where keys are miRNA names and values are lists of UniProtKB accession numbers
+miRNA_to_accessions = {
+    'bantam_3p': ['A0A023ETG1',
+                  'A0A182G3U1',
+                  'A0A1W7R8D2',
+                  'A0A1W7R8H3',
+                  'A0A1W7R8K9'],
+    'bantam_5p': ['A0A182G722',
+                  'A0A182G9G0',
+                  'A0A182H5K2',
+                  'A0A182H9K9',
+                  'A0A023EIG2'],
+    'let_7': ['A0A182GB59',
+              'A0A023ENA3',
+              'A0A023ER27',
+              'A0A023ESN0',
+              'A0A023EVS8']
+}
 
 # Function to fetch protein sequences from UniProtKB given a list of accession numbers.
 def fetch_protein_sequences(accession_numbers):
