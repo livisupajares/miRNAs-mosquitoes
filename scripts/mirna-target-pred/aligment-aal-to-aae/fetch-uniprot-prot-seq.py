@@ -46,6 +46,9 @@ def fetch_protein_sequences(accession_numbers):
             protein_records.append(fasta_sequence)
         else:
             invalid_accessions.append(acc)
+        
+        # Add a delay to avoid hitting rate limits
+        time.sleep(1)  # Sleep for 1 second between requests
     
     # Log invalid accession numbers
     if invalid_accessions:
