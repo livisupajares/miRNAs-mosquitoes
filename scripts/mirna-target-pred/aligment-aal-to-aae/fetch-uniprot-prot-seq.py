@@ -3,6 +3,7 @@
 from Bio import Entrez, SeqIO
 import os
 import pandas as pd
+import requests
 
 # Set your email address (required by NCBI)
 Entrez.email = "livisu.pajares.r@upch.pe"
