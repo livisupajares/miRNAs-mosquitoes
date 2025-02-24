@@ -5,9 +5,6 @@ import os
 import pandas as pd
 import requests
 
-# Set your email address (required by NCBI)
-Entrez.email = "livisu.pajares.r@upch.pe"
-
 # Test data: Dictionary where keys are miRNA names and values are lists of UniProtKB accession numbers
 miRNA_to_accessions = {
     'bantam_3p': ['A0A023ETG1',
