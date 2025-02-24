@@ -3,6 +3,7 @@
 import os
 import pandas as pd
 import requests
+import time
 
 # Test data: Dictionary where keys are miRNA names and values are lists of UniProtKB accession numbers
 miRNA_to_accessions = {
@@ -49,7 +50,7 @@ def fetch_protein_sequences(accession_numbers):
     # Log invalid accession numbers
     if invalid_accessions:
         print(f"Invalid accession numbers: {invalid_accessions}")
-    
+
     return protein_records
 
 # Main function
