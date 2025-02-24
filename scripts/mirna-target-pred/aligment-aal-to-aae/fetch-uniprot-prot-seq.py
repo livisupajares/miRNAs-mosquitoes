@@ -28,7 +28,7 @@ miRNA_to_accessions = {
 }
 
 # Fetch a protein sequence from UniProt given an accession number.
-def fetch_protein_sequences(acc):
+def fetch_uniprot_sequence(acc):
     url = f"https://rest.uniprot.org/uniprotkb/{acc}.fasta"
     response = requests.get(url)
     
@@ -38,10 +38,16 @@ def fetch_protein_sequences(acc):
         print(f"Error fetching {acc}: HTTP {response.status_code}")
         return None
 
-# Save a list of SeqRecord objects into a FASTA file.
-def save_fasta_file(records, output_filename):
-    with open(output_filename, "w") as output_handle:
-        SeqIO.write(records, output_handle, "fasta")
+# Fetch protein sequences from UniProtKB given a list of accession numbers.
+def fetch_protein_sequences(accession_numbers):
+    protein_records = []
+    
+    for acc in accession_numbers:
+        fasta_sequence = fetch_uniprot_sequence(acc)
+        if fasta_sequence:
+            protein_records.append(fasta_sequence)
+    
+    return protein_records
 
 # Main function
 def main():
