@@ -37,11 +37,18 @@ def fetch_uniprot_sequence(acc):
 # Fetch protein sequences from UniProtKB given a list of accession numbers.
 def fetch_protein_sequences(accession_numbers):
     protein_records = []
+    invalid_accessions = []
     
     for acc in accession_numbers:
         fasta_sequence = fetch_uniprot_sequence(acc)
         if fasta_sequence:
             protein_records.append(fasta_sequence)
+        else:
+            invalid_accessions.append(acc)
+    
+    # Log invalid accession numbers
+    if invalid_accessions:
+        print(f"Invalid accession numbers: {invalid_accessions}")
     
     return protein_records
 
