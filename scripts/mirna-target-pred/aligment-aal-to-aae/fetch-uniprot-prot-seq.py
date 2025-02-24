@@ -27,23 +27,16 @@ miRNA_to_accessions = {
               'A0A023EVS8']
 }
 
-# Function to fetch protein sequences from UniProtKB given a list of accession numbers.
+# Fetch a protein sequence from UniProt given an accession number.
 def fetch_protein_sequences(accession_numbers):
-    protein_records = []
+    url = f"https://rest.uniprot.org/uniprotkb/{accession_numbers}.fasta"
+    response = requests.get(url)
     
-    for acc in accession_numbers:
-        try:
-            # Fetch the GenBank record from NCBI using the accession number
-            handle = Entrez.efetch(db="protein", id=acc, rettype="gb", retmode="text")
-            record = SeqIO.read(handle, "genbank")
-            handle.close()
-            
-            # Append the record to the list of protein records
-            protein_records.append(record)
-        except Exception as e:
-                print(f"Error fetching {acc}: {e}")
-    
-    return protein_records
+    if response.status_code == 200:
+        return response.text  # Returns the FASTA-formatted sequence
+    else:
+        print(f"Error fetching {accession_numbers}: HTTP {response.status_code}")
+        return None
 
 # Save a list of SeqRecord objects into a FASTA file.
 def save_fasta_file(records, output_filename):
