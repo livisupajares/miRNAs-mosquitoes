@@ -19,6 +19,9 @@ base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
 # Output directory to store the FASTA files
 output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
 
+# Add a directory to deposit logs in case an accession can't be fetched
+log_directory = f"{output_dir}/logs"
+
 # Create the output directory if it doesn't exist
 try:
     os.makedirs(output_dir, exist_ok=True)
@@ -27,80 +30,53 @@ except Exception as output_dir:
     print(f"Error creating output directory: {output_dir}")
     exit(1)  # Exit the script if the directory cannot be created
 
+# Create log directory if it doesn't exist
+try:
+    os.makedirs(log_directory, exist_ok=True)
+    print(f"Output directory created or already exists: {log_directory}")
+except Exception as log_directory:
+    print(f"Error creating log directory: {log_directory}")
+    exit(1)  # Exit the script if the directory cannot be created
 
-# Fetch a protein sequence from UniProt given an accession number.
-def fetch_uniprot_sequence(acc):
-    url = f"https://rest.uniprot.org/uniprotkb/{acc}.fasta"
+
+# Function to fetch and save a UniProt sequence
+def fetch_and_save_sequence(acc, mirna_name):
+    url = base_url.format(acc=acc)  # Replace {acc} with the actual accession ID
     response = requests.get(url)
 
     if response.status_code == 200:
-        return response.text  # Returns the FASTA-formatted sequence
+        # Extract plain text content
+        print(f"Success fetching {acc}")
+        return response.text  # Return the FASTA content
     else:
-        print(f"Error fetching {acc}: HTTP {response.status_code}")
+        # Log the error to the log file
+        log_file = os.path.join(log_directory, f"log_{mirna_name}.log")
+        error_message = f"Error fetching {acc}: HTTP {response.status_code}"
+        print(error_message)
+        with open(log_file, "a") as log:
+            log.write(f"{error_message}\n")
         return None
 
 
-# Fetch protein sequences from UniProtKB given a list of accession numbers.
-def fetch_protein_sequences(accession_numbers):
-    protein_records = []
-    invalid_accessions = []
+# Iterate over the dictionary and process each miRNA and its accessions
+for mirna, accessions in miRNA_to_accessions.items():
+    print(f"Processing miRNA: {mirna}")
 
-    for acc in accession_numbers:
-        fasta_sequence = fetch_uniprot_sequence(acc)
-        if fasta_sequence:
-            print(f"Successfully fetched sequence for accession: {acc}")
-            protein_records.append(fasta_sequence)
-        else:
-            print(f"Failed to fetch sequence for accession: {acc}")
-            invalid_accessions.append(acc)
+    # Collect all FASTA sequences for the current miRNA
+    fasta_sequences = []
+    for acc in accessions:
+        fasta_content = fetch_and_save_sequence(acc, mirna)
+        if fasta_content:
+            fasta_sequences.append(fasta_content)
+        time.sleep(1)
 
-        # Add a delay to avoid hitting rate limits
-        time.sleep(1)  # Sleep for 1 second between requests
-
-    # Log invalid accession numbers
-    if invalid_accessions:
-        print(f"Invalid accession numbers: {invalid_accessions}")
-
-    # Log the total number of sequences fetched
-    print(f"Total valid sequences fetched: {len(protein_records)}")
-
-    return protein_records
-
-
-# Main function
-def main():
-    # Create a directory to store the FASTA files if it doesn't exist
-    output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
-    try:
-        os.makedirs(output_dir, exist_ok=True)
-        print(f"Output directory created or already exists: {output_dir}")
-    except Exception as output_dir:
-        print(f"Error creating output directory: {output_dir}")
-        return  # Exit the script if the directory cannot be created
-
-    # Test write permissions by creating a test file
-    test_file_path = os.path.join(output_dir, "test_permissions.txt")
-    try:
-        with open(test_file_path, "w") as test_file:
-            test_file.write("Testing write permissions")
-        print(f"Write resting write permissions: {output_dir}")
-    except Exception as output_dir:
-        print(f"Error creating output directory: {output_dir}")
-        return  # Exit the script if the directory cannot be created
-
-    # Iterate over each miRNA and its associated accession numbers
-    for mirna, accessions in miRNA_to_accessions.items():
-        print(f"Processing {mirna}...")
-
-        # Fetch protein sequences for the current miRNA's accession numbers
-        protein_records = fetch_protein_sequences(accessions)
-
-        # Define the output FASTA filename for the current miRNA
+    # Save all sequences for the current miRNA into one FASTA file
+    if fasta_sequences:
         fasta_filename = os.path.join(output_dir, f"{mirna}.fasta")
-
-        print(f"Saved {len(protein_records)} sequences to {fasta_filename}")
-
-
-#  Allow the script to be executed as a standalone program
-if __name__ == "__main__":
-    main()
+        with open(fasta_filename, "w") as fasta_file:
+            fasta_file.write(
+                "\n".join(fasta_sequences)
+            )  # Combine all sequences into one file
+        print(f"Saved all sequences for {mirna} to {fasta_filename}")
+    else:
+        print(f"No sequences fetched for {mirna}")
