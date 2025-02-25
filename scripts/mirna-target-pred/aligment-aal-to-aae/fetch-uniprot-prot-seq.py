@@ -64,6 +64,17 @@ def main():
         print(f"Error creating output directory: {e}")
         return  # Exit the script if the directory cannot be created
     # Iterate over each miRNA and its associated accession numbers
+
+    # Test write permissions by creating a test file
+    test_file_path = os.path.join(output_dir, "test_permissions.txt")
+    try:
+        with open(test_file_path, "w") as test_file:
+            test_file.write("Testing write permissions")
+        print(f"Write resting write permissions: {e}")
+    except Exception as e:
+        print(f"Error creating output directory: {e}")
+        return  # Exit the script if the directory cannot be created
+
     for mirna, accessions in miRNA_to_accessions.items():
         print(f"Processing {mirna}...")
 
