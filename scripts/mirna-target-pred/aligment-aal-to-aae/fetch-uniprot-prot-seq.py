@@ -12,6 +12,10 @@ miRNA_to_accessions = {
     "let_7": ["A0A182GB59", "A0A023ENA3", "A0A023ER27", "A0A023ESN0", "A0A023EVS8"],
 }
 
+# Configuration
+# Input directory to read .txt files with Uniprot kb accessions
+input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/uniprots-aae-miranda"
+
 # Base URL for UniProt REST API
 base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
 
