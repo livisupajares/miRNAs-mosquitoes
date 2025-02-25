@@ -36,5 +36,12 @@ if response.status_code == 200:
             f"Error creating output directory: {output_dir}"
         )  # Exit the script if the directory cannot be created
 
+    # Save 'bantam_3p' and write its contents into a file
+    fasta_filename = os.path.join(
+        output_dir, "bantam-3p.fasta"
+    )  # Append mirna name and add .fasta extension to output for new name file
+    with open(fasta_filename, "w") as fasta:
+        fasta.write(bantam_3p)
+        print(f"Saved {acc} to {fasta_filename}")
 else:
     print(f"Error fetching {acc}: HTTP {response.status_code}")
