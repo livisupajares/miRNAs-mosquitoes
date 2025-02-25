@@ -1,5 +1,6 @@
 # ~~~~~ FETCH UNIPROT PROTEIN SEQUENCES ~~~~~ #
 # Import dependencies
+# WARNING! : Don't forget to install 'lxml' parser with mamba install lxml.
 import os
 import time
 
@@ -23,3 +24,5 @@ else:
 fasta = response.text
 soup = BeautifulSoup(fasta, "lxml")
 print(f"Fetched FASTA for {acc}:\n", soup.prettify())
+
+# Fetch main FASTA without html tags
