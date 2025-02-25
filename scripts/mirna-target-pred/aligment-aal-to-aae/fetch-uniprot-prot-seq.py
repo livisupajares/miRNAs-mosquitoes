@@ -15,12 +15,10 @@ miRNA_to_accessions = {
 # Configuration
 # Input directory to read .txt files with Uniprot kb accessions
 input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/uniprots-aae-miranda"
-
+# Output directory to store the FASTA files
+output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq"
 # Base URL for UniProt REST API
 base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
-
-# Output directory to store the FASTA files
-output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
 
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = f"{output_dir}/logs"
