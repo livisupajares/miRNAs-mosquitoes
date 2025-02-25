@@ -63,7 +63,6 @@ def main():
     except Exception as e:
         print(f"Error creating output directory: {e}")
         return  # Exit the script if the directory cannot be created
-    # Iterate over each miRNA and its associated accession numbers
 
     # Test write permissions by creating a test file
     test_file_path = os.path.join(output_dir, "test_permissions.txt")
