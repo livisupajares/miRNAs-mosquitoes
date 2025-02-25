@@ -3,7 +3,6 @@
 import os
 import time
 
-import pandas as pd
 import requests
 
 # Test data: Dictionary where keys are miRNA names and values are lists of UniProtKB accession numbers
