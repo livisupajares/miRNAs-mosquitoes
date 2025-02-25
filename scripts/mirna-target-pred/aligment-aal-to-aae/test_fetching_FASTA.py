@@ -1,7 +1,6 @@
 # ~~~~~ FETCH UNIPROT PROTEIN SEQUENCES ~~~~~ #
 # Import dependencies
 import os
-import time
 
 import requests
 
