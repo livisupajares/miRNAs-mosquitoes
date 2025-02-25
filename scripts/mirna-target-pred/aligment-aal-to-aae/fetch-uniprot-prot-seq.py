@@ -60,8 +60,8 @@ def main():
     try:
         os.makedirs(output_dir, exist_ok=True)
         print(f"Output directory created or already exists: {output_dir}")
-    except Exception as e:
-        print(f"Error creating output directory: {e}")
+    except Exception as output_dir:
+        print(f"Error creating output directory: {output_dir}")
         return  # Exit the script if the directory cannot be created
 
     # Test write permissions by creating a test file
@@ -69,9 +69,9 @@ def main():
     try:
         with open(test_file_path, "w") as test_file:
             test_file.write("Testing write permissions")
-        print(f"Write resting write permissions: {e}")
-    except Exception as e:
-        print(f"Error creating output directory: {e}")
+        print(f"Write resting write permissions: {output_dir}")
+    except Exception as output_dir:
+        print(f"Error creating output directory: {output_dir}")
         return  # Exit the script if the directory cannot be created
 
     # Iterate over each miRNA and its associated accession numbers
