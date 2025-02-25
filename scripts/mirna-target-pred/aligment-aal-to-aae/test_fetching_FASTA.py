@@ -1,6 +1,5 @@
 # ~~~~~ FETCH UNIPROT PROTEIN SEQUENCES ~~~~~ #
 # Import dependencies
-# WARNING! : Don't forget to install 'lxml' parser with mamba install lxml.
 import os
 import time
 
