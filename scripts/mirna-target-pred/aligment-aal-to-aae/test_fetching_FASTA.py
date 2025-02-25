@@ -18,3 +18,8 @@ if response.status_code == 200:
     print(f"Success opening a connection to {acc}")
 else:
     print(f"Error fetching {acc}: HTTP {response.status_code}")
+
+# See main scrapped content in beautiful soup
+fasta = response.text
+soup = BeautifulSoup(fasta, "lxml")
+print(f"Fetched FASTA for {acc}:\n", soup.prettify())
