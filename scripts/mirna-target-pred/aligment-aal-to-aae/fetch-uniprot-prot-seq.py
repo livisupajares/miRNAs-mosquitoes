@@ -75,6 +75,7 @@ def main():
         print(f"Error creating output directory: {e}")
         return  # Exit the script if the directory cannot be created
 
+    # Iterate over each miRNA and its associated accession numbers
     for mirna, accessions in miRNA_to_accessions.items():
         print(f"Processing {mirna}...")
 
