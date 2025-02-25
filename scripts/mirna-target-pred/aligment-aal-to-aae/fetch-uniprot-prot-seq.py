@@ -19,6 +19,14 @@ base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
 # Output directory to store the FASTA files
 output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
 
+# Create the output directory if it doesn't exist
+try:
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"Output directory created or already exists: {output_dir}")
+except Exception as output_dir:
+    print(f"Error creating output directory: {output_dir}")
+    exit(1)  # Exit the script if the directory cannot be created
+
 
 # Fetch a protein sequence from UniProt given an accession number.
 def fetch_uniprot_sequence(acc):
