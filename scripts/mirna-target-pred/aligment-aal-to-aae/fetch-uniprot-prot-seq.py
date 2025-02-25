@@ -16,6 +16,9 @@ miRNA_to_accessions = {
 # Base URL for UniProt REST API
 base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
 
+# Output directory to store the FASTA files
+output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
+
 
 # Fetch a protein sequence from UniProt given an accession number.
 def fetch_uniprot_sequence(acc):
