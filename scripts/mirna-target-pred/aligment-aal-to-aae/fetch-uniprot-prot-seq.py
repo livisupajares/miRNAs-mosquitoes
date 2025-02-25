@@ -57,8 +57,12 @@ def fetch_protein_sequences(accession_numbers):
 def main():
     # Create a directory to store the FASTA files if it doesn't exist
     output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
-    os.makedirs(output_dir, exist_ok=True)
-
+    try:
+        os.makedirs(output_dir, exist_ok=True)
+        print(f"Output directory created or already exists: {output_dir}")
+    except Exception as e:
+        print(f"Error creating output directory: {e}")
+        return  # Exit the script if the directory cannot be created
     # Iterate over each miRNA and its associated accession numbers
     for mirna, accessions in miRNA_to_accessions.items():
         print(f"Processing {mirna}...")
