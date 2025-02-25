@@ -26,5 +26,15 @@ if response.status_code == 200:
     bantam_3p = f"{header}\n{sequence}"
     print(bantam_3p)
 
+    # Create a directory to store the FASTA files if it doesn't exist
+    output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/test/miRNAtarget_prot_seq"
+    try:
+        os.makedirs(output_dir, exist_ok=True)
+        print(f"Output directory created or already exists: {output_dir}")
+    except Exception as output_dir:
+        print(
+            f"Error creating output directory: {output_dir}"
+        )  # Exit the script if the directory cannot be created
+
 else:
     print(f"Error fetching {acc}: HTTP {response.status_code}")
