@@ -16,5 +16,7 @@ response = requests.get(url)
 # Log if connection to UniprotKB sequence FASTA file exists
 if response.status_code == 200:
     print(f"Success opening a connection to {acc}")
+    # Extract plain text content
+    fasta_content = response.text
 else:
     print(f"Error fetching {acc}: HTTP {response.status_code}")
