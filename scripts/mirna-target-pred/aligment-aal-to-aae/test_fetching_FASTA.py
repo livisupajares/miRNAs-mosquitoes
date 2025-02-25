@@ -22,5 +22,10 @@ if response.status_code == 200:
     lines = fasta_content.splitlines()
     header = lines[0]  # First line is header
     sequence = "".join(lines[1:])  # Remaining lines are the sequence
+
+    # Join header and sequence into one FASTA string
+    bantam_3p = f"{header}\n{sequence}"
+    print(bantam_3p)
+
 else:
     print(f"Error fetching {acc}: HTTP {response.status_code}")
