@@ -1,4 +1,4 @@
-name: miRNA mosquitoes
+name: miRNA-mosquitoes
 channels:
   - defaults
 dependencies:
