@@ -1,0 +1,6 @@
+name: miRNA mosquitoes
+channels:
+  - defaults
+dependencies:
+  - python
+  - requests
