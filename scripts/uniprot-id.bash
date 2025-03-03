@@ -7,9 +7,9 @@
 # folder you want to work with. Might use the gum package for eye candy.
 
 # Define the root folder where your input files are located
-root_folder_miranda=" /Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-miranda-pantherdb/uniprots-aae-miranda"
+root_folder_miranda_aae=" /Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-miranda-pantherdb/uniprots-aae-miranda"
 
-root_folder_ts="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-targetspy-pantherdb/uniprots-aae-targetspy"
+root_folder_ts_aae="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/panther/aae-targetspy-pantherdb/uniprots-aae-targetspy"
 
 # Loop through all .txt files in the root folder
 for input_file in "$root_folder_ts"/*.txt; do
