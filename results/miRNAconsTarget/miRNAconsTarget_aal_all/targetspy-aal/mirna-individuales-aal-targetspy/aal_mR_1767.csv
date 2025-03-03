@@ -1,0 +1,56 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aal-mR-1767",-21.52,984,1003,162
+"AALF014779-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL013028) VB Community Annotation]","A0A023EUS3,A0A023EW10,A0A182GS49","aal-mR-1767",-24.95,480,499,161
+"AALF015997-RA","uracil phosphoribosyltransferase [Source:Projected from Aedes aegypti (AAEL012973) VB Community Annotation]","A0A182GUI2","aal-mR-1767",-17.64,229,249,161
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-mR-1767",-17.53,1555,1575,161
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-mR-1767",-18.26,11321,11340,158
+"AALF017609-RA","Histone-lysine N-methyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GXI3]","A0A182GXI3","aal-mR-1767",-16.37,321,340,158
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-mR-1767",-20.34,14386,14405,154
+"AALF007750-RA","peptidyl-prolyl cis-trans isomerase (cyclophilin) [Source:Projected from Aedes aegypti (AAEL006054) VB Community Annotation]","A0A182GCX7","aal-mR-1767",-19.52,1427,1445,153
+"AALF015500-RA","zinc finger protein [Source:Projected from Aedes aegypti lvpagwg (AAEL014695) VB Community Annotation]","A0A182GTJ2","aal-mR-1767",-18.76,353,373,153
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aal-mR-1767",-18.57,4147,4166,152
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aal-mR-1767",-19.49,5798,5817,151
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-mR-1767",-18.42,9687,9706,150
+"AALF020920-RA","Serine/threonine-protein phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A023EQE1]","A0A023EQE1","aal-mR-1767",-18.7,172,192,149
+"AALF020775-RA","Putative mitochondrial ribosomal protein l53 [Source:UniProtKB/TrEMBL;Acc:A0A023EF38]","A0A023EF38,A0A023EGJ9","aal-mR-1767",-18.64,178,198,149
+"AALF021043-RA","zinc transporter [Source:Projected from Aedes aegypti (AAEL001968) VB Community Annotation]","A0A023EPK2,A0A023EQU4,A0A023EUU9,A0A182H3P7","aal-mR-1767",-15.63,9,29,149
+"AALF023649-RA","sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]","A0A182H7W6","aal-mR-1767",-15.53,4168,4188,149
+"AALF025859-RA","cell cycle control protein cwf22 [Source:Projected from Aedes aegypti (AAEL000707) VB Community Annotation]","A0A023EKD1,A0A023ESS5,A0A182HBD0","aal-mR-1767",-22.23,4,22,148
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-mR-1767",-18.78,20992,21012,148
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aal-mR-1767",-18.12,5620,5641,148
+"AALF020475-RA","clathrin coat assembly protein [Source:Projected from Aedes aegypti (AAEL001405) VB Community Annotation]","A0A023EJ74,A0A182H2N2","aal-mR-1767",-17.71,271,290,148
+"AALF008473-RA","chordin [Source:Projected from Aedes aegypti (AAEL005627) VB Community Annotation]","A0A182GEE1","aal-mR-1767",-15.3,1343,1362,148
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aal-mR-1767",-20.94,361,380,147
+"AALF007772-RA","glucosamine-fructose-6-phosphate aminotransferase [Source:Projected from Aedes aegypti (AAEL009510) VB Community Annotation]","A0A182GCZ5","aal-mR-1767",-16.25,243,262,147
+"AALF000489-RA","DNA-directed RNA polymerase subunit beta [Source:UniProtKB/TrEMBL;Acc:A0A182G171]","A0A182G171","aal-mR-1767",-17.24,91,110,146
+"AALF005253-RA","Putative rna polymer [Source:UniProtKB/TrEMBL;Acc:A0A023EUH3]","A0A023EUH3","aal-mR-1767",-16.78,5,26,146
+"AALF024597-RA","Putative conserved protein with signal anchor [Source:Projected from Aedes aegypti lvpagwg (AAEL005522) UniProtKB/TrEMBL;Acc:A0A0P6J688]","A0A023EUD7,A0A182H9C6","aal-mR-1767",-16.51,86,105,146
+"AALF011160-RA","Putative histone h3 lys4 methyltransferase complex subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EBK1]","A0A023EBK1","aal-mR-1767",-15.34,586,605,146
+"AALF002033-RA","Putative vesicle transport protein sec20 [Source:UniProtKB/TrEMBL;Acc:A0A023EKQ3]","A0A023EKQ3","aal-mR-1767",-16.84,5,25,145
+"AALF018341-RA","calcium/calmodulin-dependent protein kinase type 1 (camki) [Source:Projected from Aedes aegypti (AAEL013173) VB Community Annotation]","A0A182GYV1","aal-mR-1767",-16.39,1128,1147,145
+"AALF020703-RA","Replication protein A subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H338]","A0A023EVB3,A0A182H338","aal-mR-1767",-15.68,414,433,145
+"AALF002459-RA","ATP-dependent clp protease ATP-binding subunit clpx [Source:Projected from Aedes aegypti lvpagwg (AAEL013966) VB Community Annotation]","A0A023EVL1,A0A182G408","aal-mR-1767",-15.24,536,555,145
+"AALF022326-RA","Putative ferric-chelate reductase 1 [Source:UniProtKB/TrEMBL;Acc:A0A023EXF7]","A0A023EV19,A0A023EV28,A0A023EXF7","aal-mR-1767",-20.15,482,501,144
+"AALF013028-RA","Histone deacetylase [Source:UniProtKB/TrEMBL;Acc:A0A182GNN5]","A0A023EUU4,A0A182GNN5","aal-mR-1767",-14.74,423,441,144
+"AALF000710-RA","Lipase maturation factor [Source:UniProtKB/TrEMBL;Acc:A0A182G1H7]","A0A182G1H7","aal-mR-1767",-14.69,304,324,144
+"AALF020334-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL011578) VB Community Annotation]","A0A182H2D3","aal-mR-1767",-19.79,3948,3969,143
+"AALF009514-RA","Palmitoyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GGI1]","A0A023EUZ5,A0A182GGI1","aal-mR-1767",-18.4,594,614,143
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aal-mR-1767",-16.16,15720,15739,143
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aal-mR-1767",-23.06,27649,27668,142
+"AALF013219-RA","Methionine aminopeptidase [Source:UniProtKB/TrEMBL;Acc:A0A182GP12]","A0A182GP12","aal-mR-1767",-22.18,343,362,142
+"AALF002534-RA","Putative heat shock protein [Source:UniProtKB/TrEMBL;Acc:A0A023EEP5]","A0A023EEP5","aal-mR-1767",-19.89,424,443,142
+"AALF004132-RA","development and differentiation-enhancing factor, ddef [Source:Projected from Aedes aegypti (AAEL003487) VB Community Annotation]","A0A182G6N6","aal-mR-1767",-19.88,1200,1219,142
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aal-mR-1767",-19.2,4020,4041,142
+"AALF005999-RA","mucolipin [Source:Projected from Aedes aegypti (AAEL001557) VB Community Annotation]","A0A182G9W3","aal-mR-1767",-15.15,199,216,142
+"AALF014062-RA","mucolipin [Source:Projected from Aedes aegypti lvpagwg (AAEL001557) VB Community Annotation]","A0A182GQQ2","aal-mR-1767",-15.15,200,217,142
+"AALF021285-RA","V-type proton ATPase subunit [Source:UniProtKB/TrEMBL;Acc:A0A023ERH1]","A0A023ERH1","aal-mR-1767",-15.13,253,272,142
+"AALF002937-RA","Exocyst complex component [Source:UniProtKB/TrEMBL;Acc:A0A182G4S8]","A0A182G4S8","aal-mR-1767",-14.44,1390,1409,142
+"AALF006898-RA","leucine rich repeat protein [Source:Projected from Aedes aegypti (AAEL003554) VB Community Annotation]","A0A023EPT7,A0A182GBE1,A0A1W7R6P9","aal-mR-1767",-22.6,43,63,141
+"AALF016307-RA","Mothers against decapentaplegic homolog [Source:UniProtKB/TrEMBL;Acc:A0A182GV56]","A0A182GV56","aal-mR-1767",-18.9,677,697,141
+"AALF018905-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL009509) VB Community Annotation]","A0A182GZU3","aal-mR-1767",-26.13,104,122,140
+"AALF019709-RA","endo beta n-acetylglucosaminidase [Source:Projected from Aedes aegypti (AAEL010527) VB Community Annotation]","A0A182H197","aal-mR-1767",-21.5,375,398,140
+"AALF008931-RA","UDP-glucose 6-dehydrogenase [Source:UniProtKB/TrEMBL;Acc:A0A182GFB1]","A0A023ESW2,A0A182GFB1","aal-mR-1767",-19.82,97,116,140
+"AALF026945-RA","odorant binding protein OBP3 [Source:Projected from Aedes aegypti (AAEL000051) VB Community Annotation]","A0A182GHE9","aal-mR-1767",-18.49,98,116,140
+"AALF013111-RA","MICOS complex subunit MIC13 [Source:UniProtKB/TrEMBL;Acc:A0A023EFH1]","A0A023EDK2,A0A023EFH1","aal-mR-1767",-18.05,3527,3546,140
+"AALF003603-RA","ga binding protein beta chain (transcription factor e4tf1-47) [Source:Projected from Aedes aegypti (AAEL013278) VB Community Annotation]","A0A182G5U1","aal-mR-1767",-16.17,1358,1379,140
+"AALF004947-RA","PHD finger protein [Source:Projected from Aedes aegypti (AAEL001554) VB Community Annotation]","A0A182G819","aal-mR-1767",-15.51,831,850,140
