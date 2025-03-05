@@ -28,3 +28,27 @@ aedes_dataset <- useDataset(
   "aalvpagwg_eg_gene",
   mart = ensembl_metazoa
 )
+
+# ==== Fetch 3'UTR sequences ====
+# Can't use getSequence which is an easier way to fetch sequences, because it
+# doesn't support metazoa ensembl datasets. It works with the main one only.
+# Fetch 3'UTR sequences
+utr3_sequences <- getSequence(
+  mart = aedes_dataset,
+  type = "3utr",
+  seqType = "cdna"
+)
+
+# Error in getBM(attributes = c("ensembl_gene_id", "ensembl_transcript_id",  :
+# Invalid filters(s): with_3_utr
+# Please use the function 'listFilters' to get valid filter names
+# listFilters(aedes_dataset) doesn't have anything that resembles 3' UTRs
+utr3_annotations <- getBM(
+  attributes = c("ensembl_gene_id", "ensembl_transcript_id", "3_utr_start", "3_utr_end", "chromosome_name", "strand"),
+  filters = "with_3_utr",
+  values = TRUE,
+  mart = aedes_dataset
+)
+
+# View the first few rows of the result
+head(utr3_annotations)
