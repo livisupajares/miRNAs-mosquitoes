@@ -43,3 +43,7 @@ head(utr3_annotations)
 
 # Filter out "No sequence available" entries
 utr3_annotations <- utr3_annotations[utr3_annotations$`3utr` != "Sequence unavailable" & utr3_annotations$`3utr` != "", ]
+
+# ==== Save data ====
+# Convert dataframe into FASTA format
+df_2_fasta(utr3_annotations, "sequences/aae_3utr.fasta")
