@@ -24,3 +24,7 @@ ensembl_metazoa <- useMart(
 datasets <- listDatasets(ensembl_metazoa)
 
 # Specify the dataset for Aedes aegypti
+aedes_dataset <- useDataset(
+  "aalvpagwg_eg_gene",
+  mart = ensembl_metazoa
+)
