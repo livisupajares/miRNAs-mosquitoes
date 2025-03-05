@@ -40,3 +40,6 @@ utr3_annotations <- getBM(
 # ==== Inspect data ====
 # View the first few rows of the result
 head(utr3_annotations)
+
+# Filter out "No sequence available" entries
+utr3_annotations <- utr3_annotations[utr3_annotations$`3utr` != "Sequence unavailable" & utr3_annotations$`3utr` != "", ]
