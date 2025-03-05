@@ -32,7 +32,7 @@ aedes_dataset <- useDataset(
 # ==== Fetch 3'UTR sequences ====
 # Fetch attributes for 3'UTR sequences
 utr3_annotations <- getBM(
-  attributes = c("ensembl_gene_id", "ensembl_transcript_id", "3utr"), # "3utr" is the sequence
+  attributes = c("ensembl_transcript_id", "3utr"), # "3utr" is the sequence
   values = TRUE,
   mart = aedes_dataset
 )
