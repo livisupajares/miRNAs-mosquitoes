@@ -6,7 +6,7 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/miranda-aae.csv")
+aae_miranda <- read.csv("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda.csv")
 
 # vectorbase aal transcripts Foshan strain
 aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names-vectorbase.csv")
