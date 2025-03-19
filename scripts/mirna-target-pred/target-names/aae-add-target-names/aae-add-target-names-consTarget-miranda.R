@@ -12,8 +12,6 @@ aae_miranda <- read.csv("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda
 aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names-vectorbase.csv")
 
 # ==== FIX DATA ==== #
-# Eliminate all decimal parts without rounding
-aae_miranda$mRNA <- sub("\\..*", "", aae_miranda$mRNA)
 
 # Change variable name to match the other databases
 colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
@@ -22,6 +20,9 @@ colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name
 aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_product_descrip", "uniprot_id")
 
 # ==== MERGE DATABASES ====
+# Eliminate dashes and characters after dashes.
+# aae_miranda$mRNA <- sub("-.*", "", aae_miranda$mRNA)
+
 # merge aae_miranda with aal_vectorbase matching transcript_ID
 aae_miranda_tx_names <- merge(aae_miranda, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
 
