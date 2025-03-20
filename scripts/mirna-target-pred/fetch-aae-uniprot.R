@@ -28,3 +28,11 @@ aedes_dataset <- useDataset(
   "aalvpagwg_eg_gene",
   mart = ensembl_metazoa
 )
+
+# ==== Fetch uniprot metadata ====
+# Fetch attributes for metadata aae
+uniprots_aae <- getBM(
+  attributes = c("ensembl_gene_id", "ensembl_transcript_id", "external_gene_name", "uniprotsptrembl", "uniparc"),
+  values = TRUE,
+  mart = aedes_dataset
+)
