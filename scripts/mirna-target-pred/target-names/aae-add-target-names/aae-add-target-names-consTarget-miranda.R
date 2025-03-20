@@ -8,8 +8,8 @@ source("scripts/functions.R")
 # Miranda
 aae_miranda <- read.csv("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda.csv")
 
-# vectorbase aal transcripts Foshan strain
-aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names-vectorbase.csv")
+# Add Aedes aegypti biomart metadata with uniprots for transcripts
+aae_biomart <- read.csv("results/biomart/uniprots_aae_biomart.csv")
 
 # ==== FIX DATA ==== #
 
