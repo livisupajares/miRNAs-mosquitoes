@@ -44,3 +44,7 @@ head(uniprots_aae)
 # ==== Clean data ====
 # Remove 3rd column
 uniprots_aae$external_gene_name <- NULL
+
+# Replace all empty values with NA using dplyr
+uniprots_aae <- uniprots_aae %>%
+  mutate_all(~ na_if(., ""))
