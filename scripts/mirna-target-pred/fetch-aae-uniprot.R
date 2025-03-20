@@ -48,3 +48,8 @@ uniprots_aae$external_gene_name <- NULL
 # Replace all empty values with NA using dplyr
 uniprots_aae <- uniprots_aae %>%
   mutate_all(~ na_if(., ""))
+
+# Merge NA uniprotsptrembl values with uniparc values using dplyr
+uniprots_aae <- uniprots_aae %>%
+  mutate(uniprotsptrembl = coalesce(uniprotsptrembl, uniparc)) %>%
+  select(-uniparc)
