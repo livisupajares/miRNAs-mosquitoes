@@ -14,7 +14,7 @@ aae_biomart <- read.csv("results/biomart/uniprots_aae_biomart.csv")
 # ==== FIX DATA ==== #
 
 # Change variable name to match the other databases
-colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
+colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 
 # ==== MERGE DATABASES ====
 # Eliminate dashes and characters after dashes.
