@@ -36,3 +36,7 @@ uniprots_aae <- getBM(
   values = TRUE,
   mart = aedes_dataset
 )
+
+# ==== Inspect data ====
+# View the first few rows of the result
+head(uniprots_aae)
