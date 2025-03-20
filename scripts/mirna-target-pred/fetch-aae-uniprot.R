@@ -9,3 +9,7 @@
 
 library(biomaRt)
 source("scripts/functions.R")
+
+# ==== Connect to Ensembl ====
+# List available Ensembl Metazoa databases
+listMarts(host = "https://metazoa.ensembl.org")
