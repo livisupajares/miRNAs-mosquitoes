@@ -41,5 +41,6 @@ uniprots_aae <- getBM(
 # View the first few rows of the result
 head(uniprots_aae)
 
+# ==== Clean data ====
 # Remove 3rd column
 uniprots_aae$external_gene_name <- NULL
