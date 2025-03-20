@@ -8,3 +8,4 @@
 # BiocManager::install("Biostrings")
 
 library(biomaRt)
+source("scripts/functions.R")
