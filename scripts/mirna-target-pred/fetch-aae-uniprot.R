@@ -8,7 +8,7 @@
 # BiocManager::install("Biostrings")
 
 library(biomaRt)
-source("scripts/functions.R")
+library(dplyr)
 
 # ==== Connect to Ensembl ====
 # List available Ensembl Metazoa databases
