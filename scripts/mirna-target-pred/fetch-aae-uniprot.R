@@ -6,3 +6,5 @@
 # }
 # BiocManager::install("biomaRt")
 # BiocManager::install("Biostrings")
+
+library(biomaRt)
