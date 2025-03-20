@@ -19,3 +19,6 @@ ensembl_metazoa <- useMart(
   biomart = "metazoa_mart",
   host = "https://metazoa.ensembl.org"
 )
+
+# List available datasets
+datasets <- listDatasets(ensembl_metazoa)
