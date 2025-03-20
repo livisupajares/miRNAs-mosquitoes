@@ -21,7 +21,7 @@ colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 # aae_miranda$mRNA <- sub("-.*", "", aae_miranda$mRNA)
 
 # merge aae_miranda with aal_vectorbase matching transcript_ID
-aae_miranda_tx_names <- merge(aae_miranda, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
+aae_miranda_tx_names <- merge(aae_miranda, aae_biomart, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
 
 # reorder columns so transcript product description and uniprot_id are
 # between mRNA and miRNA columns.
