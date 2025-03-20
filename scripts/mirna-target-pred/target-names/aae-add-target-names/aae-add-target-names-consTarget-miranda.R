@@ -52,7 +52,7 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol and remove unspecified products
+    filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
     filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
