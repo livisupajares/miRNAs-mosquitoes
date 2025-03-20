@@ -40,3 +40,6 @@ uniprots_aae <- getBM(
 # ==== Inspect data ====
 # View the first few rows of the result
 head(uniprots_aae)
+
+# Remove 3rd column
+uniprots_aae$external_gene_name <- NULL
