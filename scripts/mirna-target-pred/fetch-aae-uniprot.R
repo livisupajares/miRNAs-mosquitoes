@@ -53,3 +53,7 @@ uniprots_aae <- uniprots_aae %>%
 uniprots_aae <- uniprots_aae %>%
   mutate(uniprotsptrembl = coalesce(uniprotsptrembl, uniparc)) %>%
   select(-uniparc)
+
+# ==== Save data ====
+# Save the cleaned data to a CSV file
+write.csv(uniprots_aae, "results/biomart/uniprots_aae_biomart.csv", row.names = FALSE)
