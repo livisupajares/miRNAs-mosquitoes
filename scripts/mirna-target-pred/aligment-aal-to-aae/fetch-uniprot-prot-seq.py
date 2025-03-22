@@ -7,9 +7,9 @@ import requests
 
 # Configuration
 # Input directory to read .txt files with Uniprot kb accessions
-input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/uniprots-aae-targetspy"
+input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/uniprots-aal-miranda"
 # Output directory to store the FASTA files
-output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/targetspy"
+output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/aal/miranda"
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = f"{output_dir}/logs"
 # Base URL for UniProt REST API
