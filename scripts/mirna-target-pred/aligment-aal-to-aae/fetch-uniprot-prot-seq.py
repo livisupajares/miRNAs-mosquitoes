@@ -19,8 +19,6 @@ output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mo
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = f"{output_dir}/logs"
 # Base URL for UniProt REST API
-# base_url = "https://rest.uniprot.org/uniprotkb/{acc}.fasta"
-# base_url2 = "https://rest.uniprot.org/uniparc/{acc}.fasta"
 base_url = "https://rest.uniprot.org/{database}/{acc}.fasta"
 
 # Create directories if they don't exist
