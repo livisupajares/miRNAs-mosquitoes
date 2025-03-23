@@ -81,7 +81,7 @@ for mirna, accessions in miRNA_to_accessions.items():
         fasta_content = fetch_and_save_sequence(acc, mirna)
         if fasta_content:
             fasta_sequences.append(fasta_content)
-        time.sleep(0.25)
+        time.sleep(0.0025)
 
     # Save all sequences for the current miRNA into one FASTA file
     if fasta_sequences:
