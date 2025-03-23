@@ -9,6 +9,7 @@ import os
 import time
 
 import requests
+from tqdm import tqdm
 
 # Configuration
 # Input directory to read .txt files with Uniprot kb accessions
@@ -58,7 +59,7 @@ def fetch_and_save_sequence(acc, mirna_name):
 
     if response.status_code == 200:
         # Extract plain text content
-        print(f"Success fetching {acc} from {database}")
+        # print(f"Success fetching {acc} from {database}")
         return response.text
     else:
         # Log the error to the log file
@@ -66,7 +67,7 @@ def fetch_and_save_sequence(acc, mirna_name):
         error_message = (
             f"Error fetching {acc} from {database}: HTTP {response.status_code}"
         )
-        print(error_message)
+        # print(error_message)
         with open(log_file, "a") as log:
             log.write(f"{error_message}\n")
         return None
@@ -78,8 +79,7 @@ for mirna, accessions in miRNA_to_accessions.items():
 
     # Collect all FASTA sequences for the current miRNA
     fasta_sequences = []
-    for i, acc in enumerate(accessions, 1):
-        print(f"Fetching {i}/{len(accessions)}: {acc}")
+    for acc in tqdm(accessions, desc=f"Fetching {mirna}", total=len(accessions)):
         fasta_content = fetch_and_save_sequence(acc, mirna)
         if fasta_content:
             fasta_sequences.append(fasta_content)
