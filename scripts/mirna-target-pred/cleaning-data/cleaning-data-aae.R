@@ -22,27 +22,28 @@ colnames(aae_mirna)
 # aae_mirna_mat <- aae_mirna[-c(1,3,5:39)]
 
 ## Mature sequence of aae infected with DENV-2
-aae_mirna_mat_denv <- aae_mirna[-c(1, 3, 5:21, 24:39)]
+# aae_mirna_mat_denv <- aae_mirna[-c(1, 3, 5:21, 24:39)]
+aae_mirna_subset <- aae_mirna[-c(1, 3, 5:21, 24:39)]
 
 # ==== Deleting all data with NA strings ====
 # Delete NA rows with NA values only from the column mat_seq
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
-aae_mirna_mat_denv <- subset(aae_mirna_mat_denv, !(is.na(mat_seq)))
+aae_mirna_clean <- subset(aae_mirna_subset, !(is.na(mat_seq)))
+
+# ==== Deleting data that is not from DENV-2 ====
+aae_mirna_mat_denv <-
+  aae_mirna_clean[grepl("denv", aae_mirna_clean$infection), ]
 
 # ==== Deleting duplicated rows based on miRNA_name ====
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
 aae_mirna_mat_denv <-
   aae_mirna_mat_denv[!duplicated(aae_mirna_mat_denv$mirna_name), ]
 
-# ==== Deleting data that is not from DENV-2 ====
-aae_mirna_mat_denv <-
-  aae_mirna_mat_denv[grepl("denv", aae_mirna_mat_denv$infection), ]
-
 # ==== Deleting down-regulated miRNAs ====
 aae_mirna_mat_denv <-
   aae_mirna_mat_denv[grepl("up-regulated", aae_mirna_mat_denv$exp_DENV), ]
 
-# Deleting the infection column
+# Deleting the infection and exp_DENV column
 aae_mirna_mat_denv <- aae_mirna_mat_denv[-c(3, 4)]
 
 # ==== Delete the numbers from miRNA strings ====
