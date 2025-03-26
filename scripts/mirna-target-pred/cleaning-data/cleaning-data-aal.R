@@ -19,9 +19,10 @@ colnames(aal_mirna)
 aal_mirna_mat_subset <- aal_mirna[-c(2, 4:20, 23:38)]
 
 # ==== Deleting data that aren't nucleotides ====
-aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl(
+# Equivalente a eliminar los NAs
+aal_mirna_mat_subset <- aal_mirna_mat_subset[!grepl(
   "NO HAY SECUENCIA",
-  aal_mirna_mat_denv$mat_seq
+  aal_mirna_mat_subset$mat_seq
 ), ]
 
 # ==== Deleting data that is not from DENV-2 ====
