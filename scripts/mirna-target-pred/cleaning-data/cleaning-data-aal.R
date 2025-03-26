@@ -16,7 +16,7 @@ aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
 # ===== Deleting extra columns =====
 # Show name of columns
 colnames(aal_mirna)
-aal_mirna_mat_denv <- aal_mirna[-c(1, 3, 5:21, 23:39)]
+aal_mirna_mat_subset <- aal_mirna[-c(2, 4:20, 23:38)]
 
 # ==== Deleting data that aren't nucleotides ====
 aal_mirna_mat_denv <- aal_mirna_mat_denv[!grepl(
