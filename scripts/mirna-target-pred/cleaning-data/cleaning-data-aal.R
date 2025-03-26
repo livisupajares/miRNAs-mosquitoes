@@ -6,7 +6,7 @@ source("scripts/functions.R")
 
 # ===== Importing data =====
 # Add NA to all empty spaces
-aal_mirna <- read.csv("sequences/aal-complete/aal-mirna-seq-U.csv",
+aal_mirna <- read.csv("sequences/aal-complete/aal-mirna-seq.csv",
   na.strings = c("", "NA")
 )
 
