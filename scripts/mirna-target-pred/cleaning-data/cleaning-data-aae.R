@@ -25,8 +25,9 @@ colnames(aae_mirna)
 aae_mirna_mat_denv <- aae_mirna[-c(1, 3, 5:21, 24:39)]
 
 # ==== Deleting all data with NA strings ====
+# Delete NA rows with NA values only from the column mat_seq
 # aae_mirna_mat <- aae_mirna_mat[complete.cases(aae_mirna_mat), ]
-aae_mirna_mat_denv <- aae_mirna_mat_denv[complete.cases(aae_mirna_mat_denv[, -ncol(aae_mirna_mat_denv)]), ]
+aae_mirna_mat_denv <- subset(aae_mirna_mat_denv, !(is.na(mat_seq)))
 
 # ==== Deleting duplicated rows based on miRNA_name ====
 # aae_mirna_mat <- aae_mirna_mat[!duplicated(aae_mirna_mat$mirna_name), ]
