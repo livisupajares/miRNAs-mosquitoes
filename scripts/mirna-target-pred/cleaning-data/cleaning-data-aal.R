@@ -1,7 +1,7 @@
 # ~~~~~ TEST = ISOLATE AEDES ALBOPICTUS MIRNA SEQUENCES ~~~~~~
 #
 # ===== Load libraries & files =====
-# library("tidyverse")
+library(dplyr)
 source("scripts/functions.R")
 
 # ===== Importing data =====
