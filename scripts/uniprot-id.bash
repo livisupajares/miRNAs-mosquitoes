@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ~~~~~~ TXT PARSER FOR PANTHER DB ~~~~~~ #
+# ~~~~~~ TXT PARSER FOR ENRICHMENT ANALYSIS ~~~~~~ #
 # This program parses all .txt files with UniprotKB IDs from a specific folder. 
 # It removes their quotation marks, commas and puts one ID per line.
 # TODO: Refactor this file into a better cli where it lets you pick which root
