@@ -3,26 +3,19 @@
 # How many sequences in total
 # grep -c "^>" "$1" (input file)
 
-# USAGE = ./split-all-prot-fasta.sh input_file.fasta first_half.fasta second_half.fasta
+# USAGE = ./split-all-prot-fasta.sh input_file.fasta
 
-# Add root folder
-UPCH_ROOT="/home/cayetano/livisu/git/miRNAs-mosquitoes/"
-
-# Check if all required arguments are provided
-if [ "$#" -ne 3 ]; then
-    echo "Usage: $0 <input_fasta_file> <output_part1> <output_part2>"
+# Check if all required arguments are provided. In this case, -ne should be 1.
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <input_fasta_file>"
     exit 1
 fi
 
 # Define input variables
 INPUT_FILE="$1"
-PART1="$2"
-PART2="$3"
 
-# Concatenate UPCH_ROOT to each variable
-INPUT_FILE=${UPCH_ROOT}${INPUT_FILE}
-PART1=${UPCH_ROOT}${PART1}
-PART2=${UPCH_ROOT}${PART2}
+# Debugging: Print the received argument
+echo "Received input file: $INPUT_FILE"
 
 # Ensure the input file exists
 if [ ! -f "$INPUT_FILE" ]; then
@@ -30,7 +23,16 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
-# Pass the output file names as variables to the awk script
-awk -v part1="$PART1" -v part2="$PART2" -f split-fasta.awk "$INPUT_FILE"
+# Call the awk script to split the FASTA file
+echo "Processing input file: $INPUT_FILE"
+awk -f split-fasta-by-residues.awk "$INPUT_FILE"
 
-echo "FASTA file has been split into '$PART1' and '$PART2'."
+# Check if output files were created
+if [ -d "output_dir" ]; then
+    echo "FASTA file has been split into parts with <= 10,000 residues per file."
+    echo "All output files are saved in the 'output_files/' directory."
+    ls -l output_files/
+else
+    echo "Error: Output directory 'output_files/' was not created."
+    exit 1
+fi
