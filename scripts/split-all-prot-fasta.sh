@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# TODO : delete all line breaks inside the sequences.
 # How many sequences in total
 # grep -c "^>" "$1" (input file)
 # Check number of residues
@@ -25,9 +26,27 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
+# Extract the base name of the input file
+BASE_NAME=$(basename "$INPUT_FILE" .fasta)
+
+# Construct the path for the cleaned file
+CLEAN_FILE="/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/${BASE_NAME}_clean.fasta" # Save clean file into a variable
+
+# Delete empty lines between sequences and save the cleaned file
+echo "Preprocessing input file to remove empty lines ..."
+sed '/^$/d' $INPUT_FILE > "$CLEAN_FILE"
+
+# Ensure the clean file exists
+if [ ! -f "$CLEAN_FILE" ]; then
+    echo "Error: File '$CLEAN_FILE' not found."
+    exit 1
+fi
+
+echo "Clean file saved into variable: $CLEAN_FILE"
+
 # Call the awk script to split the FASTA file
-echo "Processing input file: $INPUT_FILE"
-awk -f split-fasta-by-residues.awk "$INPUT_FILE"
+echo "Processing input file: $CLEAN_FILE"
+awk -f split-fasta-by-residues.awk "$CLEAN_FILE"
 
 # Define the output directory used by the awk script
 OUTPUT_DIR="/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"
@@ -43,5 +62,4 @@ else
 fi
 
 # Verify that all the sequences have been processed
-# cd output_dir
-# grep -c "^>" /home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/part*.fasta | awk -F: '{sum += $2} END {print "Total sequences:", sum}'
+grep -c "^>" /home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/part*.fasta | awk -F: '{sum += $2} END {print "Total sequences:", sum}'
