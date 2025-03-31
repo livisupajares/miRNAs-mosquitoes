@@ -2,6 +2,8 @@
 
 # How many sequences in total
 # grep -c "^>" "$1" (input file)
+# Check number of residues
+# grep -v '>' aae-1.fasta | wc -c
 
 # USAGE = ./split-all-prot-fasta.sh input_file.fasta
 
@@ -27,12 +29,19 @@ fi
 echo "Processing input file: $INPUT_FILE"
 awk -f split-fasta-by-residues.awk "$INPUT_FILE"
 
+# Define the output directory used by the awk script
+OUTPUT_DIR="/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"
+
 # Check if output files were created
-if [ -d "output_dir" ]; then
+if [ -d "$OUTPUT_DIR" ]; then
     echo "FASTA file has been split into parts with <= 10,000 residues per file."
-    echo "All output files are saved in the 'output_files/' directory."
-    ls -l output_files/
+    echo "All output files are saved in the '$OUTPUT_DIR' directory."
+    ls -l "$OUTPUT_DIR"part*.fasta
 else
-    echo "Error: Output directory 'output_files/' was not created."
+    echo "Error: Output directory '$OUTPUT_DIR' was not created."
     exit 1
 fi
+
+# Verify that all the sequences have been processed
+# cd output_dir
+# grep -c "^>" /home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/part*.fasta | awk -F: '{sum += $2} END {print "Total sequences:", sum}'
