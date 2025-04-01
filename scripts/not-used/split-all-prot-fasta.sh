@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# TODO : delete all line breaks inside the sequences.
+# TODO: Ask for help in forums
+# Script to split FASTA files and join sequence lines that are wrapped across multiple lines
 # How many sequences in total
 # grep -c "^>" "$1" (input file)
 # Check number of residues
@@ -30,11 +31,11 @@ fi
 BASE_NAME=$(basename "$INPUT_FILE" .fasta)
 
 # Construct the path for the cleaned file
-CLEAN_FILE="/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/${BASE_NAME}_clean.fasta" # Save clean file into a variable
+CLEAN_FILE="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/${BASE_NAME}_clean.fasta" # Save clean file into a variable
 
-# Delete empty lines between sequences and save the cleaned file
-echo "Preprocessing input file to remove empty lines ..."
-sed '/^$/d' $INPUT_FILE > "$CLEAN_FILE"
+# Preprocess the input file: remove empty lines and join wrapped sequence lines
+echo "Preprocessing input file: removing empty lines and joining sequence lines ..."
+awk '/^>/{if (NR > 1) print ""; print; next} {printf "%s", $0} END {print ""}' "$INPUT_FILE" > "$CLEAN_FILE"
 
 # Ensure the clean file exists
 if [ ! -f "$CLEAN_FILE" ]; then
@@ -42,24 +43,25 @@ if [ ! -f "$CLEAN_FILE" ]; then
     exit 1
 fi
 
-echo "Clean file saved into variable: $CLEAN_FILE"
+echo "Clean file created: $CLEAN_FILE"
 
-# Call the awk script to split the FASTA file
-echo "Processing input file: $CLEAN_FILE"
+# Call the AWK script to split the FASTA file
+echo "Processing cleaned file with AWK splitting script..."
 awk -f split-fasta-by-residues.awk "$CLEAN_FILE"
 
 # Define the output directory used by the awk script
-OUTPUT_DIR="/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"
+OUTPUT_DIR="/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"
 
 # Check if output files were created
 if [ -d "$OUTPUT_DIR" ]; then
     echo "FASTA file has been split into parts with <= 10,000 residues per file."
     echo "All output files are saved in the '$OUTPUT_DIR' directory."
-    ls -l "$OUTPUT_DIR"part*.fasta
+    echo "Output files:"
+    ls -l "${OUTPUT_DIR}"part*.fasta
 else
     echo "Error: Output directory '$OUTPUT_DIR' was not created."
     exit 1
 fi
 
 # Verify that all the sequences have been processed
-grep -c "^>" /home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/part*.fasta | awk -F: '{sum += $2} END {print "Total sequences:", sum}'
+grep -c "^>" "${OUTPUT_DIR}"part*.fasta | awk -F: '{sum += $2} END {print "Total sequences:", sum}'

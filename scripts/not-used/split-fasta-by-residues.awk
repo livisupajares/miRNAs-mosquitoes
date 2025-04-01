@@ -4,8 +4,8 @@ BEGIN {
     max_residues = 10000  # Maximum residues per file
     file_count = 1        # Counter for output files
     current_residues = 0  # Residue count for the current file
-    output_dir = "/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"  # Directory to store output files
-    log_file = "/home/cayetano/livisu/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/debug.log" # Log file for debugging messages
+    output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/output_dir/"  # Directory to store output files
+    log_file = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/miRNAtarget_prot_seq/debug.log" # Log file for debugging messages
 
     # Debugging: Print the output directory
     print "Attempting to create output directory: " output_dir > log_file
