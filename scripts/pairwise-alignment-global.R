@@ -32,16 +32,16 @@ for (i in seq_along(albopictus)) {
 }
 
 # Encontrar los mejores matches y mostrar secuencias alineadas
-cat("🧬 Mejores alineamientos:\n\n")
-for (i in seq_along(albopictus)) {
-  # Buscar el mejor match
-  best_j <- which.max(score_matrix[i, ])
-  best_name <- names_aegypti[best_j]
-  key <- paste(names_albo[i], best_name, sep = "_vs_")
-  best_alignment <- alignment_list[[key]]
-  
-  # Imprimir resultados
-  cat(paste0("▶ ", names_albo[i], " vs ", best_name, "\n"))
-  print(best_alignment)
-  cat("\n")
-}
+# cat("🧬 Mejores alineamientos:\n\n")
+# for (i in seq_along(albopictus)) {
+#   # Buscar el mejor match
+#   best_j <- which.max(score_matrix[i, ])
+#   best_name <- names_aegypti[best_j]
+#   key <- paste(names_albo[i], best_name, sep = "_vs_")
+#   best_alignment <- alignment_list[[key]]
+#   
+#   # Imprimir resultados
+#   cat(paste0("▶ ", names_albo[i], " vs ", best_name, "\n"))
+#   print(best_alignment)
+#   cat("\n")
+# }
