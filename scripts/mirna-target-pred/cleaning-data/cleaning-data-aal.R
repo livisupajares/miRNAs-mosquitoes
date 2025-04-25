@@ -72,4 +72,4 @@ aal_mirna_mat_denv_final$mat_seq <- gsub("T","U", aal_mirna_mat_denv_final$mat_s
 # ==== Convert df to fasta ====
 # convert df to fasta and save output into a custom location for
 # subsequent analysis
-df_2_fasta(aal_mirna_mat_denv_final, "sequences/aal-complete/aal_test_mat_denv.fasta")
+df_2_fasta(aal_mirna_mat_denv_final, "sequences/aal-complete/aal_mat_denv.fasta")
