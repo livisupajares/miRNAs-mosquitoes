@@ -15,3 +15,5 @@ aegypti <- readRNAStringSet("sequences/aae-complete/aae_mat_denv.fasta")
 names_albo <- names(albopictus)
 names_aegypti <- names(aegypti)
 
+# Crear listas para guardar alineamientos y scores
+alignment_list <- list() # The alignments estarán en esta lista
