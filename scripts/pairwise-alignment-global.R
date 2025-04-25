@@ -17,3 +17,6 @@ names_aegypti <- names(aegypti)
 
 # Crear listas para guardar alineamientos y scores
 alignment_list <- list() # The alignments estarán en esta lista
+score_matrix <- matrix(NA, nrow = length(albopictus), ncol = length(aegypti),
+                       dimnames = list(names_albo, names_aegypti))
+
