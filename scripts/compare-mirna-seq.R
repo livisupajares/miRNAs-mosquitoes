@@ -15,3 +15,6 @@ aegypti <- readRNAStringSet("sequences/aae-complete/aae_mat_denv.fasta")
 seqs_albo <- as.character(albopictus)
 seqs_aegypti <- as.character(aegypti)
 
+# Compara si alguna secuencia de albopictus está en aegypti
+matches <- seqs_albo %in% seqs_aegypti
+
