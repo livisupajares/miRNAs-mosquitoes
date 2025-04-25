@@ -66,6 +66,9 @@ aal_mirna_mat_denv_final <- aal_mirna_mat_denv_up[-c(3,4)]
 # Delete parenthesis
 aal_mirna_mat_denv_final$mat_seq <- gsub("\\(G\\)", "", aal_mirna_mat_denv_final$mat_seq)
 
+# ==== Replace all Ts into Us ====
+aal_mirna_mat_denv_final$mat_seq <- gsub("T","U", aal_mirna_mat_denv_final$mat_seq)
+
 # ==== Convert df to fasta ====
 # convert df to fasta and save output into a custom location for
 # subsequent analysis
