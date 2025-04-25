@@ -18,3 +18,7 @@ seqs_aegypti <- as.character(aegypti)
 # Compara si alguna secuencia de albopictus está en aegypti
 matches <- seqs_albo %in% seqs_aegypti
 
+# Muestra resultados
+cat("¿Hay coincidencias exactas?:", any(matches), "\n")
+cat("Secuencias coincidentes:\n")
+print(seqs_albo[matches])
