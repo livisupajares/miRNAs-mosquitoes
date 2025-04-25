@@ -11,3 +11,7 @@ library(Biostrings)
 albopictus <- readRNAStringSet("sequences/aal-complete/aal_mat_denv.fasta")
 aegypti <- readRNAStringSet("sequences/aae-complete/aae_mat_denv.fasta")
 
+# Extrae las secuencias como vectores de caracteres
+seqs_albo <- as.character(albopictus)
+seqs_aegypti <- as.character(aegypti)
+
