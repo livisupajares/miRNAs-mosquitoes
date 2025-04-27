@@ -29,3 +29,7 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
 # Make combined labels: dataset + short description
 # aae_venny_stringdb$dataset_short_desc <- paste0(aae_venny_stringdb$dataset, " | ", aae_venny_stringdb$short_description)
 
+# ==== Add fold_enrichment_column =====
+# Add fold_enrichment column to stringdb and calculate fold enrichment from strength values
+aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_stringdb$strength)
+
