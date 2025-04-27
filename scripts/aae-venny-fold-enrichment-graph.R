@@ -55,9 +55,4 @@ ggplot(aae_venny_stringdb, aes(
     y = "GO Term Description",
     size = "Gene Count"
   ) +
-  theme_minimal(base_size = 14) +
-  theme(
-    axis.text.y = element_text(size = 10),
-    axis.text.x = element_text(size = 12),
-    plot.title = element_text(face = "bold", size = 16, hjust = 0.5)
   )
