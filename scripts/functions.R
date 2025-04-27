@@ -65,3 +65,8 @@ reorder_columns <- function(df) {
     dplyr::select(1, all_of(last_two), everything())
   return(df_reordered)
 }
+
+# ==== Calculate Fold Enrichment from strength values (STRINGDB) ====
+calculate_fold_enrichment <- function(strength) {
+  return(10^strength)
+}
