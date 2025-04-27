@@ -4,6 +4,7 @@
 # Source utils functions and import libraries
 source("scripts/functions.R")
 library(ggplot2)
+library(dplyr)
 
 # ==== Load enrichment results ====
 # Import .csv files
