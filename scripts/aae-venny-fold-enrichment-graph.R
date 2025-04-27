@@ -34,6 +34,11 @@ aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_string
 dataset_colors <- scales::hue_pal()(length(unique(aae_venny_stringdb$dataset)))
 names(dataset_colors) <- unique(aae_venny_stringdb$dataset)
 
+# Make sure your dataset has an ID to join
+# forces ggplot to plot terms in the order of appearance
+aae_venny_stringdb <- aae_venny_stringdb %>%
+  mutate(short_description = factor(short_description, levels = unique(short_description)))
+
 # Venny ShinyGO
 # Venny STRINGDB
 ggplot(aae_venny_stringdb, aes(
