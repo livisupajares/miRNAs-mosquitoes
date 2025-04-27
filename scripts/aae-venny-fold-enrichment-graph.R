@@ -33,3 +33,25 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
 # Add fold_enrichment column to stringdb and calculate fold enrichment from strength values
 aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_stringdb$strength)
 
+# ==== Make dispersion graphs ====
+# Venny STRINGDB
+ggplot(aae_venny_stringdb, aes(
+  x = fold_enrichment,
+  y = reorder(short_description, fold_enrichment),
+  color = fdr,
+  size = observed_gene_count
+)) +
+  geom_point() +
+  scale_color_gradient(low = "red", high = "blue", name = "False Discovery Rate") +
+  labs(
+    title = "Term Enrichment Analysis",
+    x = "Fold Enrichment",
+    y = "GO Term Description",
+    size = "Gene Count"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 12),
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5)
+  )
