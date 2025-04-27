@@ -4,7 +4,6 @@
 # Source utils functions and import libraries
 source("scripts/functions.R")
 library(ggplot2)
-library(ggfittext) # Package to adjust text into ggplot2 plots
 
 # ==== Load enrichment results ====
 # Import .csv files
