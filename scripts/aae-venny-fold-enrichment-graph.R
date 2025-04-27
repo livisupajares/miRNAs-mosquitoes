@@ -25,3 +25,7 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
   aae_venny_stringdb$term_description
 )
 
+# ==== Make combined labels for STRINGDB ====
+# Make combined labels: dataset + short description
+# aae_venny_stringdb$dataset_short_desc <- paste0(aae_venny_stringdb$dataset, " | ", aae_venny_stringdb$short_description)
+
