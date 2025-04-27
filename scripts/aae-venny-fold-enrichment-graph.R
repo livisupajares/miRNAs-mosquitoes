@@ -18,3 +18,10 @@ colnames(aae_venny_shinygo) <- c("fdr", "n_genes", "pathway_genes", "fold_enrich
 # Fix column names stringdb
 colnames(aae_venny_stringdb) <- c("term_id", "term_description", "observed_gene_count", "background_gene_count", "strength", "signal", "fdr", "matching_proteins_in_your_network_IDs", "matching_proteins_in_your_network_labels", "dataset")
 
+# ==== Shorten description =====
+# truncate long descriptions to first 50 characters
+aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_description) > 50,
+  paste0(substr(aae_venny_stringdb$term_description, 1, 47), "..."),
+  aae_venny_stringdb$term_description
+)
+
