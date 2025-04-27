@@ -34,6 +34,10 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
 aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_stringdb$strength)
 
 # ==== Make dispersion graphs ====
+# Create a color palette for the datasets
+dataset_colors <- scales::hue_pal()(length(unique(aae_venny_stringdb$dataset)))
+names(dataset_colors) <- unique(aae_venny_stringdb$dataset)
+
 # Venny ShinyGO
 # Venny STRINGDB
 ggplot(aae_venny_stringdb, aes(
