@@ -34,6 +34,7 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
 aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_stringdb$strength)
 
 # ==== Make dispersion graphs ====
+# Venny ShinyGO
 # Venny STRINGDB
 ggplot(aae_venny_stringdb, aes(
   x = fold_enrichment,
