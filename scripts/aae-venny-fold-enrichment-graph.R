@@ -43,7 +43,18 @@ ggplot(aae_venny_stringdb, aes(
   size = observed_gene_count
 )) +
   geom_point() +
-  scale_color_gradient(low = "red", high = "blue", name = "False Discovery Rate") +
+
+  # Gradient color scale for FDR
+  scale_color_gradient(low = "red", high = "blue", name = "Signal -Log(FDR)") +
+
+  # Simplify theme without dynamic y-axis label colors
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB")) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
   labs(
     title = "Term Enrichment Analysis",
     x = "Fold Enrichment",
