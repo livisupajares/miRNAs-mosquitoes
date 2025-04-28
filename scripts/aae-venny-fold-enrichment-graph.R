@@ -110,3 +110,4 @@ ggplot(
     segment.color = "grey50" # Line color connecting labels to points
   ) +
   geom_point() +
+  ggtitle(stringr::str_wrap("Scatterplot of Fold Enrichment vs Strength - Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB", width = 80)) +
