@@ -2,7 +2,6 @@
 # This script is made to create a dispersion graph of the fold enrichment (SHINYGO & STRINGDB) of ALL Aedes aegypti up-regulated miRNAs with targets.
 
 # Source utils functions and import libraries
-source("scripts/functions.R")
 library(ggplot2)
 library(dplyr)
 library(ggrepel)
@@ -26,12 +25,10 @@ aae_all_stringdb$short_description <- ifelse(nchar(aae_all_stringdb$term_descrip
   aae_all_stringdb$term_description
 )
 
-# ==== Add fold_enrichment_column =====
-# Add fold_enrichment column to stringdb and calculate fold enrichment from strength values
-aae_all_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_all_stringdb$strength)
-# Arrange the data frame by fold_enrichment in descending order
+# ==== Arrange data frame by signal =====
+# Arrange the data frame by signal in descending order
 aae_all_stringdb <- aae_all_stringdb %>%
-  arrange(desc(fold_enrichment))
+  arrange(desc(signal))
 
 # ==== Make dispersion graphs ====
 # Create a color palette for the datasets
@@ -40,15 +37,15 @@ aae_all_stringdb <- aae_all_stringdb %>%
 # Venny STRINGDB
 ## Color by fdr/signal
 ggplot(aae_all_stringdb[1:20, ], aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
-  color = signal,
+  x = signal,
+  y = reorder(short_description, signal),
+  color = fdr,
   size = observed_gene_count
 )) +
   geom_point() +
 
   # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "Signal -Log(FDR)") +
+  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
 
   # Simplify theme without dynamic y-axis label colors
   ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB")) +
@@ -59,15 +56,15 @@ ggplot(aae_all_stringdb[1:20, ], aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   )
 
 ## Color by dataset
 ggplot(aae_all_stringdb[1:20, ], aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
+  x = signal,
+  y = reorder(short_description, signal),
   color = dataset,
   size = observed_gene_count
 )) +
@@ -80,7 +77,7 @@ ggplot(aae_all_stringdb[1:20, ], aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   )
@@ -91,7 +88,7 @@ ggplot(
   aae_all_stringdb,
   aes(
     x = strength,
-    y = fold_enrichment,
+    y = signal,
     color = dataset,
     size = observed_gene_count
   )
@@ -101,7 +98,7 @@ ggplot(
     size = 3, # Adjust label size
     box.padding = 0.5, # Space around labels
     point.padding = 0.5, # Space around points
-    force = 5, # Increase from the default to strengthen repulsion
+    force = 1, # Increase from the default to strengthen repulsion
     max.overlaps = 5, # Allow up to 5 overlap per label
     min.segment.length = 0, # Connect labels to points with lines
     segment.color = "grey50" # Line color connecting labels to points
@@ -116,6 +113,6 @@ ggplot(
   ) +
   labs(
     x = "Strength (Log10(observed / expected))",
-    y = "Fold Enrichment (10^strength)",
+    y = "Signal",
     size = "Gene Count"
   )

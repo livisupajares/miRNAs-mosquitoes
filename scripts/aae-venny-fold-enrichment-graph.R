@@ -5,6 +5,7 @@
 library(ggplot2)
 library(dplyr)
 library(ggrepel)
+library(stringr)
 
 # ==== Load enrichment results ====
 # Import .csv files
@@ -18,7 +19,20 @@ colnames(aae_venny_shinygo) <- c("fdr", "n_genes", "pathway_genes", "fold_enrich
 # Fix column names stringdb
 colnames(aae_venny_stringdb) <- c("term_id", "term_description", "observed_gene_count", "background_gene_count", "strength", "signal", "fdr", "matching_proteins_in_your_network_IDs", "matching_proteins_in_your_network_labels", "dataset")
 
+# ==== Eliminate GO:xxx from pathway ====
+# Create the `term_description` variable
+aae_venny_shinygo <- aae_venny_shinygo %>%
+  mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
+
 # ==== Shorten description =====
+# SHINYGO
+# truncate long descriptions to first 50 characters
+aae_venny_shinygo$short_description <- ifelse(nchar(aae_venny_shinygo$term_description) > 50,
+                                               paste0(substr(aaae_venny_shinygo$term_description, 1, 47), "..."),
+                                              aae_venny_shinygo$term_description
+)
+
+# STRINGDB
 # truncate long descriptions to first 50 characters
 aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_description) > 50,
   paste0(substr(aae_venny_stringdb$term_description, 1, 47), "..."),
@@ -26,12 +40,62 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
 )
 
 # ==== Make plot graphs ====
-# Create a color palette for the datasets
-
 # Venny ShinyGO
+## Color by fdr, use fold_erichment
+ggplot(aae_venny_shinygo, aes(
+  x = fold_enrichment,
+  y = reorder(short_description, fold_enrichment),    color = fdr,
+  size = n_genes
+)) + 
+  geom_point() +
+  
+  # Gradient color scale for FDR
+  scale_color_gradient(low = "blue", high = "red", name = "FDR") +
+  
+  # Simplify theme without dynamic y-axis label colors
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - SHINYGO")) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
+  labs(
+    x = "Fold Enrichment",
+    y = "Term Description",
+    size = "Gene Count"
+  ) +
+  
+  # Add x-axis breaks every 50
+  scale_x_continuous(breaks = seq(0, 300, by = 50))
+
+## Color by datset
+ggplot(aae_venny_shinygo, aes(
+  x = fold_enrichment,
+  y = reorder(short_description, fold_enrichment),
+  color = dataset,
+  size = n_genes
+)) +
+  geom_point() +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - SHINYGO")) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
+  labs(
+    x = "Fold Enrichment",
+    y = "Term Description",
+    size = "Gene Count"
+  ) +
+  
+  # Add x-axis breaks every 50
+  scale_x_continuous(breaks = seq(0, 300, by = 50))
+
 # Venny STRINGDB
 ## Color by fdr, use signal instead of fold_enrichment
-ggplot(aae_venny_stringdb, aes(
+ggplot(aae_venny_shinygo, aes(
   x = signal,
   y = reorder(short_description, signal),
   color = fdr,

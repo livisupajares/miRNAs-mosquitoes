@@ -2,10 +2,10 @@
 # This script is made to create a dispersion graph of the fold enrichment (SHINYGO & STRINGDB) of ALL Aedes albopictus up-regulated miRNAs with targets.
 
 # Source utils functions and import libraries
-source("scripts/functions.R")
 library(ggplot2)
 library(dplyr)
 library(ggrepel)
+library(stringr)
 
 # ==== Load enrichment results ====
 # Import .csv files
@@ -26,16 +26,17 @@ aal_all_stringdb$short_description <- ifelse(nchar(aal_all_stringdb$term_descrip
   aal_all_stringdb$term_description
 )
 
-# ==== Add fold_enrichment_column =====
-# Add fold_enrichment column to stringdb and calculate fold enrichment from strength values
-aal_all_stringdb$fold_enrichment <- calculate_fold_enrichment(aal_all_stringdb$strength)
-
-# Calculate observed/expected ratio
-aal_all_stringdb$observed_expected_ratio <- aal_all_stringdb$observed_gene_count / aal_all_stringdb$background_gene_count
-
+# ==== Order database by signal =====
 # Arrange the data frame by fold_enrichment in descending order
 aal_all_stringdb <- aal_all_stringdb %>%
-  arrange(desc(fold_enrichment))
+  arrange(desc(signal))
+
+# ==== Select specific rows to graph ====
+# Indices you want to manually include
+indices_to_add <- c(82, 84, 88, 94, 95, 131, 134, 151, 152, 160)
+
+# Slect immune related terms
+select_graph <- aal_all_stringdb %>% dplyr::filter(str_detect(str_to_lower(term_description), "imm|neutr") | row_number() %in% indices_to_add)
 
 # ==== Make dispersion graphs ====
 # Create a color palette for the datasets
@@ -43,19 +44,19 @@ aal_all_stringdb <- aal_all_stringdb %>%
 # Venny ShinyGO
 # Venny STRINGDB
 ## Color by fdr/signal
-ggplot(aae_all_stringdb[1:20, ], aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
+ggplot(select_graph, aes(
+  x = signal,
+  y = reorder(short_description, signal),
   color = signal,
   size = observed_gene_count
 )) +
   geom_point() +
 
   # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "Signal -Log(FDR)") +
+  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
 
   # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB")) +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in all up-regulated miRNAs - STRINGDB")) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
@@ -63,20 +64,20 @@ ggplot(aae_all_stringdb[1:20, ], aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   )
 
 ## Color by dataset
-ggplot(aae_all_stringdb[1:20, ], aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
+ggplot(select_graph, aes(
+  x = signal,
+  y = reorder(short_description, signal),
   color = dataset,
   size = observed_gene_count
 )) +
   geom_point() +
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB")) +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in all up-regulated miRNAs - STRINGDB")) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
@@ -84,7 +85,7 @@ ggplot(aae_all_stringdb[1:20, ], aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   )
@@ -92,10 +93,10 @@ ggplot(aae_all_stringdb[1:20, ], aes(
 ## Scatterplot
 # scatterplot colored by dataset
 ggplot(
-  aae_all_stringdb,
+  aal_all_stringdb,
   aes(
     x = strength,
-    y = fold_enrichment,
+    y = signal,
     color = dataset,
     size = observed_gene_count
   )
@@ -111,7 +112,7 @@ ggplot(
     segment.color = "grey50" # Line color connecting labels to points
   ) +
   geom_point() +
-  ggtitle(stringr::str_wrap("Scatterplot of Fold Enrichment vs Strength - Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB", width = 80)) +
+  ggtitle(stringr::str_wrap("Scatterplot of Fold Enrichment vs Strength - Enrichment Analysis of Aedes albopictus miRNA targets in all up-regulated miRNAs - STRINGDB", width = 80)) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
@@ -120,6 +121,6 @@ ggplot(
   ) +
   labs(
     x = "Strength (Log10(observed / expected))",
-    y = "Fold Enrichment (10^strength)",
+    y = "Signal",
     size = "Gene Count"
   )
