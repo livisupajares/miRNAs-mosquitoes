@@ -64,4 +64,12 @@ ggplot(aae_venny_stringdb, aes(
   # Add x-axis breaks every 50
   scale_x_continuous(breaks = seq(0, 550, by = 50))
 
+## Color by dataset
+ggplot(aae_venny_stringdb, aes(
+  x = fold_enrichment,
+  y = reorder(short_description, fold_enrichment),
+  color = dataset,
+  size = observed_gene_count
+)) +
+  geom_point() +
   )
