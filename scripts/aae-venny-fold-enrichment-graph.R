@@ -72,4 +72,5 @@ ggplot(aae_venny_stringdb, aes(
   size = observed_gene_count
 )) +
   geom_point() +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB")) +
   )
