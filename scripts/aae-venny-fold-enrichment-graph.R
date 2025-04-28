@@ -35,6 +35,7 @@ aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_string
 
 # Venny ShinyGO
 # Venny STRINGDB
+## Color by fdr/signal
 ggplot(aae_venny_stringdb, aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
