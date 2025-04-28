@@ -123,3 +123,6 @@ ggplot(
     size = "Gene Count"
   ) +
 
+  # Add x-axis breaks every 50
+  scale_x_continuous(breaks = seq(0, 3, by = 0.5)) +
+  scale_y_continuous(breaks = seq(0, 550, by = 50))
