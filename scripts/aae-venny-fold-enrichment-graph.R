@@ -111,3 +111,15 @@ ggplot(
   ) +
   geom_point() +
   ggtitle(stringr::str_wrap("Scatterplot of Fold Enrichment vs Strength - Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB", width = 80)) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
+  labs(
+    x = "Strength (Log10(observed / expected))",
+    y = "Fold Enrichment (10^strength)",
+    size = "Gene Count"
+  ) +
+
