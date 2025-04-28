@@ -5,6 +5,7 @@
 source("scripts/functions.R")
 library(ggplot2)
 library(dplyr)
+library(ggrepel)
 
 # ==== Load enrichment results ====
 # Import .csv files
