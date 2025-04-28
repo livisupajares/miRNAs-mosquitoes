@@ -73,4 +73,17 @@ ggplot(aae_venny_stringdb, aes(
 )) +
   geom_point() +
   ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB")) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
+  labs(
+    x = "Fold Enrichment",
+    y = "Term Description",
+    size = "Gene Count"
+  ) +
+
+  # Add x-axis breaks every 50
   )
