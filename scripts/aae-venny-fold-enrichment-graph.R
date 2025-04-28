@@ -39,7 +39,7 @@ aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_string
 ggplot(aae_venny_stringdb, aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
-  color = fdr,
+  color = signal,
   size = observed_gene_count
 )) +
   geom_point() +
