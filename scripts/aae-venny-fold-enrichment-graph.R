@@ -98,3 +98,15 @@ ggplot(
     color = dataset,
     size = observed_gene_count
   )
+) +
+  geom_text_repel(
+    aes(label = short_description),
+    size = 3, # Adjust label size
+    box.padding = 0.5, # Space around labels
+    point.padding = 0.5, # Space around points
+    force = 5, # Increase from the default to strengthen repulsion
+    max.overlaps = 5, # Allow up to 5 overlap per label
+    min.segment.length = 0, # Connect labels to points with lines
+    segment.color = "grey50" # Line color connecting labels to points
+  ) +
+  geom_point() +
