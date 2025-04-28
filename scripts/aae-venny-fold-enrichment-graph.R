@@ -25,22 +25,22 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
   aae_venny_stringdb$term_description
 )
 
-# ==== Make dispersion graphs ====
+# ==== Make plot graphs ====
 # Create a color palette for the datasets
 
 # Venny ShinyGO
 # Venny STRINGDB
-## Color by fdr/signal
+## Color by fdr, use signal instead of fold_enrichment
 ggplot(aae_venny_stringdb, aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
-  color = signal,
+  x = signal,
+  y = reorder(short_description, signal),
+  color = fdr,
   size = observed_gene_count
 )) +
   geom_point() +
 
   # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "Signal -Log(FDR)") +
+  scale_color_gradient(low = "blue", high = "red", name = "FDR") +
 
   # Simplify theme without dynamic y-axis label colors
   ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in common with all up-regulated miRNAs - STRINGDB")) +
@@ -51,18 +51,18 @@ ggplot(aae_venny_stringdb, aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   ) +
 
   # Add x-axis breaks every 50
-  scale_x_continuous(breaks = seq(0, 550, by = 50))
+  scale_x_continuous(breaks = seq(0, 2, by = 0.25))
 
 ## Color by dataset
 ggplot(aae_venny_stringdb, aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
+  x = signal,
+  y = reorder(short_description, signal),
   color = dataset,
   size = observed_gene_count
 )) +
@@ -75,13 +75,13 @@ ggplot(aae_venny_stringdb, aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   ) +
 
   # Add x-axis breaks every 50
-  scale_x_continuous(breaks = seq(0, 550, by = 50))
+  scale_x_continuous(breaks = seq(0, 2, by = 0.25))
 
 ## Scatterplot
 # scatterplot colored by dataset
@@ -89,7 +89,7 @@ ggplot(
   aae_venny_stringdb,
   aes(
     x = strength,
-    y = fold_enrichment,
+    y = signal,
     color = dataset,
     size = observed_gene_count
   )
@@ -99,7 +99,7 @@ ggplot(
     size = 3, # Adjust label size
     box.padding = 0.5, # Space around labels
     point.padding = 0.5, # Space around points
-    force = 5, # Increase from the default to strengthen repulsion
+    force = 1, # Increase from the default to strengthen repulsion
     max.overlaps = 5, # Allow up to 5 overlap per label
     min.segment.length = 0, # Connect labels to points with lines
     segment.color = "grey50" # Line color connecting labels to points
@@ -114,10 +114,6 @@ ggplot(
   ) +
   labs(
     x = "Strength (Log10(observed / expected))",
-    y = "Fold Enrichment (10^strength)",
+    y = "Signal",
     size = "Gene Count"
-  ) +
-
-  # Add x-axis breaks every 50
-  scale_x_continuous(breaks = seq(0, 3, by = 0.5)) +
-  scale_y_continuous(breaks = seq(0, 550, by = 50))
+  )
