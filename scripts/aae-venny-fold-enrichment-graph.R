@@ -57,7 +57,7 @@ ggplot(aae_venny_stringdb, aes(
   ) +
   labs(
     x = "Fold Enrichment",
-    y = "GO Term Description",
+    y = "Term Description",
     size = "Gene Count"
   ) +
   )
