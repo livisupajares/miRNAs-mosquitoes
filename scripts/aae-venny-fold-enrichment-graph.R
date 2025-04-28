@@ -2,7 +2,6 @@
 # This script is made to create a dispersion graph of the fold enrichment (SHINYGO & STRINGDB) of Aedes aegypti up-regulated miRNAs with common targets calculated by VENNY.
 
 # Source utils functions and import libraries
-source("scripts/functions.R")
 library(ggplot2)
 library(dplyr)
 library(ggrepel)
@@ -25,10 +24,6 @@ aae_venny_stringdb$short_description <- ifelse(nchar(aae_venny_stringdb$term_des
   paste0(substr(aae_venny_stringdb$term_description, 1, 47), "..."),
   aae_venny_stringdb$term_description
 )
-
-# ==== Add fold_enrichment_column =====
-# Add fold_enrichment column to stringdb and calculate fold enrichment from strength values
-aae_venny_stringdb$fold_enrichment <- calculate_fold_enrichment(aae_venny_stringdb$strength)
 
 # ==== Make dispersion graphs ====
 # Create a color palette for the datasets
