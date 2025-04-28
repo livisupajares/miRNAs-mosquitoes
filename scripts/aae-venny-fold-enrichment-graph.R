@@ -60,4 +60,8 @@ ggplot(aae_venny_stringdb, aes(
     y = "Term Description",
     size = "Gene Count"
   ) +
+
+  # Add x-axis breaks every 50
+  scale_x_continuous(breaks = seq(0, 550, by = 50))
+
   )
