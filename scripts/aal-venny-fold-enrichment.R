@@ -23,8 +23,8 @@ aal_venny_shinygo <- aal_venny_shinygo %>%
 # ==== Shorten description =====
 # truncate long descriptions to first 50 characters
 aal_venny_shinygo$short_description <- ifelse(nchar(aal_venny_shinygo$term_description) > 50,
-                                            paste0(substr(aal_venny_shinygo$term_description, 1, 47), "..."),
-                                            aal_venny_shinygo$term_description
+  paste0(substr(aal_venny_shinygo$term_description, 1, 47), "..."),
+  aal_venny_shinygo$term_description
 )
 
 # ==== Arrange data frame by fold_enrichment/signal =====
@@ -36,19 +36,19 @@ aal_venny_shinygo <- aal_venny_shinygo %>%
 
 # Venny ShinyGO
 ## Color by fdr
-ggplot(aal_venny_shinygo[1:20,], aes(
+ggplot(aal_venny_shinygo[1:20, ], aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
   color = fdr,
   size = n_genes
 )) +
   geom_point() +
-  
+
   # Gradient color scale for FDR
   scale_color_gradient(low = "red", high = "blue", name = "FDR") +
-  
+
   # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in all up-regulated miRNAs - SHINYGO")) +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in common with all up-regulated miRNAs - SHINYGO")) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
@@ -62,14 +62,14 @@ ggplot(aal_venny_shinygo[1:20,], aes(
   )
 
 ## Color by dataset
-ggplot(aal_venny_shinygo[1:20,], aes(
+ggplot(aal_venny_shinygo[1:20, ], aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
   color = dataset,
   size = n_genes
 )) +
   geom_point() +
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in all up-regulated miRNAs - SHINYGO")) +
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes albopictus miRNA targets in common with all up-regulated miRNAs - SHINYGO")) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
