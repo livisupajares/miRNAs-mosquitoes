@@ -181,3 +181,9 @@ ggplot(
     y = "Signal",
     size = "Gene Count"
   )
+
+# ==== Save plot with better dpi ====
+ggsave("aae-venny-fdr-fold-enrichment-shinygo.png",
+       plot = last_plot(),
+       path = "/home/cayetano/livisu/fold-enrichment-better-plots",
+       width = 8.88, height = 4.28, units = "in", dpi = 600)
