@@ -38,36 +38,32 @@ aal_mirna_mat_denv <- aal_mirna_mat_denv_duplicates[!duplicated(
   aal_mirna_mat_denv_duplicates$mirna_name
 ), ]
 
-# ==== Delete all miRNAs that have "up-regulated" and "down-regulated" at the same
-# time. ====
-# Identify mirna_name with both "up-regulated" and "down-regulated"
-aal_mirna_to_remove <- aal_mirna_mat_denv_duplicates %>% group_by(mirna_name) %>%
-  filter(any(exp_DENV == "up-regulated", na.rm = TRUE) & 
-           any(exp_DENV == "down-regulated", na.rm = TRUE)) %>%
-  pull(mirna_name) %>%
-  unique()
+# Reset row names so R doesn't get confused with skipped rows from filtering
+rownames(aal_mirna_mat_denv) <- NULL
 
-# Remove rows for mirna_name with both "up-regulated" and "down-regulated"
-aal_mirna_mat_denv2 <- aal_mirna_mat_denv_duplicates %>% filter(!mirna_name %in% aal_mirna_to_remove)
-
-# Keep only one entry per mirna_name
-aal_mirna_mat_denv2 <- aal_mirna_mat_denv2 %>% distinct(mirna_name, .keep_all = TRUE)
+# Replace NA with "up-regulated", because I forgot to add said value in the .csv
+aal_mirna_mat_denv[53, 4] <- "up-regulated"
 
 # Deleting down-regulated miRNAs
-aal_mirna_mat_denv_up <- aal_mirna_mat_denv2[grepl("up-regulated", aal_mirna_mat_denv2$exp_DENV),]
-
-# Remove duplicates
-aal_mirna_mat_denv_up <- aal_mirna_mat_denv_up[!duplicated(aal_mirna_mat_denv_up$mirna_name),]
+# Duplicated are already removed
+aal_mirna_mat_denv_up <- aal_mirna_mat_denv[grepl("up-regulated", aal_mirna_mat_denv$exp_DENV), ]
 
 # Deleting the infection column
-aal_mirna_mat_denv_final <- aal_mirna_mat_denv_up[-c(3,4)]
+aal_mirna_mat_denv_final <- aal_mirna_mat_denv_up[-c(3, 4)]
 
 # ==== Delete the numbers from miRNA strings ====
 # Delete parenthesis
 aal_mirna_mat_denv_final$mat_seq <- gsub("\\(G\\)", "", aal_mirna_mat_denv_final$mat_seq)
 
 # ==== Replace all Ts into Us ====
-aal_mirna_mat_denv_final$mat_seq <- gsub("T","U", aal_mirna_mat_denv_final$mat_seq)
+aal_mirna_mat_denv_final$mat_seq <- gsub("T", "U", aal_mirna_mat_denv_final$mat_seq)
+
+# ===== Save the final data frame =====
+write.csv(
+  aal_mirna_mat_denv_final,
+  "results/aal_mat_denv_final.csv",
+  row.names = FALSE
+)
 
 # ==== Convert df to fasta ====
 # convert df to fasta and save output into a custom location for
