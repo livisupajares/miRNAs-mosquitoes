@@ -57,6 +57,12 @@ aae_mirna_mat_denv$mat_seq <- gsub("-", "", aae_mirna_mat_denv$mat_seq)
 # aae_mirna_mat$mat_seq <- gsub(" ", "", aae_mirna_mat$mat_seq)
 aae_mirna_mat_denv$mat_seq <- gsub(" ", "", aae_mirna_mat_denv$mat_seq)
 
+# ==== Convert up and down regulated miRNAs to csv ====
+write.csv(
+  aae_mirna_mat_denv,
+  "results/aae_mat_denv.csv",
+  row.names = FALSE
+)
 # ==== Convert df to fasta ====
 # df_2_fasta(aae_mirna_mat, "sequences/test/aae_test_mat.fasta")
 df_2_fasta(aae_mirna_mat_denv, "sequences/aae-complete/aae_mat_denv.fasta")
