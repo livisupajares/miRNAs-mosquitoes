@@ -1,5 +1,6 @@
 # ~~~~~~miRNA name comparison ~~~~~~
 # This script was made to compare up-regulated miRNA names from Aedes albopictus with up or down-regulated miRNA names from Aedes aegypti.
+# Later on, we also kept the mature sequences on each miRNA for posterior pairwise alignment.
 
 # ==== Importing Data ====
 # Importing csv with Aedes aegypti names and sequences
