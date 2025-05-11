@@ -1,4 +1,7 @@
-# ~~~~ Pairwise alignment global of miRNAs ~~~~ 
+# ~~~~ Pairwise alignment global of miRNAs ~~~~
+# This script has the purpose to align the mature sequences of miRNAs infected with DENV-2 from Aedes aegypti and Aedes albopictus.
+
+# ==== Load libraries ====
 # Instala Biostrings si no lo tienes
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
