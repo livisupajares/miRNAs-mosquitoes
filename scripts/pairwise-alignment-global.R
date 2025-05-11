@@ -3,9 +3,11 @@
 
 # ==== Load libraries ====
 # Instala Biostrings si no lo tienes
-if (!requireNamespace("BiocManager", quietly = TRUE))
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
   install.packages("BiocManager")
+}
 BiocManager::install("Biostrings")
+BiocManager::install("pwalign")
 
 # Carga la librería
 library(Biostrings)
