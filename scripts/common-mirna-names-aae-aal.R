@@ -14,10 +14,10 @@ aal_mirna_names <- read.csv("results/aal_mat_denv_final.csv",
 
 # ==== Remove the mat_seq column ====
 # Remove the mat_seq column from Aedes aegypti dataframe
-aae_mirna_names <- aae_mirna_names[-c(2)]
+# aae_mirna_names <- aae_mirna_names[-c(2)]
 
 # Remove the mat_seq column from Aedes albopictus dataframe
-aal_mirna_names <- aal_mirna_names[-c(2)]
+# aal_mirna_names <- aal_mirna_names[-c(2)]
 
 # Add the 'i' into a cell because I misspelled 'miR' in Aedes albopictus
 aal_mirna_names[4, 1] <- "aal-miR-1767"
