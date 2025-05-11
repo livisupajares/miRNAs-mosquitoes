@@ -54,3 +54,9 @@ aal_mirna_names <- aal_mirna_names[matching_rows_in_aal, ]
 # Update Aedes aegypti dataframe with the miRNA names that match
 aae_mirna_names <- aae_mirna_names[aae_mirna_names$mirna_name %in% aal_mirna_names$mirna_name, ]
 
+# ==== Convert the dataframes into fasta and save them ====
+# Convert the Aedes aegypti dataframe into fasta format
+df_2_fasta(aae_mirna_names, "results/aae_denv_match.fasta")
+
+# Convert the Aedes albopictus dataframe into fasta format
+df_2_fasta(aal_mirna_names, "results/aal_denv_match.fasta")
