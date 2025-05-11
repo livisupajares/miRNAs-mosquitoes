@@ -56,7 +56,7 @@ aae_mirna_names <- aae_mirna_names[aae_mirna_names$mirna_name %in% aal_mirna_nam
 
 # ==== Convert the dataframes into fasta and save them ====
 # Convert the Aedes aegypti dataframe into fasta format
-df_2_fasta(aae_mirna_names, "results/aae_denv_match.fasta")
+df_2_fasta(aae_mirna_names, "sequences/aae_denv_match.fasta")
 
 # Convert the Aedes albopictus dataframe into fasta format
-df_2_fasta(aal_mirna_names, "results/aal_denv_match.fasta")
+df_2_fasta(aal_mirna_names, "sequences/aal_denv_match.fasta")
