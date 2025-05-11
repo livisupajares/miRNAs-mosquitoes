@@ -13,10 +13,12 @@ BiocManager::install("pwalign")
 library(Biostrings)
 library(pwalign)
 
+# ==== Load fasta files into RNAStringSet objects ====
 # Lee los archivos fasta
 albopictus <- readRNAStringSet("sequences/aal-complete/aal_mat_denv.fasta")
 aegypti <- readRNAStringSet("sequences/aae-complete/aae_mat_denv.fasta")
 
+# ==== Convert fasta to list to prepare the pairwise alignment ====
 # Obtener nombres e IDs
 names_albo <- names(albopictus)
 names_aegypti <- names(aegypti)
@@ -26,6 +28,7 @@ alignment_list <- list() # The alignments estarán en esta lista
 score_matrix <- matrix(NA, nrow = length(albopictus), ncol = length(aegypti),
                        dimnames = list(names_albo, names_aegypti))
 
+# ==== Local Paiwise Alignment ====
 # Alinear cada combinación y guardar score y alineamiento
 for (i in seq_along(albopictus)) {
   for (j in seq_along(aegypti)) {
@@ -37,6 +40,7 @@ for (i in seq_along(albopictus)) {
   }
 }
 
+# ==== Best alignment ====
 # Encontrar los mejores matches y mostrar secuencias alineadas
 # Alignments with better scores but with gaps in the middle aren't considered
 cat("🧬 Mejores alineamientos:\n\n")
