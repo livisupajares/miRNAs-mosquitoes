@@ -2,6 +2,9 @@
 # This script was made to compare up-regulated miRNA names from Aedes albopictus with up or down-regulated miRNA names from Aedes aegypti.
 # Later on, we also kept the mature sequences on each miRNA for posterior pairwise alignment.
 
+# ==== Source custom fuctions ====
+source("scripts/functions.R")
+
 # ==== Importing Data ====
 # Importing csv with Aedes aegypti names and sequences
 aae_mirna_names <- read.csv("results/aae_mat_denv.csv",
