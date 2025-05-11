@@ -25,16 +25,20 @@ names_aegypti <- names(aegypti)
 
 # Crear listas para guardar alineamientos y scores
 alignment_list <- list() # The alignments estarán en esta lista
-score_matrix <- matrix(NA, nrow = length(albopictus), ncol = length(aegypti),
-                       dimnames = list(names_albo, names_aegypti))
+score_matrix <- matrix(NA,
+  nrow = length(albopictus), ncol = length(aegypti),
+  dimnames = list(names_albo, names_aegypti)
+)
 
 # ==== Local Paiwise Alignment ====
 # Alinear cada combinación y guardar score y alineamiento
 for (i in seq_along(albopictus)) {
   for (j in seq_along(aegypti)) {
-    alignment <- pairwiseAlignment(pattern = albopictus[[i]],
-                                   subject = aegypti[[j]],
-                                   type = "global")
+    alignment <- pwalign::pairwiseAlignment(
+      pattern = albopictus[[i]],
+      subject = aegypti[[j]],
+      type = "global"
+    )
     score_matrix[i, j] <- score(alignment)
     alignment_list[[paste(names_albo[i], names_aegypti[j], sep = "_vs_")]] <- alignment
   }
