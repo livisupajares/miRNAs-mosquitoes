@@ -46,3 +46,11 @@ matching_rows_in_aal <- which(aal_mirna_names$mirna_name %in% matching_mirnas)
 
 # See a vector with the miRNA names from Aedes aegypti and Aedes albopictus that match
 aal_mirna_names[matching_rows_in_aal, ]
+
+# ==== Uodate dataframes with the miRNA names that match ====
+# Update Aedes aegypti dataframe with the miRNA names that match
+aal_mirna_names <- aal_mirna_names[matching_rows_in_aal, ]
+
+# Update Aedes aegypti dataframe with the miRNA names that match
+aae_mirna_names <- aae_mirna_names[aae_mirna_names$mirna_name %in% aal_mirna_names$mirna_name, ]
+
