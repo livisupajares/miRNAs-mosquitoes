@@ -11,6 +11,7 @@ BiocManager::install("pwalign")
 
 # Carga la librería
 library(Biostrings)
+library(pwalign)
 
 # Lee los archivos fasta
 albopictus <- readRNAStringSet("sequences/aal-complete/aal_mat_denv.fasta")
