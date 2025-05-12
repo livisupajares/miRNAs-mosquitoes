@@ -7,3 +7,7 @@
 # ==== Load necessary libraries ====
 library(dplyr)
 library(stringr)
+
+# ==== Load data ====
+# Read RNAhybrid output
+targets_aae <- readLines("results/rnahybrid/rnahybrid-aae-miR-34-5p.txt")
