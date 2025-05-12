@@ -18,6 +18,11 @@ aal_mirna$mirna_name <- paste0("aal-", aal_mirna$mirna_name)
 colnames(aal_mirna)
 aal_mirna_mat_subset <- aal_mirna[-c(2, 4:20, 23:38)]
 
+# ==== Count unique miRNAs ====
+# Count unique miRNA names
+n_unique <- length(unique(aal_mirna_mat_subset$mirna_name))
+print(n_unique)
+
 # ==== Deleting data that aren't nucleotides ====
 # Equivalente a eliminar los NAs
 aal_mirna_mat_subset <- aal_mirna_mat_subset[!grepl(
