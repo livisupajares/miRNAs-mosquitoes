@@ -8,6 +8,7 @@
 # ==== Load necessary libraries ====
 library(dplyr)
 library(stringr)
+source("scripts/parse-rnahybrid-results.R")
 
 # ==== Load data ====
 # Read RNAhybrid output
