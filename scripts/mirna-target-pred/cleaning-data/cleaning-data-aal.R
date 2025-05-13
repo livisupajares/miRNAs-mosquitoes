@@ -54,8 +54,13 @@ problematic_mirnas <- aal_mirna_mat_denv %>%
 print(problematic_mirnas)
 
 # Remove rows where mirna_name is in problematic_mirnas
-aal_mirna_mat_denv_up_regulated <- 
-
+aal_mirna_mat_denv_up <- aal_mirna_mat_denv %>%
+  # Remove problematic miRNAs
+  filter(!mirna_name %in% problematic_mirnas) %>%
+  # Keep only up-regulated miRNAs
+  filter(exp_DENV == "up-regulated") %>%
+  # Remove duplicate miRNA names, keeping the first occurrence
+  distinct(mirna_name, .keep_all = TRUE)
 
 # Deleting the infection column
 aal_mirna_mat_denv_final <- aal_mirna_mat_denv_up[-c(3, 4)]
