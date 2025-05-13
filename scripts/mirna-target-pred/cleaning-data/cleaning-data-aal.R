@@ -47,7 +47,8 @@ print(n_unique_denv) # 62
 # There is 11 problematic miRNAs
 problematic_mirnas <- aal_mirna_mat_denv %>%
   group_by(mirna_name) %>%
-  filter("up-regulated" %in% exp_DENV & "down-regulated" %in% exp_DENV) %>% pull(mirna_name) %>%
+  filter("up-regulated" %in% exp_DENV & "down-regulated" %in% exp_DENV) %>%
+  pull(mirna_name) %>%
   unique()
 
 print(problematic_mirnas)
