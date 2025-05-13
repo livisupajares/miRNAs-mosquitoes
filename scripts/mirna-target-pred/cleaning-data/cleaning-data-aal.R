@@ -27,7 +27,7 @@ aal_mirna_mat_subset <- aal_mirna_mat_subset[!grepl(
 
 # Count unique miRNA names
 n_unique <- length(unique(aal_mirna_mat_subset$mirna_name))
-print(n_unique) # 114
+print(n_unique) # 113
 
 # ==== Deleting data that is not from DENV-2 ====
 # Filter by denv infection
