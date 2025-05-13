@@ -40,30 +40,6 @@ aal_mirna_mat_denv <- aal_mirna_mat_subset[grepl(
 n_unique_denv <- length(unique(aal_mirna_mat_denv$mirna_name))
 print(n_unique_denv) # 62
 
-# ==== Fix NA values that I forgot to add ====
-# Reset row names so R doesn't get confused with skipped rows from filtering
-rownames(aal_mirna_mat_denv) <- NULL
-
-# Get a matrix of [row, col] positions where NA occurs
-na_positions <- which(is.na(aal_mirna_mat_denv), arr.ind = TRUE)
-
-# Print result
-print(na_positions)
-
-# Convert column indices to column names
-na_positions_df <- as.data.frame(which(is.na(aal_mirna_mat_denv), arr.ind = TRUE))
-
-na_positions_df$varName <- names(aal_mirna_mat_denv)[na_positions_df$col]
-
-# View the result
-print(na_positions_df)
-
-# View row number
-which(is.na(aal_mirna_mat_denv$exp_DENV))
-
-# Replace NA with "up-regulated", because I forgot to add said value in the .csv
-aal_mirna_mat_denv[80, 4] <- "up-regulated"
-
 # ==== Deleting duplicated rows based on miRNA_name ====
 # # Some duplicates have both up-regulated and down-regulated in the same miRNA.
 
