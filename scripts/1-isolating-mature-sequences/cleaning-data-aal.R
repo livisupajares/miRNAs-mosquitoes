@@ -45,20 +45,20 @@ print(n_unique_denv) # 62
 
 # Identify miRNAs with both up and down regulation
 # There is 11 problematic miRNAs
-problematic_mirnas <- aal_mirna_mat_denv %>%
-  group_by(mirna_name) %>%
-  filter("up-regulated" %in% exp_DENV & "down-regulated" %in% exp_DENV) %>%
-  pull(mirna_name) %>%
+problematic_mirnas <- aal_mirna_mat_denv |>
+  group_by(mirna_name) |>
+  filter("up-regulated" %in% exp_DENV & "down-regulated" %in% exp_DENV) |>
+  pull(mirna_name) |>
   unique()
 
 print(problematic_mirnas)
 
 # Remove rows where mirna_name is in problematic_mirnas
-aal_mirna_mat_denv_up <- aal_mirna_mat_denv %>%
+aal_mirna_mat_denv_up <- aal_mirna_mat_denv |>
   # Remove problematic miRNAs
-  filter(!mirna_name %in% problematic_mirnas) %>%
+  filter(!mirna_name %in% problematic_mirnas) |>
   # Keep only up-regulated miRNAs
-  filter(exp_DENV == "up-regulated") %>%
+  filter(exp_DENV == "up-regulated") |>
   # Remove duplicate miRNA names, keeping the first occurrence
   distinct(mirna_name, .keep_all = TRUE)
 
