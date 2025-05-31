@@ -44,7 +44,7 @@ aae_mirna_mat_denv <-
   aae_mirna_mat_denv[grepl("up-regulated", aae_mirna_mat_denv$exp_DENV), ]
 
 # Deleting the infection and exp_DENV column
-aae_mirna_mat_denv <- aae_mirna_mat_denv[-c(3, 4)]
+aae_mirna_mat_denv <- aae_mirna_mat_denv[-c(3:5)]
 
 # ==== Delete the numbers from miRNA strings ====
 # Delete numbers
