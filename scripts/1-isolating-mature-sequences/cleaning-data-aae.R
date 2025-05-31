@@ -23,7 +23,7 @@ colnames(aae_mirna)
 
 ## Mature sequence of aae infected with DENV-2
 # aae_mirna_mat_denv <- aae_mirna[-c(1, 3, 5:21, 24:39)]
-aae_mirna_subset <- aae_mirna[-c(1, 3, 5:21, 24:39)]
+aae_mirna_subset <- aae_mirna[-c(1, 3, 5:20, 23:43, 45)]
 
 # ==== Deleting all data with NA strings ====
 # Delete NA rows with NA values only from the column mat_seq
