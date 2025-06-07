@@ -1,3 +1,0 @@
-"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF015239-RA","leucine-rich transmembrane protein [Source:Projected from Aedes aegypti lvpagwg (AAEL005734) VB Community Annotation]","A0A023EYA0,A0A182GT13","aae-miR-11900",-14,834,848,0.998667648620205
-"AALF019309-RA","trypsin [Source:Projected from Aedes aegypti (AAEL013703) VB Community Annotation]","A0A023EMF3,A0A182H0L8","aae-miR-11900",-16.6,46,73,0.991839583709747

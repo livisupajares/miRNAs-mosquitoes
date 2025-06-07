@@ -1,9 +1,0 @@
-"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF011418-RA","tetratricopeptide repeat protein, tpr [Source:Projected from Aedes aegypti (AAEL010512) VB Community Annotation]","A0A182GKC4","aae-miR-308-3p",-15.29,203,235,0.998656040064138
-"AALF004127-RA","phosphatase and actin regulator [Source:Projected from Aedes aegypti (AAEL014792) VB Community Annotation]","A0A182G6N4","aae-miR-308-3p",-14.5,699,712,0.998640368623568
-"AALF019046-RA","prolyl endopeptidase (prolyl oligopeptidase) [Source:Projected from Aedes aegypti (AAEL009142) VB Community Annotation]","A0A182H044","aae-miR-308-3p",-16.93,1413,1446,0.998077249347196
-"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aae-miR-308-3p",-14.6,10657,10679,0.997361573875677
-"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aae-miR-308-3p",-14.9,11828,11843,0.997126733003157
-"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aae-miR-308-3p",-14.2,2709,2745,0.9952629730322
-"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aae-miR-308-3p",-14.3,20612,20630,0.992419312576309
-"AALF008947-RA","heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]","A0A023ET39,A0A182GFC6","aae-miR-308-3p",-15.6,6445,6465,0.992276976105057
