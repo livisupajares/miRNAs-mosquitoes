@@ -46,4 +46,4 @@ utr3_annotations <- utr3_annotations[utr3_annotations$`3utr` != "Sequence unavai
 
 # ==== Save data ====
 # Convert dataframe into FASTA format
-df_2_fasta(utr3_annotations, "sequences/aae_3utr.fasta")
+df_2_fasta(utr3_annotations, "sequences/03-target-prediction/aae_3utr.fasta")

@@ -56,4 +56,4 @@ uniprots_aae <- uniprots_aae %>%
 
 # ==== Save data ====
 # Save the cleaned data to a CSV file
-write.csv(uniprots_aae, "results/biomart/uniprots_aae_biomart.csv", row.names = FALSE)
+write.csv(uniprots_aae, "results/00-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv", row.names = FALSE)
