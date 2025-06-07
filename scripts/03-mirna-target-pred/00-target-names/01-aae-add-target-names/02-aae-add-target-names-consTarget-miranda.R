@@ -6,10 +6,10 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.csv("results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda.csv")
+aae_miranda <- read.csv("results/00-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae.csv")
 
 # Add Aedes aegypti biomart metadata with uniprots for transcripts
-aae_biomart <- read.csv("results/biomart/uniprots_aae_biomart.csv")
+aae_biomart <- read.csv("results/00-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv")
 
 # ==== FIX DATA ==== #
 
@@ -67,7 +67,7 @@ View(candidates_miranda[["aae-miR-210-5p"]])
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/miRNAconsTarget/miRNAconsTarget_aae_all/miranda-aae/mirna-individuales-aae-miranda" # Directory to save the CSV files
+output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aae_up/mirna-individuales-aae-miranda" # Directory to save the CSV files
 
 lapply(names(candidates_miranda), function(miRNA_name) {
   df <- candidates_miranda[[miRNA_name]]
