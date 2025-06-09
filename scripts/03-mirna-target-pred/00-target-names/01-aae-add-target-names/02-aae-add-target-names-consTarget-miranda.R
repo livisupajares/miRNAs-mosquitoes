@@ -52,10 +52,6 @@ candidates_miranda <- lapply(mirna_list_miranda, function(df) {
     filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
-# Assign each miRNA's data frame to a separate variable in the global environment
-# names(candidates_miranda) <- names(mirna_list_miranda)
-# list2env(candidates_miranda, envir = .GlobalEnv)
-
 # Access each miRNA data frame by its name
 View(candidates_miranda[["aae-miR-34-5p"]])
 View(candidates_miranda[["aae-miR-5119-5p"]])
