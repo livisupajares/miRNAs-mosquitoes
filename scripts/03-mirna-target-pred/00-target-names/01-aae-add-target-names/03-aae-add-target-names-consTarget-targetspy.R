@@ -6,10 +6,10 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # ts
-aae_ts <- read.delim("results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/targetspy-aae.csv")
+aae_ts <- read.csv("results/00-target-prediction/00-miRNAconsTarget/aae_up/targetspy-aae/targetspy-aae.csv")
 
 # Add Aedes aegypti biomart metadata with uniprots for transcripts
-aae_biomart <- read.csv("results/biomart/uniprots_aae_biomart.csv")
+aae_biomart <- read.csv("results/00-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
@@ -68,7 +68,7 @@ View(candidates_ts[["aae-miR-210-5p"]])
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/miRNAconsTarget/miRNAconsTarget_aae_all/targetspy-aae/mirna-individuales-aae-targetspy" # Directory to save the CSV files
+output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aae_up/targetspy-aae/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_ts), function(miRNA_name) {
   df <- candidates_ts[[miRNA_name]]
