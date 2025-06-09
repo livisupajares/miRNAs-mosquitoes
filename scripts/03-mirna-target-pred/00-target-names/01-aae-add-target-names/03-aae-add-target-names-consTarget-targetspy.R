@@ -56,7 +56,8 @@ candidates_ts <- lapply(mirna_list_ts, function(df) {
 # list2env(candidates_miranda, envir = .GlobalEnv)
 
 # Access each miRNA data frame by its name
-View(candidates_ts[["aae-miR-210-5p"]])
+View(candidates_ts[["aae-miR-34-5p"]])
+View(candidates_ts[["aae-miR-5119-5p"]])
 
 # ==== DOWNLOAD DATABASE ====
 # save filtered database
