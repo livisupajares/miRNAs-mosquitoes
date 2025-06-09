@@ -55,7 +55,16 @@ candidates_ts <- lapply(mirna_list_ts, function(df) {
 View(candidates_ts[["aae-miR-34-5p"]])
 View(candidates_ts[["aae-miR-5119-5p"]])
 
+# Also filter and sort dataframe with all the up-regulated miRNAs
+aae_ts_tx_names_sorted <- aae_ts_tx_names %>%
+  arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
+  filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+
 # ==== DOWNLOAD DATABASE ====
+# save dataframe with all upregulated miRNAs
+write.csv(aae_ts_tx_names_sorted, file = "results/00-target-prediction/00-miRNAconsTarget/aae_up/targetspy-aae/targetspy-aae-uniprot-filtered.csv", row.names = FALSE)
+
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
 output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aae_up/targetspy-aae/mirna-individuales" # Directory to save the CSV files
