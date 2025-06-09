@@ -16,14 +16,11 @@ aae_biomart <- read.csv("results/00-target-prediction/01-ensembl-metazoa-biomart
 aae_ts$mRNA <- sub("\\..*", "", aae_ts$mRNA)
 
 # Change variable name to match the other databases
-colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
-
-# Filter the columns we will add to the aae_ts dataframes
-aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_product_descrip", "uniprot_id")
+colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 
 # ==== MERGE DATABASES ====
 # merge aae_ts with aal_vectorbase matching transcript_ID
-aae_ts_tx_names <- merge(aae_ts, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
+aae_ts_tx_names <- merge(aae_ts, aae_biomart, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
 
 # reorder columns so transcript product description and uniprot_id are
 # between mRNA and miRNA columns.
