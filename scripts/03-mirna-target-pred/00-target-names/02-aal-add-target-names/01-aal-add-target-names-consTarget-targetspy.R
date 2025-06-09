@@ -44,7 +44,7 @@ filtered_data_targetspy <- aal_targetspy_tx_names %>%
 mirna_list_targetspy <- split(filtered_data_targetspy, filtered_data_targetspy$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
-candidates_targetspy <- lapply(mirna_list_targetspy, function(df) {
+candidates_targetspy <<- lapply(mirna_list_targetspy, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
     filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol and remove unspecified products
@@ -56,8 +56,13 @@ candidates_targetspy <- lapply(mirna_list_targetspy, function(df) {
 # list2env(candidates_miranda, envir = .GlobalEnv)
 
 # Access each miRNA data frame by its name
-View(candidates_targetspy[["aal-miR-184"]])
-# View(candidates_miranda[["aae-miR-276-3p"]])
+View(candidates_targetspy[["aal-miR-1767"]])
+
+# Also filter and sort dataframe with all the up-regulated miRNAs
+aal_targetspy_tx_names_sorted <- aal_targetspy_tx_names %>%
+  arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
+  filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol
+  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
@@ -68,7 +73,7 @@ write.csv(aal_targetspy_tx_names_sorted, file = "results/00-target-prediction/00
 output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aal_up/targetspy-aal/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_targetspy), function(miRNA_name) {
-  df <- candidates_miranda[[miRNA_name]]
+  df <- candidates_targetspy[[miRNA_name]]
   # Construct the file name
   file_name <- paste0(output_dir_mir, "/", gsub("-", "_", miRNA_name), ".csv")
   # Write the data frame to a CSV file

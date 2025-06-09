@@ -44,7 +44,7 @@ filtered_data_miranda <- aal_miranda_tx_names %>%
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
-candidates_miranda <- lapply(mirna_list_miranda, function(df) {
+candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
     filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol and remove unspecified products
@@ -56,8 +56,14 @@ candidates_miranda <- lapply(mirna_list_miranda, function(df) {
 # list2env(candidates_miranda, envir = .GlobalEnv)
 
 # Access each miRNA data frame by its name
-View(candidates_miranda[["aal-miR-184"]])
+View(candidates_miranda[["aal-miR-1767"]])
 # View(candidates_miranda[["aae-miR-276-3p"]])
+
+# Also filter and sort dataframe with all the up-regulated miRNAs
+aal_miranda_tx_names_sorted <- aal_miranda_tx_names %>%
+  arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
+  filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol
+  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
