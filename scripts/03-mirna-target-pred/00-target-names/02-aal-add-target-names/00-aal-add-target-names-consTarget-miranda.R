@@ -34,24 +34,7 @@ aal_miranda_tx_names <- reorder_columns(aal_miranda_tx_names)
 # https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
 
 # List of microRNAs to filter by
-microRNA_list_miranda <- c(
-  "aal-miR-184", "aal-miR-275-3p", "aal-miR-317-3p", "aal-miR-8-3p",
-  "aal-miR-1175-5p", "aal-miR-1175-3p", "aal-miR-12-5p", "aal-mR-1767",
-  "aal-miR-193-5p", "aal-miR-1951", "aal-miR-281-5p", "aal-miR-34-5p",
-  "aal-miR-375", "aal-miR-424-3p", "aal-miR-4448", "aal-miR-4728-5p",
-  "aal-miR-71-3p", "aal-miR-956-3p", "aal-miR-976-5p", "aal-miR-989",
-  "aal-miR-998", "aal-let-7b-5p", "aal-miR-1-3p", "aal-miR-10-5p",
-  "aal-miR-100-5p", "aal-miR-1174-3p", "aal-miR-124", "aal-miR-1889-3p",
-  "aal-miR-1891", "aal-miR-190-5p", "aal-miR-210-3p", "aal-miR-252-5p",
-  "aal-miR-252-3p", "aal-miR-263a-3p", "aal-miR-276-3p", "aal-miR-276-5p",
-  "aal-miR-277-3p", "aal-miR-2796", "aal-miR-281-3p", "aal-miR-286b",
-  "aal-miR-286a-3p", "aal-miR-2940-5p", "aal-miR-2940-3p", "aal-miR-2941",
-  "aal-miR-2943", "aal-miR-2945-3p", "aal-miR-2a-3p", "aal-miR-306-5p",
-  "aal-miR-33-5p", "aal-miR-4110-5p", "aal-miR-5706", "aal-miR-622",
-  "aal-miR-8-5p", "aal-miR-87", "aal-miR-927-5p", "aal-miR-927-3p",
-  "aal-miR-92b-3p", "aal-miR-970-3p", "aal-miR-988-5p", "aal-miR-993-3p",
-  "aal-miR-9a-5p", "aal-bantam-5p"
-)
+microRNA_list_miranda <- c("aal-miR-1767", "aal-miR-193-5p", "aal-miR-1951", "aal-miR-424-3p", "aal-miR-4728-5p", "aal-miR-976-5p", "aal-miR-998", "aal-miR-1889b-3p", "aal-miR-190-5p", "aal-miR-252b-5p", "aal-miR-276-5p", "aal-miR-2796-3p", "aal-miR-281-3p", "aal-miR-2943", "aal-miR-2945b-3p", "aal-miR-2945-3p", "aal-miR-2a-3p", "aal-miR-33b-5p", "aal-miR-4110-5p", "aal-miR-5706", "aal-miR-622", "aal-miR-87", "aal-miR-970-3p", "aal-miR-993-3p")
 
 # Filter the dataset for all microRNAs in one step
 filtered_data_miranda <- aal_miranda_tx_names %>%
