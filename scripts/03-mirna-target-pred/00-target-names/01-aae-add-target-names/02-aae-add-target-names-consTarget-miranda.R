@@ -31,14 +31,10 @@ aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
 # https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
 # https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
 
-# List of microRNAs to filter by
+# List of upregulated microRNAs to filter by
 microRNA_list_miranda <- c(
-  "aae-miR-210-5p", "aae-miR-276-3p", "aae-miR-276-5p", "aae-miR-2945-3p",
-  "aae-miR-305-5p", "aae-miR-34-5p", "aae-miR-1000-5p", "aae-miR-308-3p",
-  "aae-miR-999-3p", "aae-bantam-3p", "aae-bantam-5p", "aae-let-7",
-  "aae-miR-10-5p", "aae-miR-1175-3p", "aae-miR-11900", "aae-miR-124-3p",
-  "aae-miR-3368-5p", "aae-miR-3722-5p", "aae-miR-4275-5p", "aae-miR-5108-5p",
-  "aae-miR-5119-5p", "aae-miR-932-5p"
+  "aae-miR-34-5p",
+  "aae-miR-5119-5p"
 )
 
 # Filter the dataset for all microRNAs in one step
