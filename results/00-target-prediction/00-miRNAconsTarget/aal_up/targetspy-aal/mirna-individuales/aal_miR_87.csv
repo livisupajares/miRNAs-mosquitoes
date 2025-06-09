@@ -1,0 +1,30 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF018786-RA","Putative nogo-b receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EMB0]","A0A023EMB0","aal-miR-87",-14.22,423,442,0.999945113
+"AALF000560-RA","synembryn [Source:Projected from Aedes aegypti (AAEL009415) VB Community Annotation]","A0A182G1A4","aal-miR-87",-14.7,645,687,0.999925472082665
+"AALF028119-RA","Apaf-1 Related Killer [Source:Projected from Aedes aegypti (AAEL000874) VB Community Annotation]","A0A182HET5","aal-miR-87",-15,547,584,0.99987313791528
+"AALF027309-RA","signal transduction protein lnk-realted [Source:Projected from Aedes aegypti (AAEL004125) VB Community Annotation]","A0A182HDN0","aal-miR-87",-16.99,1100,1130,0.999854513814404
+"AALF003859-RA","Clustered mitochondria protein homolog [Source:UniProtKB/TrEMBL;Acc:A0A182G693]","A0A182G693","aal-miR-87",-16.81,600,645,0.999851309721674
+"AALF015949-RA","triacylglycerol lipase [Source:Projected from Aedes aegypti (AAEL005706) VB Community Annotation]","A0A182GUE6","aal-miR-87",-14.74,703,723,0.999850070385964
+"AALF027014-RA","GPCR Orphan/Putative Class A Family [Source:Projected from Aedes aegypti lvpagwg (AAEL007644) VB Community Annotation]","A0A182HD65","aal-miR-87",-14.31,17,71,0.99981359002492
+"AALF021651-RA","Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]","A0A023EVU3,A0A182H4P9","aal-miR-87",-15.79,10573,10605,0.999800514772406
+"AALF027539-RA","protein phosphatase 2c [Source:Projected from Aedes aegypti (AAEL011567) VB Community Annotation]","A0A182HDY2,A0A1W7R6Z1","aal-miR-87",-15.66,529,578,0.99978969476996
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-miR-87",-15.95,22265,22304,0.999722070745185
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-miR-87",-14.9,12955,12975,0.999681032759757
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aal-miR-87",-16.77,16531,16575,0.999470368958862
+"AALF018970-RA","Putative mitochondrial fatty acid anion carrier protein/uncoupling protein [Source:UniProtKB/TrEMBL;Acc:A0A023EPV9]","A0A023EKS0,A0A023EPV9","aal-miR-87",-15.21,51,80,0.999247637147805
+"AALF007686-RA","synaptojanin [Source:Projected from Aedes aegypti (AAEL011417) VB Community Annotation]","A0A182GCS9","aal-miR-87",-14,469,488,0.999241106858142
+"AALF014148-RA","NAD dependent epimerase/dehydratase [Source:Projected from Aedes aegypti (AAEL010473) VB Community Annotation]","A0A182GQV5,A0A1W7R8D1","aal-miR-87",-17.9,10,36,0.999229026384383
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-87",-14.4,6222,6257,0.999148380832566
+"AALF017164-RA","P21-activated kinase, pak [Source:Projected from Aedes aegypti (AAEL000489) VB Community Annotation]","A0A182GWN6","aal-miR-87",-17.61,1437,1480,0.999136669827373
+"AALF004530-RA","UDP-glucuronosyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182G7B7]","A0A182G7B7","aal-miR-87",-17.54,10,52,0.999070141
+"AALF008231-RA","aldo-keto reductase [Source:Projected from Aedes aegypti (AAEL003154) VB Community Annotation]","A0A023ENA0,A0A023EPE5,A0A182GDW8","aal-miR-87",-17.4,881,924,0.999039862516922
+"AALF015146-RA","UDP-glucuronosyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GSW1]","A0A182GSW1","aal-miR-87",-17.54,10,52,0.999020428326607
+"AALF015467-RA","Polypeptide N-acetylgalactosaminyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GTH0]","A0A023EUU3,A0A182GTH0","aal-miR-87",-15.9,805,824,0.998809631660716
+"AALF008898-RA","Kinesin-like protein [Source:UniProtKB/TrEMBL;Acc:A0A182GF84]","A0A182GF84","aal-miR-87",-18.91,120,143,0.998427062
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aal-miR-87",-15.9,1640,1659,0.995434379297057
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-87",-15.1,10878,10896,0.995434379297057
+"AALF001505-RA","cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008340) VB Community Annotation]","A0A182G2L9","aal-miR-87",-15.52,1759,1790,0.99536459175571
+"AALF000617-RA","exonuclease nef-sp [Source:Projected from Aedes aegypti (AAEL006744) VB Community Annotation]","A0A023EVG1,A0A182G1E7","aal-miR-87",-14.04,557,606,0.994835552
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-miR-87",-15.3,29020,29039,0.993934178015161
+"AALF007403-RA","meiotic checkpoint regulator cut4 [Source:Projected from Aedes aegypti (AAEL004064) VB Community Annotation]","A0A182GCA5","aal-miR-87",-16.2,23,44,0.993129574368215
+"AALF001475-RA","Non-lysosomal glucosylceramidase [Source:UniProtKB/TrEMBL;Acc:A0A182G2J8]","A0A182G2J8","aal-miR-87",-17.7,1938,1959,0.991694674

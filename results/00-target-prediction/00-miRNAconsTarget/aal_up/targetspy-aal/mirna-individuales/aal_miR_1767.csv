@@ -1,0 +1,17 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF004462-RA","ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]","A0A182G786","aal-miR-1767",-17.36,6236,6277,0.99995140629874
+"AALF013028-RA","Histone deacetylase [Source:UniProtKB/TrEMBL;Acc:A0A182GNN5]","A0A023EUU4,A0A182GNN5","aal-miR-1767",-14.6,421,440,0.999881200559797
+"AALF009514-RA","Palmitoyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GGI1]","A0A023EUZ5,A0A182GGI1","aal-miR-1767",-16.2,487,526,0.999704715478025
+"AALF010617-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL009921) VB Community Annotation]","A0A182GIR7","aal-miR-1767",-14.27,254,294,0.999594869598436
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-1767",-18,9687,9705,0.999542114
+"AALF007534-RA","Putative ubiquitin conjugating enzyme 4 [Source:UniProtKB/TrEMBL;Acc:A0A023EI28]","A0A023EI28","aal-miR-1767",-15,23,45,0.999368169709791
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-miR-1767",-21.86,1541,1574,0.999075784895664
+"AALF017609-RA","Histone-lysine N-methyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GXI3]","A0A182GXI3","aal-miR-1767",-21.63,306,339,0.999056702671224
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-1767",-17,22195,22225,0.998849322748714
+"AALF023649-RA","sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]","A0A182H7W6","aal-miR-1767",-17.63,4142,4188,0.998370314227587
+"AALF002541-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL003127) VB Community Annotation]","A0A023EL91,A0A182G453","aal-miR-1767",-16.2,671,696,0.994576926310519
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aal-miR-1767",-14.1,14946,14961,0.993582452204229
+"AALF015997-RA","uracil phosphoribosyltransferase [Source:Projected from Aedes aegypti (AAEL012973) VB Community Annotation]","A0A182GUI2","aal-miR-1767",-16.1,230,249,0.992726998983238
+"AALF026429-RA","Dolichol phosphate-mannose biosynthesis regulatory protein [Source:UniProtKB/TrEMBL;Acc:A0A182HC90]","A0A182HC90","aal-miR-1767",-17,896,917,0.99131303549548
+"AALF016191-RA","ATP-dependent RNA helicase [Source:Projected from Aedes aegypti (AAEL011534) VB Community Annotation]","A0A182GUX7","aal-miR-1767",-16.2,317,342,0.99131303549548
+"AALF021368-RA","pyrroline-5-carboxylate dehydrogenase [Source:Projected from Aedes aegypti lvpagwg (AAEL005422) VB Community Annotation]","A0A023EU27,A0A182H474","aal-miR-1767",-16,702,732,0.99131303549548

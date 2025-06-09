@@ -1,0 +1,22 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aal-miR-970-3p",-18.76,3965,4008,0.999850070385964
+"AALF018948-RA","cytochrome P450 [Source:Projected from Aedes aegypti (AAEL009127) VB Community Annotation]","A0A182GZX3","aal-miR-970-3p",-14.65,446,489,0.999845285
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aal-miR-970-3p",-15.19,16971,17010,0.999763924857659
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-miR-970-3p",-16.26,23914,23953,0.999641658297435
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aal-miR-970-3p",-15.19,9051,9090,0.999632012544953
+"AALF023696-RA","myosin VI [Source:Projected from Aedes aegypti (AAEL004227) VB Community Annotation]","A0A182H7Y9","aal-miR-970-3p",-16.03,126,157,0.999550292234628
+"AALF014667-RA","P130 [Source:Projected from Aedes aegypti (AAEL000128) VB Community Annotation]","A0A182GRW1","aal-miR-970-3p",-16.22,210,230,0.999542114
+"AALF014644-RA","inward-rectifying potassium channel [Source:Projected from Aedes aegypti lvpagwg (AAEL008931) VB Community Annotation]","A0A182GRU7","aal-miR-970-3p",-14,93,125,0.999435980707144
+"AALF008040-RA","muscle-specific tyrosine kinase receptor [Source:Projected from Aedes aegypti (AAEL001370) VB Community Annotation]","A0A182GDH7","aal-miR-970-3p",-14.65,297,346,0.999241106858142
+"AALF010208-RA","ATP-dependent RNA helicase [Source:Projected from Aedes aegypti lvpagwg (AAEL001719) VB Community Annotation]","A0A182GHW9","aal-miR-970-3p",-15.32,17,45,0.999040875855732
+"AALF011282-RA","argininosuccinate lyase [Source:Projected from Aedes aegypti (AAEL003345) VB Community Annotation]","A0A182GK18","aal-miR-970-3p",-16.82,112,169,0.998948598874915
+"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aal-miR-970-3p",-14.2,7546,7577,0.998927349721031
+"AALF019010-RA","Fascin [Source:UniProtKB/TrEMBL;Acc:A0A182H019]","A0A023ETG2,A0A182H019","aal-miR-970-3p",-16.6,1162,1181,0.998726338833168
+"AALF013914-RA","diphthine synthase [Source:Projected from Aedes aegypti (AAEL002808) VB Community Annotation]","A0A023EP32,A0A182GQF1","aal-miR-970-3p",-14.9,101,118,0.998726338833168
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aal-miR-970-3p",-14.2,1996,2027,0.998545264512298
+"AALF024637-RA","acetyl-coa acetyltransferase 2, [Source:Projected from Aedes aegypti (AAEL006912) VB Community Annotation]","A0A023ERC9,A0A023ESI7,A0A023ETK5,A0A182H9E9","aal-miR-970-3p",-14.9,90,105,0.998272776005288
+"AALF001782-RA","Putative cpij016435 conserved protein [Source:UniProtKB/TrEMBL;Acc:A0A023EGI9]","A0A023EGI9","aal-miR-970-3p",-14.3,87,103,0.998272776005288
+"AALF021758-RA","splicing factor yt521-b [Source:Projected from Aedes aegypti (AAEL002272) VB Community Annotation]","A0A023ETE8,A0A182H4W0","aal-miR-970-3p",-19.9,3096,3127,0.998081863770474
+"AALF012460-RA","short-chain dehydrogenase [Source:Projected from Aedes aegypti lvpagwg (AAEL007811) VB Community Annotation]","A0A182GME3","aal-miR-970-3p",-21.1,68,101,0.99536459175571
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-miR-970-3p",-23.5,23696,23718,0.99499149582247
+"AALF012263-RA","Importin subunit alpha [Source:UniProtKB/TrEMBL;Acc:A0A023EW85]","A0A023EW85","aal-miR-970-3p",-14.3,289,308,0.99131303549548

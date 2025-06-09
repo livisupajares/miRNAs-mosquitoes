@@ -1,0 +1,15 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-193-5p",-17.61,27055,27083,0.999972014350859
+"AALF016915-RA","eukaryotic peptide chain release factor subunit [Source:Projected from Aedes aegypti (AAEL011742) VB Community Annotation]","A0A023ES91,A0A182GW91","aal-miR-193-5p",-18.91,453,504,0.999917879
+"AALF024200-RA","DNA-directed RNA polymerase subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EDM7]","A0A023EDM7","aal-miR-193-5p",-14.05,71,106,0.999740093066173
+"AALF017397-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]","A0A182GX40","aal-miR-193-5p",-17.31,793,837,0.999680285361917
+"AALF020733-RA","pangolin [Source:Projected from Aedes aegypti (AAEL000656) VB Community Annotation]","A0A182H356","aal-miR-193-5p",-17.29,200,253,0.999680285361917
+"AALF026099-RA","glutamate cysteine ligase [Source:Projected from Aedes aegypti (AAEL008105) VB Community Annotation]","A0A023EVH1,A0A182HBR3","aal-miR-193-5p",-16.49,215,255,0.999594869598436
+"AALF008040-RA","muscle-specific tyrosine kinase receptor [Source:Projected from Aedes aegypti (AAEL001370) VB Community Annotation]","A0A182GDH7","aal-miR-193-5p",-15.2,891,909,0.998885632899069
+"AALF022363-RA","beta-1,4-galactosyltransferase [Source:Projected from Aedes aegypti (AAEL006426) VB Community Annotation]","A0A182H5W3","aal-miR-193-5p",-15.3,771,786,0.998230352
+"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aal-miR-193-5p",-17.03,18557,18588,0.996388737
+"AALF021891-RA","forkhead protein/ forkhead protein domain [Source:Projected from Aedes aegypti (AAEL003163) VB Community Annotation]","A0A182H540","aal-miR-193-5p",-17.9,1536,1574,0.995103678322546
+"AALF001475-RA","Non-lysosomal glucosylceramidase [Source:UniProtKB/TrEMBL;Acc:A0A182G2J8]","A0A182G2J8","aal-miR-193-5p",-16.45,968,1010,0.995020549387155
+"AALF008303-RA","Zinc finger protein [Source:Projected from Aedes aegypti lvpagwg (AAEL010635) UniProtKB/TrEMBL;Acc:A0A1S4FQY9]","A0A182GE17","aal-miR-193-5p",-17.7,16,45,0.994381461909074
+"AALF002534-RA","Putative heat shock protein [Source:UniProtKB/TrEMBL;Acc:A0A023EEP5]","A0A023EEP5","aal-miR-193-5p",-16.7,336,354,0.994381461909074
+"AALF002917-RA","Mitochondrial Rho GTPase [Source:UniProtKB/TrEMBL;Acc:A0A182G4S0]","A0A023ER41,A0A182G4S0","aal-miR-193-5p",-17.5,92,110,0.994361527

@@ -1,0 +1,23 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF008942-RA","Putative vacuolar assembly/sorting protein did2 [Source:UniProtKB/TrEMBL;Acc:A0A023EJE6]","A0A023EJE6","aal-miR-190-5p",-14.22,3507,3547,0.999886739164921
+"AALF026429-RA","Dolichol phosphate-mannose biosynthesis regulatory protein [Source:UniProtKB/TrEMBL;Acc:A0A182HC90]","A0A182HC90","aal-miR-190-5p",-14.24,4138,4183,0.999869857107399
+"AALF024445-RA","Purple acid phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A182H931]","A0A023ESX0,A0A182H931","aal-miR-190-5p",-14.46,487,526,0.999770113696361
+"AALF004459-RA","myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]","A0A182G783","aal-miR-190-5p",-14.7,4165,4204,0.999689041541015
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-miR-190-5p",-14.22,17113,17133,0.999689041541015
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aal-miR-190-5p",-14,20247,20295,0.999629161656756
+"AALF000617-RA","exonuclease nef-sp [Source:Projected from Aedes aegypti (AAEL006744) VB Community Annotation]","A0A023EVG1,A0A182G1E7","aal-miR-190-5p",-14.2,251,282,0.999622428032778
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aal-miR-190-5p",-14.71,29680,29727,0.999471365505007
+"AALF013047-RA","neuralized [Source:Projected from Aedes aegypti (AAEL006062) VB Community Annotation]","A0A182GNN7","aal-miR-190-5p",-14.99,989,1028,0.999226656284261
+"AALF009032-RA","Polypeptide N-acetylgalactosaminyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GFJ3]","A0A182GFJ3","aal-miR-190-5p",-15.1,257,297,0.99905064581473
+"AALF017164-RA","P21-activated kinase, pak [Source:Projected from Aedes aegypti (AAEL000489) VB Community Annotation]","A0A182GWN6","aal-miR-190-5p",-20.6,210,233,0.998999014434383
+"AALF000066-RA","peroxisomal n1-acetyl-spermine/spermidine oxidase [Source:Projected from Aedes aegypti lvpagwg (AAEL007523) VB Community Annotation]","A0A182G0L6","aal-miR-190-5p",-17,548,575,0.998675031417649
+"AALF003622-RA","heparan sulphate n-deacetylase/n-sulfotransferase [Source:Projected from Aedes aegypti (AAEL012539) VB Community Annotation]","A0A182G5V2","aal-miR-190-5p",-15.61,182,236,0.998084743484001
+"AALF000672-RA","WSCD family member AAEL009094 [Source:Projected from Aedes aegypti (AAEL009094) UniProtKB/Swiss-Prot;Acc:Q16WU7]","A0A182G1G6","aal-miR-190-5p",-14,333,350,0.996971601123472
+"AALF008879-RA","type IV inositol 5-phosphatase [Source:Projected from Aedes aegypti (AAEL001367) VB Community Annotation]","A0A182GF70","aal-miR-190-5p",-17.2,469,497,0.996180482569126
+"AALF024410-RA","monocarboxylate transporter [Source:Projected from Aedes aegypti (AAEL004905) VB Community Annotation]","A0A023EVT0,A0A023EVZ8,A0A182H912","aal-miR-190-5p",-14.5,291,311,0.99557654678828
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-190-5p",-15.8,10143,10170,0.995334938771074
+"AALF022536-RA","Gamma-tubulin complex component [Source:UniProtKB/TrEMBL;Acc:A0A182H666]","A0A182H666","aal-miR-190-5p",-17.2,101,125,0.995142931844567
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-190-5p",-18.01,5355,5407,0.993743667494521
+"AALF009687-RA","protein kinase c [Source:Projected from Aedes aegypti (AAEL001549) VB Community Annotation]","A0A023EXQ7,A0A182GGW0","aal-miR-190-5p",-15.8,336,357,0.993371058735785
+"AALF014372-RA","Alkaline phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A182GRD2]","A0A182GRD2","aal-miR-190-5p",-14.62,20,76,0.993371058735785
+"AALF003006-RA","Mitochondrial fission 1 protein [Source:UniProtKB/TrEMBL;Acc:A0A182G4X0]","A0A182G4X0","aal-miR-190-5p",-18.8,1,26,0.992517460894824

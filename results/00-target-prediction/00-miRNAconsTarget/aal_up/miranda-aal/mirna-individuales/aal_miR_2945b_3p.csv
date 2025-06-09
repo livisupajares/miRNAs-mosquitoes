@@ -1,0 +1,46 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF021809-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL000217) VB Community Annotation]","A0A182H4Y9","aal-miR-2945b-3p",-22.23,132,151,160
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-miR-2945b-3p",-21.47,3346,3365,158
+"AALF004462-RA","ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]","A0A182G786","aal-miR-2945b-3p",-20.39,4247,4264,155
+"AALF013131-RA","Phosphatidylinositol-glycan biosynthesis class W protein [Source:UniProtKB/TrEMBL;Acc:A0A182GNU9]","A0A182GNU9","aal-miR-2945b-3p",-17.89,25,44,154
+"AALF022794-RA","facilitated trehalose transporter Tret1 [Source:Projected from Aedes aegypti (AAEL000567) VB Community Annotation]","A0A023EU84,A0A182H6L1,A0A1W7R5Q7","aal-miR-2945b-3p",-17.78,380,399,154
+"AALF015467-RA","Polypeptide N-acetylgalactosaminyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GTH0]","A0A023EUU3,A0A182GTH0","aal-miR-2945b-3p",-23.3,538,558,153
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aal-miR-2945b-3p",-19.49,1205,1223,152
+"AALF002937-RA","Exocyst complex component [Source:UniProtKB/TrEMBL;Acc:A0A182G4S8]","A0A182G4S8","aal-miR-2945b-3p",-17.58,113,136,152
+"AALF021784-RA","gliotactin [Source:Projected from Aedes aegypti (AAEL009055) VB Community Annotation]","A0A182H4X8","aal-miR-2945b-3p",-16.96,165,183,152
+"AALF003825-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL009887) VB Community Annotation]","A0A182G659","aal-miR-2945b-3p",-15.89,31,52,152
+"AALF028181-RA","ubiquitin-conjugating enzyme E2-230k [Source:Projected from Aedes aegypti (AAEL006073) VB Community Annotation]","A0A182HEW6","aal-miR-2945b-3p",-21.22,529,548,151
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-miR-2945b-3p",-16.36,30396,30415,150
+"AALF016583-RA","rest corepressor (corest) protein [Source:Projected from Aedes aegypti lvpagwg (AAEL001126) VB Community Annotation]","A0A023EVK7,A0A182GVN2","aal-miR-2945b-3p",-24.5,214,234,149
+"AALF004387-RA","importin beta-4 [Source:Projected from Aedes aegypti (AAEL010698) VB Community Annotation]","A0A023EY96,A0A182G737","aal-miR-2945b-3p",-14.5,224,242,149
+"AALF005506-RA","myosin heavy chain, nonmuscle or smooth muscle [Source:Projected from Aedes aegypti (AAEL001411) VB Community Annotation]","A0A023EWV0,A0A182G930","aal-miR-2945b-3p",-15.24,1220,1238,148
+"AALF014730-RA","adenosine kinase [Source:Projected from Aedes aegypti (AAEL001102) VB Community Annotation]","A0A182GS07","aal-miR-2945b-3p",-18.29,120,139,147
+"AALF010378-RA","DNA polymerase [Source:UniProtKB/TrEMBL;Acc:A0A182GIA0]","A0A182GIA0","aal-miR-2945b-3p",-17.42,50,69,147
+"AALF012167-RA","aromatic amino acid decarboxylase [Source:Projected from Aedes aegypti (AAEL003462) VB Community Annotation]","A0A182GLW0","aal-miR-2945b-3p",-14.57,194,211,147
+"AALF026399-RA","Putative gtpase [Source:UniProtKB/TrEMBL;Acc:A0A023EJK9]","A0A023EHB0,A0A023EJK9","aal-miR-2945b-3p",-22.07,611,630,146
+"AALF008658-RA","gc-rich sequence DNA-binding factor [Source:Projected from Aedes aegypti (AAEL006043) VB Community Annotation]","A0A182GER9","aal-miR-2945b-3p",-20.53,445,464,146
+"AALF022819-RA","Putative cytoskeletal regulator flightless-i [Source:UniProtKB/TrEMBL;Acc:A0A023ECE2]","A0A023ECE2","aal-miR-2945b-3p",-16.4,19,39,146
+"AALF008334-RA","Cation-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182GE35]","A0A182GE35","aal-miR-2945b-3p",-15.61,2325,2345,146
+"AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aal-miR-2945b-3p",-24.46,23803,23822,145
+"AALF010617-RA","zinc finger protein [Source:Projected from Aedes aegypti (AAEL009921) VB Community Annotation]","A0A182GIR7","aal-miR-2945b-3p",-16.39,1686,1705,145
+"AALF027460-RA","folate carrier protein [Source:Projected from Aedes aegypti (AAEL006879) VB Community Annotation]","A0A023EIT4,A0A023EN89,A0A182HDU3","aal-miR-2945b-3p",-18.28,1516,1535,144
+"AALF009815-RA","Putative cpij018896 serine threonine-protein kinase [Source:UniProtKB/TrEMBL;Acc:A0A023ED00]","A0A023ED00","aal-miR-2945b-3p",-15.39,4,22,144
+"AALF003859-RA","Clustered mitochondria protein homolog [Source:UniProtKB/TrEMBL;Acc:A0A182G693]","A0A182G693","aal-miR-2945b-3p",-15.31,552,572,144
+"AALF027638-RA","mitochondrial carrier protein [Source:Projected from Aedes aegypti (AAEL011842) VB Community Annotation]","A0A023EMP9,A0A182HE36","aal-miR-2945b-3p",-14.86,388,406,144
+"AALF000245-RA","suppressor of actin (sac) [Source:Projected from Aedes aegypti (AAEL007660) VB Community Annotation]","A0A023EX49,A0A182G0U6","aal-miR-2945b-3p",-23.32,8,27,143
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aal-miR-2945b-3p",-14.56,4855,4874,143
+"AALF028119-RA","Apaf-1 Related Killer [Source:Projected from Aedes aegypti (AAEL000874) VB Community Annotation]","A0A182HET5","aal-miR-2945b-3p",-21.93,797,816,142
+"AALF013877-RA","hairy protein [Source:Projected from Aedes aegypti (AAEL005480) VB Community Annotation]","A0A023EQ79,A0A182GQD4","aal-miR-2945b-3p",-19.98,447,466,142
+"AALF006217-RA","l-allo-threonine aldolase [Source:Projected from Aedes aegypti (AAEL005819) VB Community Annotation]","A0A023ERH0,A0A182GA83","aal-miR-2945b-3p",-19.44,356,375,142
+"AALF000856-RA","Rab GDP dissociation inhibitor [Source:UniProtKB/TrEMBL;Acc:A0A182G1N6]","A0A023EWM5,A0A182G1N6,A0A1W7R713","aal-miR-2945b-3p",-19.03,50,70,142
+"AALF013058-RA","Putative signal transduction [Source:UniProtKB/TrEMBL;Acc:A0A023ERS7]","A0A023ERS7","aal-miR-2945b-3p",-15.56,398,415,142
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-2945b-3p",-19.12,3318,3337,141
+"AALF018948-RA","cytochrome P450 [Source:Projected from Aedes aegypti (AAEL009127) VB Community Annotation]","A0A182GZX3","aal-miR-2945b-3p",-16.29,32,51,141
+"AALF009702-RA","ATP-dependent RNA helicase [Source:Projected from Aedes aegypti (AAEL010732) VB Community Annotation]","A0A182GGX3","aal-miR-2945b-3p",-16.05,34,54,141
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aal-miR-2945b-3p",-15.81,666,685,141
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-2945b-3p",-14.23,5013,5032,141
+"AALF001034-RA","Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]","A0A182G1W4","aal-miR-2945b-3p",-14.05,3972,3991,141
+"AALF007937-RA","ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL010184) VB Community Annotation]","A0A182GDA5","aal-miR-2945b-3p",-24.05,1741,1763,140
+"AALF008879-RA","type IV inositol 5-phosphatase [Source:Projected from Aedes aegypti (AAEL001367) VB Community Annotation]","A0A182GF70","aal-miR-2945b-3p",-19.17,377,396,140
+"AALF004603-RA","brefeldin a-inhibited guanine nucleotide-exchange protein [Source:Projected from Aedes aegypti (AAEL013012) VB Community Annotation]","A0A182G7F5","aal-miR-2945b-3p",-17.21,113,132,140
+"AALF015245-RA","predicted G-protein coupled receptor (GPCR) [Source:Projected from Aedes aegypti (AAEL002694) VB Community Annotation]","A0A023ESG6,A0A182GT18","aal-miR-2945b-3p",-15.04,161,179,140

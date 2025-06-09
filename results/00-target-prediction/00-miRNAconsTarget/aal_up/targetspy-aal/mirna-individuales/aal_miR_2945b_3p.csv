@@ -1,0 +1,23 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF024828-RA","glutaminyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL011395) VB Community Annotation]","A0A023EV58,A0A182H9P7","aal-miR-2945b-3p",-16.25,1740,1781,0.999850070385964
+"AALF016099-RA","Spastin [Source:UniProtKB/TrEMBL;Acc:A0A182GUQ1]","A0A182GUQ1","aal-miR-2945b-3p",-14.4,499,523,0.999766018907991
+"AALF021296-RA","adenylate cyclase [Source:Projected from Aedes aegypti (AAEL000062) VB Community Annotation]","A0A023EW99,A0A182H429","aal-miR-2945b-3p",-14.5,160,188,0.999722070745185
+"AALF006898-RA","leucine rich repeat protein [Source:Projected from Aedes aegypti (AAEL003554) VB Community Annotation]","A0A023EPT7,A0A182GBE1,A0A1W7R6P9","aal-miR-2945b-3p",-14.31,113,159,0.999649623899777
+"AALF021447-RA","cdc73 domain protein [Source:Projected from Aedes aegypti lvpagwg (AAEL003528) VB Community Annotation]","A0A182H4C3","aal-miR-2945b-3p",-14.72,33,80,0.999587778628363
+"AALF002095-RA","mitosis inhibitor protein kinase [Source:Projected from Aedes aegypti (AAEL006140) VB Community Annotation]","A0A182G3F4","aal-miR-2945b-3p",-15.91,43,90,0.999569784681537
+"AALF024922-RA","mitosis inhibitor protein kinase [Source:Projected from Aedes aegypti lvpagwg (AAEL006140) VB Community Annotation]","A0A182H9V0","aal-miR-2945b-3p",-15.91,84,131,0.999241106858142
+"AALF014730-RA","adenosine kinase [Source:Projected from Aedes aegypti (AAEL001102) VB Community Annotation]","A0A182GS07","aal-miR-2945b-3p",-16.7,122,139,0.999139563998643
+"AALF011982-RA","histone deacetylase [Source:Projected from Aedes aegypti (AAEL004639) VB Community Annotation]","A0A182GLG3","aal-miR-2945b-3p",-14.96,17,38,0.999125527907124
+"AALF024495-RA","hepatocyte growth factor-regulated tyrosine kinase substrate (hgs) [Source:Projected from Aedes aegypti (AAEL005339) VB Community Annotation]","A0A182H964","aal-miR-2945b-3p",-15.3,181,204,0.998545264512298
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-miR-2945b-3p",-23.46,8132,8175,0.998370314227587
+"AALF026317-RA","trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]","A0A182HC27","aal-miR-2945b-3p",-14.7,2575,2600,0.998272776005288
+"AALF005506-RA","myosin heavy chain, nonmuscle or smooth muscle [Source:Projected from Aedes aegypti (AAEL001411) VB Community Annotation]","A0A023EWV0,A0A182G930","aal-miR-2945b-3p",-15.6,1228,1238,0.997907205480493
+"AALF003825-RA","WD-repeat protein [Source:Projected from Aedes aegypti (AAEL009887) VB Community Annotation]","A0A182G659","aal-miR-2945b-3p",-15.01,21,52,0.997051386733249
+"AALF008658-RA","gc-rich sequence DNA-binding factor [Source:Projected from Aedes aegypti (AAEL006043) VB Community Annotation]","A0A182GER9","aal-miR-2945b-3p",-19,444,463,0.99573199
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-2945b-3p",-14.4,8620,8634,0.99573199
+"AALF022819-RA","Putative cytoskeletal regulator flightless-i [Source:UniProtKB/TrEMBL;Acc:A0A023ECE2]","A0A023ECE2","aal-miR-2945b-3p",-15.1,18,39,0.99499149582247
+"AALF003537-RA","Sodium/hydrogen exchanger [Source:UniProtKB/TrEMBL;Acc:A0A182G5P7]","A0A023EVP4,A0A182G5P7","aal-miR-2945b-3p",-15.41,116,159,0.994381461909074
+"AALF021784-RA","gliotactin [Source:Projected from Aedes aegypti (AAEL009055) VB Community Annotation]","A0A182H4X8","aal-miR-2945b-3p",-15.5,164,183,0.992764361624534
+"AALF000672-RA","WSCD family member AAEL009094 [Source:Projected from Aedes aegypti (AAEL009094) UniProtKB/Swiss-Prot;Acc:Q16WU7]","A0A182G1G6","aal-miR-2945b-3p",-14,4,12,0.991451639479396
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aal-miR-2945b-3p",-16.7,13105,13130,0.99131303549548
+"AALF024898-RA","integrin alpha-ps [Source:Projected from Aedes aegypti lvpagwg (AAEL013600) VB Community Annotation]","A0A182H9T5","aal-miR-2945b-3p",-15.3,536,578,0.99131303549548

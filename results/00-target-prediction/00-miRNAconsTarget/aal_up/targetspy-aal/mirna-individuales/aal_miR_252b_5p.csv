@@ -1,0 +1,25 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-miR-252b-5p",-15.93,9656,9697,0.999850070385964
+"AALF014278-RA","GDT1 family protein [Source:UniProtKB/TrEMBL;Acc:A0A023ENC7]","A0A023ENC7","aal-miR-252b-5p",-14,119,147,0.999850070385964
+"AALF020338-RA","RNA polymerase ii ctd phosphatase [Source:Projected from Aedes aegypti (AAEL015142) VB Community Annotation]","A0A182H2D7","aal-miR-252b-5p",-18.8,22,46,0.999832637303049
+"AALF007245-RA","Hedgehog protein [Source:UniProtKB/TrEMBL;Acc:A0A182GC01]","A0A182GC01","aal-miR-252b-5p",-16.31,337,379,0.999787915630575
+"AALF021458-RA","brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]","A0A182H4D2","aal-miR-252b-5p",-14.71,35103,35135,0.999758924425546
+"AALF002889-RA","gonadotropin inducible transcription factor [Source:Projected from Aedes aegypti lvpagwg (AAEL011812) VB Community Annotation]","A0A023EWC2,A0A182G4Q6","aal-miR-252b-5p",-20.61,79,120,0.999743762857114
+"AALF008582-RA","PIWI [Source:Projected from Aedes aegypti (AAEL007698) VB Community Annotation]","A0A182GAF7","aal-miR-252b-5p",-15.4,13,50,0.999728496769413
+"AALF011552-RA","single stranded DNA binding protein [Source:Projected from Aedes aegypti (AAEL000888) VB Community Annotation]","A0A023ERP6,A0A182GKM7","aal-miR-252b-5p",-15.05,13,45,0.999721168558612
+"AALF013880-RA","high density lipoprotien binding protein / vigilin [Source:Projected from Aedes aegypti (AAEL001421) VB Community Annotation]","A0A023ENA3,A0A023ER27,A0A023ESN0,A0A023EVS8,A0A182GQD7","aal-miR-252b-5p",-16.96,438,466,0.999704715478025
+"AALF002219-RA","Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]","A0A023EIZ6","aal-miR-252b-5p",-16.8,6698,6732,0.999704715478025
+"AALF016415-RA","Purine nucleoside phosphorylase [Source:Projected from Aedes aegypti (AAEL002269) UniProtKB/TrEMBL;Acc:Q17IS2]","A0A182GVD8","aal-miR-252b-5p",-15.5,147,165,0.999634216808312
+"AALF027115-RA","poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]","A0A182HDC1","aal-miR-252b-5p",-14.15,12194,12234,0.999565228183218
+"AALF011160-RA","Putative histone h3 lys4 methyltransferase complex subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EBK1]","A0A023EBK1","aal-miR-252b-5p",-15.91,2201,2235,0.999440531983895
+"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-252b-5p",-14.23,4640,4667,0.999435980707144
+"AALF000665-RA","mitochondrial oxodicarboxylate carrier [Source:Projected from Aedes aegypti (AAEL009100) VB Community Annotation]","A0A023EQZ6,A0A182G1F9,A0A1W7R8E2","aal-miR-252b-5p",-14.5,12,28,0.997051386733249
+"AALF003322-RA","WD repeat-containing protein 48 homolog [Source:Projected from Aedes aegypti (AAEL012158) VB Community Annotation]","A0A182G5D1","aal-miR-252b-5p",-16.5,741,755,0.996388737
+"AALF020666-RA","ubiquitin [Source:Projected from Aedes aegypti lvpagwg (AAEL000795) VB Community Annotation]","A0A023EGX8,A0A023EJQ0,A0A182H316","aal-miR-252b-5p",-14.24,191,222,0.995852624557941
+"AALF027265-RA","RNA 3' terminal phosphate cyclase [Source:Projected from Aedes aegypti (AAEL001080) VB Community Annotation]","A0A182HDK6","aal-miR-252b-5p",-14.5,527,561,0.995434379297057
+"AALF015276-RA","alanine aminotransferase [Source:Projected from Aedes aegypti (AAEL009872) VB Community Annotation]","A0A023ESN2,A0A182GT39","aal-miR-252b-5p",-17.6,186,214,0.994381461909074
+"AALF013405-RA","alpha-l-iduronidase [Source:Projected from Aedes aegypti (AAEL004402) VB Community Annotation]","A0A182GPE1","aal-miR-252b-5p",-14.2,1183,1203,0.994381461909074
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aal-miR-252b-5p",-15.8,34045,34060,0.993684897467169
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-252b-5p",-14.5,11061,11074,0.992726998983238
+"AALF010480-RA","adiponectin receptor [Source:Projected from Aedes aegypti (AAEL014717) VB Community Annotation]","A0A023ERV3,A0A023ET23,A0A182GIH3","aal-miR-252b-5p",-14.7,56,73,0.992129818
+"AALF004443-RA","mitogen activated protein kinase kinase kinase 4, mapkkk4, mekk4 [Source:Projected from Aedes aegypti (AAEL010466) VB Community Annotation]","A0A182G773","aal-miR-252b-5p",-14.6,339,355,0.991101192929277

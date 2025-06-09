@@ -1,0 +1,9 @@
+"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
+"AALF021651-RA","Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]","A0A023EVU3,A0A182H4P9","aal-miR-2796-3p",-18.6,5482,5506,0.999911721225926
+"AALF002317-RA","glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]","A0A023ETG1,A0A182G3U1,A0A1W7R8D2,A0A1W7R8H3,A0A1W7R8K9","aal-miR-2796-3p",-17.39,14108,14136,0.999892198
+"AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aal-miR-2796-3p",-16.46,19197,19237,0.999835622668294
+"AALF022521-RA","Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]","A0A182H655","aal-miR-2796-3p",-19.45,9417,9456,0.999435980707144
+"AALF008785-RA","srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]","A0A023ETU3,A0A182GF10","aal-miR-2796-3p",-15.5,25580,25604,0.99917839415721
+"AALF012049-RA","Putative permease of the major facilitator superfamily protein [Source:Projected from Aedes aegypti lvpagwg (AAEL003064) UniProtKB/TrEMBL;Acc:A0A0P6IU38]","A0A182GE92","aal-miR-2796-3p",-16,141,158,0.998252873036867
+"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-miR-2796-3p",-18.23,26496,26539,0.995852624557941
+"AALF005954-RA","U3 small nucleolar ribonucleoprotein protein imp4 [Source:Projected from Aedes aegypti (AAEL006063) VB Community Annotation]","A0A182G9T7","aal-miR-2796-3p",-22.6,45,75,0.994381461909074
