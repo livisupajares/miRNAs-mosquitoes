@@ -45,7 +45,7 @@ filtered_data_miranda <- aae_miranda_tx_names %>%
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
-candidates_miranda <- lapply(mirna_list_miranda, function(df) {
+candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
     filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol

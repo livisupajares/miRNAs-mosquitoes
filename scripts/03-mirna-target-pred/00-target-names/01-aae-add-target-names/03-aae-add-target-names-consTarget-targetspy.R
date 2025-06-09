@@ -44,7 +44,7 @@ filtered_data_ts <- aae_ts_tx_names %>%
 mirna_list_ts <- split(filtered_data_ts, filtered_data_ts$microRNA)
 
 # Apply additional filtering (e.g., highest score and lowest energy)
-candidates_ts <- lapply(mirna_list_ts, function(df) {
+candidates_ts <<- lapply(mirna_list_ts, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
     filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
