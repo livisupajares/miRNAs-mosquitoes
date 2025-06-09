@@ -6,10 +6,10 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aal_targetspy <- read.csv("results/miRNAconsTarget/miRNAconsTarget_aal_all/targetspy-aal/targetspy-aal.csv")
+aal_targetspy <- read.csv("results/00-target-prediction/00-miRNAconsTarget/aal_up/targetspy-aal/targetspy-aal.csv")
 
 # vectorbase aal transcripts Foshan strain
-aal_vectorbase <- read.csv("databases/vector-base-mosquitos/aal-transcript-names-vectorbase.csv")
+aal_vectorbase <- read.csv("databases/02-target-prediction/aal-transcript-names-vectorbase.csv")
 
 # ==== FIX DATA ==== #
 # Eliminate all decimal parts without rounding
@@ -77,9 +77,12 @@ View(candidates_targetspy[["aal-miR-184"]])
 # View(candidates_miranda[["aae-miR-276-3p"]])
 
 # ==== DOWNLOAD DATABASE ====
+# save dataframe with all upregulated miRNAs
+write.csv(aal_targetspy_tx_names_sorted, file = "results/00-target-prediction/00-miRNAconsTarget/aal_up/targetspy-aal/targetspy-aal-uniprot-filtered.csv", row.names = FALSE)
+
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/miRNAconsTarget/miRNAconsTarget_aal_all/targetspy-aal/mirna-individuales-aal-targetspy" # Directory to save the CSV files
+output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aal_up/targetspy-aal/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_targetspy), function(miRNA_name) {
   df <- candidates_miranda[[miRNA_name]]
