@@ -1,5 +1,6 @@
 # ~~~~~ EXTRACT UNIPROT IDS FROM EACH MIRNA AND SAVE THEM TO TXT FILES ~~~~~
 library(dplyr)
+library(readr)
 
 # ==== IMPORT DATA ====
 # Load the miRNA dataframes inside of a list to iterate over them
@@ -9,7 +10,7 @@ source("scripts/03-mirna-target-pred/00-target-names/01-aae-add-target-names/02-
 # TargetSpy
 source("scripts/03-mirna-target-pred/00-target-names/01-aae-add-target-names/03-aae-add-target-names-consTarget-targetspy.R")
 
-# Load all targets 
+# Load all targets
 # miRanda
 miranda_aae_uniprot_filtered <- read_csv("results/00-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae-uniprot-filtered.csv")
 
@@ -28,7 +29,7 @@ lapply(names(candidates_miranda), function(miRNA_name) {
 
 # miRanda all
 writeLines(miranda_aae_uniprot_filtered$uniprot_id, con = "results/01-enrichment/shinygo/input/uniprot-aae-miranda-all.txt")
- 
+
 # TargetSpy per miRNA
 # Extract Uniprot IDs from each miRNA and save them to txt files
 lapply(names(candidates_ts), function(miRNA_name) {
@@ -39,4 +40,4 @@ lapply(names(candidates_ts), function(miRNA_name) {
 })
 
 # TargetSpy all
-writeLines(miranda_aae_uniprot_filtered$uniprot_id, con = "results/01-enrichment/shinygo/input/uniprot-aae-ts-all.txt")
+writeLines(targetspy_aae_uniprot_filtered$uniprot_id, con = "results/01-enrichment/shinygo/input/uniprot-aae-ts-all.txt")
