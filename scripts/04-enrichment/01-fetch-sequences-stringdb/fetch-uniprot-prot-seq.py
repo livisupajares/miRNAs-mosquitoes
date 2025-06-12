@@ -6,7 +6,6 @@
 
 # Import dependencies
 import os
-import re  # regex to check if ID is uniprot or uniparc
 import time
 
 import requests
