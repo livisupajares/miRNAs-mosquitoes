@@ -1,5 +1,6 @@
 # ~~~~~ EXTRACT UNIPROT IDS FROM EACH MIRNA AND SAVE THEM TO TXT FILES ~~~~~
 library(dplyr)
+library(readr)
 
 # ==== IMPORT DATA ====
 # Load the miRNA dataframes inside of a list to iterate over them
