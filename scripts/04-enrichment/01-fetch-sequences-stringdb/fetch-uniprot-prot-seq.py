@@ -1,6 +1,6 @@
 # ~~~~~ FETCH UNIPROT PROTEIN SEQUENCES ~~~~~ #
-# "miRNA" (miRNA targets) can also be replaced for any .txt file inside a directory that contains
-# uniprotkb and/or uniparc ids.
+# "miRNA" (miRNA targets) can also be replaced for any .txt file inside a
+# directory that contains uniprotkb and/or uniparc ids.
 # Check the created logs to see if some accession file failed. If empty, then
 # there hasn't been any errors fetching the accessions.
 
