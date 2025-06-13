@@ -6,7 +6,6 @@
 
 # Import dependencies
 import os  # for manipulation of files
-import re  # regex
 import time
 
 import requests
@@ -53,6 +52,32 @@ def load_miRNA_accessions(input_dir):
     return miRNA_to_accessions
 
 
+# Map UniProtKB ID to UniParc ID using UniProt's ID Mapping Rest API
+def map_to_uniparc(acc):
+    url = "https://rest.uniprot.org/idmapping/run"
+    data = {"from": "UniProtKB_AC-ID", "to": "UniParc", "ids": acc}
+    response = requests.post(url, data=data)
+    if response.status_code != 200:
+        return None
+
+    job_id = response.json().get("jobId")
+    if not job_id:
+        return None
+
+    # Poll until job completes
+    result_url = f"https://rest.uniprot.org/idmapping/results/{job_id}"
+    while True:
+        res = requests.get(result_url)
+        if res.status_code == 200:
+            results = res.json()
+            if results.get("results"):
+                mapped_id = results["results"][0].get("to")
+                return mapped_id
+            elif results.get("failedIds"):
+                return None
+        time.sleep(1)
+
+
 # Function to fetch and save a UniProt sequence
 def fetch_and_save_sequence(acc, mirna_name):
     database = get_database(acc)
@@ -86,6 +111,26 @@ def fetch_and_save_sequence(acc, mirna_name):
             print(f"[{attempt+1}/3] Network error for {acc}: {str(e)}")
             time.sleep(2)
 
+    # If all retries fail, try mapping to UniParc
+    print(f"[INFO] Attempting to map {acc} to UniParc...")
+    uniparc_id = map_to_uniparc(acc)
+    if uniparc_id:
+        print(f"[INFO] Mapped to UniParc ID: {uniparc_id}")
+        acc = uniparc_id
+        database = "uniparc"
+        url = base_url.format(database=database, acc=acc)
+        # Try one last time with the new ID
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                fasta_content = response.text.strip()
+                if fasta_content.startswith(">") and "\n" in fasta_content:
+                    print(f"[SUCCESS] Retrieved sequence from UniParc for {acc}")
+                    return fasta_content
+        except Exception as e:
+            print(f"[ERROR] Failed retrieving from UniParc for {acc}: {e}")
+
+    # Log failure after all attempts
     error_message = f"Error fetching {acc} from {database} after 3 attempts"
     # Log the error to the log file
     log_file = os.path.join(log_directory, f"log_{mirna_name}.log")
