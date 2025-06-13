@@ -13,9 +13,9 @@ from tqdm import tqdm
 
 # Configuration
 # Input directory to read .txt files with Uniprot kb accessions
-input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/01-enrichment/shinygo/input/all"
+input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/01-enrichment/shinygo/input/uniprotid-test"
 # Output directory to store the FASTA files
-output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/04-enrichment/00-stringdb-input/all"
+output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/04-enrichment/00-stringdb-input/uniprotid-test"
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
 # Base URL for UniProt REST API
