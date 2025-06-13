@@ -1,8 +1,9 @@
 # ~~~~~ FETCH UNIPROT PROTEIN SEQUENCES ~~~~~ #
+# TODO: Turn the script into a module
+# TODO: Add Parallel Processing to make it run faster
 # "miRNA" (miRNA targets) can also be replaced for any .txt file inside a
 # directory that contains uniprotkb and/or uniparc ids.
-# Check the created logs to see if some accession file failed. If empty, then
-# there hasn't been any errors fetching the accessions.
+# Check the created logs and the terminal output to see if some accession file failed.
 
 # Import dependencies
 import os  # for manipulation of files
