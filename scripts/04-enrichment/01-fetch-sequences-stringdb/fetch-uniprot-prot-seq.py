@@ -5,11 +5,12 @@
 # there hasn't been any errors fetching the accessions.
 
 # Import dependencies
-import os
+import os  # for manipulation of files
+import re  # regex
 import time
 
 import requests
-from tqdm import tqdm
+from tqdm import tqdm  # progress bars
 
 # Configuration
 # Input directory to read .txt files with Uniprot kb accessions
