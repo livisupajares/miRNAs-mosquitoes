@@ -16,9 +16,9 @@ from tqdm import tqdm  # progress bars
 # Add root directory
 root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
-input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/01-enrichment/shinygo/input/uniprotid-test"
+input_directory = f"{root_dir}/results/01-enrichment/shinygo/input/venny"
 # Output directory to store the FASTA files
-output_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/sequences/04-enrichment/00-stringdb-input/uniprotid-test"
+output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/venny"
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
 # Base URL for UniProt REST API
