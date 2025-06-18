@@ -13,6 +13,8 @@ import requests
 from tqdm import tqdm  # progress bars
 
 # Configuration
+# Add root directory
+root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
 input_directory = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/01-enrichment/shinygo/input/uniprotid-test"
 # Output directory to store the FASTA files
