@@ -1,0 +1,2 @@
+species,term_ID,term_description,observed_gene_count,background_gene_count,strength,signal,false_discovery_rate,matching_proteins_id_network,matching_proteins_labels_network,dataset,category_of_interest,enrichment_method,protein_db,taxon_id,assembly_name,stringdb_id
+Aedes albopictus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,stringdb,STRINGv12.0,7160,asian tiger mosquito,STRING.7160.Aedes
