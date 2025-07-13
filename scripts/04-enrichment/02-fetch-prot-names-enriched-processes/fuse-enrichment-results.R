@@ -40,3 +40,17 @@ venny_stringdb <- rbind(aae_venny_stringdb, aal_venny_stringdb)
 # All
 all_shinygo <- rbind(aae_all_shinygo, aal_all_shinygo)
 all_stringdb <- rbind(aae_all_stringdb, aal_all_stringdb)
+
+# ==== VERIFY INTEGRITY OF DATA ====
+# Convert dataset column to factors
+# Per miRNA
+per_mirna_shinygo$dataset <- as.factor(per_mirna_shinygo$dataset)
+per_mirna_stringdb$dataset <- as.factor(per_mirna_stringdb$dataset)
+
+# Venny
+venny_shinygo$dataset <- as.factor(venny_shinygo$dataset)
+venny_stringdb$dataset <- as.factor(venny_stringdb$dataset)
+
+# All
+all_shinygo$dataset <- as.factor(all_shinygo$dataset)
+all_stringdb$dataset <- as.factor(all_stringdb$dataset)
