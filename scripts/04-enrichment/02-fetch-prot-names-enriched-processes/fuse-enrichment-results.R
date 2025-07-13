@@ -3,6 +3,7 @@
 # per-mirna stringdb, per-mirna shinygo, venny stringdb, venny shinygo, all stringdb, all shinygo, where each will have Aedes aegypti and Aedes albopictus.
 # ==== Load libraries ====
 library(dplyr)
+library(forcats)
 
 # ==== IMPORT DATABASES TO BE FUSED ====
 ## Per miRNA
