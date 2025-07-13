@@ -120,3 +120,30 @@ all_stringdb <- all_stringdb %>%
 # Now get the updated levels to verify
 levels_all_stringdb <- unique(all_stringdb$dataset)
 print(sort(levels_all_stringdb))
+
+# ==== REMOVE UNEEDED ROWS ====
+# Remove rows that have NA in category_of_interest column
+
+## Per miRNA
+important_per_mirna_shinygo <- per_mirna_shinygo |>
+  filter(!is.na(category_of_interest))
+
+important_per_mirna_stringdb <- per_mirna_stringdb |>
+  filter(!is.na(category_of_interest))
+
+# Replace entire column with "STRINGv12.0"
+important_per_mirna_stringdb$protein_db <- "STRINGv12.0"
+
+## Venny
+important_venny_shinygo <- venny_shinygo |>
+  filter(!is.na(category_of_interest)) # No data available for this dataframe
+
+important_venny_stringdb <- venny_stringdb |>
+  filter(!is.na(category_of_interest))
+
+## All
+important_all_shinygo <- all_shinygo |>
+  filter(!is.na(category_of_interest))
+
+important_all_stringdb <- all_stringdb |>
+  filter(!is.na(category_of_interest))
