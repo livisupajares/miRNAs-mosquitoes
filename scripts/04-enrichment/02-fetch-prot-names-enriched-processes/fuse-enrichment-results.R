@@ -8,27 +8,27 @@ library(forcats)
 # ==== IMPORT DATABASES TO BE FUSED ====
 ## Per miRNA
 # Per-mirna shinygo
-aae_per_mirna_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aae-per-mirna-shinygo-export.csv")
-aal_per_mirna_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aal-per-mirna-shinygo-export.csv")
+aae_per_mirna_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-per-mirna-shinygo-export.csv")
+aal_per_mirna_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-per-mirna-shinygo-export.csv")
 # Per mirna stringdb
-aae_per_mirna_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aae-per-mirna-stringdb-export.csv")
-aal_per_mirna_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aal-per-mirna-stringdb-export.csv")
+aae_per_mirna_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-per-mirna-stringdb-export.csv")
+aal_per_mirna_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-per-mirna-stringdb-export.csv")
 
 ## Venny
 # Venny shinygo
-aae_venny_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aae-venny-shinygo-export.csv")
-aal_venny_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aal-venny-shinygo-export.csv")
+aae_venny_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-venny-shinygo-export.csv")
+aal_venny_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-venny-shinygo-export.csv")
 # Venny stringdb
-aae_venny_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aae-venny-stringdb-export.csv")
-aal_venny_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aal-venny-stringdb-export.csv")
+aae_venny_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-venny-stringdb-export.csv")
+aal_venny_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-venny-stringdb-export.csv")
 
 ## All
 # All shinygo
-aae_all_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aae-all-shinygo-export.csv")
-aal_all_shinygo <- read.csv("results/01-enrichment/prot-names-enriched/aal-all-shinygo-export.csv")
+aae_all_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-all-shinygo-export.csv")
+aal_all_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-all-shinygo-export.csv")
 # All stringdb
-aae_all_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aae-all-stringdb-export.csv")
-aal_all_stringdb <- read.csv("results/01-enrichment/prot-names-enriched/aal-all-stringdb-export.csv")
+aae_all_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-all-stringdb-export.csv")
+aal_all_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-all-stringdb-export.csv")
 
 # ==== FUSE DATA ====
 # Fuse data frames by row binding
