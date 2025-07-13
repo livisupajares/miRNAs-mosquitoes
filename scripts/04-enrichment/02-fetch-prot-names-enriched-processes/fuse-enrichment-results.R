@@ -4,6 +4,7 @@
 # ==== Load libraries ====
 library(dplyr)
 library(forcats)
+library(stringr)
 
 # ==== IMPORT DATABASES TO BE FUSED ====
 ## Per miRNA
@@ -130,6 +131,11 @@ important_per_mirna_shinygo <- per_mirna_shinygo |>
 
 important_per_mirna_stringdb <- per_mirna_stringdb |>
   filter(!is.na(category_of_interest))
+
+# Remove rows that have only one gene code such as "RP20_CCG004523" or "CCG017659.2" and not "CCG001475.1 CCG012626.1" or "CCG007937.2 RP20_CCG008969.2 CCG020002.2" in the genes column
+# This is done so we don't get enriched terms that only mach one gene/protein from our set
+important_per_mirna_shinygo <- important_per_mirna_shinygo |>
+  filter(str_count(genes, "\\S+") >= 2) # Keep rows with two or more gene
 
 # Replace entire column with "STRINGv12.0"
 important_per_mirna_stringdb$protein_db <- "STRINGv12.0"
