@@ -62,15 +62,61 @@ all_stringdb$dataset <- as.factor(all_stringdb$dataset)
 ## Per miRNA
 # Get unique levels of dataset
 levels_per_mirna_shinygo <- unique(per_mirna_shinygo$dataset)
+print(sort(levels_per_mirna_shinygo))
 levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
+print(sort(levels_per_mirna_stringdb))
+
+# Merge levels if they are misspelled duplicates using the forcats package
+# This is done to ensure that the levels are consistent across datasets.
+per_mirna_stringdb <- per_mirna_stringdb |>
+  mutate(dataset = fct_collapse(dataset,
+    # Merge Reactome levels
+    "Reactome Pathway" = c("Reactome Pathway", "Reactome Pathways"),
+
+    # Merge Local Network Cluster variants
+    "Local Network Cluster String" = c(
+      "Local Network Cluster (STRING)",
+      "Local Network Cluster String",
+      "Local Network Cluster"
+    )
+  ))
+
+# Now get the updated levels to verify
+levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
+print(sort(levels_per_mirna_stringdb))
 
 ## Venny
 # Get unique levels of dataset
 levels_venny_shinygo <- unique(venny_shinygo$dataset)
+print(sort(levels_venny_shinygo))
 levels_venny_stringdb <- unique(venny_stringdb$dataset)
+print(sort(levels_venny_stringdb))
+
+# Change level names if they are misspelled duplicates using the forcats package
+# This is done to ensure that the levels are consistent across datasets.
+venny_stringdb <- venny_stringdb %>%
+  mutate(dataset = fct_recode(dataset,
+    "Local Network Cluster String" = "Local Network Cluster"
+  ))
+
+# Now get the updated levels to verify
+levels_venny_stringdb <- unique(venny_stringdb$dataset)
+print(sort(levels_venny_stringdb))
 
 ## All
 # Get unique levels of dataset
 levels_all_shinygo <- unique(all_shinygo$dataset)
+print(sort(levels_all_shinygo))
 levels_all_stringdb <- unique(all_stringdb$dataset)
+print(sort(levels_all_stringdb))
 
+# Change level names if they are misspelled duplicates using the forcats package
+# This is done to ensure that the levels are consistent across datasets.
+all_stringdb <- all_stringdb %>%
+  mutate(dataset = fct_recode(dataset,
+    "Local Network Cluster String" = "Local Network Cluster"
+  ))
+
+# Now get the updated levels to verify
+levels_all_stringdb <- unique(all_stringdb$dataset)
+print(sort(levels_all_stringdb))
