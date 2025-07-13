@@ -56,3 +56,20 @@ venny_stringdb$dataset <- as.factor(venny_stringdb$dataset)
 # All
 all_shinygo$dataset <- as.factor(all_shinygo$dataset)
 all_stringdb$dataset <- as.factor(all_stringdb$dataset)
+
+# Make sure each dataset column has unique levels with no misspelling/duplication
+## Per miRNA
+# Get unique levels of dataset
+levels_per_mirna_shinygo <- unique(per_mirna_shinygo$dataset)
+levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
+
+## Venny
+# Get unique levels of dataset
+levels_venny_shinygo <- unique(venny_shinygo$dataset)
+levels_venny_stringdb <- unique(venny_stringdb$dataset)
+
+## All
+# Get unique levels of dataset
+levels_all_shinygo <- unique(all_shinygo$dataset)
+levels_all_stringdb <- unique(all_stringdb$dataset)
+
