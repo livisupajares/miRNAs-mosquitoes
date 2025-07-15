@@ -3,3 +3,7 @@
 # Then each list is saved into a dataframe with the process name and the list of protein ids.
 # Then, the list of protein ids is matched to their names and/or descriptions with imported dataframes of mapped protein ids from ensembl metazoa or stringdb.
 
+# ==== Load libraries ====
+library(dplyr)
+library(tidyr)
+
