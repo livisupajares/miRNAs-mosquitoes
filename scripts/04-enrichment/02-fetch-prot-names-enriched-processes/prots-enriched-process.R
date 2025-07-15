@@ -29,3 +29,23 @@ aal_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aal-mapped_s
 aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv")
 aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv")
 
+# ==== FUNCTION TO EXTRACT PROTEIN IDS FROM ENRICHED PROCESSES ====
+# This function takes a dataframe of enriched processes and extracts the protein ids from the 'genes' and 'pathway_genes' columns.
+
+expand_genes_to_rows <- function(df, gene_col = "genes") {
+  df %>%
+    # Ensure gene_col is character (in case it's factor)
+    mutate(across(all_of(gene_col), as.character)) %>%
+    # Split gene strings into separate rows
+    separate_rows({{ gene_col }}, sep = "\\s+") %>%
+    # Rename column back to consistent name
+    rename(gene_id = {{ gene_col }})
+}
+
+expand_genes_to_rows_stringdb <- function(df) {
+  # For stringdb datasets: split both protein ID and label columns
+  df %>%
+    mutate(across(c(matching_proteins_id_network, matching_proteins_labels_network), as.character)) %>%
+    separate_rows(matching_proteins_id_network, matching_proteins_labels_network, sep = ",")
+}
+
