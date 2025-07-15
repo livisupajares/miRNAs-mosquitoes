@@ -7,3 +7,16 @@
 library(dplyr)
 library(tidyr)
 
+# ==== IMPORT DATA ====
+## Import enriched processes data
+# Per miRNA
+important_per_mirna_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-per-mirna-shinygo.csv")
+important_per_mirna_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
+
+# Venny
+important_venny_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-venny-shinygo.csv")
+important_venny_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-venny-stringdb.csv")
+
+# All
+important_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv")
+important_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
