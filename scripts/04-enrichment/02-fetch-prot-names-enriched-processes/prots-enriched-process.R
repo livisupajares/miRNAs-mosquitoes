@@ -49,3 +49,16 @@ expand_genes_to_rows_stringdb <- function(df) {
     separate_rows(matching_proteins_id_network, matching_proteins_labels_network, sep = ",")
 }
 
+## Apply function to all dataframes
+# Per miRNA
+expanded_per_mirna_shinygo <- expand_genes_to_rows(important_per_mirna_shinygo, gene_col = "genes")
+expanded_per_mirna_stringdb <- expand_genes_to_rows_stringdb(important_per_mirna_stringdb)
+
+# Venny
+expanded_venny_shinygo <- expand_genes_to_rows(important_venny_shinygo, gene_col = "genes")
+expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringdb)
+
+# All
+expanded_all_shinygo <- expand_genes_to_rows(important_all_shinygo, gene_col = "genes")
+expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
+
