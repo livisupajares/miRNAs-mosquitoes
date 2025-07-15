@@ -20,3 +20,12 @@ important_venny_stringdb <- read.csv("results/01-enrichment/03-enrichments-impor
 # All
 important_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv")
 important_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
+
+# Import mapped protein ids from ensembl metazoa
+aae_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aae-mapped_shinygo_metazoa.csv")
+aal_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aal-mapped_shinygo_metazoa.csv")
+
+# Import mapped protein ids from stringdb
+aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv")
+aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv")
+
