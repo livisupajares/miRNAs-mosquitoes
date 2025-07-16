@@ -128,3 +128,18 @@ map_stringdb_annotations <- function(df, mapping_df = mapped_protein_ids_stringd
     distinct(across(-matching_proteins_id_network), .keep_all = TRUE)
 }
 
+# ==== APPLY MAPPING FUNCTIONS ====
+## For ensembl metazoa/shinyGO
+full_expanded_per_mirna_shinygo <- map_ensembl_descriptions(expanded_per_mirna_shinygo, mapped_protein_ids_ensembl)
+
+# This one won't run because none of the enriched processes were statistically significant enough so there are 0 protein ids here.
+# full_expanded_venny_shinygo <- map_ensembl_descriptions(expanded_venny_shinygo, mapped_protein_ids_ensembl)
+
+full_expanded_all_shinygo <- map_ensembl_descriptions(expanded_all_shinygo, mapped_protein_ids_ensembl)
+
+## For stringdb
+full_expanded_per_mirna_stringdb <- map_stringdb_annotations(expanded_per_mirna_stringdb, mapped_protein_ids_stringdb)
+
+full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
+
+full_expanded_all_stringdb <- map_stringdb_annotations(expanded_all_stringdb, mapped_protein_ids_stringdb)
