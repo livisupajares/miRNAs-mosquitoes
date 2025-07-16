@@ -76,3 +76,16 @@ aae_mapped_protein_ids_stringdb <- aae_mapped_protein_ids_stringdb |>
 aal_mapped_protein_ids_stringdb <- aal_mapped_protein_ids_stringdb |>
   mutate(species = "Aedes albopictus")
 
+## Combine the mapped protein ids dataframes into one
+# For ensembl metazoa
+mapped_protein_ids_ensembl <- bind_rows(
+  aae_mapped_protein_ids_ensembl,
+  aal_mapped_protein_ids_ensembl
+)
+
+## For stringdb
+mapped_protein_ids_stringdb <- bind_rows(
+  aae_mapped_protein_ids_stringdb,
+  aal_mapped_protein_ids_stringdb
+)
+
