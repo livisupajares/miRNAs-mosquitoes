@@ -62,3 +62,17 @@ expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringd
 expanded_all_shinygo <- expand_genes_to_rows(important_all_shinygo, gene_col = "genes")
 expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
 
+# ==== FIX AND FUSE MAPPE PROTEIN IDS DFS ====
+## Add a species column to each mapped protein ids dataframe
+# For ensembl metazoa
+aae_mapped_protein_ids_ensembl <- aae_mapped_protein_ids_ensembl |>
+  mutate(species = "Aedes aegypti")
+aal_mapped_protein_ids_ensembl <- aal_mapped_protein_ids_ensembl |>
+  mutate(species = "Aedes albopictus")
+
+# For stringdb
+aae_mapped_protein_ids_stringdb <- aae_mapped_protein_ids_stringdb |>
+  mutate(species = "Aedes aegypti")
+aal_mapped_protein_ids_stringdb <- aal_mapped_protein_ids_stringdb |>
+  mutate(species = "Aedes albopictus")
+
