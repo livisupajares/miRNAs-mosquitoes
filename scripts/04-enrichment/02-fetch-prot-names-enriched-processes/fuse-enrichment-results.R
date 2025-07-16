@@ -21,7 +21,7 @@ aae_venny_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aa
 aal_venny_shinygo <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-venny-shinygo-export.csv")
 # Venny stringdb
 aae_venny_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aae-venny-stringdb-export.csv")
-aal_venny_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-venny-stringdb-export.csv")
+aal_venny_stringdb <- read.csv("results/01-enrichment/02-exports-google-sheets/aal-venny-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
 
 ## All
 # All shinygo
