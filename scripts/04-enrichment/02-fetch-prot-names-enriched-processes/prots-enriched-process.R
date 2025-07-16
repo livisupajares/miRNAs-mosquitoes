@@ -89,3 +89,42 @@ mapped_protein_ids_stringdb <- bind_rows(
   aal_mapped_protein_ids_stringdb
 )
 
+# ==== FUNCTION TO MATCH PROTEIN IDS TO NAMES ====
+# This function takes a dataframe of protein ids and matches them to their names using the imported mapped protein ids from ensembl metazoa or stringdb.
+# Ensembl metazoa/shinygo
+map_ensembl_descriptions <- function(df, mapping_df = mapped_protein_ids_ensembl) {
+  # Create a mapping lookup table with both Pasted and Symbol
+  mapping_lookup <- mapping_df %>%
+    select(Pasted, Symbol, Description, species) %>%
+    pivot_longer(
+      cols = c(Pasted, Symbol),
+      names_to = "source",
+      values_to = "gene_id"
+    )
+
+  # Left join with expanded data
+  df %>%
+    left_join(mapping_lookup, by = c("gene_id", "species")) %>%
+    # Replace empty strings with NA (for consistency)
+    mutate(across(where(is.character), ~ na_if(.x, ""))) %>%
+    # Reorder columns so Description is right after gene_id
+    relocate(Description, .after = gene_id)
+}
+
+# StringDB
+map_stringdb_annotations <- function(df, mapping_df = mapped_protein_ids_stringdb) {
+  df %>%
+    left_join(
+      mapping_df %>%
+        select(matching_proteins_id_network = stringId, annotation = annotation, species),
+      by = c("matching_proteins_id_network", "species"),
+      relationship = "many-to-many" # expects multiple matches
+    ) %>%
+    # Replace empty strings with NA (for consistency)
+    mutate(across(where(is.character), ~ na_if(.x, ""))) %>%
+    # Reorder columns so Description is right after gene_id
+    relocate(annotation, .after = matching_proteins_labels_network) %>%
+    # Remove duplicates based on all columns EXCEPT matching_proteins_id_network
+    distinct(across(-matching_proteins_id_network), .keep_all = TRUE)
+}
+
