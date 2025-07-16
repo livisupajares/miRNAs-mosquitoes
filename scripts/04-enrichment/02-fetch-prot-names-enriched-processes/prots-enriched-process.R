@@ -143,3 +143,17 @@ full_expanded_per_mirna_stringdb <- map_stringdb_annotations(expanded_per_mirna_
 full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
 
 full_expanded_all_stringdb <- map_stringdb_annotations(expanded_all_stringdb, mapped_protein_ids_stringdb)
+
+# ==== SAVE RESULTS ====
+# Save the full expanded dataframes with protein names and descriptions
+# ShinyGO
+write.csv(full_expanded_per_mirna_shinygo, "results/01-enrichment/04-enrich-full-anotation/full-expanded-per-mirna-shinygo.csv", row.names = FALSE)
+
+write.csv(full_expanded_all_shinygo, "results/01-enrichment/04-enrich-full-anotation/full-expanded-all-shinygo.csv", row.names = FALSE)
+
+# StringDB
+write.csv(full_expanded_per_mirna_stringdb, "results/01-enrichment/04-enrich-full-anotation/full-expanded-per-mirna-stringdb.csv", row.names = FALSE)
+
+write.csv(full_expanded_venny_stringdb, "results/01-enrichment/04-enrich-full-anotation/full-expanded-venny-stringdb.csv", row.names = FALSE)
+
+write.csv(full_expanded_all_stringdb, "results/01-enrichment/04-enrich-full-anotation/full-expanded-all-stringdb.csv", row.names = FALSE)
