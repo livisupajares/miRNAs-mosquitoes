@@ -80,14 +80,41 @@ filt_all_stringdb <- filt_all_stringdb %>%
   arrange(desc(signal), .by_group = TRUE)
 
 # ==== Make dispersion graphs ====
-# Create a color palette for the datasets
-
-# Venny ShinyGO
-## Color by fdr
-ggplot(aae_all_shinygo, aes(
+### All before filtering
+## ShinyGO
+# Color by fdr
+# You can change the species name to "Aedes aegypti" or "Aedes albopictus"
+ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
-  color = fdr,
+  color = enrichment_fdr,
+  size = n_genes
+)) +
+  geom_point() +
+
+  # Gradient color scale for FDR
+  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
+
+  # Simplify theme without dynamic y-axis label colors
+  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - SHINYGO")) +
+  theme(
+    axis.text.y = element_text(size = 10), # Smaller y-axis text
+    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    legend.position = "right"
+  ) +
+  labs(
+    x = "Fold Enrichment",
+    y = "Term Description",
+    size = "Gene Count"
+  )
+
+# All after filtering
+# You can change the species name to "Aedes aegypti" or "Aedes albopictus"
+ggplot(data = filter(filt_all_shinygo, species == "Aedes aegypti"), aes(
+  x = fold_enrichment,
+  y = reorder(short_description, fold_enrichment),
+  color = enrichment_fdr,
   size = n_genes
 )) +
   geom_point() +
@@ -110,7 +137,7 @@ ggplot(aae_all_shinygo, aes(
   )
 
 ## Color by dataset
-ggplot(aae_all_shinygo, aes(
+ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
   x = fold_enrichment,
   y = reorder(short_description, fold_enrichment),
   color = dataset,
