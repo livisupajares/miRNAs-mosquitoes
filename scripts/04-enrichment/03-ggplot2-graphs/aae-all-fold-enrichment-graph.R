@@ -78,10 +78,10 @@ ggplot(aae_all_shinygo, aes(
   size = n_genes
 )) +
   geom_point() +
-  
+
   # Gradient color scale for FDR
   scale_color_gradient(low = "red", high = "blue", name = "FDR") +
-  
+
   # Simplify theme without dynamic y-axis label colors
   ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - SHINYGO")) +
   theme(
