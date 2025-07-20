@@ -17,13 +17,6 @@ all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process
 filt_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv", header = TRUE)
 filt_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv", header = TRUE)
 
-# ==== Fix varible names ====
-# Fix column names shinygo
-colnames(aae_all_shinygo) <- c("fdr", "n_genes", "pathway_genes", "fold_enrichment", "pathway", "url", "genes", "dataset")
-
-# Fix column names stringdb
-colnames(aae_all_stringdb) <- c("term_id", "term_description", "observed_gene_count", "background_gene_count", "strength", "signal", "fdr", "matching_proteins_in_your_network_IDs", "matching_proteins_in_your_network_labels", "dataset")
-
 # ==== Eliminate GO:xxx from pathway ====
 # Create the `term_description` variable
 aae_all_shinygo <- aae_all_shinygo %>%
