@@ -9,7 +9,7 @@ library(stringr)
 
 # ==== Load enrichment results ====
 # Import .csv files
-aae_all_shinygo <- read.csv("results/enrichment/aae/aae-upregulated_miranda_ALL_shinygo.csv", header = TRUE)
+aae_all_shinygo <- read.csv("results/01-enrichment/aae/aae-upregulated_miranda_ALL_shinygo.csv", header = TRUE)
 aae_all_stringdb <- read.csv("results/enrichment/aae/aae-upregulated_miranda_ALL_stringdb.csv", header = TRUE)
 
 # ==== Fix varible names ====
