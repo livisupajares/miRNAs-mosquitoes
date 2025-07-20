@@ -18,8 +18,13 @@ filt_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-pro
 filt_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv", header = TRUE)
 
 # ==== Eliminate GO:xxx from pathway ====
-# Create the `term_description` variable
-aae_all_shinygo <- aae_all_shinygo %>%
+## Create the `term_description` variable
+# All before filtering
+all_shinygo <- all_shinygo %>%
+  mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
+
+# All after filtering
+filt_all_shinygo <- filt_all_shinygo %>%
   mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
 
 # ==== Shorten description =====
