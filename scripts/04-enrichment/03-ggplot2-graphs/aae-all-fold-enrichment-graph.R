@@ -57,14 +57,27 @@ filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_descr
 )
 
 # ==== Arrange data frame by fold_enrichment/signal =====
-# SHINYGO
-aae_all_shinygo <- aae_all_shinygo %>%
-  arrange(desc(fold_enrichment))
+## SHINYGO
+# All before filtering
+all_shinygo <- all_shinygo %>%
+  group_by(species) %>%
+  arrange(desc(fold_enrichment), .by_group = TRUE)
 
-# STRING DB
-# Arrange the data frame by signal in descending order
-aae_all_stringdb <- aae_all_stringdb %>%
-  arrange(desc(signal))
+# All after filtering
+filt_all_shinygo <- filt_all_shinygo %>%
+  group_by(species) %>%
+  arrange(desc(fold_enrichment), .by_group = TRUE)
+
+## STRING DB
+# All before filtering
+all_stringdb <- all_stringdb %>%
+  group_by(species) %>%
+  arrange(desc(signal), .by_group = TRUE)
+
+# All after filtering
+filt_all_stringdb <- filt_all_stringdb %>%
+  group_by(species) %>%
+  arrange(desc(signal), .by_group = TRUE)
 
 # ==== Make dispersion graphs ====
 # Create a color palette for the datasets
