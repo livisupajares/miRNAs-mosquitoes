@@ -28,18 +28,32 @@ filt_all_shinygo <- filt_all_shinygo %>%
   mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
 
 # ==== Shorten description =====
-# SHINYGO
 # truncate long descriptions to first 50 characters
-aae_all_shinygo$short_description <- ifelse(nchar(aae_all_shinygo$term_description) > 50,
-                                              paste0(substr(aaae_all_shinygo$term_description, 1, 47), "..."),
-                                              aae_all_shinygo$term_description
+
+## SHINYGO
+# All before filtering
+all_shinygo$short_description <- ifelse(nchar(all_shinygo$term_description) > 50,
+  paste0(substr(all_shinygo$term_description, 1, 47), "..."),
+  all_shinygo$term_description
 )
 
-# STRINGDB
-# truncate long descriptions to first 50 characters
-aae_all_stringdb$short_description <- ifelse(nchar(aae_all_stringdb$term_description) > 50,
-  paste0(substr(aae_all_stringdb$term_description, 1, 47), "..."),
-  aae_all_stringdb$term_description
+# All after filtering
+filt_all_shinygo$short_description <- ifelse(nchar(filt_all_shinygo$term_description) > 50,
+  paste0(substr(filt_all_shinygo$term_description, 1, 47), "..."),
+  filt_all_shinygo$term_description
+)
+
+## STRINGDB
+# All before filtering
+all_stringdb$short_description <- ifelse(nchar(all_stringdb$term_description) > 50,
+  paste0(substr(all_stringdb$term_description, 1, 47), "..."),
+  all_stringdb$term_description
+)
+
+# All after filtering
+filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_description) > 50,
+  paste0(substr(filt_all_stringdb$term_description, 1, 47), "..."),
+  filt_all_stringdb$term_description
 )
 
 # ==== Arrange data frame by fold_enrichment/signal =====
