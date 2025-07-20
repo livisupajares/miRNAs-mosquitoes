@@ -8,9 +8,14 @@ library(ggrepel)
 library(stringr)
 
 # ==== Load enrichment results ====
-# Import .csv files
-aae_all_shinygo <- read.csv("results/01-enrichment/aae/aae-upregulated_miranda_ALL_shinygo.csv", header = TRUE)
-aae_all_stringdb <- read.csv("results/enrichment/aae/aae-upregulated_miranda_ALL_stringdb.csv", header = TRUE)
+## Import .csv files
+# All before filtering
+all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/all-shinygo.csv", header = TRUE)
+all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/all-stringdb.csv", header = TRUE)
+
+# All after filtering
+filt_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv", header = TRUE)
+filt_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv", header = TRUE)
 
 # ==== Fix varible names ====
 # Fix column names shinygo
