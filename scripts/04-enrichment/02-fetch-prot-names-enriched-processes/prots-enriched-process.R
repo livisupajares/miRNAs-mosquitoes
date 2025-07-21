@@ -157,3 +157,22 @@ write.csv(full_expanded_per_mirna_stringdb, "results/01-enrichment/04-enrich-ful
 write.csv(full_expanded_venny_stringdb, "results/01-enrichment/04-enrich-full-anotation/full-expanded-venny-stringdb.csv", row.names = FALSE)
 
 write.csv(full_expanded_all_stringdb, "results/01-enrichment/04-enrich-full-anotation/full-expanded-all-stringdb.csv", row.names = FALSE)
+
+# ==== FILTER IMMUNE AND OTHER PROCESSES ====
+# all
+immune_expanded_all_shinygo <- full_expanded_all_shinygo %>%
+  filter(category_of_interest == "immune" | category_of_interest == "other")
+
+immune_expanded_all_stringdb <- full_expanded_all_stringdb %>%
+  filter(category_of_interest == "immune" | category_of_interest == "other")
+
+# per-mirna
+immune_expanded_per_mirna_shinygo  <- full_expanded_per_mirna_shinygo %>%
+  filter(category_of_interest == "immune" | category_of_interest == "other")
+
+immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb %>%
+  filter(category_of_interest == "immune" | category_of_interest == "other")
+
+# venny
+immune_expanded_venny_stringdb <- full_expanded_venny_stringdb %>%
+  filter(category_of_interest == "immune" | category_of_interest == "other")
