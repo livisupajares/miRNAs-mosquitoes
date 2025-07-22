@@ -11,13 +11,15 @@ This repository contains code that supports a data pipeline for a research proje
 - **Key questions**: ...
 - **Data sources**: 
   - miRBase: for some *Aedes aegypti* miRNA sequences.
+  - VectorBase: for *Aedes albopictus* 3'UTR mRNA sequences and names.
+  - Ensembl Metazoa: for *Aedes aegypti* 3'UTR mRNA sequences and names.
 
 ---
 ## Repository Structure
 
 ```bash
 .
-├── databases
+├── databases # Databases used in the project
 │   ├── 00-mirbase-scrapping
 │   ├── 01-isolating-mature-sequences
 │   ├── 02-target-prediction
