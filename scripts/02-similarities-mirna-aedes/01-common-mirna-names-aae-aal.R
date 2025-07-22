@@ -7,12 +7,12 @@ source("scripts/functions.R")
 
 # ==== Importing Data ====
 # Importing csv with up and down- regulated Aedes aegypti names and sequences
-aae_mirna_names <- read.csv("databases/01-isolating-mature-sequences/aae_mat_denv_up_down_seq.csv",
+aae_mirna_names <- read.csv("results/00-isolating-mature-sequences/aae_mat_denv_up_down_seq.csv",
   na.strings = c("", "NA")
 )
 
 # Importing csv with up-regulated Aedes albopictus names and sequences
-aal_mirna_names <- read.csv("databases/01-isolating-mature-sequences/aal_mat_denv_up_seq.csv",
+aal_mirna_names <- read.csv("results/00-isolating-mature-sequences/aal_mat_denv_up_seq.csv",
   na.strings = c("", "NA")
 )
 
