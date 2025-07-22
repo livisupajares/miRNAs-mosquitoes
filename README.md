@@ -1,6 +1,6 @@
 # miRNAs and their targets in Mosquitoes during DENV-2 infection: Data Wrangling & Analysis Pipeline
 
-This repository contains code that supports a data pipeline for a research project investigating the target prediction of miRNAs up-regulated during DENV-2 infection in *Aedes aegypti* and *Aedes albopictus* species of vector mosquitoes.
+This repository contains code that supports a data pipeline for a research project investigating the target prediction of miRNAs up-regulated during DENV-2 infection in *Aedes aegypti* (aae) and *Aedes albopictus* (aal) species of vector mosquitoes.
 
 > This is not a standalone software package — it's a collection of analysis scripts developed during the course of research.
 
@@ -22,6 +22,8 @@ This repository contains code that supports a data pipeline for a research proje
 ├── databases # Databases used in the project
 │   ├── 00-mirbase-scrapping
 │   ├── 01-isolating-mature-sequences
+│   │   ├── aae-mirna.csv # database curation from data mining
+│   │   └── aal-mirna.csv # database curation from data mining
 │   ├── 02-target-prediction
 │   └── 03-enrichment
 ├── environment.yml
