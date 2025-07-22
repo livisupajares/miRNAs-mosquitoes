@@ -80,21 +80,21 @@ aae_mirna_mat_denv_down$mat_seq <- gsub(" ", "", aae_mirna_mat_denv_down$mat_seq
 # Up and down-regulated together
 write.csv(
   aae_mirna_mat_denv,
-  "databases/01-isolating-mature-sequences/aae_mat_denv_up_down_seq.csv",
+  "results/00-isolating-mature-sequences/aae_mat_denv_up_down_seq.csv",
   row.names = FALSE
 )
 
 # Up-regulated
 write.csv(
   aae_mirna_mat_denv_up,
-  "databases/01-isolating-mature-sequences/aae_mat_denv_up_seq.csv",
+  "results/00-isolating-mature-sequences/aae_mat_denv_up_seq.csv",
   row.names = FALSE
 )
 
 # down-regulated
 write.csv(
   aae_mirna_mat_denv_down,
-  "databases/01-isolating-mature-sequences/aae_mat_denv_down_seq.csv",
+  "results/00-isolating-mature-sequences/aae_mat_denv_down_seq.csv",
   row.names = FALSE
 )
 

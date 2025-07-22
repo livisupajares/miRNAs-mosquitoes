@@ -67,7 +67,7 @@ aal_mirna_mat_denv_final$mat_seq <- gsub("T", "U", aal_mirna_mat_denv_final$mat_
 # ===== Save the final data frame =====
 write.csv(
   aal_mirna_mat_denv_final,
-  "databases/01-isolating-mature-sequences/aal_mat_denv_up_seq.csv",
+  "results/00-isolating-mature-sequences/aal_mat_denv_up_seq.csv",
   row.names = FALSE
 )
 
