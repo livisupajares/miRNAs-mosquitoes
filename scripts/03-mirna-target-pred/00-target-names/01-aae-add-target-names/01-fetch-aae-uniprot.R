@@ -52,7 +52,7 @@ uniprots_aae <- uniprots_aae %>%
 # Merge NA uniprotsptrembl values with uniparc values using dplyr
 uniprots_aae <- uniprots_aae %>%
   mutate(uniprotsptrembl = coalesce(uniprotsptrembl, uniparc)) %>%
-  select(-uniparc)
+  dplyr::select(-uniparc)
 
 # ==== Save data ====
 # Save the cleaned data to a CSV file
