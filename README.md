@@ -32,9 +32,10 @@ This repository contains code that supports a data pipeline for a research proje
 ├── renv
 ├── renv.lock
 ├── requirements.txt
-├── results
-│   ├── 00-target-prediction
-│   └── 01-enrichment
+├── results # Results of the analysis (no fasta files)
+│   ├── 00-isolating-mature-sequences # .csv files from isolating mature sequences from main database
+│   ├── 01-target-prediction
+│   └── 02-enrichment
 ├── scripts
 │   ├── 00-mirbase-scrapping
 │   ├── 01-isolating-mature-sequences
@@ -42,7 +43,7 @@ This repository contains code that supports a data pipeline for a research proje
 │   ├── 03-mirna-target-pred
 │   ├── 04-enrichment
 │   ├── functions.R
-└── sequences
+└── sequences # Fasta files used in the project
     ├── 01-isolating-mature-sequences
     ├── 02-similarities-mirna-aedes
     ├── 03-target-prediction
