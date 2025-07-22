@@ -15,6 +15,36 @@ This repository contains code that supports a data pipeline for a research proje
 ---
 ## Repository Structure
 
+```bash
+.
+├── databases
+│   ├── 00-mirbase-scrapping
+│   ├── 01-isolating-mature-sequences
+│   ├── 02-target-prediction
+│   └── 03-enrichment
+├── environment.yml
+├── miRNAs-mosquitoes.Rproj
+├── README.md # You are here! ツ
+├── renv
+├── renv.lock
+├── requirements.txt
+├── results
+│   ├── 00-target-prediction
+│   └── 01-enrichment
+├── scripts
+│   ├── 00-mirbase-scrapping
+│   ├── 01-isolating-mature-sequences
+│   ├── 02-similarities-mirna-aedes
+│   ├── 03-mirna-target-pred
+│   ├── 04-enrichment
+│   ├── functions.R
+└── sequences
+    ├── 01-isolating-mature-sequences
+    ├── 02-similarities-mirna-aedes
+    ├── 03-target-prediction
+    └── 04-enrichment
+```
+
 ## Usage
 
 ### Prerequisites
