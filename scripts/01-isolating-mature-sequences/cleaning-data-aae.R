@@ -36,13 +36,13 @@ aae_mirna_mat_denv <-
   aae_mirna_clean[grepl("denv", aae_mirna_clean$infection), ]
 
 # Total number of unique miRNAs
-length(unique(aae_mirna_mat_denv$mirna_name)) # 22
+length(unique(aae_mirna_mat_denv$mirna_name)) # 21
 
 # ==== Deleting duplicated rows based on miRNA_name ====
 aae_mirna_mat_denv <-
   aae_mirna_mat_denv[!duplicated(aae_mirna_mat_denv$mirna_name), ]
 # Total number of unique miRNAs
-length(unique(aae_mirna_mat_denv$mirna_name)) # 22
+length(unique(aae_mirna_mat_denv$mirna_name)) # 21
 
 # ==== Filtering two dataframes with up and down regulated miRNAs ====
 aae_mirna_mat_denv_up <-
@@ -53,7 +53,7 @@ length(unique(aae_mirna_mat_denv_up$mirna_name)) # 2
 aae_mirna_mat_denv_down <-
   aae_mirna_mat_denv[grepl("down-regulated", aae_mirna_mat_denv$exp_DENV), ]
 # Total number of unique miRNAs
-length(unique(aae_mirna_mat_denv_down$mirna_name)) # 20
+length(unique(aae_mirna_mat_denv_down$mirna_name)) # 19
 
 # Deleting the infection and exp_DENV column
 aae_mirna_mat_denv <- aae_mirna_mat_denv[-c(3:5)]
