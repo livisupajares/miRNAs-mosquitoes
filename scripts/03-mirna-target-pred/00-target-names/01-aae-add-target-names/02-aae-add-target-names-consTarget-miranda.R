@@ -11,10 +11,11 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.csv("results/00-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae.csv")
+aae_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae.csv")
 
-# Add Aedes aegypti biomart metadata with uniprots for transcripts
-aae_biomart <- read.csv("results/00-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv")
+# Add Aedes aegypti biomart metadata with uniprots for transcripts.
+# This is the direct output from the previous script: `01-fetch-aae-uniprot.R`
+aae_biomart <- read.csv("results/01-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv")
 
 # ==== FIX DATA ==== #
 

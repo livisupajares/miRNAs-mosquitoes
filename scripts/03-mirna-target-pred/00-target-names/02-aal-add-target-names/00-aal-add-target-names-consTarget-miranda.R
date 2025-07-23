@@ -11,9 +11,10 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aal_miranda <- read.csv("results/00-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal.csv")
+aal_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal.csv")
 
 # vectorbase aal transcripts Foshan strain
+# This file are downloaded from VectorBase
 aal_vectorbase <- read.csv("databases/02-target-prediction/aal-transcript-names-vectorbase.csv")
 
 # ==== FIX DATA ==== #
