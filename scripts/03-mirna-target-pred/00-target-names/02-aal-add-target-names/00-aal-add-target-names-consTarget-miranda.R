@@ -92,11 +92,11 @@ length(unique(aal_miranda_tx_names_sorted$microRNA)) # 24
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
-write.csv(aal_miranda_tx_names_sorted, file = "results/00-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv", row.names = FALSE)
+write.csv(aal_miranda_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv", row.names = FALSE)
 
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/00-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/mirna-individuales" # Directory to save the CSV files
+output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_miranda), function(miRNA_name) {
   df <- candidates_miranda[[miRNA_name]]
