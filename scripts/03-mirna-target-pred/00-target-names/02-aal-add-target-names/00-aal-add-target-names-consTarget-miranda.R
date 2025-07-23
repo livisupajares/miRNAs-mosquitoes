@@ -54,7 +54,8 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol and remove unspecified products
+    filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+    # old iteration had removed unspecified products
     filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
@@ -65,7 +66,8 @@ View(candidates_miranda[["aal-miR-1767"]])
 # Also filter and sort dataframe with all the up-regulated miRNAs
 aal_miranda_tx_names_sorted <- aal_miranda_tx_names %>%
   arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-  filter(energy <= -14 & transcript_product_descrip != "unspecified product") %>% # Filter by energy <= -14 kcal/mol
+  filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+  # old iteration had removed unspecified products
   filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DOWNLOAD DATABASE ====
