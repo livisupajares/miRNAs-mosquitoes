@@ -36,6 +36,16 @@ aal_miranda_tx_names <- merge(aal_miranda, aal_important_transcr, by.x = "mRNA",
 # between mRNA and miRNA columns.
 aal_miranda_tx_names <- reorder_columns(aal_miranda_tx_names)
 
+# ==== DATA SUMMARY ====
+# Count the number of unique UNIPROT IDS in the dataset
+length(unique(aal_miranda_tx_names$uniprot_id)) # 2437
+
+# Count the number of unique transcripts (mRNA) in the dataset
+length(unique(aal_miranda_tx_names$mRNA)) # 2473
+
+# Count the number of unique miRNAs in the dataset
+length(unique(aal_miranda_tx_names$microRNA)) # 24
+
 # ==== FINDING THE BEST mRNA TARGET CANDIDATES ====
 # https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
 # https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
@@ -69,6 +79,16 @@ aal_miranda_tx_names_sorted <- aal_miranda_tx_names %>%
   filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
   # old iteration had removed unspecified products
   filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+
+# ==== DATA SUMMARY ====
+# Count the number of unique UNIPROT IDS in the dataset
+length(unique(aal_miranda_tx_names_sorted$uniprot_id)) # 1759
+
+# Count the number of unique transcripts (mRNA) in the dataset
+length(unique(aal_miranda_tx_names_sorted$mRNA)) # 1759
+
+# Count the number of unique miRNAs in the dataset
+length(unique(aal_miranda_tx_names_sorted$microRNA)) # 24
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
