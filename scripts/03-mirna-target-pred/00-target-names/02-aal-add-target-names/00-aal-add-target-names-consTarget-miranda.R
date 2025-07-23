@@ -25,7 +25,7 @@ aal_miranda$mRNA <- sub("\\..*", "", aal_miranda$mRNA)
 colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name", "transcript_product_descrip", "uniprot_id")
 
 # Filter the columns we will add to the aae_miranda dataframes
-aal_important_transcr <- aal_vectorbase %>% select("transcript_id", "transcript_product_descrip", "uniprot_id")
+aal_important_transcr <- aal_vectorbase %>% dplyr::select("transcript_id", "transcript_product_descrip", "uniprot_id")
 
 # ==== MERGE DATABASES ====
 # merge aae_miranda with aal_vectorbase matching transcript_ID
