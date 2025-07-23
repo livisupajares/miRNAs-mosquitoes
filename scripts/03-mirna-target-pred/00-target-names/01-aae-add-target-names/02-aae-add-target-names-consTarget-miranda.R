@@ -4,6 +4,11 @@
 # This script also filters the results to find the best mRNA target candidates
 # according to a specific criteria (highest score, lowest energy (-14 kcal/mol
 # cutoff)
+
+# NOTE: We were supposed to merge VectorBase info into predicted targets by
+# transcript id, but for some reason it fails to merge using the same command as
+# in Aedes albopictus. So we will use the biomart info instead.
+
 # ===== Load libraries & files =====
 library("dplyr")
 source("scripts/functions.R")
