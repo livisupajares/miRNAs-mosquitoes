@@ -4,6 +4,7 @@
 # This script also filters the results to find the best mRNA target candidates
 # according to a specific criteria (highest score, lowest energy (-14 kcal/mol
 # cutoff)
+
 # ===== Load libraries & files =====
 library("dplyr")
 source("scripts/functions.R")
@@ -28,7 +29,7 @@ colnames(aal_vectorbase) <- c("gene_id", "transcript_id", "organism", "gene_name
 aal_important_transcr <- aal_vectorbase %>% dplyr::select("transcript_id", "transcript_product_descrip", "uniprot_id")
 
 # ==== MERGE DATABASES ====
-# merge aae_miranda with aal_vectorbase matching transcript_ID
+# merge aal_miranda with aal_vectorbase matching transcript_ID
 aal_miranda_tx_names <- merge(aal_miranda, aal_important_transcr, by.x = "mRNA", by.y = "transcript_id", all.x = TRUE)
 
 # reorder columns so transcript product description and uniprot_id are
