@@ -9,7 +9,7 @@ source("scripts/03-mirna-target-pred/00-target-names/02-aal-add-target-names/00-
 
 # Load all targets
 # miRanda
-miranda_aal_uniprot_filtered <- read_csv("results/00-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv")
+miranda_aal_uniprot_filtered <- read_csv("results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv")
 
 # ==== EXTRACT UNIPROT IDS ====
 # miRanda per miRNA
@@ -22,10 +22,10 @@ lapply(names(candidates_miranda), function(miRNA_name) {
   uniprot_ids <- Filter(nzchar, uniprot_ids)
 
   # Save to txt file
-  writeLines(uniprot_ids, con = paste0("results/01-enrichment/shinygo/input/aal-miranda-per-mirna-shinygo/", miRNA_name, "-uniprot-aal-miranda.txt"))
+  writeLines(uniprot_ids, con = paste0("results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aal-miranda-per-mirna-shinygo/", miRNA_name, "-uniprot-aal-miranda.txt"))
 })
 
 # miRanda all
 uniprot_ids_all_miranda <- unlist(strsplit(as.character(miranda_aal_uniprot_filtered$uniprot_id), ","))
 uniprot_ids_all_miranda <- Filter(nzchar, uniprot_ids_all_miranda)
-writeLines(uniprot_ids_all_miranda, con = "results/01-enrichment/shinygo/input/uniprot-aal-miranda-all.txt")
+writeLines(uniprot_ids_all_miranda, con = "results/02-enrichment/01-raw-input-output/shinygo/input/all/uniprot-aal-miranda-all.txt")
