@@ -64,7 +64,7 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+    filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
     # old iteration had removed unspecified products
     filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
@@ -76,16 +76,16 @@ View(candidates_miranda[["aal-miR-1767"]])
 # Also filter and sort dataframe with all the up-regulated miRNAs
 aal_miranda_tx_names_sorted <- aal_miranda_tx_names %>%
   arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-  filter(energy <= -14) %>% # Filter by energy <= -14 kcal/mol
+  filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
   # old iteration had removed unspecified products
   filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
-length(unique(aal_miranda_tx_names_sorted$uniprot_id)) # 1759
+length(unique(aal_miranda_tx_names_sorted$uniprot_id)) # 610
 
 # Count the number of unique transcripts (mRNA) in the dataset
-length(unique(aal_miranda_tx_names_sorted$mRNA)) # 1759
+length(unique(aal_miranda_tx_names_sorted$mRNA)) # 610
 
 # Count the number of unique miRNAs in the dataset
 length(unique(aal_miranda_tx_names_sorted$microRNA)) # 24

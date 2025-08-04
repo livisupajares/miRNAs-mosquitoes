@@ -1,118 +1,35 @@
 "mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
 "AALF003891-RA","unspecified product","A0A182G6A9,A0A1W7R6A7","aal-miR-993-3p",-23.83,754,774,163
-"AALF024020-RA","unspecified product","A0A023EV31,A0A182H8F6","aal-miR-993-3p",-17.04,1362,1382,163
 "AALF014961-RA","unspecified product","A0A182GSH8","aal-miR-993-3p",-20.15,12525,12545,162
-"AALF007252-RA","sodium/chloride dependent transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL010883) VB Community Annotation]","A0A182GC06","aal-miR-993-3p",-18.69,96,116,162
-"AALF015609-RA","unspecified product","A0A023EWE1,A0A182GTQ3","aal-miR-993-3p",-18.72,2582,2602,161
 "AALF012626-RA","Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]","A0A023EQQ3","aal-miR-993-3p",-22.04,6178,6199,160
 "AALF012320-RA","unspecified product","A0A182GM61","aal-miR-993-3p",-21.46,51,71,159
 "AALF020336-RA","unspecified product","A0A182H2D5","aal-miR-993-3p",-21.46,51,71,159
-"AALF008082-RA","unspecified product","A0A182GDL3","aal-miR-993-3p",-19.42,122,142,159
-"AALF012563-RA","unspecified product","A0A023ED06,A0A023ED24,A0A182GMM2","aal-miR-993-3p",-18.96,233,253,159
-"AALF007357-RA","unspecified product","A0A182GC73","aal-miR-993-3p",-15.5,122,142,159
-"AALF015745-RA","unspecified product","A0A182GU00,A0A1W7R736","aal-miR-993-3p",-17.21,1418,1438,158
 "AALF001475-RA","Non-lysosomal glucosylceramidase [Source:UniProtKB/TrEMBL;Acc:A0A182G2J8]","A0A182G2J8","aal-miR-993-3p",-20.74,1303,1327,157
-"AALF002924-RA","unspecified product","A0A182G4S4","aal-miR-993-3p",-19.98,35,55,157
 "AALF020309-RA","unspecified product","A0A182H2B4","aal-miR-993-3p",-23.4,209,233,156
 "AALF006556-RA","unspecified product","A0A023EG21,A0A182GAT9","aal-miR-993-3p",-21.36,3402,3422,156
-"AALF014949-RA","Putative na+/dicarboxylate na+/tricarboxylate and phosphate transporter [Source:UniProtKB/TrEMBL;Acc:A0A023EVA1]","A0A023EVA1","aal-miR-993-3p",-18.82,347,366,156
-"AALF007988-RA","unspecified product","A0A023EX39,A0A182GDD5","aal-miR-993-3p",-17.92,14435,14453,156
 "AALF004464-RA","unspecified product","A0A023EGR0,A0A182G788,Q5MIS6","aal-miR-993-3p",-22.4,106,126,155
 "AALF000101-RA","unspecified product","A0A182G0N5","aal-miR-993-3p",-21.68,80,100,155
 "AALF013836-RA","acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]","A0A182GQA0","aal-miR-993-3p",-20.37,22133,22153,155
 "AALF008617-RA","Acyl-coenzyme A oxidase [Source:UniProtKB/TrEMBL;Acc:A0A182GEP3]","A0A023EVR9,A0A182GEP3","aal-miR-993-3p",-20.28,404,424,155
 "AALF027221-RA","unspecified product","A0A182HDI3","aal-miR-993-3p",-20.11,310,332,154
-"AALF017017-RA","unspecified product","A0A182GWF4","aal-miR-993-3p",-19.73,104,123,153
-"AALF006769-RA","unspecified product","A0A182GB54","aal-miR-993-3p",-19,112,129,153
 "AALF027634-RA","dual specificity mitogen-activated protein kinase kinase hemipterous MAPKK [Source:Projected from Aedes aegypti (AAEL003359) VB Community Annotation]","A0A182HE32","aal-miR-993-3p",-20.92,411,433,152
 "AALF009106-RA","unspecified product","A0A023ESD6,A0A182GFP3","aal-miR-993-3p",-20.07,1318,1338,152
-"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aal-miR-993-3p",-17.26,7310,7333,152
 "AALF017499-RA","unspecified product","A0A182GXA5","aal-miR-993-3p",-21.02,3776,3796,151
 "AALF023105-RA","unspecified product","A0A182H715","aal-miR-993-3p",-21.02,4144,4164,151
-"AALF012951-RA","unspecified product","A0A023EU61,A0A182GNH1","aal-miR-993-3p",-17.81,5,25,151
-"AALF010454-RA","unspecified product","A0A182GIF5","aal-miR-993-3p",-16.38,18,38,151
 "AALF023425-RA","unspecified product","A0A182H7J3","aal-miR-993-3p",-23.24,17601,17625,150
 "AALF016401-RA","unspecified product","A0A182GVC4","aal-miR-993-3p",-22.41,23684,23704,150
 "AALF001549-RA","unspecified product","A0A023EMU8,A0A023EPB0,A0A182G2N5","aal-miR-993-3p",-22.36,115,136,150
-"AALF007304-RA","zinc finger protein [Source:Projected from Aedes aegypti lvpagwg (AAEL012039) VB Community Annotation]","A0A182GC35","aal-miR-993-3p",-19.82,97,118,150
-"AALF009470-RA","unspecified product","A0A182GGE5","aal-miR-993-3p",-18.46,527,547,150
-"AALF025490-RA","unspecified product","A0A182HAT9","aal-miR-993-3p",-17.94,220,240,150
-"AALF028513-RA","juvenile hormone resistance protein [Source:Projected from Aedes aegypti (AAEL001746) VB Community Annotation]","A0A182HFD7","aal-miR-993-3p",-15.46,120,141,150
-"AALF017793-RA","circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]","A0A023EV26,A0A182GXV2","aal-miR-993-3p",-14.55,1301,1322,150
-"AALF011772-RA","unspecified product","A0A182GL32","aal-miR-993-3p",-19.98,126,148,149
-"AALF005559-RA","unspecified product","A0A182G958","aal-miR-993-3p",-17.87,622,641,149
-"AALF007284-RA","alpha(1,3)fucosyltransferase [Source:Projected from Aedes aegypti (AAEL000244) VB Community Annotation]","A0A023EPZ7,A0A023ERG1,A0A182GC25","aal-miR-993-3p",-15.56,345,367,149
-"AALF012962-RA","odd Oz protein [Source:Projected from Aedes aegypti (AAEL000405) VB Community Annotation]","A0A182GNI2","aal-miR-993-3p",-14.49,1841,1861,149
-"AALF011501-RA","unspecified product","A0A182GKJ0","aal-miR-993-3p",-16.16,1105,1128,148
-"AALF009353-RA","unspecified product","A0A182GG64,A0A1W7R6X8","aal-miR-993-3p",-15.36,94,113,148
-"AALF002289-RA","unspecified product","A0A182G3R8","aal-miR-993-3p",-19.51,931,954,147
-"AALF011217-RA","exocyst complex component [Source:Projected from Aedes aegypti (AAEL009926) VB Community Annotation]","A0A182GJX4","aal-miR-993-3p",-19.16,74,98,147
-"AALF017468-RA","unspecified product","A0A023EHM6,A0A182GX90","aal-miR-993-3p",-16.21,194,214,147
 "AALF013157-RA","unspecified product","A0A023EQB6,A0A182GNX0","aal-miR-993-3p",-20.08,268,288,146
-"AALF004830-RA","unspecified product","A0A023EFM8,A0A023EGU0,A0A182G7T9","aal-miR-993-3p",-19.21,13,34,146
-"AALF025599-RA","unspecified product","A0A023EGQ7,A0A182HAZ5","aal-miR-993-3p",-18.55,217,237,146
-"AALF012803-RA","unspecified product","A0A182GN54","aal-miR-993-3p",-17.82,248,268,146
-"AALF022692-RA","unspecified product","A0A023EV47,A0A182H6D7,A0A1W7R5B6","aal-miR-993-3p",-17.5,123,144,146
-"AALF024211-RA","unspecified product","A0A182H8Q6","aal-miR-993-3p",-16.67,1173,1195,146
-"AALF020258-RA","unspecified product","A0A182H280","aal-miR-993-3p",-16.64,8,28,146
-"AALF020574-RA","unspecified product","A0A182H2V6","aal-miR-993-3p",-15.97,3633,3653,146
-"AALF015279-RA","protein-tyrosine sulfotransferase [Source:Projected from Aedes aegypti (AAEL009868) VB Community Annotation]","A0A182GT42","aal-miR-993-3p",-15.87,149,170,146
-"AALF023197-RA","unspecified product","A0A182H773","aal-miR-993-3p",-15.68,166,187,146
 "AALF010372-RA","unspecified product","A0A182GI96","aal-miR-993-3p",-22.09,224,244,145
 "AALF001321-RA","ezrin-binding protein pace-1 [Source:Projected from Aedes aegypti (AAEL003282) VB Community Annotation]","A0A182G2C1","aal-miR-993-3p",-20.36,3,22,145
-"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-993-3p",-19.18,259,279,145
-"AALF010259-RA","phosphatidylinositol 3-kinase catalytic subunit alpha, beta, delta [Source:Projected from Aedes aegypti (AAEL002903) VB Community Annotation]","A0A182GI06","aal-miR-993-3p",-19.12,645,664,145
-"AALF002233-RA","unspecified product","A0A182G3N7","aal-miR-993-3p",-18.63,14104,14124,145
-"AALF005377-RA","unspecified product","A0A182G8V3","aal-miR-993-3p",-14.52,1000,1017,145
 "AALF008758-RA","poly(a) polymerase cid (pap) (caffein-induced death protein) [Source:Projected from Aedes aegypti (AAEL006249) VB Community Annotation]","A0A182GEY8","aal-miR-993-3p",-27.22,129,151,144
 "AALF009668-RA","unspecified product","A0A182GGU3","aal-miR-993-3p",-23.9,217,236,144
 "AALF008198-RA","unspecified product","A0A182GDU2","aal-miR-993-3p",-20.71,174,195,144
-"AALF026673-RA","unspecified product","A0A182HCN6","aal-miR-993-3p",-19.53,1,16,144
-"AALF003693-RA","protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]","A0A182G5Y8","aal-miR-993-3p",-17.51,27505,27526,144
-"AALF017528-RA","Translocon-associated protein subunit beta [Source:UniProtKB/TrEMBL;Acc:A0A023EIH6]","A0A023EIH6,A0A023EIX1","aal-miR-993-3p",-18.96,132,152,143
-"AALF006139-RA","unspecified product","A0A182GA46","aal-miR-993-3p",-18.46,108,129,143
-"AALF009482-RA","unspecified product","A0A182GGF6","aal-miR-993-3p",-18.44,1,17,143
-"AALF017417-RA","receptor protein-tyrosine phosphatase 10d [Source:Projected from Aedes aegypti (AAEL012083) VB Community Annotation]","A0A023EXY5,A0A182GX55","aal-miR-993-3p",-18.09,364,385,143
-"AALF025888-RA","Eukaryotic translation initiation factor 3 subunit M [Source:UniProtKB/TrEMBL;Acc:A0A023ETD6]","A0A023ETD6","aal-miR-993-3p",-18.07,186,207,143
-"AALF002759-RA","Acetyl-coenzyme A synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182G4J4]","A0A182G4J4","aal-miR-993-3p",-17.48,118,138,143
-"AALF014553-RA","hemomucin [Source:Projected from Aedes aegypti (AAEL006196) VB Community Annotation]","A0A023EV07,A0A023EVJ8,A0A182GRP8","aal-miR-993-3p",-16.44,453,474,143
-"AALF025486-RA","unspecified product","A0A023EPU0,A0A182HAT5","aal-miR-993-3p",-15.98,296,316,143
-"AALF004571-RA","unspecified product","A0A023EJE0,A0A023ELJ2,A0A182G7E1","aal-miR-993-3p",-15.57,202,222,143
-"AALF004782-RA","serine/threonine protein kinase [Source:Projected from Aedes aegypti lvpagwg (AAEL013390) VB Community Annotation]","A0A023ETT5,A0A182G7S2","aal-miR-993-3p",-15.41,358,378,143
-"AALF024568-RA","unspecified product","A0A023EWL3,A0A023EWM1,A0A023EX67,A0A182H9B0,A0A1W7R6B9","aal-miR-993-3p",-15.1,942,962,143
-"AALF009704-RA","unspecified product","A0A023ERZ8,A0A182GGX5","aal-miR-993-3p",-14.84,385,405,143
-"AALF009383-RA","unspecified product","A0A182GG88","aal-miR-993-3p",-14.7,434,452,143
-"AALF022816-RA","unspecified product","A0A023EXW3,A0A182H6M6,A0A1W7R5K1","aal-miR-993-3p",-14.11,735,755,143
+"AALF015582-RA","retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]","A0A182GTN5","aal-miR-993-3p",-20.67,13049,13069,144
 "AALF017991-RA","unspecified product","A0A182GY58","aal-miR-993-3p",-23.95,13,34,142
 "AALF010481-RA","unspecified product","A0A182GIH4","aal-miR-993-3p",-21.02,54,74,142
-"AALF004698-RA","Dual specificity tyrosine-phosphorylation-regulated kinase [Source:Projected from Aedes aegypti (AAEL001504) VB Community Annotation]","A0A023EP62,A0A182G7L4","aal-miR-993-3p",-18.61,478,498,142
-"AALF014514-RA","unspecified product","A0A182GRM2","aal-miR-993-3p",-18.09,1,23,142
-"AALF017659-RA","skinny hedgehog/sightless/rasp [Source:Projected from Aedes aegypti (AAEL000853) VB Community Annotation]","A0A182GXL2","aal-miR-993-3p",-17.4,220,240,142
-"AALF017106-RA","unspecified product","A0A182GWJ9","aal-miR-993-3p",-16.99,793,814,142
-"AALF022190-RA","unspecified product","A0A182H5K3","aal-miR-993-3p",-16.73,291,311,142
-"AALF022839-RA","unspecified product","A0A023EXZ5,A0A182H6P4","aal-miR-993-3p",-14.98,163,185,142
 "AALF024306-RA","unspecified product","A0A182H8W0","aal-miR-993-3p",-22.07,340,359,141
 "AALF020202-RA","unspecified product","A0A182H245","aal-miR-993-3p",-21.55,541,562,141
 "AALF006076-RA","unspecified product","A0A182GA07","aal-miR-993-3p",-20.94,362,381,141
-"AALF019692-RA","unspecified product","A0A023EHT6,A0A023EI65,A0A023EJF7,A0A023EMA2,A0A023EN63,A0A182H186","aal-miR-993-3p",-19.99,5534,5553,141
-"AALF004132-RA","development and differentiation-enhancing factor, ddef [Source:Projected from Aedes aegypti (AAEL003487) VB Community Annotation]","A0A182G6N6","aal-miR-993-3p",-19.16,69,89,141
-"AALF004173-RA","unspecified product","A0A182G6R6","aal-miR-993-3p",-18.96,50,74,141
-"AALF001491-RA","unspecified product","A0A182G2L2","aal-miR-993-3p",-18.03,32,56,141
-"AALF011827-RA","unspecified product","A0A182GL68","aal-miR-993-3p",-17.5,215,235,141
-"AALF024430-RA","unspecified product","A0A182H922","aal-miR-993-3p",-16.17,5517,5537,141
-"AALF008823-RA","unspecified product","A0A182GF40","aal-miR-993-3p",-15.95,49,68,141
-"AALF025159-RA","unspecified product","A0A182HA79","aal-miR-993-3p",-15.79,3847,3869,141
-"AALF001815-RA","unspecified product","A0A182G337","aal-miR-993-3p",-15.41,223,242,141
-"AALF017734-RA","unspecified product","A0A182GXQ1","aal-miR-993-3p",-15.34,18,39,141
-"AALF014223-RA","unspecified product","A0A182GR14","aal-miR-993-3p",-15.25,464,485,141
-"AALF005248-RA","unspecified product","A0A182G8M1","aal-miR-993-3p",-14.95,1185,1205,141
-"AALF001939-RA","unspecified product","A0A182G366","aal-miR-993-3p",-14.26,213,235,141
 "AALF010763-RA","unspecified product","A0A182GJ26","aal-miR-993-3p",-24.37,582,600,140
 "AALF022238-RA","unspecified product","A0A182H5N2","aal-miR-993-3p",-23.32,258,278,140
-"AALF021922-RA","unspecified product","A0A182H561","aal-miR-993-3p",-19.6,1795,1817,140
-"AALF001707-RA","unspecified product","A0A182G2Y4","aal-miR-993-3p",-19.4,3680,3700,140
-"AALF002265-RA","unspecified product","A0A182G3Q3","aal-miR-993-3p",-17.09,55,74,140
-"AALF000070-RA","dtdp-glucose 4-6-dehydratase [Source:Projected from Aedes aegypti (AAEL006236) VB Community Annotation]","A0A023ETQ3,A0A182G0L9","aal-miR-993-3p",-16.65,225,245,140
-"AALF012161-RA","unspecified product","A0A182GLV4","aal-miR-993-3p",-15.79,2400,2420,140
-"AALF000274-RA","unspecified product","A0A182G0V8","aal-miR-993-3p",-15.55,511,531,140
-"AALF020130-RA","unspecified product","A0A182H1Z1","aal-miR-993-3p",-14.55,31,51,140
