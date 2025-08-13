@@ -20,7 +20,7 @@ root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosq
 # Input directory to read .txt files with Uniprot kb accessions
 input_directory = f"{root_dir}/results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna"
 # Output directory to store the FASTA files
-output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna"
+output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna/aae-miranda-per-mirna-stringdb"
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
 # Base URL for UniProt REST API
