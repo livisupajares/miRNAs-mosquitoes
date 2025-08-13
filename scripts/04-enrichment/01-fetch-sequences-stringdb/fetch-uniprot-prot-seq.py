@@ -13,6 +13,8 @@ import requests
 from tqdm import tqdm  # progress bars
 
 # Configuration
+# TODO make a root directory picker bc I'm too lazy to change root_dir
+# var
 # Add root directory
 root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
