@@ -35,6 +35,7 @@ os.makedirs(log_directory, exist_ok=True)
 # This logger writes only ERROR+ to file, but shows INFO+ in console
 def setup_logger(name, log_file, level=logging.ERROR):
     logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
     if logger.hasHandlers():
         logger.handlers.clear()
 
@@ -203,18 +204,18 @@ def fetch_and_save_sequence(acc, logger):
 
     # Only one fallback attempt
     logger.error(f"--- FAILED: {acc} ---")
-    logger.error(f"Attempting to map {acc} to UniParc...")
+    logger.info(f"Attempting to map {acc} to UniParc...")
     uniparc_id = map_to_uniparc(acc, logger)  # ✅ Only one call, with logger
 
     if uniparc_id:
-        logger.error(f"Mapped {acc} → {uniparc_id}")
+        logger.info(f"Mapped {acc} → {uniparc_id}")
         url = base_url.format(database="uniparc", acc=uniparc_id)
         try:
             response = requests.get(url, headers=headers, timeout=10)
             if response.status_code == 200:
                 fasta_content = response.text.strip()
                 if fasta_content.startswith(">") and "\n" in fasta_content:
-                    logger.error(f"SUCCESS: Retrieved from UniParc for {uniparc_id}")
+                    logger.info(f"SUCCESS: Retrieved from UniParc for {uniparc_id}")
                     return fasta_content, "Success (via UniParc)"
         except Exception as e:
             logger.error(f"Failed retrieving from UniParc: {e}")
