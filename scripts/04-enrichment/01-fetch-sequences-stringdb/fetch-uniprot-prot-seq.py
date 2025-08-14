@@ -3,7 +3,7 @@
 # TODO: Add Parallel Processing to make it run faster
 # "miRNA" (miRNA targets) can also be replaced for any .txt file inside a
 # directory that contains uniprotkb and/or uniparc ids.
-# Check the created logs and the terminal output to see if some accession file failed.
+# Check the created logs and the terminal output to see if some accession failed.
 
 # Import dependencies
 import os  # for manipulation of files
@@ -14,7 +14,6 @@ from tqdm import tqdm  # progress bars
 
 # Configuration
 # TODO make a root directory picker bc I'm too lazy to change root_dir
-# var
 # Add root directory
 root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
@@ -58,29 +57,113 @@ def load_miRNA_accessions(input_dir):
 
 
 # Map UniProtKB ID to UniParc ID using UniProt's ID Mapping Rest API
-def map_to_uniparc(acc):
-    url = "https://rest.uniprot.org/idmapping/run"
-    data = {"from": "UniProtKB_AC-ID", "to": "UniParc", "ids": acc}
-    response = requests.post(url, data=data)
-    if response.status_code != 200:
-        return None
+def map_to_uniparc(uniprot_id, timeout=15, max_polls=30, poll_delay=2):
+    print(f"[INFO] Mapping {uniprot_id} to UniParc...")
 
-    job_id = response.json().get("jobId")
-    if not job_id:
-        return None
+    # Define headers to ensure proper content negotiation
+    headers = {"Accept": "application/json"}
 
-    # Poll until job completes
-    result_url = f"https://rest.uniprot.org/idmapping/results/{job_id}"
-    while True:
-        res = requests.get(result_url)
-        if res.status_code == 200:
-            results = res.json()
-            if results.get("results"):
-                mapped_id = results["results"][0].get("to")
-                return mapped_id
-            elif results.get("failedIds"):
+    try:
+        # Submit the ID mapping job
+        submit_url = "https://rest.uniprot.org/idmapping/run"  # No trailing spaces!
+        params = {"from": "UniProtKB_AC-ID", "to": "UniParc", "ids": uniprot_id}
+
+        res = requests.post(
+            submit_url,
+            params=params,
+            headers=headers,  # ← Critical: tells server we want JSON
+            timeout=timeout,
+        )
+        res.raise_for_status()  # Raises HTTPError for 4xx/5xx status codes
+        job_id = res.json()["jobId"]
+        print(f"[SUCCESS] ID mapping job created: {job_id}")
+
+        # Poll for results
+        result_url = f"https://rest.uniprot.org/idmapping/results/{job_id}"  # Clean URL
+        print(f"[POLLING] Checking results at: {result_url}")
+
+        for i in range(max_polls):
+            time.sleep(poll_delay)
+
+            try:
+                res = requests.get(result_url, headers=headers, timeout=timeout)
+                print(
+                    f"[DEBUG] Status: {res.status_code}, Content-Type: {res.headers.get('Content-Type')}"
+                )
+                print(f"[DEBUG] Raw response: {res.text[:200]}")  # First 200 chars
+
+                # Handle 404: job not ready yet
+                if res.status_code == 404:
+                    print(f"[PENDING] Job not ready (404) - Attempt {i+1}/{max_polls}")
+                    continue  # Try again
+
+                # Raise for other bad statuses (500, etc.)
+                res.raise_for_status()
+
+            except requests.exceptions.Timeout:
+                print(f"[TIMEOUT] Poll {i+1}/{max_polls} timed out")
+                continue
+            except requests.exceptions.ConnectionError:
+                print(f"[CONNECTION ERROR] Failed to connect during poll {i+1}")
+                continue
+            except requests.exceptions.RequestException as e:
+                print(f"[ERROR] Request failed during poll {i+1}: {e}")
+                continue
+
+            # If we get here, we have a valid 200 response
+            try:
+                data = res.json()
+                data = res.json()
+                print(f"[DEBUG] Type of data: {type(data)}")
+                print(f"[DEBUG] Data: {data}")
+            except requests.exceptions.JSONDecodeError:
+                print(f"[ERROR] Invalid JSON received in poll {i+1}")
+                continue
+
+            result_item = data["results"][0]
+            print(f"[DEBUG] result_item: {result_item}, type: {type(result_item)}")
+
+            to_field = result_item["to"]
+            print(f"[DEBUG] result_item['to']: {to_field}, type: {type(to_field)}")
+
+            # Check if we have results
+            if "results" in data and len(data["results"]) > 0:
+                result_item = data["results"][0]
+                # Extract 'to' field — it could be a string or dict (backward compatibility)
+                to_field = result_item["to"]
+
+                if isinstance(to_field, dict):
+                    uniparc_id = to_field["id"]
+                elif isinstance(to_field, str):
+                    uniparc_id = to_field
+                else:
+                    print(f"[ERROR] Unknown format for 'to' field: {to_field}")
+                    return None
+
+                print(f"[SUCCESS] Mapped {uniprot_id} → {uniparc_id}")
+                return uniparc_id
+            else:
+                print(f"[NOTFOUND] No UniParc mapping found for {uniprot_id}")
                 return None
-        time.sleep(1)
+
+        # End of polling loop
+        print(f"[FAIL] Max polling attempts ({max_polls}) reached for {uniprot_id}")
+        return None
+
+    except KeyError:
+        print(f"[ERROR] Unexpected response format: missing 'jobId' for {uniprot_id}")
+    except requests.exceptions.Timeout:
+        print(f"[TIMEOUT] Request to start ID mapping timed out for {uniprot_id}")
+    except requests.exceptions.HTTPError as e:
+        print(f"[HTTP ERROR] Failed to create job for {uniprot_id}: {e}")
+        if e.response.status_code == 400:
+            print(f"[TIP] Check if '{uniprot_id}' is a valid UniProt ID.")
+    except requests.exceptions.RequestException as e:
+        print(f"[ERROR] Request failed when starting job for {uniprot_id}: {e}")
+    except Exception as e:
+        print(f"[EXCEPTION] Unexpected error mapping {uniprot_id}: {e}")
+
+    return None
 
 
 # Function to fetch and save a UniProt sequence
