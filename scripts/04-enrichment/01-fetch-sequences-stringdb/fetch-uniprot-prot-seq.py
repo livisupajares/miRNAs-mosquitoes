@@ -6,6 +6,7 @@
 # Check the created logs and the terminal output to see if some accession failed.
 
 # Import dependencies
+import logging
 import os  # for manipulation of files
 import time
 
@@ -14,7 +15,7 @@ from tqdm import tqdm  # progress bars
 
 # Configuration
 # TODO make a root directory picker bc I'm too lazy to change root_dir
-# Add root directory
+
 root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
 input_directory = f"{root_dir}/results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aal-miranda-per-mirna-shinygo"
@@ -29,10 +30,29 @@ base_url = "https://rest.uniprot.org/{database}/{acc}.fasta"
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs(log_directory, exist_ok=True)
 
-# Test write to confirm logs are working
-test_log = os.path.join(log_directory, ".test_write.txt")
-with open(test_log, "w") as f:
-    f.write("Test successful write\n")
+
+# Setup logger per miRNA
+# This logger writes only ERROR+ to file, but shows INFO+ in console
+def setup_logger(name, log_file, level=logging.ERROR):
+    logger = logging.getLogger(name)
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # File handler: only errors
+    fh = logging.FileHandler(log_file)
+    fh.setLevel(logging.ERROR)
+    fh_formatter = logging.Formatter("%(asctime)s | %(message)s", datefmt="%H:%M:%S")
+    fh.setFormatter(fh_formatter)
+    logger.addHandler(fh)
+
+    # Console handler: info and above
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.INFO)
+    ch_formatter = logging.Formatter("%(levelname)s | %(message)s")
+    ch.setFormatter(ch_formatter)
+    logger.addHandler(ch)
+
+    return logger
 
 
 # Detect database type using regex
