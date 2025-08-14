@@ -177,6 +177,7 @@ def fetch_and_save_sequence(acc, logger):
 
     # Add user agents so you don't get flagged by the UniProt API
     headers = {"User-Agent": "miRNA-fetcher/1.0 (Python Script)"}
+    reason = "Unknown error"  # Default
 
     for attempt in range(3):  # Retry up to 3 times
         try:
@@ -187,39 +188,62 @@ def fetch_and_save_sequence(acc, logger):
                 fasta_content = response.text.strip()
                 # Check if the response looks like a FASTA sequence
                 if fasta_content.startswith(">") and "\n" in fasta_content:
-                    return fasta_content
+                    return fasta_content, "Success"  # Return success
                 else:
-                    logger.error(f"Invalid FASTA content for {acc} from {database}")
-            elif response.status_code in [429, 503]:
-                wait_time = 2**attempt
-                time.sleep(wait_time)
+                    reason = "Invalid FASTA content"
+            elif response.status_code == 404:
+                reason = f"HTTP 404 Not Found ({database})"
+            elif response.status_code == 429:
+                reason = "Rate limit (HTTP 429)"
+            elif response.status_code == 503:
+                reason = "Service unavailable (HTTP 503)"
             else:
-                logger.error(
-                    f"[{attempt+1}/3] Error fetching {acc}: HTTP {response.status_code}"
-                )
-                time.sleep(2)
+                reason = f"HTTP {response.status_code}"
+            logger.error(f"[{attempt+1}/3] {reason} fetching {acc}")
+            time.sleep(2)
+        except requests.exceptions.Timeout:
+            reason = "Timeout during fetch"
+            logger.error(f"Attempt {attempt+1}/3: {reason} for {acc}")
+            time.sleep(2)
+        except requests.exceptions.ConnectionError:
+            reason = "Connection error"
+            logger.error(f"Attempt {attempt+1}/3: {reason} for {acc}")
+            time.sleep(2)
         except requests.exceptions.RequestException as e:
-            logger.error(f"[{attempt+1}/3] Network error fetching {acc}: {str(e)}")
+            reason = f"Network error: {type(e).__name__}"
+            logger.error(f"[{attempt+1}/3] {reason} for {acc}: {e}")
             time.sleep(2)
 
+    # Mark full failure process start
+    logger.error(f"~~~ FAILED: {acc} ~~~")
     # If all retries fail, try mapping to UniParc
-    print(f"[INFO] Attempting to map {acc} to UniParc...")
+    logger.error(f"ttempting to map {acc} to UniParc...")
+
     uniparc_id = map_to_uniparc(acc)
     if uniparc_id:
-        print(f"[INFO] Mapped to UniParc ID: {uniparc_id}")
-        acc = uniparc_id
-        database = "uniparc"
-        url = base_url.format(database=database, acc=acc)
+        logger.error(f"Mapped {acc} → {uniparc_id}")
+        url = base_url.format(database="uniparc", acc=uniparc_id)
         # Try one last time with the new ID
         try:
             response = requests.get(url, headers=headers, timeout=10)
             if response.status_code == 200:
                 fasta_content = response.text.strip()
                 if fasta_content.startswith(">") and "\n" in fasta_content:
-                    print(f"[SUCCESS] Retrieved sequence from UniParc for {acc}")
-                    return fasta_content
+                    logger.error(
+                        f"Retrieved sequence from UniParc ({uniparc_id}) for {acc}"
+                    )
+                    return fasta_content, "Success (via UniParc)"
+                else:
+                    reason = "Invalid FASTA from UniParc"
+            else:
+                reason = f"HTTP {response.status_code} from UniParc"
+        except requests.exceptions.Timeout:
+            reason = "Timeout fetching from UniParc"
         except Exception as e:
-            print(f"[ERROR] Failed retrieving from UniParc for {acc}: {e}")
+            reason = f"Failed retrieving from UniParc: {type(e).__name__}"
+        logger.error(f"{reason} for {uniparc_id}")
+    else:
+        reason = "UniParc mapping failed"
 
     # Mark start of failure troubleshooting
     logger.error(f"~~~ FAILED: {acc} ~~~")
@@ -238,19 +262,20 @@ def fetch_and_save_sequence(acc, logger):
                     logger.error(f"SUCCESS: Retrieved from UniParc for {uniparc_id}")
                     return fasta_content
                 else:
-                    logger.error(f"Invalid FASTA from UniParc for {uniparc_id}")
+                    reason = "Invalid FASTA from UniParc"
             else:
-                logger.error(
-                    f"HTTP {response.status_code} when fetching {uniparc_id} from UniParc"
-                )
+                reason = f"HTTP {response.status_code} from UniParc"
+        except requests.exceptions.Timeout:
+            reason = "Timeout fetching from UniParc"
         except Exception as e:
-            logger.error("Failed retrieving from UniParc for {acc}: {e}")
+            reason = f"Failed retrieving from UniParc: {type(e).__name__}"
+            logger.error(f"{reason} for {uniparc_id}")
     else:
-        logger.error(f"Mapping to UniParc failed for {acc}")
+        reason = "UniParc mapping failed"
 
     # Final failure
     logger.error(f"FAILED TO FETCH {acc} AFTER ALL ATTEMPTS\n")
-    return None
+    return None, reason
 
 
 # Iterate over the dictionary and process each miRNA and its accessions
