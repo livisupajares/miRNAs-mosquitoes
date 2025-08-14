@@ -259,16 +259,27 @@ if __name__ == "__main__":
     # Load accessions dynamically
     miRNA_to_accessions = load_miRNA_accessions(input_directory)
 
+    # To store final list of completely failed accessions per miRNA
+    failed_summary = {}
+
     # Process each miRNA group
     for mirna, accessions in miRNA_to_accessions.items():
         print(f"\nProcessing miRNA: {mirna} ({len(accessions)} accessions)")
 
+        log_file = os.path.join(log_directory, f"log_{mirna}.log")
+        logger = setup_logger(f"logger_{mirna}, log_file")
+
         # Collect all FASTA sequences for the current miRNA
         fasta_sequences = []
+        failed_for_mirna = []  # Track accessions that completely failed
+
         for acc in tqdm(accessions, desc=f"Fetching {mirna}", total=len(accessions)):
-            fasta_content = fetch_and_save_sequence(acc, mirna)
+            fasta_content = fetch_and_save_sequence(acc, logger)
             if fasta_content:
                 fasta_sequences.append(fasta_content)
+            else:
+                # Only mark as "completely failed" if we tried everything
+                failed_for_mirna.append(acc)
             time.sleep(0.25)  # Rate limiting so they don't flag your IP
 
         # Save all sequences for the current miRNA into one FASTA file
@@ -279,29 +290,39 @@ if __name__ == "__main__":
                     "\n".join(fasta_sequences)
                 )  # Combine all sequences into one file
             print(
-                f"Saved {len(fasta_sequences)} sequences for {mirna} to {fasta_filename}"
+                f"✅ Saved {len(fasta_sequences)} sequences for {mirna} to {fasta_filename}"
             )
         else:
-            print(f"No valid sequences found for {mirna}")
-    print("\nScript completed successfully.")
+            print(f"❌ No valid sequences found for {mirna}")
+    print("\n✅Script completed successfully.")
 
-    # Print summary of failed accessions
-    print("\n[SUMMARY] Checking logs...")
-    log_files = [
-        f
-        for f in os.listdir(log_directory)
-        if f.startswith("log_") and f.endswith(".log")
-    ]
+    # Save failed list for final summary
+    if failed_for_mirna:
+        failed_summary[mirna] = failed_for_mirna
 
-    if not log_files:
-        print("✅ No failed accessions found. All sequences were fetched successfully!")
+    # =================== FINAL SUMMARY ===================
+    print("\n" + "=" * 60)
+    print("            🚨 FINAL FAILURE SUMMARY 🚨")
+    print("=" * 60)
+
+    if not failed_summary:
+        print("🎉 All accessions were successfully fetched! No failures.")
     else:
-        for filename in log_files:
-            log_path = os.path.join(log_directory, filename)
-            with open(log_path, "r") as f:
-                lines = f.readlines()
-            print(f"\n❌ Failed accessions in {filename} ({len(lines)} failures):")
-            for line in lines[:10]:  # Show first 10 errors
-                print("  " + line.strip())
-            if len(lines) > 10:
-                print(f"  ...{len(lines)-10} more errors")
+        total_failed = sum(len(acc_list) for acc_list in failed_summary.values())
+        print(
+            f"❌ {total_failed} accession(s) failed across {len(failed_summary)} miRNA(s):\n"
+        )
+
+        for mirna, failed_accs in failed_summary.items():
+            print(f"📁 {mirna} ({len(failed_accs)} failure(s)):")
+            # Deduplicate and show up to 10, then summarize
+            unique_failed = sorted(set(failed_accs))
+            for acc in unique_failed[:10]:
+                print(f"    • {acc}")
+            if len(unique_failed) > 10:
+                print(f"    ... and {len(unique_failed) - 10} more")
+            print()
+
+        print(f"📄 Full error details are logged in: {log_directory}/")
+    print("=" * 60)
+    print("✅ Script completed successfully.")
