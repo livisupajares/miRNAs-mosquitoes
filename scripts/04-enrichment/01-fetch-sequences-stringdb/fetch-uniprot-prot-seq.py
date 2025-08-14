@@ -16,11 +16,11 @@ from tqdm import tqdm  # progress bars
 # TODO make a root directory picker bc I'm too lazy to change root_dir
 # var
 # Add root directory
-root_dir = "/home/cayetano/livisu/git/miRNAs-mosquitoes"
+root_dir = "/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes"
 # Input directory to read .txt files with Uniprot kb accessions
-input_directory = f"{root_dir}/results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aae-miranda-per-mirna-shinygo"
+input_directory = f"{root_dir}/results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aal-miranda-per-mirna-shinygo"
 # Output directory to store the FASTA files
-output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna/aae-miranda-per-mirna-stringdb"
+output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna/aal-miranda-per-mirna-stringdb"
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
 # Base URL for UniProt REST API
