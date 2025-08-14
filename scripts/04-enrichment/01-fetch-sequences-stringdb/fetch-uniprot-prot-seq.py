@@ -195,7 +195,7 @@ def fetch_and_save_sequence(acc, logger):
                 reason = "Rate limit"
             else:
                 reason = f"HTTP {response.status_code}"
-            logger.error(f"Attempt {attempt+1}/3: {reason} for {acc}")
+            logger.info(f"Attempt {attempt+1}/3: {reason} for {acc}")
             time.sleep(2)
         except Exception as e:
             reason = f"{type(e).__name__}"
@@ -203,9 +203,9 @@ def fetch_and_save_sequence(acc, logger):
             time.sleep(2)
 
     # Only one fallback attempt
-    logger.error(f"--- FAILED: {acc} ---")
+    logger.info(f"--- FAILED: {acc} ---")
     logger.info(f"Attempting to map {acc} to UniParc...")
-    uniparc_id = map_to_uniparc(acc, logger)  # ✅ Only one call, with logger
+    uniparc_id = map_to_uniparc(acc, logger)
 
     if uniparc_id:
         logger.info(f"Mapped {acc} → {uniparc_id}")
@@ -247,7 +247,7 @@ if __name__ == "__main__":
         failed_for_mirna = []  # Track accessions that completely failed
 
         for acc in tqdm(accessions, desc=f"Fetching {mirna}", total=len(accessions)):
-            fasta_content = fetch_and_save_sequence(acc, logger)
+            fasta_content, failure_reason = fetch_and_save_sequence(acc, logger)
             if fasta_content:
                 fasta_sequences.append(fasta_content)
             else:
