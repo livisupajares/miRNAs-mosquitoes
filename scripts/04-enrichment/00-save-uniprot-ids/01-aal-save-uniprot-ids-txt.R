@@ -10,7 +10,7 @@ source("scripts/03-mirna-target-pred/00-target-names/02-aal-add-target-names/00-
 
 # Load all targets
 # miRanda
-miranda_aal_uniprot_filtered <- read_csv("results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv")
+miranda_aal_uniprot_filtered <- read_csv("results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv") # 610
 
 # ==== EXTRACT UNIPROT IDS ====
 # miRanda per miRNA
@@ -27,7 +27,13 @@ lapply(names(candidates_miranda), function(miRNA_name) {
 })
 
 # miRanda all
-uniprot_ids_all_miranda <- unlist(strsplit(as.character(miranda_aal_uniprot_filtered$uniprot_id), ","))
+# This part of the script extracts all Uniprot IDs.miranda_aal_uniprot_filtered
+# has 610 columns, however some of them have multiple uniprot ids in the same
+# column separated by commas.
+# Therefore, we need to split them and save them in a single txt file. At the
+# end, we get 868 unique uniprot IDS, however, despite being different ids,
+# their uniprot entry describes the same protein name.
+uniprot_ids_all_miranda <- unlist(strsplit(as.character(miranda_aal_uniprot_filtered$uniprot_id), ",")) # 868
 uniprot_ids_all_miranda <- Filter(nzchar, uniprot_ids_all_miranda)
 writeLines(uniprot_ids_all_miranda, con = "results/02-enrichment/01-raw-input-output/shinygo/input/all/uniprot-aal-miranda-all.txt")
 
