@@ -60,10 +60,26 @@ all_shinygo$dataset <- as.factor(all_shinygo$dataset)
 all_stringdb$dataset <- as.factor(all_stringdb$dataset)
 
 # Make sure each dataset column has unique levels with no misspelling/duplication
-## Per miRNA
+## Per miRNA SHINYGO
 # Get unique levels of dataset
 levels_per_mirna_shinygo <- unique(per_mirna_shinygo$dataset)
+print(sort(levels_per_mirna_shinygo)) 
+# Change GO Biologically Process --> GO Biological Process
+# Change GO Celullar Component  --> GO Cellular Component
+# Merge levels if they are misspelled duplicates using the forcats package
+# This is done to ensure that the levels are consistent across datasets.
+per_mirna_shinygo <- per_mirna_shinygo |>
+  mutate(dataset = fct_collapse(dataset,
+                                # Merge GO Biological Process
+                                "GO Biological Process" = c("GO Biologically Process", "GO Biological Process"),
+                                # Merge GO Cellular Component
+                                "GO Cellular Component" = c ("GO Celullar Component", "GO Cellular Component")))
+
+# Now get the updated levels to verify
+levels_per_mirna_shinygo <- unique(per_mirna_shinygo$dataset)
 print(sort(levels_per_mirna_shinygo))
+
+## Per-mirna STRINGDB
 levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
 print(sort(levels_per_mirna_stringdb))
 
@@ -72,50 +88,51 @@ print(sort(levels_per_mirna_stringdb))
 per_mirna_stringdb <- per_mirna_stringdb |>
   mutate(dataset = fct_collapse(dataset,
     # Merge Reactome levels
-    "Reactome Pathway" = c("Reactome Pathway", "Reactome Pathways"),
+    "Reactome" = c("Reactoma", "Reactome"),
 
     # Merge Local Network Cluster variants
-    "Local Network Cluster String" = c(
-      "Local Network Cluster (STRING)",
-      "Local Network Cluster String",
-      "Local Network Cluster"
-    )
-  ))
+    "Local Network Cluster String" = "Local Network Cluster")
+  )
 
 # Now get the updated levels to verify
 levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
 print(sort(levels_per_mirna_stringdb))
 
-## Venny
+## Venny SHINYGO
 # Get unique levels of dataset
 levels_venny_shinygo <- unique(venny_shinygo$dataset)
 print(sort(levels_venny_shinygo))
+
+## Venny STRINGDB
 levels_venny_stringdb <- unique(venny_stringdb$dataset)
 print(sort(levels_venny_stringdb))
 
-# Change level names if they are misspelled duplicates using the forcats package
-# This is done to ensure that the levels are consistent across datasets.
-venny_stringdb <- venny_stringdb %>%
-  mutate(dataset = fct_recode(dataset,
-    "Local Network Cluster String" = "Local Network Cluster"
-  ))
-
-# Now get the updated levels to verify
-levels_venny_stringdb <- unique(venny_stringdb$dataset)
-print(sort(levels_venny_stringdb))
-
-## All
+## All SHINYGO
 # Get unique levels of dataset
 levels_all_shinygo <- unique(all_shinygo$dataset)
 print(sort(levels_all_shinygo))
+
+# Merge levels if they are misspelled duplicates using the forcats package
+# This is done to ensure that the levels are consistent across datasets.
+all_shinygo <- all_shinygo |>
+  mutate(dataset = fct_collapse(dataset,
+                                # Merge Reactome levels
+                                "GO Cellular Component" = c("GO Cell Component", "GO Cellular Component")
+  ))
+
+# Now get the updated levels to verify
+levels_all_shinygo <- unique(all_shinygo$dataset)
+print(sort(levels_all_shinygo))
+
+## All STRINGDB
 levels_all_stringdb <- unique(all_stringdb$dataset)
 print(sort(levels_all_stringdb))
 
 # Change level names if they are misspelled duplicates using the forcats package
 # This is done to ensure that the levels are consistent across datasets.
-all_stringdb <- all_stringdb %>%
+all_stringdb <- all_stringdb |>
   mutate(dataset = fct_recode(dataset,
-    "Local Network Cluster String" = "Local Network Cluster"
+    "Local Network Cluster String" = "Local Network Cluter"
   ))
 
 # Now get the updated levels to verify
