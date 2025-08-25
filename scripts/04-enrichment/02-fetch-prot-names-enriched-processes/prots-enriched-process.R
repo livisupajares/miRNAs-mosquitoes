@@ -158,19 +158,19 @@ write.csv(full_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anot
 
 # ==== FILTER IMMUNE AND OTHER PROCESSES ====
 # all
-immune_expanded_all_shinygo <- full_expanded_all_shinygo %>%
-  filter(category_of_interest == "immune" | category_of_interest == "other")
-
-immune_expanded_all_stringdb <- full_expanded_all_stringdb %>%
+immune_expanded_all_stringdb <- full_expanded_all_stringdb |>
   filter(category_of_interest == "immune" | category_of_interest == "other")
 
 # per-mirna
-immune_expanded_per_mirna_shinygo  <- full_expanded_per_mirna_shinygo %>%
+immune_expanded_per_mirna_shinygo  <- full_expanded_per_mirna_shinygo |>
+  filter(category_of_interest == "immune" | category_of_interest == "other") # No immune or other here
+
+immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb |>
   filter(category_of_interest == "immune" | category_of_interest == "other")
 
-immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb %>%
-  filter(category_of_interest == "immune" | category_of_interest == "other")
+# ==== SAVE FINAL IMMUNE DATASET ====
+# all
+write.csv(immune_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-stringdb.csv", row.names = FALSE)
 
-# venny
-immune_expanded_venny_stringdb <- full_expanded_venny_stringdb %>%
-  filter(category_of_interest == "immune" | category_of_interest == "other")
+# per-mirna
+write.csv(immune_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-per-mirna-stringdb.csv", row.names = FALSE)
