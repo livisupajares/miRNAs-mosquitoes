@@ -62,7 +62,7 @@ expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringd
 expanded_all_shinygo <- expand_genes_to_rows(important_all_shinygo, gene_col = "genes") # No enrichment results
 expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
 
-# ==== FIX AND FUSE MAPPE PROTEIN IDS DFS ====
+# ==== FIX AND FUSE MAPPED PROTEIN IDS ====
 ## Add a species column to each mapped protein ids dataframe
 # For ensembl metazoa
 aae_mapped_protein_ids_ensembl <- aae_mapped_protein_ids_ensembl |>
@@ -135,12 +135,14 @@ full_expanded_per_mirna_shinygo <- map_ensembl_descriptions(expanded_per_mirna_s
 # This one won't run because none of the enriched processes were of interest (category_of_interest = NA; too general for immune, neuro, etc)
 # full_expanded_venny_shinygo <- map_ensembl_descriptions(expanded_venny_shinygo, mapped_protein_ids_ensembl)
 
-full_expanded_all_shinygo <- map_ensembl_descriptions(expanded_all_shinygo, mapped_protein_ids_ensembl)
+# This one won't run because none of the enriched processes were of interest (category_of_interest = NA; too general for immune, neuro, etc)
+# full_expanded_all_shinygo <- map_ensembl_descriptions(expanded_all_shinygo, mapped_protein_ids_ensembl)
 
 ## For stringdb
 full_expanded_per_mirna_stringdb <- map_stringdb_annotations(expanded_per_mirna_stringdb, mapped_protein_ids_stringdb)
 
-full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
+# This one won't run because none of the enriched processes were of interest (category_of_interest = NA; too general for immune, neuro, etc)
+# full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
 
 full_expanded_all_stringdb <- map_stringdb_annotations(expanded_all_stringdb, mapped_protein_ids_stringdb)
 
