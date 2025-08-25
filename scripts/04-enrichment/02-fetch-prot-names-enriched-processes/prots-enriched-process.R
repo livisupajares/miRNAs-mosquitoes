@@ -55,11 +55,11 @@ expanded_per_mirna_shinygo <- expand_genes_to_rows(important_per_mirna_shinygo, 
 expanded_per_mirna_stringdb <- expand_genes_to_rows_stringdb(important_per_mirna_stringdb)
 
 # Venny
-expanded_venny_shinygo <- expand_genes_to_rows(important_venny_shinygo, gene_col = "genes")
-expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringdb)
+expanded_venny_shinygo <- expand_genes_to_rows(important_venny_shinygo, gene_col = "genes") # No enrichment results
+expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringdb) # No enrichment results
 
 # All
-expanded_all_shinygo <- expand_genes_to_rows(important_all_shinygo, gene_col = "genes")
+expanded_all_shinygo <- expand_genes_to_rows(important_all_shinygo, gene_col = "genes") # No enrichment results
 expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
 
 # ==== FIX AND FUSE MAPPE PROTEIN IDS DFS ====
