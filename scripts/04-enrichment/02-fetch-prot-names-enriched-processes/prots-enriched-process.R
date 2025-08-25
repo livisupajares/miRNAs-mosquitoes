@@ -26,8 +26,8 @@ aae_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aae-mapped_s
 aal_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aal-mapped_shinygo_metazoa.csv")
 
 # Import mapped protein ids from stringdb
-aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv")
-aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv")
+aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
+aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
 
 # ==== FUNCTION TO EXTRACT PROTEIN IDS FROM ENRICHED PROCESSES ====
 # This function takes a dataframe of enriched processes and extracts the protein ids from the 'genes' and 'pathway_genes' columns.
