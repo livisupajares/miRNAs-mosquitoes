@@ -182,13 +182,13 @@ important_all_stringdb <- all_stringdb |>
 
 # ==== EXPORT IMPORTANT DATA ====
 # Per miRNA
-write.csv(important_per_mirna_shinygo, "results/01-enrichment/03-enrichments-important-process/important-per-mirna-shinygo.csv", row.names = FALSE)
-write.csv(important_per_mirna_stringdb, "results/01-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv", row.names = FALSE)
+write.csv(important_per_mirna_shinygo, "results/02-enrichment/03-enrichments-important-process/important-per-mirna-shinygo.csv", row.names = FALSE)
+write.csv(important_per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv", row.names = FALSE)
 
 # Venny
-write.csv(important_venny_shinygo, "results/01-enrichment/03-enrichments-important-process/important-venny-shinygo.csv", row.names = FALSE)
-write.csv(important_venny_stringdb, "results/01-enrichment/03-enrichments-important-process/important-venny-stringdb.csv", row.names = FALSE)
+write.csv(important_venny_shinygo, "results/02-enrichment/03-enrichments-important-process/important-venny-shinygo.csv", row.names = FALSE)
+write.csv(important_venny_stringdb, "results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv", row.names = FALSE)
 
 # All
-write.csv(important_all_shinygo, "results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv", row.names = FALSE)
-write.csv(important_all_stringdb, "results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv", row.names = FALSE)
+write.csv(important_all_shinygo, "results/02-enrichment/03-enrichments-important-process/important-all-shinygo.csv", row.names = FALSE)
+write.csv(important_all_stringdb, "results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv", row.names = FALSE)
