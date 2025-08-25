@@ -142,19 +142,19 @@ print(sort(levels_all_stringdb))
 # ==== SAVE RESULTS TO CSV ====
 # Save the fused data frames to .csv files
 # Per miRNA
-write.csv(per_mirna_shinygo, "results/01-enrichment/03-enrichments-important-process/per-mirna-shinygo.csv", row.names = FALSE)
+write.csv(per_mirna_shinygo, "results/02-enrichment/03-enrichments-important-process/per-mirna-shinygo.csv", row.names = FALSE)
 
-write.csv(per_mirna_stringdb, "results/01-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv", row.names = FALSE)
+write.csv(per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv", row.names = FALSE)
 
 # Venny
-write.csv(venny_shinygo, "results/01-enrichment/03-enrichments-important-process/venny-shinygo.csv", row.names = FALSE)
+write.csv(venny_shinygo, "results/02-enrichment/03-enrichments-important-process/venny-shinygo.csv", row.names = FALSE)
 
-write.csv(venny_stringdb, "results/01-enrichment/03-enrichments-important-process/venny-stringdb.csv", row.names = FALSE)
+write.csv(venny_stringdb, "results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv", row.names = FALSE)
 
 # All
-write.csv(all_shinygo, "results/01-enrichment/03-enrichments-important-process/all-shinygo.csv", row.names = FALSE)
+write.csv(all_shinygo, "results/02-enrichment/03-enrichments-important-process/all-shinygo.csv", row.names = FALSE)
 
-write.csv(all_stringdb, "results/01-enrichment/03-enrichments-important-process/all-stringdb.csv", row.names = FALSE)
+write.csv(all_stringdb, "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv", row.names = FALSE)
 
 # ==== REMOVE UNEEDED ROWS ====
 # Remove rows that have NA in category_of_interest column
