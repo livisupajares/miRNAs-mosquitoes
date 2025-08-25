@@ -10,16 +10,16 @@ library(tidyr)
 # ==== IMPORT DATA ====
 ## Import enriched processes data
 # Per miRNA
-important_per_mirna_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-per-mirna-shinygo.csv")
-important_per_mirna_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
+important_per_mirna_shinygo <- read.csv("results/02-enrichment/03-enrichments-important-process/important-per-mirna-shinygo.csv")
+important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
 
 # Venny
-important_venny_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-venny-shinygo.csv")
-important_venny_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-venny-stringdb.csv")
+important_venny_shinygo <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-shinygo.csv") # No enrichments
+important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv") # No enrichments
 
 # All
-important_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv")
-important_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
+important_all_shinygo <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-shinygo.csv") # No enrichments
+important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
 
 # Import mapped protein ids from ensembl metazoa
 aae_mapped_protein_ids_ensembl <- read.csv("databases/03-enrichment/aae-mapped_shinygo_metazoa.csv")
