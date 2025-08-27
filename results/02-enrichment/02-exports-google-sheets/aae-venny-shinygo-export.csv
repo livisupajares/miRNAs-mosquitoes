@@ -1,2 +1,0 @@
-species,enrichment_fdr,n_genes,pathway_genes,fold_enrichment,pathway,url,genes,dataset,category_of_interest,enrichment_method,protein_db,taxon_id,assembly_name,ensembl_id
-Aedes aegypti,NA,NA,NA,NA,NA,NA,NA,NA,NA,shinygo,ensembl_metazoa,7159,Aedes aegypti LVP_AGWG genes AaegL5,aalvpagwg_eg_gene
