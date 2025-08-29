@@ -23,3 +23,22 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 # The formula is the same for both species,
 # but the total amount of protein coding genes in organism differes between Aedes aegypti and
 # Aedes albopictus.
+
+# Constants
+# total amount of protein coding genes in your input
+## TODO: Calculated from fasta file in per-mirna, all and venny using seqkit in the terminal
+# total amount of protein coding genes in organism
+# TODO: Write seqkit command and results here for reference
+## From the stringdb website, look up for Aedes aegypti and Aedes albopictus in the "Organisms" option from the sidebar. 
+fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
+  if (df$species == "Aedes aegypti") {
+    n_protein_genes_org <- 15757
+    fold_enrichment <- (df$observed_gene_count/n_prot_coding_genes_input)/(df$background_gene_count/n_protein_genes_org)
+    print(fold_enrichment)
+  } 
+  else {
+    n_protein_genes_org <- 16616
+    fold_enrichment <- (df$observed_gene_count/n_prot_coding_genes_input)/(df$background_gene_count/n_protein_genes_org)
+    print(fold_enrichment)
+  }
+}
