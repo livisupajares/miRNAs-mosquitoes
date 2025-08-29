@@ -27,8 +27,8 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 # Constants
 # total amount of protein coding genes in your input
 ## TODO: Calculated from fasta file in per-mirna, all and venny using seqkit in the terminal
-# total amount of protein coding genes in organism
 # TODO: Write seqkit command and results here for reference
+# total amount of protein coding genes in organism
 ## From the stringdb website, look up for Aedes aegypti and Aedes albopictus in the "Organisms" option from the sidebar. 
 fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
   if (df$species == "Aedes aegypti") {
@@ -46,4 +46,5 @@ fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
 # ==== TEST & DEBUG FUNCTION ====
 # Subset a part of the dataframe, in this case, only one row
 test_all_row <- all[1, ]
+# TODO: Add total amount of protein coding genes in your input as a second argument in function
 result_all_row <- fold_enrichment_calc(test_all_row)
