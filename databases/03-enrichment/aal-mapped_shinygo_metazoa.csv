@@ -1,0 +1,908 @@
+"Pasted","Symbol","Ensembl Gene ID","Entrez","Type","Species","Chr","Position (Mbp)","Description","percentage_gc_content","transcript_count","genomeSpan","cds_length","transcript_length","FiveUTR","ThreeUTR","nExons"
+"A0A182G4R2"," RP20_CCG002897","AALF002897",NA,"protein_coding","Aedes albopictus","JXUM01S009660",2e-06,"Glutathione synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182G4R2]",40.17,1,29236,1488,2375,147,740,6
+"A0A182GIS9"," CCG010630.1","AALF010630",NA,"protein_coding","Aedes albopictus","JXUM01S076365",2e-06,"",51.92,1,1042,924,1042,16,102,1
+"A0A182GRS0"," CCG028562.1","AALF028562",NA,"protein_coding","Aedes albopictus","JXUM01S100710",2e-06,"",53.21,1,778,507,778,172,99,1
+"A0A023ER40"," RP20_CCG016231","AALF016231",NA,"protein_coding","Aedes albopictus","JXUM01S003720",3e-06,"",52.28,1,7573,1005,7218,180,6033,2
+"A0A182GBZ7"," CCG007240.1","AALF007240",NA,"protein_coding","Aedes albopictus","JXUM01S013165",3e-06,"",46.78,1,1071,555,1071,228,288,1
+"A0A182H5N2"," CCG022238.1","AALF022238",NA,"protein_coding","Aedes albopictus","JXUM01S027506",5e-06,"",55.91,1,1320,927,1320,105,288,1
+"A0A1W7R6I8"," RP20_CCG007238","AALF007238",NA,"protein_coding","Aedes albopictus","JXUM01S001687",7e-06,"",47.64,1,2309,1833,2309,400,76,1
+"A0A182G3H7"," CCG002133.1","AALF002133",NA,"protein_coding","Aedes albopictus","JXUM01S009159",1.9e-05,"",40.35,1,12353,1395,11878,10038,445,5
+"A0A182HB08"," CCG025628.1","AALF025628",NA,"protein_coding","Aedes albopictus","JXUM01S093635",2e-05,"",53.23,1,496,330,496,58,108,1
+"A0A182GBK9"," RP20_CCG007010","AALF007010",NA,"protein_coding","Aedes albopictus","JXUM01S129862",3.2e-05,"",54.46,1,784,162,784,276,346,1
+"A0A182GZ59"," RP20_CCG018493","AALF018493",NA,"protein_coding","Aedes albopictus","JXUM01S004347",3.2e-05,"",38.22,1,47501,564,10796,9199,1033,3
+"A0A182HEI5"," RP20_CCG027910","AALF027910",NA,"protein_coding","Aedes albopictus","JXUM01S007646",4.2e-05,"",47.06,1,1993,786,1993,222,985,1
+"A0A182H373"," RP20_CCG010842","AALF010842",NA,"protein_coding","Aedes albopictus","JXUM01S076454",4.4e-05,"",46.45,1,3012,783,3012,786,1443,1
+"A0A182G6A9"," CCG003891.1","AALF003891",NA,"protein_coding","Aedes albopictus","JXUM01S010314",6.6e-05,"",47.67,1,4271,1818,4271,1042,1411,1
+"A0A182GXQ2"," CCG002789.1","AALF002789",NA,"protein_coding","Aedes albopictus","JXUM01S109778",0.000162,"",47.17,1,600,330,600,30,240,1
+"A0A182HF73"," CCG028398.1","AALF028398",NA,"protein_coding","Aedes albopictus","JXUM01S007946",0.00018,"",47.6,1,3771,2865,3771,205,701,1
+"A0A1W7R6K0"," RP20_CCG020479","AALF020479",NA,"protein_coding","Aedes albopictus","JXUM01S085927",0.000196,"",47.34,1,1354,1047,1354,283,24,1
+"A0A182G7L0"," RP20_CCG004693","AALF004693",NA,"protein_coding","Aedes albopictus","JXUM01S010913",0.000218,"",48.39,1,1771,1176,1771,NA,595,1
+"A0A182H9T9"," RP20_CCG024906","AALF024906",NA,"protein_coding","Aedes albopictus","JXUM01S006416",0.000325,"",46.2,1,855,447,781,19,315,2
+"A0A182HFA2"," CCG028433.1","AALF028433",NA,"protein_coding","Aedes albopictus","JXUM01S007933",0.000329,"",41.33,1,39474,813,1722,98,811,3
+"A0A182GXQ2"," CCG017736.1","AALF017736",NA,"protein_coding","Aedes albopictus","JXUM01S082025",0.00042,"",47.85,1,767,330,767,152,285,1
+"A0A182GPT4"," CCG013590.1","AALF013590",NA,"protein_coding","Aedes albopictus","JXUM01S003009",0.000498,"Glutathione synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182GPT4]",39.64,1,26608,1488,2808,371,949,6
+"A0A182GDL1"," CCG008080.1","AALF008080",NA,"protein_coding","Aedes albopictus","JXUM01S013935",0.000521,"",49.7,1,1690,867,1690,350,473,1
+"A0A182HEI5"," RP20_CCG015806","AALF015806",NA,"protein_coding","Aedes albopictus","JXUM01S080547",0.000568,"",47.48,1,1470,786,1470,425,259,1
+"A0A182GJ49"," RP20_CCG018178","AALF018178",NA,"protein_coding","Aedes albopictus","JXUM01S082618",0.000614,"",52.32,1,948,720,948,8,220,1
+"A0A182G8M4"," RP20_CCG005251","AALF005251",NA,"protein_coding","Aedes albopictus","JXUM01S001443",0.000717,"",42.77,1,27240,3300,25469,21865,304,4
+"A0A182H432"," RP20_CCG021305","AALF021305",NA,"protein_coding","Aedes albopictus","JXUM01S087542",0.000755,"",49.49,1,588,405,588,129,54,1
+"A0A182GER1"," RP20_CCG022150","AALF022150",NA,"protein_coding","Aedes albopictus","JXUM01S089134",0.000793,"Histone H2B [Source:UniProtKB/TrEMBL;Acc:A0A182GER1]",58.3,1,482,390,482,34,58,1
+"A0A182GN18"," CCG012762.1","AALF012762",NA,"protein_coding","Aedes albopictus","JXUM01S077544",0.000901,"",48.77,1,892,450,892,207,235,1
+"A0A182GXI4"," RP20_CCG017612","AALF017612",NA,"protein_coding","Aedes albopictus","JXUM01S023495",0.000903,"",51.38,1,726,309,726,64,353,1
+"A0A182GFK3"," RP20_CCG009046","AALF009046",NA,"protein_coding","Aedes albopictus","JXUM01S001968",0.001199,"",40.37,1,13118,936,1274,155,183,2
+"A0A182G1U3"," CCG000983.1","AALF000983",NA,"protein_coding","Aedes albopictus","JXUM01S008543",0.001249,"",37.55,1,38343,957,18455,581,16917,3
+"A0A182G3H4"," CCG002124.1","AALF002124",NA,"protein_coding","Aedes albopictus","JXUM01S009157",0.001269,"",48.56,1,2846,831,2846,632,1383,1
+"A0A182H0V3"," CCG019454.1","AALF019454",NA,"protein_coding","Aedes albopictus","JXUM01S004604",0.001447,"",42.21,1,26380,6345,8531,90,2096,9
+"A0A182GPM8"," CCG013514.1","AALF013514",NA,"protein_coding","Aedes albopictus","JXUM01S078155",0.001466,"",46.09,1,627,273,627,163,191,1
+"A0A023EQ28"," RP20_CCG011773","AALF011773",NA,"protein_coding","Aedes albopictus","JXUM01S000279",0.001517,"",50.43,1,934,756,934,3,175,1
+"A0A182GA62"," CCG006184.1","AALF006184",NA,"protein_coding","Aedes albopictus","JXUM01S012155",0.00154,"",49.79,1,2370,309,2370,1193,868,1
+"A0A182GF70"," RP20_CCG008879","AALF008879",NA,"protein_coding","Aedes albopictus","JXUM01S001950",0.001651,"type IV inositol 5-phosphatase [Source:Projected from Aedes aegypti (AAEL001367) VB Community Annotation]",41.27,1,6175,1968,2568,39,561,3
+"A0A023EWL3"," CCG004385.1","AALF004385",NA,"protein_coding","Aedes albopictus","JXUM01S010687",0.00166,"",45.55,1,1236,306,1236,498,432,1
+"A0A182GLR2"," CCG012103.1","AALF012103",NA,"protein_coding","Aedes albopictus","JXUM01S002639",0.001989,"",41.37,1,452,156,382,125,101,2
+"A0A182G131"," RP20_CCG000405","AALF000405",NA,"protein_coding","Aedes albopictus","JXUM01S008236",0.002045,"",43.91,1,22440,1182,1955,300,473,3
+"A0A182H6J3"," CCG022771.1","AALF022771",NA,"protein_coding","Aedes albopictus","JXUM01S005666",0.002156,"",46.55,1,27442,5712,27312,141,21459,3
+"A0A182G9F1"," CCG005712.1","AALF005712",NA,"protein_coding","Aedes albopictus","JXUM01S011768",0.002167,"",46.31,1,18481,3285,5521,99,2137,7
+"A0A023EQ16"," CCG008406.1","AALF008406",NA,"protein_coding","Aedes albopictus","JXUM01S014303",0.002221,"",46.66,1,1601,822,1601,81,698,1
+"A0A182GIV3"," CCG010658.1","AALF010658",NA,"protein_coding","Aedes albopictus","JXUM01S016374",0.002348,"",44.05,1,1755,1161,1632,375,96,3
+"A0A1W7R5W0"," RP20_CCG022391.3","AALF022391",NA,"protein_coding","Aedes albopictus","JXUM01S005539",0.002418,"",50.96,1,3073,1914,3073,267,892,1
+"A0A182H742"," RP20_CCG023148","AALF023148",NA,"protein_coding","Aedes albopictus","JXUM01S005796",0.002442,"",46.92,1,1963,1107,1899,535,257,2
+"A0A182H9Z6"," RP20_CCG025013","AALF025013",NA,"protein_coding","Aedes albopictus","JXUM01S006437",0.002563,"",50.47,1,1605,840,1605,14,751,1
+"A0A182GBE2"," CCG006899.1","AALF006899",NA,"protein_coding","Aedes albopictus","JXUM01S075212",0.002673,"",42.18,1,8776,2247,4362,166,1949,5
+"A0A182GEQ8"," CCG008643.1","AALF008643",NA,"protein_coding","Aedes albopictus","JXUM01S014517",0.002676,"",45.8,1,1439,528,1376,469,379,2
+"A0A023EX67"," CCG008536.1","AALF008536",NA,"protein_coding","Aedes albopictus","JXUM01S014417",0.002726,"",44.56,1,1508,387,1508,460,661,1
+"A0A182GJ96"," RP20_CCG010898","AALF010898",NA,"protein_coding","Aedes albopictus","JXUM01S002363",0.002752,"",45.22,1,4334,1221,4265,2398,646,2
+"A0A182GCB3"," RP20_CCG007416","AALF007416",NA,"protein_coding","Aedes albopictus","JXUM01S000176",0.002953,"",48.71,1,1359,942,1359,190,227,1
+"A0A023EHB0"," CCG026399.1","AALF026399",NA,"protein_coding","Aedes albopictus","JXUM01S006995",0.002958,"Putative gtpase [Source:UniProtKB/TrEMBL;Acc:A0A023EJK9]",39.29,1,67371,630,2100,689,781,6
+"A0A182GJ49"," CCG010799.1","AALF010799",NA,"protein_coding","Aedes albopictus","JXUM01S016503",0.00306,"",52.22,1,992,720,992,43,229,1
+"A0A182GA53"," RP20_CCG006156.2","AALF006156",NA,"protein_coding","Aedes albopictus","JXUM01S000165",0.003093,"",43.38,1,3817,1290,3559,784,1485,2
+"A0A182G335"," CCG001813.1","AALF001813",NA,"protein_coding","Aedes albopictus","JXUM01S008999",0.003245,"",46.6,1,970,549,970,145,276,1
+"A0A182G8Y8"," RP20_CCG005431","AALF005431",NA,"protein_coding","Aedes albopictus","JXUM01S011498",0.003444,"",50.56,1,886,435,886,185,266,1
+"A0A182GI96"," CCG010372.1","AALF010372",NA,"protein_coding","Aedes albopictus","JXUM01S002266",0.003675,"",54.77,1,703,336,703,115,252,1
+"A0A182GHZ4"," RP20_CCG010242","AALF010242",NA,"protein_coding","Aedes albopictus","JXUM01S002227",0.003701,"",45.29,1,13959,2226,13556,34,11296,3
+"A0A182HCT5"," RP20_CCG026764.2","AALF026764",NA,"protein_coding","Aedes albopictus","JXUM01S007171",0.003943,"",49,1,28747,2460,17708,3345,11903,8
+"A0A182G3M2"," CCG002202.2","AALF002202",NA,"protein_coding","Aedes albopictus","JXUM01S009427",0.00404,"",44.55,1,1522,855,1522,31,636,1
+"A0A182G7R3"," RP20_CCG004768","AALF004768",NA,"protein_coding","Aedes albopictus","JXUM01S010962",0.004137,"",46.98,1,1392,675,1392,56,661,1
+"A0A023ETQ3"," CCG000070.1","AALF000070",NA,"protein_coding","Aedes albopictus","JXUM01S008059",0.00416,"dtdp-glucose 4-6-dehydratase [Source:Projected from Aedes aegypti (AAEL006236) VB Community Annotation]",40.76,1,24227,999,2584,265,1320,3
+"A0A182G6V0"," RP20_CCG004235","AALF004235",NA,"protein_coding","Aedes albopictus","JXUM01S075115",0.004218,"",53.97,1,958,441,958,204,313,1
+"A0A182H3W3"," RP20_CCG021186","AALF021186",NA,"protein_coding","Aedes albopictus","JXUM01S005112",0.004402,"",37.79,1,31881,666,11720,10862,192,3
+"A0A182H2J8"," RP20_CCG020428","AALF020428",NA,"protein_coding","Aedes albopictus","JXUM01S004873",0.004404,"",42.8,1,37929,2283,19874,2242,15349,6
+"A0A182GFF2"," RP20_CCG008978","AALF008978",NA,"protein_coding","Aedes albopictus","JXUM01S014762",0.004438,"",49.83,1,1162,327,1162,373,462,1
+"A0A023EVU3"," RP20_CCG021651","AALF021651",NA,"protein_coding","Aedes albopictus","JXUM01S000066",0.004516,"Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A. [Source:Projected from Aedes aegypti (AAEL013936) VB Community Annotation]",42.4,1,13993,1509,13993,335,12149,1
+"A0A182G2Q0"," RP20_CCG001575","AALF001575",NA,"protein_coding","Aedes albopictus","JXUM01S001125",0.004776,"E3 ubiquitin-protein ligase parkin [Source:UniProtKB/TrEMBL;Acc:A0A182G2Q0]",49.19,1,1911,1452,1716,105,159,4
+"A0A182H3K8"," RP20_CCG020989","AALF020989",NA,"protein_coding","Aedes albopictus","JXUM01S005061",0.00483,"",45.09,1,1590,1281,1590,87,222,1
+"A0A182GEC6"," CCG008456.1","AALF008456",NA,"protein_coding","Aedes albopictus","JXUM01S075480",0.004915,"",48.79,1,906,402,906,134,370,1
+"A0A182GL68"," RP20_CCG011827","AALF011827",NA,"protein_coding","Aedes albopictus","JXUM01S002561",0.005062,"",41.62,1,21184,1473,3057,221,1363,4
+"A0A182HEW6"," RP20_CCG028181","AALF028181",NA,"protein_coding","Aedes albopictus","JXUM01S007792",0.00507,"ubiquitin-conjugating enzyme E2-230k [Source:Projected from Aedes aegypti (AAEL006073) VB Community Annotation]",40.48,1,7925,3738,4957,24,1195,7
+"A0A182GBV7"," CCG007174.1","AALF007174",NA,"protein_coding","Aedes albopictus","JXUM01S013112",0.005071,"",47.47,1,9752,2388,2654,56,210,4
+"A0A182GCE9"," CCG007463.1","AALF007463",NA,"protein_coding","Aedes albopictus","JXUM01S013355",0.005211,"",49.04,1,1868,786,1868,211,871,1
+"A0A182GSA0"," RP20_CCG014850","AALF014850",NA,"protein_coding","Aedes albopictus","JXUM01S003326",0.005256,"",39.64,1,31008,843,31008,29220,945,1
+"A0A023EIZ6"," RP20_CCG002219","AALF002219",NA,"protein_coding","Aedes albopictus","JXUM01S009222",0.005263,"Putative splicing factor [Source:UniProtKB/TrEMBL;Acc:A0A023EIZ6]",41.02,1,14850,540,13870,204,13126,3
+"A0A182GER1"," RP20_CCG008646","AALF008646",NA,"protein_coding","Aedes albopictus","JXUM01S014526",0.005517,"Histone H2B [Source:UniProtKB/TrEMBL;Acc:A0A182GER1]",58.22,1,450,390,450,34,26,1
+"A0A182GUV3"," RP20_CCG016160","AALF016160",NA,"protein_coding","Aedes albopictus","JXUM01S003697",0.00568,"activating signal cointegrator 1 complex subunit 3, helc1 [Source:Projected from Aedes aegypti lvpagwg (AAEL014063) VB Community Annotation]",42.18,1,22797,6540,7047,281,226,11
+"A0A182G4J4"," CCG002759.1","AALF002759",NA,"protein_coding","Aedes albopictus","JXUM01S009575",0.005714,"Acetyl-coenzyme A synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182G4J4]",43.22,1,8135,1572,2887,111,1204,6
+"A0A182H6R2"," RP20_CCG022878","AALF022878",NA,"protein_coding","Aedes albopictus","JXUM01S005718",0.005765,"",39.73,1,33222,2052,3177,158,967,5
+"A0A023EVG1"," RP20_CCG000617","AALF000617",NA,"protein_coding","Aedes albopictus","JXUM01S001064",0.006048,"exonuclease nef-sp [Source:Projected from Aedes aegypti (AAEL006744) VB Community Annotation]",44.25,1,14945,1995,5314,346,2973,2
+"A0A023EQ28"," CCG026396.1","AALF026396",NA,"protein_coding","Aedes albopictus","JXUM01S000872",0.006061,"taxilin [Source:Projected from Aedes aegypti (AAEL002374) VB Community Annotation]",46.75,1,7699,1575,2108,406,127,5
+"A0A023EVD7"," RP20_CCG003480","AALF003480",NA,"protein_coding","Aedes albopictus","JXUM01S010038",0.006075,"",53.49,1,4433,4128,4128,NA,NA,2
+"A0A023EKB1"," RP20_CCG022468.2","AALF022468",NA,"protein_coding","Aedes albopictus","JXUM01S005570",0.006128,"Mediator of RNA polymerase II transcription subunit [Source:Projected from Aedes aegypti (AAEL006934) VB Community Annotation]",39.02,1,2112,513,1877,40,1324,3
+"A0A182H100"," CCG019543.1","AALF019543",NA,"protein_coding","Aedes albopictus","JXUM01S004623",0.006327,"",45.29,1,956,819,956,50,87,1
+"A0A023EVB3"," RP20_CCG020703","AALF020703",NA,"protein_coding","Aedes albopictus","JXUM01S004963",0.006372,"Replication protein A subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H338]",46.74,1,20127,1122,2744,1108,514,2
+"A0A023EUF7"," RP20_CCG006265","AALF006265",NA,"protein_coding","Aedes albopictus","JXUM01S012260",0.00639,"Methionine aminopeptidase 2 [Source:UniProtKB/TrEMBL;Acc:A0A182GAB6]",48.52,1,1863,1026,1456,366,64,2
+"A0A182H657"," RP20_CCG022524","AALF022524",NA,"protein_coding","Aedes albopictus","JXUM01S000669",0.00657,"",46.38,1,8153,4884,8153,838,2431,1
+"A0A182H8Q6"," CCG024211.1","AALF024211",NA,"protein_coding","Aedes albopictus","JXUM01S000748",0.006574,"",40.78,1,136225,3537,120333,113609,3187,6
+"A0A182HCF0"," CCG026525.1","AALF026525",NA,"protein_coding","Aedes albopictus","JXUM01S007071",0.006716,"",40.31,1,33617,2307,7620,1859,3454,5
+"A0A182G948"," CCG003160.1","AALF003160",NA,"protein_coding","Aedes albopictus","JXUM01S009813",0.006865,"",50.82,1,490,315,425,39,71,2
+"A0A182GNY6"," CCG013178.1","AALF013178",NA,"protein_coding","Aedes albopictus","JXUM01S002908",0.006942,"",49.1,1,1224,624,1224,68,532,1
+"A0A023EUW6"," RP20_CCG006965","AALF006965",NA,"protein_coding","Aedes albopictus","JXUM01S012880",0.006945,"glycerol-3-phosphate acyltransferase [Source:Projected from Aedes aegypti (AAEL012743) VB Community Annotation]",45.7,1,3809,2115,2951,394,442,5
+"A0A182GY58"," CCG017991.1","AALF017991",NA,"protein_coding","Aedes albopictus","JXUM01S004209",0.007045,"",41.08,1,24264,429,1678,1183,66,3
+"A0A182H691"," CCG007915.1","AALF007915",NA,"protein_coding","Aedes albopictus","JXUM01S013779",0.007061,"",43.75,1,1511,936,1511,73,502,1
+"A0A023EJP8"," CCG003534.1","AALF003534",109417765,"protein_coding","Aedes albopictus","JXUM01S001278",0.007065,"ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]",42.23,1,3374,639,3374,230,2505,1
+"A0A182GGV5"," CCG009682.3","AALF009682",NA,"protein_coding","Aedes albopictus","JXUM01S000232",0.007528,"",46.59,1,1232,786,1232,30,416,1
+"A0A182G7Q7"," RP20_CCG004754","AALF004754",NA,"protein_coding","Aedes albopictus","JXUM01S010960",0.00774,"",39.76,1,13211,1689,13211,293,11229,1
+"A0A182HEH2"," RP20_CCG027878","AALF027878",NA,"protein_coding","Aedes albopictus","JXUM01S007625",0.00792,"",42.66,1,16670,3963,4571,418,190,4
+"A0A182G5Z9"," RP20_CCG003706","AALF003706",NA,"protein_coding","Aedes albopictus","JXUM01S010189",0.007929,"",44.36,1,20026,1440,3034,595,999,6
+"A0A023EVH8"," CCG018958.1","AALF018958",NA,"protein_coding","Aedes albopictus","JXUM01S004473",0.00795,"",38.18,1,12500,3099,4673,82,1492,2
+"A0A023EDA0"," RP20_CCG007976","AALF007976",NA,"protein_coding","Aedes albopictus","JXUM01S013864",0.008181,"",47.05,1,2674,1221,2612,267,1124,2
+"A0A182H6Y9"," CCG023047.1","AALF023047",NA,"protein_coding","Aedes albopictus","JXUM01S005763",0.008184,"",39.36,1,9572,6777,9572,87,2708,1
+"A0A182GJV2"," RP20_CCG011195","AALF011195",NA,"protein_coding","Aedes albopictus","JXUM01S002426",0.008715,"",47.1,1,2066,258,2066,973,835,1
+"A0A182GAZ9"," RP20_CCG006673","AALF006673",NA,"protein_coding","Aedes albopictus","JXUM01S012590",0.008915,"",47.92,1,4593,2487,4593,71,2035,1
+"A0A023EVR1"," RP20_CCG015580","AALF015580",NA,"protein_coding","Aedes albopictus","JXUM01S003558",0.009179,"cyclophilin-6 [Source:Projected from Aedes aegypti (AAEL005690) VB Community Annotation]",51.65,1,2968,1986,2968,234,748,1
+"A0A023EQQ3"," CCG012626.1","AALF012626",109424709,"protein_coding","Aedes albopictus","JXUM01S002772",0.009472,"Putative fatty acid desaturase [Source:UniProtKB/TrEMBL;Acc:A0A023EQQ3]",40.11,1,27517,966,27517,405,26146,1
+"A0A182GR17"," CCG014226.1","AALF014226",NA,"protein_coding","Aedes albopictus","JXUM01S003238",0.009704,"",44.37,1,10276,1965,10046,86,7995,3
+"A0A023EU44"," CCG023352.2","AALF023352",NA,"protein_coding","Aedes albopictus","JXUM01S000070",0.009754,"",39.14,1,101062,1932,23736,21784,20,6
+"A0A182GUI2"," RP20_CCG015997","AALF015997",NA,"protein_coding","Aedes albopictus","JXUM01S003656",0.009793,"uracil phosphoribosyltransferase [Source:Projected from Aedes aegypti (AAEL012973) VB Community Annotation]",38.96,1,27569,678,1738,648,412,4
+"A0A182GB50"," RP20_CCG006763","AALF006763",NA,"protein_coding","Aedes albopictus","JXUM01S012694",0.009927,"",44.95,1,2872,1359,2872,174,1339,1
+"A0A182G2C1"," CCG001321.1","AALF001321",NA,"protein_coding","Aedes albopictus","JXUM01S008732",0.010126,"ezrin-binding protein pace-1 [Source:Projected from Aedes aegypti (AAEL003282) VB Community Annotation]",48.22,1,2758,2067,2393,154,172,2
+"A0A182G2N8"," RP20_CCG001556","AALF001556",NA,"protein_coding","Aedes albopictus","JXUM01S008863",0.01021,"",41.66,1,7966,1917,6012,9,4086,9
+"A0A182GKK8"," CCG011530.1","AALF011530",NA,"protein_coding","Aedes albopictus","JXUM01S002485",0.010274,"",44.25,1,5720,1509,5720,119,4092,1
+"A0A023ETI6"," RP20_CCG021835","AALF021835",109413675,"protein_coding","Aedes albopictus","JXUM01S005326",0.010357,"BiP/GRP78 [Source:UniProtKB/TrEMBL;Acc:A0A023EUP2]",47.28,1,6417,1971,6417,3882,564,1
+"A0A182GD72"," CCG016282.1","AALF016282",NA,"protein_coding","Aedes albopictus","JXUM01S003728",0.010545,"protein cactus (TOLL pathway signalling)",42.84,1,19511,1182,2945,788,975,5
+"A0A182H9L9"," RP20_CCG024773","AALF024773",NA,"protein_coding","Aedes albopictus","JXUM01S006365",0.010695,"",43.05,1,28108,2127,3594,253,1214,5
+"A0A023EWL3"," RP20_CCG007466","AALF007466",NA,"protein_coding","Aedes albopictus","JXUM01S013355",0.010865,"",50.44,1,1465,1062,1465,29,374,1
+"A0A023EUA3"," CCG025714.1","AALF025714",109411870,"protein_coding","Aedes albopictus","JXUM01S006698",0.010901,"",53.16,1,2421,2151,2421,20,250,1
+"A0A182HET5"," CCG028119.1","AALF028119",NA,"protein_coding","Aedes albopictus","JXUM01S007759",0.011247,"Apaf-1 Related Killer [Source:Projected from Aedes aegypti (AAEL000874) VB Community Annotation]",39.25,1,21611,4224,5089,12,853,5
+"A0A182G2Y4"," RP20_CCG001707","AALF001707",NA,"protein_coding","Aedes albopictus","JXUM01S008948",0.011367,"",42.54,1,12452,1320,9325,93,7912,2
+"A0A182GHU9"," RP20_CCG010187.2","AALF010187",NA,"protein_coding","Aedes albopictus","JXUM01S002224",0.011435,"",48.32,1,17664,7833,9057,381,843,10
+"A0A182H127"," CCG019577.1","AALF019577",NA,"protein_coding","Aedes albopictus","JXUM01S004624",0.01163,"",39.98,1,25680,642,16870,15050,1178,2
+"A0A182GVQ8"," CCG016632.1","AALF016632",NA,"protein_coding","Aedes albopictus","JXUM01S003842",0.0117,"",43.17,1,1193,480,1193,241,472,1
+"A0A182GSH8"," CCG014961.1","AALF014961",NA,"protein_coding","Aedes albopictus","JXUM01S003350",0.012008,"",38.74,1,56072,1716,15096,43,13337,3
+"A0A182GY39"," CCG017953.2","AALF017953",NA,"protein_coding","Aedes albopictus","JXUM01S004197",0.01219,"",50.83,1,5029,1314,5029,1384,2331,1
+"A0A182H9R1"," CCG024856.1","AALF024856",NA,"protein_coding","Aedes albopictus","JXUM01S006388",0.012344,"",48.29,1,1317,171,1317,582,564,1
+"A0A023EKU4"," RP20_CCG022906","AALF022906",109417716,"protein_coding","Aedes albopictus","JXUM01S005720",0.012546,"",40.43,1,26058,882,2265,534,849,6
+"A0A023EI86"," RP20_CCG019897","AALF019897",NA,"protein_coding","Aedes albopictus","JXUM01S004724",0.012625,"",41.65,1,51816,8505,29638,20634,499,8
+"A0A023EH14"," RP20_CCG000613","AALF000613",NA,"protein_coding","Aedes albopictus","JXUM01S008354",0.012721,"",47.33,1,972,471,972,81,420,1
+"A0A182H443"," CCG021323.2","AALF021323",NA,"protein_coding","Aedes albopictus","JXUM01S005166",0.012806,"",49.41,1,14879,4434,8572,83,4055,2
+"A0A023EKS2"," CCG016093.1","AALF016093",109397301,"protein_coding","Aedes albopictus","JXUM01S003684",0.012829,"Putative u2 snrnp splicing factor small subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EKS2]",40.94,1,2096,723,1136,119,294,3
+"A0A182G7F5"," CCG004603.1","AALF004603",NA,"protein_coding","Aedes albopictus","JXUM01S001384",0.012883,"brefeldin a-inhibited guanine nucleotide-exchange protein [Source:Projected from Aedes aegypti (AAEL013012) VB Community Annotation]",45.72,1,10700,4767,7551,325,2459,2
+"A0A182G473"," CCG002568.1","AALF002568",NA,"protein_coding","Aedes albopictus","JXUM01S009459",0.013003,"",41.93,1,16936,744,1067,204,119,3
+"A0A182GBI8"," CCG006980.1","AALF006980",NA,"protein_coding","Aedes albopictus","JXUM01S001647",0.013145,"",39.49,1,33347,5040,18332,12424,868,8
+"A0A182G8P0"," CCG005275.1","AALF005275",NA,"protein_coding","Aedes albopictus","JXUM01S011353",0.013236,"",53.54,1,3237,1458,3237,184,1595,1
+"A0A023EWM4"," CCG024488.1","AALF024488",NA,"protein_coding","Aedes albopictus","JXUM01S006255",0.013461,"",39.25,1,17249,2394,3832,120,1318,4
+"A0A182HBA1"," RP20_CCG025807","AALF025807",NA,"protein_coding","Aedes albopictus","JXUM01S006747",0.013717,"",42.74,1,964,276,884,338,270,2
+"A0A182G151"," CCG000437.1","AALF000437",NA,"protein_coding","Aedes albopictus","JXUM01S000106",0.013785,"",38.47,1,10509,339,673,166,168,3
+"A0A182H9R2"," CCG024857.1","AALF024857",NA,"protein_coding","Aedes albopictus","JXUM01S006388",0.013821,"",48.36,1,4049,2469,4049,841,739,1
+"A0A023EVH6"," RP20_CCG001347","AALF001347",NA,"protein_coding","Aedes albopictus","JXUM01S008758",0.013932,"Serine Protease Inhibitor (serpin)  likely cleavage at S/M. [Source:Projected from Aedes aegypti (AAEL014141) VB Community Annotation]",44.8,1,2165,1392,1519,25,102,2
+"A0A023ERV3"," RP20_CCG010480","AALF010480",109405207,"protein_coding","Aedes albopictus","JXUM01S002282",0.014092,"adiponectin receptor [Source:Projected from Aedes aegypti (AAEL014717) VB Community Annotation]",39.39,1,33018,1260,29624,27258,1106,4
+"A0A182HBL3"," CCG026001.1","AALF026001",NA,"protein_coding","Aedes albopictus","JXUM01S006826",0.014941,"",51.23,1,691,330,691,51,310,1
+"A0A182GGA9"," CCG009412.1","AALF009412",NA,"protein_coding","Aedes albopictus","JXUM01S000023",0.014996,"",45.44,1,559,228,495,29,238,2
+"A0A182HCS9"," RP20_CCG026758","AALF026758",NA,"protein_coding","Aedes albopictus","JXUM01S007169",0.016235,"",44.24,1,2308,1473,2308,68,767,1
+"A0A182H480"," RP20_CCG021374","AALF021374",NA,"protein_coding","Aedes albopictus","JXUM01S005187",0.016432,"rhoGTPase [Source:Projected from Aedes aegypti (AAEL014636) VB Community Annotation]",42,1,52149,2250,13447,176,11021,12
+"A0A182H6R0"," RP20_CCG022874","AALF022874",NA,"protein_coding","Aedes albopictus","JXUM01S005715",0.016527,"",51.26,1,1711,153,1711,709,849,1
+"A0A182HF62"," RP20_CCG028378","AALF028378",NA,"protein_coding","Aedes albopictus","JXUM01S001066",0.016718,"",46.94,1,1078,183,1078,472,423,1
+"A0A023EHR3"," RP20_CCG001576","AALF001576",109404945,"protein_coding","Aedes albopictus","JXUM01S001125",0.017016,"pre-mRNA cleavage factor im, 25kD subunit [Source:Projected from Aedes aegypti (AAEL001371) VB Community Annotation]",38.83,1,3989,693,1317,228,396,5
+"A0A182GPT7"," CCG013595.1","AALF013595",NA,"protein_coding","Aedes albopictus","JXUM01S003010",0.01728,"",39.77,1,10613,345,605,114,146,2
+"A0A182GVE2"," CCG016419.1","AALF016419",NA,"protein_coding","Aedes albopictus","JXUM01S003766",0.01742,"",50.65,1,689,237,689,135,317,1
+"A0A023EJE2"," RP20_CCG021582","AALF021582",NA,"protein_coding","Aedes albopictus","JXUM01S000625",0.017449,"",45.16,1,1734,936,1734,99,699,1
+"A0A182HC27"," RP20_CCG026317","AALF026317",NA,"protein_coding","Aedes albopictus","JXUM01S006951",0.017508,"trithorax protein ash2 [Source:Projected from Aedes aegypti (AAEL003771) VB Community Annotation]",40.26,1,18543,1590,9864,111,8163,5
+"A0A182GLV4"," CCG012161.1","AALF012161",NA,"protein_coding","Aedes albopictus","JXUM01S002660",0.017645,"",41.11,1,22565,2877,11696,6349,2470,6
+"A0A182H4Y9"," CCG021809.1","AALF021809",NA,"protein_coding","Aedes albopictus","JXUM01S005331",0.018141,"serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL000217) VB Community Annotation]",40.58,1,53614,2883,30475,26871,721,13
+"A0A023EQY6"," RP20_CCG005310.2","AALF005310",NA,"protein_coding","Aedes albopictus","JXUM01S000187",0.018265,"Non-specific serine/threonine protein kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GE93]",41.29,1,31894,4179,5113,789,145,6
+"A0A182GBK3"," CCG007000.1","AALF007000",NA,"protein_coding","Aedes albopictus","JXUM01S001650",0.01836,"",40.43,1,25428,1227,2755,645,883,6
+"A0A182G179"," CCG000519.1","AALF000519",NA,"protein_coding","Aedes albopictus","JXUM01S001049",0.018472,"",41.86,1,700,333,700,166,201,1
+"A0A023EVH6"," CCG021652.1","AALF021652",NA,"protein_coding","Aedes albopictus","JXUM01S000066",0.018568,"",49.46,1,831,597,831,128,106,1
+"A0A182H845"," CCG023790.1","AALF023790",NA,"protein_coding","Aedes albopictus","JXUM01S006008",0.018714,"",40.24,1,23703,1716,23208,188,21304,4
+"A0A182G948"," RP20_CCG005538","AALF005538",NA,"protein_coding","Aedes albopictus","JXUM01S011598",0.019043,"",50.08,1,633,315,568,62,191,2
+"A0A182H3K3"," CCG020979.1","AALF020979",109408464,"protein_coding","Aedes albopictus","JXUM01S005051",0.019047,"U2 snRNP auxiliary factor large subunit [Source:UniProtKB/TrEMBL;Acc:A0A182H3K3]",40.65,1,13061,1260,2074,154,660,6
+"A0A182G5Y8"," RP20_CCG003693","AALF003693",NA,"protein_coding","Aedes albopictus","JXUM01S001292",0.019261,"protein phosphatase-5 [Source:Projected from Aedes aegypti (AAEL005080) VB Community Annotation]",38.77,1,35562,1179,35225,1093,32953,6
+"A0A182GRR4"," RP20_CCG014586","AALF014586",NA,"protein_coding","Aedes albopictus","JXUM01S003258",0.019414,"calcium/calmodulin-dependent serine protein kinase membrane-associated guanylate kinase (cask) [Source:Projected from Aedes aegypti (AAEL009937) VB Community Annotation]",40.98,1,20549,1398,2902,790,714,7
+"A0A182GTM6"," RP20_CCG015567","AALF015567",NA,"protein_coding","Aedes albopictus","JXUM01S003538",0.019421,"Cystathionine beta-synthase [Source:UniProtKB/TrEMBL;Acc:A0A182GTM6]",38.95,1,30005,1464,29822,27975,383,4
+"A0A023EX49"," CCG000245.1","AALF000245",NA,"protein_coding","Aedes albopictus","JXUM01S008159",0.019464,"suppressor of actin (sac) [Source:Projected from Aedes aegypti (AAEL007660) VB Community Annotation]",50.87,1,2583,1785,2160,171,204,6
+"A0A182GZ82"," RP20_CCG018534","AALF018534",NA,"protein_coding","Aedes albopictus","JXUM01S004363",0.019512,"",50.11,1,942,384,942,269,289,1
+"A0A182G3R8"," CCG002289.1","AALF002289",NA,"protein_coding","Aedes albopictus","JXUM01S009253",0.019553,"",44.7,1,11977,2088,4100,12,2000,7
+"A0A182H812"," CCG023740.2","AALF023740",NA,"protein_coding","Aedes albopictus","JXUM01S005995",0.019872,"",38.41,1,37539,2448,3360,95,817,6
+"A0A182HB25"," CCG025658.1","AALF025658",NA,"protein_coding","Aedes albopictus","JXUM01S006682",0.01992,"",45.78,1,6309,3606,6309,661,2042,1
+"A0A023EY96"," CCG004387.1","AALF004387",NA,"protein_coding","Aedes albopictus","JXUM01S010692",0.019986,"importin beta-4 [Source:Projected from Aedes aegypti (AAEL010698) VB Community Annotation]",42.07,1,7556,3108,3982,279,595,5
+"A0A182G2A3"," RP20_CCG001269","AALF001269",NA,"protein_coding","Aedes albopictus","JXUM01S008683",0.020299,"",40.28,1,21179,1341,8017,741,5935,3
+"A0A182GFX2"," CCG009226.1","AALF009226",NA,"protein_coding","Aedes albopictus","JXUM01S002015",0.020315,"",40.26,1,45223,2874,21237,16959,1404,8
+"A0A182H922"," CCG024430.1","AALF024430",NA,"protein_coding","Aedes albopictus","JXUM01S006224",0.020654,"",37.79,1,73716,402,50226,42816,7008,3
+"A0A023EHR1"," RP20_CCG011532","AALF011532",109622449,"protein_coding","Aedes albopictus","JXUM01S002485",0.020855,"",43.97,1,9192,591,9192,95,8506,1
+"A0A182GBT2"," RP20_CCG007128","AALF007128",NA,"protein_coding","Aedes albopictus","JXUM01S001676",0.020962,"",42.32,1,55965,2919,15404,12006,479,7
+"A0A023EWS1"," RP20_CCG000855","AALF000855",NA,"protein_coding","Aedes albopictus","JXUM01S001084",0.021411,"Phospholipid-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182G1N5]",43.51,1,14272,2979,5536,815,1742,8
+"A0A023EKJ7"," RP20_CCG003712","AALF003712",109432996,"protein_coding","Aedes albopictus","JXUM01S000140",0.021859,"",40.67,1,22638,828,22503,20948,727,3
+"A0A182H0G0"," RP20_CCG019204","AALF019204",NA,"protein_coding","Aedes albopictus","JXUM01S004533",0.022109,"",48.3,1,824,165,824,265,394,1
+"A0A182GJE9"," RP20_CCG010977","AALF010977",NA,"protein_coding","Aedes albopictus","JXUM01S000263",0.022343,"",42.82,1,14315,300,1734,623,811,2
+"A0A182G3Q9"," CCG002273.1","AALF002273",NA,"protein_coding","Aedes albopictus","JXUM01S001178",0.022695,"",47.44,1,2342,1311,2342,120,911,1
+"A0A023EH84"," CCG003410.1","AALF003410",NA,"protein_coding","Aedes albopictus","JXUM01S010000",0.02282,"Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023EJQ3]",41.4,1,2978,639,1812,272,901,3
+"A0A182HC76"," RP20_CCG026400.2","AALF026400",NA,"protein_coding","Aedes albopictus","JXUM01S007000",0.022897,"calpain 4, 6, 7, invertebrate [Source:Projected from Aedes aegypti lvpagwg (AAEL003963) VB Community Annotation]",39.4,1,11660,1698,3022,214,1110,2
+"A0A182G2M7"," CCG001521.1","AALF001521",NA,"protein_coding","Aedes albopictus","JXUM01S008835",0.022904,"",46.04,1,1047,474,1047,145,428,1
+"A0A182G944"," RP20_CCG005533","AALF005533",NA,"protein_coding","Aedes albopictus","JXUM01S001489",0.023283,"",41.1,1,78807,2412,40629,36449,1768,8
+"A0A182G7R5"," RP20_CCG004770","AALF004770",NA,"protein_coding","Aedes albopictus","JXUM01S010962",0.023393,"",45.57,1,779,513,779,21,245,1
+"A0A1W7R677"," CCG027228.2","AALF027228",NA,"protein_coding","Aedes albopictus","JXUM01S007384",0.02342,"",45.39,1,1324,1143,1324,154,27,1
+"A0A023EUS3"," RP20_CCG014779","AALF014779",NA,"protein_coding","Aedes albopictus","JXUM01S003308",0.023452,"zinc finger protein [Source:Projected from Aedes aegypti (AAEL013028) VB Community Annotation]",37.25,1,46006,1422,4131,503,2206,8
+"A0A023EV39"," RP20_CCG012513","AALF012513",NA,"protein_coding","Aedes albopictus","JXUM01S002744",0.023755,"5-aminolevulinate synthase [Source:UniProtKB/TrEMBL;Acc:A0A182GMH5]",38.87,1,30857,1716,30616,28567,333,2
+"A0A182HFD9"," CCG028516.1","AALF028516",NA,"protein_coding","Aedes albopictus","JXUM01S001009",0.023874,"",44.22,1,4796,1560,4796,919,2317,1
+"A0A182GM48"," CCG012306.1","AALF012306",NA,"protein_coding","Aedes albopictus","JXUM01S002697",0.023918,"",44.78,1,393,189,393,22,182,1
+"A0A182GXE6"," CCG017552.1","AALF017552",NA,"protein_coding","Aedes albopictus","JXUM01S004081",0.025053,"Transporter [Source:UniProtKB/TrEMBL;Acc:A0A182GXE6]",37.81,1,39462,906,4965,192,3867,6
+"A0A182G1W4"," RP20_CCG001034","AALF001034",NA,"protein_coding","Aedes albopictus","JXUM01S008581",0.025544,"Transcription elongation factor SPT5 [Source:UniProtKB/TrEMBL;Acc:A0A182G1W4]",45.88,1,11103,3267,11103,156,7680,1
+"A0A182G6N6"," CCG004132.1","AALF004132",NA,"protein_coding","Aedes albopictus","JXUM01S001342",0.025774,"development and differentiation-enhancing factor, ddef [Source:Projected from Aedes aegypti (AAEL003487) VB Community Annotation]",41.51,1,39596,3498,5895,18,2379,14
+"A0A023EN97"," RP20_CCG001108","AALF001108",NA,"protein_coding","Aedes albopictus","JXUM01S008598",0.026247,"",43.02,1,8482,3054,8482,787,4641,1
+"A0A182H2V6"," CCG020574.1","AALF020574",NA,"protein_coding","Aedes albopictus","JXUM01S004923",0.026286,"",42.82,1,60630,417,31885,12794,18674,3
+"A0A023EX39"," CCG007988.1","AALF007988",NA,"protein_coding","Aedes albopictus","JXUM01S001794",0.026947,"",42.31,1,80263,4077,46271,25563,16631,5
+"A0A182G7M8"," CCG004716.1","AALF004716",NA,"protein_coding","Aedes albopictus","JXUM01S010922",0.027103,"",49.31,1,1087,708,1087,11,368,1
+"A0A182GWG4"," CCG017036.1","AALF017036",NA,"protein_coding","Aedes albopictus","JXUM01S003936",0.027206,"",50.93,1,1667,1161,1667,133,373,1
+"A0A182H5B1"," RP20_CCG022019","AALF022019",NA,"protein_coding","Aedes albopictus","JXUM01S000646",0.027867,"",50,1,1316,507,1251,437,307,2
+"A0A182H0K9"," RP20_CCG019292","AALF019292",109400501,"protein_coding","Aedes albopictus","JXUM01S004552",0.027903,"",40.28,1,20390,903,3366,909,1554,3
+"A0A182G158"," RP20_CCG000451","AALF000451",NA,"protein_coding","Aedes albopictus","JXUM01S008268",0.02814,"",49.59,1,6705,6420,6705,62,223,1
+"A0A182HAT0"," RP20_CCG025481","AALF025481",NA,"protein_coding","Aedes albopictus","JXUM01S006614",0.028196,"",50.5,1,2095,1269,2038,212,557,2
+"A0A182H6T8"," RP20_CCG022918","AALF022918",NA,"protein_coding","Aedes albopictus","JXUM01S000687",0.028293,"DNA topoisomerase type I [Source:Projected from Aedes aegypti (AAEL002551) VB Community Annotation]",43.4,1,15032,2241,5323,932,2150,6
+"A0A182HDY6"," RP20_CCG027547","AALF027547",NA,"protein_coding","Aedes albopictus","JXUM01S007505",0.028294,"synaptotagmin [Source:Projected from Aedes aegypti (AAEL001167) VB Community Annotation]",37.77,1,25481,1542,2319,227,550,6
+"A0A182HEP7"," CCG028050.1","AALF028050",NA,"protein_coding","Aedes albopictus","JXUM01S000974",0.028352,"",39.83,1,12293,207,11774,187,11380,2
+"A0A023EIT4"," CCG027460.1","AALF027460",NA,"protein_coding","Aedes albopictus","JXUM01S007476",0.028364,"folate carrier protein [Source:Projected from Aedes aegypti (AAEL006879) VB Community Annotation]",43.18,1,14025,930,5231,375,3926,5
+"A0A182GCI0"," CCG007520.1","AALF007520",NA,"protein_coding","Aedes albopictus","JXUM01S001715",0.028373,"srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]",42.67,1,22321,1953,22321,706,19662,1
+"A0A182GPC3"," RP20_CCG013386","AALF013386",NA,"protein_coding","Aedes albopictus","JXUM01S000328",0.028391,"",43.32,1,14946,162,1850,777,911,2
+"A0A182HB86"," RP20_CCG025782","AALF025782",NA,"protein_coding","Aedes albopictus","JXUM01S006719",0.028525,"",47.76,1,18211,7209,14209,141,6859,5
+"A0A182GIB7"," CCG010397.1","AALF010397",NA,"protein_coding","Aedes albopictus","JXUM01S002257",0.028541,"",46.19,1,565,276,565,27,262,1
+"A0A182G3R0"," RP20_CCG002274","AALF002274",NA,"protein_coding","Aedes albopictus","JXUM01S001178",0.029098,"",38.89,1,4829,435,4755,3658,662,2
+"A0A023EWQ8"," RP20_CCG022348","AALF022348",NA,"protein_coding","Aedes albopictus","JXUM01S000665",0.02936,"chromosome region maintenance protein 1/exportin [Source:Projected from Aedes aegypti (AAEL001484) VB Community Annotation]",39.59,1,32451,3162,29237,24187,1888,7
+"A0A182HE06"," RP20_CCG018728","AALF018728",NA,"protein_coding","Aedes albopictus","JXUM01S000514",0.029624,"",42.78,1,35882,2769,2769,NA,NA,8
+"A0A182H044"," RP20_CCG019046.2","AALF019046",NA,"protein_coding","Aedes albopictus","JXUM01S004491",0.029837,"prolyl endopeptidase (prolyl oligopeptidase) [Source:Projected from Aedes aegypti (AAEL009142) VB Community Annotation]",43.26,1,21570,2343,4554,355,1856,8
+"A0A023ED66"," RP20_CCG004030","AALF004030",109400867,"protein_coding","Aedes albopictus","JXUM01S010387",0.030444,"60S ribosomal protein L36 [Source:UniProtKB/TrEMBL;Acc:A0A023ED66]",47.64,1,1058,342,763,309,112,2
+"A0A182H691"," RP20_CCG022584","AALF022584",NA,"protein_coding","Aedes albopictus","JXUM01S005608",0.030659,"",45.43,1,1182,936,1182,139,107,1
+"A0A182GIN1"," CCG010566.1","AALF010566",NA,"protein_coding","Aedes albopictus","JXUM01S002298",0.03084,"",48.68,1,1662,807,1553,118,628,2
+"A0A182H373"," RP20_CCG020763","AALF020763",NA,"protein_coding","Aedes albopictus","JXUM01S004982",0.031061,"",46.14,1,2163,783,2163,552,828,1
+"A0A023EWA4"," CCG012416.1","AALF012416",NA,"protein_coding","Aedes albopictus","JXUM01S002733",0.031294,"Coatomer subunit gamma [Source:UniProtKB/TrEMBL;Acc:A0A182GMC1]",46.73,1,14918,2637,3452,245,570,8
+"A0A182H197"," CCG019709.1","AALF019709",NA,"protein_coding","Aedes albopictus","JXUM01S004655",0.031429,"endo beta n-acetylglucosaminidase [Source:Projected from Aedes aegypti (AAEL010527) VB Community Annotation]",41.09,1,17287,1812,2730,380,538,3
+"A0A182H715"," RP20_CCG023105","AALF023105",NA,"protein_coding","Aedes albopictus","JXUM01S000696",0.031699,"",44.37,1,56242,2481,18387,40,15866,3
+"A0A182G0N5"," RP20_CCG000101.2","AALF000101",NA,"protein_coding","Aedes albopictus","JXUM01S001032",0.032046,"",38.39,1,72031,2412,7129,66,4651,8
+"A0A182G5D5"," CCG003330.1","AALF003330",NA,"protein_coding","Aedes albopictus","JXUM01S009939",0.032214,"",52.47,1,1435,702,1435,188,545,1
+"A0A182HDC0"," RP20_CCG027114","AALF027114",NA,"protein_coding","Aedes albopictus","JXUM01S007349",0.033521,"",45.27,1,4964,1185,4964,2091,1688,1
+"A0A182HDA0"," CCG027072.1","AALF027072",NA,"protein_coding","Aedes albopictus","JXUM01S007325",0.033728,"",42.26,1,2047,1332,2047,517,198,1
+"A0A182G7J1"," CCG004658.1","AALF004658",NA,"protein_coding","Aedes albopictus","JXUM01S001429",0.033742,"",39.09,1,17258,567,1514,539,408,3
+"A0A023EFB9"," RP20_CCG002728.2","AALF002728",NA,"protein_coding","Aedes albopictus","JXUM01S001222",0.03387,"Protein quiver [Source:UniProtKB/TrEMBL;Acc:A0A182G4H0]",35.85,1,13317,456,701,108,137,3
+"A0A182HBC4"," RP20_CCG025853","AALF025853",NA,"protein_coding","Aedes albopictus","JXUM01S000836",0.034043,"",44.61,1,993,528,993,235,230,1
+"A0A182H2D5"," RP20_CCG020336","AALF020336",NA,"protein_coding","Aedes albopictus","JXUM01S004840",0.034736,"",44.87,1,10939,2739,3483,495,249,6
+"A0A023EUT3"," RP20_CCG016956","AALF016956",NA,"protein_coding","Aedes albopictus","JXUM01S003919",0.035217,"Sodium/hydrogen exchanger [Source:UniProtKB/TrEMBL;Acc:A0A182GWA7]",42.43,1,18707,2055,2876,242,579,3
+"A0A182GX40"," CCG017397.1","AALF017397",NA,"protein_coding","Aedes albopictus","JXUM01S004042",0.035317,"WD-repeat protein [Source:Projected from Aedes aegypti (AAEL006552) VB Community Annotation]",41.16,1,37420,1878,37350,28370,7102,2
+"A0A182H540"," RP20_CCG021891","AALF021891",NA,"protein_coding","Aedes albopictus","JXUM01S000650",0.035717,"forkhead protein/ forkhead protein domain [Source:Projected from Aedes aegypti (AAEL003163) VB Community Annotation]",46.75,1,5012,1314,5012,1364,2334,1
+"A0A182G5F4"," RP20_CCG003366","AALF003366",NA,"protein_coding","Aedes albopictus","JXUM01S001267",0.035806,"",40,1,3840,2010,3840,1415,415,1
+"A0A182HDQ7"," RP20_CCG027396","AALF027396",NA,"protein_coding","Aedes albopictus","JXUM01S007463",0.036017,"",35.05,1,19543,1218,1549,52,279,2
+"A0A023ESH8"," RP20_CCG014657","AALF014657",NA,"protein_coding","Aedes albopictus","JXUM01S003275",0.03622,"",48.19,1,2297,1506,1968,323,139,6
+"A0A182GL31"," RP20_CCG011766","AALF011766",NA,"protein_coding","Aedes albopictus","JXUM01S002543",0.036282,"",42.61,1,5769,2784,5769,393,2592,1
+"A0A182G6W1"," CCG004255.1","AALF004255",109407248,"protein_coding","Aedes albopictus","JXUM01S001351",0.036511,"acyl-coa dehydrogenase [Source:Projected from Aedes aegypti (AAEL007555) VB Community Annotation]",48.35,1,2273,1269,2273,291,713,1
+"A0A182GCI3"," CCG007527.2","AALF007527",NA,"protein_coding","Aedes albopictus","JXUM01S001710",0.03702,"",38.19,1,106408,3933,20521,144,16444,9
+"A0A023EQG2"," CCG020002.2","AALF020002",NA,"protein_coding","Aedes albopictus","JXUM01S004743",0.037591,"signalosome subunit [Source:Projected from Aedes aegypti (AAEL014282) VB Community Annotation]",45.53,1,2460,1068,1655,140,447,3
+"A0A182G573"," RP20_CCG003196","AALF003196",NA,"protein_coding","Aedes albopictus","JXUM01S001245",0.037915,"AMP dependent coa ligase [Source:Projected from Aedes aegypti (AAEL005062) VB Community Annotation]",40.17,1,17331,1659,1918,253,6,4
+"A0A182GBY5"," RP20_CCG007211","AALF007211",NA,"protein_coding","Aedes albopictus","JXUM01S001682",0.038158,"",45.73,1,5362,2220,4986,377,2389,3
+"A0A182GV72"," RP20_CCG016323","AALF016323",NA,"protein_coding","Aedes albopictus","JXUM01S003741",0.038397,"",39.65,1,74753,1326,65605,63093,1186,7
+"A0A182HAG7"," CCG025297.1","AALF025297",NA,"protein_coding","Aedes albopictus","JXUM01S006530",0.038585,"",38.3,1,31496,1644,20856,3,19209,5
+"A0A1W7R695"," RP20_CCG022500","AALF022500",NA,"protein_coding","Aedes albopictus","JXUM01S005578",0.039279,"",46.54,1,2024,1749,2024,121,154,1
+"A0A182G352"," RP20_CCG001881","AALF001881",NA,"protein_coding","Aedes albopictus","JXUM01S009060",0.03949,"Kinesin-like protein [Source:UniProtKB/TrEMBL;Acc:A0A182G352]",49.89,1,4530,2610,4115,199,1306,4
+"A0A182GSS4"," CCG015800.2","AALF015800",NA,"protein_coding","Aedes albopictus","JXUM01S003609",0.039761,"Protein transport protein SEC23 [Source:UniProtKB/TrEMBL;Acc:A0A182GSS4]",43.21,1,15020,2316,3590,934,340,3
+"A0A182HBR2"," CCG026098.1","AALF026098",NA,"protein_coding","Aedes albopictus","JXUM01S000852",0.039772,"",41.21,1,27234,1632,26029,22083,2314,7
+"A0A023EYA6"," CCG025051.5","AALF025051",NA,"protein_coding","Aedes albopictus","JXUM01S006454",0.04108,"",39.64,1,32812,1926,3287,549,812,4
+"A0A023EMU8"," CCG001549.1","AALF001549",NA,"protein_coding","Aedes albopictus","JXUM01S008848",0.041099,"",50.64,1,6406,936,2102,549,617,4
+"A0A182HDC1"," CCG027115.1","AALF027115",NA,"protein_coding","Aedes albopictus","JXUM01S007349",0.041139,"poly a polymerase [Source:Projected from Aedes aegypti (AAEL005356) VB Community Annotation]",39.92,1,25432,2166,15692,151,13375,4
+"A0A023ETL6"," RP20_CCG008228","AALF008228",NA,"protein_coding","Aedes albopictus","JXUM01S001826",0.041234,"Adenylosuccinate synthetase [Source:UniProtKB/TrEMBL;Acc:A0A182GDW5]",41.77,1,78250,1368,2797,489,940,8
+"A0A182G783"," RP20_CCG004459.2","AALF004459",NA,"protein_coding","Aedes albopictus","JXUM01S001402",0.0413,"myosin v [Source:Projected from Aedes aegypti (AAEL009357) VB Community Annotation]",41.57,1,85316,4956,41423,30662,5805,11
+"A0A023EHV6"," CCG012728.1","AALF012728",NA,"protein_coding","Aedes albopictus","JXUM01S002787",0.041352,"oligoribonuclease, mitochondrial [Source:Projected from Aedes aegypti (AAEL008865) VB Community Annotation]",37.7,1,2326,576,2326,731,1019,1
+"A0A182H296"," RP20_CCG020280","AALF020280",NA,"protein_coding","Aedes albopictus","JXUM01S004829",0.041434,"",43.18,1,9673,3783,4541,205,553,4
+"A0A182H4X0"," CCG021775.1","AALF021775",NA,"protein_coding","Aedes albopictus","JXUM01S005316",0.041668,"",47.93,1,1711,807,1598,150,641,2
+"A0A023EVD1"," CCG016161.1","AALF016161",NA,"protein_coding","Aedes albopictus","JXUM01S003697",0.041962,"ancient conserved domain protein 2 (cyclin m2) [Source:Projected from Aedes aegypti (AAEL014059) VB Community Annotation]",41.8,1,12572,2634,4364,439,1291,2
+"A0A182H2N1"," CCG020474.1","AALF020474",NA,"protein_coding","Aedes albopictus","JXUM01S000574",0.042182,"DIS3-like exonuclease 2 [Source:UniProtKB/TrEMBL;Acc:A0A182H2N1]",43.97,1,14275,3684,4248,276,288,3
+"A0A023EUH1"," CCG005408.1","AALF005408",NA,"protein_coding","Aedes albopictus","JXUM01S001459",0.042337,"",42.35,1,18052,1428,1947,22,497,7
+"A0A023EWL3"," CCG024568.1","AALF024568",NA,"protein_coding","Aedes albopictus","JXUM01S006275",0.042419,"",46.73,1,2572,276,2572,1175,1121,1
+"A0A182HDG6"," CCG027188.1","AALF027188",NA,"protein_coding","Aedes albopictus","JXUM01S000921",0.042525,"",43.4,1,12866,2424,12676,197,10055,2
+"A0A182H811"," RP20_CCG023738","AALF023738",NA,"protein_coding","Aedes albopictus","JXUM01S005977",0.042866,"",39.1,1,9026,765,9026,97,8164,1
+"A0A182GXQ2"," CCG000426.1","AALF000426",NA,"protein_coding","Aedes albopictus","JXUM01S008250",0.04303,"",47.85,1,767,330,767,152,285,1
+"A0A182G484"," CCG002589.1","AALF002589",NA,"protein_coding","Aedes albopictus","JXUM01S001203",0.043239,"",50.41,1,1932,1266,1932,182,484,1
+"A0A182GYL1"," CCG018227.1","AALF018227",NA,"protein_coding","Aedes albopictus","JXUM01S004268",0.043814,"",39.87,1,47892,624,11220,10197,399,3
+"A0A182H5B7"," RP20_CCG022027","AALF022027",NA,"protein_coding","Aedes albopictus","JXUM01S005383",0.044546,"gdp mannose-4,6-dehydratase [Source:Projected from Aedes aegypti (AAEL014961) VB Community Annotation]",50,1,1402,1158,1330,103,69,2
+"A0A023EV58"," RP20_CCG024828.2","AALF024828",NA,"protein_coding","Aedes albopictus","JXUM01S006378",0.044758,"glutaminyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL011395) VB Community Annotation]",41.48,1,20377,1620,4900,205,3075,2
+"A0A182H5W3"," RP20_CCG022363","AALF022363",109407309,"protein_coding","Aedes albopictus","JXUM01S005521",0.045628,"beta-1,4-galactosyltransferase [Source:Projected from Aedes aegypti (AAEL006426) VB Community Annotation]",43.64,1,3068,957,3068,1214,897,1
+"A0A023EID3"," CCG023467.1","AALF023467",109418824,"protein_coding","Aedes albopictus","JXUM01S005896",0.046079,"Putative gtp-binding adp-ribosylation factor arf6 darf3 [Source:UniProtKB/TrEMBL;Acc:A0A023EID3]",40.75,1,26794,543,1269,229,497,4
+"A0A182H2D3"," RP20_CCG020334","AALF020334",NA,"protein_coding","Aedes albopictus","JXUM01S004842",0.046391,"serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL011578) VB Community Annotation]",42.48,1,35653,1575,35653,25225,8853,1
+"A0A182H3L7"," RP20_CCG020998","AALF020998",109429318,"protein_coding","Aedes albopictus","JXUM01S005057",0.0464,"phosphatidylethanolamine-binding protein [Source:Projected from Aedes aegypti (AAEL012955) VB Community Annotation]",52.06,1,1333,576,1161,129,456,3
+"A0A1W7R6F7"," RP20_CCG007708","AALF007708",NA,"protein_coding","Aedes albopictus","JXUM01S001757",0.046462,"",44.39,1,3093,2043,3093,79,971,1
+"A0A182GY18"," CCG017904.2","AALF017904",NA,"protein_coding","Aedes albopictus","JXUM01S004184",0.047371,"",44.44,1,1890,861,1890,520,509,1
+"A0A023ERD7"," RP20_CCG012281","AALF012281",109405360,"protein_coding","Aedes albopictus","JXUM01S002695",0.047561,"",43.84,1,16519,1035,3488,986,1467,2
+"A0A182H8M9"," CCG025537.1","AALF025537",NA,"protein_coding","Aedes albopictus","JXUM01S006618",0.047638,"",43.62,1,658,381,596,83,132,2
+"A0A182GJL3"," CCG011066.1","AALF011066",NA,"protein_coding","Aedes albopictus","JXUM01S002410",0.048846,"",39.89,1,41304,2055,20902,18179,668,6
+"A0A182GU89"," CCG015869.2","AALF015869",NA,"protein_coding","Aedes albopictus","JXUM01S003628",0.048999,"",44.07,1,14748,3615,7989,821,3553,4
+"A0A1W7R699"," CCG022028.1","AALF022028",NA,"protein_coding","Aedes albopictus","JXUM01S005383",0.049261,"",47.61,1,6887,6360,6887,393,134,1
+"A0A182HET8"," CCG028127.1","AALF028127",NA,"protein_coding","Aedes albopictus","JXUM01S000986",0.049878,"",39.78,1,29534,3624,16366,664,12078,8
+"A0A023EBS4"," CCG021402.1","AALF021402",NA,"protein_coding","Aedes albopictus","JXUM01S005190",0.050064,"",38.22,1,5345,261,719,193,265,3
+"A0A182GFG3"," RP20_CCG008994","AALF008994",NA,"protein_coding","Aedes albopictus","JXUM01S001962",0.050161,"",51.33,1,2747,2190,2671,313,168,2
+"A0A023EPY3"," CCG025494.1","AALF025494",109413713,"protein_coding","Aedes albopictus","JXUM01S000822",0.050678,"Glyceraldehyde-3-phosphate dehydrogenase [Source:UniProtKB/TrEMBL;Acc:A0A023EPY3]",42.17,1,4771,999,4771,3182,590,1
+"A0A023EF61"," RP20_CCG000121","AALF000121",NA,"protein_coding","Aedes albopictus","JXUM01S001019",0.051121,"Cytidine deaminase [Source:UniProtKB/TrEMBL;Acc:A0A182G0Q0]",36.14,1,11629,471,1049,466,112,2
+"A0A182G134"," RP20_CCG000408","AALF000408",NA,"protein_coding","Aedes albopictus","JXUM01S008236",0.051415,"",46.27,1,670,435,670,206,29,1
+"A0A023EPZ7"," RP20_CCG007284.3","AALF007284",NA,"protein_coding","Aedes albopictus","JXUM01S001685",0.051621,"alpha(1,3)fucosyltransferase [Source:Projected from Aedes aegypti (AAEL000244) VB Community Annotation]",41.12,1,35605,1206,3047,501,1340,2
+"A0A023ENJ3"," RP20_CCG007836","AALF007836",NA,"protein_coding","Aedes albopictus","JXUM01S001754",0.052317,"",39.82,1,8196,978,1325,117,230,3
+"A0A182GKL0"," RP20_CCG019921","AALF019921",109622449,"protein_coding","Aedes albopictus","JXUM01S004727",0.052639,"",48.97,1,878,591,878,136,151,1
+"A0A023EQG1"," CCG028645.1","AALF028645",NA,"protein_coding","Aedes albopictus","JXUM01S001021",0.05307,"",40.24,1,26274,1560,26274,21955,2759,1
+"A0A182GUP1"," RP20_CCG009340","AALF009340",NA,"protein_coding","Aedes albopictus","JXUM01S002034",0.054015,"atlastin [Source:Projected from Aedes aegypti lvpagwg (AAEL003109) VB Community Annotation]",39.54,1,28808,1644,1644,NA,NA,7
+"A0A023EKN1"," CCG006404.1","AALF006404",NA,"protein_coding","Aedes albopictus","JXUM01S001574",0.054059,"",41.37,1,55068,2556,4735,75,2104,9
+"A0A182HAW0"," RP20_CCG025542","AALF025542",NA,"protein_coding","Aedes albopictus","JXUM01S006622",0.054367,"",46.68,1,1716,978,1716,579,159,1
+"A0A023EK43"," RP20_CCG011742","AALF011742",NA,"protein_coding","Aedes albopictus","JXUM01S002542",0.054428,"Ferritin [Source:UniProtKB/TrEMBL;Acc:A0A023EK43]",51.09,1,1233,672,1003,253,78,3
+"A0A023EYA0"," RP20_CCG015239","AALF015239",NA,"protein_coding","Aedes albopictus","JXUM01S003436",0.05468,"leucine-rich transmembrane protein [Source:Projected from Aedes aegypti lvpagwg (AAEL005734) VB Community Annotation]",39.34,1,68213,4341,36205,30036,1828,5
+"A0A182HDN9"," RP20_CCG027349","AALF027349",NA,"protein_coding","Aedes albopictus","JXUM01S000930",0.054937,"short-chain dehydrogenase [Source:Projected from Aedes aegypti (AAEL003959) VB Community Annotation]",44.08,1,17352,969,1715,25,721,6
+"A0A182HEN7"," CCG028035.1","AALF028035",NA,"protein_coding","Aedes albopictus","JXUM01S007717",0.055083,"",38.55,1,12432,828,1852,76,948,3
+"A0A182H5Q9"," RP20_CCG022282","AALF022282",NA,"protein_coding","Aedes albopictus","JXUM01S000664",0.055824,"",46.93,1,11625,1176,2877,395,1306,6
+"A0A182GZN0"," CCG018789.1","AALF018789",NA,"protein_coding","Aedes albopictus","JXUM01S004429",0.055961,"",45.51,1,12978,1203,2630,90,1337,4
+"A0A182GQT6"," RP20_CCG014114","AALF014114",NA,"protein_coding","Aedes albopictus","JXUM01S003136",0.056031,"",38.57,1,13914,879,13674,11031,1764,3
+"A0A182H207"," CCG020152.1","AALF020152",NA,"protein_coding","Aedes albopictus","JXUM01S000566",0.056476,"",50.4,1,873,771,873,4,98,1
+"A0A182HD84"," CCG027041.1","AALF027041",NA,"protein_coding","Aedes albopictus","JXUM01S007304",0.056637,"",45.82,1,4419,252,4419,363,3804,1
+"A0A023EJ77"," CCG002936.1","AALF002936",NA,"protein_coding","Aedes albopictus","JXUM01S001239",0.056732,"",43.43,1,845,591,712,74,47,3
+"A0A182HEP5"," RP20_CCG028043","AALF028043",NA,"protein_coding","Aedes albopictus","JXUM01S007722",0.057145,"",50.7,1,2799,1407,2799,301,1091,1
+"A0A182GBY9"," CCG007218.1","AALF007218",NA,"protein_coding","Aedes albopictus","JXUM01S001683",0.057185,"",49.6,1,1004,600,1004,24,380,1
+"A0A023EVK7"," RP20_CCG016583","AALF016583",NA,"protein_coding","Aedes albopictus","JXUM01S003814",0.059287,"rest corepressor (corest) protein [Source:Projected from Aedes aegypti lvpagwg (AAEL001126) VB Community Annotation]",38.87,1,52554,2004,20353,17203,1146,10
+"A0A182H8R1"," RP20_CCG024223","AALF024223",NA,"protein_coding","Aedes albopictus","JXUM01S000754",0.059533,"",46.69,1,1285,189,1285,640,456,1
+"A0A182HA79"," RP20_CCG025159","AALF025159",NA,"protein_coding","Aedes albopictus","JXUM01S006478",0.0596,"",38.34,1,16528,6471,11110,701,3938,9
+"A0A182HC78"," CCG026402.1","AALF026402",NA,"protein_coding","Aedes albopictus","JXUM01S007000",0.059694,"",38.02,1,15107,1074,1488,184,230,3
+"A0A182HC61"," CCG026368.1","AALF026368",NA,"protein_coding","Aedes albopictus","JXUM01S006986",0.059786,"",42.89,1,13493,2232,2636,227,177,5
+"A0A182G4S8"," CCG002937.1","AALF002937",NA,"protein_coding","Aedes albopictus","JXUM01S001239",0.059824,"Exocyst complex component [Source:UniProtKB/TrEMBL;Acc:A0A182G4S8]",44.19,1,7638,2286,4964,286,2392,2
+"A0A182GT83"," RP20_CCG015350","AALF015350",NA,"protein_coding","Aedes albopictus","JXUM01S003485",0.060198,"",48.36,1,1888,1047,1888,91,750,1
+"A0A023EVH8"," CCG013313.2","AALF013313",NA,"protein_coding","Aedes albopictus","JXUM01S002932",0.060271,"",39.03,1,14130,882,882,NA,NA,6
+"A0A023ET39"," RP20_CCG008947","AALF008947",NA,"protein_coding","Aedes albopictus","JXUM01S000014",0.060814,"heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti lvpagwg (AAEL010467) VB Community Annotation]",40.44,1,19840,1104,8530,267,7159,4
+"A0A023EWE1"," RP20_CCG015609","AALF015609",NA,"protein_coding","Aedes albopictus","JXUM01S003556",0.060911,"",41.73,1,53436,5652,8919,113,3154,9
+"A0A023ET57"," RP20_CCG002156.2","AALF002156",NA,"protein_coding","Aedes albopictus","JXUM01S001164",0.061593,"protein tyrosine phosphatase, non-receptor type nt1 [Source:Projected from Aedes aegypti (AAEL001919) VB Community Annotation]",37.95,1,55750,1842,3698,728,1128,7
+"A0A182HAA6"," CCG025203.1","AALF025203",NA,"protein_coding","Aedes albopictus","JXUM01S006490",0.062762,"",48.85,1,2174,1611,2106,91,404,2
+"A0A182GDB5"," CCG007967.1","AALF007967",NA,"protein_coding","Aedes albopictus","JXUM01S001779",0.06281,"",44.68,1,11167,3738,6761,113,2910,3
+"A0A182H2X0"," CCG020595.1","AALF020595",NA,"protein_coding","Aedes albopictus","JXUM01S004979",0.063104,"",42.21,1,2921,1362,2921,246,1313,1
+"A0A182HC20"," RP20_CCG026289","AALF026289",NA,"protein_coding","Aedes albopictus","JXUM01S000882",0.063235,"",46.89,1,3421,1968,2795,58,769,3
+"A0A182H245"," RP20_CCG020202","AALF020202",NA,"protein_coding","Aedes albopictus","JXUM01S004805",0.064268,"",48.9,1,2495,933,2495,338,1224,1
+"A0A182GKJ0"," CCG011501.1","AALF011501",NA,"protein_coding","Aedes albopictus","JXUM01S002487",0.064281,"",44.5,1,3737,2007,3310,157,1146,3
+"A0A182H8W0"," RP20_CCG024306","AALF024306",NA,"protein_coding","Aedes albopictus","JXUM01S006191",0.06449,"",42.99,1,20885,1011,2742,458,1273,3
+"A0A023EV49"," RP20_CCG027730","AALF027730",NA,"protein_coding","Aedes albopictus","JXUM01S075100",0.064774,"",44.41,1,4938,2067,4527,791,1669,2
+"A0A1W7R6A7"," CCG015370.1","AALF015370",NA,"protein_coding","Aedes albopictus","JXUM01S000387",0.065219,"",38.39,1,4301,846,1412,15,551,2
+"A0A023ESW0"," RP20_CCG025049","AALF025049",NA,"protein_coding","Aedes albopictus","JXUM01S006453",0.065342,"",41.59,1,18030,1434,14639,12607,598,5
+"A0A182GQU7"," CCG014130.1","AALF014130",NA,"protein_coding","Aedes albopictus","JXUM01S003141",0.065423,"",46.71,1,1944,1059,1944,174,711,1
+"A0A182GLF1"," CCG011959.1","AALF011959",109400750,"protein_coding","Aedes albopictus","JXUM01S002598",0.066498,"",41.22,1,16997,1341,2319,757,221,6
+"A0A182G6F5"," CCG003978.1","AALF003978",NA,"protein_coding","Aedes albopictus","JXUM01S001321",0.066693,"",36.47,1,17627,411,17534,229,16894,2
+"A0A023EK43"," RP20_CCG011744","AALF011744",NA,"protein_coding","Aedes albopictus","JXUM01S002542",0.067041,"Ferritin [Source:UniProtKB/TrEMBL;Acc:A0A023EK43]",50.58,1,1370,672,1137,253,212,3
+"A0A182GRG7"," RP20_CCG014429","AALF014429",NA,"protein_coding","Aedes albopictus","JXUM01S003213",0.067603,"",49.41,1,2113,183,2113,1026,904,1
+"A0A182GIH4"," CCG010481.1","AALF010481",NA,"protein_coding","Aedes albopictus","JXUM01S002282",0.067731,"",44.14,1,2653,558,2520,1848,114,3
+"A0A023EP17"," RP20_CCG019399.2","AALF019399",109403455,"protein_coding","Aedes albopictus","JXUM01S004582",0.068339,"",35.93,1,8393,1104,1399,205,90,5
+"A0A182H0Y8"," RP20_CCG019499.2","AALF019499",NA,"protein_coding","Aedes albopictus","JXUM01S004606",0.068438,"",40.41,1,44807,3567,4642,387,688,6
+"A0A182GHM7"," CCG010047.1","AALF010047",NA,"protein_coding","Aedes albopictus","JXUM01S002181",0.068476,"",44.83,1,1131,159,1131,136,836,1
+"A0A182GM81"," RP20_CCG012359","AALF012359",NA,"protein_coding","Aedes albopictus","JXUM01S002713",0.068632,"",47.8,1,546,243,546,45,258,1
+"A0A023EQL7"," RP20_CCG002230.2","AALF002230",NA,"protein_coding","Aedes albopictus","JXUM01S001171",0.06971,"",41.89,1,54541,3873,4194,33,288,12
+"A0A182GM87"," CCG012365.1","AALF012365",NA,"protein_coding","Aedes albopictus","JXUM01S000296",0.069817,"",48.68,1,6079,2724,6079,1323,2032,1
+"A0A182G9H4"," RP20_CCG005748","AALF005748",NA,"protein_coding","Aedes albopictus","JXUM01S001499",0.071042,"",41.37,1,672,171,601,240,190,2
+"A0A182HB08"," CCG026144.1","AALF026144",NA,"protein_coding","Aedes albopictus","JXUM01S006877",0.07142,"",53.26,1,475,330,475,51,94,1
+"A0A023ESM2"," CCG022696.1","AALF022696",NA,"protein_coding","Aedes albopictus","JXUM01S000675",0.07304,"",45.11,1,8757,1527,3007,1120,360,2
+"A0A182H6P5"," CCG022841.1","AALF022841",NA,"protein_coding","Aedes albopictus","JXUM01S005703",0.073075,"",38.99,1,19339,879,19137,5066,13192,4
+"A0A023EP12"," CCG003235.1","AALF003235",NA,"protein_coding","Aedes albopictus","JXUM01S001246",0.074173,"syntaxin [Source:Projected from Aedes aegypti (AAEL004168) VB Community Annotation]",40.66,1,26678,666,17292,15573,1053,3
+"A0A023EJP8"," CCG023668.1","AALF023668",109417765,"protein_coding","Aedes albopictus","JXUM01S000723",0.075531,"ER lumen protein-retaining receptor [Source:UniProtKB/TrEMBL;Acc:A0A023EJP8]",41.18,1,3587,639,3587,231,2717,1
+"A0A023EG21"," CCG006556.1","AALF006556",NA,"protein_coding","Aedes albopictus","JXUM01S000169",0.075685,"",44.1,1,31024,2001,12684,116,10567,2
+"A0A182GN25"," CCG012769.2","AALF012769",NA,"protein_coding","Aedes albopictus","JXUM01S000302",0.076376,"aldehyde oxidase [Source:Projected from Aedes aegypti (AAEL010384) VB Community Annotation]",43.37,1,5661,3798,5304,104,1402,7
+"A0A182GKN9"," CCG011564.1","AALF011564",NA,"protein_coding","Aedes albopictus","JXUM01S002549",0.077106,"",38.91,1,54234,939,11125,184,10002,6
+"A0A182H4M0"," CCG021601.1","AALF021601",NA,"protein_coding","Aedes albopictus","JXUM01S005260",0.077639,"",46.74,1,1335,1053,1335,16,266,1
+"A0A023EWM1"," RP20_CCG025211","AALF025211",NA,"protein_coding","Aedes albopictus","JXUM01S006516",0.077973,"",50.1,1,1447,444,1447,407,596,1
+"A0A023EQW0"," CCG007886.1","AALF007886",NA,"protein_coding","Aedes albopictus","JXUM01S001771",0.078224,"protein cactus (TOLL pathway signalling)",44.7,1,25660,1182,3086,914,990,5
+"A0A182H4L0"," RP20_CCG021586","AALF021586",NA,"protein_coding","Aedes albopictus","JXUM01S000625",0.078319,"epoxide hydrolase [Source:Projected from Aedes aegypti lvpagwg (AAEL000438) VB Community Annotation]",44.64,1,14216,1263,1811,444,104,5
+"A0A182GWK6"," CCG017118.1","AALF017118",NA,"protein_coding","Aedes albopictus","JXUM01S003959",0.078766,"",46.37,1,1018,738,1018,21,259,1
+"A0A182GEV4"," RP20_CCG008706","AALF008706",NA,"protein_coding","Aedes albopictus","JXUM01S001912",0.078782,"",44.13,1,1824,708,1470,219,543,4
+"A0A182GL59"," RP20_CCG011816","AALF011816",NA,"protein_coding","Aedes albopictus","JXUM01S002564",0.079397,"",48.84,1,1947,987,1947,269,691,1
+"A0A182H2B4"," CCG020309.1","AALF020309",NA,"protein_coding","Aedes albopictus","JXUM01S004832",0.080141,"",53.25,1,2509,846,2509,1030,633,1
+"A0A182GWS6"," CCG017225.1","AALF017225",NA,"protein_coding","Aedes albopictus","JXUM01S004001",0.080401,"",46.28,1,1735,1236,1589,136,217,3
+"A0A023EFX5"," CCG014727.1","AALF014727",NA,"protein_coding","Aedes albopictus","JXUM01S003288",0.08068,"",40.68,1,14482,408,14381,229,13744,2
+"A0A182GII8"," CCG010498.2","AALF010498",NA,"protein_coding","Aedes albopictus","JXUM01S000255",0.082093,"",44.06,1,1398,654,1262,273,335,3
+"A0A182GUQ1"," RP20_CCG016099","AALF016099",NA,"protein_coding","Aedes albopictus","JXUM01S003684",0.082347,"Spastin [Source:UniProtKB/TrEMBL;Acc:A0A182GUQ1]",37.41,1,66752,2340,4960,194,2426,6
+"A0A182H7A4"," CCG023271.1","AALF023271",NA,"protein_coding","Aedes albopictus","JXUM01S005828",0.082524,"epoxide hydrolase [Source:Projected from Aedes aegypti (AAEL000438) VB Community Annotation]",47.09,1,9202,1263,1526,208,55,5
+"A0A023ENA7"," RP20_CCG013415","AALF013415",NA,"protein_coding","Aedes albopictus","JXUM01S002962",0.08277,"",42.58,1,33052,3744,11637,121,7772,12
+"A0A023ETU3"," RP20_CCG008785","AALF008785",NA,"protein_coding","Aedes albopictus","JXUM01S001934",0.082891,"srpk [Source:Projected from Aedes aegypti (AAEL008507) VB Community Annotation]",40.54,1,36760,1953,36760,1026,33781,1
+"A0A023EWS1"," CCG006730.1","AALF006730",NA,"protein_coding","Aedes albopictus","JXUM01S001616",0.083107,"",56.65,1,978,978,978,NA,NA,1
+"A0A023EMN9"," RP20_CCG023812","AALF023812",NA,"protein_coding","Aedes albopictus","JXUM01S000732",0.083124,"F-box/lrr protein, drome [Source:Projected from Aedes aegypti (AAEL012126) VB Community Annotation]",44.27,1,1999,882,1945,135,928,2
+"A0A023EV19"," RP20_CCG022326","AALF022326",109430546,"protein_coding","Aedes albopictus","JXUM01S005517",0.083138,"Putative ferric-chelate reductase 1 [Source:UniProtKB/TrEMBL;Acc:A0A023EXF7]",39.05,1,10883,1905,2770,17,848,7
+"A0A182H7L6"," RP20_CCG023468","AALF023468",NA,"protein_coding","Aedes albopictus","JXUM01S005896",0.083342,"",52.5,1,3707,1824,3582,211,1547,3
+"A0A023EWM1"," RP20_CCG012900","AALF012900",NA,"protein_coding","Aedes albopictus","JXUM01S000342",0.08401,"",50.92,1,982,279,982,417,286,1
+"A0A182GPJ4"," RP20_CCG013476","AALF013476",NA,"protein_coding","Aedes albopictus","JXUM01S000324",0.084609,"",53.85,1,2427,267,2427,1643,517,1
+"A0A023EDY3"," CCG017449.1","AALF017449",NA,"protein_coding","Aedes albopictus","JXUM01S004054",0.085014,"",40.39,1,14701,234,1177,366,577,2
+"A0A182GQA0"," RP20_CCG013836.3","AALF013836",NA,"protein_coding","Aedes albopictus","JXUM01S003072",0.085019,"acyl-CoA oxidase [Source:Projected from Aedes aegypti (AAEL000735) VB Community Annotation]",39.59,1,31660,1542,24138,199,22397,6
+"A0A023EVY5"," CCG009705.1","AALF009705",NA,"protein_coding","Aedes albopictus","JXUM01S002109",0.085084,"Elongation factor G, mitochondrial [Source:UniProtKB/TrEMBL;Acc:A0A182GGX6]",43.55,1,4441,2247,4291,158,1886,3
+"A0A182GK16"," CCG011270.1","AALF011270",NA,"protein_coding","Aedes albopictus","JXUM01S002434",0.085252,"cleavage and polyadenylation specificity factor cpsf [Source:Projected from Aedes aegypti (AAEL000832) VB Community Annotation]",48.98,1,7233,4278,5793,180,1335,7
+"A0A182H6W8"," CCG022981.2","AALF022981",NA,"protein_coding","Aedes albopictus","JXUM01S005748",0.087397,"",41.46,1,17260,1638,3074,361,1075,9
+"A0A023EQW6"," CCG012060.1","AALF012060",NA,"protein_coding","Aedes albopictus","JXUM01S002618",0.087973,"",39.62,1,12722,1284,2490,468,738,2
+"A0A182GQ91"," CCG013827.1","AALF013827",NA,"protein_coding","Aedes albopictus","JXUM01S000338",0.088331,"",37.09,1,14360,555,1318,518,245,2
+"A0A023EK98"," RP20_CCG011607","AALF011607",NA,"protein_coding","Aedes albopictus","JXUM01S002509",0.08945,"",48.56,1,9995,5880,9338,13,3445,4
+"A0A023EPQ3"," CCG019551.1","AALF019551",NA,"protein_coding","Aedes albopictus","JXUM01S004623",0.089508,"",40.88,1,3518,855,3518,1665,998,1
+"A0A182H7X3"," CCG023661.1","AALF023661",NA,"protein_coding","Aedes albopictus","JXUM01S005960",0.089593,"",49.28,1,1250,798,1250,227,225,1
+"A0A182H8M9"," RP20_CCG024168","AALF024168",NA,"protein_coding","Aedes albopictus","JXUM01S006125",0.089676,"",43.16,1,980,381,908,395,132,2
+"A0A023EV69"," RP20_CCG011598","AALF011598",NA,"protein_coding","Aedes albopictus","JXUM01S002505",0.090446,"",38.41,1,17283,2481,6139,2195,1463,5
+"A0A182GJU2"," RP20_CCG011177","AALF011177",NA,"protein_coding","Aedes albopictus","JXUM01S002421",0.090685,"Serine Protease Inhibitor (serpin)  likely cleavage at S/S. [Source:Projected from Aedes aegypti (AAEL008364) VB Community Annotation]",49.07,1,4414,1272,1413,2,139,3
+"A0A182H2S5"," RP20_CCG020539","AALF020539",NA,"protein_coding","Aedes albopictus","JXUM01S004920",0.090865,"",43.25,1,689,303,689,292,94,1
+"A0A182GMI5"," RP20_CCG012523.2","AALF012523",NA,"protein_coding","Aedes albopictus","JXUM01S002751",0.09099,"",37.48,1,21629,1089,10119,8803,227,2
+"A0A023ESJ7"," RP20_CCG007786","AALF007786",NA,"protein_coding","Aedes albopictus","JXUM01S001748",0.091025,"alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GD08]",44.54,1,26222,1800,3132,159,1173,6
+"A0A023EXB9"," CCG014445.1","AALF014445",NA,"protein_coding","Aedes albopictus","JXUM01S003221",0.091436,"",40,1,78992,2823,20131,6677,10631,5
+"A0A182GEZ6"," CCG008767.3","AALF008767",NA,"protein_coding","Aedes albopictus","JXUM01S001925",0.091527,"groucho protein [Source:Projected from Aedes aegypti (AAEL010433) VB Community Annotation]",37.83,1,61953,1848,3351,110,1393,11
+"A0A023EXD9"," CCG006470.1","AALF006470",NA,"protein_coding","Aedes albopictus","JXUM01S001590",0.091791,"",39.31,1,76716,2007,23499,20109,1383,8
+"A0A182G3R2"," RP20_CCG002280","AALF002280",NA,"protein_coding","Aedes albopictus","JXUM01S001177",0.091913,"",52.98,1,604,180,604,144,280,1
+"A0A182G2L9"," CCG001505.1","AALF001505",NA,"protein_coding","Aedes albopictus","JXUM01S001124",0.091948,"cell adhesion molecule [Source:Projected from Aedes aegypti (AAEL008340) VB Community Annotation]",42.15,1,38223,3495,6075,57,2523,5
+"A0A182HDJ1"," CCG027237.3","AALF027237",NA,"protein_coding","Aedes albopictus","JXUM01S000917",0.092152,"",44.72,1,5025,3216,5025,1001,808,1
+"A0A182GZ11"," CCG018421.2","AALF018421",NA,"protein_coding","Aedes albopictus","JXUM01S004325",0.092559,"germ cell-less protein [Source:Projected from Aedes aegypti (AAEL000856) VB Community Annotation]",40.06,1,39248,1530,38655,35330,1795,4
+"A0A023EQY2"," RP20_CCG000220","AALF000220",NA,"protein_coding","Aedes albopictus","JXUM01S001037",0.092951,"CRAL/TRIO domain-containing protein [Source:Projected from Aedes aegypti (AAEL005779) VB Community Annotation]",41.77,1,34461,927,34394,33075,392,2
+"A0A182GCS6"," CCG007683.1","AALF007683",NA,"protein_coding","Aedes albopictus","JXUM01S001732",0.093063,"",45.68,1,29014,1740,23486,1164,20582,3
+"A0A182GJD7"," RP20_CCG010956","AALF010956",NA,"protein_coding","Aedes albopictus","JXUM01S002373",0.093568,"",44.44,1,17162,4941,6728,149,1638,7
+"A0A182HE06"," RP20_CCG027582","AALF027582",NA,"protein_coding","Aedes albopictus","JXUM01S000938",0.093911,"",40.53,1,36675,2769,4724,878,1077,8
+"A0A023EQV8"," RP20_CCG011874","AALF011874",NA,"protein_coding","Aedes albopictus","JXUM01S002575",0.095554,"DNA-J/hsp40 [Source:Projected from Aedes aegypti (AAEL003588) VB Community Annotation]",48.41,1,2103,1113,2103,244,746,1
+"A0A023EUD7"," RP20_CCG024597","AALF024597",NA,"protein_coding","Aedes albopictus","JXUM01S000770",0.095767,"Putative conserved protein with signal anchor [Source:Projected from Aedes aegypti lvpagwg (AAEL005522) UniProtKB/TrEMBL;Acc:A0A0P6J688]",43.59,1,12110,2409,2956,129,418,7
+"A0A023ERR6"," RP20_CCG012705","AALF012705",NA,"protein_coding","Aedes albopictus","JXUM01S002783",0.096161,"zinc/iron transporter [Source:Projected from Aedes aegypti (AAEL001626) VB Community Annotation]",49.24,1,1765,1155,1765,376,234,1
+"A0A023ER33"," RP20_CCG009155","AALF009155",NA,"protein_coding","Aedes albopictus","JXUM01S001995",0.097303,"Putative 26s proteasome regulatory complex subunit [Source:UniProtKB/TrEMBL;Acc:A0A023ER33]",40.69,1,22380,1146,2240,164,930,6
+"A0A023EIL7"," RP20_CCG020662","AALF020662",109427759,"protein_coding","Aedes albopictus","JXUM01S004952",0.097455,"Glucosamine 6-phosphate N-acetyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A023EIL7]",38.91,1,12400,639,1331,176,516,4
+"A0A182GV15"," CCG016238.1","AALF016238",NA,"protein_coding","Aedes albopictus","JXUM01S003723",0.098029,"valyl-tRNA synthetase [Source:Projected from Aedes aegypti (AAEL004327) VB Community Annotation]",41.46,1,23039,3132,5792,272,2388,4
+"A0A182H518"," RP20_CCG021841","AALF021841",NA,"protein_coding","Aedes albopictus","JXUM01S005372",0.098298,"",47.46,1,1494,774,1494,411,309,1
+"A0A182G149"," RP20_CCG000432","AALF000432",NA,"protein_coding","Aedes albopictus","JXUM01S001051",0.098633,"sugar transporter [Source:Projected from Aedes aegypti (AAEL014206) VB Community Annotation]",39.85,1,13992,1662,3228,55,1511,4
+"A0A023EFH1"," CCG013807.1","AALF013807",109406008,"protein_coding","Aedes albopictus","JXUM01S003060",0.099569,"MICOS complex subunit MIC13 [Source:UniProtKB/TrEMBL;Acc:A0A023EFH1]",51.25,1,519,375,375,NA,NA,3
+"A0A1W7R6K0"," RP20_CCG017781","AALF017781",NA,"protein_coding","Aedes albopictus","JXUM01S004143",0.101277,"",43.79,1,3496,2574,3496,115,807,1
+"A0A182G9G7"," RP20_CCG005741","AALF005741",NA,"protein_coding","Aedes albopictus","JXUM01S000157",0.101892,"Protein kinase C [Source:UniProtKB/TrEMBL;Acc:A0A182G9G7]",42.37,1,11202,1566,3666,605,1495,5
+"A0A182GIS9"," CCG012319.1","AALF012319",NA,"protein_coding","Aedes albopictus","JXUM01S002700",0.103135,"",45.61,1,19469,924,19469,782,17763,1
+"A0A182H537"," RP20_CCG021886.2","AALF021886",NA,"protein_coding","Aedes albopictus","JXUM01S005342",0.103246,"",39.99,1,13344,594,1709,377,738,2
+"A0A182GUY8"," RP20_CCG016202","AALF016202",NA,"protein_coding","Aedes albopictus","JXUM01S003706",0.103629,"Phospholipid-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182GUY8]",44.05,1,11799,2979,5364,575,1810,8
+"A0A182H596"," CCG021986.1","AALF021986",NA,"protein_coding","Aedes albopictus","JXUM01S005362",0.103638,"",52.48,1,1229,177,1229,515,537,1
+"A0A182H7J3"," CCG023425.1","AALF023425",NA,"protein_coding","Aedes albopictus","JXUM01S000712",0.104202,"",39.85,1,39073,666,23051,354,22031,3
+"A0A182GVZ2"," CCG011829.1","AALF011829",NA,"protein_coding","Aedes albopictus","JXUM01S002561",0.104882,"sugar transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL010485) VB Community Annotation]",44.85,1,11427,1425,2030,373,232,3
+"A0A182H2D7"," RP20_CCG020338","AALF020338",NA,"protein_coding","Aedes albopictus","JXUM01S004840",0.10542,"RNA polymerase ii ctd phosphatase [Source:Projected from Aedes aegypti (AAEL015142) VB Community Annotation]",41.83,1,14490,2250,3231,65,916,7
+"A0A182GG23"," RP20_CCG009300","AALF009300",NA,"protein_coding","Aedes albopictus","JXUM01S002020",0.106043,"",50.15,1,8006,1503,7922,3555,2864,2
+"A0A182GYY8"," CCG018391.1","AALF018391",NA,"protein_coding","Aedes albopictus","JXUM01S004317",0.106252,"",55.86,1,777,345,777,134,298,1
+"A0A023ETR3"," RP20_CCG010133","AALF010133",109418321,"protein_coding","Aedes albopictus","JXUM01S002198",0.106801,"Elongation factor 1-alpha [Source:UniProtKB/TrEMBL;Acc:A0A182GHS1]",41.64,1,10131,1389,3276,350,1537,3
+"A0A182GX42"," RP20_CCG017400","AALF017400",NA,"protein_coding","Aedes albopictus","JXUM01S004042",0.107178,"serine/threonine protein kinase [Source:Projected from Aedes aegypti (AAEL006539) VB Community Annotation]",37.87,1,37534,1854,4158,1889,415,5
+"A0A182H5K1"," CCG022185.1","AALF022185",NA,"protein_coding","Aedes albopictus","JXUM01S005443",0.107189,"",46.45,1,5617,1896,5617,1350,2371,1
+"A0A182GFS4"," RP20_CCG009151","AALF009151",NA,"protein_coding","Aedes albopictus","JXUM01S001996",0.109141,"",52.15,1,813,495,813,138,180,1
+"A0A182GKR2"," CCG011608.1","AALF011608",NA,"protein_coding","Aedes albopictus","JXUM01S002509",0.110214,"",41.5,1,4140,1731,2055,168,156,3
+"A0A182GEB4"," RP20_CCG008439","AALF008439",NA,"protein_coding","Aedes albopictus","JXUM01S001855",0.110267,"glutathione transferase [Source:Projected from Aedes aegypti lvpagwg (AAEL010591) VB Community Annotation]",48.97,1,1501,750,1315,246,319,2
+"A0A182H991"," CCG024530.1","AALF024530",NA,"protein_coding","Aedes albopictus","JXUM01S000773",0.110723,"",40.59,1,40368,4158,7848,75,3615,8
+"A0A182GLN1"," RP20_CCG012061","AALF012061",NA,"protein_coding","Aedes albopictus","JXUM01S002618",0.111252,"Anion exchange protein [Source:UniProtKB/TrEMBL;Acc:A0A182GLN1]",39.7,1,69614,3639,43842,38761,1442,9
+"A0A023EQE2"," RP20_CCG017656.2","AALF017656",NA,"protein_coding","Aedes albopictus","JXUM01S004108",0.111822,"",41.2,1,25389,3447,4877,56,1374,4
+"A0A182GLU1"," CCG012145.1","AALF012145",NA,"protein_coding","Aedes albopictus","JXUM01S002650",0.111873,"",40.04,1,54497,363,713,5,345,3
+"A0A023EWM1"," RP20_CCG004135","AALF004135",NA,"protein_coding","Aedes albopictus","JXUM01S001342",0.112201,"",47,1,851,495,851,53,303,1
+"A0A023EQ67"," CCG014756.1","AALF014756",NA,"protein_coding","Aedes albopictus","JXUM01S000376",0.115215,"",39.12,1,48209,1026,1681,382,273,3
+"A0A182G3B9"," RP20_CCG002028","AALF002028",NA,"protein_coding","Aedes albopictus","JXUM01S001157",0.115762,"ran-binding protein [Source:Projected from Aedes aegypti (AAEL009884) VB Community Annotation]",44.66,1,30491,8082,9225,278,865,7
+"A0A182GI38"," CCG010296.1","AALF010296",NA,"protein_coding","Aedes albopictus","JXUM01S002240",0.116196,"",49.52,1,4929,2904,4929,99,1926,1
+"A0A182GA07"," RP20_CCG006076","AALF006076",NA,"protein_coding","Aedes albopictus","JXUM01S001535",0.117638,"",43.92,1,14981,2499,3286,127,660,5
+"A0A182GBX9"," CCG007205.1","AALF007205",NA,"protein_coding","Aedes albopictus","JXUM01S001678",0.117652,"",38.92,1,25221,1542,25221,9510,14169,1
+"A0A023ER55"," RP20_CCG004593","AALF004593",NA,"protein_coding","Aedes albopictus","JXUM01S001381",0.117816,"DNA repair protein rad50 [Source:Projected from Aedes aegypti (AAEL014748) VB Community Annotation]",41.25,1,14301,3933,4184,164,87,6
+"A0A182G9V6"," CCG005985.1","AALF005985",109430248,"protein_coding","Aedes albopictus","JXUM01S001520",0.119777,"",42.73,1,777,333,684,259,92,2
+"A0A182GLX2"," RP20_CCG012181","AALF012181",NA,"protein_coding","Aedes albopictus","JXUM01S002653",0.119839,"",41.15,1,2095,384,2095,912,799,1
+"A0A182GTP3"," RP20_CCG015594","AALF015594",NA,"protein_coding","Aedes albopictus","JXUM01S003557",0.122162,"",43.57,1,4632,2673,4578,177,1728,2
+"A0A182GW84"," RP20_CCG016899","AALF016899",NA,"protein_coding","Aedes albopictus","JXUM01S003924",0.123335,"",48.31,1,2745,591,2745,1039,1115,1
+"A0A182H4D2"," CCG021458.1","AALF021458",NA,"protein_coding","Aedes albopictus","JXUM01S000069",0.12349,"brat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL004918) VB Community Annotation]",39.34,1,39389,2718,39389,284,36387,1
+"A0A182H3V6"," CCG021176.1","AALF021176",NA,"protein_coding","Aedes albopictus","JXUM01S005114",0.12486,"",47.63,1,6086,3063,6086,1017,2006,1
+"A0A182GUL1"," RP20_CCG016050","AALF016050",NA,"protein_coding","Aedes albopictus","JXUM01S003664",0.124889,"",44.67,1,16957,204,16957,8400,8353,1
+"A0A182HEP9"," RP20_CCG028052","AALF028052",NA,"protein_coding","Aedes albopictus","JXUM01S000974",0.12489,"",41.63,1,46938,1743,46938,37001,8194,1
+"A0A182G6P1"," CCG004137.1","AALF004137",NA,"protein_coding","Aedes albopictus","JXUM01S001342",0.125052,"mitochondrial intermediate peptidase [Source:Projected from Aedes aegypti (AAEL003461) VB Community Annotation]",52.38,1,3232,1506,3109,855,748,2
+"A0A023ELS0"," RP20_CCG024490","AALF024490",NA,"protein_coding","Aedes albopictus","JXUM01S000769",0.126376,"",38.16,1,7552,6465,7552,1,1086,1
+"A0A182H5J7"," RP20_CCG022170","AALF022170",NA,"protein_coding","Aedes albopictus","JXUM01S005447",0.127128,"",49.39,1,1723,696,1723,230,797,1
+"A0A182GTN5"," CCG015582.1","AALF015582",109428894,"protein_coding","Aedes albopictus","JXUM01S003558",0.127828,"retinaldehyde binding protein [Source:Projected from Aedes aegypti (AAEL005701) VB Community Annotation]",41.56,1,32603,1164,24133,474,22495,2
+"A0A1W7R911"," CCG016545.1","AALF016545",NA,"protein_coding","Aedes albopictus","JXUM01S000433",0.128948,"",36.41,1,12945,1695,1695,NA,NA,4
+"A0A182HDI3"," RP20_CCG027221","AALF027221",NA,"protein_coding","Aedes albopictus","JXUM01S000918",0.130297,"",48.09,1,1888,1320,1790,89,381,2
+"A0A182HEK1"," RP20_CCG027956","AALF027956",NA,"protein_coding","Aedes albopictus","JXUM01S000970",0.131402,"",47.71,1,1700,207,445,24,214,2
+"A0A182GGD0"," CCG009444.1","AALF009444",NA,"protein_coding","Aedes albopictus","JXUM01S002053",0.131934,"",37.99,1,11930,1026,1829,114,689,6
+"A0A182H1A1"," CCG019713.1","AALF019713",NA,"protein_coding","Aedes albopictus","JXUM01S004655",0.132042,"",50.83,1,2054,1356,2054,74,624,1
+"A0A182GM61"," CCG012320.1","AALF012320",NA,"protein_coding","Aedes albopictus","JXUM01S002700",0.132344,"",45.39,1,13876,2733,3469,492,244,6
+"A0A182H006"," CCG018988.1","AALF018988",NA,"protein_coding","Aedes albopictus","JXUM01S004462",0.132447,"",44.6,1,491,255,427,111,61,2
+"A0A182GZY6"," CCG018968.1","AALF018968",NA,"protein_coding","Aedes albopictus","JXUM01S000521",0.132548,"",49.5,1,6646,3741,5419,955,723,3
+"A0A182GEE1"," RP20_CCG008473.2","AALF008473",NA,"protein_coding","Aedes albopictus","JXUM01S001877",0.132964,"chordin [Source:Projected from Aedes aegypti (AAEL005627) VB Community Annotation]",45.48,1,40546,2499,37097,32151,2447,5
+"A0A182GNU5"," RP20_CCG013127","AALF013127",NA,"protein_coding","Aedes albopictus","JXUM01S002895",0.136866,"",40.29,1,17162,897,2174,192,1085,3
+"A0A182GVZ2"," CCG016755.1","AALF016755",NA,"protein_coding","Aedes albopictus","JXUM01S003857",0.137417,"sugar transporter [Source:Projected from Aedes aegypti (AAEL010485) VB Community Annotation]",43.5,1,9907,1425,1949,277,247,3
+"A0A023EQE1"," CCG022055.1","AALF022055",109412243,"protein_coding","Aedes albopictus","JXUM01S000688",0.13748,"Serine/threonine-protein phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A023EQE1]",42.93,1,9864,924,1590,657,9,3
+"A0A023ES09"," CCG019013.1","AALF019013",NA,"protein_coding","Aedes albopictus","JXUM01S004481",0.137676,"",51.44,1,1948,1188,1891,49,654,2
+"A0A182H898"," RP20_CCG023897","AALF023897",NA,"protein_coding","Aedes albopictus","JXUM01S006050",0.138446,"",45.49,1,743,270,743,124,349,1
+"A0A182GER1"," CCG019284.1","AALF019284",NA,"protein_coding","Aedes albopictus","JXUM01S000524",0.138977,"Histone H2B [Source:UniProtKB/TrEMBL;Acc:A0A182GER1]",55.46,1,577,390,577,34,153,1
+"A0A182G4X0"," CCG003006.1","AALF003006",NA,"protein_coding","Aedes albopictus","JXUM01S000141",0.139385,"Mitochondrial fission 1 protein [Source:UniProtKB/TrEMBL;Acc:A0A182G4X0]",40.72,1,12204,459,1140,145,536,3
+"A0A182G786"," RP20_CCG004462","AALF004462",NA,"protein_coding","Aedes albopictus","JXUM01S001402",0.139664,"ssm4 protein [Source:Projected from Aedes aegypti (AAEL009353) VB Community Annotation]",41.34,1,21326,3096,10015,599,6320,4
+"A0A023EFI7"," RP20_CCG009367","AALF009367",109411874,"protein_coding","Aedes albopictus","JXUM01S000230",0.139724,"Sidoreflexin [Source:UniProtKB/TrEMBL;Acc:A0A182GG74]",42.43,1,25330,963,2218,862,393,5
+"A0A023EPH3"," CCG007423.1","AALF007423",NA,"protein_coding","Aedes albopictus","JXUM01S000176",0.140199,"aldo-keto reductase [Source:Projected from Aedes aegypti (AAEL004102) VB Community Annotation]",43.45,1,2200,957,2075,94,1024,3
+"A0A182GVH5"," CCG016469.1","AALF016469",NA,"protein_coding","Aedes albopictus","JXUM01S003777",0.140588,"",42.43,1,10259,357,10080,13,9710,2
+"A0A023ELY3"," CCG028395.1","AALF028395",NA,"protein_coding","Aedes albopictus","JXUM01S000998",0.140682,"Putative salivary secreted mucin 3 [Source:UniProtKB/TrEMBL;Acc:A0A023EMK8]",39.69,1,36480,870,1868,527,471,4
+"A0A182GMR2"," RP20_CCG012611","AALF012611",NA,"protein_coding","Aedes albopictus","JXUM01S002764",0.141747,"",40.61,1,3425,507,1394,222,665,2
+"A0A182GZG4"," RP20_CCG018673","AALF018673",NA,"protein_coding","Aedes albopictus","JXUM01S004396",0.142129,"",51.69,1,1807,1212,1630,110,308,3
+"A0A023ECJ9"," CCG026969.1","AALF026969",NA,"protein_coding","Aedes albopictus","JXUM01S000922",0.14297,"",38.95,1,4064,291,4064,594,3179,1
+"A0A182GRU6"," CCG014643.1","AALF014643",NA,"protein_coding","Aedes albopictus","JXUM01S003266",0.143462,"",39.48,1,1259,516,1094,45,533,3
+"A0A182G3E0"," CCG002063.1","AALF002063",NA,"protein_coding","Aedes albopictus","JXUM01S001161",0.144737,"",39.42,1,35740,2778,11851,112,8961,5
+"A0A023EWG1"," CCG016454.1","AALF016454",NA,"protein_coding","Aedes albopictus","JXUM01S003775",0.144816,"arf GTPase-activating protein [Source:Projected from Aedes aegypti lvpagwg (AAEL001277) VB Community Annotation]",42.05,1,8294,1659,2673,255,759,7
+"A0A182H5V2"," RP20_CCG022352","AALF022352",NA,"protein_coding","Aedes albopictus","JXUM01S000665",0.144843,"phosphatidyltransferase [Source:Projected from Aedes aegypti (AAEL001472) VB Community Annotation]",38.05,1,24068,1161,2839,477,1201,6
+"A0A182GJV0"," CCG011190.1","AALF011190",NA,"protein_coding","Aedes albopictus","JXUM01S002424",0.146318,"4-aminobutyrate aminotransferase [Source:Projected from Aedes aegypti (AAEL012609) VB Community Annotation]",47.32,1,1602,1065,1468,66,337,3
+"A0A182HBW7"," CCG026194.1","AALF026194",NA,"protein_coding","Aedes albopictus","JXUM01S000861",0.147769,"",35.77,1,16098,231,930,400,299,2
+"A0A023EDK2"," RP20_CCG013111","AALF013111",109406008,"protein_coding","Aedes albopictus","JXUM01S002886",0.148169,"MICOS complex subunit MIC13 [Source:UniProtKB/TrEMBL;Acc:A0A023EFH1]",48.5,1,5431,375,5288,113,4800,3
+"A0A182GVL4"," CCG016546.1","AALF016546",NA,"protein_coding","Aedes albopictus","JXUM01S000433",0.14849,"",45.36,1,6188,2892,5936,1203,1841,5
+"A0A023EIB6"," RP20_CCG003697","AALF003697",109424830,"protein_coding","Aedes albopictus","JXUM01S001292",0.149853,"Putative gtp-binding protein [Source:UniProtKB/TrEMBL;Acc:A0A023EIB6]",40.24,1,51213,621,1736,480,635,5
+"A0A023EGI5"," RP20_CCG012262","AALF012262",NA,"protein_coding","Aedes albopictus","JXUM01S002683",0.149934,"Putative secreted protein [Source:UniProtKB/TrEMBL;Acc:A0A023EGI5]",42.98,1,1724,423,921,128,370,3
+"A0A023EJC8"," RP20_CCG016448","AALF016448",NA,"protein_coding","Aedes albopictus","JXUM01S003771",0.150021,"",42.24,1,2306,1086,1579,39,454,3
+"A0A182GVH7"," RP20_CCG016471","AALF016471",NA,"protein_coding","Aedes albopictus","JXUM01S003778",0.15079,"",43.98,1,15888,3528,7642,349,3765,5
+"A0A182GF18"," CCG008798.1","AALF008798",NA,"protein_coding","Aedes albopictus","JXUM01S001931",0.151167,"",51.66,1,2437,1188,2437,257,992,1
+"A0A023EQB6"," RP20_CCG013157","AALF013157",NA,"protein_coding","Aedes albopictus","JXUM01S002899",0.151839,"",41.3,1,40061,2547,31843,22219,7077,7
+"A0A182GA81"," CCG006215.3","AALF006215",NA,"protein_coding","Aedes albopictus","JXUM01S001563",0.152288,"alanyl aminopeptidase [Source:Projected from Aedes aegypti (AAEL005821) VB Community Annotation]",39.22,1,14224,2412,3327,492,423,4
+"A0A182GQC8"," CCG013868.1","AALF013868",NA,"protein_coding","Aedes albopictus","JXUM01S003069",0.152349,"",49.75,1,1385,774,1385,76,535,1
+"A0A182G5U1"," CCG003603.1","AALF003603",NA,"protein_coding","Aedes albopictus","JXUM01S000139",0.152933,"ga binding protein beta chain (transcription factor e4tf1-47) [Source:Projected from Aedes aegypti (AAEL013278) VB Community Annotation]",39.84,1,34044,2013,11322,7488,1821,6
+"A0A023EV20"," RP20_CCG014045","AALF014045",NA,"protein_coding","Aedes albopictus","JXUM01S003117",0.154298,"protease m1 zinc metalloprotease [Source:Projected from Aedes aegypti (AAEL012217) VB Community Annotation]",54.81,1,3184,2811,2945,31,103,5
+"A0A023EG27"," CCG012242.1","AALF012242",NA,"protein_coding","Aedes albopictus","JXUM01S002688",0.155371,"",49.38,1,4038,408,4038,581,3049,1
+"A0A182G6Q0"," RP20_CCG004148","AALF004148",NA,"protein_coding","Aedes albopictus","JXUM01S001338",0.157318,"",47.22,1,1959,210,1959,814,935,1
+"A0A182GMX8"," RP20_CCG012708","AALF012708",NA,"protein_coding","Aedes albopictus","JXUM01S002783",0.157917,"",46.56,1,4839,1194,4839,1367,2278,1
+"A0A023EWD5"," RP20_CCG013505","AALF013505",NA,"protein_coding","Aedes albopictus","JXUM01S002993",0.160167,"",50.18,1,17433,7836,8618,369,413,10
+"A0A182GEP8"," CCG008622.1","AALF008622",NA,"protein_coding","Aedes albopictus","JXUM01S001900",0.160409,"DNA helicase recq1 [Source:Projected from Aedes aegypti (AAEL007256) VB Community Annotation]",44.71,1,10142,2253,3618,66,1299,3
+"A0A023EQA1"," RP20_CCG015560","AALF015560",NA,"protein_coding","Aedes albopictus","JXUM01S003541",0.161378,"",41.24,1,3722,1191,2324,642,491,2
+"A0A023EV26"," CCG017793.1","AALF017793",NA,"protein_coding","Aedes albopictus","JXUM01S000486",0.162328,"circadian protein clock/arnt/bmal/pas [Source:Projected from Aedes aegypti (AAEL002049) VB Community Annotation]",39.12,1,109475,1968,30970,690,28312,8
+"A0A182GPS6"," RP20_CCG014970","AALF014970",NA,"protein_coding","Aedes albopictus","JXUM01S003354",0.162697,"",45.91,1,1856,1665,1856,76,115,1
+"A0A182GLC9"," CCG011919.1","AALF011919",NA,"protein_coding","Aedes albopictus","JXUM01S002580",0.162855,"",40.41,1,7725,516,7555,107,6932,3
+"A0A182GNJ3"," RP20_CCG012980","AALF012980",NA,"protein_coding","Aedes albopictus","JXUM01S002844",0.16406,"",45.48,1,2355,1710,2355,118,527,1
+"A0A182GGU3"," CCG009668.1","AALF009668",NA,"protein_coding","Aedes albopictus","JXUM01S002097",0.166514,"",37.67,1,9602,1134,2039,47,858,4
+"A0A182GMD7"," CCG012454.1","AALF012454",109431672,"protein_coding","Aedes albopictus","JXUM01S000294",0.167632,"Putative mrna cleavage factor i subunit/cpsf subunit [Source:Projected from Aedes aegypti lvpagwg (AAEL017164) UniProtKB/TrEMBL;Acc:A0A0N8ES32]",44.81,1,4695,1848,2982,254,880,6
+"A0A182GPS6"," CCG013576.1","AALF013576",NA,"protein_coding","Aedes albopictus","JXUM01S002998",0.168019,"",45.91,1,1895,1665,1895,76,154,1
+"A0A023EMU5"," CCG014061.1","AALF014061",NA,"protein_coding","Aedes albopictus","JXUM01S003125",0.168918,"",46.59,1,1891,897,1380,202,281,6
+"A0A182GUD0"," RP20_CCG015915","AALF015915",NA,"protein_coding","Aedes albopictus","JXUM01S003635",0.169108,"",55.19,1,1022,834,1022,140,48,1
+"A0A182GLB9"," CCG011899.1","AALF011899",109417539,"protein_coding","Aedes albopictus","JXUM01S002568",0.169207,"",46.93,1,1956,1029,1956,157,770,1
+"A0A182GH02"," RP20_CCG009737","AALF009737",NA,"protein_coding","Aedes albopictus","JXUM01S002116",0.170894,"",45.09,1,25437,2112,12600,283,10205,7
+"A0A023EWC5"," RP20_CCG008318","AALF008318",NA,"protein_coding","Aedes albopictus","JXUM01S001839",0.17187,"",40.75,1,48487,3912,6418,1158,1348,14
+"A0A182GR75"," CCG014290.1","AALF014290",NA,"protein_coding","Aedes albopictus","JXUM01S003181",0.171885,"Nibrin [Source:UniProtKB/TrEMBL;Acc:A0A182GR75]",49.53,1,3844,2223,3506,114,1169,3
+"A0A182GEY8"," RP20_CCG008758.2","AALF008758",NA,"protein_coding","Aedes albopictus","JXUM01S001924",0.171941,"poly(a) polymerase cid (pap) (caffein-induced death protein) [Source:Projected from Aedes aegypti (AAEL006249) VB Community Annotation]",43.55,1,20188,4074,5703,441,1188,8
+"A0A182GQ07"," RP20_CCG013710","AALF013710",NA,"protein_coding","Aedes albopictus","JXUM01S003032",0.174559,"",54.02,1,2403,1956,2148,104,88,5
+"A0A182GXI3"," RP20_CCG017609.3","AALF017609",NA,"protein_coding","Aedes albopictus","JXUM01S004104",0.176075,"Histone-lysine N-methyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GXI3]",44.3,1,35187,16953,18332,276,1103,15
+"A0A182GE35"," RP20_CCG008334","AALF008334",NA,"protein_coding","Aedes albopictus","JXUM01S001846",0.176679,"Cation-transporting ATPase [Source:UniProtKB/TrEMBL;Acc:A0A182GE35]",45.73,1,6550,3033,6550,646,2871,1
+"A0A182GAX4"," CCG006622.1","AALF006622",NA,"protein_coding","Aedes albopictus","JXUM01S001601",0.176769,"",42.92,1,24019,1758,9724,5997,1969,5
+"A0A182GNC4"," CCG012894.1","AALF012894",NA,"protein_coding","Aedes albopictus","JXUM01S002825",0.177265,"",40.64,1,2264,744,1533,290,499,2
+"A0A182GP12"," RP20_CCG013219","AALF013219",109398471,"protein_coding","Aedes albopictus","JXUM01S002909",0.178232,"Methionine aminopeptidase [Source:UniProtKB/TrEMBL;Acc:A0A182GP12]",43.55,1,7258,1116,2108,250,742,4
+"A0A023EK51"," CCG013130.1","AALF013130",109402498,"protein_coding","Aedes albopictus","JXUM01S002894",0.178769,"Protein YIPF [Source:UniProtKB/TrEMBL;Acc:A0A182GNU8]",39.29,1,10440,681,1112,166,265,5
+"A0A182G2J8"," CCG001475.1","AALF001475",NA,"protein_coding","Aedes albopictus","JXUM01S001133",0.17883,"Non-lysosomal glucosylceramidase [Source:UniProtKB/TrEMBL;Acc:A0A182G2J8]",39.36,1,36909,2664,5105,107,2334,8
+"A0A182H8E2"," CCG023968.1","AALF023968",NA,"protein_coding","Aedes albopictus","JXUM01S000766",0.180347,"",49.06,1,8378,2565,5007,264,2178,5
+"A0A182GMQ0"," RP20_CCG012595","AALF012595",NA,"protein_coding","Aedes albopictus","JXUM01S002760",0.182442,"",41.65,1,10144,870,2609,322,1417,2
+"A0A182GRS0"," CCG014597.1","AALF014597",NA,"protein_coding","Aedes albopictus","JXUM01S003263",0.182783,"",52.26,1,817,507,817,95,215,1
+"A0A023ES44"," RP20_CCG009285","AALF009285",NA,"protein_coding","Aedes albopictus","JXUM01S002018",0.184872,"",40.78,1,34156,1233,2983,402,1348,7
+"A0A023EGR0"," RP20_CCG004464","AALF004464",NA,"protein_coding","Aedes albopictus","JXUM01S001402",0.185771,"",52.75,1,1020,447,947,286,214,2
+"A0A1W7R6H8"," RP20_CCG002747","AALF002747",NA,"protein_coding","Aedes albopictus","JXUM01S001228",0.186681,"",52.1,1,998,819,998,121,58,1
+"A0A182GPM2"," RP20_CCG013506","AALF013506",NA,"protein_coding","Aedes albopictus","JXUM01S002993",0.188224,"",52.05,1,855,615,855,1,239,1
+"A0A182GS33"," RP20_CCG014760","AALF014760",NA,"protein_coding","Aedes albopictus","JXUM01S000376",0.189258,"alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]",39.52,1,22532,2169,11971,603,9199,10
+"A0A182HEI5"," CCG021115.1","AALF021115",NA,"protein_coding","Aedes albopictus","JXUM01S000609",0.189771,"",47.47,1,1386,786,1386,341,259,1
+"A0A023EQX8"," CCG008319.2","AALF008319",NA,"protein_coding","Aedes albopictus","JXUM01S001841",0.190159,"Serine/threonine-protein phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A182GE26]",52.23,1,1972,912,1647,37,698,6
+"A0A182GCS9"," RP20_CCG007686","AALF007686",NA,"protein_coding","Aedes albopictus","JXUM01S001732",0.190745,"synaptojanin [Source:Projected from Aedes aegypti (AAEL011417) VB Community Annotation]",41.63,1,41710,3684,29789,24572,1533,6
+"A0A023ETE2"," CCG015621.1","AALF015621",NA,"protein_coding","Aedes albopictus","JXUM01S000407",0.191567,"",44.84,1,3633,2007,3215,186,1022,3
+"A0A182GPX9"," CCG013663.1","AALF013663",NA,"protein_coding","Aedes albopictus","JXUM01S003018",0.193646,"",48.68,1,1553,900,1553,50,603,1
+"A0A182GI88"," CCG010358.1","AALF010358",NA,"protein_coding","Aedes albopictus","JXUM01S002258",0.194135,"",41.81,1,421,159,421,58,204,1
+"A0A182GHU5"," CCG010182.1","AALF010182",NA,"protein_coding","Aedes albopictus","JXUM01S002214",0.194622,"alcohol dehydrogenase [Source:Projected from Aedes aegypti (AAEL006467) VB Community Annotation]",43.55,1,1566,759,1566,385,422,1
+"A0A182GAN6"," RP20_CCG006466","AALF006466",NA,"protein_coding","Aedes albopictus","JXUM01S001582",0.197371,"",42.2,1,36031,7041,9160,294,1825,4
+"A0A023EQI9"," CCG006713.1","AALF006713",NA,"protein_coding","Aedes albopictus","JXUM01S001614",0.198427,"dfg10 protein [Source:Projected from Aedes aegypti (AAEL012055) VB Community Annotation]",46.68,1,2033,945,1960,481,534,2
+"A0A182GZZ1"," CCG018973.1","AALF018973",NA,"protein_coding","Aedes albopictus","JXUM01S000521",0.20006,"",53.32,1,527,330,527,58,139,1
+"A0A182H691"," RP20_CCG010090","AALF010090",NA,"protein_coding","Aedes albopictus","JXUM01S002190",0.202982,"",44.12,1,1496,936,1496,139,421,1
+"A0A023EPH2"," CCG007427.1","AALF007427",NA,"protein_coding","Aedes albopictus","JXUM01S000176",0.203751,"aldo-keto reductase [Source:Projected from Aedes aegypti (AAEL004088) VB Community Annotation]",39.18,1,12801,957,1230,171,102,4
+"A0A023EU44"," CCG027786.1","AALF027786",NA,"protein_coding","Aedes albopictus","JXUM01S000965",0.204287,"",44.27,1,1536,669,1536,186,681,1
+"A0A182GPI3"," RP20_CCG013464.2","AALF013464",NA,"protein_coding","Aedes albopictus","JXUM01S002983",0.205613,"venom allergen [Source:Projected from Aedes aegypti lvpagwg (AAEL005531) VB Community Annotation]",44.33,1,22224,525,22167,20578,1064,2
+"A0A023EWR1"," CCG004244.1","AALF004244",NA,"protein_coding","Aedes albopictus","JXUM01S001348",0.205754,"2-oxoglutarate dehydrogenase [Source:Projected from Aedes aegypti (AAEL006721) VB Community Annotation]",52.06,1,4007,2865,4007,193,949,1
+"A0A023EVJ6"," RP20_CCG014302","AALF014302",NA,"protein_coding","Aedes albopictus","JXUM01S000355",0.207329,"",38.7,1,16449,2037,2922,196,689,3
+"A0A182GP53"," RP20_CCG013278","AALF013278",NA,"protein_coding","Aedes albopictus","JXUM01S000054",0.208038,"",52.22,1,1578,765,1336,273,298,5
+"A0A182H9N9"," CCG024816.1","AALF024816",NA,"protein_coding","Aedes albopictus","JXUM01S000785",0.209004,"",37.56,1,75626,2391,55571,40572,12608,11
+"A0A182H8Y7"," RP20_CCG024357.2","AALF024357",NA,"protein_coding","Aedes albopictus","JXUM01S000765",0.209617,"",42.15,1,35055,3207,29719,26228,284,5
+"A0A182G8W7"," RP20_CCG005400","AALF005400",NA,"protein_coding","Aedes albopictus","JXUM01S001469",0.210364,"",46.11,1,3663,930,3663,1255,1478,1
+"A0A1W7R6H5"," CCG008772.1","AALF008772",NA,"protein_coding","Aedes albopictus","JXUM01S001925",0.213298,"",47.18,1,1204,1050,1204,44,110,1
+"A0A182G598"," RP20_CCG003245","AALF003245",NA,"protein_coding","Aedes albopictus","JXUM01S001250",0.214479,"Protein distal antenna [Source:Projected from Aedes aegypti (AAEL013733) VB Community Annotation]",51.34,1,1940,1608,1874,44,222,2
+"A0A1W7R665"," RP20_CCG014064","AALF014064",NA,"protein_coding","Aedes albopictus","JXUM01S000343",0.2149,"",45.31,1,1097,1020,1097,30,47,1
+"A0A182HAS2"," CCG025470.1","AALF025470",NA,"protein_coding","Aedes albopictus","JXUM01S000821",0.215541,"arf6 guanine nucleotide exchange factor [Source:Projected from Aedes aegypti (AAEL004236) VB Community Annotation]",42.04,1,72468,4449,7088,450,2189,13
+"A0A182GMV2"," RP20_CCG012679","AALF012679",NA,"protein_coding","Aedes albopictus","JXUM01S000299",0.216566,"",44.15,1,21786,3429,4407,495,483,7
+"A0A023EWL3"," RP20_CCG007352","AALF007352",NA,"protein_coding","Aedes albopictus","JXUM01S001697",0.216774,"",47.37,1,1237,771,1237,325,141,1
+"A0A182H9E6"," CCG024628.1","AALF024628",NA,"protein_coding","Aedes albopictus","JXUM01S000780",0.21698,"",44.28,1,1181,597,1181,25,559,1
+"A0A023EP88"," CCG025948.4","AALF025948",NA,"protein_coding","Aedes albopictus","JXUM01S000846",0.217772,"Glucosamine-6-phosphate isomerase [Source:UniProtKB/TrEMBL;Acc:A0A182HBI6]",37.55,1,26513,837,18727,591,17299,2
+"A0A182GK33"," RP20_CCG011302","AALF011302",NA,"protein_coding","Aedes albopictus","JXUM01S000269",0.219464,"l-asparaginase [Source:Projected from Aedes aegypti (AAEL010938) VB Community Annotation]",46.44,1,1643,975,1584,146,463,2
+"A0A023EFS1"," RP20_CCG010314","AALF010314",109402823,"protein_coding","Aedes albopictus","JXUM01S000252",0.219757,"Putative fatty acid-binding protein fabp [Source:UniProtKB/TrEMBL;Acc:A0A023EFS1]",42.46,1,17054,399,690,185,106,2
+"A0A023ETG1"," CCG002317.1","AALF002317",NA,"protein_coding","Aedes albopictus","JXUM01S001180",0.221385,"glucosyl/glucuronosyl transferases [Source:Projected from Aedes aegypti (AAEL003076) VB Community Annotation]",41.91,1,18428,1569,18313,289,16455,3
+"A0A182H655"," CCG022521.1","AALF022521",NA,"protein_coding","Aedes albopictus","JXUM01S000671",0.223609,"Coronin [Source:UniProtKB/TrEMBL;Acc:A0A182H655]",40.97,1,44840,2532,43558,69,40957,7
+"A0A182GI84"," RP20_CCG010352","AALF010352",NA,"protein_coding","Aedes albopictus","JXUM01S002251",0.224587,"",46.35,1,4201,2154,4201,56,1991,1
+"A0A023EUK0"," RP20_CCG023214.2","AALF023214",NA,"protein_coding","Aedes albopictus","JXUM01S000707",0.224707,"",39.4,1,54430,6378,7344,319,647,6
+"A0A023EXA7"," CCG008130.1","AALF008130",109433307,"protein_coding","Aedes albopictus","JXUM01S000203",0.226901,"Glycogen [starch] synthase [Source:UniProtKB/TrEMBL;Acc:A0A182GDP6]",41.05,1,7069,2088,2770,196,486,5
+"A0A023ESQ1"," CCG004573.1","AALF004573",NA,"protein_coding","Aedes albopictus","JXUM01S001379",0.22729,"",37.59,1,59209,2043,4047,135,1869,5
+"A0A023EP62"," CCG004698.1","AALF004698",NA,"protein_coding","Aedes albopictus","JXUM01S001401",0.227945,"Dual specificity tyrosine-phosphorylation-regulated kinase [Source:Projected from Aedes aegypti (AAEL001504) VB Community Annotation]",39.17,1,163693,1713,38283,34993,1577,8
+"A0A023EV31"," CCG024020.1","AALF024020",NA,"protein_coding","Aedes albopictus","JXUM01S000741",0.228526,"",40.05,1,43491,2280,6149,1192,2677,5
+"A0A182G7S1"," RP20_CCG004781","AALF004781",NA,"protein_coding","Aedes albopictus","JXUM01S001400",0.230491,"",44.71,1,4652,1455,4591,2923,213,2
+"A0A182G7C0"," CCG004536.1","AALF004536",NA,"protein_coding","Aedes albopictus","JXUM01S001372",0.231587,"",55.13,1,2897,948,2897,1307,642,1
+"A0A182GHF2"," RP20_CCG009951","AALF009951",NA,"protein_coding","Aedes albopictus","JXUM01S002156",0.231791,"",41.46,1,8524,1086,8403,148,7169,3
+"A0A182GAI3"," RP20_CCG006378","AALF006378",NA,"protein_coding","Aedes albopictus","JXUM01S001580",0.232053,"",41.35,1,1949,1479,1882,139,264,2
+"A0A182GER9"," RP20_CCG008658","AALF008658",NA,"protein_coding","Aedes albopictus","JXUM01S001904",0.232627,"gc-rich sequence DNA-binding factor [Source:Projected from Aedes aegypti (AAEL006043) VB Community Annotation]",42.46,1,16191,2109,6331,3577,645,6
+"A0A182GFF5"," CCG008983.1","AALF008983",NA,"protein_coding","Aedes albopictus","JXUM01S001959",0.233894,"",45.11,1,521,261,521,99,161,1
+"A0A182GEG3"," RP20_CCG008498","AALF008498",NA,"protein_coding","Aedes albopictus","JXUM01S001875",0.234201,"ATP-dependent DNA helicase [Source:UniProtKB/TrEMBL;Acc:A0A182GEG3]",43.98,1,9195,2253,3709,157,1299,3
+"A0A182GDU2"," CCG008198.1","AALF008198",NA,"protein_coding","Aedes albopictus","JXUM01S001819",0.234623,"",40.22,1,19131,204,19131,18703,224,1
+"A0A182GDN3"," CCG008116.1","AALF008116",NA,"protein_coding","Aedes albopictus","JXUM01S001805",0.236762,"nuclear pore complex protein nup154 [Source:Projected from Aedes aegypti (AAEL001861) VB Community Annotation]",42,1,15314,3432,14590,10401,757,5
+"A0A023EKD1"," CCG025859.1","AALF025859",NA,"protein_coding","Aedes albopictus","JXUM01S000836",0.236923,"cell cycle control protein cwf22 [Source:Projected from Aedes aegypti (AAEL000707) VB Community Annotation]",52.51,1,2872,2475,2735,227,33,3
+"A0A182HE88"," RP20_CCG027723.2","AALF027723",NA,"protein_coding","Aedes albopictus","JXUM01S000956",0.238087,"",40.94,1,25419,4764,6092,291,1037,7
+"A0A182G8V3"," RP20_CCG005377","AALF005377",NA,"protein_coding","Aedes albopictus","JXUM01S001464",0.239661,"",38.39,1,42906,1461,42825,75,41289,2
+"A0A182HC86"," RP20_CCG026423","AALF026423",NA,"protein_coding","Aedes albopictus","JXUM01S000898",0.240204,"",49.02,1,19619,1977,9565,5649,1939,2
+"A0A023EE18"," RP20_CCG009017","AALF009017",NA,"protein_coding","Aedes albopictus","JXUM01S001963",0.240372,"",50.84,1,836,423,836,374,39,1
+"A0A182G3N7"," RP20_CCG002233","AALF002233",NA,"protein_coding","Aedes albopictus","JXUM01S001171",0.243105,"",38.62,1,27165,1542,27165,8838,16785,1
+"A0A182GC42"," RP20_CCG007311","AALF007311",NA,"protein_coding","Aedes albopictus","JXUM01S001690",0.243192,"",40.29,1,18762,4161,6247,7,2079,3
+"A0A182HC90"," RP20_CCG026429.2","AALF026429",NA,"protein_coding","Aedes albopictus","JXUM01S000875",0.247345,"Dolichol phosphate-mannose biosynthesis regulatory protein [Source:UniProtKB/TrEMBL;Acc:A0A182HC90]",36.47,1,6255,255,6013,290,5468,2
+"A0A182GMV3"," CCG012680.1","AALF012680",NA,"protein_coding","Aedes albopictus","JXUM01S000299",0.248616,"sin3a-associated protein sap130 [Source:Projected from Aedes aegypti (AAEL007252) VB Community Annotation]",41.72,1,18206,4032,6068,759,1277,6
+"A0A182H391"," RP20_CCG020801","AALF020801",NA,"protein_coding","Aedes albopictus","JXUM01S000593",0.250317,"",38.96,1,2518,516,1630,407,707,3
+"A0A182G364"," CCG001937.1","AALF001937",NA,"protein_coding","Aedes albopictus","JXUM01S001155",0.25075,"",41.87,1,11779,1968,3270,113,1189,2
+"A0A182GBC6"," RP20_CCG006880","AALF006880",109405016,"protein_coding","Aedes albopictus","JXUM01S001646",0.25186,"",39.4,1,10375,1011,10375,173,9191,1
+"A0A182HDF6"," RP20_CCG027168","AALF027168",NA,"protein_coding","Aedes albopictus","JXUM01S000920",0.254138,"pcdc2/rp-8 (programmed cell death protein 2) [Source:Projected from Aedes aegypti (AAEL013902) VB Community Annotation]",41.08,1,8345,1059,1607,76,472,6
+"A0A182HBZ8"," RP20_CCG026228.2","AALF026228",NA,"protein_coding","Aedes albopictus","JXUM01S000864",0.254339,"",40.06,1,12969,1086,12870,128,11656,2
+"A0A182G4U8"," CCG002974.1","AALF002974",NA,"protein_coding","Aedes albopictus","JXUM01S001234",0.259372,"Ubiquitinyl hydrolase 1 [Source:UniProtKB/TrEMBL;Acc:A0A182G4U8]",41.58,1,25365,3771,9534,5335,428,6
+"A0A182G6M7"," RP20_CCG004117","AALF004117",NA,"protein_coding","Aedes albopictus","JXUM01S001330",0.259559,"",49.14,1,753,525,753,65,163,1
+"A0A023ERC5"," CCG001650.3","AALF001650",NA,"protein_coding","Aedes albopictus","JXUM01S001135",0.262564,"",39.62,1,51279,777,33355,21467,11111,4
+"A0A023EIL7"," CCG007410.1","AALF007410",109427759,"protein_coding","Aedes albopictus","JXUM01S001701",0.265146,"Glucosamine 6-phosphate N-acetyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A023EIL7]",39.97,1,8475,639,1196,176,381,4
+"A0A023EPT7"," CCG006898.1","AALF006898",NA,"protein_coding","Aedes albopictus","JXUM01S001645",0.266447,"leucine rich repeat protein [Source:Projected from Aedes aegypti (AAEL003554) VB Community Annotation]",38.95,1,81074,1407,2959,462,1090,10
+"A0A023EU44"," CCG004531.1","AALF004531",NA,"protein_coding","Aedes albopictus","JXUM01S001369",0.272865,"GATA transcription factor (GATAd) [Source:Projected from Aedes aegypti (AAEL010221) VB Community Annotation]",38.49,1,9388,1125,1125,NA,NA,3
+"A0A182G3U2"," RP20_CCG002318.4","AALF002318",NA,"protein_coding","Aedes albopictus","JXUM01S001180",0.273489,"",38.86,1,11853,2130,8288,4712,1446,6
+"A0A023EX67"," RP20_CCG018417","AALF018417",NA,"protein_coding","Aedes albopictus","JXUM01S000513",0.273575,"",55.94,1,522,411,522,39,72,1
+"A0A182G5F1"," CCG003361.1","AALF003361",NA,"protein_coding","Aedes albopictus","JXUM01S001265",0.274122,"nucleosome assembly protein [Source:Projected from Aedes aegypti (AAEL005567) VB Community Annotation]",39.22,1,5924,1191,4635,260,3184,2
+"A0A182GLB9"," RP20_CCG026595","AALF026595",109417539,"protein_coding","Aedes albopictus","JXUM01S000892",0.276778,"",46.9,1,3228,1029,3228,1196,1003,1
+"A0A182H7W6"," RP20_CCG023649","AALF023649",NA,"protein_coding","Aedes albopictus","JXUM01S000720",0.278015,"sprouty [Source:Projected from Aedes aegypti (AAEL014510) VB Community Annotation]",42.22,1,62110,1827,62110,51593,8690,1
+"A0A182H656"," RP20_CCG022522","AALF022522",NA,"protein_coding","Aedes albopictus","JXUM01S000671",0.279872,"",44.24,1,1544,531,1544,609,404,1
+"A0A182G698"," CCG003867.1","AALF003867",109432996,"protein_coding","Aedes albopictus","JXUM01S001305",0.282505,"",39.64,1,11429,828,11292,9828,636,3
+"A0A182G573"," CCG003701.1","AALF003701",NA,"protein_coding","Aedes albopictus","JXUM01S001292",0.283002,"",44.12,1,16055,1659,4212,1276,1277,4
+"A0A182GV54"," RP20_CCG016301","AALF016301",NA,"protein_coding","Aedes albopictus","JXUM01S000431",0.283298,"",50.05,1,2170,945,2170,298,927,1
+"A0A182GUP1"," CCG016085.1","AALF016085",NA,"protein_coding","Aedes albopictus","JXUM01S000435",0.283736,"atlastin [Source:Projected from Aedes aegypti (AAEL003109) VB Community Annotation]",41.15,1,56409,1644,31666,28586,1436,7
+"A0A182GU57"," CCG015811.1","AALF015811",NA,"protein_coding","Aedes albopictus","JXUM01S000411",0.284743,"",39.14,1,28862,2724,3969,767,478,10
+"A0A182GT68"," RP20_CCG015324","AALF015324",NA,"protein_coding","Aedes albopictus","JXUM01S000386",0.285994,"",39.41,1,14701,1533,1613,41,39,7
+"A0A023EWR1"," CCG009771.2","AALF009771",NA,"protein_coding","Aedes albopictus","JXUM01S000223",0.28668,"",40.29,1,46350,2391,28964,23732,2841,5
+"A0A023ET90"," CCG018418.2","AALF018418",NA,"protein_coding","Aedes albopictus","JXUM01S000513",0.287077,"",42.16,1,54160,1683,3737,383,1671,8
+"A0A023EXG8"," CCG025689.1","AALF025689",NA,"protein_coding","Aedes albopictus","JXUM01S000828",0.287101,"",48.16,1,2282,1149,2282,474,659,1
+"A0A182G551"," CCG003159.1","AALF003159",NA,"protein_coding","Aedes albopictus","JXUM01S001294",0.28748,"",40.56,1,25848,756,12258,37,11465,4
+"A0A023EQP1"," RP20_CCG020977","AALF020977",NA,"protein_coding","Aedes albopictus","JXUM01S000610",0.288037,"leucine-rich transmembrane protein [Source:Projected from Aedes aegypti (AAEL002307) VB Community Annotation]",42.26,1,28742,1542,5659,710,3407,4
+"A0A182H7I4"," CCG023410.1","AALF023410",NA,"protein_coding","Aedes albopictus","JXUM01S000717",0.291855,"Putative translocase of outer membrane [Source:Projected from Aedes aegypti lvpagwg (AAEL019995) UniProtKB/TrEMBL;Acc:A0A0N8ERY3]",44.96,1,4277,2853,4181,1277,51,2
+"A0A182GY22"," CCG017917.1","AALF017917",NA,"protein_coding","Aedes albopictus","JXUM01S000488",0.296322,"WD-repeat protein [Source:Projected from Aedes aegypti lvpagwg (AAEL013866) VB Community Annotation]",43.12,1,9990,2937,4192,134,1121,6
+"A0A182HFB7"," RP20_CCG028469.2","AALF028469",NA,"protein_coding","Aedes albopictus","JXUM01S001006",0.297138,"",37.98,1,14259,447,13918,540,12931,4
+"A0A182GYQ3"," RP20_CCG018285","AALF018285",NA,"protein_coding","Aedes albopictus","JXUM01S000503",0.304792,"synaptic vesicle protein [Source:Projected from Aedes aegypti (AAEL015283) VB Community Annotation]",49.53,1,2990,1572,2879,169,1138,3
+"A0A182G4V0"," RP20_CCG002976","AALF002976",NA,"protein_coding","Aedes albopictus","JXUM01S001234",0.305546,"",50.74,1,678,399,678,193,86,1
+"A0A182HBY3"," CCG026212.1","AALF026212",NA,"protein_coding","Aedes albopictus","JXUM01S001086",0.30812,"protein phosphatase 2c [Source:Projected from Aedes aegypti (AAEL007171) VB Community Annotation]",40.7,1,38627,2718,3096,143,235,3
+"A0A023ECQ0"," CCG001317.1","AALF001317",109430248,"protein_coding","Aedes albopictus","JXUM01S001107",0.308351,"",38.32,1,4938,333,4845,246,4266,2
+"A0A182HF28"," RP20_CCG028309","AALF028309",NA,"protein_coding","Aedes albopictus","JXUM01S001001",0.320938,"",40.44,1,727,240,727,157,330,1
+"A0A023EHT5"," RP20_CCG008133","AALF008133",109433320,"protein_coding","Aedes albopictus","JXUM01S000203",0.322045,"Putative amelogenin [Source:UniProtKB/TrEMBL;Acc:A0A023EHT5]",47.24,1,980,501,916,55,360,2
+"Q6DLT4"," CCG000723.1","AALF000723",NA,"protein_coding","Aedes albopictus","JXUM01S000562",0.327371,"Sodium channel protein [Source:UniProtKB/TrEMBL;Acc:A0A182G1I1]",38.51,1,279113,6171,6171,NA,NA,32
+"A0A182H2P2"," CCG020491.1","AALF020491",NA,"protein_coding","Aedes albopictus","JXUM01S000577",0.328523,"sulphate transporter [Source:Projected from Aedes aegypti (AAEL003548) VB Community Annotation]",40.73,1,48991,2055,34506,31785,666,6
+"A0A182GFC6"," RP20_CCG014149","AALF014149",NA,"protein_coding","Aedes albopictus","JXUM01S000351",0.329511,"heterogeneous nuclear ribonucleoprotein [Source:Projected from Aedes aegypti (AAEL010467) VB Community Annotation]",40.75,1,11490,1104,2545,301,1140,4
+"A0A182HEX1"," RP20_CCG028192","AALF028192",NA,"protein_coding","Aedes albopictus","JXUM01S000981",0.33254,"",49.82,1,556,321,556,2,233,1
+"A0A182GE93"," RP20_CCG008414","AALF008414",NA,"protein_coding","Aedes albopictus","JXUM01S000201",0.339305,"Non-specific serine/threonine protein kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GE93]",40.71,1,39831,4179,6688,478,2031,6
+"A0A182GSS4"," RP20_CCG015087","AALF015087",NA,"protein_coding","Aedes albopictus","JXUM01S000382",0.340063,"protein transport protein sec23 [Source:Projected from Aedes aegypti (AAEL007484) VB Community Annotation]",42.65,1,21531,2316,5764,279,3169,3
+"A0A182GR14"," RP20_CCG014223","AALF014223",NA,"protein_coding","Aedes albopictus","JXUM01S000354",0.345181,"",48.62,1,2571,1005,2571,258,1308,1
+"A0A023EI03"," RP20_CCG023780.2","AALF023780",NA,"protein_coding","Aedes albopictus","JXUM01S000727",0.352079,"",36.85,1,19990,516,592,47,29,4
+"A0A182GXA5"," CCG017499.1","AALF017499",NA,"protein_coding","Aedes albopictus","JXUM01S000464",0.352243,"",43.06,1,85532,2817,15195,1141,11237,4
+"A0A023EQE1"," RP20_CCG020920","AALF020920",109412243,"protein_coding","Aedes albopictus","JXUM01S000595",0.352381,"Serine/threonine-protein phosphatase [Source:UniProtKB/TrEMBL;Acc:A0A023EQE1]",40.82,1,27045,924,2784,670,1190,3
+"A0A182H7E8"," CCG023342.1","AALF023342",NA,"protein_coding","Aedes albopictus","JXUM01S000713",0.352917,"",45.91,1,2357,1164,2357,79,1114,1
+"A0A182H343"," CCG020712.1","AALF020712",NA,"protein_coding","Aedes albopictus","JXUM01S000582",0.353178,"amino acid transporter [Source:Projected from Aedes aegypti lvpagwg (AAEL007191) VB Community Annotation]",41.05,1,9234,1428,2156,22,706,7
+"A0A182GI06"," CCG010259.1","AALF010259",109397596,"protein_coding","Aedes albopictus","JXUM01S000242",0.355631,"phosphatidylinositol 3-kinase catalytic subunit alpha, beta, delta [Source:Projected from Aedes aegypti (AAEL002903) VB Community Annotation]",40.2,1,49621,3171,8283,2031,3081,5
+"A0A023EQ29"," CCG016461.1","AALF016461",NA,"protein_coding","Aedes albopictus","JXUM01S000427",0.361185,"",36.93,1,12788,2310,3461,68,1083,4
+"A0A023EMI9"," RP20_CCG024021","AALF024021",NA,"protein_coding","Aedes albopictus","JXUM01S000741",0.362428,"",43.01,1,2862,1791,2153,101,261,4
+"A0A182GQV8"," RP20_CCG014152","AALF014152",NA,"protein_coding","Aedes albopictus","JXUM01S000351",0.364583,"",40.86,1,19500,2565,13954,9886,1503,3
+"A0A023ETE8"," RP20_CCG021758","AALF021758",109623113,"protein_coding","Aedes albopictus","JXUM01S000635",0.367292,"splicing factor yt521-b [Source:Projected from Aedes aegypti (AAEL002272) VB Community Annotation]",41.34,1,27156,1776,27156,22102,3278,1
+"A0A023EUU3"," CCG015467.1","AALF015467",NA,"protein_coding","Aedes albopictus","JXUM01S000033",0.371493,"Polypeptide N-acetylgalactosaminyltransferase [Source:UniProtKB/TrEMBL;Acc:A0A182GTH0]",38.83,1,29151,1947,3406,491,968,7
+"A0A023ETD8"," CCG024561.1","AALF024561",NA,"protein_coding","Aedes albopictus","JXUM01S000772",0.373472,"",47.65,1,6294,2970,4974,220,1784,7
+"A0A023EHT6"," CCG019692.1","AALF019692",NA,"protein_coding","Aedes albopictus","JXUM01S000546",0.379781,"",41.19,1,38946,3513,19554,115,15926,17
+"A0A182H3G2"," CCG020921.1","AALF020921",NA,"protein_coding","Aedes albopictus","JXUM01S000595",0.383907,"NAD-dependent protein deacylase [Source:UniProtKB/TrEMBL;Acc:A0A182H3G2]",48.84,1,1253,933,1182,97,152,2
+"A0A182GVC4"," CCG016401.1","AALF016401",NA,"protein_coding","Aedes albopictus","JXUM01S000043",0.385923,"",43.36,1,28262,2172,28262,1815,24275,1
+"A0A182H404"," CCG021254.1","AALF021254",NA,"protein_coding","Aedes albopictus","JXUM01S000640",0.390103,"",46.18,1,2226,531,2226,634,1061,1
+"A0A182GFE7"," RP20_CCG008969.2","AALF008969",NA,"protein_coding","Aedes albopictus","JXUM01S000208",0.395615,"ubiquitin specific protease 2, [Source:Projected from Aedes aegypti (AAEL010854) VB Community Annotation]",40.07,1,20160,1764,2928,222,942,9
+"A0A023EXF3"," RP20_CCG018290","AALF018290",109424811,"protein_coding","Aedes albopictus","JXUM01S000503",0.396862,"Malic enzyme [Source:UniProtKB/TrEMBL;Acc:A0A182GYQ8]",42.71,1,25408,1875,3894,487,1532,4
+"A0A023ER06"," RP20_CCG018204","AALF018204",NA,"protein_coding","Aedes albopictus","JXUM01S000494",0.406436,"RNA binding motif protein 4,lark [Source:Projected from Aedes aegypti (AAEL013982) VB Community Annotation]",44.74,1,1681,672,1681,279,730,1
+"A0A182H5K8"," RP20_CCG022199","AALF022199",NA,"protein_coding","Aedes albopictus","JXUM01S000654",0.408117,"",49.12,1,1020,687,1020,256,77,1
+"A0A182H1W9"," RP20_CCG020086","AALF020086",NA,"protein_coding","Aedes albopictus","JXUM01S000560",0.414804,"",51.39,1,1117,252,1117,330,535,1
+"A0A023EVR9"," RP20_CCG008617.2","AALF008617",NA,"protein_coding","Aedes albopictus","JXUM01S000238",0.415023,"Acyl-coenzyme A oxidase [Source:UniProtKB/TrEMBL;Acc:A0A182GEP3]",39.34,1,15342,1722,2636,230,684,6
+"A0A182H1J3"," CCG019875.1","AALF019875",NA,"protein_coding","Aedes albopictus","JXUM01S000554",0.419914,"",52.71,1,1032,408,1032,428,196,1
+"A0A182GKK1"," CCG011519.1","AALF011519",NA,"protein_coding","Aedes albopictus","JXUM01S000016",0.427739,"",42.91,1,45644,2337,42232,39506,389,7
+"A0A023EPE8"," RP20_CCG016021","AALF016021",NA,"protein_coding","Aedes albopictus","JXUM01S000410",0.431607,"",41.75,1,29073,1074,1970,184,712,6
+"A0A023ESD6"," RP20_CCG009106","AALF009106",NA,"protein_coding","Aedes albopictus","JXUM01S000215",0.432022,"",38.6,1,31319,1203,22569,19819,1547,4
+"A0A182GUX7"," CCG016191.1","AALF016191",NA,"protein_coding","Aedes albopictus","JXUM01S000420",0.433429,"ATP-dependent RNA helicase [Source:Projected from Aedes aegypti (AAEL011534) VB Community Annotation]",43.57,1,20312,3819,5410,74,1517,4
+"A0A182GDA5"," CCG007937.2","AALF007937",NA,"protein_coding","Aedes albopictus","JXUM01S000193",0.447227,"ubiquitin specific protease [Source:Projected from Aedes aegypti (AAEL010184) VB Community Annotation]",41.06,1,93345,4671,49617,33227,11719,10
+"A0A182G4X0"," CCG014125.1","AALF014125",NA,"protein_coding","Aedes albopictus","JXUM01S000340",0.471724,"Mitochondrial fission 1 protein [Source:UniProtKB/TrEMBL;Acc:A0A182G4X0]",38.67,1,15945,459,459,NA,NA,3
+"A0A182GH29"," RP20_CCG009773","AALF009773",NA,"protein_coding","Aedes albopictus","JXUM01S000223",0.480044,"",44.72,1,1288,780,1288,96,412,1
+"A0A182HE32"," CCG027634.1","AALF027634",NA,"protein_coding","Aedes albopictus","JXUM01S000101",0.480812,"dual specificity mitogen-activated protein kinase kinase hemipterous MAPKK [Source:Projected from Aedes aegypti (AAEL003359) VB Community Annotation]",39.68,1,31905,3126,6523,684,2713,9
+"A0A182H356"," CCG020733.1","AALF020733",NA,"protein_coding","Aedes albopictus","JXUM01S000061",0.488222,"pangolin [Source:Projected from Aedes aegypti (AAEL000656) VB Community Annotation]",47.72,1,6117,2262,6117,1742,2113,1
+"A0A182GDL6"," RP20_CCG008086","AALF008086",NA,"protein_coding","Aedes albopictus","JXUM01S000204",0.488953,"",49.95,1,2016,1290,2016,30,696,1
+"A0A182GRP7"," RP20_CCG014552","AALF014552",NA,"protein_coding","Aedes albopictus","JXUM01S000367",0.494049,"",41.83,1,20760,3195,15639,11865,579,5
+"A0A182GJ26"," CCG010763.1","AALF010763",NA,"protein_coding","Aedes albopictus","JXUM01S000249",0.500696,"",40.09,1,17714,1599,4715,786,2330,4
+"A0A182H4D2"," RP20_CCG028366","AALF028366",NA,"protein_coding","Aedes albopictus","JXUM01S000102",0.505222,"brat protein [Source:Projected from Aedes aegypti (AAEL004918) VB Community Annotation]",50.36,1,3838,2718,3838,855,265,1
+"A0A182GZU3"," RP20_CCG018905","AALF018905",NA,"protein_coding","Aedes albopictus","JXUM01S000046",0.512386,"zinc finger protein [Source:Projected from Aedes aegypti (AAEL009509) VB Community Annotation]",45.23,1,2724,1251,2284,269,764,4
+"A0A182GCX7"," CCG007750.2","AALF007750",109400184,"protein_coding","Aedes albopictus","JXUM01S000184",0.51557,"peptidyl-prolyl cis-trans isomerase (cyclophilin) [Source:Projected from Aedes aegypti (AAEL006054) VB Community Annotation]",44.46,1,10831,2229,4556,433,1894,2
+"A0A182GJK2"," CCG011049.1","AALF011049",NA,"protein_coding","Aedes albopictus","JXUM01S000027",0.527902,"",36.24,1,23338,621,9529,244,8664,6
+"A0A182HE33"," RP20_CCG027635","AALF027635",NA,"protein_coding","Aedes albopictus","JXUM01S000101",0.528802,"",42.91,1,19902,1707,3780,564,1509,5
+"A0A023EMA3"," RP20_CCG026959","AALF026959",109414601,"protein_coding","Aedes albopictus","JXUM01S000088",0.536992,"Putative heat shock protein [Source:UniProtKB/TrEMBL;Acc:A0A023EMA3]",47.83,1,1292,750,1214,146,318,2
+"A0A182GTH6"," CCG015473.1","AALF015473",NA,"protein_coding","Aedes albopictus","JXUM01S000033",0.554593,"Protein kinase C [Source:Projected from Aedes aegypti (AAEL001108) UniProtKB/TrEMBL;Acc:Q17M58]",38.74,1,105174,1587,52950,50084,1279,9
+"A0A182G6D5"," CCG003951.1","AALF003951",NA,"protein_coding","Aedes albopictus","JXUM01S000148",0.557328,"",52.13,1,2064,963,2064,643,458,1
+"A0A182GPU8"," CCG013614.1","AALF013614",NA,"protein_coding","Aedes albopictus","JXUM01S000030",0.5607,"",50.15,1,5262,2985,4852,601,1266,4
+"A0A182HDE5"," RP20_CCG027144","AALF027144",NA,"protein_coding","Aedes albopictus","JXUM01S000006",0.584225,"",40.5,1,22911,2961,12297,430,8906,3
+"A0A1W7R5R5"," CCG012195.1","AALF012195",NA,"protein_coding","Aedes albopictus","JXUM01S000022",0.587788,"",49.73,1,1277,870,870,NA,NA,2
+"A0A182G6D8"," CCG003954.1","AALF003954",NA,"protein_coding","Aedes albopictus","JXUM01S000148",0.593607,"",43.11,1,6537,321,6537,3029,3187,1
+"A0A182GSA0"," CCG000039.1","AALF000039",NA,"protein_coding","Aedes albopictus","JXUM01S000105",0.621842,"crk [Source:Projected from Aedes aegypti (AAEL006523) VB Community Annotation]",46.74,1,1397,843,1397,180,374,1
+"A0A182HAT9"," CCG025490.1","AALF025490",NA,"protein_coding","Aedes albopictus","JXUM01S000117",0.627257,"",43,1,2756,1476,2582,480,626,4
+"A0A182GT04"," RP20_CCG015221","AALF015221",NA,"protein_coding","Aedes albopictus","JXUM01S000038",0.727739,"",40.21,1,56222,2151,56222,52869,1202,1
+"A0A023ETA1"," CCG027132.1","AALF027132",NA,"protein_coding","Aedes albopictus","JXUM01S000026",0.789125,"",41.96,1,7877,1503,7674,246,5925,3
+"A0A182GNI2"," CCG012962.1","AALF012962",NA,"protein_coding","Aedes albopictus","JXUM01S000008",0.887913,"odd Oz protein [Source:Projected from Aedes aegypti (AAEL000405) VB Community Annotation]",39.36,1,66662,7500,11589,96,3993,10
+"A0A023EE00",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EFJ7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EFN5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EFU6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EFV4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EH01",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EHN3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EI65",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EJF7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EJK9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EJQ3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ELS4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EMA2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EMK8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EMP1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EN63",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EN89",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EPB0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EPZ6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EQ72",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EQM7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EQR6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ERG1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ERH8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ERR0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ERS1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ES98",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ESN6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ESS5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ET23",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ET88",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023ETF7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EUJ3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EUP2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EV28",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EVX5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EW10",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EW87",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EWB3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EWJ7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EWN9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A023EXF7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A0E3J9X2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G0L9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G0Q0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G0T6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G0U6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G1E4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G1E7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G1N5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G204",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G2N5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G2Q1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G2V5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G3J1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G3N4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G3U1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G4H0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G4S7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G593",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G737",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G788",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G7E3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G7F0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G7L4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182G8X1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GAB6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GAK2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GAN8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GAT9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GB21",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GBE1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GBH6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GC25",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GCC0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GCC4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GD08",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GD47",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GDC3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GDD5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GDP6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GDW5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GE25",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GE26",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GE86",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GEP3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GF10",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GFP3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GG15",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GG74",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GGX6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GH27",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GHS1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GIH3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GKQ4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GKR1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GL33",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GLN0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GM05",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GM34",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GMC1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GMH5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GMX7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GMZ4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GNU8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GNX0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GPF1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GPM1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GQP1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GQQ1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GR85",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GRH9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GRV8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GS04",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GS49",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GT13",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GTH0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GTM1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GTN3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GTQ3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GTR5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GUJ6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GUV4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GV08",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GVG0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GVG6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GVH2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GVN2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GWA7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GXK9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GXV2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GYJ6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GYQ8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GZ08",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182GZY2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H022",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H0R7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H108",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H186",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H1K9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H1S6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H338",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H3K1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H4K6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H4P9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H4Q0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H4W0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H5U8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H615",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H6E1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H6T4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H786",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H841",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H856",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H8F6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H8F7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H958",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H959",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H9A7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H9B0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H9C6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182H9P7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HA21",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HA22",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HB39",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HB57",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HBD0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HBI6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HDD4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HDU3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HE94",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A182HEB8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R4L6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R512",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5E7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5G6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5I8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5J9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5K6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5L9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5M8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5N5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5R9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5S6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5V5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5W5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5Y7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5Z1",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5Z3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R5Z4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R619",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R626",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R628",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R629",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R638",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R640",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R648",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R654",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R681",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R687",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6B9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6E4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6F6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6G2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6G5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6G8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6H4",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6I0",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6I3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6J3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6K8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6L3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6N5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6P9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6R7",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6V5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R6Y6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R702",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R756",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R7C8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R852",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R886",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R898",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8A2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8A8",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8C5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8D2",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8H3",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8J6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8K5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"A0A1W7R8K9",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"G8GID5",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Q5MIS6",NA,"Not mapped",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
