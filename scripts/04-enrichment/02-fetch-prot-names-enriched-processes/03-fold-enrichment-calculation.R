@@ -42,3 +42,8 @@ fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
     print(fold_enrichment)
   }
 }
+
+# ==== TEST & DEBUG FUNCTION ====
+# Subset a part of the dataframe, in this case, only one row
+test_all_row <- all[1, ]
+result_all_row <- fold_enrichment_calc(test_all_row)
