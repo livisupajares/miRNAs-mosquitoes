@@ -23,7 +23,7 @@ lapply(names(candidates_miranda), function(miRNA_name) {
   uniprot_ids <- Filter(nzchar, uniprot_ids)
 
   # Save to txt file
-  writeLines(uniprot_ids, con = paste0("results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aal-miranda-per-mirna-shinygo/", miRNA_name, "-uniprot-aal-miranda.txt"))
+  writeLines(uniprot_ids, con = paste0("results/02-enrichment/01-raw-input-output/stringdb/input/per-mirna/aal-miranda-per-mirna/", miRNA_name, "-uniprot-aal-miranda.txt"))
 })
 
 # miRanda all
@@ -35,7 +35,7 @@ lapply(names(candidates_miranda), function(miRNA_name) {
 # their uniprot entry describes the same protein name.
 uniprot_ids_all_miranda <- unlist(strsplit(as.character(miranda_aal_uniprot_filtered$uniprot_id), ",")) # 868
 uniprot_ids_all_miranda <- Filter(nzchar, uniprot_ids_all_miranda)
-writeLines(uniprot_ids_all_miranda, con = "results/02-enrichment/01-raw-input-output/shinygo/input/all/uniprot-aal-miranda-all.txt")
+writeLines(uniprot_ids_all_miranda, con = "results/02-enrichment/01-raw-input-output/stringdb/input/all/uniprot-aal-miranda-all.txt")
 
 # ===== DIVIDE ALL MIRNAS INTO 4 GROUPS ====
 # At this point we haven't done the Venny processing, therefore we should save

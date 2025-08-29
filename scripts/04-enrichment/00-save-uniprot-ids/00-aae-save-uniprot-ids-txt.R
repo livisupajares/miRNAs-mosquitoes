@@ -18,8 +18,8 @@ lapply(names(candidates_miranda), function(miRNA_name) {
   # Extract Uniprot IDs from uniprot_id column
   uniprot_ids <- candidates_miranda[[miRNA_name]]$uniprot_id
   # Save to txt file
-  writeLines(uniprot_ids, con = paste0("results/02-enrichment/01-raw-input-output/shinygo/input/per-mirna/aae-miranda-per-mirna-shinygo/", miRNA_name, "-uniprot-aae-miranda.txt"))
+  writeLines(uniprot_ids, con = paste0("results/02-enrichment/01-raw-input-output/stringdb/input/per-mirna/aae-miranda-per-mirna/", miRNA_name, "-uniprot-aae-miranda.txt"))
 })
 
 # miRanda all
-writeLines(miranda_aae_uniprot_filtered$uniprot_id, con = "results/02-enrichment/01-raw-input-output/shinygo/input/all/uniprot-aae-miranda-all.txt")
+writeLines(miranda_aae_uniprot_filtered$uniprot_id, con = "results/02-enrichment/01-raw-input-output/stringdb/input/all/uniprot-aae-miranda-all.txt")
