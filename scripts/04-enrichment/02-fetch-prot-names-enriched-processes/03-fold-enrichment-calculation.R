@@ -1,4 +1,4 @@
-# ~~~~~ FOLD ENRICHMENT CALCULATION ~~~~~ 
+# ~~~~~ FOLD ENRICHMENT CALCULATION ~~~~~
 # This script is used to calculate the fold enrichment
 # to see how much is a term enriched.
 # To calculated we will create a function where :
@@ -8,7 +8,7 @@
 
 # ==== IMPORT DATA =====
 # We will import the intermediate results from the script
-# 01-fuse-enrichment-results.R, before we took out the 
+# 01-fuse-enrichment-results.R, before we took out the
 # unimportant terms
 # Per miRNA
 per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
@@ -24,8 +24,8 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 
 # ==== FOLD ENRICHMENT FUNCTION =====
 # The formula is the same for both species,
-# but the total amount of protein coding genes in organism differes between Aedes aegypti and
-# Aedes albopictus.
+# but the total amount of protein coding genes in organism differes between
+# Aedes aegypti and Aedes albopictus.
 
 # Constants
 # total amount of protein coding genes in your input
@@ -46,7 +46,8 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 # aal-mir-4728-5p = 198 protein coding genes
 
 # total amount of protein coding genes in organism
-## From the stringdb website, look up for Aedes aegypti and Aedes albopictus in the "Organisms" option from the sidebar. 
+## From the stringdb website, look up for Aedes aegypti and Aedes albopictus in
+## the "Organisms" option from the sidebar.
 ## TODO: Add condition to check if df contains "all" or "per_mirna" in the name,
 ## and add the correct amount of protein coding genes
 ## TODO: For each species inside per_mirna, add a condition to check which miRNA
@@ -55,12 +56,11 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
   if (df$species == "Aedes aegypti") {
     n_protein_genes_org <- 15757
-    fold_enrichment <- (df$observed_gene_count/n_prot_coding_genes_input)/(df$background_gene_count/n_protein_genes_org)
+    fold_enrichment <- (df$observed_gene_count / n_prot_coding_genes_input) / (df$background_gene_count / n_protein_genes_org)
     print(fold_enrichment)
-  } 
-  else {
+  } else {
     n_protein_genes_org <- 16616
-    fold_enrichment <- (df$observed_gene_count/n_prot_coding_genes_input)/(df$background_gene_count/n_protein_genes_org)
+    fold_enrichment <- (df$observed_gene_count / n_prot_coding_genes_input) / (df$background_gene_count / n_protein_genes_org)
     print(fold_enrichment)
   }
 }
