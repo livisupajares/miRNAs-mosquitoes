@@ -29,10 +29,29 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 
 # Constants
 # total amount of protein coding genes in your input
-## TODO: Calculated from fasta file in per-mirna, all and venny using seqkit in the terminal
-# TODO: Write seqkit command and results here for reference
+## Calculated from fasta file in per-mirna, all and venny using seqkit in the
+## terminal
+## Command:
+# seqkit stats *.fasta | csvtk pretty -t
+# For aae-all = 894 protein coding genes
+# For aal-all = 864 protein coding genes
+# For aae-mir-34-5p = 778 protein coding genes
+# For aae-mir-5119-5p = 127 protein coding genes
+# For aal-mir-87 = 95 protein coding genes
+# aal-mir-193-5p = 76 protein coding genes
+# aal-mir-276-5p = 76 protein coding genes
+# aal-mir-622 = 136 protein coding genes
+# aal-mir-970-3p = 40 protein coding genes
+# aal-mir-1951 = 32 protein coding genes
+# aal-mir-4728-5p = 198 protein coding genes
+
 # total amount of protein coding genes in organism
 ## From the stringdb website, look up for Aedes aegypti and Aedes albopictus in the "Organisms" option from the sidebar. 
+## TODO: Add condition to check if df contains "all" or "per_mirna" in the name,
+## and add the correct amount of protein coding genes
+## TODO: For each species inside per_mirna, add a condition to check which miRNA
+## is inside the mirna variable, and add the correct amount of protein coding
+## genes.
 fold_enrichment_calc <- function(df, n_prot_coding_genes_input) {
   if (df$species == "Aedes aegypti") {
     n_protein_genes_org <- 15757
