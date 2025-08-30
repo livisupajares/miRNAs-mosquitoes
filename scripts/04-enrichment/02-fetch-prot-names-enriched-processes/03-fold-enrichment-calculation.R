@@ -16,7 +16,8 @@ per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/pe
 print(unique(per_mirna$mirna))
 
 # Venny
-venny <- read.csv("results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv") # no significant enrichment found
+# # no significant enrichment found, therefore we don't load it into memory
+# venny <- read.csv("results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv")
 
 # All
 all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stringdb.csv")
