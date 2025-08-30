@@ -12,6 +12,8 @@
 # unimportant terms
 # Per miRNA
 per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
+# See which miRNAs are present in the dataframe
+print(unique(per_mirna$mirna))
 
 # Venny
 venny <- read.csv("results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv") # no significant enrichment found
