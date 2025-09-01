@@ -29,7 +29,7 @@ per_mirna <- per_mirna |>
   group_by(species) |>
   arrange(desc(signal), .by_group = TRUE)
 
-# ==== Make dispersion graphs ====
+# ==== Make Lolipop graphs ====
 ## Stringdb
 # This is a function to plot from highest to lowest signal (arranged above). It colors by FDR values and the dot size is correlated to nº of observed gene count in each term
 # Arrange from highest to lowest signal
@@ -69,7 +69,7 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
   x_values <- filtered_data[[x_variable]]
 
   # Create the lollipop plot
-  ggplot(data = filtered_data, 
+  p <- ggplot(data = filtered_data, 
          aes(
            x = .data[[x_variable]],
            y = reorder(term_description, .data[[x_variable]]),
@@ -102,6 +102,21 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
     ) +
     # Add vertical line at x=0 for reference
     geom_vline(xintercept = 0, linetype = "dashed", alpha = 0.5)
+  # Add vertical grid lines based on x_variable type
+  if (x_variable == "signal") {
+    # For signal: add lines every 0.5 units
+    x_range <- range(filtered_data[[x_variable]], na.rm = TRUE)
+    x_seq <- seq(0, ceiling(x_range[2]), by = 0.5)
+    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.3, size = 0.5)
+  } else if (x_variable == "-log(fdr)") {
+    # For -log(fdr): add lines every 10 units
+    x_range <- range(filtered_data[[x_variable]], na.rm = TRUE)
+    x_seq <- seq(0, ceiling(x_range[2] / 10) * 10, by = 10)
+    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.3, size = 0.5)
+  }
+  
+  # Return the plot
+  return(p)
 }
 
 # ======== CREATE PLOTS ========
