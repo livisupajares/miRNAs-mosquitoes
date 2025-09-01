@@ -4,7 +4,6 @@
 # Source utils functions and import libraries
 library(ggplot2)
 library(dplyr)
-library(glue)
 library(ggrepel)
 library(stringr)
 
@@ -14,15 +13,10 @@ library(stringr)
 per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
 all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stringdb.csv")
 
-# ==== Shorten description =====
-# truncate long descriptions to first 50 characters
-## STRINGDB
-# All after filtering
-# filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_description) > 50,
-#   paste0(substr(filt_all_stringdb$term_description, 1, 47), "..."),
-#   filt_all_stringdb$term_description
-# )
+# ==== Add -LogFDR column ======
+per_mirna <- per_mirna |> mutate("-log(fdr)" = -log(false_discovery_rate))
 
+all <- all |> mutate("-log(fdr)" = -log(false_discovery_rate))
 # ==== Arrange data frame by fold_enrichment/signal =====
 ## STRING DB
 # All
@@ -87,3 +81,7 @@ create_enrichment_plot(species_name = "Aedes aegypti",
               dataframe = all, 
               dataset_name = "GO Biological Process", 
               x_variable = "signal")
+create_enrichment_plot(species_name = "Aedes aegypti", 
+                       dataframe = all, 
+                       dataset_name = "GO Biological Process", 
+                       x_variable = "-log(fdr)")
