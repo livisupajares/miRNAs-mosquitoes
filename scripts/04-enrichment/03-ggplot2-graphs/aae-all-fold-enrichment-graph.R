@@ -1,5 +1,5 @@
 # ~~~~~~ FOLD ENRICHMENT ~~~~~
-# This script is made to create a dispersion graph of the fold enrichment (SHINYGO & STRINGDB) of ALL Aedes aegypti up-regulated miRNAs with targets.
+# This script is made to create a dispersion graph of the fold enrichment (STRINGDB) of ALL Aedes aegypti up-regulated miRNAs with targets.
 
 # Source utils functions and import libraries
 library(ggplot2)
@@ -10,39 +10,9 @@ library(stringr)
 # ==== Load enrichment results ====
 ## Import .csv files
 # All before filtering
-all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/all-shinygo.csv", header = TRUE)
-all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/all-stringdb.csv", header = TRUE)
-
-# All after filtering
-filt_all_shinygo <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-shinygo.csv", header = TRUE)
-filt_all_stringdb <- read.csv("results/01-enrichment/03-enrichments-important-process/important-all-stringdb.csv", header = TRUE)
-
-# ==== Eliminate GO:xxx from pathway ====
-## Create the `term_description` variable
-# All before filtering
-all_shinygo <- all_shinygo %>%
-  mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
-
-# All after filtering
-filt_all_shinygo <- filt_all_shinygo %>%
-  mutate(term_description = str_remove(pathway, "^\\S+:\\S+\\s*"))
 
 # ==== Shorten description =====
 # truncate long descriptions to first 50 characters
-
-## SHINYGO
-# All before filtering
-all_shinygo$short_description <- ifelse(nchar(all_shinygo$term_description) > 50,
-  paste0(substr(all_shinygo$term_description, 1, 47), "..."),
-  all_shinygo$term_description
-)
-
-# All after filtering
-filt_all_shinygo$short_description <- ifelse(nchar(filt_all_shinygo$term_description) > 50,
-  paste0(substr(filt_all_shinygo$term_description, 1, 47), "..."),
-  filt_all_shinygo$term_description
-)
-
 ## STRINGDB
 # All before filtering
 all_stringdb$short_description <- ifelse(nchar(all_stringdb$term_description) > 50,
@@ -57,17 +27,6 @@ filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_descr
 )
 
 # ==== Arrange data frame by fold_enrichment/signal =====
-## SHINYGO
-# All before filtering
-all_shinygo <- all_shinygo %>%
-  group_by(species) %>%
-  arrange(desc(fold_enrichment), .by_group = TRUE)
-
-# All after filtering
-filt_all_shinygo <- filt_all_shinygo %>%
-  group_by(species) %>%
-  arrange(desc(fold_enrichment), .by_group = TRUE)
-
 ## STRING DB
 # All before filtering
 all_stringdb <- all_stringdb %>%
