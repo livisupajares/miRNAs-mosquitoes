@@ -37,114 +37,53 @@ per_mirna <- per_mirna |>
 
 # ==== Make dispersion graphs ====
 ## Stringdb
+# This is a function to plot from highest to lowest signal (arranged above). It colors by FDR values and the dot size is correlated to nº of observed gene count in each term
 # Arrange from highest to lowest signal
-# Color by fdr
-# You can change the species name to "Aedes aegypti" or "Aedes albopictus"
+# It works for both mosquito species.
   
-ggplot(data = filter(all[1:20, ], species == "Aedes aegypti", dataset == "GO Biological Process"), aes(
-  x = signal,
-  y = reorder(term_description, signal),
-  color = false_discovery_rate,
-  size = observed_gene_count
-)) +
-  geom_point() +
+create_enrichment_plot <- function(species_name, dataframe, dataset_name, x_variable) {
+  # inputs:
+  # species_name = "Aedes aegypti" or "Aedes albopictus"
+  # dataframe = "all" or "per_mirna",
+  # dataset_name = "GO Biological Proces", "GO Cellular Component", "GO Molecular Function"; "Kegg", "Reactome", etc.
+  # x_variable = "signal", -log(FDR)
+  # 
+  # Filter the data first
+  filtered_data <- dataframe[1:20, ] |>
+    filter(species == species_name, dataset == dataset_name)
+  # Get the x variable column
+  x_values <- filtered_data[[x_variable]]
 
-  # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
+  ggplot(data = filtered_data, 
+         aes(
+           x = .data[[x_variable]],
+           y = reorder(term_description, .data[[x_variable]]),
+           color = false_discovery_rate,
+           size = observed_gene_count
+         )) +
+    geom_point() +
+    
+    # Gradient color scale for FDR
+    scale_color_gradient(low = "red", high = "blue", name = "FDR") +
+    
+    # Simplify theme without dynamic y-axis label colors
+    ggtitle(stringr::str_wrap(paste("Enriched Terms from", dataset_name, "of", species_name, "miRNA targets in all up-regulated miRNAs"))) +
+    theme(
+      axis.text.y = element_text(size = 10), # Smaller y-axis text
+      axis.text.x = element_text(size = 10), # Smaller x-axis numbers
+      plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+      legend.position = "right"
+    ) +
+    labs(
+      x = x_variable,
+      y = "Term Description",
+      size = "Gene Count"
+    )
+}
 
-  # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enriched Terms from GO Biological Process of Aedes aegypti miRNA targets in all up-regulated miRNAs")) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Signal",
-    y = "Term Description",
-    size = "Gene Count"
-  )
-
-# Venny STRINGDB
-## Color by fdr
-ggplot(aae_all_stringdb[1:20, ], aes(
-  x = signal,
-  y = reorder(short_description, signal),
-  color = fdr,
-  size = observed_gene_count
-)) +
-  geom_point() +
-
-  # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
-
-  # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB")) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Signal",
-    y = "Term Description",
-    size = "Gene Count"
-  )
-
-## Color by dataset
-ggplot(aae_all_stringdb[1:20, ], aes(
-  x = signal,
-  y = reorder(short_description, signal),
-  color = dataset,
-  size = observed_gene_count
-)) +
-  geom_point() +
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB")) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Signal",
-    y = "Term Description",
-    size = "Gene Count"
-  )
-
-## Scatterplot
-# scatterplot colored by dataset
-ggplot(
-  aae_all_stringdb,
-  aes(
-    x = strength,
-    y = signal,
-    color = dataset,
-    size = observed_gene_count
-  )
-) +
-  geom_text_repel(
-    aes(label = short_description),
-    size = 3, # Adjust label size
-    box.padding = 0.5, # Space around labels
-    point.padding = 0.5, # Space around points
-    force = 1, # Increase from the default to strengthen repulsion
-    max.overlaps = 5, # Allow up to 5 overlap per label
-    min.segment.length = 0, # Connect labels to points with lines
-    segment.color = "grey50" # Line color connecting labels to points
-  ) +
-  geom_point() +
-  ggtitle(stringr::str_wrap("Scatterplot of Fold Enrichment vs Strength - Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - STRINGDB", width = 80)) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Strength (Log10(observed / expected))",
-    y = "Signal",
-    size = "Gene Count"
-  )
+# ======== CREATE PLOTS ========
+# All, Aedes aegypti, GO Biological Process, by signal and FDR
+create_enrichment_plot(species_name = "Aedes aegypti", 
+              dataframe = all, 
+              dataset_name = "GO Biological Process", 
+              x_variable = "signal")
