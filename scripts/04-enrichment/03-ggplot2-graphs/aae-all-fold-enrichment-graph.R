@@ -36,15 +36,16 @@ per_mirna <- per_mirna |>
   arrange(desc(signal), .by_group = TRUE)
 
 # ==== Make dispersion graphs ====
-### All before filtering
-## ShinyGO
+## Stringdb
+# Arrange from highest to lowest signal
 # Color by fdr
 # You can change the species name to "Aedes aegypti" or "Aedes albopictus"
-ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
-  color = enrichment_fdr,
-  size = n_genes
+  
+ggplot(data = filter(all[1:20, ], species == "Aedes aegypti", dataset == "GO Biological Process"), aes(
+  x = signal,
+  y = reorder(term_description, signal),
+  color = false_discovery_rate,
+  size = observed_gene_count
 )) +
   geom_point() +
 
@@ -52,7 +53,7 @@ ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
   scale_color_gradient(low = "red", high = "blue", name = "FDR") +
 
   # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - SHINYGO")) +
+  ggtitle(stringr::str_wrap("Enriched Terms from GO Biological Process of Aedes aegypti miRNA targets in all up-regulated miRNAs")) +
   theme(
     axis.text.y = element_text(size = 10), # Smaller y-axis text
     axis.text.x = element_text(size = 10), # Smaller x-axis numbers
@@ -60,55 +61,7 @@ ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
     legend.position = "right"
   ) +
   labs(
-    x = "Fold Enrichment",
-    y = "Term Description",
-    size = "Gene Count"
-  )
-
-# All after filtering
-# You can change the species name to "Aedes aegypti" or "Aedes albopictus"
-ggplot(data = filter(filt_all_shinygo, species == "Aedes aegypti"), aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
-  color = enrichment_fdr,
-  size = n_genes
-)) +
-  geom_point() +
-
-  # Gradient color scale for FDR
-  scale_color_gradient(low = "red", high = "blue", name = "FDR") +
-
-  # Simplify theme without dynamic y-axis label colors
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - SHINYGO")) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Fold Enrichment",
-    y = "Term Description",
-    size = "Gene Count"
-  )
-
-## Color by dataset
-ggplot(data = filter(all_shinygo, species == "Aedes aegypti"), aes(
-  x = fold_enrichment,
-  y = reorder(short_description, fold_enrichment),
-  color = dataset,
-  size = n_genes
-)) +
-  geom_point() +
-  ggtitle(stringr::str_wrap("Enrichment Analysis of Aedes aegypti miRNA targets in all up-regulated miRNAs - SHINYGO")) +
-  theme(
-    axis.text.y = element_text(size = 10), # Smaller y-axis text
-    axis.text.x = element_text(size = 10), # Smaller x-axis numbers
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    legend.position = "right"
-  ) +
-  labs(
-    x = "Fold Enrichment",
+    x = "Signal",
     y = "Term Description",
     size = "Gene Count"
   )
