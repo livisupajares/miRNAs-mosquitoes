@@ -1,5 +1,5 @@
 # ~~~~~~ FOLD ENRICHMENT ~~~~~
-# This script is made to create a dispersion graph of the fold enrichment (STRINGDB) of ALL Aedes aegypti up-regulated miRNAs with targets.
+# This script is made to create a dispersion graph of the fold enrichment (STRINGDB) of ALL Aedes aegypti and Aedes albopictus up-regulated miRNAs with targets.
 
 # Source utils functions and import libraries
 library(ggplot2)
