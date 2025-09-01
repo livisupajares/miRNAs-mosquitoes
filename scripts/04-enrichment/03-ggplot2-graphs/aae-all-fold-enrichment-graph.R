@@ -10,32 +10,28 @@ library(stringr)
 # ==== Load enrichment results ====
 ## Import .csv files
 # All before filtering
+per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
+all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stringdb.csv")
 
 # ==== Shorten description =====
 # truncate long descriptions to first 50 characters
 ## STRINGDB
-# All before filtering
-all_stringdb$short_description <- ifelse(nchar(all_stringdb$term_description) > 50,
-  paste0(substr(all_stringdb$term_description, 1, 47), "..."),
-  all_stringdb$term_description
-)
-
 # All after filtering
-filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_description) > 50,
-  paste0(substr(filt_all_stringdb$term_description, 1, 47), "..."),
-  filt_all_stringdb$term_description
-)
+# filt_all_stringdb$short_description <- ifelse(nchar(filt_all_stringdb$term_description) > 50,
+#   paste0(substr(filt_all_stringdb$term_description, 1, 47), "..."),
+#   filt_all_stringdb$term_description
+# )
 
 # ==== Arrange data frame by fold_enrichment/signal =====
 ## STRING DB
-# All before filtering
-all_stringdb <- all_stringdb %>%
-  group_by(species) %>%
+# All
+all <- all |>
+  group_by(species) |>
   arrange(desc(signal), .by_group = TRUE)
 
-# All after filtering
-filt_all_stringdb <- filt_all_stringdb %>%
-  group_by(species) %>%
+# per-mirna
+per_mirna <- per_mirna |>
+  group_by(species) |>
   arrange(desc(signal), .by_group = TRUE)
 
 # ==== Make dispersion graphs ====
