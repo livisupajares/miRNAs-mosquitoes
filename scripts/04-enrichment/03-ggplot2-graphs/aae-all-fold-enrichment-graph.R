@@ -68,6 +68,7 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
   # Get the x variable column
   x_values <- filtered_data[[x_variable]]
 
+  # Create the lollipop plot
   ggplot(data = filtered_data, 
          aes(
            x = .data[[x_variable]],
@@ -75,6 +76,12 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
            color = false_discovery_rate,
            size = observed_gene_count
          )) +
+    # Add segments from x=0 to the points (lollipop sticks) - with same color mapping
+    geom_segment(aes(x = 0, xend = .data[[x_variable]], 
+                     y = reorder(term_description, .data[[x_variable]]), 
+                     yend = reorder(term_description, .data[[x_variable]])),
+                 linewidth = 0.5) +  # Línea delgada
+    # Add the points (lollipop heads)
     geom_point() +
     
     # Gradient color scale for FDR
@@ -92,7 +99,9 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
       x = x_variable,
       y = "Term Description",
       size = "Gene Count"
-    )
+    ) +
+    # Add vertical line at x=0 for reference
+    geom_vline(xintercept = 0, linetype = "dashed", alpha = 0.5)
 }
 
 # ======== CREATE PLOTS ========
