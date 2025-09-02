@@ -16,6 +16,7 @@ all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stri
 per_mirna <- per_mirna |> mutate("-log(fdr)" = -log(false_discovery_rate))
 
 all <- all |> mutate("-log(fdr)" = -log(false_discovery_rate))
+
 # ==== Arrange data frame by fold_enrichment/signal =====
 ## STRING DB
 # All
@@ -123,6 +124,13 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
 }
 
 # ======== CREATE PLOTS ========
+## Aedes aegypti
+# See how many distinct datasets are there for Aedes aegypti only
+all_aegypti <- all |>
+  filter(species == "Aedes aegypti") |>
+  distinct(dataset)
+print(all_aegypti)
+
 # All, Aedes aegypti, GO Biological Process, by signal
 create_enrichment_plot(species_name = "Aedes aegypti", 
               dataframe = all, 
@@ -139,4 +147,10 @@ create_enrichment_plot(species_name = "Aedes aegypti",
                        dataframe = all, 
                        x_variable = "signal",
                        category_of_interest = "other")
- 
+ ## Aedes albopictus
+# See how many distinct datasets are there for Aedes albopictus only
+all_albopictus <- all |>
+  filter(species == "Aedes albopictus") |>
+  distinct(dataset)
+print(all_albopictus)
+
