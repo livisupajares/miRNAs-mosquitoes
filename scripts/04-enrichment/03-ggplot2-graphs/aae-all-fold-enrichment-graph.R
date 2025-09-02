@@ -17,6 +17,7 @@ per_mirna <- per_mirna |> mutate("-log(fdr)" = -log(false_discovery_rate))
 
 all <- all |> mutate("-log(fdr)" = -log(false_discovery_rate))
 
+# TODO: make the term description 50 characters max
 # ==== Arrange data frame by fold_enrichment/signal =====
 ## STRING DB
 # All
@@ -175,22 +176,6 @@ create_enrichment_plot(
   species_name = "Aedes aegypti",
   dataframe = all,
   dataset_name = "GO Molecular Function",
-  x_variable = "-log(fdr)"
-)
-
-# All Aedes aegypti, Anotated Keywords Uniprot, by signal
-create_enrichment_plot(
-  species_name = "Aedes aegypti",
-  dataframe = all,
-  dataset_name = "Annotated Keywords UniProt",
-  x_variable = "signal"
-)
-
-# All Aedes aegypti, Anotated Keywords Uniprot, by -logFDR
-create_enrichment_plot(
-  species_name = "Aedes aegypti",
-  dataframe = all,
-  dataset_name = "Annotated Keywords UniProt",
   x_variable = "-log(fdr)"
 )
 
