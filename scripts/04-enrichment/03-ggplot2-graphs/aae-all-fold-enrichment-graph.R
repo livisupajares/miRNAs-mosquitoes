@@ -132,25 +132,119 @@ all_aegypti <- all |>
 print(all_aegypti)
 
 # All, Aedes aegypti, GO Biological Process, by signal
-create_enrichment_plot(species_name = "Aedes aegypti", 
-              dataframe = all, 
-              dataset_name = "GO Biological Process", 
-              x_variable = "signal")
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Biological Process",
+  x_variable = "signal"
+)
 # All, Aedes aegypti, GO Biological Process, by -logFDR
-create_enrichment_plot(species_name = "Aedes aegypti", 
-                       dataframe = all, 
-                       dataset_name = "GO Biological Process", 
-                       x_variable = "-log(fdr)")
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Biological Process",
+  x_variable = "-log(fdr)"
+)
 
-# All, Aedes aegypti, by signal, immune
-create_enrichment_plot(species_name = "Aedes aegypti", 
-                       dataframe = all, 
-                       x_variable = "signal",
-                       category_of_interest = "other")
- ## Aedes albopictus
+# All, Aedes aegypti, GO Cellular Component, by signal
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Cellular Component",
+  x_variable = "signal"
+)
+
+# All, Aedes aegypti, GO Cellular Component, by -logFDR
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Cellular Component",
+  x_variable = "-log(fdr)"
+)
+
+# All, Aedes aegypti, GO Molecular Function, by signal
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Molecular Function",
+  x_variable = "signal"
+)
+
+# All, Aedes aegypti, GO Molecular Function, by -logFDR
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "GO Molecular Function",
+  x_variable = "-log(fdr)"
+)
+
+# All Aedes aegypti, Anotated Keywords Uniprot, by signal
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "Annotated Keywords UniProt",
+  x_variable = "signal"
+)
+
+# All Aedes aegypti, Anotated Keywords Uniprot, by -logFDR
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  dataset_name = "Annotated Keywords UniProt",
+  x_variable = "-log(fdr)"
+)
+
+# All, Aedes aegypti, by signal, other
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  x_variable = "signal",
+  category_of_interest = "other"
+)
+
+# All, Aedes aegypti, by -log(fdr), other
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  x_variable = "-log(fdr)",
+  category_of_interest = "other"
+)
+
+## Aedes albopictus
 # See how many distinct datasets are there for Aedes albopictus only
 all_albopictus <- all |>
   filter(species == "Aedes albopictus") |>
   distinct(dataset)
 print(all_albopictus)
 
+# All, Aedes albopictus, Local Network Cluster String, by signal
+create_enrichment_plot(
+  species_name = "Aedes albopictus",
+  dataframe = all,
+  dataset_name = "Local Network Cluster String",
+  x_variable = "signal"
+)
+
+# All, Aedes albopictus, Local Network Cluster String, by -logFDR
+create_enrichment_plot(
+  species_name = "Aedes albopictus",
+  dataframe = all,
+  dataset_name = "Local Network Cluster String",
+  x_variable = "-log(fdr)"
+)
+
+# All, Aedes albopictus, Subcellular Location, by signal
+create_enrichment_plot(
+  species_name = "Aedes albopictus",
+  dataframe = all,
+  dataset_name = "Subcellular Location",
+  x_variable = "signal"
+)
+
+# All, Aedes albopictus, Subcellular Location, by -logFDR
+create_enrichment_plot(
+  species_name = "Aedes albopictus",
+  dataframe = all,
+  dataset_name = "Subcellular Location",
+  x_variable = "-log(fdr)"
+)
