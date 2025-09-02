@@ -41,13 +41,14 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
   # dataset_name = "GO Biological Proces", "GO Cellular Component", "GO Molecular Function"; "Kegg", "Reactome", etc.
   # x_variable = "signal", -log(FDR)
   # category_of_interest = optional string value from category_of_interest column (default = NULL)
-  
+
   # Filter the data first
   if (is.null(category_of_interest)) {
-    # Filter only by species and dataset (original behavior)
-    filtered_data <- dataframe[1:20, ] |>
-      filter(species == species_name, dataset == dataset_name)
-    
+    # Filter first by species and dataset
+    filtered_data <- dataframe |>
+      filter(species == species_name, dataset == dataset_name) |>
+      head(20) # Take up to top 20 after filtering
+
     # Create title without category filter
     plot_title <- paste("Enriched Terms from", dataset_name, "of", species_name, "miRNA targets in all up-regulated miRNAs")
   } else {
