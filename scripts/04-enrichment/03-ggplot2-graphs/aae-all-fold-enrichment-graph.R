@@ -33,7 +33,7 @@ per_mirna <- per_mirna |>
 # This is a function to plot from highest to lowest signal (arranged above). It colors by FDR values and the dot size is correlated to nº of observed gene count in each term
 # Arrange from highest to lowest signal
 # It works for both mosquito species.
-  
+
 create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL, x_variable, category_of_interest = NULL) {
   # inputs:
   # species_name = "Aedes aegypti" or "Aedes albopictus"
@@ -55,35 +55,41 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
     # Filter by species, dataset, AND category_of_interest
     filtered_data <- dataframe |>
       filter(species == species_name, category_of_interest == !!category_of_interest)
-    
+
     # Create title with category filter
     plot_title <- paste("Enriched Terms from", species_name, "miRNA targets in all up-regulated miRNAs (Category:", category_of_interest, ")")
   }
-  
+
   # Check if filtered_data has rows
   if (nrow(filtered_data) == 0) {
     stop("No data found for the specified filters")
   }
 
   # Create the lollipop plot
-  p <- ggplot(data = filtered_data, 
-         aes(
-           x = .data[[x_variable]],
-           y = reorder(term_description, .data[[x_variable]]),
-           color = false_discovery_rate,
-           size = observed_gene_count
-         )) +
+  p <- ggplot(
+    data = filtered_data,
+    aes(
+      x = .data[[x_variable]],
+      y = reorder(term_description, .data[[x_variable]]),
+      color = false_discovery_rate,
+      size = observed_gene_count
+    )
+  ) +
     # Add segments from x=0 to the points (lollipop sticks) - with same color mapping
-    geom_segment(aes(x = 0, xend = .data[[x_variable]], 
-                     y = reorder(term_description, .data[[x_variable]]), 
-                     yend = reorder(term_description, .data[[x_variable]])),
-                 linewidth = 0.5) +  # Línea delgada
+    geom_segment(
+      aes(
+        x = 0, xend = .data[[x_variable]],
+        y = reorder(term_description, .data[[x_variable]]),
+        yend = reorder(term_description, .data[[x_variable]])
+      ),
+      linewidth = 0.5
+    ) +
     # Add the points (lollipop heads)
     geom_point() +
-    
+
     # Gradient color scale for FDR
     scale_color_gradient(low = "red", high = "blue", name = "FDR") +
-    
+
     # Simplify theme without dynamic y-axis label colors
     ggtitle(stringr::str_wrap(plot_title)) +
     theme(
@@ -99,19 +105,19 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
     ) +
     # Add vertical line at x=0 for reference
     geom_vline(xintercept = 0, linetype = "dashed", alpha = 0.5)
+
   # Add vertical grid lines based on x_variable type
   if (x_variable == "signal") {
-    # For signal: add lines every 0.5 units
     x_range <- range(filtered_data[[x_variable]], na.rm = TRUE)
-    x_seq <- seq(0, ceiling(x_range[2]), by = 0.5)
-    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.3, size = 0.5)
+    x_seq <- seq(0, ceiling(x_range[2]), by = 0.25)
+    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.5, linewidth = 0.5)
   } else if (x_variable == "-log(fdr)") {
     # For -log(fdr): add lines every 10 units
     x_range <- range(filtered_data[[x_variable]], na.rm = TRUE)
     x_seq <- seq(0, ceiling(x_range[2] / 10) * 10, by = 10)
-    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.3, size = 0.5)
+    p <- p + geom_vline(xintercept = x_seq, linetype = "dashed", alpha = 0.5, linewidth = 0.5)
   }
-  
+
   # Return the plot
   return(p)
 }
