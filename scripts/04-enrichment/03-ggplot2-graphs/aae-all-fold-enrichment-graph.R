@@ -4,7 +4,6 @@
 # Source utils functions and import libraries
 library(ggplot2)
 library(dplyr)
-library(ggrepel)
 library(stringr)
 
 # ==== Load enrichment results ====
