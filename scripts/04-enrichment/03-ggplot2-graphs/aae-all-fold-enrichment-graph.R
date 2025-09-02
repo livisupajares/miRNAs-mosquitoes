@@ -64,9 +64,6 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
   if (nrow(filtered_data) == 0) {
     stop("No data found for the specified filters")
   }
-  
-  # Get the x variable column
-  x_values <- filtered_data[[x_variable]]
 
   # Create the lollipop plot
   p <- ggplot(data = filtered_data, 
