@@ -15,3 +15,28 @@ Clean FASTA headers for OrthoFinder / Cytoscape
 - Generates mapping table
 """
 
+# Import Packages
+from pathlib import Path
+
+
+# Defining main function
+def main():
+    # ====== CONFIGURATION ========
+    base_dir = (
+        Path.home()
+        / "documents"
+        / "01-livs"
+        / "20-work"
+        / "upch-asistente-investigacion"
+        / "miRNA-targets-fa5/cytoscape"
+        / "all-clean"
+    )
+    out_dir = base_dir / "orthofinder_input"
+    # create the output direct if it doesn't exist
+    out_dir.mkdir(exist_ok=True)
+
+
+# Run the main function only if this is script is run directly in the terminal
+# with python
+if __name__ == "__main__":
+    main()
