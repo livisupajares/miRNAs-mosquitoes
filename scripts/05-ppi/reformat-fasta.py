@@ -90,6 +90,15 @@ def main():
     print(f"aae fasta path --> {aegypti_fasta}")
     albopictus_fasta = base_dir / "Aedes_albopictus.fasta"
     print(f"aal fasta path --> {albopictus_fasta}")
+    
+    # Use FASTA formatting function
+    clean_fasta(
+        input_path=aegypti_fasta,
+        output_path=out_dir / "Aaeg_clean.fasta",
+        map_path=out_dir / "Aaeg_id_map.tsv",
+        species_code="AAEG"
+    )
+    
 
 # Run the main function only if this is script is run directly in the terminal
 # with python
