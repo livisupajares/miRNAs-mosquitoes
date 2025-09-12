@@ -21,6 +21,16 @@ import sys
 from pathlib import Path
 import platform
 
+# Extract ID from header (Pick between VectorBase ID, UniProt or Uniparc)
+def extract_id(header, species_code):
+    """
+    Extract the best possible ID from a UniProt/UniParc header.
+    Priority: Gene ID (AAEL####-PA) > UniProt Accession > UPI
+    """
+    header = header.strip()
+    print(f"Header: {header}")
+    
+
 # Actual function to shorten FASTA headers
 def clean_fasta(input_path, output_path, map_path, species_code):
     """
