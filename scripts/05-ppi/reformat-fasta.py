@@ -47,6 +47,10 @@ def main():
             / "cytoscape" 
             / "all-clean"
         )
+    else:
+        print(f"Unsupported OS: {os_name}")
+        sys.exit(1)
+        
     out_dir = base_dir / "orthofinder_input"
     # create the output direct if it doesn't exist
     out_dir.mkdir(exist_ok=True)
