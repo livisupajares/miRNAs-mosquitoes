@@ -17,24 +17,38 @@ Clean FASTA headers for OrthoFinder / Cytoscape
 
 # Import Packages
 from pathlib import Path
-
+import platform
 
 # Defining main function
 def main():
     # ====== CONFIGURATION ========
-    base_dir = (
-        Path.home()
-        / "documents"
-        / "01-livs"
-        / "20-work"
-        / "upch-asistente-investigacion"
-        / "miRNA-targets-fa5/cytoscape"
-        / "all-clean"
-    )
+    # Detect OS automatically because I don't want to change paths
+    # each time I change from personal laptop
+    # to work computer
+    os_name = platform.system()
+    print(f"OS detected: {os_name}")
+    
+    if os_name == "Darwin":
+        base_dir = (
+            Path.home()
+            / "documents"
+            / "01-livs"
+            / "20-work"
+            / "upch-asistente-investigacion"
+            / "miRNA-targets-fa5/cytoscape"
+            / "all-clean"
+        )
+    elif os_name == "Linux":
+        base_dir = (
+            Path.home() 
+            / "livisu" 
+            / "cytoscape" 
+            / "all-clean"
+        )
     out_dir = base_dir / "orthofinder_input"
     # create the output direct if it doesn't exist
     out_dir.mkdir(exist_ok=True)
-
+    print(f"Successfully created output directory --> {out_dir}")
 
 # Run the main function only if this is script is run directly in the terminal
 # with python
