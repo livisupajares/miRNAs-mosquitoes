@@ -16,6 +16,8 @@ Clean FASTA headers for OrthoFinder / Cytoscape
 """
 
 # Import Packages
+import re
+import sys
 from pathlib import Path
 import platform
 
