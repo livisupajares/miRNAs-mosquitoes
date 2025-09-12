@@ -21,6 +21,25 @@ import sys
 from pathlib import Path
 import platform
 
+# Actual function to shorten FASTA headers
+def clean_fasta(input_path, output_path, map_path, species_code):
+    """
+    Process one FASTA file and shorten FASTA headers.
+    Parameters:
+    - input_path = aegypti_fasta or albopictus_fasta
+    - output_path = "name.fasta" --> Name of the cleaned fasta
+    - map_path = "name.tsv" --> Name of the mapped proteins file
+    - species_code = AAEG or AALB
+    """
+    input_path = Path(input_path)
+    output_path = Path(output_path)
+    map_path = Path(map_path)
+    
+    print(f"🧹 Processing {input_path.name} --> {output_path.name}")
+    
+    if not input_path.exists():
+        raise FileNotFoundError(f"Input file not found: {input_path}")
+    
 # Defining main function
 def main():
     # ====== CONFIGURATION ========
