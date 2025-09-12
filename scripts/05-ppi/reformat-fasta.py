@@ -49,6 +49,12 @@ def main():
     # create the output direct if it doesn't exist
     out_dir.mkdir(exist_ok=True)
     print(f"Successfully created output directory --> {out_dir}")
+    
+    # Input files
+    aegypti_fasta = base_dir / "Aedes_aegypti.fasta"
+    print(f"aae fasta path --> {aegypti_fasta}")
+    albopictus_fasta = base_dir / "Aedes_albopictus.fasta"
+    print(f"aal fasta path --> {albopictus_fasta}")
 
 # Run the main function only if this is script is run directly in the terminal
 # with python
