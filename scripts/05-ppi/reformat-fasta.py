@@ -15,11 +15,13 @@ Clean FASTA headers for OrthoFinder / Cytoscape
 - Generates mapping table
 """
 
+import platform
+
 # Import Packages
 import re
 import sys
 from pathlib import Path
-import platform
+
 
 # Extract ID from header (Pick between VectorBase ID, UniProt or Uniparc)
 def extract_id(header, species_code):
