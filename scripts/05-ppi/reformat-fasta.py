@@ -67,6 +67,26 @@ def clean_fasta(input_path, output_path, map_path, species_code):
                 if current_header and seq_buffer:
                     f_out.write(seq_buffer + "\n")
                     f_map.write(f"{current_header}\t{clean_id}\n")
+
+                # Process new header
+                current_header = line.strip().lstrip(">")
+                clean_id = extract_id(current_header, species_code)
+                clean_header = f">{species_code}|{clean_id}"
+
+                f_out.write(f"{clean_header}\n")
+                seq_buffer = ""
+            else:
+                seq_buffer += line.strip()
+
+        # Don't forget the last sequence
+        if current_header and seq_buffer:
+            f_out.write(seq_buffer + "\n")
+            f_map.write(f"{current_header}\t{clean_id}\n")
+
+    print(f"✅ Saved cleaned FASTA: {output_path}")
+    print(f"✅ Saved ID map: {map_path}")
+
+
 # Defining main function
 def main():
     # ====== CONFIGURATION ========
