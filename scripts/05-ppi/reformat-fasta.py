@@ -46,9 +46,9 @@ def clean_fasta(input_path, output_path, map_path, species_code):
     input_path = Path(input_path)
     output_path = Path(output_path)
     map_path = Path(map_path)
-    
+
     print(f"🧹 Processing {input_path.name} --> {output_path.name}")
-    
+
     if not input_path.exists():
         raise FileNotFoundError(f"Input file not found: {input_path}")
 
@@ -95,7 +95,7 @@ def main():
     # to work computer
     os_name = platform.system()
     print(f"OS detected: {os_name}")
-    
+
     if os_name == "Darwin":
         base_dir = (
             Path.home()
@@ -107,27 +107,20 @@ def main():
             / "all-clean"
         )
     elif os_name == "Linux":
-        base_dir = (
-            Path.home() 
-            / "livisu" 
-            / "cytoscape" 
-            / "all-clean"
-        )
+        base_dir = Path.home() / "livisu" / "cytoscape" / "all-clean"
     else:
         print(f"Unsupported OS: {os_name}")
         sys.exit(1)
-        
+
     out_dir = base_dir / "orthofinder_input"
     # create the output direct if it doesn't exist
     out_dir.mkdir(exist_ok=True)
     print(f"Successfully created output directory --> {out_dir}")
-    
+
     # Input files
     aegypti_fasta = base_dir / "Aedes_aegypti.fasta"
-    print(f"aae fasta path --> {aegypti_fasta}")
     albopictus_fasta = base_dir / "Aedes_albopictus.fasta"
-    print(f"aal fasta path --> {albopictus_fasta}")
-    
+
     # Use FASTA formatting function
     clean_fasta(
         input_path=aegypti_fasta,
