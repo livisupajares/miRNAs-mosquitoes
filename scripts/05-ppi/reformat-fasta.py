@@ -124,11 +124,22 @@ def main():
     # Use FASTA formatting function
     clean_fasta(
         input_path=aegypti_fasta,
-        output_path=out_dir / "Aaeg_clean.fasta",
+        output_path=out_dir / "Aedes_aegypti.fasta",
         map_path=out_dir / "Aaeg_id_map.tsv",
-        species_code="AAEG"
+        species_code="AAEG",
     )
-    
+
+    clean_fasta(
+        input_path=albopictus_fasta,
+        output_path=out_dir / "Aedes_albopictus.fasta",
+        map_path=out_dir / "Aalb_id_map.tsv",
+        species_code="AALB",
+    )
+
+    print(
+        "🎉 All done! Your cleaned FASTA files are ready for OrthoFinder or Cytoscape."
+    )
+
 
 # Run the main function only if this is script is run directly in the terminal
 # with python
