@@ -51,7 +51,22 @@ def clean_fasta(input_path, output_path, map_path, species_code):
     
     if not input_path.exists():
         raise FileNotFoundError(f"Input file not found: {input_path}")
-    
+
+    with open(input_path) as f_in, open(output_path, "w") as f_out, open(
+        map_path, "w"
+    ) as f_map:
+
+        f_map.write("OriginalHeader\tCleanID\n")  # TSV header
+
+        seq_buffer = ""
+        current_header = None
+
+        for line in f_in:
+            if line.startswith(">"):
+                # Save previous sequence
+                if current_header and seq_buffer:
+                    f_out.write(seq_buffer + "\n")
+                    f_map.write(f"{current_header}\t{clean_id}\n")
 # Defining main function
 def main():
     # ====== CONFIGURATION ========
