@@ -29,9 +29,33 @@ def extract_id(header, species_code):
     Extract the best possible ID from a UniProt/UniParc header.
     Priority: Gene ID (AAEL####-PA) > UniProt Accession > UPI
     """
-    header = header.strip()
-    print(f"Header: {header}")
-    
+    header = header.strip().lstrip(">")
+
+    # Rule 1: Extract AAEL####-PA or AALF####-PA style gene ID
+    gene_match = re.search(
+        rf"\b({species_code}EL|{species_code}LF)[0-9]+-[A-Z]+\b", header
+    )
+    if gene_match:
+        return gene_match.group(0)
+
+    # Rule 2: Extract UniProt accession (e.g., A0A1S4EVT9_AEDAE)
+    uniprot_match = re.search(r"tr\|([A-Z0-9]+)\|", header)
+    if uniprot_match:
+        return uniprot_match.group(1)
+
+    uniprot_match = re.search(r"sp\|([A-Z0-9]+)\|", header)
+    if uniprot_match:
+        return uniprot_match.group(1)
+
+    # Rule 3: Extract UPI accession
+    upi_match = re.search(r"UPI[0-9A-F]{12}|UPI[0-9A-F]+", header)
+    if upi_match:
+        return upi_match.group(0)
+
+    # Fallback: use first word (after removing spaces)
+    first_word = header.split()[0]
+    return re.sub(r"[^\w]", "_", first_word)  # sanitize
+
 
 # Actual function to shorten FASTA headers
 def clean_fasta(input_path, output_path, map_path, species_code):
