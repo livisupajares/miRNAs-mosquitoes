@@ -11,3 +11,13 @@ import pandas as pd
 base_dir=(Path.home() / "livisu" / "git" / "miRNAs-mosquitoes" / "results" / "03-ppi" )
 input_files= [base_dir / "aae_string_protein_annotations.tsv", base_dir / "aal_string_protein_annotations.tsv"]
 
+def extract_kegg_id(annotation):
+    if pd.isna(annotation):
+        return None
+    parts = str(annotation).split(",")
+    for part in reversed(parts):  # Check from end
+        part = part.strip()
+        if part.startswith("aag:") or part.startswith("aalb:"):
+            return part
+    return None
+
