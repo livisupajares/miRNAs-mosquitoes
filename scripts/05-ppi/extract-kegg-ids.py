@@ -7,3 +7,7 @@
 from pathlib import Path
 import pandas as pd
 
+# Load files
+base_dir=(Path.home() / "livisu" / "git" / "miRNAs-mosquitoes" / "results" / "03-ppi" )
+input_files= [base_dir / "aae_string_protein_annotations.tsv", base_dir / "aal_string_protein_annotations.tsv"]
+
