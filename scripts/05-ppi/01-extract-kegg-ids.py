@@ -4,12 +4,35 @@
 # to extract the KEGG_ID with a pattern: aag: and aalb: and
 # append a new column called KEGG_ID to the same file
 
+import platform
+import sys
 from pathlib import Path
 
 import pandas as pd
 
+os_name = platform.system()
+print(f"OS detected: {os_name}")
+
 # Load files
-base_dir = Path.home() / "livisu" / "git" / "miRNAs-mosquitoes" / "results" / "03-ppi"
+if os_name == "Darwin":
+    base_dir = (
+        Path.home()
+        / "Documents"
+        / "01-livs"
+        / "14-programming"
+        / "git"
+        / "miRNAs-mosquitoes"
+        / "results"
+        / "03-ppi"
+    )
+elif os_name == "Linux":
+    base_dir = (
+        Path.home() / "livisu" / "git" / "miRNAs-mosquitoes" / "results" / "03-ppi"
+    )
+else:
+    print(f"Unsupported OS: {os_name}")
+    sys.exit(1)
+
 input_files = [
     base_dir / "aae_string_protein_annotations.tsv",
     base_dir / "aal_string_protein_annotations.tsv",
