@@ -35,3 +35,29 @@ aal_mapped_ids <- aal_ppi_annotated %>%
 # Print unmapped_ids to console without row ids
 print(aae_unmapped_ids, row.names = FALSE)
 print(aal_unmapped_ids, row.names = FALSE)
+
+# ===== EXTRACT RANDOM SAMPLE OF PPI ANNOTATED DATA ======
+# This a andom sampling of aae_ppi_annotated and aal_ppi_annotated with equal number of rows with and without kegg_ids (N = 5 of each)
+set.seed(123) # Set seed for reproducibility
+aae_sample_annotated <- bind_rows(
+  aae_ppi_annotated %>%
+    filter(!is.na(kegg_id)) %>%
+    slice_sample(n = 5) %>%
+    mutate(sample_group = "mapped"),
+  aae_ppi_annotated %>%
+    filter(is.na(kegg_id)) %>%
+    slice_sample(n = 5) %>%
+    mutate(sample_group = "unmapped")
+)
+
+aal_sample_annotated <- bind_rows(
+  aal_ppi_annotated %>%
+    filter(!is.na(kegg_id)) %>%
+    slice_sample(n = 5) %>%
+    mutate(sample_group = "mapped"),
+  aal_ppi_annotated %>%
+    filter(is.na(kegg_id)) %>%
+    slice_sample(n = 5) %>%
+    mutate(sample_group = "unmapped")
+)
+
