@@ -61,3 +61,7 @@ aal_sample_annotated <- bind_rows(
     mutate(sample_group = "unmapped")
 )
 
+# ===== SAVE SAMPLE DATAFRAMES =======
+write.csv(aae_sample_annotated, "/Users/skinofmyeden/documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/aae_sample_annotated.csv", row.names = FALSE)
+
+write.csv(aal_sample_annotated, "/Users/skinofmyeden/documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/aal_sample_annotated.csv", row.names = FALSE)
