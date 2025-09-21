@@ -23,6 +23,15 @@ aal_unmapped_ids <- aal_ppi_annotated %>%
   filter(is.na(kegg_id)) %>%
   select(mapped_id)
 
+# Filter only rows with kegg_ids that are not NA
+aae_mapped_ids <- aae_ppi_annotated %>%
+  filter(!is.na(kegg_id)) %>%
+  select(mapped_id)
+
+aal_mapped_ids <- aal_ppi_annotated %>%
+  filter(!is.na(kegg_id)) %>%
+  select(mapped_id)
+
 # Print unmapped_ids to console without row ids
 print(aae_unmapped_ids, row.names = FALSE)
 print(aal_unmapped_ids, row.names = FALSE)
