@@ -1,6 +1,7 @@
 # ~~~~~ FUSE ENRICHMENT RESULTS ~~~~~
 # This script is used to fuse the enrichment results so at the end, we will get
-# per-mirna stringdb, venny stringdb, all stringdb, where each will have Aedes aegypti and Aedes albopictus.
+# per-mirna stringdb, venny stringdb, all stringdb, where each dataframe will have results for both species Aedes aegypti and Aedes albopictus.
+# The it will filter it by category of interest
 # ==== Load libraries ====
 library(dplyr)
 library(forcats)
