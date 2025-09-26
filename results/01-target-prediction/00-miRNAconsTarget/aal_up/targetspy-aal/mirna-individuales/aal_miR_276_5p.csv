@@ -1,5 +1,0 @@
-"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF005891-RA","protease m1 zinc metalloprotease [Source:Projected from Aedes aegypti (AAEL012099) VB Community Annotation]","A0A182G9P9","aal-miR-276-5p",-16.9,97,145,0.99990332289577
-"AALF005741-RA","Protein kinase C [Source:UniProtKB/TrEMBL;Acc:A0A182G9G7]","A0A182G9G7","aal-miR-276-5p",-16,1318,1357,0.999745088446769
-"AALF014760-RA","alpha-1,2-Mannosidase [Source:UniProtKB/TrEMBL;Acc:A0A182GS33]","A0A182GS33,A0A1W7R8J6","aal-miR-276-5p",-17.49,1737,1791,0.999671114
-"AALF004222-RA","Cyclin-dependent kinases regulatory subunit [Source:UniProtKB/TrEMBL;Acc:A0A023EEI9]","A0A023EE40,A0A023EEI9","aal-miR-276-5p",-14.2,28,49,0.994410373149096

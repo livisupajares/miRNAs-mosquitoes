@@ -1,9 +1,0 @@
-"mRNA","transcript_product_descrip","uniprot_id","microRNA","energy","targetStart","targetEnd","score"
-"AALF024898-RA","integrin alpha-ps [Source:Projected from Aedes aegypti lvpagwg (AAEL013600) VB Community Annotation]","A0A182H9T5","aal-miR-4110-5p",-14.57,537,577,0.999850070385964
-"AALF017867-RA","carbonic anhydrase [Source:Projected from Aedes aegypti (AAEL004930) VB Community Annotation]","A0A023EM65,A0A023ENB2,A0A182GXZ3","aal-miR-4110-5p",-14.19,1422,1470,0.999757645150888
-"AALF008539-RA","Putative chaperonin [Source:UniProtKB/TrEMBL;Acc:A0A023ETW5]","A0A023ETW5","aal-miR-4110-5p",-14.02,313,331,0.999125527907124
-"AALF006898-RA","leucine rich repeat protein [Source:Projected from Aedes aegypti (AAEL003554) VB Community Annotation]","A0A023EPT7,A0A182GBE1,A0A1W7R6P9","aal-miR-4110-5p",-15.9,133,159,0.99740747933053
-"AALF004929-RA","electron transport oxidoreductase [Source:Projected from Aedes aegypti (AAEL013739) VB Community Annotation]","A0A023EMX6,A0A023EPW1,A0A182G804","aal-miR-4110-5p",-17.45,12,57,0.997070406379866
-"AALF008414-RA","Non-specific serine/threonine protein kinase [Source:UniProtKB/TrEMBL;Acc:A0A182GE93]","A0A182GE93","aal-miR-4110-5p",-14.6,304,319,0.991187005909185
-"AALF008658-RA","gc-rich sequence DNA-binding factor [Source:Projected from Aedes aegypti (AAEL006043) VB Community Annotation]","A0A182GER9","aal-miR-4110-5p",-14.2,446,463,0.991187005909185
-"AALF007520-RA","srpk [Source:Projected from Aedes aegypti lvpagwg (AAEL008507) VB Community Annotation]","A0A182GCI0","aal-miR-4110-5p",-15.7,17711,17746,0.991101192929277
