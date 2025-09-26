@@ -2,7 +2,7 @@
 # This script adds target names to the Aedes aegypti miRNA target prediction
 # results from the miRanda algorithm.
 # This script also filters the results to find the best mRNA target candidates
-# according to a specific criteria (highest score, lowest energy (-14 kcal/mol
+# according to a specific criteria (highest score, lowest energy (-20 kcal/mol
 # cutoff)
 
 # NOTE: We were supposed to merge VectorBase info into predicted targets by
@@ -49,8 +49,7 @@ length(unique(aae_miranda_tx_names$mRNA)) # 2767
 length(unique(aae_miranda_tx_names$microRNA)) # 2
 
 # ==== FINDING THE BEST mRNA TARGET CANDIDATES ====
-# https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-5-1-r1
-# https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-292
+# Energy filtering criteria by these papers: https://www.mdpi.com/2079-7737/11/10/1536 and https://www.mdpi.com/1422-0067/25/18/10135
 
 # List of upregulated microRNAs to filter by
 microRNA_list_miranda <- c(
