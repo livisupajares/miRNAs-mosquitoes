@@ -11,6 +11,9 @@
 
 # ===== Load libraries & files =====
 library("dplyr")
+# The goal of tidylog is to provide feedback about dplyr and tidyr operations. It provides simple wrapper functions for almost all dplyr and tidyr functions, such as filter, mutate, select, full_join, and group_by.
+# url: https://github.com/elbersb/tidylog
+library("tidylog", warn.conflicts = FALSE)
 source("scripts/functions.R")
 
 # ===== Importing data ===== #
