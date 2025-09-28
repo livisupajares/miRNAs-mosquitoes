@@ -26,3 +26,8 @@ aae_biomart <- read.csv("results/01-target-prediction/01-ensembl-metazoa-biomart
 # Change variable name to match the other databases
 colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 
+# ==== MERGE DATABASES ====
+# merge aae_miranda with aae biomart matching transcript_ID
+aae_miranda_down_tx_names <- aae_miranda_down %>%
+  left_join(aae_biomart, by = c("mRNA" = "transcript_id"))
+
