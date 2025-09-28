@@ -14,3 +14,15 @@ library("dplyr")
 library("tidylog", warn.conflicts = FALSE)
 source("scripts/functions.R")
 
+# ===== Importing data ===== #
+# Add NA to all empty spaces
+aae_miranda_down <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aae_down/miranda-down-aae.csv")
+
+# Add Aedes aegypti biomart metadata with uniprots for transcripts.
+# This is the direct output from the previous script: `01-fetch-aae-uniprot.R`
+aae_biomart <- read.csv("results/01-target-prediction/01-ensembl-metazoa-biomart/uniprots_aae_biomart.csv")
+
+# ==== FIX DATA ==== #
+# Change variable name to match the other databases
+colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
+
