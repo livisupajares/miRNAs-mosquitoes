@@ -82,3 +82,16 @@ length(unique(aae_miranda_down_tx_names_sorted$uniprot_id)) # 371
 # save dataframe with all upregulated miRNAs
 write.csv(aae_miranda_down_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aae_down/miranda-aae-uniprot-filtered.csv", row.names = FALSE)
 
+# save filtered database by miRNA
+# Write each miRNA data frame to a separate CSV file
+output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aae_down/mirna-individuales" # Directory to save the CSV files
+
+lapply(names(candidates_miranda), function(miRNA_name) {
+  df <- candidates_miranda[[miRNA_name]]
+  # Construct the file name
+  file_name <- paste0(output_dir_mir, "/", gsub("-", "_", miRNA_name), ".csv")
+  # Write the data frame to a CSV file
+  write.csv(df, file = file_name, row.names = FALSE)
+  # Optional: Print a message to confirm the file was written
+  cat("Wrote CSV file for:", miRNA_name, "\n")
+})
