@@ -78,3 +78,7 @@ aae_miranda_down_tx_names_sorted <- aae_miranda_down_tx_names %>%
 # Count the number of unique UNIPROT IDS in the dataset
 length(unique(aae_miranda_down_tx_names_sorted$uniprot_id)) # 371
 
+# ==== DOWNLOAD DATABASE ====
+# save dataframe with all upregulated miRNAs
+write.csv(aae_miranda_down_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aae_down/miranda-aae-uniprot-filtered.csv", row.names = FALSE)
+
