@@ -31,3 +31,11 @@ colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 aae_miranda_down_tx_names <- aae_miranda_down %>%
   left_join(aae_biomart, by = c("mRNA" = "transcript_id"))
 
+# reorder columns so transcript product description and uniprot_id are
+# between mRNA and miRNA columns.
+aae_miranda_down_tx_names <- reorder_columns(aae_miranda_down_tx_names)
+
+# ==== DATA SUMMARY ====
+# Count the number of unique UNIPROT IDS in the dataset
+length(unique(aae_miranda_down_tx_names$uniprot_id)) # 1813
+
