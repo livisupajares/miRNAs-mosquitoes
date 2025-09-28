@@ -12,6 +12,7 @@
 
 # ===== Load libraries & files =====
 library("dplyr")
+library("tidylog", warn.conflicts = FALSE)
 source("scripts/functions.R")
 
 # ===== Importing data ===== #

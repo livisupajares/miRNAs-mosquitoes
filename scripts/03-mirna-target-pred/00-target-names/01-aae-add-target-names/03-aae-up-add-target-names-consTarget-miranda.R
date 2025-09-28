@@ -9,3 +9,8 @@
 # transcript id, but for some reason it fails to merge using the same command as
 # in Aedes albopictus. So we will use the biomart info instead.
 
+# ===== Load libraries & files =====
+library("dplyr")
+library("tidylog", warn.conflicts = FALSE)
+source("scripts/functions.R")
+
