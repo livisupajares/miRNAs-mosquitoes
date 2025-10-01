@@ -29,6 +29,7 @@ aae_all_down <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-all
 ## Import mapped protein ids from stringdb
 aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
 aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
+aae_down_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-down-mapped_stringdb.tsv", sep = "\t")
 
 # ==== FUNCTION TO EXTRACT PROTEIN IDS FROM ENRICHED PROCESSES ====
 # This function takes a dataframe of enriched processes and extracts the protein ids from the 'genes' and 'pathway_genes' columns.
@@ -49,6 +50,13 @@ expanded_venny_stringdb <- expand_genes_to_rows_stringdb(important_venny_stringd
 
 # All
 expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
+
+# Aae down-regulated common
+# Per miRNA
+expanded_aae_per_mirna_down_stringdb <- expand_genes_to_rows_stringdb(aae_per_mirna_down)
+
+# All
+expanded_aae_all_down_stringdb <- expand_genes_to_rows_stringdb(aae_all_down)
 
 # ==== FIX AND FUSE MAPPED PROTEIN IDS ====
 ## Add a species column to each mapped protein ids dataframe
