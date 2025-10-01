@@ -23,6 +23,11 @@ aal_venny_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/a
 aae_all_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-all-stringdb-export.csv")
 aal_all_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aal-all-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
 
+## Down-regulated aae
+## These are the datasets of down-regulated aae enrichment which miRNAs are also found on the up-regulated aal set.
+# Per-mirna
+# All
+
 # ==== FUSE DATA ====
 # Fuse data frames by row binding
 # Per miRNA
