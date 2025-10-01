@@ -26,7 +26,10 @@ aal_all_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aal
 ## Down-regulated aae
 ## These are the datasets of down-regulated aae enrichment which miRNAs are also found on the up-regulated aal set.
 # Per-mirna
+aae_per_mirna_up <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-per-mirna-down-stringdb-export.csv")
 # All
+aae_all_up <- read_csv("results/02-enrichment/02-exports-google-sheets/aae-all-down-stringdb-export.csv")
+# aal_per_mirna_all <- read.csv("results/02-enrichment/02-exports-google-sheets/") # this is a future file that will be added
 
 # ==== FUSE DATA ====
 # Fuse data frames by row binding
