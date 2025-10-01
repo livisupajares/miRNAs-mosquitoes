@@ -86,6 +86,7 @@ print(sort(levels_all_stringdb))
 
 # ==== SAVE RESULTS TO CSV ====
 # Save the fused data frames to .csv files
+# Final enriched processes
 # Per miRNA
 write.csv(per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv", row.names = FALSE)
 
@@ -96,26 +97,28 @@ write.csv(venny_stringdb, "results/02-enrichment/03-enrichments-important-proces
 write.csv(all_stringdb, "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv", row.names = FALSE)
 
 # ==== REMOVE UNEEDED ROWS ====
+# NOTE: this part will be optional for now on
 # Remove rows that have NA in category_of_interest column
 
 ## Per miRNA
-important_per_mirna_stringdb <- per_mirna_stringdb |>
-  filter(!is.na(category_of_interest))
-
-## Venny
-important_venny_stringdb <- venny_stringdb |>
-  filter(!is.na(category_of_interest)) # No data available for this dataframe
-
-## All
-important_all_stringdb <- all_stringdb |>
-  filter(!is.na(category_of_interest))
+# important_per_mirna_stringdb <- per_mirna_stringdb |>
+#   filter(!is.na(category_of_interest))
+# 
+# ## Venny
+# important_venny_stringdb <- venny_stringdb |>
+#   filter(!is.na(category_of_interest)) # No data available for this dataframe
+# 
+# ## All
+# important_all_stringdb <- all_stringdb |>
+#   filter(!is.na(category_of_interest))
 
 # ==== EXPORT IMPORTANT DATA ====
+# With category of interes NAs values removed
 # Per miRNA
-write.csv(important_per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv", row.names = FALSE)
-
-# Venny
-write.csv(important_venny_stringdb, "results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv", row.names = FALSE)
-
-# All
-write.csv(important_all_stringdb, "results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv", row.names = FALSE)
+# write.csv(important_per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv", row.names = FALSE)
+# 
+# # Venny
+# write.csv(important_venny_stringdb, "results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv", row.names = FALSE)
+# 
+# # All
+# write.csv(important_all_stringdb, "results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv", row.names = FALSE)
