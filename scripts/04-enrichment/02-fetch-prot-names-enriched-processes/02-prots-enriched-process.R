@@ -65,6 +65,8 @@ aae_mapped_protein_ids_stringdb <- aae_mapped_protein_ids_stringdb |>
   mutate(species = "Aedes aegypti")
 aal_mapped_protein_ids_stringdb <- aal_mapped_protein_ids_stringdb |>
   mutate(species = "Aedes albopictus")
+aae_down_mapped_protein_ids_stringdb <- aae_down_mapped_protein_ids_stringdb |>
+  mutate(species = "Aedes aegypti")
 
 ## Combine the mapped protein ids dataframes into one
 ## For stringdb
@@ -100,6 +102,13 @@ full_expanded_per_mirna_stringdb <- map_stringdb_annotations(expanded_per_mirna_
 # full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
 
 full_expanded_all_stringdb <- map_stringdb_annotations(expanded_all_stringdb, mapped_protein_ids_stringdb)
+
+# aae down-regulated common
+# Per miRNA
+full_expanded_per_mirna_down_stringdb <- map_stringdb_annotations(expanded_aae_per_mirna_down_stringdb, aae_down_mapped_protein_ids_stringdb)
+
+# All
+full_expanded_all_down_stringdb <- map_stringdb_annotations(expanded_aae_all_down_stringdb, aae_down_mapped_protein_ids_stringdb)
 
 # ==== SAVE RESULTS ====
 # Save the full expanded dataframes with protein names and descriptions
