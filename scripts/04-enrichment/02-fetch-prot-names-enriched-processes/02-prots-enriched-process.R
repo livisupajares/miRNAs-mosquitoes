@@ -6,6 +6,7 @@
 # ==== Load libraries ====
 library(dplyr)
 library(tidyr)
+library("tidylog", warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
 ## Import enriched processes data
