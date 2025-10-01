@@ -99,6 +99,15 @@ all_stringdb <- all_stringdb |>
 levels_all_stringdb <- unique(all_stringdb$dataset)
 print(sort(levels_all_stringdb))
 
+# Down-regulated aae
+# Per miRNA
+levels_per_mirna_down_stringdb <- unique(aae_per_mirna_down$dataset)
+print(sort(levels_per_mirna_down_stringdb))
+
+# All
+levels_all_down_stringdb <- unique(aae_all_down$dataset)
+print(sort(levels_all_down_stringdb))
+
 # ==== SAVE RESULTS TO CSV ====
 # Save the fused data frames to .csv files
 # Final enriched processes
