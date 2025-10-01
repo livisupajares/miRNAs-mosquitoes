@@ -120,6 +120,8 @@ write.csv(venny_stringdb, "results/02-enrichment/03-enrichments-important-proces
 # All
 write.csv(all_stringdb, "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv", row.names = FALSE)
 
+# NOTE: No need to save new dataset for aae down-regulated for now
+
 # ==== REMOVE UNEEDED ROWS ====
 # NOTE: this part will be optional for now on
 # Remove rows that have NA in category_of_interest column
