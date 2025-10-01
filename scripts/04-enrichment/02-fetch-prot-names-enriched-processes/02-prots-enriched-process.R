@@ -138,23 +138,31 @@ full_expanded_all_down_stringdb <- remove_tax_id(full_expanded_all_down_stringdb
 
 # ==== SAVE RESULTS ====
 # Save the full expanded dataframes with protein names and descriptions
-# StringDB
+# Per-miRNA
 write.csv(full_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/full-expanded-per-mirna-stringdb.csv", row.names = FALSE)
 
+# All
 write.csv(full_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/full-expanded-all-stringdb.csv", row.names = FALSE)
 
-# ==== FILTER IMMUNE AND OTHER PROCESSES ====
-# all
-immune_expanded_all_stringdb <- full_expanded_all_stringdb |>
-  filter(category_of_interest == "immune" | category_of_interest == "other")
+# Aae down-regulated
+# Per miRNA
+write.csv(full_expanded_per_mirna_down_stringdb, "results/02-enrichment/04-enrich-full-anotation/full-expanded-per-mirna-down-stringdb.csv", row.names = FALSE)
 
-# per-mirna
-immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb |>
-  filter(category_of_interest == "immune" | category_of_interest == "other")
+# All
+write.csv(full_expanded_all_down_stringdb, "results/02-enrichment/04-enrich-full-anotation/full-expanded-all-down-stringdb.csv", row.names = FALSE)
 
-# ==== SAVE FINAL IMMUNE DATASET ====
-# all
-write.csv(immune_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-stringdb.csv", row.names = FALSE)
-
-# per-mirna
-write.csv(immune_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-per-mirna-stringdb.csv", row.names = FALSE)
+# # ==== FILTER IMMUNE AND OTHER PROCESSES ====
+# # all
+# immune_expanded_all_stringdb <- full_expanded_all_stringdb |>
+#   filter(category_of_interest == "immune" | category_of_interest == "other")
+# 
+# # per-mirna
+# immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb |>
+#   filter(category_of_interest == "immune" | category_of_interest == "other")
+# 
+# # ==== SAVE FINAL IMMUNE DATASET ====
+# # all
+# write.csv(immune_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-stringdb.csv", row.names = FALSE)
+# 
+# # per-mirna
+# write.csv(immune_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-per-mirna-stringdb.csv", row.names = FALSE)
