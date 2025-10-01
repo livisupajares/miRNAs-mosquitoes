@@ -19,7 +19,14 @@ important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-impor
 # All
 important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
 
-# Import mapped protein ids from stringdb
+# Aae down-regulated
+# Per miRNA
+aae_per_mirna_down <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-per-mirna-down-stringdb-export.csv")
+
+# All
+aae_all_down <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-all-down-stringdb-export.csv")
+
+## Import mapped protein ids from stringdb
 aae_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aae-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
 aal_mapped_protein_ids_stringdb <- read.csv("databases/03-enrichment/aal-mapped_stringdb.csv", sep = "\t") # file separated by tabs despite using csv
 
