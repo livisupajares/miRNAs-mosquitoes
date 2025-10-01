@@ -53,7 +53,12 @@ venny_stringdb$dataset <- as.factor(venny_stringdb$dataset)
 # All
 all_stringdb$dataset <- as.factor(all_stringdb$dataset)
 
-# 
+# Down-regulated aae
+# Per miRNA
+aae_per_mirna_down$dataset <- as.factor(aae_per_mirna_down$dataset)
+
+# All
+aae_all_down$dataset <- as.factor(aae_all_down$dataset)
 
 # Make sure each dataset column has unique levels with no misspelling/duplication
 ## Per-mirna STRINGDB
