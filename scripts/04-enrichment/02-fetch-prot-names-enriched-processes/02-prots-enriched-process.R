@@ -11,13 +11,16 @@ library("tidylog", warn.conflicts = FALSE)
 # ==== IMPORT DATA ====
 ## Import enriched processes data
 # Per miRNA
-important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
+#important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
+# Import all enriched processes not only the ones who don't have category of interest as NA
+important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
 
 # Venny
 important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv") # No enrichments
 
 # All
-important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
+# important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
+important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stringdb.csv")
 
 # Aae down-regulated
 # Per miRNA
@@ -109,6 +112,9 @@ full_expanded_per_mirna_down_stringdb <- map_stringdb_annotations(expanded_aae_p
 
 # All
 full_expanded_all_down_stringdb <- map_stringdb_annotations(expanded_aae_all_down_stringdb, aae_down_mapped_protein_ids_stringdb)
+
+# ==== STRIP TAX ID FROM UNIPROT IDs =====
+
 
 # ==== SAVE RESULTS ====
 # Save the full expanded dataframes with protein names and descriptions
