@@ -115,7 +115,26 @@ full_expanded_per_mirna_down_stringdb <- map_stringdb_annotations(expanded_aae_p
 full_expanded_all_down_stringdb <- map_stringdb_annotations(expanded_aae_all_down_stringdb, aae_down_mapped_protein_ids_stringdb)
 
 # ==== STRIP TAX ID FROM UNIPROT IDs =====
+# Write a function to remove 7159. and 7160. from matching proteins_id_network.
 
+remove_tax_id <- function(df) {
+  df$matching_proteins_id_network <- str_remove_all(df$matching_proteins_id_network, "^[0-9]+\\.")
+  return(df)
+} 
+
+# Apply function
+# Per miRNA
+full_expanded_per_mirna_stringdb <- remove_tax_id(full_expanded_per_mirna_stringdb)
+
+# all
+full_expanded_all_stringdb <- remove_tax_id(full_expanded_all_stringdb)
+
+# Aae down-regulated
+# Per miRNA
+full_expanded_per_mirna_down_stringdb <- remove_tax_id(full_expanded_per_mirna_down_stringdb)
+
+# All
+full_expanded_all_down_stringdb <- remove_tax_id(full_expanded_all_down_stringdb)
 
 # ==== SAVE RESULTS ====
 # Save the full expanded dataframes with protein names and descriptions
