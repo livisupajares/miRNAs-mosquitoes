@@ -17,7 +17,7 @@ library("tidylog", warn.conflicts = FALSE)
 important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
 
 # Venny
-important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv") # No enrichments
+# important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv") # No enrichments
 
 # All
 # important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")

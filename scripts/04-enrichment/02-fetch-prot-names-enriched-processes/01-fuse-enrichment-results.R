@@ -15,8 +15,8 @@ aal_per_mirna_stringdb <- read.csv("results/02-enrichment/02-exports-google-shee
 
 ## Venny
 # Venny stringdb
-aae_venny_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-venny-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
-aal_venny_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aal-venny-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
+# aae_venny_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-venny-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
+# aal_venny_stringdb <- read.csv("results/02-enrichment/02-exports-google-sheets/aal-venny-stringdb-export.csv") # No significant enriched processes were found. No data. Ignore warning
 
 ## All
 # All stringdb
@@ -115,7 +115,7 @@ print(sort(levels_all_down_stringdb))
 write.csv(per_mirna_stringdb, "results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv", row.names = FALSE)
 
 # Venny
-write.csv(venny_stringdb, "results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv", row.names = FALSE)
+# write.csv(venny_stringdb, "results/02-enrichment/03-enrichments-important-process/venny-stringdb.csv", row.names = FALSE) # All NA
 
 # All
 write.csv(all_stringdb, "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv", row.names = FALSE)
