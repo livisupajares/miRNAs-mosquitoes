@@ -17,3 +17,50 @@
 # of the run.
 
 # Run the script for each `full_expanded` dataframe.
+
+import json
+import logging
+import platform
+import sys
+import time
+from pathlib import Path
+
+import pandas as pd
+import requests
+from tqdm import tqdm
+
+
+def choose_base_dir():
+    # Detect OS
+    os_name = platform.system()
+    print(f"OS detected: {os_name}")
+
+    # Load files
+    if os_name == "Darwin":
+        base_dir = (
+            Path.home()
+            / "Documents"
+            / "01-livs"
+            / "14-programming"
+            / "git"
+            / "miRNAs-mosquitoes"
+            / "results"
+            / "02-enrichment"
+            / "04-enrich-full-anotation"
+        )
+    elif os_name == "Linux":
+        base_dir = (
+            Path.home() 
+            / "livisu" 
+            / "git" 
+            / "miRNAs-mosquitoes" 
+            / "results" 
+            / "02-enrichment"
+            / "04-enrich-full-anotation"
+        )
+    else:
+        print(f"Unsupported OS: {os_name}")
+        sys.exit(1)
+    print(f"Base directory is {base_dir}")
+
+choose_base_dir()
