@@ -29,8 +29,11 @@ import pandas as pd
 import requests
 from tqdm import tqdm
 
+base_dir = None
 
 def choose_base_dir():
+    global base_dir
+
     # Detect OS
     os_name = platform.system()
     print(f"OS detected: {os_name}")
@@ -61,6 +64,18 @@ def choose_base_dir():
     else:
         print(f"Unsupported OS: {os_name}")
         sys.exit(1)
-    print(f"Base directory is {base_dir}")
 
+# Let the program detect whether we are in my personal laptop or work computer
 choose_base_dir()
+
+# Input files
+input_files = [
+    base_dir / "full-expanded-all-down-stringdb.csv",
+    base_dir / "full-expanded-all-stringdb.csv",
+    base_dir / "full-expanded-per-mirna-down-stringdb.csv",
+    base_dir / "full-expanded-per-mirna-stringdb.csv"
+]
+
+# Setup logging directory
+log_dir = base_dir / "logs_kegg_mapping"
+log_dir.mkdir(exist_ok=True)
