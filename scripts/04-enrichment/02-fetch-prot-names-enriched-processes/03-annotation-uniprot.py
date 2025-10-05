@@ -83,3 +83,26 @@ log_dir.mkdir(exist_ok=True)
 # Setup an output directory
 out_dir = base_dir / "output_annotation"
 out_dir.mkdir(exist_ok=True)
+
+def setup_logger(name, log_file):
+    """Setup logger: INFO+ to console, ERROR+ to file"""
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # File handler (errors only)
+    fh = logging.FileHandler(log_file)
+    fh.setLevel(logging.ERROR)
+    fh_formatter = logging.Formatter("%(asctime)s | %(message)s", datefmt="%H:%M:%S")
+    fh.setFormatter(fh_formatter)
+    logger.addHandler(fh)
+
+    # Console handler (info+)
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.INFO)
+    ch_formatter = logging.Formatter("%(levelname)s | %(message)s")
+    ch.setFormatter(ch_formatter)
+    logger.addHandler(ch)
+
+    return logger
