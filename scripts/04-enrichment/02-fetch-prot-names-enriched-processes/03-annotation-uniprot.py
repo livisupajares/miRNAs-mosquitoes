@@ -106,8 +106,9 @@ def setup_logger(name, log_file):
 
     return logger
 
-def extract_uniprot_ids(df):
-    """Extract unique Uniprot IDs from column index 7 (0-based)"""
-    if df.empty:
-        return []
-    return df.iloc[:, 7].dropna().unique().tolist()
+def get_uniprot_col_index(filename: str) -> int:
+    """Determine column index for matching_proteins_id_network"""
+    if "per-mirna" in filename:
+        return 9  # 10th column (0-based index 9)
+    else:
+        return 8  # 9th column (0-based index 8)
