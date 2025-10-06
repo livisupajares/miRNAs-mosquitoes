@@ -259,3 +259,55 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
             df.at[idx, col] = ann[col]
 
     return df, failed
+
+def main():
+    global_summary = {}
+
+    for input_file in input_files:
+        if not input_file.exists():
+            print(f"⚠️  Skipping missing file: {input_file.name}")
+            continue
+
+        print(f"\n📄 Processing: {input_file.name}")
+        logger = setup_logger(f"logger_{input_file.stem}", log_dir / f"log_{input_file.stem}.log")
+
+        try:
+            df = pd.read_csv(input_file, header=None, dtype=str, keep_default_na=False)
+        except Exception as e:
+            logger.error(f"Failed to read {input_file}: {e}")
+            continue
+
+        annotated_df, failed_ids = process_dataframe(df, input_file, logger)
+        global_summary[input_file.name] = failed_ids
+
+        output_path = out_dir / f"{input_file.stem}_annotated.csv"
+        annotated_df.to_csv(output_path, index=False, header=False)
+        logger.info(f"✅ Saved to {output_path}")
+
+    # Final summary
+    print("\n" + "=" * 60)
+    print("            🚨 FINAL FAILURE SUMMARY 🚨")
+    print("=" * 60)
+
+    total_failures = sum(len(ids) for ids in global_summary.values())
+    if total_failures == 0:
+        print("🎉 All entries successfully annotated!")
+    else:
+        print(f"❌ {total_failures} UniProt ID(s) failed across {len(global_summary)} file(s):\n")
+        for fname, failed_list in global_summary.items():
+            if failed_list:
+                unique_failed = sorted(set(failed_list))
+                print(f"📁 {fname} ({len(unique_failed)} failure(s)):")
+                for uid in unique_failed[:10]:
+                    print(f"    • {uid}")
+                if len(unique_failed) > 10:
+                    print(f"    ... and {len(unique_failed) - 10} more")
+                print()
+        print(f"📄 Logs: {log_dir}/")
+
+    print("=" * 60)
+    print("✅ Annotation complete.")
+
+
+if __name__ == "__main__":
+    main()
