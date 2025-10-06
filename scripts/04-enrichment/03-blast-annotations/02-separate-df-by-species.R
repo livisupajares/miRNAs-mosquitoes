@@ -21,3 +21,17 @@ full_expanded_per_mirna_down_stringdb_annotated %>%
   distinct(species) # Aedes aegypti only
 full_expanded_per_mirna_stringdb_annotated %>%
   distinct(species) # Aedes aegypti and Aedes albopictus
+
+# ==== Separate dfs by species =====
+# For full_expanded_all_stringdb_annotated
+aae_all_annotated <- full_expanded_all_stringdb_annotated %>%
+  filter(species == "Aedes aegypti")
+
+aal_all_annotated <- full_expanded_all_stringdb_annotated %>%
+  filter(species == "Aedes albopictus")
+
+# For full_expanded_per_mirna_stringdb_annotated
+aae_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
+  filter(species == "Aedes aegypti")
+aal_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
+  filter(species == "Aedes albopictus")
