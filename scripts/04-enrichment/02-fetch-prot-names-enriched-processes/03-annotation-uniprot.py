@@ -211,3 +211,51 @@ def fetch_uniprot_entry(uniprot_id: str, logger, max_retries=3):
             logger.error(f"Error fetching {uniprot_id} (attempt {attempt+1}): {e}")
         time.sleep(1)
     return None
+
+def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
+    filename = filepath.name
+    uniprot_col_idx = get_uniprot_col_index(filename)
+
+    # Add annotation columns if missing
+    cols = ["protein_name", "gene_primary", "cc_function", "go_p", "go_f"]
+    for col in cols:
+        if col not in df.columns:
+            df[col] = "NA"
+
+    # Extract unique UniProt IDs
+    if df.empty or uniprot_col_idx >= df.shape[1]:
+        logger.warning(f"Invalid column index {uniprot_col_idx} for {filename}")
+        return df, []
+
+    uniprot_series = df.iloc[:, uniprot_col_idx].dropna()
+    uniprot_ids = uniprot_series.unique().tolist()
+    if not uniprot_ids:
+        logger.info(f"No UniProt IDs in {filename}")
+        return df, []
+
+    logger.info(f"Processing {len(uniprot_ids)} UniProt IDs from {filename}")
+
+    # Fetch and cache
+    cache = {}
+    failed = []
+
+    for uid in tqdm(uniprot_ids, desc=f"Annotating {filename}", total=len(uniprot_ids)):
+        if uid in cache:
+            continue
+        ann = fetch_uniprot_entry(uid, logger)
+        if ann is None:
+            ann = {col: "NA" for col in cols}
+            failed.append(uid)
+        cache[uid] = ann
+        time.sleep(0.25)  # Rate limiting
+
+    # Apply annotations
+    for idx in df.index:
+        uid = df.iat[idx, uniprot_col_idx]
+        if pd.isna(uid):
+            continue
+        ann = cache.get(uid, {col: "NA" for col in cols})
+        for col in cols:
+            df.at[idx, col] = ann[col]
+
+    return df, failed
