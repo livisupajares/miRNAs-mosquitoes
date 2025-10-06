@@ -16,7 +16,6 @@
 # go_f). Then, log these IDs as failures in logs and print in console a summary 
 # of the run.
 
-import json
 import logging
 import platform
 import sys
@@ -191,25 +190,41 @@ def fetch_uniprot_entry(uniprot_id: str, logger, max_retries=3):
             response = requests.get(url, headers=headers, params=params, timeout=10)
             if response.status_code == 200:
                 data = response.json()
+
+                # Check for inactive entry
+                if data.get("entryType") == "Inactive":
+                    primary_acc = data.get("primaryAccession", uniprot_id)
+                    uniparc_id = data.get("extraAttributes", {}).get("uniParcId", "N/A")
+                    logger.error(
+                        f"Inactive entry: {primary_acc} → moved to UniParc {uniparc_id}"
+                    )
+                    return None  # Treat as failure
+
                 if "primaryAccession" in data:
                     return parse_uniprot_response(data)
                 else:
                     logger.error(f"No primaryAccession in response for {uniprot_id}")
                     return None
+
             elif response.status_code == 404:
                 logger.info(f"404 Not Found: {uniprot_id} → likely moved to UniParc")
                 return None
+
             elif response.status_code == 429:
                 wait = 2 ** (attempt + 1)
                 logger.info(f"Rate limited for {uniprot_id}, waiting {wait}s")
                 time.sleep(wait)
                 continue
+
             else:
                 logger.error(f"HTTP {response.status_code} for {uniprot_id}")
                 return None
+
         except Exception as e:
             logger.error(f"Error fetching {uniprot_id} (attempt {attempt+1}): {e}")
+
         time.sleep(1)
+
     return None
 
 def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
