@@ -175,3 +175,39 @@ def parse_uniprot_response(data: dict) -> dict:
         pass
 
     return result
+
+def fetch_uniprot_entry(uniprot_id: str, logger, max_retries=3):
+    url = f"https://rest.uniprot.org/uniprotkb/{uniprot_id}"
+    headers = {
+        "accept": "application/json",
+        "User-Agent": "miRNA-annotation-fetcher/1.0 (Python Script)"
+    }
+    params = {
+        "fields": "protein_name,gene_primary,cc_function,go_p,go_f"
+    }
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                if "primaryAccession" in data:
+                    return parse_uniprot_response(data)
+                else:
+                    logger.error(f"No primaryAccession in response for {uniprot_id}")
+                    return None
+            elif response.status_code == 404:
+                logger.info(f"404 Not Found: {uniprot_id} → likely moved to UniParc")
+                return None
+            elif response.status_code == 429:
+                wait = 2 ** (attempt + 1)
+                logger.info(f"Rate limited for {uniprot_id}, waiting {wait}s")
+                time.sleep(wait)
+                continue
+            else:
+                logger.error(f"HTTP {response.status_code} for {uniprot_id}")
+                return None
+        except Exception as e:
+            logger.error(f"Error fetching {uniprot_id} (attempt {attempt+1}): {e}")
+        time.sleep(1)
+    return None
