@@ -216,13 +216,12 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
     filename = filepath.name
     uniprot_col_idx = get_uniprot_col_index(filename)
 
-    # Add annotation columns if missing
     cols = ["protein_name", "gene_primary", "cc_function", "go_p", "go_f"]
+    # ✅ Initialize new columns only if they don't exist
     for col in cols:
         if col not in df.columns:
             df[col] = "NA"
 
-    # Extract unique UniProt IDs
     if df.empty or uniprot_col_idx >= df.shape[1]:
         logger.warning(f"Invalid column index {uniprot_col_idx} for {filename}")
         return df, []
@@ -235,7 +234,6 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
 
     logger.info(f"Processing {len(uniprot_ids)} UniProt IDs from {filename}")
 
-    # Fetch and cache
     cache = {}
     failed = []
 
@@ -247,12 +245,12 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
             ann = {col: "NA" for col in cols}
             failed.append(uid)
         cache[uid] = ann
-        time.sleep(0.25)  # Rate limiting
+        time.sleep(0.25)
 
-    # Apply annotations
+    # Apply cached annotations (handles duplicates automatically)
     for idx in df.index:
         uid = df.iat[idx, uniprot_col_idx]
-        if pd.isna(uid):
+        if pd.isna(uid) or uid == "":
             continue
         ann = cache.get(uid, {col: "NA" for col in cols})
         for col in cols:
@@ -272,7 +270,8 @@ def main():
         logger = setup_logger(f"logger_{input_file.stem}", log_dir / f"log_{input_file.stem}.log")
 
         try:
-            df = pd.read_csv(input_file, header=None, dtype=str, keep_default_na=False)
+            # ✅ READ WITH HEADERS
+            df = pd.read_csv(input_file, dtype=str, keep_default_na=False)
         except Exception as e:
             logger.error(f"Failed to read {input_file}: {e}")
             continue
@@ -281,7 +280,8 @@ def main():
         global_summary[input_file.name] = failed_ids
 
         output_path = out_dir / f"{input_file.stem}_annotated.csv"
-        annotated_df.to_csv(output_path, index=False, header=False)
+        # ✅ WRITE WITH HEADERS
+        annotated_df.to_csv(output_path, index=False, header=True)
         logger.info(f"✅ Saved to {output_path}")
 
     # Final summary
