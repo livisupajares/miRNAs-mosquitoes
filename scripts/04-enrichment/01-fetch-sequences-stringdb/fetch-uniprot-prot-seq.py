@@ -311,11 +311,12 @@ if __name__ == "__main__":
             )
         else:
             print(f"❌ No valid sequences found for {mirna}")
-    print("\n✅Script completed successfully.")
+        
+        # Save failures for THIS txt file before moving to next
+        if failed_for_mirna:
+            failed_summary[mirna] = failed_for_mirna
 
-    # Save failed list for final summary
-    if failed_for_mirna:
-        failed_summary[mirna] = failed_for_mirna
+    print("\n✅Script completed successfully.")
 
     # =================== FINAL SUMMARY ===================
     print("\n" + "=" * 60)
