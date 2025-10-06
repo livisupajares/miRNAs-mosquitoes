@@ -112,3 +112,66 @@ def get_uniprot_col_index(filename: str) -> int:
         return 9  # 10th column (0-based index 9)
     else:
         return 8  # 9th column (0-based index 8)
+
+def parse_uniprot_response(data: dict) -> dict:
+    result = {
+        "protein_name": "NA",
+        "gene_primary": "NA",
+        "cc_function": "NA",
+        "go_p": "NA",
+        "go_f": "NA"
+    }
+
+    # === protein_name ===
+    try:
+        pdesc = data.get("proteinDescription", {})
+        rec_name = pdesc.get("recommendedName", {})
+        full_name = rec_name.get("fullName", {}).get("value")
+        if not full_name:
+            alt_names = pdesc.get("alternativeNames", [])
+            if alt_names:
+                full_name = alt_names[0].get("fullName", {}).get("value")
+        result["protein_name"] = full_name if full_name else "NA"
+    except Exception:
+        pass
+
+    # === gene_primary ===
+    try:
+        genes = data.get("genes", [])
+        if genes and "geneName" in genes[0]:
+            gene_val = genes[0]["geneName"].get("value")
+            result["gene_primary"] = gene_val if gene_val else "NA"
+    except Exception:
+        pass
+
+    # === cc_function ===
+    try:
+        comments = data.get("comments", [])
+        func_comment = next((c for c in comments if c.get("commentType") == "FUNCTION"), None)
+        if func_comment and "texts" in func_comment and func_comment["texts"]:
+            func_text = func_comment["texts"][0].get("value")
+            result["cc_function"] = func_text if func_text else "NA"
+    except Exception:
+        pass
+
+    # === GO terms (P and F) ===
+    try:
+        xrefs = data.get("uniProtKBCrossReferences", [])
+        go_refs = [x for x in xrefs if x.get("database") == "GO"]
+        p_terms = []
+        f_terms = []
+        for ref in go_refs:
+            props = ref.get("properties", [])
+            for prop in props:
+                if prop.get("key") == "GoTerm":
+                    term = prop.get("value", "")
+                    if term.startswith("P:"):
+                        p_terms.append(term[2:])
+                    elif term.startswith("F:"):
+                        f_terms.append(term[2:])
+        result["go_p"] = "; ".join(p_terms) if p_terms else "NA"
+        result["go_f"] = "; ".join(f_terms) if f_terms else "NA"
+    except Exception:
+        pass
+
+    return result
