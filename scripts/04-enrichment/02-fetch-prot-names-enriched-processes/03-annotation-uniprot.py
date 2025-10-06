@@ -16,8 +16,6 @@
 # go_f). Then, log these IDs as failures in logs and print in console a summary 
 # of the run.
 
-# Run the script for each `full_expanded` dataframe.
-
 import json
 import logging
 import platform
@@ -84,6 +82,7 @@ log_dir.mkdir(exist_ok=True)
 out_dir = base_dir / "output_annotation"
 out_dir.mkdir(exist_ok=True)
 
+# Define logger
 def setup_logger(name, log_file):
     """Setup logger: INFO+ to console, ERROR+ to file"""
     logger = logging.getLogger(name)
@@ -106,3 +105,9 @@ def setup_logger(name, log_file):
     logger.addHandler(ch)
 
     return logger
+
+def extract_uniprot_ids(df):
+    """Extract unique Uniprot IDs from column index 7 (0-based)"""
+    if df.empty:
+        return []
+    return df.iloc[:, 7].dropna().unique().tolist()
