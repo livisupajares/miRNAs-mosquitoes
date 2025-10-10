@@ -73,6 +73,27 @@ for (name in names(df_list)){
   cat("\n")
 }
 
+# Count how many unique uniprot ids (matching proteins_id_ network) have only protein_name as NA
+cat("=== UniProt IDs with ONLY protein_name as NA ===\n")
+
+for (name in names(df_list)){
+  df <- df_list[[name]]
+  uniprot_only_protein_name_na <- df %>%
+    filter(is.na(protein_name)) %>%
+    pull(matching_proteins_id_network) %>%
+    unique()
+  cat(name,"\n")
+  cat(sprintf("Count: %d\n", length(uniprot_only_protein_name_na)))
+  if (length(uniprot_only_protein_name_na) > 0) {
+    cat("UniProt IDs:\n")
+    print(uniprot_only_protein_name_na)
+  } else {
+    cat("No UniProt IDs found with only protein_name as NA.\n")
+  }
+  cat("\n")
+}
+
+
 # ==== Save final df =====
 write.csv(full_expanded_all_down_stringdb_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_down_annotated.csv", row.names = FALSE)
 write.csv(aae_all_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_annotated.csv", row.names = FALSE)
