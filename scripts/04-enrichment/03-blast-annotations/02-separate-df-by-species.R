@@ -36,6 +36,10 @@ aae_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
 aal_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
   filter(species == "Aedes albopictus")
 
+# ==== Remove unused dfs ====
+rm(full_expanded_all_stringdb_annotated)
+rm(full_expanded_per_mirna_stringdb_annotated)
+
 # ==== Save final df =====
 write.csv(full_expanded_all_down_stringdb_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_down_annotated.csv", row.names = FALSE)
 write.csv(aae_all_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_annotated.csv", row.names = FALSE)
