@@ -6,10 +6,10 @@ library(dplyr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== Import data =====
-full_expanded_all_down_stringdb_annotated <- read_csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-down-stringdb_annotated.csv")
-full_expanded_all_stringdb_annotated <- read_csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-stringdb_annotated.csv")
-full_expanded_per_mirna_down_stringdb_annotated <- read_csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-down-stringdb_annotated.csv")
-full_expanded_per_mirna_stringdb_annotated <- read_csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-stringdb_annotated.csv")
+full_expanded_all_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-down-stringdb_annotated.csv")
+full_expanded_all_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-stringdb_annotated.csv")
+full_expanded_per_mirna_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-down-stringdb_annotated.csv")
+full_expanded_per_mirna_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-stringdb_annotated.csv")
 
 # ==== Inspect species variables =====
 # See the unique values of species column to see which dfs we need to separate
@@ -55,14 +55,14 @@ df_list <- list(
 
 cat("=== UniProt IDs with ALL 4 columns as NA ===\n")
 
-for (name in names(df_list)){
+for (name in names(df_list)) {
   df <- df_list[[name]]
   # Filter rows where all 4 columns are NA, then get unique proteins_id_network
   uniprot_all_na <- df %>%
     filter(is.na(protein_name) & is.na(cc_function) & is.na(go_p) & is.na(go_f)) %>%
     pull(matching_proteins_id_network) %>%
     unique()
-  cat(name,"\n")
+  cat(name, "\n")
   cat(sprintf("Count: %d\n", length(uniprot_all_na)))
   if (length(uniprot_all_na) > 0) {
     cat("UniProt IDs:\n")
@@ -76,13 +76,13 @@ for (name in names(df_list)){
 # Count how many unique uniprot ids (matching proteins_id_ network) have only protein_name as NA
 cat("=== UniProt IDs with ONLY protein_name as NA ===\n")
 
-for (name in names(df_list)){
+for (name in names(df_list)) {
   df <- df_list[[name]]
   uniprot_only_protein_name_na <- df %>%
     filter(is.na(protein_name)) %>%
     pull(matching_proteins_id_network) %>%
     unique()
-  cat(name,"\n")
+  cat(name, "\n")
   cat(sprintf("Count: %d\n", length(uniprot_only_protein_name_na)))
   if (length(uniprot_only_protein_name_na) > 0) {
     cat("UniProt IDs:\n")
