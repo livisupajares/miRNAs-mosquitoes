@@ -45,6 +45,11 @@ eggnog <- lapply(eggnog, function(df) {
   ), .after = "X.query")
 })
 
+# Remove last three rows
+eggnog <- lapply(eggnog, function(df){
+  df <- df %>% slice(1:(n() - 3))
+})
+
 View(eggnog$aae_all_down)
 View(eggnog$aae_all)
 View(eggnog$aae_per_mirna_down)
@@ -52,7 +57,3 @@ View(eggnog$aae_per_mirna)
 View(eggnog$aal_all)
 View(eggnog$aal_per_mirna)
 
-# Remove last three rows
-eggnog <- lapply(eggnog, function(df){
-  df <- df %>% slice(1:(n() - 3))
-})
