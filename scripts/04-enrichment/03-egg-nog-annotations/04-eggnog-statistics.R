@@ -57,3 +57,24 @@ View(eggnog$aae_per_mirna)
 View(eggnog$aal_all)
 View(eggnog$aal_per_mirna)
 
+# ==== STATISTICS =====
+# Determine which `uniprot_id` has no anotations (NAs in `Description`, `Preferred_name` and `PFAMs`)
+cat("=== UniProt IDs with ALL 3 columns as NA ===\n")
+for (name in names(eggnog)) {
+  df <- eggnog[[name]]
+  uniprot_na <- df %>%
+    filter(is.na(Description) &
+             is.na(Preferred_name) &
+             is.na(PFAMs)) %>%
+    pull(uniprot_id) %>%
+    unique()
+  cat(name, "\n")
+  cat(sprintf("Count: %d\n", length(uniprot_na)))
+  if (length(uniprot_na) > 0) {
+    cat("UniProt IDs:\n")
+    print(uniprot_na)
+  } else {
+    cat("No UniProt IDs found with all 3 columns as NA.\n")
+  }
+  cat("\n")
+}
