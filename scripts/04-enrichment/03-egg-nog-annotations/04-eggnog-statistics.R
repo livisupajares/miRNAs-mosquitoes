@@ -53,3 +53,6 @@ View(eggnog$aal_all)
 View(eggnog$aal_per_mirna)
 
 # Remove last three rows
+eggnog <- lapply(eggnog, function(df){
+  df <- df %>% slice(1:(n() - 3))
+})
