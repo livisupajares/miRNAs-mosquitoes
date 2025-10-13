@@ -78,3 +78,11 @@ for (name in names(eggnog)) {
   }
   cat("\n")
 }
+
+# ==== SAVE CLEANED DFs ====
+write.csv(eggnog$aae_all_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_down_eggnog.csv" , row.names = FALSE)
+write.csv(eggnog$aae_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_eggnog.csv" , row.names = FALSE)
+write.csv(eggnog$aae_per_mirna_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_down_eggnog.csv" , row.names = FALSE)
+write.csv(eggnog$aae_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_eggnog.csv" , row.names = FALSE)
+write.csv(eggnog$aal_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_all.csv" , row.names = FALSE)
+write.csv(eggnog$aal_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_per_mirna.csv" , row.names = FALSE)
