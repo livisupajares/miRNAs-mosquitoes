@@ -4,6 +4,7 @@
 
 # ===== LOAD LIBRARIES =====
 library(dplyr)
+library(stringr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== LOAD TSV DATA ======
@@ -31,3 +32,24 @@ eggnog <- lapply(eggnog, function(df){
 })
 
 View(eggnog$aae_all_down)
+
+# Split `X.query` column to extract only uniprot ids, if uniparc id is detected, do nothing
+eggnog <- lapply(eggnog, function(df) {
+  # Create an empty column called `uniprot_id` and use regex
+  # We use case_when instead of if, and ifelse bc evaluates vectorized conditions (such as a df) with an unlimited amount of outcomes
+  df[] <- df %>% mutate(uniprot_id = case_when(
+    # If it matches UniProt format (starts with tr| or sp| etc.)
+    str_detect(X.query, "^[a-z]{2}\\|[^|]+\\|") ~ str_extract(X.query, "^[a-z]{2}\\|([^|]+)\\|", group = 1),
+    # Otherwise, assume it's UniParc or other ID → keep original
+    TRUE ~ X.query
+  ), .after = "X.query")
+})
+
+View(eggnog$aae_all_down)
+View(eggnog$aae_all)
+View(eggnog$aae_per_mirna_down)
+View(eggnog$aae_per_mirna)
+View(eggnog$aal_all)
+View(eggnog$aal_per_mirna)
+
+# Remove last three rows
