@@ -49,3 +49,6 @@ aae_per_mirna_down_merged <- merge(aae_per_mirna_down_uniprot, eggnog_aae_per_mi
 aal_all_merged <- merge(aal_all_uniprot, eggnog_aal_all, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
 aal_per_mirna_merged <- merge(aal_per_mirna_uniprot, eggnog_aal_per_mirna, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
 
+# TODO: Save merged databases into a list
+# TODO: Sort by term_description
+# TODO: Rename uniprot and eggnog annotation columns
