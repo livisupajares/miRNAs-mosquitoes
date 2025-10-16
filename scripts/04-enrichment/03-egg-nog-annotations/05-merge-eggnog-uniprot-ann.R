@@ -15,6 +15,14 @@ eggnog_aae_per_mirna_down <- eggnog$aae_per_mirna_down
 eggnog_aal_all <- eggnog$aal_all
 eggnog_aal_per_mirna <- eggnog$aal_per_mirna
 
+# Remove unused data
+rm(aae_all_down_eggnog)
+rm(aae_all_eggnog)
+rm(aae_per_mirna_down_eggnog)
+rm(aae_per_mirna_eggnog)
+rm(aal_all_eggnog)
+rm(aal_per_mirna_eggnog)
+
 # Load uniprot annotation files
 aae_all_uniprot <- read.csv("results/02-enrichment/05-eggnog-annotation/aae_all_annotated.csv")
 aae_all_down <- read.csv("results/02-enrichment/05-eggnog-annotation/aae_all_down_annotated.csv")
