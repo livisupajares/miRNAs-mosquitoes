@@ -41,3 +41,11 @@ eggnog_aae_per_mirna_down <- eggnog_clean$aae_per_mirna_down
 eggnog_aal_all <- eggnog_clean$aal_all
 eggnog_aal_per_mirna <- eggnog_clean$aal_per_mirna
 
+# Merge databases
+aae_all_merged <- merge(aae_all_uniprot, eggnog_aae_all, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+aae_all_down_merged <- merge(aae_all_down_uniprot, eggnog_aae_all_down, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+aae_per_mirna_merged <- merge(aae_per_mirna_uniprot, eggnog_aae_per_mirna, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+aae_per_mirna_down_merged <- merge(aae_per_mirna_down_uniprot, eggnog_aae_per_mirna_down, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+aal_all_merged <- merge(aal_all_uniprot, eggnog_aal_all, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+aal_per_mirna_merged <- merge(aal_per_mirna_uniprot, eggnog_aal_per_mirna, by.x = "matching_proteins_id_network", by.y = "uniprot_id", all.x = TRUE)
+
