@@ -56,14 +56,14 @@ choose_base_dir()
 # input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "stringdb" / "input" /"aae-common-per-mirna"
 # input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "stringdb" / "input" /"aae-common-all"
 
-input_directory = root_dir / "results" / "02-enrichment" / "05-blast-annotation" / "uniprot_ids_txt"
+input_directory = root_dir / "results" / "03-ppi" / "unmapped_kegg_ids"
 
 # Output directory to store the FASTA files
 # output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna/aal-miranda-per-mirna-stringdb"
 # output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/aae-common-per-mirna"
 # output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/aae-common-all"
 
-output_dir = root_dir / "sequences" / "05-blast-annotation"
+output_dir = root_dir / "sequences" / "06-ppi"
 
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
