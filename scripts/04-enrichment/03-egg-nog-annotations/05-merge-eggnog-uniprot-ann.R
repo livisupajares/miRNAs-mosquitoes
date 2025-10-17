@@ -58,5 +58,22 @@ annotation <- list(
   "aal_all_merged" = aal_all_merged,
   "aal_per_mirna_merged" = aal_per_mirna_merged
 )
-# TODO: Sort by term_description
-# TODO: Rename uniprot and eggnog annotation columns
+# Clean new df list
+annotation_sorted <- lapply(annotation, function(df) {
+  annotation_sorted <- df %>% 
+    # Sort by term_description
+    arrange(term_description) %>%
+    # Rename column to uniprot_id
+    rename(uniprot_id = matching_proteins_id_network) %>%
+    # Rename uniprot and eggnog annotation columns
+    rename(annotation_stringdb = annotation) %>%
+    rename(protein_name_uniprot = protein_name) %>%
+    rename(cc_function_uniprot = cc_function) %>%
+    rename(go_p_uniprot = go_p) %>%
+    rename(go_f_uniprot = go_f)%>%
+    rename(description_eggnog = Description) %>%
+    rename(preferred_name_eggnog = Preferred_name) %>%
+    rename(pfams_eggnog = PFAMs) %>%
+    # Relocate eggnog annotation columns after `go_f_uniprot`
+    relocate(c(description_eggnog, preferred_name_eggnog, pfams_eggnog), .after = go_f_uniprot)
+})
