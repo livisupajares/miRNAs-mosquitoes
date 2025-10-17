@@ -77,3 +77,11 @@ annotation_sorted <- lapply(annotation, function(df) {
     # Relocate eggnog annotation columns after `go_f_uniprot`
     relocate(c(description_eggnog, preferred_name_eggnog, pfams_eggnog), .after = go_f_uniprot)
 })
+
+# ==== SAVE DFS ====
+write.csv(annotation_sorted$aae_all_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aae-all-merged.csv", row.names = FALSE)
+write.csv(annotation_sorted$aae_all_down_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aae-all-down-merged.csv", row.names = FALSE)
+write.csv(annotation_sorted$aae_per_mirna_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aae-per-mirna-merged.csv", row.names = FALSE)
+write.csv(annotation_sorted$aae_per_mirna_down_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aae-per-mirna-down-merged.csv", row.names = FALSE)
+write.csv(annotation_sorted$aal_all_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aal-all-merged.csv", row.names = FALSE)
+write.csv(annotation_sorted$aal_per_mirna_merged, "results/02-enrichment/07-tidying-results/01-uniprot-eggnog/aal-per-mirna-merged.csv", row.names = FALSE)
