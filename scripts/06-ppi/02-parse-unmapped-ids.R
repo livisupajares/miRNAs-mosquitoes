@@ -36,6 +36,10 @@ aal_mapped_ids <- aal_ppi_annotated %>%
 print(aae_unmapped_ids, row.names = FALSE)
 print(aal_unmapped_ids, row.names = FALSE)
 
+# ==== SAVE TXT of uniprot ids without kegg_id
+writeLines(aae_unmapped_ids$mapped_id, con = "results/03-ppi/unmapped_kegg_ids/aae_unmapped_kegg.txt")
+writeLines(aal_unmapped_ids$mapped_id, con = "results/03-ppi/unmapped_kegg_ids/aal_unmapped_kegg.txt")
+
 # ===== EXTRACT RANDOM SAMPLE OF PPI ANNOTATED DATA ======
 # This a andom sampling of aae_ppi_annotated and aal_ppi_annotated with equal number of rows with and without kegg_ids (N = 5 of each)
 set.seed(123) # Set seed for reproducibility
