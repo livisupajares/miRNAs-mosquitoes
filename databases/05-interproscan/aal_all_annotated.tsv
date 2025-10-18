@@ -1,0 +1,736 @@
+tr|A0A182GTH0|A0A182GTH0_AEDAL	7b4575518f3518c58879340110715490	648	Pfam	PF00535	Glycosyl transferase family 2	210	393	1.0E-34	T	17-10-2025	IPR001173	Glycosyltransferase 2-like	-	-
+tr|A0A182GTH0|A0A182GTH0_AEDAL	7b4575518f3518c58879340110715490	648	Pfam	PF00652	Ricin-type beta-trefoil lectin domain	520	638	4.6E-27	T	17-10-2025	IPR000772	Ricin B, lectin domain	-	-
+tr|A0A182HC90|A0A182HC90_AEDAL	7a90bfafaf0a1e8c9b573894208caab4	84	Pfam	PF07297	Dolichol phosphate-mannose biosynthesis regulatory protein (DPM2)	5	72	7.5E-9	T	17-10-2025	IPR009914	Dolichol phosphate-mannose biosynthesis regulatory	-	-
+tr|A0A182H197|A0A182H197_AEDAL	9777d6c5aa927c4af2932126f4d78069	603	Pfam	PF03644	Glycosyl hydrolase family 85	97	385	5.4E-88	T	17-10-2025	IPR005201	Cytosolic endo-beta-N-acetylglucosaminidase, TIM barrel domain	-	-
+tr|A0A182HDG6|A0A182HDG6_AEDAL	5887cf8a8e1ee2ae0ccf3ddfe5860f7c	807	Pfam	PF09770	Topoisomerase II-associated protein PAT1	114	619	1.9E-6	T	17-10-2025	IPR019167	mRNA decay factor PAT1 domain	-	-
+tr|A0A023ED66|A0A023ED66_AEDAL	ebeaf0d216b17d737c77bb366b5ec272	113	Pfam	PF01158	Ribosomal protein L36e	4	109	1.1E-39	T	17-10-2025	IPR000509	Large ribosomal subunit protein eL36	-	-
+tr|A0A182GC25|A0A182GC25_AEDAL	a931981d8b8e0deb1a543ccf8ebd5ca3	401	Pfam	PF17039	Fucosyltransferase, N-terminal	56	176	3.7E-23	T	17-10-2025	IPR031481	Fucosyltransferase, N-terminal	-	-
+tr|A0A182GC25|A0A182GC25_AEDAL	a931981d8b8e0deb1a543ccf8ebd5ca3	401	Pfam	PF00852	Glycosyltransferase family 10 (fucosyltransferase) C-term	214	387	6.0E-55	T	17-10-2025	IPR055270	Fucosyltransferase, C-terminal	-	-
+UPI0007D62B0F	93fd0c74ff1c584f6c5a3f04a20a4f63	414	Pfam	PF00400	WD domain, G-beta repeat	292	317	57.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D62B0F	93fd0c74ff1c584f6c5a3f04a20a4f63	414	Pfam	PF00400	WD domain, G-beta repeat	323	360	7.0E-6	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D62B0F	93fd0c74ff1c584f6c5a3f04a20a4f63	414	Pfam	PF00400	WD domain, G-beta repeat	111	138	0.22	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D62B0F	93fd0c74ff1c584f6c5a3f04a20a4f63	414	Pfam	PF00400	WD domain, G-beta repeat	160	184	320.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D62B0F	93fd0c74ff1c584f6c5a3f04a20a4f63	414	Pfam	PF00400	WD domain, G-beta repeat	65	100	1.8E-5	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D2256D	6f714334f6a7b55e729bb81314016a2c	368	Pfam	PF17921	Integrase zinc binding domain	5	34	0.0016	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+UPI0007D2256D	6f714334f6a7b55e729bb81314016a2c	368	Pfam	PF00665	Integrase core domain	50	141	4.2E-9	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A023EQ67|A0A023EQ67_AEDAL	1cafc5ab7c7541e5ef723460b73a0662	341	Pfam	PF12146	Serine aminopeptidase, S33	115	227	2.8E-4	T	17-10-2025	IPR022742	Serine aminopeptidase, S33	-	-
+tr|A0A182GPN4|A0A182GPN4_AEDAL	ca3c9853f76862c5d0af1d23625382e8	2722	Pfam	PF06469	Neurobeachin-like, DUF1088	1742	1910	1.4E-69	T	17-10-2025	IPR010508	Neurobeachin-like, DUF1088	-	-
+tr|A0A182GPN4|A0A182GPN4_AEDAL	ca3c9853f76862c5d0af1d23625382e8	2722	Pfam	PF15787	Neurobeachin/BDCP, DUF4704 alpha solenoid region	62	420	0.0	T	17-10-2025	IPR031570	Neurobeachin/BDCP, DUF4704	-	-
+tr|A0A182GPN4|A0A182GPN4_AEDAL	ca3c9853f76862c5d0af1d23625382e8	2722	Pfam	PF02138	Beige/BEACH domain	2062	2338	3.0E-119	T	17-10-2025	IPR000409	BEACH domain	-	-
+tr|A0A182GPN4|A0A182GPN4_AEDAL	ca3c9853f76862c5d0af1d23625382e8	2722	Pfam	PF20426	Neurobeachin beta propeller domain	2444	2713	6.6E-36	T	17-10-2025	IPR046851	Neurobeachin, beta-propeller domain	-	-
+tr|A0A182GPN4|A0A182GPN4_AEDAL	ca3c9853f76862c5d0af1d23625382e8	2722	Pfam	PF14844	PH domain associated with Beige/BEACH	1933	2029	1.0E-25	T	17-10-2025	IPR023362	PH-BEACH domain	-	-
+UPI0007D24ABE	4575cc6140252e6deb1f35814efc9dba	196	Pfam	PF10246	Mitochondrial ribosomal protein MRP-S35	80	182	1.1E-49	T	17-10-2025	IPR019375	Small ribosomal subunit protein bS1m	-	-
+tr|A0A182H530|A0A182H530_AEDAL	950ef7a81c4194b5974201fb2a0b15f4	317	Pfam	PF00075	RNase H	59	175	2.7E-9	T	17-10-2025	IPR002156	Ribonuclease H domain	-	-
+tr|A0A182G0N5|A0A182G0N5_AEDAL	2de52cfb4b0d88e43ab0599e90b1d083	803	Pfam	PF02187	Growth-Arrest-Specific Protein 2 Domain	163	231	8.4E-31	T	17-10-2025	IPR003108	GAR domain	-	-
+tr|A0A182HAS2|A0A182HAS2_AEDAL	104e82c252c5c3ca4eaaa7d007bd98e7	1482	Pfam	PF15410	Pleckstrin homology domain	1179	1290	1.7E-47	T	17-10-2025	IPR041681	Pleckstrin homology domain 9	-	-
+tr|A0A182HAS2|A0A182HAS2_AEDAL	104e82c252c5c3ca4eaaa7d007bd98e7	1482	Pfam	PF01369	Sec7 domain	971	1121	6.5E-42	T	17-10-2025	IPR000904	Sec7 domain	-	-
+tr|A0A182GAZ9|A0A182GAZ9_AEDAL	6672adb5c663363a49f3ea30279b1d62	828	Pfam	PF03732	Retrotransposon gag protein	538	628	4.5E-5	T	17-10-2025	IPR005162	Retrotransposon gag domain	-	-
+tr|A0A182H5J7|A0A182H5J7_AEDAL	c6f5ac5281af53eb3226421bb306d5b8	231	Pfam	PF02338	OTU-like cysteine protease	162	218	2.4E-5	T	17-10-2025	IPR003323	OTU domain	-	-
+UPI0007D6531F	c86dfe7b1ea81cbcaae6e4fe7dd4d420	1375	Pfam	PF00183	Hsp90 protein	189	651	0.0	T	17-10-2025	IPR001404	Heat shock protein Hsp90 family	-	-
+UPI0007D6531F	c86dfe7b1ea81cbcaae6e4fe7dd4d420	1375	Pfam	PF00183	Hsp90 protein	846	1351	0.0	T	17-10-2025	IPR001404	Heat shock protein Hsp90 family	-	-
+UPI0007D6531F	c86dfe7b1ea81cbcaae6e4fe7dd4d420	1375	Pfam	PF13589	Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase	36	151	2.1E-5	T	17-10-2025	-	-	-	-
+UPI0007D6531F	c86dfe7b1ea81cbcaae6e4fe7dd4d420	1375	Pfam	PF13589	Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase	693	808	4.0E-5	T	17-10-2025	-	-	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF13912	C2H2-type zinc finger	100	122	0.45	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF13912	C2H2-type zinc finger	66	88	380.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF00096	Zinc finger, C2H2 type	184	206	0.044	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF00096	Zinc finger, C2H2 type	212	235	11.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF00096	Zinc finger, C2H2 type	157	179	14.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D55751	b568b07a4b65e61ed017766b03b20fb3	421	Pfam	PF00096	Zinc finger, C2H2 type	128	151	21.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D21AEA	7a0c834682df89f29a6e16d9d5813314	311	Pfam	PF14523	Syntaxin-like protein	63	198	4.8E-19	T	17-10-2025	IPR006011	Syntaxin, N-terminal domain	-	-
+UPI0007D21AEA	7a0c834682df89f29a6e16d9d5813314	311	Pfam	PF05739	SNARE domain	250	301	4.3E-11	T	17-10-2025	IPR000727	Target SNARE coiled-coil homology domain	-	-
+UPI0007D45369	fadd439216afdbfd7e32bde4197cac09	352	Pfam	PF01753	MYND finger	129	166	0.023	T	17-10-2025	IPR002893	Zinc finger, MYND-type	-	-
+UPI0007D45369	fadd439216afdbfd7e32bde4197cac09	352	Pfam	PF04194	Programmed cell death protein 2, C-terminal putative domain	241	337	3.1E-30	T	17-10-2025	IPR007320	Programmed cell death protein 2, C-terminal	-	-
+UPI0007D1D433	47b886bd6a69fc6eff3dd90139525c14	168	Pfam	PF05741	Nanos RNA binding domain	123	166	6.6E-11	T	17-10-2025	IPR024161	Zinc finger, nanos-type	-	-
+tr|A0A182GEB4|A0A182GEB4_AEDAL	cfd6d552579e7733ead5f5fdb9ad7353	249	Pfam	PF02798	Glutathione S-transferase, N-terminal domain	1	76	3.6E-10	T	17-10-2025	IPR004045	Glutathione S-transferase, N-terminal	-	-
+tr|A0A182GEB4|A0A182GEB4_AEDAL	cfd6d552579e7733ead5f5fdb9ad7353	249	Pfam	PF00043	Glutathione S-transferase, C-terminal domain	128	190	0.015	T	17-10-2025	IPR004046	Glutathione S-transferase, C-terminal	-	-
+UPI0007D6AC12	3d44dd638888a4d8039be2ec4b4b1a9a	293	Pfam	PF01875	Memo-like protein	5	288	6.5E-75	T	17-10-2025	IPR002737	MEMO1 family	-	-
+tr|A0A182GKQ4|A0A182GKQ4_AEDAL	65d400ded3d580be36c865f3aadb89ce	826	Pfam	PF00439	Bromodomain	41	125	3.0E-19	T	17-10-2025	IPR001487	Bromodomain	-	-
+tr|A0A182GKQ4|A0A182GKQ4_AEDAL	65d400ded3d580be36c865f3aadb89ce	826	Pfam	PF00439	Bromodomain	381	467	1.3E-17	T	17-10-2025	IPR001487	Bromodomain	-	-
+tr|A0A182GKQ4|A0A182GKQ4_AEDAL	65d400ded3d580be36c865f3aadb89ce	826	Pfam	PF17035	Bromodomain extra-terminal - transcription regulation	672	735	6.7E-24	T	17-10-2025	IPR027353	NET domain	-	-
+UPI0007D3B6E2	dcfcf0fe4e7b31d4ad21885936ff18ba	1320	Pfam	PF00566	Rab-GTPase-TBC domain	215	433	1.4E-29	T	17-10-2025	IPR000195	Rab-GAP-TBC domain	-	-
+UPI0007D13B6C	abf894f8deb1367f1d7e38a022ab8f2b	1386	Pfam	PF18386	Roquin II domain	298	353	1.1E-29	T	17-10-2025	IPR041523	Roquin II	-	-
+UPI0007D13B6C	abf894f8deb1367f1d7e38a022ab8f2b	1386	Pfam	PF21206	Roquin 1/2-like, ROQ domain	209	295	3.8E-40	T	17-10-2025	IPR048575	Roquin 1/2-like, ROQ domain	-	-
+UPI0007D13B6C	abf894f8deb1367f1d7e38a022ab8f2b	1386	Pfam	PF14634	zinc-RING finger domain	14	54	0.003	T	17-10-2025	IPR001841	Zinc finger, RING-type	-	-
+UPI0007D13B6C	abf894f8deb1367f1d7e38a022ab8f2b	1386	Pfam	PF00642	Zinc finger C-x8-C-x5-C-x3-H type (and similar)	442	468	2.2E-4	T	17-10-2025	IPR000571	Zinc finger, CCCH-type	-	-
+UPI0007D3E342	2e44dfd506f8d0ee9552b6fa627440fd	703	Pfam	PF01344	Kelch motif	405	452	0.0089	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+UPI0007D3E342	2e44dfd506f8d0ee9552b6fa627440fd	703	Pfam	PF24681	KLHDC2/KLHL20/DRC7 Kelch-repeats domain	459	654	7.0E-16	T	17-10-2025	-	-	-	-
+UPI0007D3E342	2e44dfd506f8d0ee9552b6fa627440fd	703	Pfam	PF07707	BTB And C-terminal Kelch	158	232	1.5E-8	T	17-10-2025	IPR011705	BTB/Kelch-associated	-	-
+UPI0007D3E342	2e44dfd506f8d0ee9552b6fa627440fd	703	Pfam	PF00651	BTB/POZ domain	45	151	2.3E-27	T	17-10-2025	IPR000210	BTB/POZ domain	-	-
+tr|A0A023EGI5|A0A023EGI5_AEDAL	78e8af650249f0a35796a151181a82ce	140	Pfam	PF09774	Intermembrane space protein MIX23	7	132	2.5E-12	T	17-10-2025	IPR019171	Intermembrane space protein MIX23	-	-
+tr|A0A182H681|A0A182H681_AEDAL	c524590d06cef4c3eea05c7f147170b2	713	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	459	557	5.6E-29	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+tr|A0A182H681|A0A182H681_AEDAL	c524590d06cef4c3eea05c7f147170b2	713	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	234	395	2.4E-28	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182HAA6|A0A182HAA6_AEDAL	09a93884c45a81649d34463ad254895a	536	Pfam	PF00067	Cytochrome P450	39	519	5.1E-85	T	17-10-2025	IPR001128	Cytochrome P450	-	-
+tr|A0A023EID3|A0A023EID3_AEDAL	9473bb1a6e79261d98d52803c9b268a5	180	Pfam	PF00025	ADP-ribosylation factor family	6	175	1.9E-72	T	17-10-2025	IPR006689	Small GTPase superfamily, ARF/SAR type	-	-
+tr|A0A182H0X1|A0A182H0X1_AEDAL	dd2d6a4f6ab028e79e36f6b5c24b4264	617	Pfam	PF00069	Protein kinase domain	15	265	4.8E-66	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+tr|A0A182H0X1|A0A182H0X1_AEDAL	dd2d6a4f6ab028e79e36f6b5c24b4264	617	Pfam	PF20929	Programmed cell death protein 10, dimerisation domain	547	598	0.17	T	17-10-2025	IPR048288	Programmed cell death protein 10, dimerisation domain	-	-
+UPI0007D28036	df1d13c36dbfcf0595400cf3f44be905	824	Pfam	PF02854	MIF4G domain	161	340	7.3E-13	T	17-10-2025	IPR003890	MIF4G-like, type 3	-	-
+UPI0007D28036	df1d13c36dbfcf0595400cf3f44be905	824	Pfam	PF02847	MA3 domain	455	560	8.0E-23	T	17-10-2025	IPR003891	Initiation factor eIF-4 gamma, MA3	-	-
+tr|A0A023EBS4|A0A023EBS4_AEDAL	862598937837023c14d2c32650162a8e	86	Pfam	PF05347	Complex 1 protein (LYR family)	9	65	1.0E-19	T	17-10-2025	IPR008011	Complex 1 LYR protein domain	-	-
+tr|A0A182G6N9|A0A182G6N9_AEDAL	2d03ea9c1c6577282ea06ef3f323f5f6	164	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	14	163	6.5E-12	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D5354F	80662bcd270eb60114b7354af9b23869	189	Pfam	PF14598	PAS domain	1	96	2.4E-14	T	17-10-2025	-	-	-	-
+UPI0007D68D0E	13bc4d1fe94ae18f3edbf1c478bae595	905	Pfam	PF00481	Protein phosphatase 2C	11	307	1.6E-39	T	17-10-2025	IPR001932	PPM-type phosphatase-like domain	-	-
+tr|A0A182G5Y8|A0A182G5Y8_AEDAL	a91e7fe65d3656456d4b702db6572047	392	Pfam	PF00149	Calcineurin-like phosphoesterase	131	325	1.8E-34	T	17-10-2025	IPR004843	Calcineurin-like, phosphoesterase domain	-	-
+tr|A0A182G5Y8|A0A182G5Y8_AEDAL	a91e7fe65d3656456d4b702db6572047	392	Pfam	PF08321	PPP5 TPR repeat region	30	123	1.3E-27	T	17-10-2025	IPR013235	PPP domain	-	-
+tr|A0A182GMZ4|A0A182GMZ4_AEDAL	e93c60c36583bf636e5b08598ce3b927	191	Pfam	PF00929	Exonuclease	18	180	1.7E-32	T	17-10-2025	IPR013520	Ribonuclease H-like domain	-	-
+tr|A0A182HDC1|A0A182HDC1_AEDAL	f0eb6f321ed49ac5ada9eead952d75d8	721	Pfam	PF04926	Poly(A) polymerase predicted RNA binding domain	378	447	8.5E-19	T	17-10-2025	IPR007010	Poly(A) polymerase, RNA-binding domain	-	-
+tr|A0A182HDC1|A0A182HDC1_AEDAL	f0eb6f321ed49ac5ada9eead952d75d8	721	Pfam	PF04928	Poly(A) polymerase central domain	231	375	1.1E-66	T	17-10-2025	IPR007012	Poly(A) polymerase, central domain	-	-
+tr|A0A182HDC1|A0A182HDC1_AEDAL	f0eb6f321ed49ac5ada9eead952d75d8	721	Pfam	PF20750	Poly(A) polymerase nucleotidyltransferase domain	33	226	2.5E-82	T	17-10-2025	IPR048840	Poly(A) polymerase, nucleotidyltransferase domain	-	-
+UPI0007D1D4B3	47ce6229ad6d6777259ee80a43a5bd41	605	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	455	553	1.0E-21	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+UPI0007D1D4B3	47ce6229ad6d6777259ee80a43a5bd41	605	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	230	386	2.4E-31	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D61822	be8f2dbb2c5ebc721d2e11e4552c4d22	311	Pfam	PF10545	Alcohol dehydrogenase transcription factor Myb/SANT-like	36	116	2.2E-8	T	17-10-2025	IPR006578	MADF domain	-	-
+UPI0007D61822	be8f2dbb2c5ebc721d2e11e4552c4d22	311	Pfam	PF02944	BESS motif	264	298	1.1E-7	T	17-10-2025	IPR004210	BESS motif	-	-
+tr|A0A182HET5|A0A182HET5_AEDAL	512ce98d0a39f071794e15c5e25b9150	1407	Pfam	PF00931	NB-ARC domain	131	304	4.3E-4	T	17-10-2025	IPR002182	NB-ARC	-	-
+tr|A0A182HET5|A0A182HET5_AEDAL	512ce98d0a39f071794e15c5e25b9150	1407	Pfam	PF17908	APAF-1 helical domain	465	601	2.1E-9	T	17-10-2025	IPR041452	APAF-1 helical domain	-	-
+tr|A0A182HET5|A0A182HET5_AEDAL	512ce98d0a39f071794e15c5e25b9150	1407	Pfam	PF12894	Anaphase-promoting complex subunit 4 WD40 domain	1171	1234	0.53	T	17-10-2025	IPR024977	Anaphase-promoting complex subunit 4-like, WD40 domain	-	-
+UPI0007D63967	c41f0c85c7ffbbd1b84d11478a9caf56	387	Pfam	PF00650	CRAL/TRIO domain	143	290	8.9E-28	T	17-10-2025	IPR001251	CRAL-TRIO lipid binding domain	-	-
+UPI0007D63967	c41f0c85c7ffbbd1b84d11478a9caf56	387	Pfam	PF03765	CRAL/TRIO, N-terminal domain	88	110	0.015	T	17-10-2025	IPR011074	CRAL/TRIO, N-terminal domain	-	-
+UPI0007D42E1B	8f6f34a1ab85982e480070c7b968977d	749	Pfam	PF03031	NLI interacting factor-like phosphatase	147	285	9.3E-21	T	17-10-2025	IPR004274	FCP1 homology domain	-	-
+UPI0007D42E1B	8f6f34a1ab85982e480070c7b968977d	749	Pfam	PF00533	BRCA1 C Terminus (BRCT) domain	461	536	3.0E-8	T	17-10-2025	IPR001357	BRCT domain	-	-
+tr|A0A182H637|A0A182H637_AEDAL	1d136ab8e73dc6199fb476d4ea9608e1	582	Pfam	PF00665	Integrase core domain	300	394	9.7E-15	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182H637|A0A182H637_AEDAL	1d136ab8e73dc6199fb476d4ea9608e1	582	Pfam	PF17921	Integrase zinc binding domain	227	282	1.6E-13	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182H637|A0A182H637_AEDAL	1d136ab8e73dc6199fb476d4ea9608e1	582	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	15	113	3.6E-26	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+tr|A0A182GP12|A0A182GP12_AEDAL	9aa8b0275058b439bec18475c4855919	371	Pfam	PF00557	Metallopeptidase family M24	121	349	3.0E-48	T	17-10-2025	IPR000994	Peptidase M24	-	-
+tr|A0A182GP12|A0A182GP12_AEDAL	9aa8b0275058b439bec18475c4855919	371	Pfam	PF15801	zf-MYND-like zinc finger, mRNA-binding	5	48	1.0E-16	T	17-10-2025	IPR031615	MYND-like zinc finger	-	-
+tr|A0A182G5Z9|A0A182G5Z9_AEDAL	0a86585ad538535084a9ce09b3fcbef1	479	Pfam	PF14604	Variant SH3 domain	428	476	5.7E-10	T	17-10-2025	IPR001452	SH3 domain	-	-
+tr|A0A182H362|A0A182H362_AEDAL	a3916b5583bb684a15d8fbc3b997953c	333	Pfam	PF00561	alpha/beta hydrolase fold	150	238	1.3E-5	T	17-10-2025	IPR000073	Alpha/beta hydrolase fold-1	-	-
+tr|A0A023EQE1|A0A023EQE1_AEDAL	73e1f3880a5010dc681ddb29b8051b31	307	Pfam	PF00149	Calcineurin-like phosphoesterase	48	241	1.2E-46	T	17-10-2025	IPR004843	Calcineurin-like, phosphoesterase domain	-	-
+UPI0007D5511D	851e77e8bec4ca0c90a785bf31a8536f	148	Pfam	PF00085	Thioredoxin	43	142	7.7E-26	T	17-10-2025	IPR013766	Thioredoxin domain	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF07525	SOCS box	422	459	0.083	T	17-10-2025	IPR001496	SOCS box domain	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF12796	Ankyrin repeats (3 copies)	27	105	1.2E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF12796	Ankyrin repeats (3 copies)	160	246	2.0E-9	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF00023	Ankyrin repeat	122	148	1.2	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF00023	Ankyrin repeat	290	320	0.12	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G3H7|A0A182G3H7_AEDAL	4cab2e835aa83f537d941e0cf5be0a1e	464	Pfam	PF00023	Ankyrin repeat	257	284	5.8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G4S8|A0A182G4S8_AEDAL	05fcf6041f28e15622fbe41584e8f342	761	Pfam	PF20651	Exocyst complex component EXOC6/Sec15, N-terminal	35	204	3.5E-49	T	17-10-2025	IPR048359	Exocyst complex component EXOC6/Sec15, N-terminal domain	-	-
+tr|A0A182G4S8|A0A182G4S8_AEDAL	05fcf6041f28e15622fbe41584e8f342	761	Pfam	PF04091	Exocyst complex subunit Sec15 C-terminal	375	721	2.1E-89	T	17-10-2025	IPR046361	Exocyst complex subunit EXOC6/Sec15, C-terminal	-	-
+UPI0007D5D69B	6005249092305c912a02accdd10887f4	221	Pfam	PF05739	SNARE domain	165	217	1.5E-4	T	17-10-2025	IPR000727	Target SNARE coiled-coil homology domain	-	-
+tr|A0A023EMA3|A0A023EMA3_AEDAL	64d5fe3395c22035c65ebb7605021978	249	Pfam	PF00226	DnaJ domain	50	110	1.4E-12	T	17-10-2025	IPR001623	DnaJ domain	-	-
+tr|A0A182GM05|A0A182GM05_AEDAL	e68d67ec30da40578c367a1739666e86	135	Pfam	PF00010	Helix-loop-helix DNA-binding domain	8	46	2.4E-5	T	17-10-2025	IPR011598	Myc-type, basic helix-loop-helix (bHLH) domain	-	-
+tr|A0A182GH02|A0A182GH02_AEDAL	d7edde2d14344367460775bac6a22c47	703	Pfam	PF00443	Ubiquitin carboxyl-terminal hydrolase	380	662	1.5E-25	T	17-10-2025	IPR001394	Peptidase C19, ubiquitin carboxyl-terminal hydrolase	-	-
+UPI0007D620FD	c013c69dc3aa6eb27cbab558a66b6951	545	Pfam	PF00400	WD domain, G-beta repeat	365	390	1.1	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D620FD	c013c69dc3aa6eb27cbab558a66b6951	545	Pfam	PF00400	WD domain, G-beta repeat	395	432	0.015	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D620FD	c013c69dc3aa6eb27cbab558a66b6951	545	Pfam	PF00400	WD domain, G-beta repeat	485	515	21.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D620FD	c013c69dc3aa6eb27cbab558a66b6951	545	Pfam	PF00400	WD domain, G-beta repeat	319	346	700.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D620FD	c013c69dc3aa6eb27cbab558a66b6951	545	Pfam	PF00400	WD domain, G-beta repeat	265	299	23.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182GYJ6|A0A182GYJ6_AEDAL	2742263e18d388582a629971855f30ec	223	Pfam	PF00076	RNA recognition motif	42	103	1.5E-8	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182GYJ6|A0A182GYJ6_AEDAL	2742263e18d388582a629971855f30ec	223	Pfam	PF00098	Zinc knuckle	124	138	0.015	T	17-10-2025	IPR001878	Zinc finger, CCHC-type	-	-
+UPI0007D36F11	2ac4a88d15e54152938eb03b71547b9f	437	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	81	147	8.9E-6	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF00023	Ankyrin repeat	1543	1576	0.005	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF00023	Ankyrin repeat	1364	1387	2.8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF00023	Ankyrin repeat	2072	2103	0.0029	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF05729	NACHT domain	428	573	0.0064	T	17-10-2025	IPR007111	NACHT nucleoside triphosphatase	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1464	1532	1.1E-7	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1749	1816	3.9E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	980	1078	4.3E-13	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1819	1888	4.7E-7	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1678	1745	1.0E-6	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1123	1220	9.5E-13	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1394	1461	8.2E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1974	2067	2.0E-14	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1583	1674	4.2E-10	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1264	1362	1.9E-13	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	895	969	5.8E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H959|A0A182H959_AEDAL	99a1ebf1671be29440914866c9088990	2154	Pfam	PF12796	Ankyrin repeats (3 copies)	1890	1958	1.1E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D0E200	93d56e3d136c1eaddf0e99de36a002fb	1043	Pfam	PF00133	tRNA synthetases class I (I, L, M and V)	98	721	0.0	T	17-10-2025	IPR002300	Aminoacyl-tRNA synthetase, class Ia	-	-
+UPI0007D0E200	93d56e3d136c1eaddf0e99de36a002fb	1043	Pfam	PF08264	Anticodon-binding domain of tRNA ligase	766	917	1.2E-35	T	17-10-2025	IPR013155	Methionyl/Valyl/Leucyl/Isoleucyl-tRNA synthetase, anticodon-binding	-	-
+tr|A0A182GA07|A0A182GA07_AEDAL	11b7958775337ea716f0e4b406b64729	832	Pfam	PF13912	C2H2-type zinc finger	795	818	5.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182GA07|A0A182GA07_AEDAL	11b7958775337ea716f0e4b406b64729	832	Pfam	PF05485	THAP domain	3	57	7.0E-9	T	17-10-2025	IPR006612	THAP-type zinc finger	-	-
+tr|A0A182GA07|A0A182GA07_AEDAL	11b7958775337ea716f0e4b406b64729	832	Pfam	PF05485	THAP domain	115	199	1.8E-5	T	17-10-2025	IPR006612	THAP-type zinc finger	-	-
+tr|A0A182GA07|A0A182GA07_AEDAL	11b7958775337ea716f0e4b406b64729	832	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	276	341	8.0E-4	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+UPI0007D62EC4	94999512f52394d2d937d3d2c888bf8c	1933	Pfam	PF20845	Pre-mRNA cleavage complex 2 protein Pcf11, alpha-helical domain	177	210	0.0044	T	17-10-2025	IPR048830	Pre-mRNA cleavage complex 2 protein Pcf11, helical domain	-	-
+UPI0007D62EC4	94999512f52394d2d937d3d2c888bf8c	1933	Pfam	PF04818	CID domain	25	129	7.0E-11	T	17-10-2025	IPR006569	CID domain	-	-
+UPI0007D62EC4	94999512f52394d2d937d3d2c888bf8c	1933	Pfam	PF23228	PCFS4 zinc finger domain	1505	1539	0.0065	T	17-10-2025	IPR057242	PCFS4-like, zinc finger domain	-	-
+tr|A0A182GCC4|A0A182GCC4_AEDAL	6dfc90abf4b436f7619a175cdf615f96	318	Pfam	PF00248	Aldo/keto reductase family	19	293	2.1E-54	T	17-10-2025	IPR023210	NADP-dependent oxidoreductase domain	-	-
+UPI0007D5C116	ea15c56f3b3a97ae72cf76676269682b	112	Pfam	PF12407	Homeobox protein	6	28	6.3E-11	T	17-10-2025	IPR022132	Homeobox protein	-	-
+UPI0007D3D9CE	b4781594321a3014e081161dd75c8e28	354	Pfam	PF00202	Aminotransferase class-III	3	350	6.0E-85	T	17-10-2025	IPR005814	Aminotransferase class-III	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	12	93	7.8E-5	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	288	309	0.19	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	258	281	39.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	343	365	0.12	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	317	337	1.1	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	175	197	45.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D2F1FB	030f5af0186c21f73ce366d790bd40d6	411	Pfam	PF00096	Zinc finger, C2H2 type	231	253	2.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182GLJ0|A0A182GLJ0_AEDAL	2123b52d083a6eede69eaf65ca46af20	778	Pfam	PF00104	Ligand-binding domain of nuclear hormone receptor	587	756	2.0E-22	T	17-10-2025	IPR000536	Nuclear hormone receptor, ligand-binding domain	-	-
+tr|A0A182GLJ0|A0A182GLJ0_AEDAL	2123b52d083a6eede69eaf65ca46af20	778	Pfam	PF00105	Double treble clef zinc finger, C4 type	362	429	6.6E-23	T	17-10-2025	IPR001628	Zinc finger, nuclear hormone receptor-type	-	-
+UPI0007D4B0AE	8610ee5eb568f518930ebf8abe48c3d3	395	Pfam	PF00781	Diacylglycerol kinase catalytic domain	24	159	7.9E-22	T	17-10-2025	IPR001206	Diacylglycerol kinase, catalytic domain	-	-
+UPI0007D4B0AE	8610ee5eb568f518930ebf8abe48c3d3	395	Pfam	PF19712	Acylglycerol kinase C-terminal	180	393	1.4E-13	T	17-10-2025	IPR045579	Acylglycerol kinase, C-terminal	-	-
+tr|A0A182GCG5|A0A182GCG5_AEDAL	284db07ec60551c5deeb4287347ae454	679	Pfam	PF00069	Protein kinase domain	214	527	8.9E-53	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D2AB41	55fe5fee0b5bee973a8b8a87e43d1ba5	748	Pfam	PF00679	Elongation factor G C-terminus	639	724	6.9E-24	T	17-10-2025	IPR000640	Elongation factor EFG, domain V-like	-	-
+UPI0007D2AB41	55fe5fee0b5bee973a8b8a87e43d1ba5	748	Pfam	PF14492	Elongation Factor G, domain III	440	514	1.4E-23	T	17-10-2025	IPR041095	Elongation Factor G, domain II	-	-
+UPI0007D2AB41	55fe5fee0b5bee973a8b8a87e43d1ba5	748	Pfam	PF03764	Elongation factor G, domain IV	515	634	6.5E-32	T	17-10-2025	IPR005517	Translation elongation factor EFG/EF2, domain IV	-	-
+UPI0007D2AB41	55fe5fee0b5bee973a8b8a87e43d1ba5	748	Pfam	PF00009	Elongation factor Tu GTP binding domain	40	315	1.0E-57	T	17-10-2025	IPR000795	Translational (tr)-type GTP-binding domain	-	-
+UPI0007D2AB41	55fe5fee0b5bee973a8b8a87e43d1ba5	748	Pfam	PF03144	Elongation factor Tu domain 2	360	425	1.2E-9	T	17-10-2025	IPR004161	Translation elongation factor EFTu-like, domain 2	-	-
+tr|A0A182H3K3|A0A182H3K3_AEDAL	241f2371280db00a9cd83dbf83f0f8a9	419	Pfam	PF00076	RNA recognition motif	345	404	0.039	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182H3K3|A0A182H3K3_AEDAL	241f2371280db00a9cd83dbf83f0f8a9	419	Pfam	PF00076	RNA recognition motif	214	283	1.1E-12	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182H3K3|A0A182H3K3_AEDAL	241f2371280db00a9cd83dbf83f0f8a9	419	Pfam	PF00076	RNA recognition motif	100	173	0.011	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182H656|A0A182H656_AEDAL	0f72e111df13d404e9bad72a693f377d	176	Pfam	PF04500	FLYWCH zinc finger domain	3	60	8.9E-17	T	17-10-2025	IPR007588	Zinc finger, FLYWCH-type	-	-
+tr|A0A182GVN2|A0A182GVN2_AEDAL	d929ad05f6010a41d8dd4628ecbae981	667	Pfam	PF01448	ELM2 domain	65	117	9.3E-13	T	17-10-2025	IPR000949	ELM2 domain	-	-
+tr|A0A182GVN2|A0A182GVN2_AEDAL	d929ad05f6010a41d8dd4628ecbae981	667	Pfam	PF20878	Helical region in REST corepressor	368	433	2.0E-14	T	17-10-2025	IPR049048	REST corepressor, helical domain	-	-
+tr|A0A182GVN2|A0A182GVN2_AEDAL	d929ad05f6010a41d8dd4628ecbae981	667	Pfam	PF00249	Myb-like DNA-binding domain	153	196	0.0089	T	17-10-2025	IPR001005	SANT/Myb domain	-	-
+tr|A0A182GVN2|A0A182GVN2_AEDAL	d929ad05f6010a41d8dd4628ecbae981	667	Pfam	PF00249	Myb-like DNA-binding domain	452	495	0.0061	T	17-10-2025	IPR001005	SANT/Myb domain	-	-
+UPI0007D42863	8e777faedba7475aca5ae20e586878d5	617	Pfam	PF00069	Protein kinase domain	26	274	4.1E-64	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D42863	8e777faedba7475aca5ae20e586878d5	617	Pfam	PF11629	C terminal SARAH domain of Mst1	559	606	4.8E-16	T	17-10-2025	IPR024205	Mst1/2 SARAH domain	-	-
+UPI0007D35244	136f69ab4a41ad95d7e5dfa2fb184caa	135	Pfam	PF00038	Intermediate filament protein	46	135	1.1E-19	T	17-10-2025	IPR039008	Intermediate filament, rod domain	-	-
+UPI0007D15438	478a6fa9847df6b4e007ca09ead5dc73	144	Pfam	PF18439	Ubiquitin-Binding Zinc Finger	61	88	3.7E-8	T	17-10-2025	IPR041298	DNA polymerase eta, ubiquitin-binding zinc finger	-	-
+UPI0007D5D4A6	ed4cd38afa0ef4b6f4b82ceb74bbb540	907	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	120	279	1.0E-31	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D5D4A6	ed4cd38afa0ef4b6f4b82ceb74bbb540	907	Pfam	PF00665	Integrase core domain	629	718	3.1E-9	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+UPI0007D5D4A6	ed4cd38afa0ef4b6f4b82ceb74bbb540	907	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	343	441	6.8E-33	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+UPI0007D5D4A6	ed4cd38afa0ef4b6f4b82ceb74bbb540	907	Pfam	PF17921	Integrase zinc binding domain	553	611	1.3E-18	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A023ETF7|A0A023ETF7_AEDAL	acd20f76a774333a860be297076d2b19	519	Pfam	PF06702	Golgi casein kinase, C-terminal, Fam20	290	505	4.0E-102	T	17-10-2025	IPR009581	FAM20, C-terminal	-	-
+tr|A0A182H3L7|A0A182H3L7_AEDAL	e32d340b149d51fb15b44c2ef438932d	191	Pfam	PF01161	Phosphatidylethanolamine-binding protein	52	169	1.6E-10	T	17-10-2025	IPR008914	Phosphatidylethanolamine-binding protein	-	-
+tr|A0A182H9P7|A0A182H9P7_AEDAL	9546c41914cf9ca0e54a35ae6c1e0c78	539	Pfam	PF04558	Glutaminyl-tRNA synthetase, non-specific RNA binding region part 1	8	167	3.0E-45	T	17-10-2025	IPR007639	Glutaminyl-tRNA synthetase, class Ib, non-specific RNA-binding domain, N-terminal	-	-
+tr|A0A182H9P7|A0A182H9P7_AEDAL	9546c41914cf9ca0e54a35ae6c1e0c78	539	Pfam	PF04557	Glutaminyl-tRNA synthetase, non-specific RNA binding region part 2	170	265	1.9E-26	T	17-10-2025	IPR007638	Glutaminyl-tRNA synthetase, class Ib, non-specific RNA-binding domain 2	-	-
+tr|A0A182H9P7|A0A182H9P7_AEDAL	9546c41914cf9ca0e54a35ae6c1e0c78	539	Pfam	PF00749	tRNA synthetases class I (E and Q), catalytic domain	275	519	9.9E-93	T	17-10-2025	IPR020058	Glutamyl/glutaminyl-tRNA synthetase, class Ib, catalytic domain	-	-
+UPI0007D4C072	2198e23baeba1ea443f4a02cba235df2	613	Pfam	PF00102	Protein-tyrosine phosphatase	72	309	1.3E-70	T	17-10-2025	IPR000242	Tyrosine-specific protein phosphatase, PTPase domain	-	-
+tr|A0A182HFD9|A0A182HFD9_AEDAL	fd3bf86a746963a91c925492ce90e817	519	Pfam	PF06702	Golgi casein kinase, C-terminal, Fam20	290	505	4.0E-102	T	17-10-2025	IPR009581	FAM20, C-terminal	-	-
+tr|A0A182GY18|A0A182GY18_AEDAL	9e4b7288b62d1b73f1cb39d7fb36ba11	286	Pfam	PF00035	Double-stranded RNA binding motif	214	280	2.7E-7	T	17-10-2025	IPR014720	Double-stranded RNA-binding domain	-	-
+tr|A0A182GY18|A0A182GY18_AEDAL	9e4b7288b62d1b73f1cb39d7fb36ba11	286	Pfam	PF01585	G-patch domain	141	181	4.2E-10	T	17-10-2025	IPR000467	G-patch domain	-	-
+tr|A0A182GUI2|A0A182GUI2_AEDAL	c2960d0de799611ff96e6c8c196bf709	225	Pfam	PF14681	Uracil phosphoribosyltransferase	33	210	3.6E-48	T	17-10-2025	IPR000836	Phosphoribosyltransferase domain	-	-
+tr|A0A182GZ11|A0A182GZ11_AEDAL	6120a9d2f3ec07e89f516be9dbdc78bf	509	Pfam	PF00651	BTB/POZ domain	58	166	8.0E-12	T	17-10-2025	IPR000210	BTB/POZ domain	-	-
+tr|A0A182GFQ8|A0A182GFQ8_AEDAL	68f1d3300a147c247ae55a0e9164c5cd	800	Pfam	PF01532	Glycosyl hydrolase family 47	47	484	2.6E-109	T	17-10-2025	IPR001382	Glycoside hydrolase family 47	-	-
+tr|A0A182GSS4|A0A182GSS4_AEDAL	de91d33c741f17df23308c8f8ff4ef34	771	Pfam	PF08033	Sec23/Sec24 beta-sandwich domain	407	510	6.6E-23	T	17-10-2025	IPR012990	Sec23/Sec24, beta-sandwich	-	-
+tr|A0A182GSS4|A0A182GSS4_AEDAL	de91d33c741f17df23308c8f8ff4ef34	771	Pfam	PF04810	Sec23/Sec24 zinc finger	58	98	3.0E-11	T	17-10-2025	IPR006895	Zinc finger, Sec23/Sec24-type	-	-
+tr|A0A182GSS4|A0A182GSS4_AEDAL	de91d33c741f17df23308c8f8ff4ef34	771	Pfam	PF04815	Sec23/Sec24 helical domain	524	622	2.5E-26	T	17-10-2025	IPR006900	Sec23/Sec24, helical domain	-	-
+tr|A0A182GSS4|A0A182GSS4_AEDAL	de91d33c741f17df23308c8f8ff4ef34	771	Pfam	PF00626	Gelsolin repeat	638	724	7.9E-12	T	17-10-2025	IPR007123	Gelsolin-like domain	-	-
+tr|A0A182GSS4|A0A182GSS4_AEDAL	de91d33c741f17df23308c8f8ff4ef34	771	Pfam	PF04811	Sec23/Sec24 trunk domain	128	396	3.4E-72	T	17-10-2025	IPR006896	Sec23/Sec24, trunk domain	-	-
+tr|A0A182GNU5|A0A182GNU5_AEDAL	617ed75a6e1ffc43a0685e1aa5ba5a96	298	Pfam	PF05826	Phospholipase A2	171	266	5.1E-31	T	17-10-2025	IPR016090	Phospholipase A2-like, central domain	-	-
+UPI0007D56371	b78ee242a052eb499941aab30f99a71b	802	Pfam	PF08711	TFIIS helical bundle-like domain	620	672	4.8E-7	T	17-10-2025	IPR017923	Transcription factor IIS, N-terminal	-	-
+UPI0007D4D204	24a49ecc83fc21916e90168119406853	524	Pfam	PF09728	Myosin-like coiled-coil protein	27	333	3.8E-89	T	17-10-2025	IPR026183	Taxilin family	-	-
+UPI0007D1999C	bbb027c3c54656a1d8054352e2717887	156	Pfam	PF00383	Cytidine and deoxycytidylate deaminase zinc-binding region	24	125	2.7E-14	T	17-10-2025	IPR002125	Cytidine and deoxycytidylate deaminase domain	-	-
+UPI0007D6A773	c5573a0e17d16179f190b9e7306435ba	273	Pfam	PF00076	RNA recognition motif	130	185	1.2E-7	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D59EF6	e45042ac063f2011c38e994027ac86cd	986	Pfam	PF00097	Zinc finger, C3HC4 type (RING finger)	64	102	0.021	T	17-10-2025	IPR018957	Zinc finger, C3HC4 RING-type	-	-
+UPI0007D59EF6	e45042ac063f2011c38e994027ac86cd	986	Pfam	PF26084	Topors, PWI-like domain	244	320	2.0E-9	T	17-10-2025	IPR058745	Topors, PWI-like domain	-	-
+tr|A0A182GCC0|A0A182GCC0_AEDAL	85b8b4352cf4fa89899fa6992895e004	318	Pfam	PF00248	Aldo/keto reductase family	19	294	2.4E-53	T	17-10-2025	IPR023210	NADP-dependent oxidoreductase domain	-	-
+UPI0007D6C1CC	ce182b28639b5f0dcd3571eb334d61e2	610	Pfam	PF00665	Integrase core domain	304	382	8.9E-8	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+UPI0007D6C1CC	ce182b28639b5f0dcd3571eb334d61e2	610	Pfam	PF17917	RNase H-like domain found in reverse transcriptase	14	119	5.5E-27	T	17-10-2025	IPR041373	Reverse transcriptase, RNase H-like domain	-	-
+UPI0007D6C1CC	ce182b28639b5f0dcd3571eb334d61e2	610	Pfam	PF17921	Integrase zinc binding domain	222	273	4.0E-9	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+UPI0007D441B2	9dd3be68f63575cf3d8c91adf41520da	587	Pfam	PF00443	Ubiquitin carboxyl-terminal hydrolase	257	584	9.2E-65	T	17-10-2025	IPR001394	Peptidase C19, ubiquitin carboxyl-terminal hydrolase	-	-
+UPI0007D1E9E9	c927987cae330517efd909ba4dcdb960	547	Pfam	PF02174	PTB domain (IRS-1 type)	372	450	5.6E-6	T	17-10-2025	IPR002404	IRS-type PTB domain	-	-
+UPI0007D1E9E9	c927987cae330517efd909ba4dcdb960	547	Pfam	PF00373	FERM central domain	257	364	3.3E-9	T	17-10-2025	IPR019748	FERM central domain	-	-
+UPI0007D1E9E9	c927987cae330517efd909ba4dcdb960	547	Pfam	PF00784	MyTH4 domain	32	138	2.7E-23	T	17-10-2025	IPR000857	MyTH4 domain	-	-
+UPI0007D1E9E9	c927987cae330517efd909ba4dcdb960	547	Pfam	PF21989	RA like domain	144	227	1.2E-21	T	17-10-2025	-	-	-	-
+tr|A0A182GER9|A0A182GER9_AEDAL	1d2d43b800aea9c21b4b1c25ea8cce29	702	Pfam	PF07842	GC-rich sequence DNA-binding factor-like protein	414	624	2.4E-24	T	17-10-2025	IPR022783	GCF, C-terminal	-	-
+tr|A0A182GER9|A0A182GER9_AEDAL	1d2d43b800aea9c21b4b1c25ea8cce29	702	Pfam	PF15458	Nineteen complex-related protein 2	33	146	6.7E-5	T	17-10-2025	IPR028211	Pre-mRNA-splicing factor Ntr2	-	-
+UPI0007D2CA88	ebb35ed30fd437605d40032fc264694c	1175	Pfam	PF01426	BAH domain	1028	1123	7.4E-11	T	17-10-2025	IPR001025	Bromo adjacent homology (BAH) domain	-	-
+tr|A0A182G158|A0A182G158_AEDAL	c2bdd70ccedd39d64be11076c65f3943	2139	Pfam	PF05380	Pao retrotransposon peptidase	1351	1515	6.8E-43	T	17-10-2025	IPR008042	Retrotransposon, Pao	-	-
+tr|A0A182G158|A0A182G158_AEDAL	c2bdd70ccedd39d64be11076c65f3943	2139	Pfam	PF03564	Protein of unknown function (DUF1759)	510	652	1.4E-6	T	17-10-2025	IPR005312	Protein of unknown function DUF1759	-	-
+tr|A0A182G158|A0A182G158_AEDAL	c2bdd70ccedd39d64be11076c65f3943	2139	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	1126	1282	0.0012	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182G158|A0A182G158_AEDAL	c2bdd70ccedd39d64be11076c65f3943	2139	Pfam	PF18701	Family of unknown function (DUF5641)	2017	2108	7.0E-19	T	17-10-2025	IPR040676	Domain of unknown function DUF5641	-	-
+UPI0007D1403D	accf7f179ef8bcdd88442d918605d740	743	Pfam	PF05557	Mitotic checkpoint protein	92	738	0.0	T	17-10-2025	IPR008672	Spindle assembly checkpoint component Mad1	-	-
+UPI0007D48228	173572e76a3319a5130f5807dbc56d8e	396	Pfam	PF00956	Nucleosome assembly protein (NAP)	55	328	1.7E-93	T	17-10-2025	IPR002164	Nucleosome assembly protein (NAP)	-	-
+UPI0007D30AB1	d450212169b3a8812fd3a1659e346610	251	Pfam	PF09728	Myosin-like coiled-coil protein	1	60	8.6E-13	T	17-10-2025	IPR026183	Taxilin family	-	-
+tr|A0A182G2A3|A0A182G2A3_AEDAL	faca134a4a4c3d6be36b028f8ccd4d72	446	Pfam	PF00041	Fibronectin type III domain	324	401	0.002	T	17-10-2025	IPR003961	Fibronectin type III	-	-
+tr|A0A182G2A3|A0A182G2A3_AEDAL	faca134a4a4c3d6be36b028f8ccd4d72	446	Pfam	PF00041	Fibronectin type III domain	206	288	3.4E-4	T	17-10-2025	IPR003961	Fibronectin type III	-	-
+tr|A0A182G2A3|A0A182G2A3_AEDAL	faca134a4a4c3d6be36b028f8ccd4d72	446	Pfam	PF07679	Immunoglobulin I-set domain	111	191	1.8E-4	T	17-10-2025	IPR013098	Immunoglobulin I-set	-	-
+tr|A0A182G2A3|A0A182G2A3_AEDAL	faca134a4a4c3d6be36b028f8ccd4d72	446	Pfam	PF13927	Immunoglobulin domain	3	83	6.1E-7	T	17-10-2025	-	-	-	-
+UPI0007D21D1E	7a6a01a290b731ca3126f89c4468ae34	453	Pfam	PF12874	Zinc-finger of C2H2 type	158	175	160.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D21D1E	7a6a01a290b731ca3126f89c4468ae34	453	Pfam	PF00096	Zinc finger, C2H2 type	322	344	0.29	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D21D1E	7a6a01a290b731ca3126f89c4468ae34	453	Pfam	PF00096	Zinc finger, C2H2 type	379	401	0.031	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182GUJ6|A0A182GUJ6_AEDAL	252321d7dde0f81175f160cced935672	357	Pfam	PF03381	LEM3 (ligand-effect modulator 3) family / CDC50 family	56	342	2.5E-89	T	17-10-2025	IPR005045	CDC50/LEM3 family	-	-
+tr|A0A182GHU9|A0A182GHU9_AEDAL	e4e86ad0105dc891cf9c95812f50c1fe	2610	Pfam	PF02825	WWE domain	981	1045	7.7E-18	T	17-10-2025	IPR004170	WWE domain	-	-
+tr|A0A182GHU9|A0A182GHU9_AEDAL	e4e86ad0105dc891cf9c95812f50c1fe	2610	Pfam	PF00632	HECT-domain (ubiquitin-transferase)	2300	2610	4.9E-74	T	17-10-2025	IPR000569	HECT domain	-	-
+tr|A0A182GHU9|A0A182GHU9_AEDAL	e4e86ad0105dc891cf9c95812f50c1fe	2610	Pfam	PF25579	E3 ubiquitin-protein ligase TRIP12-like, TPR repeats	649	779	1.4E-20	T	17-10-2025	IPR057948	E3 ubiquitin-protein ligase TRIP12-like, TPR repeats	-	-
+tr|A0A182HE33|A0A182HE33_AEDAL	760cf8c83964b37e0c47ca45d326b486	568	Pfam	PF25045	Ro60 vWA domain	387	563	5.4E-18	T	17-10-2025	IPR056800	RNA-binding protein RO60, vWA domain	-	-
+tr|A0A182GLV4|A0A182GLV4_AEDAL	7ed66a5e79fc42e753c80b8302075482	958	Pfam	PF12895	Anaphase-promoting complex, cyclosome, subunit 3	16	92	5.0E-19	T	17-10-2025	-	-	-	-
+tr|A0A182GLV4|A0A182GLV4_AEDAL	7ed66a5e79fc42e753c80b8302075482	958	Pfam	PF00515	Tetratricopeptide repeat	727	759	8.0E-5	T	17-10-2025	IPR019734	Tetratricopeptide repeat	-	-
+tr|A0A182GLV4|A0A182GLV4_AEDAL	7ed66a5e79fc42e753c80b8302075482	958	Pfam	PF13414	TPR repeat	801	842	0.0067	T	17-10-2025	-	-	-	-
+tr|A0A182HDQ7|A0A182HDQ7_AEDAL	52ce0931d390230348fbcf288abfee4a	405	Pfam	PF10250	GDP-fucose protein O-fucosyltransferase	29	371	7.2E-77	T	17-10-2025	IPR019378	GDP-fucose protein O-fucosyltransferase	-	-
+UPI0007D300FE	058d67e6257b54d7465b2ba39d365e0a	254	Pfam	PF00104	Ligand-binding domain of nuclear hormone receptor	63	232	1.6E-23	T	17-10-2025	IPR000536	Nuclear hormone receptor, ligand-binding domain	-	-
+tr|A0A182GV54|A0A182GV54_AEDAL	709867aad4ebcdb7541557442fee1bac	314	Pfam	PF12336	SOX transcription factor	66	162	2.1E-10	T	17-10-2025	IPR022097	Transcription factor SOX	-	-
+tr|A0A182GV54|A0A182GV54_AEDAL	709867aad4ebcdb7541557442fee1bac	314	Pfam	PF00505	HMG (high mobility group) box	1	65	5.8E-21	T	17-10-2025	IPR009071	High mobility group box domain	-	-
+tr|A0A182H146|A0A182H146_AEDAL	44772c69c9c6739077f1d471b4076f46	336	Pfam	PF00293	NUDIX domain	57	163	2.2E-16	T	17-10-2025	IPR000086	NUDIX hydrolase domain	-	-
+UPI0007D37107	d165c4725b35f4bf5e6c382d32cda1a7	2402	Pfam	PF18797	Adenomatous polyposis coli (APC) repeat	236	305	1.1E-20	T	17-10-2025	IPR041257	Adenomatous polyposis coli (APC) repeat	-	-
+UPI0007D37107	d165c4725b35f4bf5e6c382d32cda1a7	2402	Pfam	PF05923	APC repeat	736	759	8.1E-5	T	17-10-2025	IPR009223	Adenomatous polyposis coli protein repeat	-	-
+UPI0007D37107	d165c4725b35f4bf5e6c382d32cda1a7	2402	Pfam	PF05923	APC repeat	993	1016	1.7E-4	T	17-10-2025	IPR009223	Adenomatous polyposis coli protein repeat	-	-
+UPI0007D37107	d165c4725b35f4bf5e6c382d32cda1a7	2402	Pfam	PF22964	Protein zer-1 homolog-like, C-terminal domain	363	532	4.8E-5	T	17-10-2025	IPR055142	Protein zer-1 homolog-like, C-terminal domain	-	-
+tr|A0A182H108|A0A182H108_AEDAL	c6dad5a56df19decc0f9a167b8d97214	284	Pfam	PF11721	Malectin domain	29	192	7.1E-47	T	17-10-2025	IPR021720	Malectin domain	-	-
+tr|A0A182H3K8|A0A182H3K8_AEDAL	d4754904185cfb6ee3744536c0501e6c	426	Pfam	PF17921	Integrase zinc binding domain	37	89	6.0E-10	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182H3K8|A0A182H3K8_AEDAL	d4754904185cfb6ee3744536c0501e6c	426	Pfam	PF00665	Integrase core domain	121	199	3.6E-6	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF21989	RA like domain	1191	1285	2.2E-31	T	17-10-2025	-	-	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF21989	RA like domain	1799	1864	6.9E-7	T	17-10-2025	-	-	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00784	MyTH4 domain	1090	1186	7.4E-31	T	17-10-2025	IPR000857	MyTH4 domain	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00784	MyTH4 domain	1696	1792	5.9E-26	T	17-10-2025	IPR000857	MyTH4 domain	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00373	FERM central domain	1293	1387	0.048	T	17-10-2025	IPR019748	FERM central domain	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF21998	Myosin-X FERM PH domain-like	1406	1502	1.9E-39	T	17-10-2025	IPR041793	Myosin VII, FERM domain C-lobe, repeat 1	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00063	Myosin head (motor domain)	9	665	0.0	T	17-10-2025	IPR001609	Myosin head, motor domain-like	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF02174	PTB domain (IRS-1 type)	2013	2099	1.1E-17	T	17-10-2025	IPR002404	IRS-type PTB domain	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00612	IQ calmodulin-binding motif	753	769	7.0	T	17-10-2025	IPR000048	IQ motif, EF-hand binding site	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00612	IQ calmodulin-binding motif	704	724	3.9	T	17-10-2025	IPR000048	IQ motif, EF-hand binding site	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00612	IQ calmodulin-binding motif	681	700	290.0	T	17-10-2025	IPR000048	IQ motif, EF-hand binding site	-	-
+tr|A0A182H556|A0A182H556_AEDAL	b6e7e9c5968c4ef217f6b680000b8cc6	2112	Pfam	PF00612	IQ calmodulin-binding motif	774	793	370.0	T	17-10-2025	IPR000048	IQ motif, EF-hand binding site	-	-
+tr|A0A182GIH4|A0A182GIH4_AEDAL	8255c16ea1e56a684c88b6959ccc708a	185	Pfam	PF14802	TMEM192 family	1	170	8.6E-62	T	17-10-2025	IPR029399	TMEM192 family	-	-
+tr|A0A182G4I0|A0A182G4I0_AEDAL	34d7c3ff8d1e837ef8d7c00933ca3813	1190	Pfam	PF14529	Endonuclease-reverse transcriptase	101	219	3.6E-15	T	17-10-2025	IPR005135	Endonuclease/exonuclease/phosphatase	-	-
+tr|A0A182G4I0|A0A182G4I0_AEDAL	34d7c3ff8d1e837ef8d7c00933ca3813	1190	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	467	714	6.0E-28	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182G4I0|A0A182G4I0_AEDAL	34d7c3ff8d1e837ef8d7c00933ca3813	1190	Pfam	PF00075	RNase H	923	1045	1.1E-8	T	17-10-2025	IPR002156	Ribonuclease H domain	-	-
+tr|A0A182GQ91|A0A182GQ91_AEDAL	56bf7a2a42c011a9f558dcb5f45f6c76	184	Pfam	PF05915	Transmembrane proteins 230/134	75	183	1.6E-37	T	17-10-2025	IPR008590	Transmembrane protein 230/134	-	-
+UPI0007D13099	711fe3f12c43a073742f8e27e799bdab	437	Pfam	PF08430	Forkhead N-terminal region	4	148	9.3E-18	T	17-10-2025	IPR013638	Fork-head N-terminal	-	-
+UPI0007D13099	711fe3f12c43a073742f8e27e799bdab	437	Pfam	PF00250	Forkhead domain	149	234	2.0E-33	T	17-10-2025	IPR001766	Fork head domain	-	-
+UPI0007D67F3D	ec22889cf9643b4c3f9f760a6e96080c	739	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	568	718	5.9E-21	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182GE25|A0A182GE25_AEDAL	c1f4b93249ea852447529794f6f445d6	1303	Pfam	PF00443	Ubiquitin carboxyl-terminal hydrolase	172	586	5.1E-61	T	17-10-2025	IPR001394	Peptidase C19, ubiquitin carboxyl-terminal hydrolase	-	-
+tr|A0A182GE25|A0A182GE25_AEDAL	c1f4b93249ea852447529794f6f445d6	1303	Pfam	PF19718	Ubiquitin carboxyl-terminal hydrolase 47 C-terminal	1067	1293	2.3E-48	T	17-10-2025	IPR045578	Ubiquitin carboxyl-terminal hydrolase 47, C-terminal	-	-
+UPI0007D2D2BF	5cde97cc277543b795426b7a2cfac0e8	455	Pfam	PF00069	Protein kinase domain	275	449	5.2E-17	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D2D2BF	5cde97cc277543b795426b7a2cfac0e8	455	Pfam	PF00069	Protein kinase domain	59	212	1.7E-18	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D5AC22	9e66fffab2650ba70e8f803765476c11	1227	Pfam	PF00773	RNB domain	686	1034	2.9E-89	T	17-10-2025	IPR001900	Ribonuclease II/R	-	-
+UPI0007D5AC22	9e66fffab2650ba70e8f803765476c11	1227	Pfam	PF17849	Dis3-like cold-shock domain 2 (CSD2)	583	657	3.3E-14	T	17-10-2025	IPR041505	Dis3-like cold-shock domain 2	-	-
+UPI0007D3644D	627597f05ef5d5fb8d866a4cc012b2ee	750	Pfam	PF16124	RecQ zinc-binding	445	487	2.3E-4	T	17-10-2025	IPR032284	ATP-dependent DNA helicase RecQ, zinc-binding domain	-	-
+UPI0007D3644D	627597f05ef5d5fb8d866a4cc012b2ee	750	Pfam	PF00270	DEAD/DEAH box helicase	102	270	3.1E-20	T	17-10-2025	IPR011545	DEAD/DEAH-box helicase domain	-	-
+UPI0007D3644D	627597f05ef5d5fb8d866a4cc012b2ee	750	Pfam	PF00271	Helicase conserved C-terminal domain	309	418	4.3E-15	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+tr|A0A182GE35|A0A182GE35_AEDAL	ba32cceecf27d0e2693c7ceb7007a7ba	1010	Pfam	PF13246	P-type ATPase, cytoplasmic domain N	385	492	5.6E-9	T	17-10-2025	-	-	-	-
+tr|A0A182GE35|A0A182GE35_AEDAL	ba32cceecf27d0e2693c7ceb7007a7ba	1010	Pfam	PF00122	P-type ATPase actuator domain	44	163	4.4E-15	T	17-10-2025	IPR059000	P-type ATPase, A domain	-	-
+tr|A0A182GDP6|A0A182GDP6_AEDAL	9739d8e3012fd59c3bbe39df57e5bb70	695	Pfam	PF05693	Glycogen synthase	33	677	0.0	T	17-10-2025	IPR008631	Glycogen synthase	-	-
+tr|A0A182GLB9|A0A182GLB9_AEDAL	133381bc91b9066e674acf5d3d7e4713	342	Pfam	PF22675	KHDC4/BBP-like, KH-domain type I	93	180	2.6E-14	T	17-10-2025	IPR055256	KHDC4/BBP-like, KH-domain type I	-	-
+tr|A0A182GLB9|A0A182GLB9_AEDAL	133381bc91b9066e674acf5d3d7e4713	342	Pfam	PF16544	Homodimerisation region of STAR domain protein	18	69	6.8E-24	T	17-10-2025	IPR032377	STAR protein, homodimerisation region	-	-
+tr|A0A182GDW5|A0A182GDW5_AEDAL	83c87657c6c7d623a67377c50c80043c	455	Pfam	PF00709	Adenylosuccinate synthetase	36	451	0.0	T	17-10-2025	IPR001114	Adenylosuccinate synthetase	-	-
+tr|A0A182G131|A0A182G131_AEDAL	f8f95373e5536ef420d996cca9097679	393	Pfam	PF05205	COMPASS (Complex proteins associated with Set1p) component shg1	15	111	4.4E-21	T	17-10-2025	IPR055264	BOD1/SHG1 domain	-	-
+UPI0007D32D50	1ffe505a84b5a37ad5aca57d64634dac	130	Pfam	PF07707	BTB And C-terminal Kelch	3	65	1.9E-16	T	17-10-2025	IPR011705	BTB/Kelch-associated	-	-
+tr|A0A182GZU3|A0A182GZU3_AEDAL	a58b40427826149ec6db577374b686d1	416	Pfam	PF19422	Ariadne domain	285	384	3.1E-6	T	17-10-2025	IPR045840	Ariadne domain	-	-
+tr|A0A182GZU3|A0A182GZU3_AEDAL	a58b40427826149ec6db577374b686d1	416	Pfam	PF01485	IBR domain, a half RING-finger domain	129	191	1.5E-13	T	17-10-2025	IPR002867	IBR domain	-	-
+tr|A0A182GZU3|A0A182GZU3_AEDAL	a58b40427826149ec6db577374b686d1	416	Pfam	PF22191	IBR domain	213	253	4.6E-10	T	17-10-2025	-	-	-	-
+UPI0007D24179	2019ca3d5f449730e2a26fac13ae851a	293	Pfam	PF25372	Leucine Rich Repeat Domain of unknown function (DUF7885)	77	237	3.1E-7	T	17-10-2025	IPR057207	F-box/LRR-repeat protein 15-like, leucin rich repeat domain	-	-
+tr|A0A182HA21|A0A182HA21_AEDAL	c74be4c8293de659932acd1ef7962687	477	Pfam	PF03151	Triose-phosphate Transporter family	70	365	6.5E-19	T	17-10-2025	IPR004853	Sugar phosphate transporter domain	-	-
+UPI0007D10EAD	d04369b63b2c751dba3f289fb17dec8b	780	Pfam	PF02897	Prolyl oligopeptidase, N-terminal beta-propeller domain	80	491	0.0	T	17-10-2025	IPR023302	Peptidase S9A, N-terminal domain	-	-
+UPI0007D10EAD	d04369b63b2c751dba3f289fb17dec8b	780	Pfam	PF00326	Prolyl oligopeptidase family	553	775	1.2E-54	T	17-10-2025	IPR001375	Peptidase S9, prolyl oligopeptidase, catalytic domain	-	-
+UPI0007D408EA	654e6081130b3995ff9e9772e65f827f	615	Pfam	PF00400	WD domain, G-beta repeat	584	611	17.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D408EA	654e6081130b3995ff9e9772e65f827f	615	Pfam	PF00400	WD domain, G-beta repeat	317	351	27.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D408EA	654e6081130b3995ff9e9772e65f827f	615	Pfam	PF00400	WD domain, G-beta repeat	447	484	0.018	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D408EA	654e6081130b3995ff9e9772e65f827f	615	Pfam	PF00400	WD domain, G-beta repeat	537	570	28.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D408EA	654e6081130b3995ff9e9772e65f827f	615	Pfam	PF00400	WD domain, G-beta repeat	417	442	1.3	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182G1E7|A0A182G1E7_AEDAL	7629601104f186bcd7f2681c16e65042	664	Pfam	PF00929	Exonuclease	332	478	7.0E-8	T	17-10-2025	IPR013520	Ribonuclease H-like domain	-	-
+tr|A0A182GNU8|A0A182GNU8_AEDAL	f2ab1b166d665493161f691222b5fa4c	226	Pfam	PF04893	Yip1 domain	70	219	6.9E-15	T	17-10-2025	IPR006977	Yip1 domain	-	-
+UPI0007D4BE1C	ef5851ce798af1a19f087dc345b667b4	322	Pfam	PF00106	short chain dehydrogenase	48	244	1.9E-34	T	17-10-2025	IPR002347	Short-chain dehydrogenase/reductase SDR	-	-
+tr|A0A182H3G2|A0A182H3G2_AEDAL	68a8b3d0295c98aec1b5694d64db3c9f	310	Pfam	PF02146	Sir2 family	53	262	1.3E-39	T	17-10-2025	IPR003000	Sirtuin family	-	-
+tr|A0A023EPY3|A0A023EPY3_AEDAL	16dbc35ac63273b3d9afbb7168b678d0	332	Pfam	PF02800	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	154	311	2.5E-65	T	17-10-2025	IPR020829	Glyceraldehyde 3-phosphate dehydrogenase, catalytic domain	-	-
+tr|A0A023EPY3|A0A023EPY3_AEDAL	16dbc35ac63273b3d9afbb7168b678d0	332	Pfam	PF00044	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	3	101	1.1E-34	T	17-10-2025	IPR020828	Glyceraldehyde 3-phosphate dehydrogenase, NAD(P) binding domain	-	-
+tr|A0A182HA79|A0A182HA79_AEDAL	6f630c136e39dbcff364fb04ffba3116	2156	Pfam	PF21055	ZSWIM4-8, C-terminal	1965	2145	1.1E-70	T	17-10-2025	IPR048370	ZSWIM4-8, C-terminal	-	-
+tr|A0A182H2J8|A0A182H2J8_AEDAL	23ed0c324c3d114b4334cc69ad6e667d	760	Pfam	PF16090	Domain of unknown function (DUF4819)	363	449	3.0E-22	T	17-10-2025	IPR032147	Protein capicua homolog-like domain	-	-
+tr|A0A182GB50|A0A182GB50_AEDAL	f023bbd41bf13e1aa43e8ec7a3228a1a	452	Pfam	PF17921	Integrase zinc binding domain	2	41	3.5E-9	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182GB50|A0A182GB50_AEDAL	f023bbd41bf13e1aa43e8ec7a3228a1a	452	Pfam	PF00665	Integrase core domain	58	153	2.0E-13	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+UPI0007D3BDB9	afc80ab9329a8ddc7549193f2784b043	1031	Pfam	PF23113	E3 ubiquitin-protein ligase MARCHF6-like, C-terminal domain	784	955	5.3E-48	T	17-10-2025	IPR056521	E3 ubiquitin-protein ligase MARCHF6-like, C-terminal domain	-	-
+UPI0007D3BDB9	afc80ab9329a8ddc7549193f2784b043	1031	Pfam	PF12906	RING-variant domain	6	52	2.5E-11	T	17-10-2025	IPR011016	Zinc finger, RING-CH-type	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF01799	[2Fe-2S] binding domain	86	161	2.3E-23	T	17-10-2025	IPR002888	[2Fe-2S]-binding	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF01315	Aldehyde oxidase and xanthine dehydrogenase, a/b hammerhead domain	552	661	6.6E-18	T	17-10-2025	IPR000674	Aldehyde oxidase/xanthine dehydrogenase, a/b hammerhead	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF00941	FAD binding domain in molybdopterin dehydrogenase	213	384	8.1E-18	T	17-10-2025	IPR002346	Molybdopterin dehydrogenase, FAD-binding	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF20256	Molybdopterin cofactor-binding domain	935	1185	1.5E-68	T	17-10-2025	IPR046867	Aldehyde oxidase/xanthine dehydrogenase, second molybdopterin binding domain	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF03450	CO dehydrogenase flavoprotein C-terminal domain	394	498	1.0E-21	T	17-10-2025	IPR005107	CO dehydrogenase flavoprotein, C-terminal	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF02738	Molybdopterin cofactor-binding domain	698	920	1.2E-52	T	17-10-2025	IPR008274	Aldehyde oxidase/xanthine dehydrogenase, first molybdopterin binding domain	-	-
+tr|A0A182GN25|A0A182GN25_AEDAL	81e93e3396dad830bdeaa05ccd39dc94	1265	Pfam	PF00111	2Fe-2S iron-sulfur cluster binding domain	21	74	0.17	T	17-10-2025	IPR001041	2Fe-2S ferredoxin-type iron-sulfur binding domain	-	-
+tr|A0A182H812|A0A182H812_AEDAL	954439e0a126503d5ec9910651710ab8	815	Pfam	PF24681	KLHDC2/KLHL20/DRC7 Kelch-repeats domain	247	450	8.1E-17	T	17-10-2025	-	-	-	-
+tr|A0A182H812|A0A182H812_AEDAL	954439e0a126503d5ec9910651710ab8	815	Pfam	PF06588	Muskelin N-terminus	9	203	6.2E-79	T	17-10-2025	IPR010565	Muskelin, N-terminal	-	-
+tr|A0A182GIS9|A0A182GIS9_AEDAL	7dd744ddaec7f21437fd1bae90cdfd4a	307	Pfam	PF00153	Mitochondrial carrier protein	8	102	8.2E-17	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+tr|A0A182GIS9|A0A182GIS9_AEDAL	7dd744ddaec7f21437fd1bae90cdfd4a	307	Pfam	PF00153	Mitochondrial carrier protein	209	302	1.0E-19	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+tr|A0A182GIS9|A0A182GIS9_AEDAL	7dd744ddaec7f21437fd1bae90cdfd4a	307	Pfam	PF00153	Mitochondrial carrier protein	110	199	4.9E-20	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF13637	Ankyrin repeats (many copies)	1246	1296	3.3E-4	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF13637	Ankyrin repeats (many copies)	2018	2068	2.8E-7	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF13637	Ankyrin repeats (many copies)	1882	1932	9.3E-9	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1139	1228	3.8E-13	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	966	1061	1.9E-12	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1509	1581	6.6E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1305	1370	4.1E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1780	1872	4.4E-16	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	883	959	2.6E-6	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1938	2008	3.4E-10	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1598	1678	1.7E-11	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF12796	Ankyrin repeats (3 copies)	1685	1773	4.3E-12	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF05729	NACHT domain	422	551	4.2E-6	T	17-10-2025	IPR007111	NACHT nucleoside triphosphatase	-	-
+UPI0007D16EC0	2cf35204a210d8f5bf0a2b0c7278517a	2074	Pfam	PF13857	Ankyrin repeats (many copies)	1410	1459	1.4E-5	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D3F6D1	6208d28f1187a369e7491e59adbb050a	678	Pfam	PF05602	Cleft lip and palate transmembrane protein 1 (CLPTM1)	52	496	0.0	T	17-10-2025	IPR008429	Cleft lip and palate transmembrane 1	-	-
+UPI0007D208AA	3a5229f941881414068d86f0901025cb	748	Pfam	PF00271	Helicase conserved C-terminal domain	530	635	2.0E-14	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+UPI0007D208AA	3a5229f941881414068d86f0901025cb	748	Pfam	PF07443	HepA-related protein (HARP)	162	218	2.0E-17	T	17-10-2025	IPR010003	HARP domain	-	-
+UPI0007D208AA	3a5229f941881414068d86f0901025cb	748	Pfam	PF00176	SNF2-related domain	254	479	4.5E-21	T	17-10-2025	IPR000330	SNF2, N-terminal	-	-
+UPI0007D13FCC	443510048bcca4fc3cc4cb5c8c9280e1	668	Pfam	PF01734	Patatin-like phospholipase	7	171	1.4E-17	T	17-10-2025	IPR002641	Patatin-like phospholipase domain	-	-
+tr|A0A182GL31|A0A182GL31_AEDAL	1538dd5921649103eb2dedd84c06545d	927	Pfam	PF07517	SecA DEAD-like domain	432	876	5.5E-33	T	17-10-2025	IPR011115	SecA DEAD-like, N-terminal	-	-
+tr|A0A182HB25|A0A182HB25_AEDAL	90a8f0f9114240782664d39c434707a2	1201	Pfam	PF00075	RNase H	927	1047	9.3E-9	T	17-10-2025	IPR002156	Ribonuclease H domain	-	-
+tr|A0A182HB25|A0A182HB25_AEDAL	90a8f0f9114240782664d39c434707a2	1201	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	469	717	1.3E-30	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182HB25|A0A182HB25_AEDAL	90a8f0f9114240782664d39c434707a2	1201	Pfam	PF14529	Endonuclease-reverse transcriptase	105	223	3.2E-16	T	17-10-2025	IPR005135	Endonuclease/exonuclease/phosphatase	-	-
+tr|A0A182GUX7|A0A182GUX7_AEDAL	a9e746fbb0fde8a4c84517a167072afd	1272	Pfam	PF00575	S1 RNA binding domain	312	385	1.3E-8	T	17-10-2025	IPR003029	S1 domain	-	-
+tr|A0A182GUX7|A0A182GUX7_AEDAL	a9e746fbb0fde8a4c84517a167072afd	1272	Pfam	PF21010	Helicase associated domain (HA2), ratchet-like	1037	1095	4.0E-11	T	17-10-2025	-	-	-	-
+tr|A0A182GUX7|A0A182GUX7_AEDAL	a9e746fbb0fde8a4c84517a167072afd	1272	Pfam	PF04408	Helicase associated domain (HA2), winged-helix	1008	1036	3.6E-5	T	17-10-2025	IPR048333	Helicase associated domain (HA2), winged-helix domain	-	-
+tr|A0A182GUX7|A0A182GUX7_AEDAL	a9e746fbb0fde8a4c84517a167072afd	1272	Pfam	PF07717	Oligonucleotide/oligosaccharide-binding (OB)-fold	1154	1230	3.1E-25	T	17-10-2025	IPR011709	DEAD-box helicase, OB fold	-	-
+tr|A0A182GUX7|A0A182GUX7_AEDAL	a9e746fbb0fde8a4c84517a167072afd	1272	Pfam	PF00271	Helicase conserved C-terminal domain	815	946	1.2E-6	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+tr|A0A182H537|A0A182H537_AEDAL	7a047ba251b411444a29511ae12bed39	197	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	124	195	8.8E-5	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+tr|A0A182GEY8|A0A182GEY8_AEDAL	6b601747bd59ad1e30cd17b3b6e4b11a	1357	Pfam	PF03828	Cid1 family poly A polymerase	1244	1305	6.0E-11	T	17-10-2025	IPR002058	PAP/25A-associated	-	-
+tr|A0A182GEY8|A0A182GEY8_AEDAL	6b601747bd59ad1e30cd17b3b6e4b11a	1357	Pfam	PF22600	Poly(A) RNA polymerase, mitochondrial-like, central palm domain	1017	1157	7.9E-34	T	17-10-2025	IPR054708	Poly(A) RNA polymerase, mitochondrial-like, central palm domain	-	-
+tr|A0A182G2Q1|A0A182G2Q1_AEDAL	ec9367a28c8cce7413a5737a60a7c3ec	230	Pfam	PF13869	Nucleotide hydrolase	39	225	5.6E-78	T	17-10-2025	IPR016706	Cleavage/polyadenylation specificity factor subunit 5	-	-
+tr|A0A182G4U8|A0A182G4U8_AEDAL	4d3ea3764d0a27177fad8455b7cc14d6	1256	Pfam	PF02148	Zn-finger in ubiquitin-hydrolases and other protein	32	93	2.4E-9	T	17-10-2025	IPR001607	Zinc finger, UBP-type	-	-
+tr|A0A182G4U8|A0A182G4U8_AEDAL	4d3ea3764d0a27177fad8455b7cc14d6	1256	Pfam	PF06337	DUSP domain	684	752	7.6E-8	T	17-10-2025	IPR006615	Peptidase C19, ubiquitin-specific peptidase, DUSP domain	-	-
+tr|A0A182G4U8|A0A182G4U8_AEDAL	4d3ea3764d0a27177fad8455b7cc14d6	1256	Pfam	PF06337	DUSP domain	816	891	4.1E-14	T	17-10-2025	IPR006615	Peptidase C19, ubiquitin-specific peptidase, DUSP domain	-	-
+tr|A0A182G4U8|A0A182G4U8_AEDAL	4d3ea3764d0a27177fad8455b7cc14d6	1256	Pfam	PF00443	Ubiquitin carboxyl-terminal hydrolase	169	658	4.7E-59	T	17-10-2025	IPR001394	Peptidase C19, ubiquitin carboxyl-terminal hydrolase	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	423	455	2.9E-6	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	458	492	0.0085	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	229	262	8.5	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	384	420	1.2E-4	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	563	601	160000.0	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	602	637	0.21	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	639	671	7.6E-5	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	348	383	0.0016	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	267	294	2000.0	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D22D6F	409e9afa14cce55b2f57a941a1e3ad17	795	Pfam	PF08238	Sel1 repeat	497	527	8700.0	T	17-10-2025	IPR006597	Sel1-like repeat	-	-
+UPI0007D6C770	313fb5ea292c3b581a21168eeaeaf0b8	175	Pfam	PF01331	mRNA capping enzyme, catalytic domain	50	169	4.0E-39	T	17-10-2025	IPR001339	mRNA capping enzyme, adenylation domain	-	-
+tr|A0A023EE18|A0A023EE18_AEDAL	ad1be8d86b8f530c596020f701a43481	140	Pfam	PF20721	C19orf12-like protein	3	138	3.4E-20	T	17-10-2025	IPR033369	Protein C19orf12	-	-
+tr|A0A023EIB6|A0A023EIB6_AEDAL	d44d41e5c93e440235da29371fabf789	206	Pfam	PF00071	Ras family	15	175	1.1E-64	T	17-10-2025	IPR001806	Small GTPase	-	-
+tr|A0A182G6D5|A0A182G6D5_AEDAL	aaa0b801a922a557f9316030edd56bd1	320	Pfam	PF07727	Reverse transcriptase (RNA-dependent DNA polymerase)	125	320	7.7E-59	T	17-10-2025	IPR013103	Reverse transcriptase, RNA-dependent DNA polymerase	-	-
+tr|A0A182GD72|A0A182GD72_AEDAL	4bbc06181ea63dea16084e6e66c9fdf2	393	Pfam	PF00023	Ankyrin repeat	222	243	0.15	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GD72|A0A182GD72_AEDAL	4bbc06181ea63dea16084e6e66c9fdf2	393	Pfam	PF12796	Ankyrin repeats (3 copies)	141	220	7.5E-5	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GD72|A0A182GD72_AEDAL	4bbc06181ea63dea16084e6e66c9fdf2	393	Pfam	PF12796	Ankyrin repeats (3 copies)	262	352	3.5E-7	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182H4G7|A0A182H4G7_AEDAL	f00650fc384fb9a6898806c67adf4521	657	Pfam	PF00012	Hsp70 protein	36	633	0.0	T	17-10-2025	IPR013126	Heat shock protein 70 family	-	-
+tr|A0A182GK33|A0A182GK33_AEDAL	d5995a491db7c13f34bc75e5dbebe0ba	324	Pfam	PF01112	Asparaginase	5	309	9.3E-98	T	17-10-2025	IPR000246	Peptidase T2, asparaginase 2	-	-
+UPI0007D6942F	bf7f90c85de38503723171ce96d00926	391	Pfam	PF21636	Protein phosphatase 1 regulatory subunit 21, C-terminal	284	388	0.0043	T	17-10-2025	IPR049372	Protein phosphatase 1 regulatory subunit 21, C-terminal	-	-
+UPI0007D6942F	bf7f90c85de38503723171ce96d00926	391	Pfam	PF10205	Predicted coiled-coil domain-containing protein	10	116	8.2E-27	T	17-10-2025	IPR019343	Protein phosphatase 1 regulatory subunit 21, N-terminal	-	-
+tr|A0A182GE93|A0A182GE93_AEDAL	d43a27c66ea15ba823e13357f25693af	1392	Pfam	PF23312	Protein kinase SIK3 UBA domain	302	339	6.7E-17	T	17-10-2025	IPR057380	Protein kinase SIK1/2/3, UBA domain	-	-
+tr|A0A182GE93|A0A182GE93_AEDAL	d43a27c66ea15ba823e13357f25693af	1392	Pfam	PF23311	Domain of unknown function (DUF7084)	850	897	1.1E-17	T	17-10-2025	IPR055511	Domain of unknown function DUF7084	-	-
+tr|A0A182GE93|A0A182GE93_AEDAL	d43a27c66ea15ba823e13357f25693af	1392	Pfam	PF00069	Protein kinase domain	25	276	5.9E-70	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D6C80B	319e5fe387a026b5a34da6c5a345f56e	779	Pfam	PF00004	ATPase family associated with various cellular activities (AAA)	540	670	1.2E-35	T	17-10-2025	IPR003959	ATPase, AAA-type, core	-	-
+UPI0007D6C80B	319e5fe387a026b5a34da6c5a345f56e	779	Pfam	PF09336	Vps4 C terminal oligomerisation domain	737	775	0.13	T	17-10-2025	IPR015415	Spastin/Vps4, C-terminal	-	-
+UPI0007D6C80B	319e5fe387a026b5a34da6c5a345f56e	779	Pfam	PF17862	AAA+ lid domain	694	727	3.1E-6	T	17-10-2025	IPR041569	AAA ATPase, AAA+ lid domain	-	-
+tr|A0A182G737|A0A182G737_AEDAL	615717782862a8c715b0e9df621f833b	1035	Pfam	PF25780	IPO5-like, TPR repeats	38	203	9.1E-8	T	17-10-2025	IPR057672	IPO4/5-like, TPR repeats domain	-	-
+tr|A0A182G737|A0A182G737_AEDAL	615717782862a8c715b0e9df621f833b	1035	Pfam	PF02985	HEAT repeat	341	371	1.5	T	17-10-2025	IPR000357	HEAT repeat	-	-
+tr|A0A182G737|A0A182G737_AEDAL	615717782862a8c715b0e9df621f833b	1035	Pfam	PF02985	HEAT repeat	855	883	5.0	T	17-10-2025	IPR000357	HEAT repeat	-	-
+tr|A0A182G2Y4|A0A182G2Y4_AEDAL	2e97a5ea852bc07f92f5bae68a3b4385	439	Pfam	PF00005	ABC transporter	336	378	2.2E-4	T	17-10-2025	IPR003439	ABC transporter-like, ATP-binding domain	-	-
+tr|A0A182G2Y4|A0A182G2Y4_AEDAL	2e97a5ea852bc07f92f5bae68a3b4385	439	Pfam	PF06472	ABC transporter transmembrane region 2	2	202	4.1E-67	T	17-10-2025	IPR011527	ABC transporter type 1, transmembrane domain	-	-
+UPI0007D3B793	aeb224e2abb621274796108df36f5c4f	573	Pfam	PF14749	Acyl-coenzyme A oxidase N-terminal	5	49	1.2E-9	T	17-10-2025	IPR029320	Acyl-coenzyme A oxidase, N-terminal	-	-
+UPI0007D3B793	aeb224e2abb621274796108df36f5c4f	573	Pfam	PF22924	Acyl-CoA oxidase, C-alpha1 domain	191	352	7.6E-58	T	17-10-2025	IPR055060	Acyl-CoA oxidase, C-alpha1 domain	-	-
+UPI0007D3B793	aeb224e2abb621274796108df36f5c4f	573	Pfam	PF01756	Acyl-CoA oxidase	389	570	2.5E-48	T	17-10-2025	IPR002655	Acyl-CoA oxidase, C-terminal	-	-
+tr|A0A182GMR2|A0A182GMR2_AEDAL	05d6b2e6fcae7ec75776049184f756ec	168	Pfam	PF08614	Autophagy protein 16 (ATG16)	14	165	5.5E-19	T	17-10-2025	IPR013923	Autophagy-related protein 16 domain	-	-
+UPI0007D122E6	a7f4734c5b168c90ee57c4a1e53fd54f	171	Pfam	PF00569	Zinc finger, ZZ type	5	41	9.4E-7	T	17-10-2025	IPR000433	Zinc finger, ZZ-type	-	-
+UPI0007D122E6	a7f4734c5b168c90ee57c4a1e53fd54f	171	Pfam	PF05605	Drought induced 19 protein (Di19), zinc-binding	76	136	6.3E-8	T	17-10-2025	IPR008598	Di19, zinc-binding domain	-	-
+tr|A0A182G4J4|A0A182G4J4_AEDAL	32f4f7d9ed4ea92e0f5464a5a6eae92f	523	Pfam	PF13193	AMP-binding enzyme C-terminal domain	407	485	8.8E-20	T	17-10-2025	IPR025110	AMP-binding enzyme, C-terminal domain	-	-
+tr|A0A182G4J4|A0A182G4J4_AEDAL	32f4f7d9ed4ea92e0f5464a5a6eae92f	523	Pfam	PF00501	AMP-binding enzyme	1	351	3.4E-70	T	17-10-2025	IPR000873	AMP-dependent synthetase/ligase domain	-	-
+tr|A0A182H8W0|A0A182H8W0_AEDAL	d028b1bf1fea588bc467ab8a9a314ba1	336	Pfam	PF00561	alpha/beta hydrolase fold	64	172	7.3E-17	T	17-10-2025	IPR000073	Alpha/beta hydrolase fold-1	-	-
+UPI0007D4951C	4e9edc7a7d136ba2ff08296d1831726f	788	Pfam	PF00350	Dynamin family	127	285	4.3E-25	T	17-10-2025	IPR045063	Dynamin, N-terminal	-	-
+UPI0007D4951C	4e9edc7a7d136ba2ff08296d1831726f	788	Pfam	PF04799	fzo-like conserved region	628	786	2.4E-56	T	17-10-2025	IPR006884	Fzo/mitofusin HR2 domain	-	-
+UPI0007D10E2A	d02f2c4cf88945756026632f6ac9c44b	851	Pfam	PF07647	SAM domain (Sterile alpha motif)	146	212	7.2E-7	T	17-10-2025	IPR001660	Sterile alpha motif domain	-	-
+UPI0007D10E2A	d02f2c4cf88945756026632f6ac9c44b	851	Pfam	PF25578	Stromal interaction molecule 1-like, EF-hand	63	141	3.2E-27	T	17-10-2025	IPR057835	STIM1/2, EF-hand	-	-
+UPI0007D10E2A	d02f2c4cf88945756026632f6ac9c44b	851	Pfam	PF16533	STIM1 Orai1-activating region	343	443	4.3E-36	T	17-10-2025	IPR032393	STIM1/2, Orai1-activating region	-	-
+tr|A0A023EIL7|A0A023EIL7_AEDAL	3ff81366d0b16ad375f2f6b0488d5f08	212	Pfam	PF00583	Acetyltransferase (GNAT) family	86	175	1.2E-4	T	17-10-2025	IPR000182	GNAT domain	-	-
+UPI0007D23BD4	7f7a0b904c286224542c8477b5b992dc	547	Pfam	PF02263	Guanylate-binding protein, N-terminal domain	17	289	5.0E-93	T	17-10-2025	IPR015894	Guanylate-binding protein, N-terminal	-	-
+UPI0007D23BD4	7f7a0b904c286224542c8477b5b992dc	547	Pfam	PF02841	Guanylate-binding protein, C-terminal domain	297	418	0.051	T	17-10-2025	IPR003191	Guanylate-binding protein/Atlastin, C-terminal	-	-
+tr|A0A182HB39|A0A182HB39_AEDAL	b8dc2d794f1e953cf1ebffdb0b861f47	382	Pfam	PF00665	Integrase core domain	253	348	5.0E-11	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182HB39|A0A182HB39_AEDAL	b8dc2d794f1e953cf1ebffdb0b861f47	382	Pfam	PF17921	Integrase zinc binding domain	181	236	1.4E-14	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182HB39|A0A182HB39_AEDAL	b8dc2d794f1e953cf1ebffdb0b861f47	382	Pfam	PF17917	RNase H-like domain found in reverse transcriptase	2	97	4.6E-19	T	17-10-2025	IPR041373	Reverse transcriptase, RNase H-like domain	-	-
+UPI0007D249CB	21776df6c779f7e8436b27dcda50433f	1247	Pfam	PF00076	RNA recognition motif	19	87	3.1E-5	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D249CB	21776df6c779f7e8436b27dcda50433f	1247	Pfam	PF00076	RNA recognition motif	1090	1155	6.3E-10	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D249CB	21776df6c779f7e8436b27dcda50433f	1247	Pfam	PF00076	RNA recognition motif	104	158	4.1E-5	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23290	Transcription elongation factor SPT5, fifth KOW domain	756	801	2.5E-19	T	17-10-2025	IPR041978	Spt5, KOW domain repeat 5	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23037	Transcription elongation factor SPT5, KOWx domain	585	633	1.4E-17	T	17-10-2025	IPR057936	Spt5, KOWx domain	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23291	Transcription elongation factor SPT5, fourth KOW domain	641	695	8.7E-23	T	17-10-2025	IPR041977	Spt5, KOW domain repeat 4	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF11942	Spt5 transcription elongation factor, acidic N-terminal	128	223	7.9E-10	T	17-10-2025	IPR022581	Spt5 transcription elongation factor, N-terminal	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23284	Transcription elongation factor SPT5, second KOW domain	478	526	2.8E-15	T	17-10-2025	IPR041975	Spt5, KOW domain repeat 2	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23287	Transcription elongation factor SPT5, seventh KOW domain	1039	1088	6.0E-5	T	17-10-2025	IPR057934	Spt5, KOW domain repeat 7	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23042	Transcription elongation factor SPT5, KOW1 domain	327	450	1.1E-7	T	17-10-2025	IPR041973	Spt5, KOW domain repeat 1	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF00467	KOW motif	530	558	0.0081	T	17-10-2025	IPR005824	KOW	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF03439	Early transcription elongation factor of RNA pol II, NGN section	229	315	2.3E-20	T	17-10-2025	IPR005100	NGN domain	-	-
+UPI0007D69E24	c20c43762777fae07d7ccdb0c5fddfe4	1091	Pfam	PF23288	Transcription elongation factor SPT5, sixth KOW domain	984	1037	1.4E-17	T	17-10-2025	IPR041980	Spt5, KOW domain repeat 6, metazoa	-	-
+tr|A0A182H742|A0A182H742_AEDAL	d3202d35f10defa85a3c0c9f2aeb7bf9	368	Pfam	PF00226	DnaJ domain	108	169	3.2E-20	T	17-10-2025	IPR001623	DnaJ domain	-	-
+tr|A0A182H742|A0A182H742_AEDAL	d3202d35f10defa85a3c0c9f2aeb7bf9	368	Pfam	PF09320	Domain of unknown function (DUF1977)	261	358	1.3E-24	T	17-10-2025	IPR015399	Domain of unknown function DUF1977, DnaJ-like	-	-
+UPI0007D2CC26	ebf94ac323e92b4325912c013983ae77	887	Pfam	PF04685	Glycosyl-hydrolase family 116, catalytic region	445	875	0.0	T	17-10-2025	IPR006775	Glycosyl-hydrolase family 116, catalytic region	-	-
+UPI0007D2CC26	ebf94ac323e92b4325912c013983ae77	887	Pfam	PF12215	beta-glucosidase 2, glycosyl-hydrolase family 116 N-term	86	388	2.9E-97	T	17-10-2025	IPR024462	Glycosyl-hydrolase family 116, N-terminal	-	-
+tr|A0A182GV08|A0A182GV08_AEDAL	29859394abbdff0709c06b17ca589c28	334	Pfam	PF13664	Domain of unknown function (DUF4149)	156	267	5.4E-22	T	17-10-2025	IPR025423	TMEM205-like	-	-
+tr|A0A182G6P1|A0A182G6P1_AEDAL	e062db4dafece058141c80f164a2ab36	501	Pfam	PF01432	Peptidase family M3	239	501	4.0E-63	T	17-10-2025	IPR001567	Peptidase M3A/M3B catalytic domain	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	154	230	3.7E-8	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	535	558	6.3	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	110	133	19.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	358	380	16.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	509	529	7.7	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	386	408	3.6	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	414	436	2.6	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D497EA	4f0d8cab140fdf35cdaa28ee24475071	585	Pfam	PF00096	Zinc finger, C2H2 type	84	104	5.4	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182H0K9|A0A182H0K9_AEDAL	4c5eea18eab700ac63e70aa197b1e84b	300	Pfam	PF00849	RNA pseudouridylate synthase	60	226	1.8E-18	T	17-10-2025	IPR006145	Pseudouridine synthase, RsuA/RluA-like	-	-
+UPI0007D6B814	41418a608d128893bf5e40973ce806cf	422	Pfam	PF00441	Acyl-CoA dehydrogenase, C-terminal domain	268	416	1.1E-41	T	17-10-2025	IPR009075	Acyl-CoA dehydrogenase/oxidase, C-terminal	-	-
+UPI0007D6B814	41418a608d128893bf5e40973ce806cf	422	Pfam	PF02771	Acyl-CoA dehydrogenase, N-terminal domain	46	156	1.8E-31	T	17-10-2025	IPR013786	Acyl-CoA dehydrogenase/oxidase, N-terminal	-	-
+UPI0007D6B814	41418a608d128893bf5e40973ce806cf	422	Pfam	PF02770	Acyl-CoA dehydrogenase, middle domain	161	256	6.2E-22	T	17-10-2025	IPR006091	Acyl-CoA oxidase/dehydrogenase, middle domain	-	-
+tr|A0A182HDC0|A0A182HDC0_AEDAL	0bcc6801637453a1ed9bf49939f703fd	394	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	234	392	9.1E-20	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182H7L6|A0A182H7L6_AEDAL	f8aabe97e96a7aad0b66b5bad0a2d67d	607	Pfam	PF00136	DNA polymerase family B	530	607	2.5E-23	T	17-10-2025	IPR006134	DNA-directed DNA polymerase, family B, multifunctional domain	-	-
+tr|A0A182H7L6|A0A182H7L6_AEDAL	f8aabe97e96a7aad0b66b5bad0a2d67d	607	Pfam	PF24055	DNA polymerase delta catalytic subunit-like, N-terminal domain	128	205	4.2E-8	T	17-10-2025	IPR056435	DNA polymerase delta/zeta catalytic subunit, N-terminal domain	-	-
+tr|A0A182H7L6|A0A182H7L6_AEDAL	f8aabe97e96a7aad0b66b5bad0a2d67d	607	Pfam	PF03104	DNA polymerase family B, exonuclease domain	226	466	3.4E-61	T	17-10-2025	IPR006133	DNA-directed DNA polymerase, family B, exonuclease domain	-	-
+tr|A0A182H7L6|A0A182H7L6_AEDAL	f8aabe97e96a7aad0b66b5bad0a2d67d	607	Pfam	PF24065	DNA polymerase zeta catalytic subunit, N-terminal	86	127	3.1E-5	T	17-10-2025	IPR056447	DNA polymerase zeta catalytic subunit, N-terminal	-	-
+tr|A0A182GTQ3|A0A182GTQ3_AEDAL	8495efb6fad24fc86a8e505e9fb5de64	1883	Pfam	PF15784	G-protein pathway suppressor 2-interacting domain	180	260	2.5E-16	T	17-10-2025	IPR031557	N-CoR, GPS2-interacting domain	-	-
+tr|A0A182GBS7|A0A182GBS7_AEDAL	f5c1ceeba2cc987f7b9ab9da9e707322	703	Pfam	PF05602	Cleft lip and palate transmembrane protein 1 (CLPTM1)	81	525	0.0	T	17-10-2025	IPR008429	Cleft lip and palate transmembrane 1	-	-
+tr|A0A182HEI5|A0A182HEI5_AEDAL	01df7f2e24258e37e351bab0b7638793	261	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	188	256	0.0012	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182G5U1|A0A182G5U1_AEDAL	ceae550220b7725fb942be7dbc2486c5	670	Pfam	PF12796	Ankyrin repeats (3 copies)	55	146	5.1E-14	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G5U1|A0A182G5U1_AEDAL	ceae550220b7725fb942be7dbc2486c5	670	Pfam	PF00023	Ankyrin repeat	150	179	5.9E-5	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D0F480	37914b369a23ca44e7618585b15cb916	954	Pfam	PF14529	Endonuclease-reverse transcriptase	234	353	1.0E-16	T	17-10-2025	IPR005135	Endonuclease/exonuclease/phosphatase	-	-
+UPI0007D0F480	37914b369a23ca44e7618585b15cb916	954	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	637	886	2.7E-29	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182G3H4|A0A182G3H4_AEDAL	e60fa3a1f82537d64615490614641b9b	276	Pfam	PF07727	Reverse transcriptase (RNA-dependent DNA polymerase)	2	169	4.1E-39	T	17-10-2025	IPR013103	Reverse transcriptase, RNA-dependent DNA polymerase	-	-
+tr|A0A182GM03|A0A182GM03_AEDAL	6156b6b1adaf1f32b805593ca0e9fa59	496	Pfam	PF00665	Integrase core domain	192	286	1.6E-9	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182GM03|A0A182GM03_AEDAL	6156b6b1adaf1f32b805593ca0e9fa59	496	Pfam	PF17921	Integrase zinc binding domain	125	177	5.0E-12	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182G4X0|A0A182G4X0_AEDAL	e19b19c1f990729e16c87783182f9c17	152	Pfam	PF14852	Fis1 N-terminal tetratricopeptide repeat	38	68	5.6E-12	T	17-10-2025	IPR028058	Fis1, N-terminal tetratricopeptide repeat	-	-
+tr|A0A182G4X0|A0A182G4X0_AEDAL	e19b19c1f990729e16c87783182f9c17	152	Pfam	PF14853	Fis1 C-terminal tetratricopeptide repeat	74	126	2.0E-19	T	17-10-2025	IPR028061	Fis1, C-terminal tetratricopeptide repeat	-	-
+tr|A0A182GDI3|A0A182GDI3_AEDAL	21ee8aeb3f019b74cbaa4962a764e379	568	Pfam	PF08953	Domain of unknown function (DUF1899)	4	69	8.2E-31	T	17-10-2025	IPR015048	Domain of unknown function DUF1899	-	-
+tr|A0A182GDI3|A0A182GDI3_AEDAL	21ee8aeb3f019b74cbaa4962a764e379	568	Pfam	PF16300	Type of WD40 repeat	343	385	5.4E-16	T	17-10-2025	-	-	-	-
+tr|A0A182GDI3|A0A182GDI3_AEDAL	21ee8aeb3f019b74cbaa4962a764e379	568	Pfam	PF00400	WD domain, G-beta repeat	166	200	1.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182GDI3|A0A182GDI3_AEDAL	21ee8aeb3f019b74cbaa4962a764e379	568	Pfam	PF00400	WD domain, G-beta repeat	78	109	0.0067	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D3E97E	e53fd31bb1ca336e9e48bcccfcef810d	950	Pfam	PF00515	Tetratricopeptide repeat	52	83	0.0014	T	17-10-2025	IPR019734	Tetratricopeptide repeat	-	-
+UPI0007D3E97E	e53fd31bb1ca336e9e48bcccfcef810d	950	Pfam	PF11701	Myosin-binding striated muscle assembly central	309	494	1.6E-25	T	17-10-2025	IPR024660	UNC-45/Cro1/She4, central domain	-	-
+tr|A0A023EQV8|A0A023EQV8_AEDAL	11a93418e85d0d4f611426597cc26679	370	Pfam	PF00226	DnaJ domain	14	75	2.1E-26	T	17-10-2025	IPR001623	DnaJ domain	-	-
+tr|A0A023EQV8|A0A023EQV8_AEDAL	11a93418e85d0d4f611426597cc26679	370	Pfam	PF01556	DnaJ C terminal domain	190	349	5.9E-39	T	17-10-2025	IPR002939	Chaperone DnaJ, C-terminal	-	-
+UPI0007D0DFDA	2f3b793ead48fe3ea36627b9bc1866a1	877	Pfam	PF25562	Metal transporter CNNM2-like, C-terminal CNBH domain	603	770	4.1E-52	T	17-10-2025	-	-	-	-
+UPI0007D0DFDA	2f3b793ead48fe3ea36627b9bc1866a1	877	Pfam	PF01595	Cyclin M transmembrane N-terminal domain	250	419	2.2E-28	T	17-10-2025	IPR002550	CNNM, transmembrane domain	-	-
+tr|A0A182G9V6|A0A182G9V6_AEDAL	920470eaeadd8ceebabf00b97174ffd7	110	Pfam	PF01900	Rpp14/Pop5 family	25	93	0.095	T	17-10-2025	IPR002759	RNase P subunit Pop5/Rpp14/Rnp2-like	-	-
+UPI0007D33538	db5ca601d219f6305b16675b682beead	954	Pfam	PF02779	Transketolase, pyrimidine binding domain	651	864	3.8E-45	T	17-10-2025	IPR005475	Transketolase-like, pyrimidine-binding domain	-	-
+UPI0007D33538	db5ca601d219f6305b16675b682beead	954	Pfam	PF00676	Dehydrogenase E1 component	261	578	3.1E-70	T	17-10-2025	IPR001017	Dehydrogenase, E1 component	-	-
+UPI0007D33538	db5ca601d219f6305b16675b682beead	954	Pfam	PF16870	2-oxoglutarate dehydrogenase C-terminal	869	952	7.1E-25	T	17-10-2025	IPR031717	2-oxoglutarate dehydrogenase E1 component/KDG, C-terminal	-	-
+UPI0007D33538	db5ca601d219f6305b16675b682beead	954	Pfam	PF16078	2-oxoglutarate dehydrogenase N-terminus	52	87	6.1E-14	T	17-10-2025	IPR032106	2-oxoglutarate dehydrogenase E1 component, N-terminal domain	-	-
+tr|A0A182G573|A0A182G573_AEDAL	fedfd3ef43497a2521709ce269e92840	552	Pfam	PF00501	AMP-binding enzyme	47	407	9.4E-72	T	17-10-2025	IPR000873	AMP-dependent synthetase/ligase domain	-	-
+tr|A0A182G573|A0A182G573_AEDAL	fedfd3ef43497a2521709ce269e92840	552	Pfam	PF13193	AMP-binding enzyme C-terminal domain	459	535	3.7E-12	T	17-10-2025	IPR025110	AMP-binding enzyme, C-terminal domain	-	-
+UPI0007D5D089	a488387a6dca88895dde4faa1cb7907d	520	Pfam	PF00201	UDP-glucoronosyl and UDP-glucosyl transferase	31	516	1.5E-70	T	17-10-2025	IPR002213	UDP-glucuronosyl/UDP-glucosyltransferase	-	-
+tr|A0A182GGV5|A0A182GGV5_AEDAL	e8c35b41aafaf9bd32375b253ed23c7e	261	Pfam	PF00665	Integrase core domain	3	78	1.0E-9	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A023EFH1|A0A023EFH1_AEDAL	d86ef2a3a2e10371ac65ce964acaf4d4	124	Pfam	PF15884	MICOS complex subunit MIC13, QIL1	19	91	4.7E-17	T	17-10-2025	IPR026769	MICOS complex subunit Mic13	-	-
+tr|A0A182HB57|A0A182HB57_AEDAL	2fbf7c6b152bf331495ef2c2fc0bbb75	716	Pfam	PF13589	Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase	34	149	1.6E-5	T	17-10-2025	-	-	-	-
+tr|A0A182HB57|A0A182HB57_AEDAL	2fbf7c6b152bf331495ef2c2fc0bbb75	716	Pfam	PF00183	Hsp90 protein	187	692	0.0	T	17-10-2025	IPR001404	Heat shock protein Hsp90 family	-	-
+tr|A0A182GFC5|A0A182GFC5_AEDAL	c137e8878a767454e897bffda7da6fce	1236	Pfam	PF15045	Clathrin-binding box of Aftiphilin, vesicle trafficking	479	546	4.6E-15	T	17-10-2025	IPR029205	Aftiphilin, clathrin-binding box	-	-
+UPI0007D47AEB	4a207a25608ec784fa79f9838dcff578	170	Pfam	PF10278	Mediator of RNA pol II transcription subunit 19	1	159	1.3E-69	T	17-10-2025	IPR019403	Mediator complex, subunit Med19, metazoa	-	-
+tr|A0A182HAW0|A0A182HAW0_AEDAL	f27c1b8ac7b56a89720068573abc064f	325	Pfam	PF00665	Integrase core domain	10	102	7.4E-12	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182GTR5|A0A182GTR5_AEDAL	caa069274741c965937734bc27552caf	668	Pfam	PF00615	Regulator of G protein signaling domain	353	471	3.2E-11	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182GTR5|A0A182GTR5_AEDAL	caa069274741c965937734bc27552caf	668	Pfam	PF00615	Regulator of G protein signaling domain	268	341	2.2E-6	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182GTR5|A0A182GTR5_AEDAL	caa069274741c965937734bc27552caf	668	Pfam	PF00615	Regulator of G protein signaling domain	88	127	0.12	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182H6T8|A0A182H6T8_AEDAL	649095a20f9d7bfcbd1e826c3e04f062	746	Pfam	PF14370	C-terminal topoisomerase domain	677	746	2.8E-31	T	17-10-2025	IPR025834	Topoisomerase I C-terminal domain	-	-
+tr|A0A182H6T8|A0A182H6T8_AEDAL	649095a20f9d7bfcbd1e826c3e04f062	746	Pfam	PF02919	Eukaryotic DNA topoisomerase I, DNA binding fragment	202	416	1.5E-92	T	17-10-2025	IPR008336	DNA topoisomerase I, DNA binding, eukaryotic-type	-	-
+tr|A0A182H6T8|A0A182H6T8_AEDAL	649095a20f9d7bfcbd1e826c3e04f062	746	Pfam	PF01028	Eukaryotic DNA topoisomerase I, catalytic core	419	650	6.2E-102	T	17-10-2025	IPR013500	DNA topoisomerase I, catalytic core, eukaryotic-type	-	-
+UPI0007D1A9BA	0d984685acf837a18276207fb0e50d9c	199	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	6	182	3.0E-13	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D10A1C	a3cb4c8b9f0ad583ce91a9e59b4cca52	750	Pfam	PF16124	RecQ zinc-binding	445	487	2.3E-4	T	17-10-2025	IPR032284	ATP-dependent DNA helicase RecQ, zinc-binding domain	-	-
+UPI0007D10A1C	a3cb4c8b9f0ad583ce91a9e59b4cca52	750	Pfam	PF00270	DEAD/DEAH box helicase	102	270	3.1E-20	T	17-10-2025	IPR011545	DEAD/DEAH-box helicase domain	-	-
+UPI0007D10A1C	a3cb4c8b9f0ad583ce91a9e59b4cca52	750	Pfam	PF00271	Helicase conserved C-terminal domain	309	418	4.3E-15	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+tr|A0A182GAX4|A0A182GAX4_AEDAL	486a3ae8bfceee687bddc1e9f246f51b	585	Pfam	PF21674	CCDC22 protein N-terminal domain	1	107	2.4E-36	T	17-10-2025	IPR048349	CCDC22, N-terminal domain	-	-
+tr|A0A182GAX4|A0A182GAX4_AEDAL	486a3ae8bfceee687bddc1e9f246f51b	585	Pfam	PF05667	CCDC22 protein coiled-coil region	274	547	1.4E-93	T	17-10-2025	IPR048348	CCDC22, coiled-coil domain	-	-
+tr|A0A182GPS6|A0A182GPS6_AEDAL	a9b53dc2be2afb05dda484af5f2d86af	554	Pfam	PF00075	RNase H	277	399	6.2E-11	T	17-10-2025	IPR002156	Ribonuclease H domain	-	-
+UPI0001D4B7EE	e99bd68d97502236edd2ee5afaff68a7	462	Pfam	PF22594	GTP-eEF1A C-terminal domain-like	340	439	9.8E-36	T	17-10-2025	IPR054696	GTP-eEF1A, C-terminal domain	-	-
+UPI0001D4B7EE	e99bd68d97502236edd2ee5afaff68a7	462	Pfam	PF00009	Elongation factor Tu GTP binding domain	6	237	3.7E-55	T	17-10-2025	IPR000795	Translational (tr)-type GTP-binding domain	-	-
+UPI0001D4B7EE	e99bd68d97502236edd2ee5afaff68a7	462	Pfam	PF03144	Elongation factor Tu domain 2	260	325	1.4E-13	T	17-10-2025	IPR004161	Translation elongation factor EFTu-like, domain 2	-	-
+UPI0007D59D7A	e40b4d3da395abc0bf0147d98e0b8f63	385	Pfam	PF16363	GDP-mannose 4,6 dehydratase	40	371	0.0	T	17-10-2025	IPR016040	NAD(P)-binding domain	-	-
+UPI0007D6BB0E	422afefcd1d9348ca580799bbb1a82dd	318	Pfam	PF13733	N-terminal region of glycosyl transferase group 7	86	190	1.5E-33	T	17-10-2025	IPR027995	Galactosyltransferase, N-terminal	-	-
+UPI0007D6BB0E	422afefcd1d9348ca580799bbb1a82dd	318	Pfam	PF02709	N-terminal domain of galactosyltransferase	194	271	1.2E-23	T	17-10-2025	IPR027791	Galactosyltransferase, C-terminal	-	-
+UPI0007D5AAD5	e65b15c977284196eb94e87475932ce7	292	Pfam	PF00617	RasGEF domain	130	289	1.4E-46	T	17-10-2025	IPR001895	Ras guanine-nucleotide exchange factors catalytic domain	-	-
+tr|A0A182GKJ0|A0A182GKJ0_AEDAL	f037ee43a432f7df147b3a3ceb96c524	668	Pfam	PF00615	Regulator of G protein signaling domain	88	127	0.12	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182GKJ0|A0A182GKJ0_AEDAL	f037ee43a432f7df147b3a3ceb96c524	668	Pfam	PF00615	Regulator of G protein signaling domain	268	341	8.5E-6	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182GKJ0|A0A182GKJ0_AEDAL	f037ee43a432f7df147b3a3ceb96c524	668	Pfam	PF00615	Regulator of G protein signaling domain	353	471	2.7E-11	T	17-10-2025	IPR016137	RGS domain	-	-
+tr|A0A182GTM7|A0A182GTM7_AEDAL	824f663b49543308ebbaf919e43c1321	1572	Pfam	PF01602	Adaptin N terminal region	555	1105	0.0	T	17-10-2025	IPR002553	Clathrin/coatomer adaptor, adaptin-like, N-terminal	-	-
+tr|A0A182GTM7|A0A182GTM7_AEDAL	824f663b49543308ebbaf919e43c1321	1572	Pfam	PF06375	AP-3 complex subunit delta-1	1220	1373	1.6E-47	T	17-10-2025	IPR010474	AP-3 complex subunit delta domain, metazoa	-	-
+tr|A0A182GTM7|A0A182GTM7_AEDAL	824f663b49543308ebbaf919e43c1321	1572	Pfam	PF00291	Pyridoxal-phosphate dependent enzyme	58	353	2.0E-70	T	17-10-2025	IPR001926	Tryptophan synthase beta chain-like, PALP domain	-	-
+tr|A0A182GTM7|A0A182GTM7_AEDAL	824f663b49543308ebbaf919e43c1321	1572	Pfam	PF00571	CBS domain	390	443	7.6E-4	T	17-10-2025	IPR000644	CBS domain	-	-
+tr|A0A023EFS1|A0A023EFS1_AEDAL	3c0fc226496c01f13c9425dad31bbcb1	132	Pfam	PF00061	Lipocalin / cytosolic fatty-acid binding protein family	8	130	9.5E-21	T	17-10-2025	IPR000566	Lipocalin/cytosolic fatty-acid binding domain	-	-
+tr|A0A182GFX2|A0A182GFX2_AEDAL	7c40b1dba12cb50bf1a204d2053a1a9c	957	Pfam	PF00498	FHA domain	91	156	0.0036	T	17-10-2025	IPR000253	Forkhead-associated (FHA) domain	-	-
+tr|A0A182GFX2|A0A182GFX2_AEDAL	7c40b1dba12cb50bf1a204d2053a1a9c	957	Pfam	PF00787	PX domain	851	911	2.7E-7	T	17-10-2025	IPR001683	Phox homology	-	-
+UPI0007D3EECF	301b9b84b3c30a5aba6b019cfff5970f	247	Pfam	PF07047	Optic atrophy 3 protein (OPA3)	9	130	3.7E-37	T	17-10-2025	IPR010754	Optic atrophy 3-like	-	-
+tr|A0A182GMD7|A0A182GMD7_AEDAL	476a1f6ba3313280eaead564764c5308	615	Pfam	PF25524	CPSF6-like, RSLD domain, N-terminal region	436	530	6.4E-35	T	17-10-2025	IPR057951	CPSF6/7, RSLD domain, N-terminal region	-	-
+tr|A0A182GMD7|A0A182GMD7_AEDAL	476a1f6ba3313280eaead564764c5308	615	Pfam	PF00076	RNA recognition motif	84	153	7.6E-5	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D3D8E5	e282daa5c358e768f84c738ac4052648	164	Pfam	PF00632	HECT-domain (ubiquitin-transferase)	1	163	7.6E-53	T	17-10-2025	IPR000569	HECT domain	-	-
+tr|A0A182HCT5|A0A182HCT5_AEDAL	1ce22b3da202cfff64d989333ac3fd4f	819	Pfam	PF25541	PH domain-containing proteins, TBCA domain	645	790	3.0E-27	T	17-10-2025	IPR057971	Pleckstrin homology domain-containing family A member 4-7, TBCA domain	-	-
+tr|A0A182GBK3|A0A182GBK3_AEDAL	bbb337e034aa99d2487fb2e2b3e7f165	408	Pfam	PF09816	RNA polymerase II transcription elongation factor	16	116	4.1E-24	T	17-10-2025	IPR019194	Transcription elongation factor Eaf, N-terminal	-	-
+UPI0007D1A97F	40473ac43618522aae09b8f4e68ef146	314	Pfam	PF02544	3-oxo-5-alpha-steroid 4-dehydrogenase	196	313	7.2E-19	T	17-10-2025	IPR001104	3-oxo-5-alpha-steroid 4-dehydrogenase, C-terminal	-	-
+UPI0007D5A36B	6d9e37c9e14f4c22482e35c3ea072242	529	Pfam	PF00622	SPRY domain	322	391	0.0017	T	17-10-2025	IPR003877	SPRY domain	-	-
+UPI0007D5A36B	6d9e37c9e14f4c22482e35c3ea072242	529	Pfam	PF21257	ASH2, PHD zinc finger	28	79	1.3E-11	T	17-10-2025	IPR049455	Set1/Ash2 histone methyltransferase complex subunit ASH2-like, PHD zinc finger	-	-
+UPI0007D5A36B	6d9e37c9e14f4c22482e35c3ea072242	529	Pfam	PF21198	Set1/Ash2 histone methyltransferase complex subunit ASH2-like, WH	82	180	1.1E-37	T	17-10-2025	IPR053835	Set1/Ash2 histone methyltransferase complex subunit ASH2-like, winged-helix	-	-
+tr|A0A182GDL1|A0A182GDL1_AEDAL	2deebe3b5360a369388d0d9209baa3fe	288	Pfam	PF07727	Reverse transcriptase (RNA-dependent DNA polymerase)	38	278	3.2E-64	T	17-10-2025	IPR013103	Reverse transcriptase, RNA-dependent DNA polymerase	-	-
+tr|A0A182GR14|A0A182GR14_AEDAL	c45018f83de52aaa3d958503c02d4125	334	Pfam	PF00170	bZIP transcription factor	80	136	0.0064	T	17-10-2025	IPR004827	Basic-leucine zipper domain	-	-
+tr|A0A182H3T1|A0A182H3T1_AEDAL	356a3a998b2b6ce2a68b93d89b1af310	361	Pfam	PF17917	RNase H-like domain found in reverse transcriptase	141	244	1.8E-33	T	17-10-2025	IPR041373	Reverse transcriptase, RNase H-like domain	-	-
+tr|A0A182H3T1|A0A182H3T1_AEDAL	356a3a998b2b6ce2a68b93d89b1af310	361	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	1	50	8.5E-6	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A023EJQ3|A0A023EJQ3_AEDAL	d0965c6b560e9ff3ed4a7e6885270079	212	Pfam	PF05916	GINS complex protein helical bundle domain	78	173	2.3E-8	T	17-10-2025	IPR021151	GINS subunit, domain A	-	-
+tr|A0A023EJQ3|A0A023EJQ3_AEDAL	d0965c6b560e9ff3ed4a7e6885270079	212	Pfam	PF22466	PSF3 N-terminal domain	11	58	4.2E-8	T	17-10-2025	IPR055221	DNA replication complex GINS protein PSF3, N-terminal domain	-	-
+tr|A0A182GMK4|A0A182GMK4_AEDAL	7779a45e33dec79d54923ce1bb963c06	323	Pfam	PF00096	Zinc finger, C2H2 type	212	234	0.38	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182GMK4|A0A182GMK4_AEDAL	7779a45e33dec79d54923ce1bb963c06	323	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	23	103	4.1E-9	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+tr|A0A182HEW6|A0A182HEW6_AEDAL	915b7f9c940a60fb7494161e8a0115e2	1245	Pfam	PF23043	UBE2O, SH3-B domain	433	505	2.2E-23	T	17-10-2025	IPR057733	UBE2O-like, SH3-B domain	-	-
+tr|A0A182HEW6|A0A182HEW6_AEDAL	915b7f9c940a60fb7494161e8a0115e2	1245	Pfam	PF23044	UBE2O, ubiquitin binding SH3-C domain	506	567	9.0E-21	T	17-10-2025	IPR057734	UBE2O-like, SH3-C domain	-	-
+tr|A0A182HEW6|A0A182HEW6_AEDAL	915b7f9c940a60fb7494161e8a0115e2	1245	Pfam	PF23046	UBE2O, tandem tSH3-B domain	55	204	3.4E-19	T	17-10-2025	IPR057735	UBE2O-like, tandem tSH3-B domain	-	-
+tr|A0A182HEW6|A0A182HEW6_AEDAL	915b7f9c940a60fb7494161e8a0115e2	1245	Pfam	PF00179	Ubiquitin-conjugating enzyme	971	1117	5.0E-20	T	17-10-2025	IPR000608	Ubiquitin-conjugating (UBC), catalytic core domain	-	-
+tr|A0A182GMV3|A0A182GMV3_AEDAL	cba0c99a7f5f2f0b0b86cb9105e00979	1343	Pfam	PF16014	Histone deacetylase complex subunit SAP130 C-terminus	1196	1325	1.7E-31	T	17-10-2025	IPR031963	Histone deacetylase complex subunit SAP130, C-terminal domain	-	-
+tr|A0A182G5F4|A0A182G5F4_AEDAL	108ee56da3948bd0611b9c46b4bc6831	669	Pfam	PF12796	Ankyrin repeats (3 copies)	523	619	2.6E-12	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182G5F4|A0A182G5F4_AEDAL	108ee56da3948bd0611b9c46b4bc6831	669	Pfam	PF12796	Ankyrin repeats (3 copies)	417	515	2.3E-13	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GVG6|A0A182GVG6_AEDAL	f7c966c7752e64fec75d5f5dc9c62c34	552	Pfam	PF01412	Putative GTPase activating protein for Arf	13	119	6.6E-30	T	17-10-2025	IPR001164	Arf GTPase activating protein	-	-
+UPI0007D476DE	1532130f8576d478a2728fda0220a03a	148	Pfam	PF00098	Zinc knuckle	67	82	0.55	T	17-10-2025	IPR001878	Zinc finger, CCHC-type	-	-
+UPI0007D476DE	1532130f8576d478a2728fda0220a03a	148	Pfam	PF00098	Zinc knuckle	90	106	8.4	T	17-10-2025	IPR001878	Zinc finger, CCHC-type	-	-
+UPI0007D32786	1f0e8341084b49c1089149690abf37d2	661	Pfam	PF00160	Cyclophilin type peptidyl-prolyl cis-trans isomerase/CLD	3	161	5.3E-28	T	17-10-2025	IPR002130	Cyclophilin-type peptidyl-prolyl cis-trans isomerase domain	-	-
+UPI0007D32786	1f0e8341084b49c1089149690abf37d2	661	Pfam	PF00076	RNA recognition motif	243	313	1.8E-10	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182HCF0|A0A182HCF0_AEDAL	8783114e433671e148d3f0fc2163230d	768	Pfam	PF18039	UBA-like domain	74	115	7.4E-15	T	17-10-2025	IPR040546	Rege-1, UBA-like domain	-	-
+tr|A0A182HCF0|A0A182HCF0_AEDAL	8783114e433671e148d3f0fc2163230d	768	Pfam	PF11977	Zc3h12a-like Ribonuclease NYN domain	180	334	1.7E-63	T	17-10-2025	IPR021869	Ribonuclease Zc3h12a-like, NYN domain	-	-
+tr|A0A182HCF0|A0A182HCF0_AEDAL	8783114e433671e148d3f0fc2163230d	768	Pfam	PF18561	Endoribonuclease Regnase 1/ ZC3H12 C-terminal domain	722	763	0.003	T	17-10-2025	IPR040757	Endoribonuclease Regnase 1/ZC3H12, C-terminal domain	-	-
+tr|A0A023EJK9|A0A023EJK9_AEDAL	9095894106e44bebc6ffcfbd460ef597	209	Pfam	PF00071	Ras family	15	173	3.1E-57	T	17-10-2025	IPR001806	Small GTPase	-	-
+UPI0007D2CAF7	9d453b239002483a1d560ee24779e53b	128	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	13	126	3.6E-8	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182GPU8|A0A182GPU8_AEDAL	c5bf6f0de69edb8b3a182d246a90e500	994	Pfam	PF06816	NOTCH protein	1	42	3.2E-14	T	17-10-2025	IPR010660	Notch, NOD domain	-	-
+tr|A0A182GPU8|A0A182GPU8_AEDAL	c5bf6f0de69edb8b3a182d246a90e500	994	Pfam	PF00023	Ankyrin repeat	406	438	13.0	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GPU8|A0A182GPU8_AEDAL	c5bf6f0de69edb8b3a182d246a90e500	994	Pfam	PF12796	Ankyrin repeats (3 copies)	313	402	1.5E-8	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GPU8|A0A182GPU8_AEDAL	c5bf6f0de69edb8b3a182d246a90e500	994	Pfam	PF12796	Ankyrin repeats (3 copies)	452	525	1.9E-5	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+tr|A0A182GPU8|A0A182GPU8_AEDAL	c5bf6f0de69edb8b3a182d246a90e500	994	Pfam	PF07684	NOTCH protein	68	124	1.9E-16	T	17-10-2025	IPR011656	Notch, NODP domain	-	-
+tr|A0A182G0T6|A0A182G0T6_AEDAL	315b9ebc1a86f08be2679c721ca327cf	308	Pfam	PF00650	CRAL/TRIO domain	108	249	7.3E-22	T	17-10-2025	IPR001251	CRAL-TRIO lipid binding domain	-	-
+UPI0007D38AF8	a74a8c01f2aa22324b639f68e67e4ba7	367	Pfam	PF00443	Ubiquitin carboxyl-terminal hydrolase	24	361	5.7E-61	T	17-10-2025	IPR001394	Peptidase C19, ubiquitin carboxyl-terminal hydrolase	-	-
+tr|A0A182H1S6|A0A182H1S6_AEDAL	b4b353e4f0706d190ead700e11f212f8	355	Pfam	PF01398	JAB1/Mov34/MPN/PAD-1 ubiquitin protease	67	174	7.1E-19	T	17-10-2025	IPR000555	JAB1/MPN/MOV34 metalloenzyme domain	-	-
+tr|A0A182H1S6|A0A182H1S6_AEDAL	b4b353e4f0706d190ead700e11f212f8	355	Pfam	PF13012	Maintenance of mitochondrial structure and function	222	335	8.5E-32	T	17-10-2025	IPR024969	EIF3F/CSN6-like, C-terminal	-	-
+UPI0007D55C98	c548286aa61dbc421fa7bc0747973171	127	Pfam	PF06071	Protein of unknown function (DUF933)	33	116	7.2E-37	T	17-10-2025	IPR013029	YchF, C-terminal domain	-	-
+tr|A0A182GYQ8|A0A182GYQ8_AEDAL	dc448f2bf814f5f6d79f5540df51a880	624	Pfam	PF03949	Malic enzyme, NAD binding domain	316	569	2.3E-92	T	17-10-2025	IPR012302	Malic enzyme, NAD-binding	-	-
+tr|A0A182GYQ8|A0A182GYQ8_AEDAL	dc448f2bf814f5f6d79f5540df51a880	624	Pfam	PF00390	Malic enzyme, N-terminal domain	125	306	1.1E-77	T	17-10-2025	IPR012301	Malic enzyme, N-terminal domain	-	-
+tr|A0A182GK16|A0A182GK16_AEDAL	28f55a9949d7b4e8af0bc95fdb9f5a6f	1425	Pfam	PF23726	RSE1/DDB1/CPSF1 second beta-propeller	518	983	3.0E-55	T	17-10-2025	IPR058543	RSE1/DDB1/CPSF1, second beta-propeller	-	-
+tr|A0A182GK16|A0A182GK16_AEDAL	28f55a9949d7b4e8af0bc95fdb9f5a6f	1425	Pfam	PF10433	RSE1/DDB1/CPSF1 first beta-propeller	14	414	2.7E-22	T	17-10-2025	IPR018846	RSE1/DDB1/CPSF1, first beta-propeller	-	-
+tr|A0A182GK16|A0A182GK16_AEDAL	28f55a9949d7b4e8af0bc95fdb9f5a6f	1425	Pfam	PF03178	CPSF A subunit region	1056	1390	2.6E-81	T	17-10-2025	IPR004871	RSE1/DDB1/CPSF1, C-terminal	-	-
+UPI0007D6AC6B	c6f94af0a8d16a6c8522f4a843253132	303	Pfam	PF16891	Serine-threonine protein phosphatase N-terminal domain	1	27	1.1E-7	T	17-10-2025	IPR031675	Serine-threonine protein phosphatase, N-terminal	-	-
+UPI0007D6AC6B	c6f94af0a8d16a6c8522f4a843253132	303	Pfam	PF00149	Calcineurin-like phosphoesterase	30	222	4.5E-46	T	17-10-2025	IPR004843	Calcineurin-like, phosphoesterase domain	-	-
+UPI0007D19DE6	6a1ee918eddd6fef02d59d48a491db65	490	Pfam	PF07727	Reverse transcriptase (RNA-dependent DNA polymerase)	7	250	7.0E-75	T	17-10-2025	IPR013103	Reverse transcriptase, RNA-dependent DNA polymerase	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	321	407	2.6E-18	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	227	312	2.1E-4	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	624	695	1.0E-10	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	703	788	1.1E-12	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	408	505	1.6E-8	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	80	132	1.4E-8	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	141	223	2.9E-20	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	515	600	5.2E-19	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A182HE06|A0A182HE06_AEDAL	eb1d3f418fb0a9888419f7a2f863b835	922	Pfam	PF00630	Filamin/ABP280 repeat	831	919	7.5E-13	T	17-10-2025	IPR017868	Filamin/ABP280 repeat-like	-	-
+tr|A0A023ECJ9|A0A023ECJ9_AEDAL	00bc561c5feb7928e1edcdb4d91f1fbd	96	Pfam	PF04588	Hypoxia induced protein conserved region	27	79	2.1E-13	T	17-10-2025	IPR007667	Hypoxia induced protein, domain	-	-
+UPI0007D241A9	2023434e2e7ae1bb7cfc5ab8b5c8fb5a	380	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	13	166	2.4E-16	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D124AA	a8403848cecce21239c66e30f2bef7fd	373	Pfam	PF00153	Mitochondrial carrier protein	269	368	2.2E-17	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+UPI0007D124AA	a8403848cecce21239c66e30f2bef7fd	373	Pfam	PF00153	Mitochondrial carrier protein	85	169	4.3E-23	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+UPI0007D124AA	a8403848cecce21239c66e30f2bef7fd	373	Pfam	PF00153	Mitochondrial carrier protein	174	263	2.3E-24	T	17-10-2025	IPR018108	Mitochondrial carrier protein, transmembrane region	-	-
+tr|A0A182GKK8|A0A182GKK8_AEDAL	d4520e0e1c0fcd85f3a5e6dda123102a	502	Pfam	PF16858	Condensin II complex subunit CAP-H2 or CNDH2, C-terminal wHTH domain	200	320	7.2E-21	T	17-10-2025	IPR031737	Condensin-2 complex subunit H2, C-terminal	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF00270	DEAD/DEAH box helicase	476	651	8.4E-27	T	17-10-2025	IPR011545	DEAD/DEAH-box helicase domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF00270	DEAD/DEAH box helicase	1319	1487	2.3E-27	T	17-10-2025	IPR011545	DEAD/DEAH-box helicase domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF26582	ASCC3-like, N-terminal domain	53	155	1.8E-27	T	17-10-2025	IPR058856	ASCC3-like, N-terminal domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF23445	Winged Helix-turn-helix domain	1715	1795	2.4E-22	T	17-10-2025	IPR057842	MER3 helicase-like, winged helix domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF23445	Winged Helix-turn-helix domain	895	954	3.4E-9	T	17-10-2025	IPR057842	MER3 helicase-like, winged helix domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF00271	Helicase conserved C-terminal domain	1601	1684	5.2E-4	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF00271	Helicase conserved C-terminal domain	771	854	0.0021	T	17-10-2025	IPR001650	Helicase, C-terminal domain-like	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF02889	Sec63 Brl domain	1803	2146	1.0E-54	T	17-10-2025	IPR004179	Sec63 domain	-	-
+UPI0007D46261	fd770ea7e15961410e7c94ee345965e0	2179	Pfam	PF02889	Sec63 Brl domain	970	1276	5.9E-80	T	17-10-2025	IPR004179	Sec63 domain	-	-
+tr|A0A182H4D2|A0A182H4D2_AEDAL	9301b03bad822ce55cd60bee55cbfe87	905	Pfam	PF00643	B-box zinc finger	241	277	0.0065	T	17-10-2025	IPR000315	B-box-type zinc finger	-	-
+tr|A0A182H4D2|A0A182H4D2_AEDAL	9301b03bad822ce55cd60bee55cbfe87	905	Pfam	PF01436	NHL repeat	784	809	0.11	T	17-10-2025	IPR001258	NHL repeat	-	-
+tr|A0A182H4D2|A0A182H4D2_AEDAL	9301b03bad822ce55cd60bee55cbfe87	905	Pfam	PF01436	NHL repeat	648	675	4.4E-7	T	17-10-2025	IPR001258	NHL repeat	-	-
+tr|A0A182H4D2|A0A182H4D2_AEDAL	9301b03bad822ce55cd60bee55cbfe87	905	Pfam	PF01436	NHL repeat	739	766	0.97	T	17-10-2025	IPR001258	NHL repeat	-	-
+UPI0007D5C53E	734e25895da3b2fce791896fde603097	468	Pfam	PF13393	Histidyl-tRNA synthetase	169	467	0.03	T	17-10-2025	IPR041715	Class II Histidinyl-tRNA synthetase (HisRS)-like catalytic core domain	-	-
+UPI0007D5C53E	734e25895da3b2fce791896fde603097	468	Pfam	PF00069	Protein kinase domain	5	107	3.3E-10	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+tr|A0A182GM48|A0A182GM48_AEDAL	2c896504f9dbedae621fd969dc8b67e3	62	Pfam	PF11568	Mediator complex subunit 29	1	59	7.6E-12	T	17-10-2025	IPR021018	Mediator complex, subunit Med29, metazoa	-	-
+tr|A0A182HE94|A0A182HE94_AEDAL	d1099bf53afe5e10a22401bad450ba5b	688	Pfam	PF02854	MIF4G domain	246	484	1.7E-36	T	17-10-2025	IPR003890	MIF4G-like, type 3	-	-
+tr|A0A182G7F0|A0A182G7F0_AEDAL	b499989a61e5e9a747c86e1625bb680d	1310	Pfam	PF13558	SbcC/RAD50-like, Walker B motif	1184	1260	1.5E-4	T	17-10-2025	-	-	-	-
+tr|A0A182G7F0|A0A182G7F0_AEDAL	b499989a61e5e9a747c86e1625bb680d	1310	Pfam	PF04423	Rad50 zinc hook motif	669	719	1.7E-7	T	17-10-2025	IPR013134	RAD50, zinc hook	-	-
+tr|A0A182G7F0|A0A182G7F0_AEDAL	b499989a61e5e9a747c86e1625bb680d	1310	Pfam	PF13476	AAA domain	6	255	1.4E-25	T	17-10-2025	IPR038729	Rad50/SbcC-type AAA domain	-	-
+tr|A0A182G6F8|A0A182G6F8_AEDAL	a1e77444ea7548cfb2340fab47d360b2	1058	Pfam	PF00433	Protein kinase C terminal domain	302	340	0.0038	T	17-10-2025	IPR017892	Protein kinase, C-terminal	-	-
+tr|A0A182G6F8|A0A182G6F8_AEDAL	a1e77444ea7548cfb2340fab47d360b2	1058	Pfam	PF00069	Protein kinase domain	15	281	1.6E-65	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+tr|A0A182G6F8|A0A182G6F8_AEDAL	a1e77444ea7548cfb2340fab47d360b2	1058	Pfam	PF00069	Protein kinase domain	421	673	7.6E-58	T	17-10-2025	IPR000719	Protein kinase domain	-	-
+UPI0007D64A26	c6e8a7746686e4cd3d4af3ae4a611ba9	1165	Pfam	PF01412	Putative GTPase activating protein for Arf	414	527	1.3E-29	T	17-10-2025	IPR001164	Arf GTPase activating protein	-	-
+UPI0007D64A26	c6e8a7746686e4cd3d4af3ae4a611ba9	1165	Pfam	PF16746	BAR domain of APPL family	40	256	5.5E-21	T	17-10-2025	IPR004148	BAR domain	-	-
+UPI0007D64A26	c6e8a7746686e4cd3d4af3ae4a611ba9	1165	Pfam	PF12796	Ankyrin repeats (3 copies)	542	648	2.5E-5	T	17-10-2025	IPR002110	Ankyrin repeat	-	-
+UPI0007D64A26	c6e8a7746686e4cd3d4af3ae4a611ba9	1165	Pfam	PF14604	Variant SH3 domain	1108	1161	3.6E-8	T	17-10-2025	IPR001452	SH3 domain	-	-
+UPI0007D64A26	c6e8a7746686e4cd3d4af3ae4a611ba9	1165	Pfam	PF00169	PH domain	297	388	1.8E-4	T	17-10-2025	IPR001849	Pleckstrin homology domain	-	-
+tr|A0A182G3U2|A0A182G3U2_AEDAL	0eda8eab9bdb4ffe81840c09f74b666e	709	Pfam	PF00651	BTB/POZ domain	242	345	1.3E-8	T	17-10-2025	IPR000210	BTB/POZ domain	-	-
+tr|A0A182G3U2|A0A182G3U2_AEDAL	0eda8eab9bdb4ffe81840c09f74b666e	709	Pfam	PF00096	Zinc finger, C2H2 type	669	692	0.0054	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G3U2|A0A182G3U2_AEDAL	0eda8eab9bdb4ffe81840c09f74b666e	709	Pfam	PF00096	Zinc finger, C2H2 type	642	663	18.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182GM34|A0A182GM34_AEDAL	9d9fa74b852459aec59b7a0a40746aa1	344	Pfam	PF00400	WD domain, G-beta repeat	169	206	48.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182GM34|A0A182GM34_AEDAL	9d9fa74b852459aec59b7a0a40746aa1	344	Pfam	PF00400	WD domain, G-beta repeat	258	296	0.65	T	17-10-2025	IPR001680	WD40 repeat	-	-
+UPI0007D1310E	d5f9888522653a70aa16ea2dfa567315	878	Pfam	PF01602	Adaptin N terminal region	24	541	0.0	T	17-10-2025	IPR002553	Clathrin/coatomer adaptor, adaptin-like, N-terminal	-	-
+UPI0007D1310E	d5f9888522653a70aa16ea2dfa567315	878	Pfam	PF16381	Coatomer subunit gamma-1 C-terminal appendage platform	763	877	8.0E-29	T	17-10-2025	IPR032154	Coatomer subunit gamma, C-terminal	-	-
+UPI0007D1310E	d5f9888522653a70aa16ea2dfa567315	878	Pfam	PF08752	Coatomer gamma subunit appendage platform subdomain	616	761	1.2E-46	T	17-10-2025	IPR013040	Coatomer, gamma subunit, appendage, Ig-like subdomain	-	-
+UPI0007D5B080	9f173ffd7c64f2c225b4d5dbaac75381	1290	Pfam	PF13620	Carboxypeptidase regulatory-like domain	602	673	2.9E-8	T	17-10-2025	-	-	-	-
+UPI0007D5B080	9f173ffd7c64f2c225b4d5dbaac75381	1290	Pfam	PF13620	Carboxypeptidase regulatory-like domain	177	252	1.0E-12	T	17-10-2025	-	-	-	-
+UPI0007D5B080	9f173ffd7c64f2c225b4d5dbaac75381	1290	Pfam	PF00246	Zinc carboxypeptidase	1	164	8.5E-32	T	17-10-2025	IPR000834	Peptidase M14, carboxypeptidase A	-	-
+UPI0007D5B080	9f173ffd7c64f2c225b4d5dbaac75381	1290	Pfam	PF00246	Zinc carboxypeptidase	304	590	3.1E-79	T	17-10-2025	IPR000834	Peptidase M14, carboxypeptidase A	-	-
+UPI0007D1DF42	499f57f6f0e1ad850b484593ba686aad	101	Pfam	PF00076	RNA recognition motif	3	66	1.4E-15	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182HC20|A0A182HC20_AEDAL	267fceb239ef42e011dc828c8c33a5a2	655	Pfam	PF00400	WD domain, G-beta repeat	380	413	6.5	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182HC20|A0A182HC20_AEDAL	267fceb239ef42e011dc828c8c33a5a2	655	Pfam	PF00400	WD domain, G-beta repeat	342	366	21.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182HC20|A0A182HC20_AEDAL	267fceb239ef42e011dc828c8c33a5a2	655	Pfam	PF00400	WD domain, G-beta repeat	186	216	69.0	T	17-10-2025	IPR001680	WD40 repeat	-	-
+tr|A0A182HC86|A0A182HC86_AEDAL	3d9a0cc7ce954058fd61aca6ee1d38ab	658	Pfam	PF00010	Helix-loop-helix DNA-binding domain	571	615	1.5E-6	T	17-10-2025	IPR011598	Myc-type, basic helix-loop-helix (bHLH) domain	-	-
+tr|A0A023ER33|A0A023ER33_AEDAL	240ce6a2e61adf1ad19e7221c2c8360e	381	Pfam	PF01399	PCI domain	263	339	3.4E-8	T	17-10-2025	IPR000717	Proteasome component (PCI) domain	-	-
+tr|A0A023ER33|A0A023ER33_AEDAL	240ce6a2e61adf1ad19e7221c2c8360e	381	Pfam	PF22037	PSD13 N-terminal repeats	26	241	3.3E-63	T	17-10-2025	IPR054179	PSD13, N-terminal	-	-
+tr|A0A182GT83|A0A182GT83_AEDAL	9e44a965217a938f8442eb247f83f00e	348	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	1	81	5.2E-13	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+tr|A0A182GT83|A0A182GT83_AEDAL	9e44a965217a938f8442eb247f83f00e	348	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	147	245	1.2E-28	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+UPI0007D173C2	3760f38f8240cc55c35c07c7c017d896	1588	Pfam	PF16213	Mon2/Sec7/BIG1-like, dimerisation and cyclophilin-binding domain	6	74	1.1E-12	T	17-10-2025	IPR032629	Mon2/Sec7/BIG1-like, dimerisation and cyclophilin-binding domain	-	-
+UPI0007D173C2	3760f38f8240cc55c35c07c7c017d896	1588	Pfam	PF01369	Sec7 domain	467	651	2.5E-70	T	17-10-2025	IPR000904	Sec7 domain	-	-
+UPI0007D173C2	3760f38f8240cc55c35c07c7c017d896	1588	Pfam	PF20252	BIG2 C-terminal domain	1347	1571	2.8E-51	T	17-10-2025	IPR046455	Sec7/BIG1-like, C-terminal domain	-	-
+UPI0007D173C2	3760f38f8240cc55c35c07c7c017d896	1588	Pfam	PF09324	Mon2/Sec7/BIG1-like, HDS	958	1038	1.3E-28	T	17-10-2025	IPR015403	Mon2/Sec7/BIG1-like, HDS	-	-
+UPI0007D173C2	3760f38f8240cc55c35c07c7c017d896	1588	Pfam	PF12783	Mon2/Sec7/BIG1-like, HUS domain	191	349	1.3E-51	T	17-10-2025	IPR032691	Mon2/Sec7/BIG1-like, HUS domain	-	-
+tr|A0A182H0V3|A0A182H0V3_AEDAL	e1144c928d2bb71a5ef3c9a20a6a2ba2	2114	Pfam	PF14726	Rotatin, an armadillo repeat protein, centriole functioning	19	99	3.0E-13	T	17-10-2025	IPR029249	Rotatin, N-terminal	-	-
+UPI0007D313BC	f2ef94985c01ceb644253fe8e308d5c2	397	Pfam	PF03732	Retrotransposon gag protein	135	226	8.3E-5	T	17-10-2025	IPR005162	Retrotransposon gag domain	-	-
+tr|A0A182GDB5|A0A182GDB5_AEDAL	d6f026e1907d95fba879581532094e91	1245	Pfam	PF07738	Sad1 / UNC-like C-terminal	249	371	3.3E-30	T	17-10-2025	IPR012919	SUN domain	-	-
+tr|A0A182HAT0|A0A182HAT0_AEDAL	47589ec4519bfda9c61b510f33b6a024	422	Pfam	PF01248	Ribosomal protein L7Ae/L30e/S12e/Gadd45 family	311	395	9.3E-12	T	17-10-2025	IPR004038	Ribosomal protein eL8/eL30/eS12/Gadd45	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF05965	F/Y rich C-terminus	5345	5429	4.6E-18	T	17-10-2025	IPR003889	FY-rich, C-terminal	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF13771	PHD-like zinc-binding domain	231	309	1.0E-4	T	17-10-2025	-	-	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF00856	SET domain	5521	5626	3.3E-20	T	17-10-2025	IPR001214	SET domain	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF13832	PHD-zinc-finger like domain	5138	5238	1.0E-8	T	17-10-2025	-	-	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF09011	HMG-box domain	1572	1622	0.49	T	17-10-2025	IPR009071	High mobility group box domain	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF05964	F/Y-rich N-terminus	5285	5341	2.5E-18	T	17-10-2025	IPR003888	FY-rich, N-terminal	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF00628	PHD-finger	714	758	3.9E-5	T	17-10-2025	IPR019787	Zinc finger, PHD-finger	-	-
+UPI0007D3F72B	b94919c242be514ae93175faac8ffc69	5650	Pfam	PF00628	PHD-finger	370	415	0.024	T	17-10-2025	IPR019787	Zinc finger, PHD-finger	-	-
+tr|A0A182G0L9|A0A182G0L9_AEDAL	f3617aeac7a3316c5dbe8d77f5ad52cc	332	Pfam	PF01370	NAD dependent epimerase/dehydratase family	133	331	1.5E-37	T	17-10-2025	IPR001509	NAD-dependent epimerase/dehydratase	-	-
+tr|A0A182GMS9|A0A182GMS9_AEDAL	92ac1dcb734cd2db3778a89d29f825bb	321	Pfam	PF00487	Fatty acid desaturase	68	286	7.9E-25	T	17-10-2025	IPR005804	Fatty acid desaturase domain	-	-
+tr|A0A182GMS9|A0A182GMS9_AEDAL	92ac1dcb734cd2db3778a89d29f825bb	321	Pfam	PF08557	Sphingolipid Delta4-desaturase (DES)	6	42	4.7E-17	T	17-10-2025	IPR013866	Sphingolipid delta4-desaturase, N-terminal	-	-
+UPI0007D4D981	8d22a7952550c15a71ef7e651b75169f	1204	Pfam	PF00533	BRCA1 C Terminus (BRCT) domain	132	206	7.2E-9	T	17-10-2025	IPR001357	BRCT domain	-	-
+UPI0007D1BAB2	43635fcf621d64554e984579ec5c3a59	483	Pfam	PF00240	Ubiquitin family	32	100	1.9E-9	T	17-10-2025	IPR000626	Ubiquitin-like domain	-	-
+UPI0007D1BAB2	43635fcf621d64554e984579ec5c3a59	483	Pfam	PF17978	RING/Ubox like zinc-binding domain	251	341	1.0E-41	T	17-10-2025	IPR041170	RING/Ubox-like zinc-binding domain	-	-
+UPI0007D1BAB2	43635fcf621d64554e984579ec5c3a59	483	Pfam	PF17976	RING/Ubox like zinc-binding domain	160	238	7.7E-21	T	17-10-2025	IPR041565	Parkin, RING/Ubox like zinc-binding domain	-	-
+UPI0007D1BAB2	43635fcf621d64554e984579ec5c3a59	483	Pfam	PF22605	IBR domain	430	478	6.6E-28	T	17-10-2025	IPR054694	E3 ubiquitin-protein ligase parkin-like, IBR domain	-	-
+tr|A0A182H1A1|A0A182H1A1_AEDAL	0a5e423cef060d75e2f05a1966bab601	451	Pfam	PF07727	Reverse transcriptase (RNA-dependent DNA polymerase)	11	254	2.4E-73	T	17-10-2025	IPR013103	Reverse transcriptase, RNA-dependent DNA polymerase	-	-
+UPI0007D20E77	3b3e278f34fc88155852d07587c498a5	631	Pfam	PF03732	Retrotransposon gag protein	369	460	1.8E-4	T	17-10-2025	IPR005162	Retrotransposon gag domain	-	-
+UPI0007D47B73	4a3aaa2f041ab79d6357fdaf3dc26b5e	403	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	28	99	8.5E-8	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+UPI0007D4C7DD	89f820852559f396703ab721e301e66c	1188	Pfam	PF13087	AAA domain	744	949	1.4E-43	T	17-10-2025	IPR041679	DNA2/NAM7 helicase-like, C-terminal	-	-
+UPI0007D4C7DD	89f820852559f396703ab721e301e66c	1188	Pfam	PF13086	AAA domain	544	624	3.9E-8	T	17-10-2025	IPR041677	DNA2/NAM7 helicase, helicase domain	-	-
+UPI0007D4C7DD	89f820852559f396703ab721e301e66c	1188	Pfam	PF13086	AAA domain	662	732	6.4E-7	T	17-10-2025	IPR041677	DNA2/NAM7 helicase, helicase domain	-	-
+tr|A0A182GD47|A0A182GD47_AEDAL	ce5eb590393135f64ef3c677db762b55	325	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	23	103	2.8E-9	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+tr|A0A182GD47|A0A182GD47_AEDAL	ce5eb590393135f64ef3c677db762b55	325	Pfam	PF00096	Zinc finger, C2H2 type	214	236	0.39	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182HA07|A0A182HA07_AEDAL	38938b357b8acf25021b5b4775521c7e	883	Pfam	PF00665	Integrase core domain	528	620	2.8E-13	T	17-10-2025	IPR001584	Integrase, catalytic core	-	-
+tr|A0A182HA07|A0A182HA07_AEDAL	38938b357b8acf25021b5b4775521c7e	883	Pfam	PF17919	RNase H-like domain found in reverse transcriptase	222	320	1.0E-27	T	17-10-2025	IPR041577	Reverse transcriptase/retrotransposon-derived protein, RNase H-like domain	-	-
+tr|A0A182HA07|A0A182HA07_AEDAL	38938b357b8acf25021b5b4775521c7e	883	Pfam	PF17921	Integrase zinc binding domain	460	514	2.9E-12	T	17-10-2025	IPR041588	Integrase zinc-binding domain	-	-
+tr|A0A182HA07|A0A182HA07_AEDAL	38938b357b8acf25021b5b4775521c7e	883	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	6	159	8.6E-17	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D10D52	d00cc5718b41981ddc2da428d65f1a97	619	Pfam	PF03949	Malic enzyme, NAD binding domain	311	564	2.3E-92	T	17-10-2025	IPR012302	Malic enzyme, NAD-binding	-	-
+UPI0007D10D52	d00cc5718b41981ddc2da428d65f1a97	619	Pfam	PF00390	Malic enzyme, N-terminal domain	120	301	1.1E-77	T	17-10-2025	IPR012301	Malic enzyme, N-terminal domain	-	-
+UPI0007D5D458	8e72c85b611df189862181fcf8d16daa	513	Pfam	PF05761	5' nucleotidase family	85	423	6.5E-48	T	17-10-2025	IPR008380	HAD-superfamily hydrolase, subfamily IG, 5'-nucleotidase	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF13912	C2H2-type zinc finger	237	262	2.9	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF13912	C2H2-type zinc finger	631	655	350.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF13912	C2H2-type zinc finger	184	205	12.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF13912	C2H2-type zinc finger	361	382	19.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF00096	Zinc finger, C2H2 type	1090	1111	29.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF00096	Zinc finger, C2H2 type	893	914	35.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF00096	Zinc finger, C2H2 type	661	680	7.3	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D495A4	4eb661fc136d5a2bb228308e82e46e13	1170	Pfam	PF00096	Zinc finger, C2H2 type	865	887	3.4	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7S1|A0A182G7S1_AEDAL	947338f3fdf561b5f89a6fd507caa175	484	Pfam	PF12572	Protein of unknown function (DUF3752)	341	477	5.6E-17	T	17-10-2025	IPR022226	Domain of unknown function DUF3752	-	-
+tr|A0A182GR75|A0A182GR75_AEDAL	d5f1000b7ad9d2b971312f38bfb0957b	740	Pfam	PF16508	Second BRCT domain on Nijmegen syndrome breakage protein	210	315	2.1E-19	T	17-10-2025	IPR032429	Nibrin, second BRCT domain	-	-
+tr|A0A182GR75|A0A182GR75_AEDAL	d5f1000b7ad9d2b971312f38bfb0957b	740	Pfam	PF00498	FHA domain	32	94	1.4E-7	T	17-10-2025	IPR000253	Forkhead-associated (FHA) domain	-	-
+tr|A0A182GXI4|A0A182GXI4_AEDAL	40ced0868fc0c2a2db278bb21f16e4c0	102	Pfam	PF10559	Plug domain of Sec61p	2	27	3.5E-6	T	17-10-2025	IPR019561	Translocon Sec61/SecY, plug domain	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF07707	BTB And C-terminal Kelch	169	245	0.047	T	17-10-2025	IPR011705	BTB/Kelch-associated	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	491	536	1.6E-7	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	398	442	2.1E-8	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	632	671	1.8E-8	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	585	629	3.4E-9	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	539	582	7.2E-8	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF01344	Kelch motif	445	485	2.8E-5	T	17-10-2025	IPR006652	Kelch repeat type 1	-	-
+tr|A0A182G4U6|A0A182G4U6_AEDAL	0512df5da4afc2deb02137d4144b2f08	805	Pfam	PF00651	BTB/POZ domain	39	151	6.5E-14	T	17-10-2025	IPR000210	BTB/POZ domain	-	-
+tr|A0A182GS49|A0A182GS49_AEDAL	6dd3264e0aa8f74e6fe928badf764548	473	Pfam	PF01485	IBR domain, a half RING-finger domain	200	260	3.1E-10	T	17-10-2025	IPR002867	IBR domain	-	-
+tr|A0A182GS49|A0A182GS49_AEDAL	6dd3264e0aa8f74e6fe928badf764548	473	Pfam	PF13923	Zinc finger, C3HC4 type (RING finger)	129	161	0.0018	T	17-10-2025	IPR001841	Zinc finger, RING-type	-	-
+tr|A0A182GS49|A0A182GS49_AEDAL	6dd3264e0aa8f74e6fe928badf764548	473	Pfam	PF19422	Ariadne domain	356	457	1.9E-8	T	17-10-2025	IPR045840	Ariadne domain	-	-
+tr|A0A182GS49|A0A182GS49_AEDAL	6dd3264e0aa8f74e6fe928badf764548	473	Pfam	PF21235	E3 ubiquitin-protein ligase ARIH1, UBA-like domain	54	94	1.5E-17	T	17-10-2025	IPR048962	E3 ubiquitin-protein ligase ARIH1-like, UBA-like domain	-	-
+tr|A0A182GS49|A0A182GS49_AEDAL	6dd3264e0aa8f74e6fe928badf764548	473	Pfam	PF22605	IBR domain	282	323	2.7E-12	T	17-10-2025	IPR054694	E3 ubiquitin-protein ligase parkin-like, IBR domain	-	-
+tr|A0A023EKS2|A0A023EKS2_AEDAL	d1c2e5258166e5309d27199824074e37	240	Pfam	PF00642	Zinc finger C-x8-C-x5-C-x3-H type (and similar)	14	38	3.7E-4	T	17-10-2025	IPR000571	Zinc finger, CCCH-type	-	-
+tr|A0A023EKS2|A0A023EKS2_AEDAL	d1c2e5258166e5309d27199824074e37	240	Pfam	PF00642	Zinc finger C-x8-C-x5-C-x3-H type (and similar)	152	176	0.029	T	17-10-2025	IPR000571	Zinc finger, CCCH-type	-	-
+tr|A0A023EKS2|A0A023EKS2_AEDAL	d1c2e5258166e5309d27199824074e37	240	Pfam	PF00076	RNA recognition motif	94	142	0.043	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A023EJP8|A0A023EJP8_AEDAL	d4e8cfe280355806020b7f819f399662	212	Pfam	PF00810	ER lumen protein retaining receptor	28	169	4.2E-58	T	17-10-2025	IPR000133	ER lumen protein retaining receptor	-	-
+UPI0007D20DCC	77fc1910211084ce7a02c4b1d531a1a8	565	Pfam	PF00648	Calpain family cysteine protease	66	359	2.8E-114	T	17-10-2025	IPR001300	Peptidase C2, calpain, catalytic domain	-	-
+UPI0007D20DCC	77fc1910211084ce7a02c4b1d531a1a8	565	Pfam	PF01067	Calpain large subunit, domain III	381	515	9.9E-41	T	17-10-2025	IPR022682	Peptidase C2, calpain, large subunit, domain III	-	-
+tr|A0A182HDJ1|A0A182HDJ1_AEDAL	12b5fc2270fce9c5b44ade7ec7cc1a97	1071	Pfam	PF14529	Endonuclease-reverse transcriptase	102	219	6.2E-12	T	17-10-2025	IPR005135	Endonuclease/exonuclease/phosphatase	-	-
+tr|A0A182HDJ1|A0A182HDJ1_AEDAL	12b5fc2270fce9c5b44ade7ec7cc1a97	1071	Pfam	PF00075	RNase H	919	1042	2.2E-9	T	17-10-2025	IPR002156	Ribonuclease H domain	-	-
+tr|A0A182HDJ1|A0A182HDJ1_AEDAL	12b5fc2270fce9c5b44ade7ec7cc1a97	1071	Pfam	PF00078	Reverse transcriptase (RNA-dependent DNA polymerase)	464	710	1.2E-26	T	17-10-2025	IPR000477	Reverse transcriptase domain	-	-
+UPI0007D4461E	93707fab5534e7bb4056f4a34a0b2294	386	Pfam	PF01066	CDP-alcohol phosphatidyltransferase	46	163	8.6E-7	T	17-10-2025	IPR000462	CDP-alcohol phosphatidyltransferase	-	-
+tr|A0A182H338|A0A182H338_AEDAL	2352ffb60716430fd8912ed20db1496c	373	Pfam	PF16900	Replication protein A OB domain	59	157	1.9E-28	T	17-10-2025	IPR031657	Replication protein A, OB domain	-	-
+tr|A0A182H338|A0A182H338_AEDAL	2352ffb60716430fd8912ed20db1496c	373	Pfam	PF08646	Replication factor-A C terminal domain	215	360	5.3E-47	T	17-10-2025	IPR013955	Replication factor A, C-terminal	-	-
+tr|A0A182GFC6|A0A182GFC6_AEDAL	ee451e3c6b5c14911097e48f0be95d8f	367	Pfam	PF00076	RNA recognition motif	28	95	1.2E-12	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+tr|A0A182GFC6|A0A182GFC6_AEDAL	ee451e3c6b5c14911097e48f0be95d8f	367	Pfam	PF00076	RNA recognition motif	119	179	5.8E-11	T	17-10-2025	IPR000504	RNA recognition motif domain	-	-
+UPI0007D63965	965f474dd6856a8d9b5f0d073dca4226	1477	Pfam	PF13912	C2H2-type zinc finger	455	473	48.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D63965	965f474dd6856a8d9b5f0d073dca4226	1477	Pfam	PF00096	Zinc finger, C2H2 type	747	769	3.4	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D63965	965f474dd6856a8d9b5f0d073dca4226	1477	Pfam	PF00096	Zinc finger, C2H2 type	327	349	1.4	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D63965	965f474dd6856a8d9b5f0d073dca4226	1477	Pfam	PF00096	Zinc finger, C2H2 type	261	283	36.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D63965	965f474dd6856a8d9b5f0d073dca4226	1477	Pfam	PF00096	Zinc finger, C2H2 type	299	321	24.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+UPI0007D291F6	5f64416b39cc1756b6ffe8bcd16edec5	420	Pfam	PF00561	alpha/beta hydrolase fold	97	340	5.7E-22	T	17-10-2025	IPR000073	Alpha/beta hydrolase fold-1	-	-
+UPI0007D62D78	94652863c4c0459daab1f14729285e4d	704	Pfam	PF19277	Glycerol-3-phosphate acyltransferase C-terminal region	282	658	1.1E-35	T	17-10-2025	IPR045520	GPAT/DHAPAT, C-terminal domain	-	-
+UPI0007D62D78	94652863c4c0459daab1f14729285e4d	704	Pfam	PF01553	Acyltransferase	133	271	1.1E-13	T	17-10-2025	IPR002123	Phospholipid/glycerol acyltransferase	-	-
+tr|A0A182GPM1|A0A182GPM1_AEDAL	1ecb56079d58d3c4406080897fe9ae56	2611	Pfam	PF25579	E3 ubiquitin-protein ligase TRIP12-like, TPR repeats	650	780	1.4E-20	T	17-10-2025	IPR057948	E3 ubiquitin-protein ligase TRIP12-like, TPR repeats	-	-
+tr|A0A182GPM1|A0A182GPM1_AEDAL	1ecb56079d58d3c4406080897fe9ae56	2611	Pfam	PF02825	WWE domain	982	1046	7.7E-18	T	17-10-2025	IPR004170	WWE domain	-	-
+tr|A0A182GPM1|A0A182GPM1_AEDAL	1ecb56079d58d3c4406080897fe9ae56	2611	Pfam	PF00632	HECT-domain (ubiquitin-transferase)	2301	2611	5.0E-74	T	17-10-2025	IPR000569	HECT domain	-	-
+UPI0007D2C9A4	eb93301bee141e034ee099587a8b818c	420	Pfam	PF00561	alpha/beta hydrolase fold	97	340	4.5E-21	T	17-10-2025	IPR000073	Alpha/beta hydrolase fold-1	-	-
+UPI0007D56410	56c5c53c5c9d4f0ed0e4ea977bafaeab	252	Pfam	PF00107	Zinc-binding dehydrogenase	80	208	1.4E-22	T	17-10-2025	IPR013149	Alcohol dehydrogenase-like, C-terminal	-	-
+tr|A0A182GER1|A0A182GER1_AEDAL	3181db1b75ddfa584f55bc6dad2b082e	129	Pfam	PF00125	Core histone H2A/H2B/H3/H4 domain	23	104	5.2E-20	T	17-10-2025	IPR007125	Core Histone H2A/H2B/H3 domain	-	-
+tr|A0A182GJD7|A0A182GJD7_AEDAL	babb9d176d6f22ad8a83a49db1356ff8	1646	Pfam	PF12783	Mon2/Sec7/BIG1-like, HUS domain	129	302	1.2E-28	T	17-10-2025	IPR032691	Mon2/Sec7/BIG1-like, HUS domain	-	-
+tr|A0A182GJD7|A0A182GJD7_AEDAL	babb9d176d6f22ad8a83a49db1356ff8	1646	Pfam	PF16206	C-terminal region of Mon2 protein	1086	1616	0.0	T	17-10-2025	IPR032817	Mon2, C-terminal	-	-
+tr|A0A182GJD7|A0A182GJD7_AEDAL	babb9d176d6f22ad8a83a49db1356ff8	1646	Pfam	PF16206	C-terminal region of Mon2 protein	834	1070	1.9E-129	T	17-10-2025	IPR032817	Mon2, C-terminal	-	-
+tr|A0A182GJD7|A0A182GJD7_AEDAL	babb9d176d6f22ad8a83a49db1356ff8	1646	Pfam	PF16213	Mon2/Sec7/BIG1-like, dimerisation and cyclophilin-binding domain	1	95	8.1E-35	T	17-10-2025	IPR032629	Mon2/Sec7/BIG1-like, dimerisation and cyclophilin-binding domain	-	-
+tr|A0A182GJD7|A0A182GJD7_AEDAL	babb9d176d6f22ad8a83a49db1356ff8	1646	Pfam	PF09324	Mon2/Sec7/BIG1-like, HDS	750	830	1.0E-13	T	17-10-2025	IPR015403	Mon2/Sec7/BIG1-like, HDS	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF00096	Zinc finger, C2H2 type	381	403	6.5	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF00096	Zinc finger, C2H2 type	438	460	22.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF00096	Zinc finger, C2H2 type	409	431	5.7	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF00096	Zinc finger, C2H2 type	466	488	13.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF00096	Zinc finger, C2H2 type	495	517	5.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182G7Q9|A0A182G7Q9_AEDAL	96663ab35377c7395ecfd413ce117931	583	Pfam	PF07776	Zinc-finger associated domain (zf-AD)	30	106	8.8E-7	T	17-10-2025	IPR012934	Zinc finger, AD-type	-	-
+tr|A0A182H345|A0A182H345_AEDAL	c8c701cf1b60888e43208e83178f5764	625	Pfam	PF00096	Zinc finger, C2H2 type	391	413	3.8	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182H345|A0A182H345_AEDAL	c8c701cf1b60888e43208e83178f5764	625	Pfam	PF00096	Zinc finger, C2H2 type	363	384	27.0	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
+tr|A0A182H345|A0A182H345_AEDAL	c8c701cf1b60888e43208e83178f5764	625	Pfam	PF00096	Zinc finger, C2H2 type	447	469	0.56	T	17-10-2025	IPR013087	Zinc finger C2H2-type	-	-
