@@ -59,3 +59,11 @@ merged_clean <- lapply(merged, function(df) {
     # Sort by lowest `false_discovery_rate`
     arrange(false_discovery_rate)
 })
+
+# ===== SAVE DFs ====
+write.csv(merged_clean$aae_all, "results/02-enrichment/07-tidying-results/02-interpro-all/aae_all_merged.csv", row.names = FALSE)
+write.csv(merged_clean$aae_all_down, "results/02-enrichment/07-tidying-results/02-interpro-all/aae_all_down_merged.csv", row.names = FALSE)
+write.csv(merged_clean$aae_per_mirna, "results/02-enrichment/07-tidying-results/02-interpro-all/aae_per_mirna_merged.csv", row.names = FALSE)
+write.csv(merged_clean$aae_per_mirna_down, "results/02-enrichment/07-tidying-results/02-interpro-all/aae_per_mirna_down_merged.csv", row.names = FALSE)
+write.csv(merged_clean$aal_all, "results/02-enrichment/07-tidying-results/02-interpro-all/aal_all_merged.csv", row.names = FALSE)
+write.csv(merged_clean$aal_per_mirna, "results/02-enrichment/07-tidying-results/02-interpro-all/aal_per_mirna_merged.csv", row.names = FALSE)
