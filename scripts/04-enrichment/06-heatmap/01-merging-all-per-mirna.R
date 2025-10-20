@@ -156,3 +156,18 @@ for (name in names(merged_clean)) {
   cat(sprintf("Count (unique UniProt IDs): %d\n", unique_count))
   cat("Details stored in single_annotation_results[['", name, "']]\n\n", sep = "")
 }
+
+# ==== EXTRA VARIABLES ====
+# Make a list of all "per_mirna" dataframes
+per_mirna <- list(
+  "aae_per_mirna" = merged_clean$aae_per_mirna,
+  "aae_per_mirna_down" = merged_clean$aae_per_mirna_down,
+  "aal_per_mirna" = merged_clean$aal_per_mirna
+)
+
+# Make a list of all "all" datframes
+all <- list(
+  "aae_all" = merged_clean$aae_all,
+  "aae_all_down" = merged_clean$aae_all_down,
+  "aal_all" = merged_clean$aal_all
+)
