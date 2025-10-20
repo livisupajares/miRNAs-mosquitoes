@@ -67,3 +67,11 @@ View(interpro_important$aae_per_mirna)
 View(interpro_important$aae_per_mirna_down)
 View(interpro_important$aal_all)
 View(interpro_important$aal_per_mirna)
+
+# ==== SAVE DFS ====
+write.csv(interpro_important$aae_all, file = "results/02-enrichment/06-interpro-annotation/aae_all_interpro.csv", row.names = FALSE)
+write.csv(interpro_important$aae_all_down, file = "results/02-enrichment/06-interpro-annotation/aae_all_down_interpro.csv", row.names = FALSE)
+write.csv(interpro_important$aae_per_mirna, file = "results/02-enrichment/06-interpro-annotation/aae_per_mirna_interpro.csv", row.names = FALSE)
+write.csv(interpro_important$aae_per_mirna_down, file = "results/02-enrichment/06-interpro-annotation/aae_per_mirna_down_interpro.csv", row.names = FALSE)
+write.csv(interpro_important$aal_all, file = "results/02-enrichment/06-interpro-annotation/aal_all_interpro.csv", row.names = FALSE)
+write.csv(interpro_important$aal_per_mirna, file = "results/02-enrichment/06-interpro-annotation/aal_per_mirna_interpro.csv", row.names = FALSE)
