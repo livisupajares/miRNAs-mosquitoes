@@ -48,3 +48,14 @@ merged <- list(
   "aal_per_mirna" = aal_per_mirna_merged
 )
 
+merged_clean <- lapply(merged, function(df) {
+  # Rename `signature description` and `interpro_description` to `signature_description_ips` and `interpro_description_ips`
+  df %>% rename(signature_description_ips = signature_description) %>%
+    rename(interpro_description_ips = interpro_description) %>%
+    # Move `interpro_description_ips` and `signature_description_ips` after `pfams_eggnog`
+    relocate(c(interpro_description_ips, signature_description_ips), .after = pfams_eggnog) %>%
+    # Sort by `term_description` instead of `uniprot_id`
+    arrange(term_description) %>%
+    # Sort by lowest `false_discovery_rate`
+    arrange(false_discovery_rate)
+})
