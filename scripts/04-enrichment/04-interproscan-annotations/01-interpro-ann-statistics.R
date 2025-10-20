@@ -44,6 +44,8 @@ interpro_clean <- lapply(interpro_headers, function(df) {
         TRUE ~ protein_accession
       ),
       .after = "protein_accession") %>%
+    # Replace `-` with NA
+    mutate(across(everything(), ~na_if(as.character(.), "-"))) %>%
     # Keep unique uniprot_id
     dplyr::distinct(uniprot_id, .keep_all = TRUE) %>%
     # Remove last two columns
