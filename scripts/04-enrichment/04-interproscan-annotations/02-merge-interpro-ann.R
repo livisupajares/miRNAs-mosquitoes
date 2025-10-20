@@ -35,4 +35,5 @@ aae_all_down_merged <- merge(interpro_important$aae_all_down, aae_all_down_egg_u
 aae_per_mirna_merged <- merge(interpro_important$aae_per_mirna, aae_per_mirna_egg_uni, by = "uniprot_id", all.y = TRUE)
 aae_per_mirna_down_merged <- merge(interpro_important$aae_per_mirna_down, aae_per_mirna_down_egg_uni, by = "uniprot_id", all.y = TRUE)
 aal_all_merged <- merge(interpro_important$aal_all, aal_all_egg_uni, by = "uniprot_id", all.y = TRUE)
-all_per_mirna_merged <- merge(interpro_important$aal_per_mirna, aal_per_mirna_egg_uni, by = "uniprot_id", all.y = TRUE)
+aal_per_mirna_merged <- merge(interpro_important$aal_per_mirna, aal_per_mirna_egg_uni, by = "uniprot_id", all.y = TRUE)
+
