@@ -56,3 +56,32 @@ for (name in names(merged_clean)) {
   merged_clean[[name]] <- df
 }
 
+# ==== STATISTICS =====
+# Determine which `uniprot_id` has no anotations (NAs in `annotation_stringdb`, `protein_name_uniprot`, `cc_function_uniprot`, `go_p_uniprot`, `go_f_uniprot`, `description_eggnog`, `preferred_name_eggnog`, `interpro_description_ips`, and `signature_description_ips`)
+
+cat("=== UniProt IDs with ALL columns as NA ===\n")
+for (name in names(merged_clean)) {
+  df <- merged_clean[[name]]
+  uniprot_na <- df %>%
+    filter(is.na(annotation_stringdb) &
+             is.na(protein_name_uniprot) &
+             is.na(cc_function_uniprot) &
+             is.na(go_p_uniprot) &
+             is.na(go_f_uniprot) &
+             is.na(description_eggnog) &
+             is.na(preferred_name_eggnog) &
+             is.na(interpro_description_ips) &
+             is.na(signature_description_ips)) %>%
+    pull(uniprot_id) %>%
+    unique()
+  cat(name, "\n")
+  cat(sprintf("Count: %d\n", length(uniprot_na)))
+  if (length(uniprot_na) > 0) {
+    cat("UniProt IDs:\n")
+    print(uniprot_na)
+  } else {
+    cat("No UniProt IDs found with all columns as NA.\n")
+  }
+  cat("\n")
+}
+
