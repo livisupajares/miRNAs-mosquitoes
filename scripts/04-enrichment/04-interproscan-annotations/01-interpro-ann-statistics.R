@@ -51,3 +51,19 @@ interpro_clean <- lapply(interpro_headers, function(df) {
     # Remove last two columns
     select(1:(ncol(.) - 2))
 })
+
+# ==== FILTER IMPORTANT COLUMNS ====
+interpro_important <- lapply(interpro_clean, function(df) {
+  df %>% 
+    select(uniprot_id, 
+           signature_description,
+           interpro_description)
+})
+
+# View results
+View(interpro_important$aae_all)
+View(interpro_important$aae_all_down)
+View(interpro_important$aae_per_mirna)
+View(interpro_important$aae_per_mirna_down)
+View(interpro_important$aal_all)
+View(interpro_important$aal_per_mirna)
