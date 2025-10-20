@@ -30,3 +30,29 @@ rm(aal_per_mirna_merged)
 rm(interpro_important)
 rm(merged)
 
+# ==== REPLACE NON TRADITIONAL VALUES WITH NA =====
+# Clean 'annotation_stringdb' across all data frames in merged_clean:
+#   - "Uncharacterized protein." (case-insensitive, optional period/whitespace)
+#   - Full-string VectorBase-like IDs: e.g., AAEL012979-PA, AALF001234-PB, AALF010145-PC., etc.
+
+for (name in names(merged_clean)) {
+  df <- merged_clean[[name]]
+  
+  if ("annotation_stringdb" %in% names(df)) {
+    # Pattern 1: Uncharacterized protein (with optional period and spaces)
+    is_uncharacterized <- grepl("^\\s*Uncharacterized protein\\.?\\s*$", 
+                                df$annotation_stringdb, 
+                                ignore.case = TRUE)
+    
+    # Pattern 2: VectorBase-style ID as the ENTIRE string
+    # Format: [letters][digits]-[two uppercase letters] + optional period at end
+    is_vectorbase_id <- grepl("^[A-Za-z]+[0-9]+-[A-Z]{2}\\.?\\s*$", 
+                              df$annotation_stringdb)
+    
+    # Replace if either pattern matches
+    df$annotation_stringdb[is_uncharacterized | is_vectorbase_id] <- NA_character_
+  }
+  
+  merged_clean[[name]] <- df
+}
+
