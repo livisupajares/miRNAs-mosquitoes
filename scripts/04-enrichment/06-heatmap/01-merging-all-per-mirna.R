@@ -157,17 +157,74 @@ for (name in names(merged_clean)) {
   cat("Details stored in single_annotation_results[['", name, "']]\n\n", sep = "")
 }
 
-# ==== EXTRA VARIABLES ====
-# Make a list of all "per_mirna" dataframes
-per_mirna <- list(
-  "aae_per_mirna" = merged_clean$aae_per_mirna,
-  "aae_per_mirna_down" = merged_clean$aae_per_mirna_down,
-  "aal_per_mirna" = merged_clean$aal_per_mirna
-)
+# ==== ADD mirna_expression COLUMN ====
+for (name in names(merged_clean)) {
+  df <- merged_clean[[name]]
+  if (grepl("_down$", name)) {
+    df$mirna_expression <- "down-regulated"
+  } else if (grepl("^(aae|aal)_(per_mirna|all)$", name)) {
+    df$mirna_expression <- "up-regulated"
+  } else {
+    df$mirna_expression <- NA_character_  # or skip if you prefer
+  }
+  merged_clean[[name]] <- df
+}
 
-# Make a list of all "all" datframes
-all <- list(
-  "aae_all" = merged_clean$aae_all,
-  "aae_all_down" = merged_clean$aae_all_down,
-  "aal_all" = merged_clean$aal_all
-)
+# ==== ADD common_mirna COLUMN ====
+# Only for per_mirna data frames
+
+# Define the special miRNAs in Aal that are "common"
+common_aal_mirnas <- c("aal-mir-276-5p", "aal-mir-2945-3p", "aal-mir-2945b-3p")
+
+for (name in names(merged_clean)) {
+  # Only process data frames with "per_mirna" in the name
+  if (!grepl("per_mirna", name)) {
+    next
+  }
+  
+  df <- merged_clean[[name]]
+  
+  # Ensure the 'mirna' column exists
+  if (!("mirna" %in% names(df))) {
+    warning("Data frame '", name, "' has no 'mirna' column; skipping common_mirna assignment.")
+    next
+  }
+  
+  # Initialize common_mirna as "no"
+  df$common_mirna <- "no"
+  
+  # Special case: aae_per_mirna_down → all "yes"
+  if (name == "aae_per_mirna_down") {
+    df$common_mirna <- "yes"
+  }
+  # Special case: aal_per_mirna → specific miRNAs are "yes"
+  else if (name == "aal_per_mirna") {
+    df$common_mirna[df$mirna %in% common_aal_mirnas] <- "yes"
+  }
+  # For aae_per_mirna: remains "no" for all rows (as per your spec)
+  
+  merged_clean[[name]] <- df
+}
+
+# ==== MOVE NEW COLUMNS =====
+# Move common_mirna and mirna_expression after `mirna` inside the `per_mirna` dataframes
+per_mirna_names <- c("aae_per_mirna", "aae_per_mirna_down", "aal_per_mirna")
+
+merged_clean[per_mirna_names] <- lapply(merged_clean[per_mirna_names], function(df) {
+  if (all(c("mirna", "mirna_expression", "common_mirna") %in% names(df))) {
+    df %>% relocate(mirna_expression, common_mirna, .after = mirna)
+  } else {
+    df  # return unchanged if columns missing
+  }
+})
+
+# Move mirna_expression after `species` inside the `all` dataframes.
+all_names <- c("aae_all", "aae_all_down", "aal_all")
+
+merged_clean[all_names] <- lapply(merged_clean[all_names], function(df) {
+  if ("species" %in% names(df) && "mirna_expression" %in% names(df)) {
+    df %>% relocate(mirna_expression, .after = species)
+  } else {
+    df  # return unchanged if required columns are missing
+  }
+})
