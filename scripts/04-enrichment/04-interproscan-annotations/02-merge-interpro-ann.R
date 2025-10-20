@@ -37,3 +37,14 @@ aae_per_mirna_down_merged <- merge(interpro_important$aae_per_mirna_down, aae_pe
 aal_all_merged <- merge(interpro_important$aal_all, aal_all_egg_uni, by = "uniprot_id", all.y = TRUE)
 aal_per_mirna_merged <- merge(interpro_important$aal_per_mirna, aal_per_mirna_egg_uni, by = "uniprot_id", all.y = TRUE)
 
+# ==== TIDY DATA =====
+# Add merged dfs into a list
+merged <- list(
+  "aae_all" = aae_all_merged,
+  "aae_all_down" = aae_all_down_merged,
+  "aae_per_mirna" = aae_per_mirna_merged,
+  "aae_per_mirna_down" = aae_per_mirna_down_merged,
+  "aal_all" = aal_all_merged,
+  "aal_per_mirna" = aal_per_mirna_merged
+)
+
