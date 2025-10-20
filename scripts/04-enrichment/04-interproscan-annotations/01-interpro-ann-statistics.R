@@ -31,3 +31,21 @@ interpro_headers <- lapply(interpro, function(df) {
   colnames(df) <- headers
   return(df)
 })
+
+# ==== CLEAN DATA ====
+interpro_clean <- lapply(interpro_headers, function(df) {
+  # Add uniprot_id column with only uniprot ids
+  df %>%
+    mutate(
+      uniprot_id = case_when(
+        # If it matches UniProt format (starts with tr| or sp| etc.)
+        str_detect(protein_accession, "^[a-z]{2}\\|[^|]+\\|") ~ str_extract(protein_accession, "^[a-z]{2}\\|([^|]+)\\|", group = 1),
+        # Otherwise, assume it's UniParc or other ID → keep original
+        TRUE ~ protein_accession
+      ),
+      .after = "protein_accession") %>%
+    # Keep unique uniprot_id
+    dplyr::distinct(uniprot_id, .keep_all = TRUE) %>%
+    # Remove last two columns
+    select(1:(ncol(.) - 2))
+})
