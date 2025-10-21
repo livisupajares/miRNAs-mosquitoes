@@ -228,3 +228,18 @@ merged_clean[all_names] <- lapply(merged_clean[all_names], function(df) {
     df  # return unchanged if required columns are missing
   }
 })
+
+# ==== MERGE ALL AND PER MIRNA DATAFRAMES =====
+# Merge all `per_mirna` dataframes
+df_per_mirna <- bind_rows(
+  merged_clean$aae_per_mirna,
+  merged_clean$aae_per_mirna_down,
+  merged_clean$aal_per_mirna
+)
+
+# Merge all `all` dataframes
+df_all <- bind_rows(
+  merged_clean$aae_all,
+  merged_clean$aae_all_down,
+  merged_clean$aal_all
+)
