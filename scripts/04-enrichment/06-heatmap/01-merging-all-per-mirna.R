@@ -37,22 +37,25 @@ rm(merged)
 
 for (name in names(merged_clean)) {
   df <- merged_clean[[name]]
-  
+
   if ("annotation_stringdb" %in% names(df)) {
     # Pattern 1: Uncharacterized protein (with optional period and spaces)
-    is_uncharacterized <- grepl("^\\s*Uncharacterized protein\\.?\\s*$", 
-                                df$annotation_stringdb, 
-                                ignore.case = TRUE)
-    
+    is_uncharacterized <- grepl("^\\s*Uncharacterized protein\\.?\\s*$",
+      df$annotation_stringdb,
+      ignore.case = TRUE
+    )
+
     # Pattern 2: VectorBase-style ID as the ENTIRE string
     # Format: [letters][digits]-[two uppercase letters] + optional period at end
-    is_vectorbase_id <- grepl("^[A-Za-z]+[0-9]+-[A-Z]{2}\\.?\\s*$", 
-                              df$annotation_stringdb)
-    
+    is_vectorbase_id <- grepl(
+      "^[A-Za-z]+[0-9]+-[A-Z]{2}\\.?\\s*$",
+      df$annotation_stringdb
+    )
+
     # Replace if either pattern matches
     df$annotation_stringdb[is_uncharacterized | is_vectorbase_id] <- NA_character_
   }
-  
+
   merged_clean[[name]] <- df
 }
 
@@ -64,14 +67,14 @@ for (name in names(merged_clean)) {
   df <- merged_clean[[name]]
   uniprot_na <- df %>%
     filter(is.na(annotation_stringdb) &
-             is.na(protein_name_uniprot) &
-             is.na(cc_function_uniprot) &
-             is.na(go_p_uniprot) &
-             is.na(go_f_uniprot) &
-             is.na(description_eggnog) &
-             is.na(preferred_name_eggnog) &
-             is.na(interpro_description_ips) &
-             is.na(signature_description_ips)) %>%
+      is.na(protein_name_uniprot) &
+      is.na(cc_function_uniprot) &
+      is.na(go_p_uniprot) &
+      is.na(go_f_uniprot) &
+      is.na(description_eggnog) &
+      is.na(preferred_name_eggnog) &
+      is.na(interpro_description_ips) &
+      is.na(signature_description_ips)) %>%
     pull(uniprot_id) %>%
     unique()
   cat(name, "\n")
@@ -106,21 +109,21 @@ single_annotation_results <- list()
 cat("=== UniProt IDs with EXACTLY ONE non-NA annotation ===\n")
 for (name in names(merged_clean)) {
   df <- merged_clean[[name]]
-  
+
   # Count non-NA values per row across annotation columns
   non_na_counts <- rowSums(!is.na(df[annotation_cols]), na.rm = TRUE)
-  
+
   # Identify rows with exactly one non-NA annotation
   one_annot <- df[non_na_counts == 1, , drop = FALSE]
-  
+
   if (nrow(one_annot) == 0) {
     cat(name, "\n")
     cat("Count: 0\n")
     cat("No UniProt IDs found with exactly one annotation.\n\n")
-    single_annotation_results[[name]] <- data.frame()  # store empty df
+    single_annotation_results[[name]] <- data.frame() # store empty df
     next
   }
-  
+
   # Safely extract column name and value
   annotation_info <- t(sapply(1:nrow(one_annot), function(i) {
     row_vals <- one_annot[i, annotation_cols, drop = FALSE]
@@ -133,12 +136,12 @@ for (name in names(merged_clean)) {
       return(c(column = NA_character_, value = NA_character_))
     }
   }))
-  
+
   # Handle single-row edge case
   if (is.null(dim(annotation_info))) {
     annotation_info <- matrix(annotation_info, nrow = 1, dimnames = list(NULL, c("column", "value")))
   }
-  
+
   result_df <- data.frame(
     uniprot_id = one_annot$uniprot_id,
     annotation_column = annotation_info[, "column"],
@@ -146,10 +149,10 @@ for (name in names(merged_clean)) {
     stringsAsFactors = FALSE,
     row.names = NULL
   )
-  
+
   # Save to list
   single_annotation_results[[name]] <- result_df
-  
+
   # Print summary (optional, can remove if you only want silent storage)
   cat(name, "\n")
   unique_count <- length(unique(result_df$uniprot_id))
@@ -165,7 +168,7 @@ for (name in names(merged_clean)) {
   } else if (grepl("^(aae|aal)_(per_mirna|all)$", name)) {
     df$mirna_expression <- "up-regulated"
   } else {
-    df$mirna_expression <- NA_character_  # or skip if you prefer
+    df$mirna_expression <- NA_character_ # or skip if you prefer
   }
   merged_clean[[name]] <- df
 }
@@ -181,18 +184,18 @@ for (name in names(merged_clean)) {
   if (!grepl("per_mirna", name)) {
     next
   }
-  
+
   df <- merged_clean[[name]]
-  
+
   # Ensure the 'mirna' column exists
   if (!("mirna" %in% names(df))) {
     warning("Data frame '", name, "' has no 'mirna' column; skipping common_mirna assignment.")
     next
   }
-  
+
   # Initialize common_mirna as "no"
   df$common_mirna <- "no"
-  
+
   # Special case: aae_per_mirna_down → all "yes"
   if (name == "aae_per_mirna_down") {
     df$common_mirna <- "yes"
@@ -202,7 +205,7 @@ for (name in names(merged_clean)) {
     df$common_mirna[df$mirna %in% common_aal_mirnas] <- "yes"
   }
   # For aae_per_mirna: remains "no" for all rows (as per your spec)
-  
+
   merged_clean[[name]] <- df
 }
 
@@ -214,7 +217,7 @@ merged_clean[per_mirna_names] <- lapply(merged_clean[per_mirna_names], function(
   if (all(c("mirna", "mirna_expression", "common_mirna") %in% names(df))) {
     df %>% relocate(mirna_expression, common_mirna, .after = mirna)
   } else {
-    df  # return unchanged if columns missing
+    df # return unchanged if columns missing
   }
 })
 
@@ -225,7 +228,7 @@ merged_clean[all_names] <- lapply(merged_clean[all_names], function(df) {
   if ("species" %in% names(df) && "mirna_expression" %in% names(df)) {
     df %>% relocate(mirna_expression, .after = species)
   } else {
-    df  # return unchanged if required columns are missing
+    df # return unchanged if required columns are missing
   }
 })
 
@@ -243,3 +246,7 @@ df_all <- bind_rows(
   merged_clean$aae_all_down,
   merged_clean$aal_all
 )
+
+# ==== SAVE MERGED DATAFRAMES =====
+write.csv(df_per_mirna, file = "results/04-heatmap/final_ann_per_mirna.csv", row.names = FALSE)
+write.csv(df_all, file = "results/04-heatmap/final_ann_all.csv", row.names = FALSE)
