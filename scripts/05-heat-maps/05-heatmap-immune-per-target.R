@@ -101,4 +101,22 @@ write.csv(per_mirna_ann_immune, "results/04-heatmap/immune-related-annotations/p
 write.csv(all_ann_immune, "results/04-heatmap/immune-related-annotations/all_ann_immune.csv", row.names = FALSE)
 
 # ==== PER-MIRNA HEATMAP ====
+# Too much information, looks cluttered
+# TODO: UpSetR plot
+# ggplot(per_mirna_ann_immune, aes(x = uniprot_id, y = term_wrapped, fill = log10_fdr)) +
+#   geom_tile(color = "white") +
+#   facet_wrap(~ species, scales = "free_y") +
+#   scale_fill_viridis_c(
+#     option = "plasma",      # or "plasma", "inferno", "viridis"
+#     direction = -1,        # darker = more significant (higher -log10(FDR))
+#     na.value = "grey90",
+#     name = "-log10(FDR)"
+#   ) +
+#   theme_minimal(base_size = 10) +
+#   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+#   labs(title = "Significant Enrichments with immune related targets (per-mirna) per Species",
+#        x = "uniprot id",
+#        y = "term description",
+#        fill = "-log10(FDR")
+
 # ==== ALL HEATMAP =====
