@@ -1,34 +1,159 @@
 # ~~~~  HEATMAPS ~~~~~
-# This script will add one extra variable to all imported datasets to indicate if it comes from up or down-regulated miRNAs.
-# Then, it will add another extra variable to indicate which miRNAs are in the common data set (miR-276-5p, miR-2945-3p) 
-# combines all "per_mirna" datasets into one dataframe, and all "all" datasets into another dataframe.
-# Then it will create two heatmaps using tidyheatmaps
-# This process will be repeated (probably) for the full_annotated dataset when the BLAST analysis is done.
+# This script will create heatmaps to visualize data from enrichments and annotations of enriched miRNA targets up-regulated (and some down-regulated in common)
  
 # ===== Add libraries =====
 library(tidyverse)
-library(tidyheatmaps)
+# library(tidyheatmaps)
+# library(ComplexHeatmap)
+# library(circlize)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== Import data =====
-# aae and aal up-regulated
-# Per-mirna
-important_per_mirna_stringdb <- read.csv(
-  "results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv"
+# ==== Per-miRNA =====
+# Per-mirna annotation
+per_mirna_ann <- read.csv(
+  "results/04-heatmap/final_ann_per_mirna.csv"
 )
 
-# all
-important_all_stringdb <- read.csv(
-  "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv"
+## Compute -log10(FDR) for plotting
+per_mirna_ann <- per_mirna_ann |>
+  mutate(log10_fdr = -log10(false_discovery_rate))
+
+## Wrap term descriptions to, say, 30 characters per line
+per_mirna_ann <- per_mirna_ann %>%
+  mutate(term_wrapped = str_wrap(term_description, width = 30))
+
+# Per-mirna enrichments only
+per_mirna_en <- read.csv(
+  "results/04-heatmap/final_enrichment_per_mirna.csv"
+)
+## Compute -log10(FDR) for plotting
+per_mirna_en <- per_mirna_en |>
+  mutate(log10_fdr = -log10(false_discovery_rate))
+
+## Wrap term descriptions to, say, 30 characters per line
+per_mirna_en <- per_mirna_en %>%
+  mutate(term_wrapped = str_wrap(term_description, width = 30))
+
+
+# ==== HEATMAP PER MIRNA ANNOTATION ====
+# ===== TOP 10 ENRICHMENTS BY SPECIES ====
+## Filter top 10
+per_mirna_en_10 <- per_mirna_en |>
+  group_by(species) |>
+  slice_max(order_by = log10_fdr, n = 10)
+
+## Top 10 data by species
+ggplot(per_mirna_en_10, aes(x = mirna, y = term_wrapped, fill = log10_fdr)) +
+  geom_tile(color = "white") +
+  facet_wrap(~ species, scales = "free_y") +
+  scale_fill_viridis_c(
+    option = "plasma",      # or "plasma", "inferno", "viridis"
+    direction = -1,        # darker = more significant (higher -log10(FDR))
+    na.value = "grey90",
+    name = "-log10(FDR)"
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Top 10 Significant Enrichments by miRNA (per-miRNA) and Species",
+       x = "miRNA",
+       y = "term description",
+       fill = "-log10(FDR")
+
+# ==== TOP 10 ENRICHMENTS OF COMMON MIRNAS BY SPECIES ====
+## Filter common miRNAs and get top 10 enrichments
+# Split by species and process
+aae_common10 <- per_mirna_en %>%
+  filter(
+    common_mirna == "yes",
+    species == "Aedes aegypti"
+  ) %>%
+  slice_max(log10_fdr, n = 10, with_ties = FALSE)
+
+aal_common <- per_mirna_en %>%
+  filter(
+    common_mirna == "yes",
+    species == "Aedes albopictus"
+  )
+
+# Combine both species
+per_mirna_common_10 <- bind_rows(
+  aae_common10,
+  aal_common
 )
 
-# Aae down-regulated
-# Per miRNA
-aae_per_mirna_down <- read.csv(
-  "results/02-enrichment/02-exports-google-sheets/aae-per-mirna-down-stringdb-export.csv"
-)
+## Common miRNAs by species
+ggplot(per_mirna_common_10, aes(x = mirna, y = term_wrapped, fill = log10_fdr)) +
+  geom_tile(color = "white") +
+  facet_wrap(~ species, scales = "free_y") +
+  scale_fill_viridis_c(
+    option = "plasma",      # or "plasma", "inferno", "viridis"
+    direction = -1,        # darker = more significant (higher -log10(FDR))
+    na.value = "grey90",
+    name = "-log10(FDR)"
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Top 10 Enrichments found in common miRNA (per-miRNA) by Species",
+       x = "miRNA",
+       y = "term description",
+       fill = "-log10(FDR")
 
-# All
-aae_all_down <- read.csv(
-  "results/02-enrichment/02-exports-google-sheets/aae-all-down-stringdb-export.csv"
-)
+# ===== TOP 10 ENRICHMENTS BY MIRNA EXPRESSION ====
+## Filter by top 10 (mirna_expression)
+# UP-REGULATED: 5 from each species 
+up_per_mirna <- per_mirna_en %>%
+  filter(mirna_expression == "up-regulated") %>%
+  group_by(species) %>%
+  slice_max(log10_fdr, n = 5, with_ties = FALSE) %>%
+  ungroup()
+
+# DOWN-REGULATED: top 10 from Aedes aegypti only 
+down_per_mirna_aae <- per_mirna_en %>%
+  filter(
+    mirna_expression == "down-regulated",
+    species == "Aedes aegypti"
+  ) %>%
+  slice_max(log10_fdr, n = 10, with_ties = FALSE)
+
+# COMBINE 
+per_mirna_exp_10 <- bind_rows(up_per_mirna, down_per_mirna_aae)
+
+## By mirna_expression
+ggplot(per_mirna_exp_10, aes(x = mirna, y = term_wrapped, fill = log10_fdr)) +
+  geom_tile(color = "white") +
+  facet_wrap(~ mirna_expression, scales = "free_y") +
+  scale_fill_viridis_c(
+    option = "plasma",      # or "plasma", "inferno", "viridis"
+    direction = -1,        # darker = more significant (higher -log10(FDR))
+    na.value = "grey90",
+    name = "-log10(FDR)"
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Enrichments by miRNA expression (per-miRNA)",
+       x = "miRNA",
+       y = "term description",
+       fill = "-log10(FDR")
+
+# ==== IMMUNE RELATED ENRICHMENTS BY SPECIES ====
+## Filter immune only data
+per_mirna_ann_immune <- per_mirna_ann |>
+  filter(category_of_interest == "immune")
+
+## By species (immune)
+ggplot(per_mirna_ann_immune, aes(x = mirna, y = term_wrapped, fill = log10_fdr)) +
+  geom_tile(color = "white") +
+  facet_wrap(~ species, scales = "free_y") +
+  scale_fill_viridis_c(
+    option = "plasma",      # or "plasma", "inferno", "viridis"
+    direction = -1,        # darker = more significant (higher -log10(FDR))
+    na.value = "grey90",
+    name = "-log10(FDR)"
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Immune-Related Enrichments by miRNA (per-miRNA) and Species",
+       x = "miRNA",
+       y = "term description",
+       fill = "-log10(FDR")
