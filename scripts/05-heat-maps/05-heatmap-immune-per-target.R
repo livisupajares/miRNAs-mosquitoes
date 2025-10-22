@@ -92,9 +92,13 @@ filter_immune_rows <- function(df) {
     )
 }
 
-# ==== PER-MIRNA ====
+# Apply the function to filter
 per_mirna_ann_immune <- filter_immune_rows(per_mirna_ann)
-
-# ==== ALL ====
 all_ann_immune <- filter_immune_rows(all_ann)
 
+# ==== SAVE FILTERED RESULTS ====
+write.csv(per_mirna_ann_immune, "results/04-heatmap/immune-related-annotations/per_mirna_ann_immune.csv", row.names = FALSE)
+write.csv(all_ann_immune, "results/04-heatmap/immune-related-annotations/all_ann_immune.csv", row.names = FALSE)
+
+# ==== PER-MIRNA HEATMAP ====
+# ==== ALL HEATMAP =====
