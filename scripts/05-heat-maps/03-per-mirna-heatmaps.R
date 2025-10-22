@@ -36,7 +36,7 @@ per_mirna_en <- per_mirna_en %>%
   mutate(term_wrapped = str_wrap(term_description, width = 30))
 
 
-# ==== HEATMAP PER MIRNA ANNOTATION ====
+# ==== HEATMAP PER MIRNA ====
 # ===== TOP 10 ENRICHMENTS BY SPECIES ====
 ## Filter top 10
 per_mirna_en_10 <- per_mirna_en |>
