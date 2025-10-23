@@ -44,8 +44,10 @@ all_en_5 <- all_en |>
 
 ## Filter top 5 down-regulated in Aedes aegypti
 aae_all_down_5 <- all_en |>
-  filter(mirna_expression == "down-regulated",
-         species == "Aedes aegypti") |>
+  filter(
+    mirna_expression == "down-regulated",
+    species == "Aedes aegypti"
+  ) |>
   slice_max(log10_fdr, n = 5, with_ties = FALSE)
 
 ## Merge both data frames
@@ -57,19 +59,46 @@ all_en_10 <- bind_rows(
 ## Top 10 data by species
 ggplot(all_en_10, aes(x = mirna_expression, y = term_wrapped, fill = log10_fdr)) +
   geom_tile(color = "white") +
-  facet_wrap(~ species, scales = "free_y") +
+  facet_wrap(~species, scales = "free_y") +
   scale_fill_viridis_c(
-    option = "plasma",      # or "plasma", "inferno", "viridis"
-    direction = -1,        # darker = more significant (higher -log10(FDR))
+    option = "plasma", # or "plasma", "inferno", "viridis"
+    direction = -1, # darker = more significant (higher -log10(FDR))
     na.value = "grey90",
     name = "-log10(FDR)"
   ) +
   theme_minimal(base_size = 10) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "Top 10 Significant Enrichments (all) per Species",
-       x = "miRNA expression",
-       y = "term description",
-       fill = "-log10(FDR")
+  labs(
+    title = "Top 10 Significant Enrichments (all) per Species",
+    x = "miRNA expression",
+    y = "term description",
+    fill = "-log10(FDR"
+  )
+
+# ==== HEATMAP ALL COMMON MIRNAS IN AEDES AEGYPTI ====
+## Filter by common_mirnas, but they correspond to all the down-regulated.
+aae_all_common_down <- all_ann |>
+  filter(mirna_expression == "down-regulated") |>
+  group_by(term_description)
+
+## Plot
+ggplot(aae_all_common_down, aes(x = dataset, y = term_wrapped, fill = log10_fdr)) +
+  geom_tile(color = "white") +
+  facet_wrap(~species, scales = "free_y") +
+  scale_fill_viridis_c(
+    option = "plasma", # or "plasma", "inferno", "viridis"
+    direction = -1, # darker = more significant (higher -log10(FDR))
+    na.value = "grey90",
+    name = "-log10(FDR)"
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(
+    title = "Enrichments of all common Aedes aegypti miRNAs",
+    x = "Dataset",
+    y = "term description",
+    fill = "-log10(FDR)"
+  )
 
 # ==== IMMUNE RELATED ENRICHMENTS BY SPECIES GROUPED BY MIRNA EXPRESSION ====
 ## Filter immune related enrichments
@@ -78,16 +107,18 @@ all_ann_immune <- all_ann |>
 
 ggplot(all_ann_immune, aes(x = mirna_expression, y = term_wrapped, fill = log10_fdr)) +
   geom_tile(color = "white") +
-  facet_wrap(~ species, scales = "free_y") +
+  facet_wrap(~species, scales = "free_y") +
   scale_fill_viridis_c(
-    option = "plasma",      # or "plasma", "inferno", "viridis"
-    direction = -1,        # darker = more significant (higher -log10(FDR))
+    option = "plasma", # or "plasma", "inferno", "viridis"
+    direction = -1, # darker = more significant (higher -log10(FDR))
     na.value = "grey90",
     name = "-log10(FDR)"
   ) +
   theme_minimal(base_size = 10) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "Immune-Related Enrichments by miRNA expression and Species",
-       x = "miRNA expression",
-       y = "term description",
-       fill = "-log10(FDR")
+  labs(
+    title = "Immune-Related Enrichments by miRNA expression and Species",
+    x = "miRNA expression",
+    y = "term description",
+    fill = "-log10(FDR"
+  )
