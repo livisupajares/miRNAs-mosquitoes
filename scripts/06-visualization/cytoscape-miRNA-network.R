@@ -29,3 +29,22 @@ all_ann_immune <- read.csv("results/04-heatmap/immune-related-annotations/all_an
 
 ## per-mirna
 per_mirna_ann_immune <- read.csv("results/04-heatmap/immune-related-annotations/per_mirna_ann_immune.csv")
+
+# ==== TABLE FOR TARGETS ONLY ====
+# ==== matching file ====
+aae_down_targets <- aae_down_targets %>%
+  # Add the "aae-" prefix only to aae_down_targets
+  mutate(microRNA = paste0("aae-", microRNA)) %>%
+  # Swap microRNA column with mRNA column
+  select(mRNA, gene_id, uniprot_id, microRNA, everything())
+
+# Add the 3 dataframe into a list
+targets_matching_cyt <- list(
+  "aae_down_targets_cyt" = aae_down_targets,
+  "aae_up_targets_cyt" = aae_up_targets,
+  "aal_up_targets_cyt" = aal_up_targets
+)
+
+# Keep only microRNA and uniprot_id column
+targets_matching_cyt <- targets_matching_cyt %>%
+  map(~ select(.x, uniprot_id, microRNA))
