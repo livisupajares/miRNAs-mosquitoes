@@ -79,3 +79,13 @@ targets_names_cyt <- targets_names_cyt %>%
 # ==== name file ====
 
 # ==== SAVE RESULTS ====
+# Targets only
+## matching file
+write.csv(targets_matching_cyt$aae_down_targets_cyt,"results/05-network-graph/targets-only/aae_down_targets_matching.csv", row.names = FALSE)
+write.csv(targets_matching_cyt$aae_up_targets_cyt, "results/05-network-graph/targets-only/aae_up_targets_matching.csv", row.names = FALSE)
+write.csv(targets_matching_cyt$aal_up_targets_cyt, "results/05-network-graph/targets-only/aal_up_targets_matching.csv", row.names = FALSE)
+
+## name file
+write.csv(targets_names_cyt$aae_down_targets_cyt, "results/05-network-graph/targets-only/aae_down_targets_names.csv", row.names = FALSE)
+write.csv(targets_names_cyt$aae_up_targets_cyt, "results/05-network-graph/targets-only/aae_up_targets_names.csv", row.names = FALSE)
+write.csv(targets_names_cyt$aal_up_targets_cyt, "results/05-network-graph/targets-only/aal_up_targets_names.csv", row.names = FALSE)
