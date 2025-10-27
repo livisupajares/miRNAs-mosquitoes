@@ -3,6 +3,7 @@
 
 # ==== LIBRARIES ====
 library(dplyr)
+library(purrr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
@@ -48,3 +49,33 @@ targets_matching_cyt <- list(
 # Keep only microRNA and uniprot_id column
 targets_matching_cyt <- targets_matching_cyt %>%
   map(~ select(.x, uniprot_id, microRNA))
+
+# ==== name file ====
+# Add results from above into a list
+targets_names_cyt <- list(
+  "aae_down_targets_cyt" = targets_matching_cyt$aae_down_targets_cyt,
+  "aae_up_targets_cyt" = targets_matching_cyt$aae_up_targets_cyt,
+  "aal_up_targets_cyt" = targets_matching_cyt$aal_up_targets_cyt
+)
+
+# Create name file table
+targets_names_cyt <- targets_names_cyt %>%
+  map(~ .x %>%
+        pivot_longer(
+          cols = everything(),
+          names_to = "type",
+          values_to = "name"
+        ) %>%
+        # Map column names to desired type labels
+        mutate(type = recode(type,
+                             uniprot_id = "protein",
+                             microRNA   = "miRNA")) %>%
+        distinct(name, type) %>%
+        select(name, type)
+  )
+
+# ==== TABLE FROM ENRICHMENTS ====
+# ==== matching file ====
+# ==== name file ====
+
+# ==== SAVE RESULTS ====
