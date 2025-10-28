@@ -118,5 +118,21 @@ enrich_names_all_cyt <- enrich_names_all_cyt %>%
 
 # ==== SAVE RESULTS ====
 ## Enrichment
+
 ## Matching file
+## Per-miRNA
+write.csv(enrich_matching_cyt$aae_enrich_cyt, "results/05-network-graph/02-enrichment/aae_per_mirna_enrich_matching.csv", row.names = FALSE)
+write.csv(enrich_matching_cyt$aal_enrich_cyt, "results/05-network-graph/02-enrichment/aal_per_mirna_enrich_matching.csv", row.names = FALSE)
+
+## All
+write.csv(enrich_all_cyt$aae_enrich_cyt, "results/05-network-graph/02-enrichment/aae_all_enrich_matching.csv", row.names = FALSE)
+write.csv(enrich_all_cyt$aal_enrich_cyt, "results/05-network-graph/02-enrichment/aal_all_enrich_matching.csv", row.names = FALSE)
+
 ## Name file
+## Per miRNA
+write.csv(enrich_names_cyt$aae_enrich_cyt, "results/05-network-graph/02-enrichment/aae_per_mirna_enrich_names.csv", row.names = FALSE)
+write.csv(enrich_names_cyt$aal_enrich_cyt, "results/05-network-graph/02-enrichment/aal_per_mirna_enrich_names.csv", row.names = FALSE)
+
+## All
+write.csv(enrich_names_all_cyt$aae_enrich_cyt, "results/05-network-graph/02-enrichment/aae_all_enrich_names.csv", row.names = FALSE)
+write.csv(enrich_names_all_cyt$aal_enrich_cyt, "results/05-network-graph/02-enrichment/aae_all_enrich_names.csv", row.names = FALSE)
