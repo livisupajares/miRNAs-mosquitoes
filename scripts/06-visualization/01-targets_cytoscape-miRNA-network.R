@@ -17,20 +17,6 @@ aae_up_targets <- read.csv("results/01-target-prediction/00-miRNAconsTarget/aae_
 ## aal up
 aal_up_targets <- read.csv("results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv", na = NA)
 
-# ==== uniprot enrich full ====
-## all
-final_ann_all <- read.csv("results/04-heatmap/final_ann_all.csv", na = NA)
-
-## per-mirna
-final_ann_per_mirna <- read.csv("results/04-heatmap/final_ann_per_mirna.csv")
-
-# ==== uniprot enrich immune ====
-## all
-all_ann_immune <- read.csv("results/04-heatmap/immune-related-annotations/all_ann_immune.csv")
-
-## per-mirna
-per_mirna_ann_immune <- read.csv("results/04-heatmap/immune-related-annotations/per_mirna_ann_immune.csv")
-
 # ==== TABLE FOR TARGETS ONLY ====
 # ==== matching file ====
 aae_down_targets <- aae_down_targets %>%
@@ -61,27 +47,23 @@ targets_names_cyt <- list(
 # Create name file table
 targets_names_cyt <- targets_names_cyt %>%
   map(~ .x %>%
-        pivot_longer(
-          cols = everything(),
-          names_to = "type",
-          values_to = "name"
-        ) %>%
-        # Map column names to desired type labels
-        mutate(type = recode(type,
-                             uniprot_id = "protein",
-                             microRNA   = "miRNA")) %>%
-        distinct(name, type) %>%
-        select(name, type)
-  )
-
-# ==== TABLE FROM ENRICHMENTS ====
-# ==== matching file ====
-# ==== name file ====
+    pivot_longer(
+      cols = everything(),
+      names_to = "type",
+      values_to = "name"
+    ) %>%
+    # Map column names to desired type labels
+    mutate(type = recode(type,
+      uniprot_id = "protein",
+      microRNA   = "miRNA"
+    )) %>%
+    distinct(name, type) %>%
+    select(name, type))
 
 # ==== SAVE RESULTS ====
 # Targets only
 ## matching file
-write.csv(targets_matching_cyt$aae_down_targets_cyt,"results/05-network-graph/targets-only/aae_down_targets_matching.csv", row.names = FALSE)
+write.csv(targets_matching_cyt$aae_down_targets_cyt, "results/05-network-graph/targets-only/aae_down_targets_matching.csv", row.names = FALSE)
 write.csv(targets_matching_cyt$aae_up_targets_cyt, "results/05-network-graph/targets-only/aae_up_targets_matching.csv", row.names = FALSE)
 write.csv(targets_matching_cyt$aal_up_targets_cyt, "results/05-network-graph/targets-only/aal_up_targets_matching.csv", row.names = FALSE)
 
