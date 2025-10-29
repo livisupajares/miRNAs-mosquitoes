@@ -8,7 +8,6 @@ library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
 # ==== uniprot enrich immune ====
-# ==== uniprot enrich full ====
 ## all
 final_ann_all <- read.csv("results/04-heatmap/final_ann_all.csv", na = NA)
 
