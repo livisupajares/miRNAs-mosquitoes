@@ -1,5 +1,7 @@
 # ~~~~~ EXTRACT & MAP KEGG IDS WITH LOGGING ~~~~~ #
-#
+# This script uses the Uniprot API to map uniprot id 
+# to kegg id of STRING DB annotation file where 
+# kegg id is missing.
 # Step 1: Extract KEGG from annotation
 # This script will take as input the Annotation.tsv files
 # from STRINGDB and take the other_names_and_aliases column
