@@ -50,3 +50,27 @@ if (nrow(aal_any_duplicates) > 0) {
   print("No duplicated uniprot_id found.")
 }
 
+# ==== MERGE =====
+# Create a new df and add kegg ids from aae_blastkoala to aae_original that have kegg_id as NA, match by uniprot ids
+
+## Aedes aegypti
+aae_all_keggids <- aae_original %>%
+  left_join(aae_blastkoala, 
+            by = c("mapped_id" = "uniprot_id")) %>%
+  mutate(
+    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y), 
+                      kegg_id.y, 
+                      kegg_id.x)
+  ) %>%
+  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity)  # remove the temporary columns
+
+## Aedes albopictus
+aal_all_keggids <- aal_original %>%
+  left_join(aal_blastkoala, 
+            by = c("mapped_id" = "uniprot_id")) %>%
+  mutate(
+    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y), 
+                      kegg_id.y, 
+                      kegg_id.x)
+  ) %>%
+  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity)  # remove the temporary columns
