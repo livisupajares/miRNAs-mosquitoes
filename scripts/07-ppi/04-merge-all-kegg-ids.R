@@ -150,3 +150,6 @@ aal_all_keggids %>%
     missing_kegg = sum(is.na(kegg_id)),
     with_kegg = sum(!is.na(kegg_id))
   )
+
+# TODO: remove uniprot ids without kegg ids
+# TODO: save final dataframe
