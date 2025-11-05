@@ -23,3 +23,30 @@ aae_blastkoala <- read.csv("results/03-ppi/blastkoala_keggid/aae_kegg_id.csv", n
 ## Aedes albopcitus
 aal_blastkoala <- read.csv("results/03-ppi/blastkoala_keggid/aal_kegg_id.csv", na.strings = c("", "NA"))
 
+# ==== Check duplicates ====
+# Aedes aegypti
+## Check for duplicated Uniprot IDs in aae_blastkoala
+aae_any_duplicates <- aae_blastkoala %>%
+  count(uniprot_id) %>%
+  filter(n > 1)
+
+if (nrow(aae_any_duplicates) > 0) {
+  print("There are duplicated uniprot_id entries:")
+  print(aae_any_duplicates)
+} else {
+  print("No duplicated uniprot_id found.")
+}
+
+# Aedes albopictus
+## Check for duplicated Uniprot IDs in aal_blastkoala
+aal_any_duplicates <- aal_blastkoala %>%
+  count(uniprot_id) %>%
+  filter(n > 1)
+
+if (nrow(aal_any_duplicates) > 0) {
+  print("There are duplicated uniprot_id entries:")
+  print(aal_any_duplicates)
+} else {
+  print("No duplicated uniprot_id found.")
+}
+
