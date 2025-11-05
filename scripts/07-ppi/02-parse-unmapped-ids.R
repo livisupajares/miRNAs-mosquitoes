@@ -37,6 +37,7 @@ print(aae_unmapped_ids, row.names = FALSE)
 print(aal_unmapped_ids, row.names = FALSE)
 
 # ==== SAVE TXT of uniprot ids without kegg_id
+# These files will be used in the fasta fetcher script using the Uniprot API created previously.
 writeLines(aae_unmapped_ids$mapped_id, con = "results/03-ppi/unmapped_kegg_ids/aae_unmapped_kegg.txt")
 writeLines(aal_unmapped_ids$mapped_id, con = "results/03-ppi/unmapped_kegg_ids/aal_unmapped_kegg.txt")
 
