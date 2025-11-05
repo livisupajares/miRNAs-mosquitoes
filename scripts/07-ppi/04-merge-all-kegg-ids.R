@@ -74,3 +74,79 @@ aal_all_keggids <- aal_original %>%
                       kegg_id.x)
   ) %>%
   select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity)  # remove the temporary columns
+
+# ==== STATISTICS ====
+# Count how many and which uniprot ids have no kegg_id
+## Aedes aegypti original table
+aae_original %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
+
+## Aedes aegypti blastKOALA table
+aae_blastkoala %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
+
+## Aedes aegypti final table
+# Count and extract mapped_id with NA in kegg_id
+aae_na_kegg <- aae_all_keggids %>%
+  filter(is.na(kegg_id)) %>%
+  pull(mapped_id)  # extracts the vector of UniProt IDs
+
+# Number of such entries
+aae_n_na_kegg <- length(aae_na_kegg)
+
+# Print results
+cat("Number of proteins without KEGG ID:", aae_n_na_kegg, "\n")
+print(aae_na_kegg)
+
+# Count how many have kegg ids and how many don't have
+aae_all_keggids %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
+
+## Aedes albopictus original table
+aal_original %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
+
+## Aedes albopictus blastoKOALA table
+aal_blastkoala %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
+
+## Aedes albopictus final table
+# Count and extract mapped_id with NA in kegg_id
+aal_na_kegg <- aal_all_keggids %>%
+  filter(is.na(kegg_id)) %>%
+  pull(mapped_id)  # extracts the vector of UniProt IDs
+
+# Number of such entries
+aal_n_na_kegg <- length(aal_na_kegg)
+
+# Print results
+cat("Number of proteins without KEGG ID:", aal_n_na_kegg, "\n")
+print(aal_na_kegg)
+
+# Count how many have kegg ids and how many don't have
+aal_all_keggids %>%
+  summarise(
+    total = n(),
+    missing_kegg = sum(is.na(kegg_id)),
+    with_kegg = sum(!is.na(kegg_id))
+  )
