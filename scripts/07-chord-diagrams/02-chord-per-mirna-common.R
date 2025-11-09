@@ -6,6 +6,7 @@ library(circlize)
 library(tibble)
 library(dplyr)
 library(tidyr)
+library(grid)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== Import data =====
@@ -136,6 +137,34 @@ protein_color_map <- edge_list %>%
   select(protein_name, color) %>% # Remove other columns for deframe
   deframe()
 
+# Build term_description -> color mapping (for legend)
+term_color_map <- edge_list %>%
+  distinct(term_description, .keep_all = TRUE) %>%
+  mutate(
+    color = case_when(
+      term_description == "Mixed, incl. RNA binding protein fox-1 homolog 1-like, and H zone" ~ "olivedrab2",
+      term_description == "RNA binding protein fox-1 homolog 1-like, and Regulation of striated muscle cell differentiation" ~ "peachpuff",
+      term_description == "mRNA 3-UTR binding" ~ "lightgreen",
+      term_description == "Alpha DNA polymerase:primase complex" ~ "lightblue",
+      term_description == "DNA replication initiation" ~ "purple",
+      term_description == "E2F mediated regulation of DNA replication" ~ "thistle2",
+      term_description == "FGFR3 ligand binding and activation" ~ "lightpink",
+      term_description == "FGFR3c ligand binding and activation" ~ "lightyellow2",
+      term_description == "Inhibition of replication initiation of damaged DNA by RB1/E2F1" ~ "lightcoral",
+      term_description == "Lagging Strand Synthesis" ~ "lightseagreen",
+      term_description == "Leading Strand Synthesis" ~ "lightsalmon",
+      term_description == "Polymerase switching" ~ "cadetblue1",
+      term_description == "Processive synthesis on the lagging strand" ~ "lightgoldenrod",
+      term_description == "Removal of the Flap Intermediate" ~ "burlywood1",
+      term_description == "DNA strand elongation" ~ "lightcyan3",
+      term_description == "BTB And C-terminal Kelch" ~ "violetred1",
+      term_description == "Aspartic peptidase domain superfamily" ~ "tan1",
+      TRUE ~ "gray"
+    )
+  ) %>%
+  select(term_description, color) %>%
+  deframe()
+
 # Create a legend for sectors
 # Define sector annotations
 sector_annotation <- data.frame(
@@ -195,3 +224,44 @@ for (i in 1:nrow(edge_list)) {
     lwd = 0.5
   )
 }
+
+# Create a viewport on the right side for legends
+pushViewport(viewport(x = 0.98, y = 0.5, width = 0.2, height = 0.9, just = c("right", "center")))
+
+# Vertical offset tracking
+y_pos <- 0.95
+line_height <- 0.04
+
+# --- miRNA Legend ---
+grid.text("miRNA", x = 0, y = y_pos, just = c("left", "top"), gp = gpar(fontsize = 10, fontface = "bold"))
+y_pos <- y_pos - line_height
+
+for (mir in names(mirna_color_map)) {
+  grid.rect(
+    x = 0, y = y_pos, width = 0.03, height = 0.02,
+    gp = gpar(col = NA, fill = mirna_color_map[mir]), just = c("left", "top")
+  )
+  grid.text(mir, x = 0.04, y = y_pos, just = c("left", "top"), gp = gpar(fontsize = 8))
+  y_pos <- y_pos - line_height
+}
+
+y_pos <- y_pos - 0.03 # extra space
+
+# --- Protein Function Legend ---
+grid.text("Protein Function", x = 0, y = y_pos, just = c("left", "top"), gp = gpar(fontsize = 10, fontface = "bold"))
+y_pos <- y_pos - line_height
+
+for (term in names(term_color_map)) {
+  grid.rect(
+    x = 0, y = y_pos, width = 0.03, height = 0.02,
+    gp = gpar(col = NA, fill = term_color_map[term]), just = c("left", "top")
+  )
+  # Truncate long names if needed
+  label <- if (nchar(term) > 40) paste0(substr(term, 1, 37), "...") else term
+  grid.text(label, x = 0.04, y = y_pos, just = c("left", "top"), gp = gpar(fontsize = 7))
+  y_pos <- y_pos - line_height
+  if (y_pos < 0.05) break # avoid overflow
+}
+
+# Exit the legend viewport
+upViewport()
