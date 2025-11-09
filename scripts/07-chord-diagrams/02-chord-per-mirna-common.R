@@ -145,7 +145,7 @@ sector_annotation <- data.frame(
 )
 
 # ==== Create chord diagram (with annotations) =====
-# circos.clear()
+circos.clear()
 
 # Initialize plot
 circos.initialize(factors = sector_names, xlim = c(0, 1))
