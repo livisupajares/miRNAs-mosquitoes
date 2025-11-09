@@ -57,10 +57,6 @@ edge_list <- pa_full_common_per_mirna %>%
     miRNA = as.character(miRNA)
   )
 
-# Clean and enforce character type
-edge_list$miRNA <- trimws(as.character(edge_list$miRNA))
-edge_list$protein_name <- trimws(as.character(edge_list$protein_name))
-
 # ==== Define circular layout =====
 # Let's define two sectors:
 # 1) Sector 1: miRNAs (bottom half)
@@ -68,20 +64,10 @@ edge_list$protein_name <- trimws(as.character(edge_list$protein_name))
 
 # Get unique miRNAs and proteins
 unique_miRNAs <- unique(edge_list$miRNA)
-unique_proteins <- unique(edge_list$protein_name) # or protein_id if you use it
+unique_proteins <- unique(edge_list$protein_name)
 
 # Create sector names
 sector_names <- c(unique_miRNAs, unique_proteins)
-sector_names <- trimws(as.character(sector_names))
-
-# Check for DUPLICATE sector names
-duplicated_sectors <- sector_names[duplicated(sector_names)]
-if (length(duplicated_sectors) > 0) {
-  stop(
-    "❌ Duplicated sector names found! This breaks circlize.\nDuplicated: ",
-    paste(duplicated_sectors, collapse = ", ")
-  )
-}
 
 # ==== Assign colors and annotations =====
 # Color miRNAs by expression
@@ -197,13 +183,6 @@ circos.track(
 for (i in 1:nrow(edge_list)) {
   miRNA_name <- edge_list$miRNA[i]
   protein_name <- edge_list$protein_name[i]
-
-  # Ensure both are in sector_names (optional, but safe)
-  if (!(miRNA_name %in% sector_names) || !(protein_name %in% sector_names)) {
-    warning("Skipping link: miRNA='", miRNA_name, "' or protein='", protein_name, "' not in sector_names")
-    next
-  }
-
   link_color <- mirna_color_map[miRNA_name]
 
   circos.link(
