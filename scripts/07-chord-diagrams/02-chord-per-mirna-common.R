@@ -168,12 +168,8 @@ for (i in 1:nrow(edge_list)) {
   miRNA_name <- edge_list$miRNA[i]
   protein_name <- edge_list$protein_name[i]
 
-  # Find indices (returns NA if not found)
-  from_idx <- match(miRNA_name, sector_names)
-  to_idx <- match(protein_name, sector_names)
-
-  # Skip if either is missing
-  if (is.na(from_idx) || is.na(to_idx)) {
+  # Ensure both are in sector_names (optional, but safe)
+  if (!(miRNA_name %in% sector_names) || !(protein_name %in% sector_names)) {
     warning("Skipping link: miRNA='", miRNA_name, "' or protein='", protein_name, "' not in sector_names")
     next
   }
@@ -181,9 +177,9 @@ for (i in 1:nrow(edge_list)) {
   link_color <- mirna_color_map[miRNA_name]
 
   circos.link(
-    sector.index1 = from_idx,
+    sector.index1 = miRNA_name, # ← USE NAME, not index
     point1 = 0.5,
-    sector.index2 = to_idx,
+    sector.index2 = protein_name, # ← USE NAME, not index
     point2 = 0.5,
     col = link_color,
     border = NA,
