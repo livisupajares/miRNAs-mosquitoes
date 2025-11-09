@@ -86,32 +86,62 @@ if (length(duplicated_sectors) > 0) {
 # ==== Assign colors and annotations =====
 # Color miRNAs by expression
 # Map miRNA expression to color
+# mirna_color_map <- edge_list %>%
+#   distinct(miRNA, mirna_expression) %>%
+#   mutate(
+#     color = case_when(
+#       mirna_expression == "up-regulated" ~ "red",
+#       mirna_expression == "down-regulated" ~ "blue",
+#       TRUE ~ "gray"
+#     )
+#   ) %>%
+#   select(miRNA, color) %>% # Remove the mirna_expression column or deframe won't work (requires 2 columns not 3)
+#   deframe()
+
+# Color each miRNA
 mirna_color_map <- edge_list %>%
-  distinct(miRNA, mirna_expression) %>%
+  distinct(miRNA) %>%
   mutate(
     color = case_when(
-      mirna_expression == "up-regulated" ~ "red",
-      mirna_expression == "down-regulated" ~ "blue",
+      miRNA == "aae-mir-2945-3p" ~ "red4",
+      miRNA == "aae-mir-276-5p" ~ "royalblue4",
+      miRNA == "aal-mir-276-5p" ~ "green4",
       TRUE ~ "gray"
     )
   ) %>%
-  select(miRNA, color) %>% # Remove the mirna_expression column or deframe won't work (requires 2 columns not 3)
   deframe()
 
-# Color targets by category/dataset
+# Color targets by category/tern_description/dataset
 protein_color_map <- edge_list %>%
-  distinct(protein_name, category_of_interest, dataset) %>%
+  distinct(protein_name, category_of_interest, dataset, term_description) %>%
   mutate(
     color = case_when(
       # category_of_interest == "immune" ~ "orange",
       # dataset == "GO Biological Process" ~ "lightgreen",
-      dataset == "GO Cellular Component" ~ "lightblue",
-      dataset == "GO Molecular Function" ~ "purple",
-      dataset == "Local Network Cluster String" ~ "lightgreen",
-      dataset == "Subcellular Location" ~ "pink",
-      dataset == "Reactome" ~ "yellow",
-      dataset == "SMART" ~ "brown",
-      dataset == "InterPro" ~ "cyan",
+      # dataset == "GO Cellular Component" ~ "lightblue",
+      # dataset == "GO Molecular Function" ~ "purple",
+      # dataset == "Local Network Cluster String" ~ "lightgreen",
+      # dataset == "Subcellular Location" ~ "pink",
+      # dataset == "Reactome" ~ "yellow",
+      # dataset == "SMART" ~ "brown",
+      # dataset == "InterPro" ~ "cyan",
+      term_description == "Mixed, incl. RNA binding protein fox-1 homolog 1-like, and H zone" ~ "olivedrab2",
+      term_description == "RNA binding protein fox-1 homolog 1-like, and Regulation of striated muscle cell differentiation" ~ "peachpuff",
+      term_description == "mRNA 3-UTR binding" ~ "lightgreen",
+      term_description == "Alpha DNA polymerase:primase complex" ~ "lightblue",
+      term_description == "DNA replication initiation" ~ "purple",
+      term_description == "E2F mediated regulation of DNA replication" ~ "thistle2",
+      term_description == "FGFR3 ligand binding and activation" ~ "lightpink",
+      term_description == "FGFR3c ligand binding and activation" ~ "lightyellow2",
+      term_description == "Inhibition of replication initiation of damaged DNA by RB1/E2F1" ~ "lightcoral",
+      term_description == "Lagging Strand Synthesis" ~ "lightseagreen",
+      term_description == "Leading Strand Synthesis" ~ "lightsalmon",
+      term_description == "Polymerase switching" ~ "cadetblue1",
+      term_description == "Processive synthesis on the lagging strand" ~ "lightgoldenrod",
+      term_description == "Removal of the Flap Intermediate" ~ "burlywood1",
+      term_description == "DNA strand elongation" ~ "lightcyan3",
+      term_description == "BTB And C-terminal Kelch" ~ "violetred1",
+      term_description == "Aspartic peptidase domain superfamily" ~ "tan1",
       TRUE ~ "gray"
     ),
     # Add a marker for immune (e.g., square)
