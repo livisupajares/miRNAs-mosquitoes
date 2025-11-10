@@ -69,6 +69,7 @@ unique_proteins <- unique(edge_list$protein_name)
 
 # Create sector names
 sector_names <- c(unique_miRNAs, unique_proteins)
+sector_names_prot <- c(unique_miRNAs, edge_list$protein_name)
 
 # ==== Assign colors and annotations =====
 # Color miRNAs by expression
@@ -173,11 +174,17 @@ sector_annotation <- data.frame(
   stringsAsFactors = FALSE
 )
 
+sector_annotation_all <- data.frame(
+  sector = c(rep("miRNA", length(edge_list$miRNA)), rep("protein", length(edge_list$protein_name))),
+  name = sector_names_all,
+  stringsAsFactors = FALSE
+)
+
 # ==== Create chord diagram (with annotations) =====
 circos.clear()
 
 # Initialize plot
-circos.initialize(factors = sector_names, xlim = c(0, 1))
+circos.initialize(factors = sector_names_prot, xlim = c(0, 1))
 
 # SINGLE TRACK: background + labels (ensures full sector initialization)
 circos.track(
