@@ -38,7 +38,7 @@ aae_common_per_mirna_matching <- aae_common_per_mirna %>%
     names_to = "source",
     values_to = "mirna/enriched_term"
   ) %>%
-  select(uniprot_id, `mirna/enriched_term`) %>%
+  select(protein_name, `mirna/enriched_term`) %>%
   filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "") %>%
   # Clean only enriched terms (those with spaces)
   mutate(`mirna/enriched_term` = if_else(
@@ -55,7 +55,7 @@ aal_common_per_mirna_matching <- aal_common_per_mirna %>%
     names_to = "source",
     values_to = "mirna/enriched_term"
   ) %>%
-  select(uniprot_id, `mirna/enriched_term`) %>%
+  select(protein_name, `mirna/enriched_term`) %>%
   filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "") %>%
   # Clean only enriched terms (those with spaces)
   mutate(`mirna/enriched_term` = if_else(
@@ -75,7 +75,7 @@ aae_common_per_mirna_names <- aae_common_per_mirna_matching %>%
   ) %>%
   # Classify based on content of 'name'
   mutate(type = case_when(
-    original_col == "uniprot_id" ~ "protein",
+    original_col == "protein_name" ~ "protein",
     grepl("^[a-z]{3}-mir", name, ignore.case = TRUE) ~ "miRNA",
     grepl(" ", name) ~ "enriched term", # terms usually have spaces
     TRUE ~ "enriched term" # fallback
@@ -92,7 +92,7 @@ aal_common_per_mirna_names <- aal_common_per_mirna_matching %>%
   ) %>%
   # Classify based on content of 'name'
   mutate(type = case_when(
-    original_col == "uniprot_id" ~ "protein",
+    original_col == "protein_name" ~ "protein",
     grepl("^[a-z]{3}-mir", name, ignore.case = TRUE) ~ "miRNA",
     grepl(" ", name) ~ "enriched term", # terms usually have spaces
     TRUE ~ "enriched term" # fallback
@@ -103,14 +103,14 @@ aal_common_per_mirna_names <- aal_common_per_mirna_matching %>%
 # ==== SAVE TABLES ====
 # ==== matching file ====
 # Per-mirna Aedes aegypti
-write.csv(aae_common_per_mirna_matching, "results/05-network-graph/04-common/aae_per_mirna_matching.csv", row.names = FALSE)
+write.csv(aae_common_per_mirna_matching, "results/06-network-graph/04-common/aae_per_mirna_matching.csv", row.names = FALSE)
 
 # Per-mirna Aedes albopictus
-write.csv(aal_common_per_mirna_matching, "results/05-network-graph/04-common/aal_per_mirna_matching.csv", row.names = FALSE)
+write.csv(aal_common_per_mirna_matching, "results/06-network-graph/04-common/aal_per_mirna_matching.csv", row.names = FALSE)
 
 # ==== naming file =====
 # Per-mirna Aedes aegypti
-write.csv(aae_common_per_mirna_names, "results/05-network-graph/04-common/aae_per_mirna_names.csv", row.names = FALSE)
+write.csv(aae_common_per_mirna_names, "results/06-network-graph/04-common/aae_per_mirna_names.csv", row.names = FALSE)
 
 # Per-mirna Aedes albopictus
-write.csv(aal_common_per_mirna_names, "results/05-network-graph/04-common/aal_per_mirna_names.csv", row.names = FALSE)
+write.csv(aal_common_per_mirna_names, "results/06-network-graph/04-common/aal_per_mirna_names.csv", row.names = FALSE)
