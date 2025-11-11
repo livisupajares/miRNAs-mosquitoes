@@ -4,6 +4,7 @@
 # ==== LIBRARIES ====
 library(dplyr)
 library(purrr)
+library(stringr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
@@ -31,8 +32,17 @@ immune_matching_cyt <- immune_per_mirna %>%
     names_to = "source",
     values_to = "mirna/enriched_term"
   ) %>%
-  select(uniprot_id, `mirna/enriched_term`) %>%
-  filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "")
+  # If only uniprot_id are needed, change protein_name to uniprot_id
+  select(protein_name, `mirna/enriched_term`) %>%
+  filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "") %>%
+  # Clean only enriched terms (those with spaces)
+  mutate(`mirna/enriched_term` = if_else(
+    str_detect(`mirna/enriched_term`, "\\s"), # has space → enriched term
+    str_replace(`mirna/enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>%
+      str_remove_all("[(),]") %>% # remove commas, parentheses
+      str_squish(), # clean up extra spaces
+    `mirna/enriched_term` # leave miRNA unchanged
+  ))
 
 # All
 # Filter by species
@@ -55,9 +65,19 @@ immune_all_matching_cyt <- immune_all_cyt %>%
       names_to = "source",
       values_to = "enriched_term"
     ) %>%
-    select(uniprot_id, enriched_term) %>%
-    filter(!is.na(enriched_term) & enriched_term != ""))
-
+    # If only uniprot_id are needed, change protein_name to uniprot_id
+    select(protein_name, enriched_term) %>%
+    filter(!is.na(enriched_term) & enriched_term != "") %>%
+    # Clean only enriched terms (those with spaces)
+    mutate(
+      `enriched_term` = if_else(
+        str_detect(`enriched_term`, "\\s"), # has space → enriched term
+        str_replace(`enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>%
+          str_remove_all("[(),]") %>% # remove commas, parentheses
+          str_squish(), # clean up extra spaces
+        `enriched_term`
+      ) # leave miRNA unchanged
+    ))
 # ===== name file =====
 # Per-miRNA
 # There is no Aedes aegypti in the immune per-mirna dataframe
@@ -69,7 +89,8 @@ immune_name_cyt <- immune_matching_cyt %>%
   ) %>%
   # Classify based on content of 'name'
   mutate(type = case_when(
-    original_col == "uniprot_id" ~ "protein",
+    # If only uniprot_id are needed, change protein_name to uniprot_id
+    original_col == "protein_name" ~ "protein",
     grepl("^[a-z]{3}-mir", name, ignore.case = TRUE) ~ "miRNA",
     grepl(" ", name) ~ "enriched term", # terms usually have spaces
     TRUE ~ "enriched term" # fallback
@@ -87,7 +108,8 @@ immune_all_name_cyt <- immune_all_matching_cyt %>%
     ) %>%
     # Classify based on content of 'name'
     mutate(type = case_when(
-      original_col == "uniprot_id" ~ "protein",
+      # If only uniprot_id are needed, change protein_name to uniprot_id
+      original_col == "protein_name" ~ "protein",
       grepl(" ", name) ~ "enriched term", # terms usually have spaces
       TRUE ~ "enriched term" # fallback
     )) %>%
