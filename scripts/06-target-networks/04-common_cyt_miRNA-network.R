@@ -42,10 +42,10 @@ aae_common_per_mirna_matching <- aae_common_per_mirna %>%
   filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "") %>%
   # Clean only enriched terms (those with spaces)
   mutate(`mirna/enriched_term` = if_else(
-    str_detect(`mirna/enriched_term`, "\\s"),  # has space → enriched term
-    str_replace(`mirna/enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>% 
-      str_remove_all(","),  # remove commas
-    `mirna/enriched_term`  # leave miRNA unchanged
+    str_detect(`mirna/enriched_term`, "\\s"), # has space → enriched term
+    str_replace(`mirna/enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>%
+      str_remove_all(","), # remove commas
+    `mirna/enriched_term` # leave miRNA unchanged
   ))
 
 # Per-mirna Aedes albopictus
@@ -59,10 +59,10 @@ aal_common_per_mirna_matching <- aal_common_per_mirna %>%
   filter(!is.na(`mirna/enriched_term`) & `mirna/enriched_term` != "") %>%
   # Clean only enriched terms (those with spaces)
   mutate(`mirna/enriched_term` = if_else(
-    str_detect(`mirna/enriched_term`, "\\s"),  # has space → enriched term
-    str_replace(`mirna/enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>% 
-      str_remove_all(","),  # remove commas
-    `mirna/enriched_term`  # leave miRNA unchanged
+    str_detect(`mirna/enriched_term`, "\\s"), # has space → enriched term
+    str_replace(`mirna/enriched_term`, "^Mixed,\\s*incl\\.?\\s*", "") %>%
+      str_remove_all(","), # remove commas
+    `mirna/enriched_term` # leave miRNA unchanged
   ))
 
 # ==== naming file =====
