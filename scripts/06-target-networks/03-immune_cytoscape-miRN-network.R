@@ -165,7 +165,7 @@ immune_all_name_cyt <- immune_all_matching_cyt %>%
     distinct(name, type))
 
 # ==== SAVE FILES ====
-# matching files
+## matching files
 # per-mirna
 write.csv(immune_matching_cyt, "results/06-network-graph/03-immune/aal_per_mirna_immune_matching.csv", row.names = FALSE)
 
@@ -173,9 +173,16 @@ write.csv(immune_matching_cyt, "results/06-network-graph/03-immune/aal_per_mirna
 write.csv(immune_all_matching_cyt$aae_immune_all_cyt, "results/06-network-graph/03-immune/aae_all_immune_matching.csv", row.names = FALSE)
 write.csv(immune_all_matching_cyt$aal_immune_all_cyt, "results/06-network-graph/03-immune/aal_all_immune_matching.csv", row.names = FALSE)
 
-# name file
+# All common
+write.csv(aae_immune_common_matching, "results/06-network-graph/03-immune/aae_all_common_immune_matching.csv", row.names = FALSE)
+
+## name file
+# per-mirna
 write.csv(immune_name_cyt, "results/06-network-graph/03-immune/aal_per_mirna_immune_names.csv", row.names = FALSE)
 
 # All
 write.csv(immune_all_name_cyt$aae_immune_all_cyt, "results/06-network-graph/03-immune/aae_all_immune_names.csv", row.names = FALSE)
 write.csv(immune_all_name_cyt$aal_immune_all_cyt, "results/06-network-graph/03-immune/aal_all_immune_names.csv", row.names = FALSE)
+
+# All common
+write.csv(aae_immune_common_name, "results/06-network-graph/03-immune/aae_all_common_immune_names.csv", row.names = FALSE)
