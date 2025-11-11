@@ -119,15 +119,15 @@ immune_all_name_cyt <- immune_all_matching_cyt %>%
 # ==== SAVE FILES ====
 # matching files
 # per-mirna
-write.csv(immune_matching_cyt, "results/05-network-graph/03-immune/aal_per_mirna_immune_matching.csv", row.names = FALSE)
+write.csv(immune_matching_cyt, "results/06-network-graph/03-immune/aal_per_mirna_immune_matching.csv", row.names = FALSE)
 
 # All
-write.csv(immune_all_matching_cyt$aae_immune_all_cyt, "results/05-network-graph/03-immune/aae_all_immune_matching.csv", row.names = FALSE)
-write.csv(immune_all_matching_cyt$aal_immune_all_cyt, "results/05-network-graph/03-immune/aal_all_immune_matching.csv", row.names = FALSE)
+write.csv(immune_all_matching_cyt$aae_immune_all_cyt, "results/06-network-graph/03-immune/aae_all_immune_matching.csv", row.names = FALSE)
+write.csv(immune_all_matching_cyt$aal_immune_all_cyt, "results/06-network-graph/03-immune/aal_all_immune_matching.csv", row.names = FALSE)
 
 # name file
-write.csv(immune_name_cyt, "results/05-network-graph/03-immune/aal_per_mirna_immune_names.csv", row.names = FALSE)
+write.csv(immune_name_cyt, "results/06-network-graph/03-immune/aal_per_mirna_immune_names.csv", row.names = FALSE)
 
 # All
-write.csv(immune_all_name_cyt$aae_immune_all_cyt, "results/05-network-graph/03-immune/aae_all_immune_names.csv", row.names = FALSE)
-write.csv(immune_all_name_cyt$aal_immune_all_cyt, "results/05-network-graph/03-immune/aal_all_immune_names.csv", row.names = FALSE)
+write.csv(immune_all_name_cyt$aae_immune_all_cyt, "results/06-network-graph/03-immune/aae_all_immune_names.csv", row.names = FALSE)
+write.csv(immune_all_name_cyt$aal_immune_all_cyt, "results/06-network-graph/03-immune/aal_all_immune_names.csv", row.names = FALSE)
