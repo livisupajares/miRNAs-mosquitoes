@@ -9,3 +9,8 @@
 # - Between `Identifier` and `node_degree`, add `id` (kegg ids) and `protein_name` (eggnog mapper)
 # Finally, it will remove nodes without kegg ids in both files for both species
 # 
+
+# ==== IMPORT LIBRARIES ====
+library(dplyr)
+library(tidylog, warn.conflicts = FALSE)
+
