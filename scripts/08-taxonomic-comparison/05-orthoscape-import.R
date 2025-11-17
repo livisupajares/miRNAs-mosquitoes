@@ -14,3 +14,7 @@
 library(dplyr)
 library(tidylog, warn.conflicts = FALSE)
 
+# ==== IMPORT DATA ====
+# Import node data
+# Import node degree data
+# Import data that have the kegg ids, uniprot ids and protein names (eggnog mapper)
