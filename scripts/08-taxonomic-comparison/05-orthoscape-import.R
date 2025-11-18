@@ -16,5 +16,11 @@ library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
 # Import node data
+aae_edge <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aae/aedes_aegypti_STRING.tsv", sep = "\t")
+aal_edge <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aal/aedes_albopictus_STRING.tsv", sep = "\t")
+
 # Import node degree data
+aae_degree <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_string_node_degrees.tsv", sep = "\t")
+aal_degree <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_string_node_degrees.tsv", sep = "\t")
+
 # Import data that have the kegg ids, uniprot ids and protein names (eggnog mapper)
