@@ -6,6 +6,7 @@
 
 # ===== Libraries =====
 library(dplyr)
+library(tidyr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ==== Import data =====
@@ -156,5 +157,11 @@ aal_all_keggids %>%
   )
 
 # ==== REMOVE DATA WITHOUT KEGG IDS ====
-# TODO: remove uniprot ids without kegg ids
 # TODO: save final dataframe
+# Remove uniprot ids without kegg ids
+## Aedes aegypti
+aae_all_keggids_2 <- aae_all_keggids %>% drop_na(kegg_id)
+
+## Aedes albopictus
+aal_all_keggids_2 <- aal_all_keggids %>% drop_na(kegg_id)
+
