@@ -29,3 +29,5 @@ aae_kegg_uniprot <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/03
 aal_kegg_uniprot <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aal_keggids.csv")
 
 ## protein names
+## This dataset has both species
+prot_names <- read.csv("results/04-heatmap/final_ann_all.csv")
