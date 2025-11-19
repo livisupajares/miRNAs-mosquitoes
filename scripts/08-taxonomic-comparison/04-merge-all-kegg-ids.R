@@ -1,7 +1,7 @@
 # ~~~~ MERGE ALL KEGG IDS ~~~~~
 # After extracting the kegg ids from the blastKOALA
 # we need to merge these new kegg ids to the original
-# table and then see how many uniprot ids doesn't have 
+# table and then see how many uniprot ids doesn't have
 # kegg ids
 
 # ===== Libraries =====
@@ -11,17 +11,17 @@ library(tidylog, warn.conflicts = FALSE)
 # ==== Import data =====
 # Original tables
 ## Aedes aegypti
-aae_original <- read.csv("results/03-ppi/aae_string_protein_annotations_with_kegg.tsv", sep = "\t", na.strings = c("", "NA"))
+aae_original <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/aae_string_protein_annotations_with_kegg.tsv", sep = "\t", na.strings = c("", "NA"))
 
 ## Aedes albopcitus
-aal_original <- read.csv("results/03-ppi/aal_string_protein_annotations_with_kegg.tsv", sep = "\t", na.strings = c("", "NA"))
+aal_original <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/aal_string_protein_annotations_with_kegg.tsv", sep = "\t", na.strings = c("", "NA"))
 
 # New tables with the new kegg ids
 ## Aedes aegypti
-aae_blastkoala <- read.csv("results/03-ppi/blastkoala_keggid/aae_kegg_id.csv", na.strings = c("", "NA"))
+aae_blastkoala <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/blastkoala_keggid/aae_kegg_id.csv", na.strings = c("", "NA"))
 
 ## Aedes albopcitus
-aal_blastkoala <- read.csv("results/03-ppi/blastkoala_keggid/aal_kegg_id.csv", na.strings = c("", "NA"))
+aal_blastkoala <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/blastkoala_keggid/aal_kegg_id.csv", na.strings = c("", "NA"))
 
 # ==== Check duplicates ====
 # Aedes aegypti
@@ -55,25 +55,29 @@ if (nrow(aal_any_duplicates) > 0) {
 
 ## Aedes aegypti
 aae_all_keggids <- aae_original %>%
-  left_join(aae_blastkoala, 
-            by = c("mapped_id" = "uniprot_id")) %>%
-  mutate(
-    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y), 
-                      kegg_id.y, 
-                      kegg_id.x)
+  left_join(aae_blastkoala,
+    by = c("mapped_id" = "uniprot_id")
   ) %>%
-  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity)  # remove the temporary columns
+  mutate(
+    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y),
+      kegg_id.y,
+      kegg_id.x
+    )
+  ) %>%
+  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity) # remove the temporary columns
 
 ## Aedes albopictus
 aal_all_keggids <- aal_original %>%
-  left_join(aal_blastkoala, 
-            by = c("mapped_id" = "uniprot_id")) %>%
-  mutate(
-    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y), 
-                      kegg_id.y, 
-                      kegg_id.x)
+  left_join(aal_blastkoala,
+    by = c("mapped_id" = "uniprot_id")
   ) %>%
-  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity)  # remove the temporary columns
+  mutate(
+    kegg_id = if_else(is.na(kegg_id.x) & !is.na(kegg_id.y),
+      kegg_id.y,
+      kegg_id.x
+    )
+  ) %>%
+  select(-kegg_id.x, -kegg_id.y, -URL, -fasta_header, -identity) # remove the temporary columns
 
 # ==== STATISTICS ====
 # Count how many and which uniprot ids have no kegg_id
@@ -97,7 +101,7 @@ aae_blastkoala %>%
 # Count and extract mapped_id with NA in kegg_id
 aae_na_kegg <- aae_all_keggids %>%
   filter(is.na(kegg_id)) %>%
-  pull(mapped_id)  # extracts the vector of UniProt IDs
+  pull(mapped_id) # extracts the vector of UniProt IDs
 
 # Number of such entries
 aae_n_na_kegg <- length(aae_na_kegg)
@@ -134,7 +138,7 @@ aal_blastkoala %>%
 # Count and extract mapped_id with NA in kegg_id
 aal_na_kegg <- aal_all_keggids %>%
   filter(is.na(kegg_id)) %>%
-  pull(mapped_id)  # extracts the vector of UniProt IDs
+  pull(mapped_id) # extracts the vector of UniProt IDs
 
 # Number of such entries
 aal_n_na_kegg <- length(aal_na_kegg)
@@ -151,5 +155,6 @@ aal_all_keggids %>%
     with_kegg = sum(!is.na(kegg_id))
   )
 
+# ==== REMOVE DATA WITHOUT KEGG IDS ====
 # TODO: remove uniprot ids without kegg ids
 # TODO: save final dataframe
