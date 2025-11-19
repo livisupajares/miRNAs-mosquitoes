@@ -137,16 +137,77 @@ aal_edge_ortho1 <- aal_edge %>%
 
 # ==== ADD COLUMNS TO NODE DEGREE DATA ====
 ## Aedes aegypti
+aae_degree_ortho1 <- aae_degree %>%
+  # Join with kegg_uniprot to get uniprot IDs for identifier
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    by = "identifier"
+  ) %>%
+  rename(uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, kegg_id),
+    by = "identifier"
+  ) %>%
+  rename(id = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = "uniprot_id"
+  ) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node, identifier, uniprot_id, id, protein_name,
+    everything()
+  )
 
 ## Aedes albopictus
+aal_degree_ortho1 <- aal_degree %>%
+  # Join with kegg_uniprot to get uniprot IDs for identifier
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, mapped_id),
+    by = "identifier"
+  ) %>%
+  rename(uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, kegg_id),
+    by = "identifier"
+  ) %>%
+  rename(id = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aal_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = "uniprot_id"
+  ) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node, identifier, uniprot_id, id, protein_name,
+    everything()
+  )
 
 # ==== REMOVE NODES WITHOUT KEGG ID ====
 # Uses tidyr to remove rows when id1 OR id2 is an NA value.
 ## Aedes aegypti
 ## For Edge data
-aae_edge_ortho2 <- aae_edge_ortho1 %>% drop_na(id1, id2)
+aae_edge_ortho2 <- aae_edge_ortho1 %>% drop_na(id1, id2) %>%
+  # If there are NA values on protein_name_1 or protein_name_2
+  # then copy the `node1_uniprot_id` and `node2_uniprot_id`, respectively
+  mutate(
+    protein_name_1 = ifelse(is.na(protein_name_1), node1_uniprot_id, protein_name_1),
+    protein_name_2 = ifelse(is.na(protein_name_2), node2_uniprot_id, protein_name_2)
+  )
+
+## For Degree data
+aae_degree_ortho2 <- aae_degree_ortho1 %>% drop_na(id) %>%
+  # If there are NA values on protein_name
+  # then copy the `uniprot_id` value
+  mutate(
+    protein_name = ifelse(is.na(protein_name), uniprot_id, protein_name)
+  )
 
 ## Aedes albopictus
+## For Edge data
 aal_edge_ortho2 <- aal_edge_ortho1 %>%
   drop_na(id1, id2) %>%
   # If there are NA values on protein_name_1 or protein_name_2
@@ -154,4 +215,12 @@ aal_edge_ortho2 <- aal_edge_ortho1 %>%
   mutate(
     protein_name_1 = ifelse(is.na(protein_name_1), node1_uniprot_id, protein_name_1),
     protein_name_2 = ifelse(is.na(protein_name_2), node2_uniprot_id, protein_name_2)
+  )
+
+## For degree data
+aal_degree_ortho2 <- aal_degree_ortho1 %>% drop_na(id) %>%
+  # If there are NA values on protein_name
+  # then copy the `uniprot_id` value
+  mutate(
+    protein_name = ifelse(is.na(protein_name), uniprot_id, protein_name)
   )
