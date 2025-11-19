@@ -157,7 +157,6 @@ aal_all_keggids %>%
   )
 
 # ==== REMOVE DATA WITHOUT KEGG IDS ====
-# TODO: save final dataframe
 # Remove uniprot ids without kegg ids
 ## Aedes aegypti
 aae_all_keggids_2 <- aae_all_keggids %>% drop_na(kegg_id)
@@ -165,3 +164,9 @@ aae_all_keggids_2 <- aae_all_keggids %>% drop_na(kegg_id)
 ## Aedes albopictus
 aal_all_keggids_2 <- aal_all_keggids %>% drop_na(kegg_id)
 
+# Save final dataframe
+## Aedes aegypti
+write.csv(aae_all_keggids_2, "results/03-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aae_keggids.csv", row.names = FALSE)
+
+## Aedes albopictus
+write.csv(aal_all_keggids_2, "results/03-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aal_keggids.csv", row.names = FALSE)
