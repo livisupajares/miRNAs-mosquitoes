@@ -94,6 +94,11 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
     # Gradient color scale for FDR
     scale_color_gradient(low = "red", high = "blue", name = "FDR") +
 
+    # Set x-axis limits to start at 0 and end at the maximum value + a small buffer
+    scale_x_continuous(
+      limits = c(0, max(filtered_data[[x_variable]], na.rm = TRUE) * 1.1) # 10% buffer
+    ) +
+
     # Simplify theme without dynamic y-axis label colors
     ggtitle(stringr::str_wrap(plot_title)) +
     theme(
