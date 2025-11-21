@@ -9,8 +9,8 @@ library(stringr)
 # ==== Load enrichment results ====
 ## Import .csv files
 # All before filtering
-per_mirna <- read.csv("results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv")
-all <- read.csv("results/02-enrichment/03-enrichments-important-process/all-stringdb.csv")
+all <- read.csv("results/04-heatmap/final_enrichment_all.csv")
+per_mirna <- read.csv("results/04-heatmap/final_enrichment_per_mirna.csv")
 
 # ==== Add -LogFDR column ======
 per_mirna <- per_mirna |> mutate("-log(fdr)" = -log(false_discovery_rate))
@@ -23,11 +23,13 @@ all <- all |> mutate("-log(fdr)" = -log(false_discovery_rate))
 # All
 all <- all |>
   group_by(species) |>
+  group_by(category_of_interest) |>
   arrange(desc(signal), .by_group = TRUE)
 
 # per-mirna
 per_mirna <- per_mirna |>
   group_by(species) |>
+  group_by(category_of_interest) |>
   arrange(desc(signal), .by_group = TRUE)
 
 # ==== Make Lolipop graphs ====
@@ -59,7 +61,7 @@ create_enrichment_plot <- function(species_name, dataframe, dataset_name = NULL,
       filter(species == species_name, category_of_interest == !!category_of_interest)
 
     # Create title with category filter
-    plot_title <- paste("Enriched Terms from", species_name, "miRNA targets in all up-regulated miRNAs (Category:", category_of_interest, ")")
+    plot_title <- paste("Enriched Terms from", species_name, "miRNA targets in all up-regulated and common down-regulated miRNAs (Category:", category_of_interest, ")")
   }
 
   # Check if filtered_data has rows
@@ -131,6 +133,14 @@ all_aegypti <- all |>
   filter(species == "Aedes aegypti") |>
   distinct(dataset)
 print(all_aegypti)
+
+# All, Aedes aegypti, immune
+create_enrichment_plot(
+  species_name = "Aedes aegypti",
+  dataframe = all,
+  category_of_interest = "immune",
+  x_variable = "-log(fdr)"
+)
 
 # All, Aedes aegypti, GO Biological Process, by signal
 create_enrichment_plot(
