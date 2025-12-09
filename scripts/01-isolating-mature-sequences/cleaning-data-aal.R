@@ -3,6 +3,7 @@
 # ===== Load libraries & files =====
 library(dplyr)
 source("scripts/functions.R")
+library(tidylog, warn.conflicts = FALSE)
 
 # ===== Importing data =====
 # Add NA to all empty spaces
@@ -47,7 +48,15 @@ problematic_mirnas <- aal_mirna_mat_denv |>
 
 print(problematic_mirnas)
 
-# Remove rows where mirna_name is in problematic_mirnas
+# Compute number of miRNAs after removing problematic miRNAs.
+n_unique_after_first_pipe <- aal_mirna_mat_denv |>
+  filter(!mirna_name %in% problematic_mirnas) |>
+  pull(mirna_name) |>
+  n_distinct() # 46
+
+print(n_unique_after_first_pipe) # 46
+
+# Actual Pipeline: Remove rows where mirna_name is in problematic_mirnas
 aal_mirna_mat_denv_up <- aal_mirna_mat_denv |>
   # Remove problematic miRNAs
   filter(!mirna_name %in% problematic_mirnas) |>
