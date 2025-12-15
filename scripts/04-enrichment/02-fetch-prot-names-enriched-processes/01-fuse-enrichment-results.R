@@ -37,7 +37,7 @@ aae_all_down <- read.csv("results/02-enrichment/02-exports-google-sheets/aae-all
 per_mirna_stringdb <- rbind(aae_per_mirna_stringdb, aal_per_mirna_stringdb)
 
 # Venny
-venny_stringdb <- rbind(aae_venny_stringdb, aal_venny_stringdb)
+#venny_stringdb <- rbind(aae_venny_stringdb, aal_venny_stringdb)
 
 # All
 all_stringdb <- rbind(aae_all_stringdb, aal_all_stringdb)
@@ -48,7 +48,7 @@ all_stringdb <- rbind(aae_all_stringdb, aal_all_stringdb)
 per_mirna_stringdb$dataset <- as.factor(per_mirna_stringdb$dataset)
 
 # Venny
-venny_stringdb$dataset <- as.factor(venny_stringdb$dataset)
+#venny_stringdb$dataset <- as.factor(venny_stringdb$dataset)
 
 # All
 all_stringdb$dataset <- as.factor(all_stringdb$dataset)
@@ -81,8 +81,8 @@ levels_per_mirna_stringdb <- unique(per_mirna_stringdb$dataset)
 print(sort(levels_per_mirna_stringdb))
 
 ## Venny STRINGDB
-levels_venny_stringdb <- unique(venny_stringdb$dataset)
-print(sort(levels_venny_stringdb))
+# levels_venny_stringdb <- unique(venny_stringdb$dataset)
+# print(sort(levels_venny_stringdb))
 
 ## All STRINGDB
 levels_all_stringdb <- unique(all_stringdb$dataset)
