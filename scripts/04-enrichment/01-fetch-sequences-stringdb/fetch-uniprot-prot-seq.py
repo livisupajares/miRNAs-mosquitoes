@@ -307,32 +307,32 @@ if __name__ == "__main__":
                     "\n".join(fasta_sequences)
                 )  # Combine all sequences into one file
             print(
-                f"✅ Saved {len(fasta_sequences)} sequences for {mirna} to {fasta_filename}"
+                f"Saved {len(fasta_sequences)} sequences for {mirna} to {fasta_filename}"
             )
         else:
-            print(f"❌ No valid sequences found for {mirna}")
+            print(f"No valid sequences found for {mirna}")
         
         # Save failures for THIS txt file before moving to next
         if failed_for_mirna:
             failed_summary[mirna] = failed_for_mirna
 
-    print("\n✅Script completed successfully.")
+    print("\nScript completed successfully.")
 
     # =================== FINAL SUMMARY ===================
     print("\n" + "=" * 60)
-    print("            🚨 FINAL FAILURE SUMMARY 🚨")
+    print("            FINAL FAILURE SUMMARY")
     print("=" * 60)
 
     if not failed_summary:
-        print("🎉 All accessions were successfully fetched! No failures.")
+        print("All accessions were successfully fetched! No failures.")
     else:
         total_failed = sum(len(acc_list) for acc_list in failed_summary.values())
         print(
-            f"❌ {total_failed} accession(s) failed across {len(failed_summary)} miRNA(s):\n"
+            f"{total_failed} accession(s) failed across {len(failed_summary)} miRNA(s):\n"
         )
 
         for mirna, failed_accs in failed_summary.items():
-            print(f"📁 {mirna} ({len(failed_accs)} failure(s)):")
+            print(f"{mirna} ({len(failed_accs)} failure(s)):")
             # Deduplicate and show up to 10, then summarize
             unique_failed = sorted(set(failed_accs))
             for acc in unique_failed[:10]:
@@ -341,6 +341,6 @@ if __name__ == "__main__":
                 print(f"    ... and {len(unique_failed) - 10} more")
             print()
 
-        print(f"📄 Full error details are logged in: {log_directory}/")
+        print(f"Full error details are logged in: {log_directory}/")
     print("=" * 60)
-    print("✅ Script completed successfully.")
+    print("Script completed successfully.")

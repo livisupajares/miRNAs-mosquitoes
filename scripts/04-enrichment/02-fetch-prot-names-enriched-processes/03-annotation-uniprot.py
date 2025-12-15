@@ -232,7 +232,7 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
     uniprot_col_idx = get_uniprot_col_index(filename)
 
     cols = ["protein_name", "gene_primary", "cc_function", "go_p", "go_f"]
-    # ✅ Initialize new columns only if they don't exist
+    # Initialize new columns only if they don't exist
     for col in cols:
         if col not in df.columns:
             df[col] = "NA"
@@ -278,14 +278,14 @@ def main():
 
     for input_file in input_files:
         if not input_file.exists():
-            print(f"⚠️  Skipping missing file: {input_file.name}")
+            print(f"Skipping missing file: {input_file.name}")
             continue
 
-        print(f"\n📄 Processing: {input_file.name}")
+        print(f"\nProcessing: {input_file.name}")
         logger = setup_logger(f"logger_{input_file.stem}", log_dir / f"log_{input_file.stem}.log")
 
         try:
-            # ✅ READ WITH HEADERS
+            # Read with headers
             df = pd.read_csv(input_file, dtype=str, keep_default_na=False)
         except Exception as e:
             logger.error(f"Failed to read {input_file}: {e}")
@@ -295,33 +295,33 @@ def main():
         global_summary[input_file.name] = failed_ids
 
         output_path = out_dir / f"{input_file.stem}_annotated.csv"
-        # ✅ WRITE WITH HEADERS
+        # Write with headers
         annotated_df.to_csv(output_path, index=False, header=True)
-        logger.info(f"✅ Saved to {output_path}")
+        logger.info(f"Saved to {output_path}")
 
     # Final summary
     print("\n" + "=" * 60)
-    print("            🚨 FINAL FAILURE SUMMARY 🚨")
+    print("            FINAL FAILURE SUMMARY")
     print("=" * 60)
 
     total_failures = sum(len(ids) for ids in global_summary.values())
     if total_failures == 0:
-        print("🎉 All entries successfully annotated!")
+        print("All entries successfully annotated!")
     else:
-        print(f"❌ {total_failures} UniProt ID(s) failed across {len(global_summary)} file(s):\n")
+        print(f"{total_failures} UniProt ID(s) failed across {len(global_summary)} file(s):\n")
         for fname, failed_list in global_summary.items():
             if failed_list:
                 unique_failed = sorted(set(failed_list))
-                print(f"📁 {fname} ({len(unique_failed)} failure(s)):")
+                print(f"{fname} ({len(unique_failed)} failure(s)):")
                 for uid in unique_failed[:10]:
                     print(f"    • {uid}")
                 if len(unique_failed) > 10:
                     print(f"    ... and {len(unique_failed) - 10} more")
                 print()
-        print(f"📄 Logs: {log_dir}/")
+        print(f"Logs: {log_dir}/")
 
     print("=" * 60)
-    print("✅ Annotation complete.")
+    print("Annotation complete.")
 
 
 if __name__ == "__main__":
