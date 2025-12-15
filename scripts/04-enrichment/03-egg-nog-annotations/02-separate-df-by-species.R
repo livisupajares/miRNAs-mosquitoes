@@ -95,9 +95,9 @@ for (name in names(df_list)) {
 
 
 # ==== Save final df =====
-write.csv(full_expanded_all_down_stringdb_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_down_annotated.csv", row.names = FALSE)
-write.csv(aae_all_annotated, file = "results/02-enrichment/05-blast-annotation/aae_all_annotated.csv", row.names = FALSE)
-write.csv(aal_all_annotated, file = "results/02-enrichment/05-blast-annotation/aal_all_annotated.csv", row.names = FALSE)
-write.csv(full_expanded_per_mirna_down_stringdb_annotated, file = "results/02-enrichment/05-blast-annotation/aae_per_mirna_down_annotated.csv", row.names = FALSE)
-write.csv(aae_per_mirna_annotated, file = "results/02-enrichment/05-blast-annotation/aae_per_mirna_annotated.csv", row.names = FALSE)
-write.csv(aal_per_mirna_annotated, file = "results/02-enrichment/05-blast-annotation/aal_per_mirna_annotated.csv", row.names = FALSE)
+write.csv(full_expanded_all_down_stringdb_annotated, file = "results/02-enrichment/05-eggnog-annotation/aae_all_down_annotated.csv", row.names = FALSE)
+write.csv(aae_all_annotated, file = "results/02-enrichment/05-eggnog-annotation/aae_all_annotated.csv", row.names = FALSE)
+write.csv(aal_all_annotated, file = "results/02-enrichment/05-eggnog-annotation/aal_all_annotated.csv", row.names = FALSE)
+write.csv(full_expanded_per_mirna_down_stringdb_annotated, file = "results/02-enrichment/05-eggnog-annotation/aae_per_mirna_down_annotated.csv", row.names = FALSE)
+write.csv(aae_per_mirna_annotated, file = "results/02-enrichment/05-eggnog-annotation/aae_per_mirna_annotated.csv", row.names = FALSE)
+write.csv(aal_per_mirna_annotated, file = "results/02-enrichment/05-eggnog-annotation/aal_per_mirna_annotated.csv", row.names = FALSE)
