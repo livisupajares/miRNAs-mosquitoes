@@ -1353,6 +1353,30 @@
       "git_last_commit_date": "2025-04-15",
       "Repository": "Bioconductor 3.21"
     },
+    "R4RNA": {
+      "Package": "R4RNA",
+      "Version": "1.36.0",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "An R package for RNA visualization and analysis",
+      "Date": "2015-11-02",
+      "Author": "Daniel Lai, Irmtraud Meyer <irmtraud.meyer@cantab.net>",
+      "Maintainer": "Daniel Lai <jujubix@cs.ubc.ca>",
+      "Depends": [
+        "R (>= 3.2.0)",
+        "Biostrings (>= 2.38.0)"
+      ],
+      "Description": "A package for RNA basepair analysis, including the visualization of basepairs as arc diagrams for easy comparison and annotation of sequence and structure.  Arc diagrams can additionally be projected onto multiple sequence alignments to assess basepair conservation and covariation, with numerical methods for computing statistics for each.",
+      "License": "GPL-3",
+      "biocViews": "Alignment, MultipleSequenceAlignment, Preprocessing, Visualization, DataImport, DataRepresentation, MultipleComparison",
+      "URL": "http://www.e-rna.org/r-chie/",
+      "NeedsCompilation": "no",
+      "git_url": "https://git.bioconductor.org/packages/R4RNA",
+      "git_branch": "RELEASE_3_21",
+      "git_last_commit": "ec6e25b",
+      "git_last_commit_date": "2025-04-15",
+      "Repository": "Bioconductor 3.21"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.6.1",
@@ -2036,6 +2060,81 @@
       "License": "MIT + file LICENSE",
       "NeedsCompilation": "no",
       "Author": "Tony Plate [aut, cre], Richard Heiberger [aut]",
+      "Repository": "CRAN"
+    },
+    "ape": {
+      "Package": "ape",
+      "Version": "5.8-1",
+      "Source": "Repository",
+      "Date": "2024-12-10",
+      "Title": "Analyses of Phylogenetics and Evolution",
+      "Authors@R": "c(person(\"Emmanuel\", \"Paradis\", role = c(\"aut\", \"cre\", \"cph\"), email = \"Emmanuel.Paradis@ird.fr\", comment = c(ORCID = \"0000-0003-3092-2199\")), person(\"Simon\", \"Blomberg\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-1062-0839\")), person(\"Ben\", \"Bolker\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-2127-0443\")), person(\"Joseph\", \"Brown\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-3835-8062\")), person(\"Santiago\", \"Claramunt\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-8926-5974\")), person(\"Julien\", \"Claude\", role = c(\"aut\", \"cph\"), , comment = c(ORCID = \"0000-0002-9267-1228\")), person(\"Hoa Sien\", \"Cuong\", role = c(\"aut\", \"cph\")), person(\"Richard\", \"Desper\", role = c(\"aut\", \"cph\")), person(\"Gilles\", \"Didier\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-0596-9112\")), person(\"Benoit\", \"Durand\", role = c(\"aut\", \"cph\")), person(\"Julien\", \"Dutheil\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7753-4121\")), person(\"RJ\", \"Ewing\", role = c(\"aut\", \"cph\")), person(\"Olivier\", \"Gascuel\", role = c(\"aut\", \"cph\")), person(\"Thomas\", \"Guillerme\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-4325-1275\")), person(\"Christoph\", \"Heibl\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-7655-3299\")), person(\"Anthony\", \"Ives\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-9375-9523\")), person(\"Bradley\", \"Jones\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-4498-1069\")), person(\"Franz\", \"Krah\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7866-7508\")), person(\"Daniel\", \"Lawson\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-5311-6213\")), person(\"Vincent\", \"Lefort\", role = c(\"aut\", \"cph\")), person(\"Pierre\", \"Legendre\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-3838-3305\")), person(\"Jim\", \"Lemon\", role = c(\"aut\", \"cph\")), person(\"Guillaume\", \"Louvel\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-7745-0785\")), person(\"Federico\", \"Marotta\", role = c(\"aut\", \"cph\")), person(\"Eric\", \"Marcon\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-5249-321X\")), person(\"Rosemary\", \"McCloskey\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-9772-8553\")), person(\"Johan\", \"Nylander\", role = c(\"aut\", \"cph\")), person(\"Rainer\", \"Opgen-Rhein\", role = c(\"aut\", \"cph\")), person(\"Andrei-Alin\", \"Popescu\", role = c(\"aut\", \"cph\")), person(\"Manuela\", \"Royer-Carenzi\", role = c(\"aut\", \"cph\")), person(\"Klaus\", \"Schliep\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-2941-0161\")), person(\"Korbinian\", \"Strimmer\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7917-2056\")), person(\"Damien\", \"de Vienne\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-9532-5251\")))",
+      "Depends": [
+        "R (>= 3.2.0)"
+      ],
+      "Suggests": [
+        "gee",
+        "expm",
+        "igraph",
+        "phangorn",
+        "xml2"
+      ],
+      "Imports": [
+        "nlme",
+        "lattice",
+        "graphics",
+        "methods",
+        "stats",
+        "utils",
+        "parallel",
+        "Rcpp (>= 0.12.0)",
+        "digest"
+      ],
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "ZipData": "no",
+      "Description": "Functions for reading, writing, plotting, and manipulating phylogenetic trees, analyses of comparative data in a phylogenetic framework, ancestral character analyses, analyses of diversification and macroevolution, computing distances from DNA sequences, reading and writing nucleotide sequences as well as importing from BioConductor, and several tools such as Mantel's test, generalized skyline plots, graphical exploration of phylogenetic data (alex, trex, kronoviz), estimation of absolute evolutionary rates and clock-like trees using mean path lengths and penalized likelihood, dating trees with non-contemporaneous sequences, translating DNA into AA sequences, and assessing sequence alignments. Phylogeny estimation can be done with the NJ, BIONJ, ME, MVR, SDM, and triangle methods, and several methods handling incomplete distance matrices (NJ*, BIONJ*, MVR*, and the corresponding triangle method). Some functions call external applications (PhyML, Clustal, T-Coffee, Muscle) whose results are returned into R.",
+      "License": "GPL-2 | GPL-3",
+      "URL": "https://github.com/emmanuelparadis/ape",
+      "BugReports": "https://github.com/emmanuelparadis/ape/issues",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "yes",
+      "Author": "Emmanuel Paradis [aut, cre, cph] (<https://orcid.org/0000-0003-3092-2199>), Simon Blomberg [aut, cph] (<https://orcid.org/0000-0003-1062-0839>), Ben Bolker [aut, cph] (<https://orcid.org/0000-0002-2127-0443>), Joseph Brown [aut, cph] (<https://orcid.org/0000-0002-3835-8062>), Santiago Claramunt [aut, cph] (<https://orcid.org/0000-0002-8926-5974>), Julien Claude [aut, cph] (<https://orcid.org/0000-0002-9267-1228>), Hoa Sien Cuong [aut, cph], Richard Desper [aut, cph], Gilles Didier [aut, cph] (<https://orcid.org/0000-0003-0596-9112>), Benoit Durand [aut, cph], Julien Dutheil [aut, cph] (<https://orcid.org/0000-0001-7753-4121>), RJ Ewing [aut, cph], Olivier Gascuel [aut, cph], Thomas Guillerme [aut, cph] (<https://orcid.org/0000-0003-4325-1275>), Christoph Heibl [aut, cph] (<https://orcid.org/0000-0002-7655-3299>), Anthony Ives [aut, cph] (<https://orcid.org/0000-0001-9375-9523>), Bradley Jones [aut, cph] (<https://orcid.org/0000-0003-4498-1069>), Franz Krah [aut, cph] (<https://orcid.org/0000-0001-7866-7508>), Daniel Lawson [aut, cph] (<https://orcid.org/0000-0002-5311-6213>), Vincent Lefort [aut, cph], Pierre Legendre [aut, cph] (<https://orcid.org/0000-0002-3838-3305>), Jim Lemon [aut, cph], Guillaume Louvel [aut, cph] (<https://orcid.org/0000-0002-7745-0785>), Federico Marotta [aut, cph], Eric Marcon [aut, cph] (<https://orcid.org/0000-0002-5249-321X>), Rosemary McCloskey [aut, cph] (<https://orcid.org/0000-0002-9772-8553>), Johan Nylander [aut, cph], Rainer Opgen-Rhein [aut, cph], Andrei-Alin Popescu [aut, cph], Manuela Royer-Carenzi [aut, cph], Klaus Schliep [aut, cph] (<https://orcid.org/0000-0003-2941-0161>), Korbinian Strimmer [aut, cph] (<https://orcid.org/0000-0001-7917-2056>), Damien de Vienne [aut, cph] (<https://orcid.org/0000-0001-9532-5251>)",
+      "Maintainer": "Emmanuel Paradis <Emmanuel.Paradis@ird.fr>",
+      "Repository": "CRAN"
+    },
+    "aplot": {
+      "Package": "aplot",
+      "Version": "0.2.9",
+      "Source": "Repository",
+      "Title": "Decorate a 'ggplot' with Associated Information",
+      "Authors@R": "c( person(given = \"Guangchuang\", family = \"Yu\", email = \"guangchuangyu@gmail.com\",   role  = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Shuangbin\", \"Xu\",       email = \"xshuangbin@163.com\",      role = \"ctb\",  comment = c(ORCID=\"0000-0003-3513-5362\")), person(given = \"Thomas\", family = \"Hackl\", email = \"thackl@mit.edu\", role = \"ctb\") )",
+      "Description": "For many times, we are not just aligning plots as what 'cowplot' and 'patchwork' did. Users would like to align associated information that requires axes to be exactly matched in subplots, e.g. hierarchical clustering with a heatmap. Inspired by the 'Method 2' in 'ggtree' (G Yu (2018) <doi:10.1093/molbev/msy194>), 'aplot' provides utilities to aligns associated subplots to a main plot at different sides (left, right, top and bottom) with axes exactly matched.",
+      "Depends": [
+        "R (>= 4.1.0)"
+      ],
+      "Imports": [
+        "ggfun (>= 0.1.3)",
+        "ggplot2",
+        "ggplotify",
+        "patchwork",
+        "magrittr",
+        "methods",
+        "utils",
+        "yulab.utils (>= 0.1.9)",
+        "pillar"
+      ],
+      "Suggests": [
+        "ggtree"
+      ],
+      "URL": "https://github.com/YuLab-SMU/aplot, https://yulab-smu.top/aplot/",
+      "License": "Artistic-2.0",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Shuangbin Xu [ctb] (ORCID: <https://orcid.org/0000-0003-3513-5362>), Thomas Hackl [ctb]",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
       "Repository": "CRAN"
     },
     "askpass": {
@@ -4014,6 +4113,160 @@
       "Maintainer": "Erik Clarke <erikclarke@gmail.com>",
       "Repository": "CRAN"
     },
+    "ggforce": {
+      "Package": "ggforce",
+      "Version": "0.5.0",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Accelerating 'ggplot2'",
+      "Authors@R": "c(person(given = \"Thomas Lin\", family = \"Pedersen\", role = c(\"cre\", \"aut\"), email = \"thomasp85@gmail.com\", comment = c(ORCID = \"0000-0002-5147-4711\")), person(\"RStudio\", role = \"cph\"))",
+      "Maintainer": "Thomas Lin Pedersen <thomasp85@gmail.com>",
+      "Description": "The aim of 'ggplot2' is to aid in visual data investigations. This focus has led to a lack of facilities for composing specialised plots. 'ggforce' aims to be a collection of mainly new stats and geoms that fills this gap. All additional functionality is aimed to come through the official extension system so using 'ggforce' should be a stable experience.",
+      "URL": "https://ggforce.data-imaginist.com, https://github.com/thomasp85/ggforce",
+      "BugReports": "https://github.com/thomasp85/ggforce/issues",
+      "License": "MIT + file LICENSE",
+      "Encoding": "UTF-8",
+      "Depends": [
+        "ggplot2 (>= 3.5.0)",
+        "R (>= 3.3.0)"
+      ],
+      "Imports": [
+        "grid",
+        "scales",
+        "MASS",
+        "tweenr (>= 0.1.5)",
+        "gtable",
+        "rlang",
+        "polyclip",
+        "stats",
+        "grDevices",
+        "tidyselect",
+        "withr",
+        "utils",
+        "lifecycle",
+        "cli",
+        "vctrs",
+        "systemfonts"
+      ],
+      "RoxygenNote": "7.3.2",
+      "LinkingTo": [
+        "cpp11"
+      ],
+      "Suggests": [
+        "sessioninfo",
+        "deldir",
+        "latex2exp",
+        "reshape2",
+        "units (>= 0.8.0)",
+        "covr"
+      ],
+      "Collate": "'aaa.R' 'shape.R' 'arc_bar.R' 'arc.R' 'autodensity.R' 'autohistogram.R' 'autopoint.R' 'bezier.R' 'bspline.R' 'bspline_closed.R' 'circle.R' 'concaveman.R' 'cpp11.R' 'diagonal.R' 'diagonal_wide.R' 'ellipse.R' 'errorbar.R' 'facet_grid_paginate.R' 'facet_matrix.R' 'facet_row.R' 'facet_stereo.R' 'facet_wrap_paginate.R' 'facet_zoom.R' 'ggforce-package.R' 'ggproto-classes.R' 'interpolate.R' 'labeller.R' 'link.R' 'mark_circle.R' 'mark_ellipse.R' 'mark_hull.R' 'mark_label.R' 'mark_rect.R' 'parallel_sets.R' 'position-jitternormal.R' 'position_auto.R' 'position_floatstack.R' 'regon.R' 'scale-depth.R' 'scale-unit.R' 'sina.R' 'spiro.R' 'themes.R' 'trans.R' 'trans_linear.R' 'utilities.R' 'voronoi.R' 'zzz.R'",
+      "NeedsCompilation": "yes",
+      "Author": "Thomas Lin Pedersen [cre, aut] (ORCID: <https://orcid.org/0000-0002-5147-4711>), RStudio [cph]",
+      "Repository": "CRAN"
+    },
+    "ggfun": {
+      "Package": "ggfun",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Title": "Miscellaneous Functions for 'ggplot2'",
+      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",     email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Shuangbin\", \"Xu\",       email = \"xshuangbin@163.com\",      role = \"aut\", comment = c(ORCID=\"0000-0003-3513-5362\")) )",
+      "Description": "Useful functions and utilities for 'ggplot' object (e.g., geometric layers, themes, and utilities to edit the object).",
+      "Depends": [
+        "R (>= 4.2.0)"
+      ],
+      "Imports": [
+        "cli",
+        "dplyr",
+        "ggplot2",
+        "grid",
+        "rlang",
+        "scales",
+        "utils",
+        "yulab.utils (>= 0.1.6)"
+      ],
+      "Suggests": [
+        "ggplotify",
+        "knitr",
+        "rmarkdown",
+        "prettydoc",
+        "tidyr",
+        "ggnewscale"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "Encoding": "UTF-8",
+      "URL": "https://github.com/YuLab-SMU/ggfun",
+      "BugReports": "https://github.com/YuLab-SMU/ggfun/issues",
+      "RoxygenNote": "7.3.2",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre, cph] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Shuangbin Xu [aut] (ORCID: <https://orcid.org/0000-0003-3513-5362>)",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
+      "Repository": "CRAN"
+    },
+    "ggmsa": {
+      "Package": "ggmsa",
+      "Version": "1.14.1",
+      "Source": "Bioconductor",
+      "Title": "Plot Multiple Sequence Alignment using 'ggplot2'",
+      "Authors@R": "c(person(\"Guangchuang\", \"Yu\", email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\",\"ths\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Lang\", \"Zhou\",      email = \"nyzhoulang@gmail.com\",    role = \"aut\"), person(\"Shuangbin\", \"Xu\",   email = \"xshuangbin@163.com\",      role = \"ctb\"), person(\"Huina\", \"Huang\",    email = \"1185796994@qq.com\",       role = \"ctb\"))",
+      "Description": "A visual exploration tool for multiple sequence alignment  and associated data. Supports MSA of DNA, RNA, and protein sequences  using 'ggplot2'. Multiple sequence alignment can easily be combined  with other 'ggplot2' plots, such as phylogenetic tree Visualized by  'ggtree', boxplot, genome map and so on. More features: visualization  of sequence logos, sequence bundles, RNA secondary structures and detection  of sequence recombinations.",
+      "Depends": [
+        "R (>= 4.1.0)"
+      ],
+      "Imports": [
+        "Biostrings",
+        "ggplot2",
+        "magrittr",
+        "tidyr",
+        "utils",
+        "stats",
+        "aplot",
+        "RColorBrewer",
+        "ggforce",
+        "dplyr",
+        "R4RNA",
+        "grDevices",
+        "seqmagick",
+        "grid",
+        "methods",
+        "ggfun (>= 0.2.0)",
+        "ggtree (>= 1.17.1)"
+      ],
+      "Suggests": [
+        "ggtreeExtra",
+        "ape",
+        "cowplot",
+        "knitr",
+        "BiocStyle",
+        "rmarkdown",
+        "readxl",
+        "ggnewscale",
+        "kableExtra",
+        "gggenes",
+        "statebins",
+        "prettydoc",
+        "testthat (>= 3.0.0)",
+        "yulab.utils"
+      ],
+      "License": "Artistic-2.0",
+      "Encoding": "UTF-8",
+      "URL": "https://doi.org/10.1093/bib/bbac222(paper), https://www.amazon.com/Integration-Manipulation-Visualization-Phylogenetic-Computational-ebook/dp/B0B5NLZR1Z/ (book)",
+      "BugReports": "https://github.com/YuLab-SMU/ggmsa/issues",
+      "biocViews": "Software, Visualization, Alignment, Annotation, MultipleSequenceAlignment",
+      "RoxygenNote": "7.3.2",
+      "VignetteBuilder": "knitr",
+      "Config/testthat/edition": "3",
+      "git_url": "https://git.bioconductor.org/packages/ggmsa",
+      "git_branch": "RELEASE_3_21",
+      "git_last_commit": "7531c01",
+      "git_last_commit_date": "2025-07-12",
+      "Repository": "Bioconductor 3.21",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre, ths] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Lang Zhou [aut], Shuangbin Xu [ctb], Huina Huang [ctb]",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>"
+    },
     "ggplot2": {
       "Package": "ggplot2",
       "Version": "3.5.2",
@@ -4081,6 +4334,49 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Winston Chang [aut] (<https://orcid.org/0000-0002-1576-2126>), Lionel Henry [aut], Thomas Lin Pedersen [aut, cre] (<https://orcid.org/0000-0002-5147-4711>), Kohske Takahashi [aut], Claus Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>), Kara Woo [aut] (<https://orcid.org/0000-0002-5125-4188>), Hiroaki Yutani [aut] (<https://orcid.org/0000-0002-3385-7233>), Dewey Dunnington [aut] (<https://orcid.org/0000-0002-9415-4582>), Teun van den Brand [aut] (<https://orcid.org/0000-0002-9335-7468>), Posit, PBC [cph, fnd]",
       "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "Repository": "CRAN"
+    },
+    "ggplotify": {
+      "Package": "ggplotify",
+      "Version": "0.1.3",
+      "Source": "Repository",
+      "Title": "Convert Plot to 'grob' or 'ggplot' Object",
+      "Authors@R": "c(person(\"Guangchuang\", \"Yu\", email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")))",
+      "Description": "Convert plot function call (using expression or formula) to 'grob' or 'ggplot' object that compatible to the 'grid' and 'ggplot2' ecosystem. With this package, we are able to e.g. using 'cowplot' to align plots produced by 'base' graphics, 'ComplexHeatmap', 'eulerr', 'grid', 'lattice', 'magick', 'pheatmap', 'vcd' etc. by converting them to 'ggplot' objects.",
+      "Depends": [
+        "R (>= 3.4.0)"
+      ],
+      "Imports": [
+        "ggplot2",
+        "graphics",
+        "grDevices",
+        "grid",
+        "gridGraphics",
+        "rlang",
+        "yulab.utils"
+      ],
+      "Suggests": [
+        "aplot",
+        "colorspace",
+        "cowplot",
+        "ggimage",
+        "knitr",
+        "rmarkdown",
+        "lattice",
+        "prettydoc",
+        "vcd",
+        "utils"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "URL": "https://github.com/GuangchuangYu/ggplotify",
+      "BugReports": "https://github.com/GuangchuangYu/ggplotify/issues",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.3",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-6485-8781>)",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
       "Repository": "CRAN"
     },
     "ggpubr": {
@@ -4284,6 +4580,68 @@
       "Maintainer": "Constantin Ahlmann-Eltze <artjom31415@googlemail.com>",
       "Repository": "CRAN"
     },
+    "ggtree": {
+      "Package": "ggtree",
+      "Version": "3.16.3",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "an R package for visualization of tree and annotation data",
+      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",     email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"),  comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Tommy Tsan-Yuk\", \"Lam\", email = \"tylam.tommy@gmail.com\",   role = c(\"aut\", \"ths\")), person(\"Shuangbin\", \"Xu\",       email = \"xshuangbin@163.com\",      role = \"aut\",  comment = c(ORCID=\"0000-0003-3513-5362\")), person(\"Lin\", \" Li\",            email = \"williamlee2220@qq.com\",   role = \"ctb\"), person(\"Bradley\", \"Jones\",      email = \"bjones@cfenet.ubc.ca\",    role = \"ctb\"), person(\"Justin\", \"Silverman\",   email = \"jsilve24@gmail.com\",      role = \"ctb\"), person(\"Watal M.\", \"Iwasaki\",   email = \"heavy.watal@gmail.com\",   role = \"ctb\"), person(\"Yonghe\", \"Xia\",         email = \"xiayh17@gmail.com\",       role = \"ctb\"), person(\"Ruizhu\", \"Huang\",       email = \"ruizhuRH@gmail.com\",      role = \"ctb\") )",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
+      "Description": "'ggtree' extends the 'ggplot2' plotting system which implemented the grammar of graphics. 'ggtree' is designed for visualization and annotation of phylogenetic trees and other tree-like structures with their annotation data.",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Imports": [
+        "ape",
+        "aplot",
+        "dplyr",
+        "ggplot2 (> 3.3.6)",
+        "grid",
+        "magrittr",
+        "methods",
+        "purrr",
+        "rlang",
+        "ggfun (>= 0.1.7)",
+        "yulab.utils (>= 0.1.6)",
+        "tidyr",
+        "tidytree (>= 0.4.5)",
+        "treeio (>= 1.8.0)",
+        "utils",
+        "scales",
+        "stats",
+        "cli"
+      ],
+      "Suggests": [
+        "emojifont",
+        "ggimage",
+        "ggplotify",
+        "shadowtext",
+        "grDevices",
+        "knitr",
+        "prettydoc",
+        "rmarkdown",
+        "testthat",
+        "tibble",
+        "glue"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "Encoding": "UTF-8",
+      "License": "Artistic-2.0",
+      "URL": "https://www.amazon.com/Integration-Manipulation-Visualization-Phylogenetic-Computational-ebook/dp/B0B5NLZR1Z/ (book), http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628 (paper)",
+      "BugReports": "https://github.com/YuLab-SMU/ggtree/issues",
+      "biocViews": "Alignment, Annotation, Clustering, DataImport, MultipleSequenceAlignment, Phylogenetics, ReproducibleResearch, Software, Visualization",
+      "RoxygenNote": "7.3.2",
+      "Roxygen": "list(markdown = TRUE)",
+      "git_url": "https://git.bioconductor.org/packages/ggtree",
+      "git_branch": "RELEASE_3_21",
+      "git_last_commit": "19798cf",
+      "git_last_commit_date": "2025-07-11",
+      "Repository": "Bioconductor 3.21",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre, cph] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Tommy Tsan-Yuk Lam [aut, ths], Shuangbin Xu [aut] (ORCID: <https://orcid.org/0000-0003-3513-5362>), Lin Li [ctb], Bradley Jones [ctb], Justin Silverman [ctb], Watal M. Iwasaki [ctb], Yonghe Xia [ctb], Ruizhu Huang [ctb]"
+    },
     "glue": {
       "Package": "glue",
       "Version": "1.8.0",
@@ -4453,6 +4811,32 @@
       "NeedsCompilation": "no",
       "Author": "Baptiste Auguie [aut, cre], Anton Antonov [ctb]",
       "Maintainer": "Baptiste Auguie <baptiste.auguie@gmail.com>",
+      "Repository": "CRAN",
+      "Encoding": "UTF-8"
+    },
+    "gridGraphics": {
+      "Package": "gridGraphics",
+      "Version": "0.5-1",
+      "Source": "Repository",
+      "Title": "Redraw Base Graphics Using 'grid' Graphics",
+      "Authors@R": "c(person(\"Paul\", \"Murrell\", role = c(\"cre\", \"aut\"), email = \"paul@stat.auckland.ac.nz\"), person(\"Zhijian\", \"Wen\", role = \"aut\", email = \"jwen246@aucklanduni.ac.nz\"))",
+      "Description": "Functions to convert a page of plots drawn with the  'graphics' package into identical output drawn with the 'grid' package. The result looks like the original 'graphics'-based plot, but consists of 'grid' grobs and viewports that can then be manipulated with  'grid' functions (e.g., edit grobs and revisit viewports).",
+      "Depends": [
+        "grid",
+        "graphics"
+      ],
+      "Imports": [
+        "grDevices"
+      ],
+      "Suggests": [
+        "magick (>= 1.3)",
+        "pdftools (>= 1.6)"
+      ],
+      "License": "GPL (>= 2)",
+      "URL": "https://github.com/pmur002/gridgraphics",
+      "NeedsCompilation": "no",
+      "Author": "Paul Murrell [cre, aut], Zhijian Wen [aut]",
+      "Maintainer": "Paul Murrell <paul@stat.auckland.ac.nz>",
       "Repository": "CRAN",
       "Encoding": "UTF-8"
     },
@@ -5879,6 +6263,28 @@
       "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
+    "polyclip": {
+      "Package": "polyclip",
+      "Version": "1.10-7",
+      "Source": "Repository",
+      "Date": "2024-07-23",
+      "Title": "Polygon Clipping",
+      "Authors@R": "c(person(\"Angus\", \"Johnson\", role = \"aut\",  comment=\"C++ original, http://www.angusj.com/delphi/clipper.php\"), person(\"Adrian\", \"Baddeley\", role = c(\"aut\", \"trl\", \"cre\"), email = \"Adrian.Baddeley@curtin.edu.au\"), person(\"Kurt\", \"Hornik\", role = \"ctb\"), person(c(\"Brian\", \"D.\"), \"Ripley\", role = \"ctb\"), person(\"Elliott\", \"Sales de Andrade\", role=\"ctb\"), person(\"Paul\", \"Murrell\", role = \"ctb\"), person(\"Ege\", \"Rubak\", role=\"ctb\"), person(\"Mark\", \"Padgham\", role=\"ctb\"))",
+      "Maintainer": "Adrian Baddeley <Adrian.Baddeley@curtin.edu.au>",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Description": "R port of Angus Johnson's open source library 'Clipper'. Performs polygon clipping operations (intersection, union, set minus, set difference) for polygonal regions of arbitrary complexity, including holes. Computes offset polygons (spatial buffer zones, morphological dilations, Minkowski dilations) for polygonal regions and polygonal lines. Computes Minkowski Sum of general polygons. There is a function for removing self-intersections from polygon data.",
+      "License": "BSL",
+      "URL": "https://www.angusj.com, https://sourceforge.net/projects/polyclipping, https://github.com/baddstats/polyclip",
+      "BugReports": "https://github.com/baddstats/polyclip/issues",
+      "ByteCompile": "true",
+      "Note": "built from Clipper C++ version 6.4.0",
+      "NeedsCompilation": "yes",
+      "Author": "Angus Johnson [aut] (C++ original, http://www.angusj.com/delphi/clipper.php), Adrian Baddeley [aut, trl, cre], Kurt Hornik [ctb], Brian D. Ripley [ctb], Elliott Sales de Andrade [ctb], Paul Murrell [ctb], Ege Rubak [ctb], Mark Padgham [ctb]",
+      "Repository": "CRAN",
+      "Encoding": "UTF-8"
+    },
     "polynom": {
       "Package": "polynom",
       "Version": "1.4-1",
@@ -7008,6 +7414,46 @@
       "Maintainer": "Simon Potter <simon@sjp.co.nz>",
       "Repository": "CRAN"
     },
+    "seqmagick": {
+      "Package": "seqmagick",
+      "Version": "0.1.7",
+      "Source": "Repository",
+      "Title": "Sequence Manipulation Utilities",
+      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",     email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")) )",
+      "Description": "Supports reading and writing sequences for different formats (currently interleaved and sequential formats for 'FASTA' and 'PHYLIP'), file conversion, and manipulation (e.g. filter sequences that contain specify pattern, export consensus sequence from an alignment).",
+      "Depends": [
+        "R (>= 3.6.0)"
+      ],
+      "Imports": [
+        "Biostrings",
+        "magrittr",
+        "stats",
+        "utils",
+        "yulab.utils (> 0.1.1)"
+      ],
+      "Suggests": [
+        "downloader",
+        "knitr",
+        "rmarkdown",
+        "GenomicAlignments",
+        "GenomicRanges",
+        "IRanges",
+        "muscle",
+        "Rsamtools",
+        "prettydoc"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "URL": "https://github.com/YuLab-SMU/seqmagick",
+      "BugReports": "https://github.com/YuLab-SMU/seqmagick/issues",
+      "License": "Artistic-2.0",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.2.3",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (<https://orcid.org/0000-0002-6485-8781>)",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
+      "Repository": "CRAN"
+    },
     "shape": {
       "Package": "shape",
       "Version": "1.4.6.1",
@@ -7516,6 +7962,49 @@
       "Maintainer": "Lionel Henry <lionel@posit.co>",
       "Repository": "CRAN"
     },
+    "tidytree": {
+      "Package": "tidytree",
+      "Version": "0.4.6",
+      "Source": "Repository",
+      "Title": "A Tidy Tool for Phylogenetic Tree Data Manipulation",
+      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",   email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Bradley\", \"Jones\",    email = \"brj1@sfu.ca\",             role = \"ctb\"), person(\"Zebulun\", \"Arendsee\", email = \"zbwrnz@gmail.com\",        role = \"ctb\") )",
+      "Description": "Phylogenetic tree generally contains multiple components including node, edge, branch and associated data. 'tidytree' provides an approach to convert tree object to tidy data frame as well as provides tidy interfaces to manipulate tree data.",
+      "Depends": [
+        "R (>= 3.4.0)"
+      ],
+      "Imports": [
+        "ape",
+        "dplyr",
+        "lazyeval",
+        "magrittr",
+        "methods",
+        "rlang",
+        "tibble",
+        "tidyr",
+        "tidyselect",
+        "yulab.utils (>= 0.0.4)",
+        "pillar",
+        "cli"
+      ],
+      "Suggests": [
+        "knitr",
+        "rmarkdown",
+        "prettydoc",
+        "testthat",
+        "utils"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "URL": "https://www.amazon.com/Integration-Manipulation-Visualization-Phylogenetic-Computational-ebook/dp/B0B5NLZR1Z/",
+      "BugReports": "https://github.com/YuLab-SMU/tidytree/issues",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.2.3",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre, cph] (<https://orcid.org/0000-0002-6485-8781>), Bradley Jones [ctb], Zebulun Arendsee [ctb]",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
+      "Repository": "CRAN"
+    },
     "tidyverse": {
       "Package": "tidyverse",
       "Version": "2.0.0",
@@ -7631,6 +8120,97 @@
       "NeedsCompilation": "no",
       "Author": "Yihui Xie [aut, cre, cph] (<https://orcid.org/0000-0003-0645-5666>), Posit Software, PBC [cph, fnd], Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>), Devon Ryan [ctb] (<https://orcid.org/0000-0002-8549-0971>), Ethan Heinzen [ctb], Fernando Cagua [ctb]",
       "Maintainer": "Yihui Xie <xie@yihui.name>",
+      "Repository": "CRAN"
+    },
+    "treeio": {
+      "Package": "treeio",
+      "Version": "1.32.0",
+      "Source": "Bioconductor",
+      "Title": "Base Classes and Functions for Phylogenetic Tree Input and Output",
+      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",     email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Tommy Tsan-Yuk\", \"Lam\", email = \"tylam.tommy@gmail.com\",   role = c(\"ctb\", \"ths\")), person(\"Shuangbin\", \"Xu\",       email = \"xshuangbin@163.com\",      role = \"ctb\",           comment = c(ORCID=\"0000-0003-3513-5362\")), person(\"Bradley\", \"Jones\",      email = \"brj1@sfu.ca\",             role = \"ctb\"), person(\"Casey\", \"Dunn\",         email = \"casey_dunn@brown.edu\",    role = \"ctb\"), person(\"Tyler\", \"Bradley\",      email = \"tcb85@drexel.edu\",        role = \"ctb\"), person(\"Konstantinos\", \"Geles\", email = \"konstantinos.geles@studenti.unicz.it\", role = \"ctb\") )",
+      "Description": "'treeio' is an R package to make it easier to import and store phylogenetic tree with associated data; and to link external data from different sources to phylogeny. It also supports exporting phylogenetic tree with heterogeneous associated data to a single tree file and can be served as a platform for merging tree with associated data and converting file formats.",
+      "Depends": [
+        "R (>= 4.1.0)"
+      ],
+      "Imports": [
+        "ape",
+        "dplyr",
+        "jsonlite",
+        "magrittr",
+        "methods",
+        "rlang",
+        "stats",
+        "tibble",
+        "tidytree (>= 0.4.5)",
+        "utils",
+        "yulab.utils (>= 0.1.6)"
+      ],
+      "Suggests": [
+        "Biostrings",
+        "cli",
+        "ggplot2",
+        "ggtree",
+        "igraph",
+        "knitr",
+        "rmarkdown",
+        "phangorn",
+        "prettydoc",
+        "purrr",
+        "testthat",
+        "tidyr",
+        "vroom",
+        "xml2",
+        "yaml"
+      ],
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "Encoding": "UTF-8",
+      "URL": "https://yulab-smu.top/contribution-tree-data/",
+      "BugReports": "https://github.com/YuLab-SMU/treeio/issues",
+      "biocViews": "Software, Annotation, Clustering, DataImport, DataRepresentation, Alignment, MultipleSequenceAlignment, Phylogenetics",
+      "RoxygenNote": "7.3.2",
+      "git_url": "https://git.bioconductor.org/packages/treeio",
+      "git_branch": "RELEASE_3_21",
+      "git_last_commit": "3a8ed45",
+      "git_last_commit_date": "2025-04-15",
+      "Repository": "Bioconductor 3.21",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Tommy Tsan-Yuk Lam [ctb, ths], Shuangbin Xu [ctb] (ORCID: <https://orcid.org/0000-0003-3513-5362>), Bradley Jones [ctb], Casey Dunn [ctb], Tyler Bradley [ctb], Konstantinos Geles [ctb]",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>"
+    },
+    "tweenr": {
+      "Package": "tweenr",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Interpolate Data for Smooth Animations",
+      "Authors@R": "c(person(given = \"Thomas Lin\", family = \"Pedersen\", role = c(\"aut\", \"cre\"), email = \"thomasp85@gmail.com\", comment = c(ORCID = \"0000-0002-5147-4711\")))",
+      "Maintainer": "Thomas Lin Pedersen <thomasp85@gmail.com>",
+      "Description": "In order to create smooth animation between states of data, tweening is necessary. This package provides a range of functions for creating tweened data that can be used as basis for animation. Furthermore  it adds a number of vectorized interpolaters for common R data  types such as numeric, date and colour.",
+      "URL": "https://github.com/thomasp85/tweenr",
+      "BugReports": "https://github.com/thomasp85/tweenr/issues",
+      "License": "MIT + file LICENSE",
+      "Encoding": "UTF-8",
+      "Depends": [
+        "R (>= 3.2.0)"
+      ],
+      "Imports": [
+        "farver",
+        "magrittr",
+        "rlang",
+        "vctrs"
+      ],
+      "LinkingTo": [
+        "cpp11 (>= 0.4.2)"
+      ],
+      "RoxygenNote": "7.2.3",
+      "Suggests": [
+        "testthat",
+        "covr"
+      ],
+      "NeedsCompilation": "yes",
+      "Author": "Thomas Lin Pedersen [aut, cre] (<https://orcid.org/0000-0002-5147-4711>)",
       "Repository": "CRAN"
     },
     "tzdb": {
@@ -8033,6 +8613,45 @@
       "URL": "https://github.com/vubiostat/r-yaml/",
       "BugReports": "https://github.com/vubiostat/r-yaml/issues",
       "NeedsCompilation": "yes",
+      "Repository": "CRAN"
+    },
+    "yulab.utils": {
+      "Package": "yulab.utils",
+      "Version": "0.2.3",
+      "Source": "Repository",
+      "Title": "Supporting Functions for Packages Maintained by 'YuLab-SMU'",
+      "Authors@R": "c(person(\"Guangchuang\", \"Yu\", email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")))",
+      "Description": "Miscellaneous functions commonly used by 'YuLab-SMU'.",
+      "Depends": [
+        "R (>= 4.2.0)"
+      ],
+      "Imports": [
+        "cli",
+        "digest",
+        "fs",
+        "methods",
+        "rappdirs",
+        "rlang",
+        "tools",
+        "utils"
+      ],
+      "Suggests": [
+        "httr2",
+        "jsonlite",
+        "openssl",
+        "R.utils",
+        "testthat (>= 3.0.0)"
+      ],
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "URL": "https://yulab-smu.top/",
+      "BugReports": "https://github.com/YuLab-SMU/yulab.utils/issues",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.3",
+      "Config/testthat/edition": "3",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-6485-8781>)",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
       "Repository": "CRAN"
     }
   }
