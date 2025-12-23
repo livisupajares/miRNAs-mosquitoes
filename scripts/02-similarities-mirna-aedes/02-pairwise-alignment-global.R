@@ -123,7 +123,7 @@ for (i in 1:3) {
     start = 1,
     end = nchar(pattern_seq),
     color = "Chemistry_NT",
-    char_width = 0.9,
+    char_width = 0.5,
     seq_name = TRUE
   ) +
     ggtitle(paste0("Rank ", i, ": ", row$albo_name, " vs ", row$aegypti_name),
@@ -132,8 +132,11 @@ for (i in 1:3) {
     theme_minimal() +
     theme(
       plot.title = element_text(face = "bold", size = 14),
-      plot.subtitle = element_text(size = 12)
-    )
+      plot.subtitle = element_text(size = 12),
+      axis.text.y = element_text(size = 10),
+      axis.text.x = element_text(size = 9)
+    ) +
+    scale_size_manual(values = 3)
 
   print(p)
 
