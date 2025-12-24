@@ -78,7 +78,7 @@ log_dir = base_dir / "logs_annotation"
 log_dir.mkdir(exist_ok=True)
 
 # Setup an output directory
-out_dir = base_dir / "output_annotation"
+out_dir = base_dir / "output_uniprot_annotation"
 out_dir.mkdir(exist_ok=True)
 
 # Define logger
