@@ -29,7 +29,7 @@ aal_per_mirna_uniprot <- read.csv("results/02-enrichment/05-eggnog-annotation/aa
 # Filter eggnog dfs to keep only relevant columns for merging
 eggnog_clean <- lapply(eggnog, function(df) {
   eggnog_clean <- df %>%
-    select(uniprot_id, Description, Preferred_name, PFAMs) %>%
+    dplyr::select(uniprot_id, Description, Preferred_name, PFAMs) %>%
     return(df)
 })
 
@@ -60,7 +60,7 @@ annotation <- list(
 )
 # Clean new df list
 annotation_sorted <- lapply(annotation, function(df) {
-  annotation_sorted <- df %>% 
+  annotation_sorted <- df %>%
     # Sort by term_description
     arrange(term_description) %>%
     # Rename column to uniprot_id
@@ -70,7 +70,7 @@ annotation_sorted <- lapply(annotation, function(df) {
     rename(protein_name_uniprot = protein_name) %>%
     rename(cc_function_uniprot = cc_function) %>%
     rename(go_p_uniprot = go_p) %>%
-    rename(go_f_uniprot = go_f)%>%
+    rename(go_f_uniprot = go_f) %>%
     rename(description_eggnog = Description) %>%
     rename(preferred_name_eggnog = Preferred_name) %>%
     rename(pfams_eggnog = PFAMs) %>%
