@@ -1,15 +1,15 @@
 # ~~~~~ SEPARATE DF BY SPECIES ~~~~~
-# This script prepares the data to be used in BLAST analysis for further annotation by separating these dataframes by species.
+# This script prepares the data to be used in EGGNOG MAPPER for further annotation by separating these dataframes by species.
 #
 # ===== Add libraries =====
 library(dplyr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== Import data =====
-full_expanded_all_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-down-stringdb_annotated.csv")
-full_expanded_all_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-all-stringdb_annotated.csv")
-full_expanded_per_mirna_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-down-stringdb_annotated.csv")
-full_expanded_per_mirna_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_annotation/full-expanded-per-mirna-stringdb_annotated.csv")
+full_expanded_all_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_uniprot_annotation/full-expanded-all-down-stringdb_annotated.csv")
+full_expanded_all_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_uniprot_annotation/full-expanded-all-stringdb_annotated.csv")
+full_expanded_per_mirna_down_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_uniprot_annotation/full-expanded-per-mirna-down-stringdb_annotated.csv")
+full_expanded_per_mirna_stringdb_annotated <- read.csv("results/02-enrichment/04-enrich-full-anotation/output_uniprot_annotation/full-expanded-per-mirna-stringdb_annotated.csv")
 
 # ==== Inspect species variables =====
 # See the unique values of species column to see which dfs we need to separate
@@ -25,16 +25,16 @@ full_expanded_per_mirna_stringdb_annotated %>%
 # ==== Separate dfs by species =====
 # For full_expanded_all_stringdb_annotated
 aae_all_annotated <- full_expanded_all_stringdb_annotated %>%
-  filter(species == "Aedes aegypti")
+  dplyr::filter(species == "Aedes aegypti")
 
 aal_all_annotated <- full_expanded_all_stringdb_annotated %>%
-  filter(species == "Aedes albopictus")
+  dplyr::filter(species == "Aedes albopictus")
 
 # For full_expanded_per_mirna_stringdb_annotated
 aae_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
-  filter(species == "Aedes aegypti")
+  dplyr::filter(species == "Aedes aegypti")
 aal_per_mirna_annotated <- full_expanded_per_mirna_stringdb_annotated %>%
-  filter(species == "Aedes albopictus")
+  dplyr::filter(species == "Aedes albopictus")
 
 # ==== Remove unused dfs ====
 rm(full_expanded_all_stringdb_annotated)
@@ -59,7 +59,7 @@ for (name in names(df_list)) {
   df <- df_list[[name]]
   # Filter rows where all 4 columns are NA, then get unique proteins_id_network
   uniprot_all_na <- df %>%
-    filter(is.na(protein_name) & is.na(cc_function) & is.na(go_p) & is.na(go_f)) %>%
+    dplyr::filter(is.na(protein_name) & is.na(cc_function) & is.na(go_p) & is.na(go_f)) %>%
     pull(matching_proteins_id_network) %>%
     unique()
   cat(name, "\n")
@@ -79,7 +79,7 @@ cat("=== UniProt IDs with ONLY protein_name as NA ===\n")
 for (name in names(df_list)) {
   df <- df_list[[name]]
   uniprot_only_protein_name_na <- df %>%
-    filter(is.na(protein_name)) %>%
+    dplyr::filter(is.na(protein_name)) %>%
     pull(matching_proteins_id_network) %>%
     unique()
   cat(name, "\n")
