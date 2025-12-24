@@ -51,7 +51,7 @@ microRNA_list_miranda <- c(
 
 # Filter the dataset for all microRNAs in one step
 filtered_data_miranda <- aae_miranda_down_tx_names %>%
-  filter(microRNA %in% microRNA_list_miranda)
+  dplyr::filter(microRNA %in% microRNA_list_miranda)
 
 # Split the filtered data into a list of data frames, one for each microRNA
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
@@ -60,8 +60,8 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
-    filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+    dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+    dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
 # Access each miRNA data frame by its name
@@ -71,8 +71,8 @@ View(candidates_miranda[["miR-2945-3p"]])
 # Also filter and sort dataframe with all the up-regulated miRNAs
 aae_miranda_down_tx_names_sorted <- aae_miranda_down_tx_names %>%
   arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-  filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
-  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+  dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+  dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
