@@ -12,19 +12,14 @@ library("tidylog", warn.conflicts = FALSE)
 # ==== IMPORT DATA ====
 ## Import enriched processes data
 # Per miRNA
-#important_per_mirna_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-per-mirna-stringdb.csv")
-# Import all enriched processes not only the ones who don't have category of interest as NA
 important_per_mirna_stringdb <- read.csv(
-  "results/02-enrichment/03-enrichments-important-process/per-mirna-stringdb.csv"
+  "results/02-enrichment/03-fused-enrichments-by-species/per-mirna-stringdb.csv"
 )
-
-# Venny
-# important_venny_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-venny-stringdb.csv") # No enrichments
 
 # All
 # important_all_stringdb <- read.csv("results/02-enrichment/03-enrichments-important-process/important-all-stringdb.csv")
 important_all_stringdb <- read.csv(
-  "results/02-enrichment/03-enrichments-important-process/all-stringdb.csv"
+  "results/02-enrichment/03-fused-enrichments-by-species/all-stringdb.csv"
 )
 
 # Aae down-regulated
@@ -75,11 +70,6 @@ expanded_per_mirna_stringdb <- expand_genes_to_rows_stringdb(
   important_per_mirna_stringdb
 )
 
-# Venny
-# expanded_venny_stringdb <- expand_genes_to_rows_stringdb(
-#   important_venny_stringdb
-# ) # No enrichment results
-
 # All
 expanded_all_stringdb <- expand_genes_to_rows_stringdb(important_all_stringdb)
 
@@ -113,13 +103,12 @@ mapped_protein_ids_stringdb <- bind_rows(
 # This function takes a dataframe of protein ids and matches them to their names using the imported mapped protein ids from stringdb.
 # StringDB
 map_stringdb_annotations <- function(
-  df,
-  mapping_df = mapped_protein_ids_stringdb
-) {
+    df,
+    mapping_df = mapped_protein_ids_stringdb) {
   df %>%
     left_join(
       mapping_df %>%
-        select(
+        dplyr::select(
           matching_proteins_id_network = stringId,
           annotation = annotation,
           species
@@ -141,9 +130,6 @@ full_expanded_per_mirna_stringdb <- map_stringdb_annotations(
   expanded_per_mirna_stringdb,
   mapped_protein_ids_stringdb
 )
-
-# This one won't run because none of the enriched processes were of interest (category_of_interest = NA; too general for immune, neuro, etc)
-# full_expanded_venny_stringdb <- map_stringdb_annotations(expanded_venny_stringdb, mapped_protein_ids_stringdb)
 
 full_expanded_all_stringdb <- map_stringdb_annotations(
   expanded_all_stringdb,
@@ -225,18 +211,25 @@ write.csv(
   row.names = FALSE
 )
 
-# # ==== FILTER IMMUNE AND OTHER PROCESSES ====
-# # all
-# immune_expanded_all_stringdb <- full_expanded_all_stringdb |>
-#   filter(category_of_interest == "immune" | category_of_interest == "other")
-#
-# # per-mirna
-# immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb |>
-#   filter(category_of_interest == "immune" | category_of_interest == "other")
-#
-# # ==== SAVE FINAL IMMUNE DATASET ====
-# # all
-# write.csv(immune_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-stringdb.csv", row.names = FALSE)
-#
-# # per-mirna
-# write.csv(immune_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-per-mirna-stringdb.csv", row.names = FALSE)
+# ==== FILTER IMMUNE PROCESSES ====
+# all
+immune_expanded_all_stringdb <- full_expanded_all_stringdb |>
+  dplyr::filter(category_of_interest == "immune")
+
+# per-mirna
+immune_expanded_per_mirna_stringdb <- full_expanded_per_mirna_stringdb |>
+  dplyr::filter(category_of_interest == "immune")
+
+# Aae down-regulated (ALL)
+immune_expanded_all_down_stringdb <- full_expanded_all_down_stringdb |>
+  dplyr::filter(category_of_interest == "immune")
+
+# ==== SAVE FINAL IMMUNE DATASET ====
+# all
+write.csv(immune_expanded_all_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-stringdb.csv", row.names = FALSE)
+
+# per-mirna
+write.csv(immune_expanded_per_mirna_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-per-mirna-stringdb.csv", row.names = FALSE)
+
+# Aae down-regulated (ALL)
+write.csv(immune_expanded_all_down_stringdb, "results/02-enrichment/04-enrich-full-anotation/immune-expanded-all-down-stringdb.csv", row.names = FALSE)
