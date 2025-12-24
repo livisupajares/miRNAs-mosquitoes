@@ -141,6 +141,7 @@ for (i in 1:3) {
   print(p)
 
   # Save high-resolution figure
+  # Note these ggsave paths are hard-coded because I didn't want to make this repo too big in size and then cause problems down the line.
   ggsave(paste0("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/pairwise_alignment_rank_", i, ".png"),
     p,
     width = 12, height = 3, dpi = 300, bg = "white"
