@@ -20,7 +20,7 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aae_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae.csv")
+aae_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae.csv")
 
 # Add Aedes aegypti biomart metadata with uniprots for transcripts.
 # This is the direct output from the previous script: `01-fetch-aae-uniprot.R`
@@ -32,9 +32,6 @@ aae_biomart <- read.csv("results/01-target-prediction/01-ensembl-metazoa-biomart
 colnames(aae_biomart) <- c("gene_id", "transcript_id", "uniprot_id")
 
 # ==== MERGE DATABASES ====
-# Eliminate dashes and characters after dashes.
-# aae_miranda$mRNA <- sub("-.*", "", aae_miranda$mRNA)
-
 # merge aae_miranda with aal_vectorbase matching transcript_ID
 aae_miranda_tx_names <- aae_miranda %>%
   left_join(aae_biomart, by = c("mRNA" = "transcript_id"))
@@ -64,7 +61,7 @@ microRNA_list_miranda <- c(
 
 # Filter the dataset for all microRNAs in one step
 filtered_data_miranda <- aae_miranda_tx_names %>%
-  filter(microRNA %in% microRNA_list_miranda)
+  dplyr::filter(microRNA %in% microRNA_list_miranda)
 
 # Split the filtered data into a list of data frames, one for each microRNA
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
@@ -73,8 +70,8 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
-    filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+    dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+    dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
 # Access each miRNA data frame by its name
@@ -84,26 +81,26 @@ View(candidates_miranda[["aae-miR-5119-5p"]])
 # Also filter and sort dataframe with all the up-regulated miRNAs
 aae_miranda_tx_names_sorted <- aae_miranda_tx_names %>%
   arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-  filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
-  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+  dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+  dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
 length(unique(aae_miranda_tx_names_sorted$uniprot_id)) # 894
 
 # Count the number of unique transcripts (mRNA) in the dataset
-length(unique(aae_miranda_tx_names_sorted$mRNA)) # 676
+length(unique(aae_miranda_tx_names_sorted$mRNA)) # 669
 
 # Count the number of unique miRNAs in the dataset
 length(unique(aae_miranda_tx_names_sorted$microRNA)) # 2
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
-write.csv(aae_miranda_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/miranda-aae-uniprot-filtered.csv", row.names = FALSE)
+write.csv(aae_miranda_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae-uniprot-filtered.csv", row.names = FALSE)
 
 # save filtered database by miRNA
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aae_up/miranda-aae/mirna-individuales" # Directory to save the CSV files
+output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aae_up/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_miranda), function(miRNA_name) {
   df <- candidates_miranda[[miRNA_name]]
