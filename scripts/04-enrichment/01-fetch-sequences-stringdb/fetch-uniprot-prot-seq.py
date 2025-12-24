@@ -50,20 +50,57 @@ def choose_base_dir():
 # Let the program detect whether we are in my personal laptop or work computer
 choose_base_dir()
 
-# Input directory to read .txt files with Uniprot kb accessions
-# input_directory = f"{root_dir}/results/02-enrichment/01-raw-input-output/stringdb/input/per-mirna/aal-miranda-per-mirna"
-# input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "stringdb" / "input" / "per-mirna" / "aae-common-per-mirna"
-# input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "stringdb" / "input" /"aae-common-per-mirna"
-# input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "stringdb" / "input" /"aae-common-all"
+'''
+# Choose input directory to read .txt files with Uniprot kb accessions
+# Uniprot kb/Uniparc IDs for posterior enrichment analysis
 
-input_directory = root_dir / "results" / "03-ppi" / "unmapped_kegg_ids"
+## Aedes aegypti Per miRNA input
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "per-mirna" / "aae-miranda-per-mirna"
 
-# Output directory to store the FASTA files
-# output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/per-mirna/aal-miranda-per-mirna-stringdb"
-# output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/aae-common-per-mirna"
-# output_dir = f"{root_dir}/sequences/04-enrichment/00-stringdb-input/aae-common-all"
+## Aedes albopictus Per miRNA input
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "per-mirna" / "aal-miranda-per-mirna"
 
+## Aedes aegypti and Aedes albopictus "all" input
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "all"
+
+## Aedes aegypti common "all" input
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "aae-common-all"
+
+## Aedes aegypti common "per miRNA" input
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "aae-common-per-mirna"
+
+# For unmapped KEGG IDs from taxonomic comparison
+input_directory = root_dir / "results" / "03-taxonomic-comparison" / "02-unmapped_kegg_ids"
+'''
+
+## Aedes aegypti Per miRNA input (change accordingly, see above's docstring)
+input_directory = root_dir / "results" / "02-enrichment" / "01-raw-input-output" / "input" / "per-mirna" / "aae-miranda-per-mirna"
+
+'''
+# Choose Output directory to store the FASTA files
+# Uniprot kb/Uniparc IDs + FASTA for posterior enrichment analysis
+
+## Aedes aegypti Per miRNA input
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "per-mirna" / "aal-miranda-per-mirna-stringdb"
+
+## Aedes albopictus Per miRNA input
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "per-mirna" / "aae-miranda-per-mirna-stringdb"
+
+## Aedes aegypti and Aedes albopictus "all" input
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "all"
+
+## Aedes aegypti common "all" input
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "aae-common-all"
+
+## Aedes aegypti common "per miRNA" input
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "aae-common-per-mirna"
+
+# For unmapped KEGG IDs from taxonomic comparison
 output_dir = root_dir / "sequences" / "06-ppi"
+'''
+
+## Aedes aegypti Per miRNA input (change accordingly, see above's docstring)
+output_dir = root_dir / "sequences" / "04-enrichment" / "00-stringdb-input" / "per-mirna" / "aal-miranda-per-mirna-stringdb"
 
 # Add a directory to deposit logs in case an accession can't be fetched
 log_directory = os.path.join(output_dir, "logs")
