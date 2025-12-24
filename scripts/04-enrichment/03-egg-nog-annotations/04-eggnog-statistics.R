@@ -8,7 +8,7 @@ library(stringr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ===== LOAD TSV DATA ======
-aae_all_eggnog <- read.csv("databases/04-eggnog-annotation/aae_all_annotated.tsv", sep = "\t", stringsAsFactors = FALSE, colClasses = "character")  # force all columns to character
+aae_all_eggnog <- read.csv("databases/04-eggnog-annotation/aae_all_annotated.tsv", sep = "\t", stringsAsFactors = FALSE, colClasses = "character") # force all columns to character
 aae_all_down_eggnog <- read.csv("databases/04-eggnog-annotation/aae_all_down_annotated.tsv", sep = "\t", stringsAsFactors = FALSE, colClasses = "character")
 aae_per_mirna_eggnog <- read.csv("databases/04-eggnog-annotation/aae_per_mirna_annotated.tsv", sep = "\t", stringsAsFactors = FALSE, colClasses = "character")
 aae_per_mirna_down_eggnog <- read.csv("databases/04-eggnog-annotation/aae_per_mirna_down_annotated.tsv", sep = "\t", stringsAsFactors = FALSE, colClasses = "character")
@@ -26,7 +26,7 @@ eggnog <- list(
   "aal_per_mirna" = aal_per_mirna_eggnog
 )
 # Change cells with "-" to NA
-eggnog <- lapply(eggnog, function(df){
+eggnog <- lapply(eggnog, function(df) {
   df[] <- lapply(df, na_if, "-")
   return(df)
 })
@@ -46,7 +46,7 @@ eggnog <- lapply(eggnog, function(df) {
 })
 
 # Remove last three rows
-eggnog <- lapply(eggnog, function(df){
+eggnog <- lapply(eggnog, function(df) {
   df <- df %>% slice(1:(n() - 3))
 })
 
@@ -63,9 +63,9 @@ cat("=== UniProt IDs with ALL 3 columns as NA ===\n")
 for (name in names(eggnog)) {
   df <- eggnog[[name]]
   uniprot_na <- df %>%
-    filter(is.na(Description) &
-             is.na(Preferred_name) &
-             is.na(PFAMs)) %>%
+    dplyr::filter(is.na(Description) &
+      is.na(Preferred_name) &
+      is.na(PFAMs)) %>%
     pull(uniprot_id) %>%
     unique()
   cat(name, "\n")
@@ -80,9 +80,9 @@ for (name in names(eggnog)) {
 }
 
 # ==== SAVE CLEANED DFs ====
-write.csv(eggnog$aae_all_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_down_eggnog.csv" , row.names = FALSE)
-write.csv(eggnog$aae_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_eggnog.csv" , row.names = FALSE)
-write.csv(eggnog$aae_per_mirna_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_down_eggnog.csv" , row.names = FALSE)
-write.csv(eggnog$aae_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_eggnog.csv" , row.names = FALSE)
-write.csv(eggnog$aal_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_all.csv" , row.names = FALSE)
-write.csv(eggnog$aal_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_per_mirna.csv" , row.names = FALSE)
+write.csv(eggnog$aae_all_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_down_eggnog.csv", row.names = FALSE)
+write.csv(eggnog$aae_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_all_eggnog.csv", row.names = FALSE)
+write.csv(eggnog$aae_per_mirna_down, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_down_eggnog.csv", row.names = FALSE)
+write.csv(eggnog$aae_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aae_per_mirna_eggnog.csv", row.names = FALSE)
+write.csv(eggnog$aal_all, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_all.csv", row.names = FALSE)
+write.csv(eggnog$aal_per_mirna, file = "results/02-enrichment/05-eggnog-annotation/output_clean/aal_per_mirna.csv", row.names = FALSE)
