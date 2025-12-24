@@ -15,7 +15,7 @@ source("scripts/functions.R")
 # ===== Importing data ===== #
 # Add NA to all empty spaces
 # Miranda
-aal_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal.csv")
+aal_miranda <- read.csv("databases/02-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal.csv")
 
 # vectorbase aal transcripts Foshan strain
 # This file are downloaded from VectorBase
@@ -58,7 +58,7 @@ microRNA_list_miranda <- c("aal-miR-1767", "aal-miR-193-5p", "aal-miR-1951", "aa
 
 # Filter the dataset for all microRNAs in one step
 filtered_data_miranda <- aal_miranda_tx_names %>%
-  filter(microRNA %in% microRNA_list_miranda)
+  dplyr::filter(microRNA %in% microRNA_list_miranda)
 
 # Split the filtered data into a list of data frames, one for each microRNA
 mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRNA)
@@ -67,9 +67,9 @@ mirna_list_miranda <- split(filtered_data_miranda, filtered_data_miranda$microRN
 candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
   df %>%
     arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-    filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+    dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
     # old iteration had removed unspecified products
-    filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+    dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 })
 
 # Access each miRNA data frame by its name
@@ -79,9 +79,9 @@ View(candidates_miranda[["aal-miR-1767"]])
 # Also filter and sort dataframe with all the up-regulated miRNAs
 aal_miranda_tx_names_sorted <- aal_miranda_tx_names %>%
   arrange(desc(score), energy) %>% # Sort by highest score and lowest energy
-  filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
+  dplyr::filter(energy <= -20) %>% # Filter by energy <= -20 kcal/mol
   # old iteration had removed unspecified products
-  filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
+  dplyr::filter(!duplicated(uniprot_id)) # Remove duplicates based on uniprot_id
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
@@ -95,11 +95,11 @@ length(unique(aal_miranda_tx_names_sorted$microRNA)) # 24
 
 # ==== DOWNLOAD DATABASE ====
 # save dataframe with all upregulated miRNAs
-write.csv(aal_miranda_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/miranda-aal-uniprot-filtered.csv", row.names = FALSE)
+write.csv(aal_miranda_tx_names_sorted, file = "results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal-uniprot-filtered.csv", row.names = FALSE)
 
 # save filtered database
 # Write each miRNA data frame to a separate CSV file
-output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aal_up/miranda-aal/mirna-individuales" # Directory to save the CSV files
+output_dir_mir <- "results/01-target-prediction/00-miRNAconsTarget/aal_up/mirna-individuales" # Directory to save the CSV files
 
 lapply(names(candidates_miranda), function(miRNA_name) {
   df <- candidates_miranda[[miRNA_name]]
