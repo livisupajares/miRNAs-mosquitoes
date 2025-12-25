@@ -15,11 +15,11 @@ full_expanded_per_mirna_stringdb_annotated <- read_csv("results/02-enrichment/04
 # ===== Clean annotation =====
 # Remove gene_primary
 full_expanded_all_down_stringdb_annotated <- full_expanded_all_down_stringdb_annotated %>%
-  select(-gene_primary)
-full_expanded_all_stringdb_annotated <- full_expanded_all_stringdb_annotated %>% select(-gene_primary)
+  dplyr::select(-gene_primary)
+full_expanded_all_stringdb_annotated <- full_expanded_all_stringdb_annotated %>% dplyr::select(-gene_primary)
 full_expanded_per_mirna_down_stringdb_annotated <- full_expanded_per_mirna_down_stringdb_annotated %>%
-  select(-gene_primary)
-full_expanded_per_mirna_stringdb_annotated <- full_expanded_per_mirna_stringdb_annotated %>% select(-gene_primary)
+  dplyr::select(-gene_primary)
+full_expanded_per_mirna_stringdb_annotated <- full_expanded_per_mirna_stringdb_annotated %>% dplyr::select(-gene_primary)
 
 # Create function to arrange protein_name, cc_function, go_p and go_f to be next to annotation
 move_annotation_cols <- function(df) {
