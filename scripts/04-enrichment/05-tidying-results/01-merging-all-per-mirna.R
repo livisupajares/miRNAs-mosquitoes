@@ -66,7 +66,7 @@ cat("=== UniProt IDs with ALL columns as NA ===\n")
 for (name in names(merged_clean)) {
   df <- merged_clean[[name]]
   uniprot_na <- df %>%
-    filter(is.na(annotation_stringdb) &
+    dplyr::filter(is.na(annotation_stringdb) &
       is.na(protein_name_uniprot) &
       is.na(cc_function_uniprot) &
       is.na(go_p_uniprot) &
@@ -233,14 +233,14 @@ merged_clean[all_names] <- lapply(merged_clean[all_names], function(df) {
 })
 
 # ==== MERGE ALL AND PER MIRNA DATAFRAMES =====
-# Merge all `per_mirna` dataframes
+# Merge all `per_mirna` dataframes. Includes the aae down-regulated (common)
 df_per_mirna <- bind_rows(
   merged_clean$aae_per_mirna,
   merged_clean$aae_per_mirna_down,
   merged_clean$aal_per_mirna
 )
 
-# Merge all `all` dataframes
+# Merge all `all` dataframes. Includes the aae down-regulated (common)
 df_all <- bind_rows(
   merged_clean$aae_all,
   merged_clean$aae_all_down,
@@ -248,5 +248,5 @@ df_all <- bind_rows(
 )
 
 # ==== SAVE MERGED DATAFRAMES =====
-write.csv(df_per_mirna, file = "results/04-heatmap/final_ann_per_mirna.csv", row.names = FALSE)
-write.csv(df_all, file = "results/04-heatmap/final_ann_all.csv", row.names = FALSE)
+write.csv(df_per_mirna, file = "results/02-enrichment/07-tidying-results/03-final-enrichment/final_expanded_ann_per_mirna.csv", row.names = FALSE)
+write.csv(df_all, file = "results/02-enrichment/07-tidying-results/03-final-enrichment/final_expanded_ann_all.csv", row.names = FALSE)
