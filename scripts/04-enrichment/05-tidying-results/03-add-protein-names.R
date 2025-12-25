@@ -10,10 +10,10 @@ library(tidylog, warn.conflicts = FALSE)
 # Import data from the interpro annotation and fused both species
 
 # ALL
-all <- read.csv("results/04-heatmap/final_ann_all.csv", na.strings = c("", NA))
+all <- read.csv("results/02-enrichment/07-tidying-results/03-final-enrichment/final_expanded_ann_all.csv", na.strings = c("", NA))
 
 # PER - MIRNA
-per_mirna <- read.csv("results/04-heatmap/final_ann_per_mirna.csv", na.strings = c("", NA))
+per_mirna <- read.csv("results/02-enrichment/07-tidying-results/03-final-enrichment/final_expanded_ann_per_mirna.csv", na.strings = c("", NA))
 
 # ==== Add protein names ====
 # Define a helper function to check if a string looks like a VectorBase/UniProt ID
@@ -56,13 +56,13 @@ per_mirna_new <- per_mirna %>%
 # ==== Export data with protein names added =====
 write.csv(
   all_new,
-  "results/04-heatmap/final_ann_all.csv",
+  "results/02-enrichment/07-tidying-results/03-final-enrichment/prot_final_exp_ann_all.csv",
   row.names = FALSE
 )
 
 # For 'per_mirna'
 write.csv(
   per_mirna_new,
-  "results/04-heatmap/final_ann_per_mirna.csv",
+  "results/02-enrichment/07-tidying-results/03-final-enrichment/prot_final_exp_ann_per_mirna.csv",
   row.names = FALSE
 )
