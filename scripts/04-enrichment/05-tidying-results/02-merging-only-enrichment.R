@@ -113,5 +113,5 @@ enrichment_all <- bind_rows(
 )
 
 # ==== SAVE MERGED DATAFRAMES =====
-write.csv(enrichment_per_mirna, file = "results/04-heatmap/final_enrichment_per_mirna.csv", row.names = FALSE)
-write.csv(enrichment_all, file = "results/04-heatmap/final_enrichment_all.csv", row.names = FALSE)
+write.csv(enrichment_per_mirna, file = "results/02-enrichment/07-tidying-results/03-final-enrichment/final_enrichment_per_mirna.csv", row.names = FALSE)
+write.csv(enrichment_all, file = "results/02-enrichment/07-tidying-results/03-final-enrichment/final_enrichment_all.csv", row.names = FALSE)
