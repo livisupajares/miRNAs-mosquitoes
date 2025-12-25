@@ -11,9 +11,9 @@
 # go_p --> go_p column (GO Biological Process)
 # go_f --> go_f column (GO Molecular Function)
 
-# Detect if an entry has been moved to UniParc. If that's the case, then add 
-# "NA" to all the other columns (protein_name, gene_primary, cc_function, go_p, 
-# go_f). Then, log these IDs as failures in logs and print in console a summary 
+# Detect if an entry has been moved to UniParc. If that's the case, then add
+# "NA" to all the other columns (protein_name, gene_primary, cc_function, go_p,
+# go_f). Then, log these IDs as failures in logs and print in console a summary
 # of the run.
 
 import logging
@@ -27,6 +27,7 @@ import requests
 from tqdm import tqdm
 
 base_dir = None
+
 
 def choose_base_dir():
     global base_dir
@@ -50,17 +51,18 @@ def choose_base_dir():
         )
     elif os_name == "Linux":
         base_dir = (
-            Path.home() 
-            / "livisu" 
-            / "git" 
-            / "miRNAs-mosquitoes" 
-            / "results" 
+            Path.home()
+            / "livisu"
+            / "git"
+            / "miRNAs-mosquitoes"
+            / "results"
             / "02-enrichment"
             / "04-enrich-full-anotation"
         )
     else:
         print(f"Unsupported OS: {os_name}")
         sys.exit(1)
+
 
 # Let the program detect whether we are in my personal laptop or work computer
 choose_base_dir()
@@ -70,7 +72,7 @@ input_files = [
     base_dir / "full-expanded-all-down-stringdb.csv",
     base_dir / "full-expanded-all-stringdb.csv",
     base_dir / "full-expanded-per-mirna-down-stringdb.csv",
-    base_dir / "full-expanded-per-mirna-stringdb.csv"
+    base_dir / "full-expanded-per-mirna-stringdb.csv",
 ]
 
 # Setup logging directory
@@ -80,6 +82,7 @@ log_dir.mkdir(exist_ok=True)
 # Setup an output directory
 out_dir = base_dir / "output_uniprot_annotation"
 out_dir.mkdir(exist_ok=True)
+
 
 # Define logger
 def setup_logger(name, log_file):
@@ -105,6 +108,7 @@ def setup_logger(name, log_file):
 
     return logger
 
+
 def get_uniprot_col_index(filename: str) -> int:
     """Determine column index for matching_proteins_id_network"""
     if "per-mirna" in filename:
@@ -112,13 +116,14 @@ def get_uniprot_col_index(filename: str) -> int:
     else:
         return 8  # 9th column (0-based index 8)
 
+
 def parse_uniprot_response(data: dict) -> dict:
     result = {
         "protein_name": "NA",
         "gene_primary": "NA",
         "cc_function": "NA",
         "go_p": "NA",
-        "go_f": "NA"
+        "go_f": "NA",
     }
 
     # === protein_name ===
@@ -146,7 +151,9 @@ def parse_uniprot_response(data: dict) -> dict:
     # === cc_function ===
     try:
         comments = data.get("comments", [])
-        func_comment = next((c for c in comments if c.get("commentType") == "FUNCTION"), None)
+        func_comment = next(
+            (c for c in comments if c.get("commentType") == "FUNCTION"), None
+        )
         if func_comment and "texts" in func_comment and func_comment["texts"]:
             func_text = func_comment["texts"][0].get("value")
             result["cc_function"] = func_text if func_text else "NA"
@@ -175,19 +182,18 @@ def parse_uniprot_response(data: dict) -> dict:
 
     return result
 
+
 def fetch_uniprot_entry(uniprot_id: str, logger, max_retries=3):
     url = f"https://rest.uniprot.org/uniprotkb/{uniprot_id}"
     headers = {
         "accept": "application/json",
-        "User-Agent": "miRNA-annotation-fetcher/1.0 (Python Script)"
+        "User-Agent": "miRNA-annotation-fetcher/1.0 (Python Script)",
     }
-    params = {
-        "fields": "protein_name,gene_primary,cc_function,go_p,go_f"
-    }
+    params = {"fields": "protein_name,gene_primary,cc_function,go_p,go_f"}
 
     for attempt in range(max_retries):
         try:
-            response = requests.get(url, headers=headers, params=params, timeout=10)
+            response = requests.get(url, headers=headers, params=params, timeout=60)
             if response.status_code == 200:
                 data = response.json()
 
@@ -226,6 +232,7 @@ def fetch_uniprot_entry(uniprot_id: str, logger, max_retries=3):
         time.sleep(1)
 
     return None
+
 
 def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
     filename = filepath.name
@@ -273,6 +280,7 @@ def process_dataframe(df: pd.DataFrame, filepath: Path, logger):
 
     return df, failed
 
+
 def main():
     global_summary = {}
 
@@ -282,7 +290,9 @@ def main():
             continue
 
         print(f"\nProcessing: {input_file.name}")
-        logger = setup_logger(f"logger_{input_file.stem}", log_dir / f"log_{input_file.stem}.log")
+        logger = setup_logger(
+            f"logger_{input_file.stem}", log_dir / f"log_{input_file.stem}.log"
+        )
 
         try:
             # Read with headers
@@ -308,7 +318,9 @@ def main():
     if total_failures == 0:
         print("All entries successfully annotated!")
     else:
-        print(f"{total_failures} UniProt ID(s) failed across {len(global_summary)} file(s):\n")
+        print(
+            f"{total_failures} UniProt ID(s) failed across {len(global_summary)} file(s):\n"
+        )
         for fname, failed_list in global_summary.items():
             if failed_list:
                 unique_failed = sorted(set(failed_list))
