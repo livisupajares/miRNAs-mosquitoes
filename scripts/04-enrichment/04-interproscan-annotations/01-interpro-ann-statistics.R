@@ -43,21 +43,24 @@ interpro_clean <- lapply(interpro_headers, function(df) {
         # Otherwise, assume it's UniParc or other ID → keep original
         TRUE ~ protein_accession
       ),
-      .after = "protein_accession") %>%
+      .after = "protein_accession"
+    ) %>%
     # Replace `-` with NA
-    mutate(across(everything(), ~na_if(as.character(.), "-"))) %>%
+    mutate(across(everything(), ~ na_if(as.character(.), "-"))) %>%
     # Keep unique uniprot_id
     dplyr::distinct(uniprot_id, .keep_all = TRUE) %>%
     # Remove last two columns
-    select(1:(ncol(.) - 2))
+    dplyr::select(1:(ncol(.) - 2))
 })
 
 # ==== FILTER IMPORTANT COLUMNS ====
 interpro_important <- lapply(interpro_clean, function(df) {
-  df %>% 
-    select(uniprot_id, 
-           signature_description,
-           interpro_description)
+  df %>%
+    dplyr::select(
+      uniprot_id,
+      signature_description,
+      interpro_description
+    )
 })
 
 # View results
