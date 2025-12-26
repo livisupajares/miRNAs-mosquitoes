@@ -41,17 +41,18 @@ all_aegypti <- all |>
   distinct(dataset)
 print(all_aegypti)
 
+# ======== PLOTS ========
 # Mock up with tidyplots (I hope it makes the plot more compact)
 all |>
   dplyr::filter(species == "Aedes aegypti", category_of_interest == "immune") |>
-  tidyplot(x = neg_log_fdr, y = term_description, color = neg_log_fdr) |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
   add_data_points() |>
   add_mean_bar(width = 0.01) |>
-  add_title("Enriched Terms from Aedes aegypti miRNA targets in all up-regulated and \ncommon down-regulated miRNAs (Category: immune)") |>
+  add_title("Immune-related Enriched Terms from Aedes aegypti miRNA targets in all up-regulated and \ncommon down-regulated miRNAs (GO Biological Process)") |>
   rename_y_axis_labels(new_names = c("Regulation of receptor signaling pathway via JAK-STAT" = "Regulation of receptor \nsignaling pathway via \nJAK-STAT")) |>
-  adjust_x_axis(title = "-log(FDR)") |>
+  adjust_x_axis(title = "False discovery rate") |>
   adjust_y_axis(title = "Term Description") |>
   adjust_legend_title("-log(FDR)") |>
-  adjust_colors(colors_discrete_friendly)
-# save_plot("/Users/skinofmyeden/Library/CloudStorage/GoogleDrive-livisu.pajares.r@upch.pe/My Drive/asistente-investigacion-upch-2025/miRNAs/FA5 Proposal/Objetivo 3 Enrichment/FINAL enrichment with annotations/lolipop-charts-enrichment/aae-immune-all.pdf")
+  adjust_colors(colors_discrete_friendly) |>
+  save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aae-immune-all.pdf")
 # split_plot(by = mirna_expression)
