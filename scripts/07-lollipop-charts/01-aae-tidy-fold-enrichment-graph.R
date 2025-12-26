@@ -63,7 +63,18 @@ aegypti_immune |>
 # save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aae-immune-all.pdf")
 # split_plot(by = mirna_expression)
 
-# # Aedes albopictus
+## Aedes albopictus
+# First, compute appropriate breaks for the legend
+min_fdr <- min(albopictus_immune$neg_log_fdr)
+max_fdr <- max(albopictus_immune$neg_log_fdr)
+
+# Due to the long range of -log(FDR), create breaks that cover the range nicely like in Aedes aegypti.
+# Create breaks with 1 decimal place, covering the full range
+legend_breaks <- seq(floor(min_fdr * 100) / 100, ceiling(max_fdr * 100) / 100, length.out = 4)
+
+# Format labels with 1 decimal place
+legend_labels <- sprintf("%.2f", legend_breaks)
+
 albopictus_immune |>
   tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
   add_data_points() |>
@@ -73,6 +84,10 @@ albopictus_immune |>
   adjust_x_axis(title = "False discovery rate") |>
   adjust_y_axis(title = "Term Description") |>
   adjust_legend_title("-log(FDR)") |>
-  adjust_colors(colors_diverging_blue2red) #|>
+  adjust_colors(colors_diverging_blue2red) |>
+  adjust_colors(colors_diverging_blue2red,
+    breaks = legend_breaks,
+    labels = legend_labels
+  )
 # save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aal-immune-all-per-mirna.pdf")
 # split_plot(by = mirna)
