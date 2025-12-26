@@ -36,15 +36,20 @@ per_mirna <- per_mirna |>
 # ======== FILTER DATA ========
 ## Aedes aegypti
 # See how many distinct datasets are there for Aedes aegypti only
-all_aegypti <- all |>
-  dplyr::filter(species == "Aedes aegypti") |>
-  distinct(dataset)
-print(all_aegypti)
+aegypti_immune <- all |>
+  dplyr::filter(species == "Aedes aegypti", category_of_interest == "immune")
 
+## Aedes albopictus
+# Fuse all and per-miRNA for Aedes albopictus visualization
+albopictus_immune <- dplyr::bind_rows(
+  all |>
+    dplyr::filter(species == "Aedes albopictus", , category_of_interest == "immune"),
+  per_mirna |>
+    dplyr::filter(species == "Aedes albopictus", , category_of_interest == "immune")
+)
 # ======== PLOTS ========
-# Mock up with tidyplots (I hope it makes the plot more compact)
-all |>
-  dplyr::filter(species == "Aedes aegypti", category_of_interest == "immune") |>
+# Aedes aegypti
+aegypti_immune |>
   tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
   add_data_points() |>
   add_mean_bar(width = 0.01) |>
@@ -56,3 +61,17 @@ all |>
   adjust_colors(colors_discrete_friendly) |>
   save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aae-immune-all.pdf")
 # split_plot(by = mirna_expression)
+
+# # Aedes albopictus
+albopictus_immune |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  add_title("Immune-related Enriched Terms from Aedes albopictus miRNA targets \nin up-regulated miRNAs (Local Network Cluster)") |>
+  rename_y_axis_labels(new_names = c("DDE transposase retroviral integrase sub-family, and Reverse transcriptase/Diguanylate cyclase domain" = "DDE transposase retroviral \nintegrase sub-family, \nand Reverse transcriptase\n/Diguanylate cyclase domain", "Mixed, incl. Reverse transcriptase (RNA-dependent DNA polymerase), and Multifunctional anion exchangers" = "Reverse transcriptase \n(RNA-dependent DNA polymerase), \nand Multifunctional anion exchangers", "Mixed, incl. Attenuation phase, and Cyclosporin A binding" = "Attenuation phase, \nand Cyclosporin A binding", "Endonuclease-reverse transcriptase" = "Endonuclease-reverse \ntranscriptase")) |>
+  adjust_x_axis(title = "False discovery rate") |>
+  adjust_y_axis(title = "Term Description") |>
+  adjust_legend_title("-log(FDR)") |>
+  adjust_colors(colors_discrete_friendly) |>
+  save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aal-immune-all-per-mirna.pdf")
+# split_plot(by = mirna)
