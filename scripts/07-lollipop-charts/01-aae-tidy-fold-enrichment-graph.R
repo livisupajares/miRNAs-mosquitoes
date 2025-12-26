@@ -91,3 +91,79 @@ albopictus_immune |>
   save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aal-immune-all-per-mirna.pdf")
 # split_plot(by = mirna)
 
+###############################################
+# DEBUGGING CODE - TO BE REMOVED LATER #
+# ###############################################
+
+albopictus_immune_sample <- as.data.frame(albopictus_immune |>
+  dplyr::select(term_description, false_discovery_rate, neg_log_fdr))
+
+aegypti_immune_sample <- as.data.frame(aegypti_immune |>
+  dplyr::select(term_description, false_discovery_rate, neg_log_fdr))
+
+# Debuggin 2. Minimal example:
+library(tidyplots)
+
+# Akin to Aedes aegypti
+
+df1 <- data.frame(
+  term_description = c("Term 1", "Term 2"),
+  false_discovery_rate = c(0.0093, 0.0097),
+  neg_log_fdr = c(4.677741, 4.635629) # Range: ~0.04
+)
+
+# Df1 range of -log(fdr) is very small: 0.042112 difference between max and min
+# Range calculation
+range(df1$neg_log_fdr) # Difference: 0.042112
+
+df1 |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  adjust_colors(colors_diverging_blue2red)
+
+# Legend shows decimals automatically (correct)
+
+# Akin to Aedes albopictus
+
+df2 <- data.frame(
+  term_description = c("Term 1", "Term 2", "Term 3", "Term 4"),
+  false_discovery_rate = c(0.00670, 0.00037, 0.00600, 0.00480),
+  neg_log_fdr = c(5.005648, 7.902008, 5.115996, 5.339139) # Range: ~2.9
+)
+
+# Df2 range of -log(fdr) is bigger than df1: 2.89636 difference between max and min
+range(df2$neg_log_fdr) # Difference: 2.89636
+
+df2 |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  adjust_legend_title("-log(FDR)") |>
+  adjust_colors(colors_diverging_blue2red)
+
+# -------------
+
+# Workaround of explicitely adding breaks and labels in df2 does show the decimals but it won't show 4 breaks just 2:
+
+min_fdr <- min(df2$neg_log_fdr)
+max_fdr <- max(df2$neg_log_fdr)
+
+# Create 4 breaks
+legend_breaks <- seq(floor(min_fdr * 100) / 100, ceiling(max_fdr * 100) / 100, length.out = 4)
+
+print(legend_breaks) # 5.00 5.97 6.94 7.91
+
+# Format labels with 2 decimal place based on legend_breaks
+legend_labels <- sprintf("%.2f", legend_breaks)
+
+df2 |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  adjust_legend_title("-log(FDR)") |>
+  adjust_colors(colors_diverging_blue2red,
+    breaks = legend_breaks,
+    labels = legend_labels,
+    limits = c(min_fdr, max_fdr)
+  )
