@@ -47,6 +47,7 @@ albopictus_immune <- dplyr::bind_rows(
   per_mirna |>
     dplyr::filter(species == "Aedes albopictus", , category_of_interest == "immune")
 )
+
 # ======== PLOTS ========
 # Aedes aegypti
 aegypti_immune |>
@@ -58,8 +59,8 @@ aegypti_immune |>
   adjust_x_axis(title = "False discovery rate") |>
   adjust_y_axis(title = "Term Description") |>
   adjust_legend_title("-log(FDR)") |>
-  adjust_colors(colors_discrete_friendly) |>
-  save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aae-immune-all.pdf")
+  adjust_colors(colors_diverging_blue2red) #|>
+# save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aae-immune-all.pdf")
 # split_plot(by = mirna_expression)
 
 # # Aedes albopictus
@@ -72,6 +73,6 @@ albopictus_immune |>
   adjust_x_axis(title = "False discovery rate") |>
   adjust_y_axis(title = "Term Description") |>
   adjust_legend_title("-log(FDR)") |>
-  adjust_colors(colors_discrete_friendly) |>
-  save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aal-immune-all-per-mirna.pdf")
+  adjust_colors(colors_diverging_blue2red) #|>
+# save_plot("/Users/skinofmyeden/Documents/01-livs/20-work/upch-asistente-investigacion/miRNA-targets-fa5/figures-manuscript/aal-immune-all-per-mirna.pdf")
 # split_plot(by = mirna)
