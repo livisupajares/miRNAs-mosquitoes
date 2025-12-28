@@ -8,3 +8,197 @@
 # - Between `Identifier` and `node_degree`: it will add the `protein_name` (eggnog mapper)
 # TODO: After seeing the results after importing into cytoscape, remove the nodes that map to the same protein name to reduce redundancy.
 
+# ==== IMPORT LIBRARIES ====
+library(dplyr)
+library(tidyr)
+library(tidylog, warn.conflicts = FALSE)
+
+# ==== IMPORT DATA ====
+# Import node data
+# Aedes aegypti
+aae_edge <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aae/aedes_aegypti_STRING.tsv", sep = "\t")
+aae_common_all_edge <- read.csv("results/04-ppi-network/aae-common-all/aae_common_string_interactions.tsv", sep = "\t")
+
+# Aedes albopictus
+aal_edge <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aal/aedes_albopictus_STRING.tsv", sep = "\t")
+
+# Import node degree data
+aae_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aae/aae_string_node_degrees.tsv", sep = "\t")
+aal_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aal/aal_string_node_degrees.tsv", sep = "\t")
+
+## Import data that have uniprot ids and protein names (eggnog mapper)
+
+## protein names + uniprot ids
+## This dataset has both species
+prot_names_all <- read.csv("results/02-enrichment/07-tidying-results/03-final-enrichment/prot_final_exp_ann_all.csv")
+
+prot_names_per_mirna <- read.csv("results/02-enrichment/07-tidying-results/03-final-enrichment/prot_final_exp_ann_per_mirna.csv")
+
+# ==== FILTER DATA AND REMOVE DUPLICATES ====
+## Filter by species
+aae_prot_names <- prot_names_all %>% filter(species == "Aedes aegypti")
+aal_prot_names <- prot_names %>% filter(species == "Aedes albopictus")
+
+# First, deduplicate the protein names dataframe by keeping the first occurrence of each uniprot_id
+aae_prot_names_unique <- aae_prot_names %>%
+  distinct(uniprot_id, .keep_all = TRUE)
+
+aal_prot_names_unique <- aal_prot_names %>%
+  distinct(uniprot_id, .keep_all = TRUE)
+
+# ==== ADD COLUMNS TO EDGE DATA ====
+## Aedes aegypti
+aae_edge_ortho1 <- aae_edge %>%
+  # Join with kegg_uniprot to get uniprot IDs for node1_string_id
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    by = c("node1_string_id" = "identifier")
+  ) %>%
+  rename(node1_uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get uniprot IDs for node2_string_id
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    by = c("node2_string_id" = "identifier")
+  ) %>%
+  rename(node2_uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs for node1
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, kegg_id),
+    by = c("node1_string_id" = "identifier")
+  ) %>%
+  rename(id1 = kegg_id) %>%
+  # Join with kegg_uniprot to get kegg IDs for node2
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, kegg_id),
+    by = c("node2_string_id" = "identifier")
+  ) %>%
+  rename(id2 = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = c("node1_uniprot_id" = "uniprot_id")
+  ) %>%
+  rename(protein_name_1 = protein_name) %>%
+  # Join with deduplicated protein names for node2 (using node2_uniprot_id)
+  left_join(
+    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = c("node2_uniprot_id" = "uniprot_id")
+  ) %>%
+  rename(protein_name_2 = protein_name) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node1, node2, node1_string_id, node2_string_id,
+    node1_uniprot_id, node2_uniprot_id, id1, id2, protein_name_1, protein_name_2,
+    everything()
+  )
+
+## Aedes albopictus
+aal_edge_ortho1 <- aal_edge %>%
+  # Join with kegg_uniprot to get uniprot IDs for node1_string_id
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, mapped_id),
+    by = c("node1_string_id" = "identifier")
+  ) %>%
+  rename(node1_uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get uniprot IDs for node2_string_id
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, mapped_id),
+    by = c("node2_string_id" = "identifier")
+  ) %>%
+  rename(node2_uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs for node1
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, kegg_id),
+    by = c("node1_string_id" = "identifier")
+  ) %>%
+  rename(id1 = kegg_id) %>%
+  # Join with kegg_uniprot to get kegg IDs for node2
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, kegg_id),
+    by = c("node2_string_id" = "identifier")
+  ) %>%
+  rename(id2 = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aal_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = c("node1_uniprot_id" = "uniprot_id")
+  ) %>%
+  rename(protein_name_1 = protein_name) %>%
+  # Join with deduplicated protein names for node2 (using node2_uniprot_id)
+  left_join(
+    aal_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = c("node2_uniprot_id" = "uniprot_id")
+  ) %>%
+  rename(protein_name_2 = protein_name) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node1, node2, node1_string_id, node2_string_id,
+    node1_uniprot_id, node2_uniprot_id, id1, id2, protein_name_1, protein_name_2,
+    everything()
+  )
+
+# ==== ADD COLUMNS TO NODE DEGREE DATA ====
+## Aedes aegypti
+aae_degree_ortho1 <- aae_degree %>%
+  # Join with kegg_uniprot to get uniprot IDs for identifier
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    by = "identifier"
+  ) %>%
+  rename(uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs
+  left_join(
+    aae_kegg_uniprot %>% select(identifier, kegg_id),
+    by = "identifier"
+  ) %>%
+  rename(id = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = "uniprot_id"
+  ) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node, identifier, uniprot_id, id, protein_name,
+    everything()
+  )
+
+## Aedes albopictus
+aal_degree_ortho1 <- aal_degree %>%
+  # Join with kegg_uniprot to get uniprot IDs for identifier
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, mapped_id),
+    by = "identifier"
+  ) %>%
+  rename(uniprot_id = mapped_id) %>%
+  # Join with kegg_uniprot to get kegg IDs
+  left_join(
+    aal_kegg_uniprot %>% select(identifier, kegg_id),
+    by = "identifier"
+  ) %>%
+  rename(id = kegg_id) %>%
+  # Join with deduplicated protein names for node1 (using node1_uniprot_id)
+  left_join(
+    aal_prot_names_unique %>% select(uniprot_id, protein_name),
+    by = "uniprot_id"
+  ) %>%
+  # Move the new columns to the correct position (after node2_string_id)
+  select(
+    X.node, identifier, uniprot_id, id, protein_name,
+    everything()
+  )
+
+# ==== SAVE FINAL DATA ====
+## Aedes aegypti
+## Edge table
+write.csv(aae_edge_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_edge_ortho.csv", row.names = FALSE)
+
+## Degree table
+write.csv(aae_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_degree_ortho.csv", row.names = FALSE)
+
+## Aedes albopictus
+## Edge table
+write.csv(aal_edge_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_edge_ortho.csv", row.names = FALSE)
+
+## Degree table
+write.csv(aal_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_degree_ortho.csv", row.names = FALSE)
