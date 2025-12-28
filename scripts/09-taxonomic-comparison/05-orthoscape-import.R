@@ -17,7 +17,7 @@ library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
 # Import node data
-aae_edge <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aae/aedes_aegypti_STRING.tsv", sep = "\t")
+aae_edge <- read.csv("/Users/skinofmyeden/Documents/01-livs/14-programming/git/miRNAs-mosquitoes/results/06-taxonomic-comparison/02-orthoscape-import/aae/aedes_aegypti_STRING.tsv", sep = "\t")
 aal_edge <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aal/aedes_albopictus_STRING.tsv", sep = "\t")
 
 # Import node degree data
@@ -26,7 +26,7 @@ aal_degree <- read.csv("results/03-taxonomic-comparison/02-orthoscape-import/aal
 
 # Import data that have the kegg ids, uniprot ids and protein names (eggnog mapper)
 ## kegg ids + uniprot ids
-aae_kegg_uniprot <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aae_keggids.csv")
+aae_kegg_uniprot <- read.csv("results/06-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aae_keggids.csv")
 aal_kegg_uniprot <- read.csv("results/03-taxonomic-comparison/01-add-kegg-ids/03-final_kegg_ids/aal_keggids.csv")
 
 ## protein names
