@@ -57,6 +57,16 @@ aal_all_prot_names_unique <- aal_prot_names_all %>%
 aae_per_mirna_prot_names_unique <- aae_prot_names_per_mirna %>%
   distinct(uniprot_id, .keep_all = TRUE)
 
+# Create identifier column in the format used in STRINGDB (i.e., taxonID.uniprotID)
+aae_all_prot_names_unique2 <- aae_all_prot_names_unique %>%
+  mutate(identifier = paste0(taxon_id, ".", uniprot_id))
+
+aal_all_prot_names_unique2 <- aal_all_prot_names_unique %>%
+  mutate(identifier = paste0(taxon_id, ".", uniprot_id))
+
+aae_per_mirna_prot_names_unique2 <- aae_per_mirna_prot_names_unique %>%
+  mutate(identifier = paste0(taxon_id, ".", uniprot_id))
+
 # ==== ADD COLUMNS TO EDGE DATA ====
 ## Aedes aegypti
 aae_edge_ortho1 <- aae_edge %>%
