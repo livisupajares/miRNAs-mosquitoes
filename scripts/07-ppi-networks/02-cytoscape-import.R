@@ -69,47 +69,35 @@ aae_per_mirna_prot_names_unique2 <- aae_per_mirna_prot_names_unique %>%
 
 # ==== ADD COLUMNS TO EDGE DATA ====
 ## Aedes aegypti
-aae_edge_ortho1 <- aae_edge %>%
-  # Join with kegg_uniprot to get uniprot IDs for node1_string_id
+aae_edge_final <- aae_edge %>%
+  # Join with deduplicated protein names to get uniprot IDs for node1_string_id
   left_join(
-    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    aae_all_prot_names_unique2 %>% select(identifier, uniprot_id),
     by = c("node1_string_id" = "identifier")
   ) %>%
-  rename(node1_uniprot_id = mapped_id) %>%
-  # Join with kegg_uniprot to get uniprot IDs for node2_string_id
+  rename(node1_uniprot_id = uniprot_id) %>%
+  # Join with deduplicated protein names to get uniprot IDs for node2_string_id
   left_join(
-    aae_kegg_uniprot %>% select(identifier, mapped_id),
+    aae_all_prot_names_unique2 %>% select(identifier, uniprot_id),
     by = c("node2_string_id" = "identifier")
   ) %>%
-  rename(node2_uniprot_id = mapped_id) %>%
-  # Join with kegg_uniprot to get kegg IDs for node1
-  left_join(
-    aae_kegg_uniprot %>% select(identifier, kegg_id),
-    by = c("node1_string_id" = "identifier")
-  ) %>%
-  rename(id1 = kegg_id) %>%
-  # Join with kegg_uniprot to get kegg IDs for node2
-  left_join(
-    aae_kegg_uniprot %>% select(identifier, kegg_id),
-    by = c("node2_string_id" = "identifier")
-  ) %>%
-  rename(id2 = kegg_id) %>%
+  rename(node2_uniprot_id = uniprot_id) %>%
   # Join with deduplicated protein names for node1 (using node1_uniprot_id)
   left_join(
-    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    aae_all_prot_names_unique2 %>% select(uniprot_id, protein_name),
     by = c("node1_uniprot_id" = "uniprot_id")
   ) %>%
   rename(protein_name_1 = protein_name) %>%
   # Join with deduplicated protein names for node2 (using node2_uniprot_id)
   left_join(
-    aae_prot_names_unique %>% select(uniprot_id, protein_name),
+    aae_all_prot_names_unique2 %>% select(uniprot_id, protein_name),
     by = c("node2_uniprot_id" = "uniprot_id")
   ) %>%
   rename(protein_name_2 = protein_name) %>%
   # Move the new columns to the correct position (after node2_string_id)
   select(
     X.node1, node2, node1_string_id, node2_string_id,
-    node1_uniprot_id, node2_uniprot_id, id1, id2, protein_name_1, protein_name_2,
+    node1_uniprot_id, node2_uniprot_id, protein_name_1, protein_name_2,
     everything()
   )
 
