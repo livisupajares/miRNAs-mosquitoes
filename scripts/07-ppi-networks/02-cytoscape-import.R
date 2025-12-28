@@ -16,15 +16,18 @@ library(tidylog, warn.conflicts = FALSE)
 # ==== IMPORT DATA ====
 # Import node data
 # Aedes aegypti
-aae_edge <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aae/aedes_aegypti_STRING.tsv", sep = "\t")
-aae_common_all_edge <- read.csv("results/04-ppi-network/aae-common-all/aae_common_string_interactions.tsv", sep = "\t")
+aae_edge <- read.csv("results/04-ppi-network/aae-all/aae_string_interactions_short.tsv", sep = "\t")
+
+aae_common_all_edge <- read.csv("results/04-ppi-network/aae-common-all/aae_common_string_interactions_short.tsv", sep = "\t")
+
+aae_mir_2945_3p_edge <- read.csv("results/04-ppi-network/aae-mir-2945-3p/string_interactions_short.tsv", sep = "\t")
 
 # Aedes albopictus
-aal_edge <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aal/aedes_albopictus_STRING.tsv", sep = "\t")
+aal_edge <- read.csv("results/04-ppi-network/aal-all/aal_string_interactions_short.tsv", sep = "\t")
 
 # Import node degree data
-aae_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aae/aae_string_node_degrees.tsv", sep = "\t")
-aal_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aal/aal_string_node_degrees.tsv", sep = "\t")
+# aae_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aae/aae_string_node_degrees.tsv", sep = "\t")
+# aal_degree <- read.csv("results/06-taxonomic-comparison/02-orthoscape-import/aal/aal_string_node_degrees.tsv", sep = "\t")
 
 ## Import data that have uniprot ids and protein names (eggnog mapper)
 
@@ -36,14 +39,22 @@ prot_names_per_mirna <- read.csv("results/02-enrichment/07-tidying-results/03-fi
 
 # ==== FILTER DATA AND REMOVE DUPLICATES ====
 ## Filter by species
-aae_prot_names <- prot_names_all %>% filter(species == "Aedes aegypti")
-aal_prot_names <- prot_names %>% filter(species == "Aedes albopictus")
+## All
+aae_prot_names_all <- prot_names_all %>% dplyr::filter(species == "Aedes aegypti")
+aal_prot_names_all <- prot_names_all %>% dplyr::filter(species == "Aedes albopictus")
+
+## Per-miRNA
+aae_prot_names_per_mirna <- prot_names_per_mirna %>%
+  dplyr::filter(species == "Aedes aegypti")
 
 # First, deduplicate the protein names dataframe by keeping the first occurrence of each uniprot_id
-aae_prot_names_unique <- aae_prot_names %>%
+aae_all_prot_names_unique <- aae_prot_names_all %>%
   distinct(uniprot_id, .keep_all = TRUE)
 
-aal_prot_names_unique <- aal_prot_names %>%
+aal_all_prot_names_unique <- aal_prot_names_all %>%
+  distinct(uniprot_id, .keep_all = TRUE)
+
+aae_per_mirna_prot_names_unique <- aae_prot_names_per_mirna %>%
   distinct(uniprot_id, .keep_all = TRUE)
 
 # ==== ADD COLUMNS TO EDGE DATA ====
