@@ -11,6 +11,7 @@
 # ==== IMPORT LIBRARIES ====
 library(dplyr)
 library(tidyr)
+library(stringr)
 library(tidylog, warn.conflicts = FALSE)
 
 # ==== IMPORT DATA ====
@@ -134,6 +135,34 @@ aae_edge_final <- aae_edge %>%
     everything()
   )
 
+## ==== ADD NAMES TO NAs ====
+# After joining, some protein names may be NA if there was no match in the deduplicated protein names data.
+aae_edge_final2 <- aae_edge_final %>%
+  mutate(
+    # Extract uniprot_id from string_id by removing taxon_id prefix
+    node1_uniprot_id = if_else(
+      is.na(node1_uniprot_id),
+      str_remove(node1_string_id, "^[0-9]+\\."),
+      node1_uniprot_id
+    ),
+    node2_uniprot_id = if_else(
+      is.na(node2_uniprot_id),
+      str_remove(node2_string_id, "^[0-9]+\\."),
+      node2_uniprot_id
+    ),
+    # Fill protein names with uniprot_id if NA
+    protein_name_1 = if_else(
+      is.na(protein_name_1),
+      node1_uniprot_id,
+      protein_name_1
+    ),
+    protein_name_2 = if_else(
+      is.na(protein_name_2),
+      node2_uniprot_id,
+      protein_name_2
+    )
+  )
+
 # ==== ADD COLUMNS TO NODE DEGREE DATA ====
 ## Aedes aegypti
 # aae_degree_ortho1 <- aae_degree %>%
@@ -188,7 +217,7 @@ aae_edge_final <- aae_edge %>%
 # ==== SAVE FINAL DATA ====
 ## Aedes aegypti
 ## Edge table
-write.csv(aae_edge_final, "results/04-ppi-network/aae-all/output/aae_string_interactions_short.csv", row.names = FALSE)
+write.csv(aae_edge_final2, "results/04-ppi-network/aae-all/output/aae_string_interactions_short.csv", row.names = FALSE)
 
 ## Degree table
 # write.csv(aae_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_degree_ortho.csv", row.names = FALSE)
