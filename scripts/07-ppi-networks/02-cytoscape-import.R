@@ -188,14 +188,14 @@ aae_edge_final <- aae_edge %>%
 # ==== SAVE FINAL DATA ====
 ## Aedes aegypti
 ## Edge table
-write.csv(aae_edge_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_edge_ortho.csv", row.names = FALSE)
+write.csv(aae_edge_final, "results/04-ppi-network/aae-all/output/aae_string_interactions_short.csv", row.names = FALSE)
 
 ## Degree table
-write.csv(aae_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_degree_ortho.csv", row.names = FALSE)
+# write.csv(aae_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aae/aae_degree_ortho.csv", row.names = FALSE)
 
 ## Aedes albopictus
 ## Edge table
 write.csv(aal_edge_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_edge_ortho.csv", row.names = FALSE)
 
 ## Degree table
-write.csv(aal_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_degree_ortho.csv", row.names = FALSE)
+# write.csv(aal_degree_ortho2, "results/03-taxonomic-comparison/02-orthoscape-import/aal/aal_degree_ortho.csv", row.names = FALSE)
