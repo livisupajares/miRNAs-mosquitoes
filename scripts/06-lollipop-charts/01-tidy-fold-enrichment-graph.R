@@ -4,6 +4,7 @@
 # Source utils functions and import libraries
 # library(ggplot2)
 library(tidyplots)
+library(scales)
 library(dplyr)
 library(stringr)
 
@@ -166,4 +167,29 @@ df2 |>
     breaks = legend_breaks,
     labels = legend_labels,
     limits = c(min_fdr, max_fdr)
+  )
+
+# --------------------------------
+# Using the scales package to overrride the default legend formatting which is given by ggplot2
+# requesting 5 breaks gives you 2
+# requesting 6 breaks gives you 5, PERFECT!!!
+df2 |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  adjust_legend_title("-log(FDR)") |>
+  adjust_colors(colors_diverging_blue2red,
+    breaks = breaks_extended(6),
+    labels = number_format(accuracy = 0.01)
+  )
+
+# forcing 4 breaks, looks BAD!!!
+df2 |>
+  tidyplot(x = false_discovery_rate, y = term_description, color = neg_log_fdr) |>
+  add_data_points() |>
+  add_mean_bar(width = 0.01) |>
+  adjust_legend_title("-log(FDR)") |>
+  adjust_colors(colors_diverging_blue2red,
+    breaks = function(x) seq(min(x), max(x), length.out = 4),
+    labels = number_format(accuracy = 0.01)
   )
