@@ -28,7 +28,7 @@ hsa <- EnsDb.Hsapiens.v86
 hasProteinData(hsa)
 
 # ===== API ENSEMBL ===== #
-# test only for one transcript ID
+# Fetch transcript IDs from Ensembl API
 tx_miranda <- transcripts(hsa,
   filter = TxIdFilter(control_miranda$mRNA),
   columns = c("tx_id", "uniprot_id", "gene_name")
