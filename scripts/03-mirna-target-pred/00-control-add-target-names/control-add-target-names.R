@@ -1,12 +1,9 @@
-# ~~~~~ ADD TARGET NAMES ~~~~~ #
-# if (!require("BiocManager", quietly = TRUE))
-#   install.packages("BiocManager")
-#
-# BiocManager::install("ensembldb")
-# BiocManager::install("EnsDb.Hsapiens.v86")
-
-# https://www.bioconductor.org/packages/devel/bioc/manuals/ensembldb/man/
-# ensembldb.pdf
+# ~~~~~ CONTROL: ADD TARGET NAMES ~~~~~ #
+# This script takes as input the raw results of miRNA target prediction of previously validated human miRNAs, uses biomaRt as annotation, because the ensembl IDs are provided.
+# Then, it merges the input with the dataframe of transcripts provided by biomaRt along their gene names and uniprot ids. Finally, it filters the target prediction results by miRNA and their validated targets along their energy and score values:
+# Experimentally validated targets
+# hsa-miR-548ba : "LIFR", "PTEN", "NEO1", "SP110"
+# hsa-let-7b : "CDC25A", "BCL7A"
 
 # ===== Load libraries & files =====
 library("dplyr")
@@ -67,9 +64,9 @@ result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c
 result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score", "energy")]
 
 # Print the result
-paste("miranda - miR_548ba")
+paste("hsa-miR-548ba")
 print(result_miranda_miR_548ba)
-paste("miranda - let_7b")
+paste("hsa-let-7b")
 print(result_miranda_let_7b)
 
 # ==== DOWNLOAD DATABASE ====
