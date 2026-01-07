@@ -10,8 +10,8 @@
 
 # ===== Load libraries & files =====
 library("dplyr")
-library("ensembldb")
-library("EnsDb.Hsapiens.v86") # Homo sapiens database
+library("biomaRt")
+library("tidylog", warn.conflicts = FALSE)
 source("scripts/functions.R")
 
 # ===== Importing data ===== #
@@ -23,35 +23,30 @@ control_miranda <- read.delim("databases/02-target-prediction/00-miRNAconsTarget
 # Eliminate all decimal parts without rounding
 control_miranda$mRNA <- sub("\\..*", "", control_miranda$mRNA)
 
-# ===== CHECK PROT DATA ==== #
-hsa <- EnsDb.Hsapiens.v86
-hasProteinData(hsa)
+# ==== CONNECT TO BIOMART API ====
+# Connect to current Ensembl
+ensembl <- useEnsembl(biomart = "ensembl", dataset = "hsapiens_gene_ensembl")
 
-# ===== API ENSEMBL ===== #
-# Fetch transcript IDs from Ensembl API
-tx_miranda <- transcripts(hsa,
-  filter = TxIdFilter(control_miranda$mRNA),
-  columns = c("tx_id", "uniprot_id", "gene_name")
+# Get transcript information
+transcript_info <- getBM(
+  attributes = c('ensembl_transcript_id', 'external_gene_name', 'uniprotswissprot'),
+  filters = 'ensembl_transcript_id',
+  values = control_miranda$mRNA,
+  mart = ensembl
 )
 
-# ==== FIX DATABASE PRESENTATION ==== #
-# Ensure you have a valid result and convert to dataframes.
-# Convert each GRanges object to a data frame
-df_miranda <- granges_to_df(tx_miranda)
-
-# Remove duplicates based on tx_id
-df_miranda <- df_miranda %>%
-  distinct(tx_id, .keep_all = TRUE)
+# Rename columns for consistent names
+colnames(transcript_info) <- c("tx_id", "gene_name", "uniprot_id")
 
 # ==== MERGE DATABASES ==== #
 # Merge transcript name df with initial df
-t_control_miranda <- merge_ensembl_to_df(df_miranda, control_miranda)
+t_control_miranda <- merge(control_miranda, transcript_info, by.x = "mRNA", by.y = "tx_id", all.x = TRUE)
 
 # Reorder columns: first column, then the last two columns, then the remaining columns
 t_control_miranda <- reorder_columns(t_control_miranda)
 
-# Filter by score highest to lowest score value
-t_control_miranda <- t_control_miranda %>% arrange(desc(score))
+# Filter by lowest to highest energy values
+t_control_miranda <- t_control_miranda %>% arrange(energy)
 
 # View the result
 head(t_control_miranda)
@@ -66,13 +61,12 @@ vtargets_hsa_let_7b <- c("CDC25A", "BCL7A")
 matching_rows_miranda_miR_548ba <- which(t_control_miranda$gene_name %in% vtargets_hsa_miR_548ba)
 matching_rows_miranda_let_7b <- which(t_control_miranda$gene_name %in% vtargets_hsa_let_7b)
 
-# Extract corresponding rows with microRNA information
+# Extract corresponding rows with miRNA information
 ## miranda
-result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c("gene_name", "microRNA", "score")]
-result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score")]
+result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c("gene_name", "microRNA", "score", "energy")]
+result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score", "energy")]
 
 # Print the result
-## miranda
 paste("miranda - miR_548ba")
 print(result_miranda_miR_548ba)
 paste("miranda - let_7b")
