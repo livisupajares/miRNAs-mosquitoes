@@ -91,5 +91,5 @@ write.csv(t_control_miranda,
 
 # save mRNA predicted proteins location
 # miranda
-write.csv(result_miranda_miR_548ba, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-mir-548ba.csv", row.names = TRUE)
-write.csv(result_miranda_let_7b, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-let-7b.csv", row.names = TRUE)
+write.csv(result_miranda_miR_548ba2, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-mir-548ba.csv", row.names = TRUE)
+write.csv(result_miranda_let_7b2, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-let-7b.csv", row.names = TRUE)
