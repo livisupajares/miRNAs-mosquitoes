@@ -26,8 +26,8 @@ ensembl <- useEnsembl(biomart = "ensembl", dataset = "hsapiens_gene_ensembl")
 
 # Get transcript information
 transcript_info <- getBM(
-  attributes = c('ensembl_transcript_id', 'external_gene_name', 'uniprotswissprot'),
-  filters = 'ensembl_transcript_id',
+  attributes = c("ensembl_transcript_id", "external_gene_name", "uniprotswissprot"),
+  filters = "ensembl_transcript_id",
   values = control_miranda$mRNA,
   mart = ensembl
 )
@@ -52,22 +52,34 @@ head(t_control_miranda)
 # Filter rows where gene_name is
 vtargets_hsa_miR_548ba <- c("LIFR", "PTEN", "NEO1", "SP110")
 vtargets_hsa_let_7b <- c("CDC25A", "BCL7A")
+all_validated_targets <- c("LIFR", "PTEN", "NEO1", "SP110", "CDC25A", "BCL7A")
 
 # Find rows where gene_name is in the target list
 ## miranda
 matching_rows_miranda_miR_548ba <- which(t_control_miranda$gene_name %in% vtargets_hsa_miR_548ba)
 matching_rows_miranda_let_7b <- which(t_control_miranda$gene_name %in% vtargets_hsa_let_7b)
+matching_rows_all <- which(t_control_miranda$gene_name %in% all_validated_targets)
 
 # Extract corresponding rows with miRNA information
 ## miranda
 result_miranda_miR_548ba <- t_control_miranda[matching_rows_miranda_miR_548ba, c("gene_name", "microRNA", "score", "energy")]
 result_miranda_let_7b <- t_control_miranda[matching_rows_miranda_let_7b, c("gene_name", "microRNA", "score", "energy")]
+result_all <- t_control_miranda[matching_rows_all, c("gene_name", "microRNA", "score", "energy")]
+
+# Filter by miRNA name
+result_miranda_miR_548ba2 <- result_miranda_miR_548ba %>%
+  dplyr::filter(microRNA == "hsa-miR-548ba")
+
+result_miranda_let_7b2 <- result_miranda_let_7b %>%
+  dplyr::filter(microRNA == "hsa-let-7b-5p")
 
 # Print the result
 paste("hsa-miR-548ba")
-print(result_miranda_miR_548ba)
+print(result_miranda_miR_548ba2)
 paste("hsa-let-7b")
-print(result_miranda_let_7b)
+print(result_miranda_let_7b2)
+paste("All validated targets")
+print(result_all)
 
 # ==== DOWNLOAD DATABASE ====
 # save tcontrol_final to csv
@@ -79,5 +91,5 @@ write.csv(t_control_miranda,
 
 # save mRNA predicted proteins location
 # miranda
-write.csv(result_miranda_miR_548ba, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-mir-548ba.csv", row.names = TRUE)
-write.csv(result_miranda_let_7b, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-let-7b.csv", row.names = TRUE)
+write.csv(result_miranda_miR_548ba2, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-mir-548ba.csv", row.names = FALSE)
+write.csv(result_miranda_let_7b2, "results/01-target-prediction/00-miRNAconsTarget/hsa_controls/t-let-7b.csv", row.names = FALSE)

@@ -1,7 +1,5 @@
-"","gene_name","microRNA","score","energy"
-"27886","CDC25A","hsa-let-7b-5p",148,-19.45
-"27887","CDC25A","hsa-let-7b-5p",148,-19.45
-"36539","CDC25A","hsa-let-7b-5p",148,-17.69
-"36540","CDC25A","hsa-let-7b-5p",148,-17.69
-"60224","BCL7A","hsa-miR-548ba",142,-13.28
-"60225","BCL7A","hsa-miR-548ba",142,-13.28
+"gene_name","microRNA","score","energy"
+"CDC25A","hsa-let-7b-5p",148,-19.45
+"CDC25A","hsa-let-7b-5p",148,-19.45
+"CDC25A","hsa-let-7b-5p",148,-17.69
+"CDC25A","hsa-let-7b-5p",148,-17.69
