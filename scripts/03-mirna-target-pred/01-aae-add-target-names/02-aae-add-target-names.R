@@ -42,10 +42,10 @@ aae_miranda_tx_names <- reorder_columns(aae_miranda_tx_names)
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
-length(unique(aae_miranda_tx_names$uniprot_id)) # 2494
+length(unique(aae_miranda_tx_names$uniprot_id)) # 2549
 
 # Count the number of unique transcripts (mRNA) in the dataset
-length(unique(aae_miranda_tx_names$mRNA)) # 2679
+length(unique(aae_miranda_tx_names$mRNA)) # 2767
 
 # Count the number of unique miRNAs in the dataset
 length(unique(aae_miranda_tx_names$microRNA)) # 2
@@ -55,7 +55,7 @@ length(unique(aae_miranda_tx_names$microRNA)) # 2
 
 # List of upregulated microRNAs to filter by
 microRNA_list_miranda <- c(
-  "aae-miR-34-3p",
+  "aae-miR-34-5p",
   "aae-miR-5119-5p"
 )
 
@@ -75,7 +75,7 @@ candidates_miranda <<- lapply(mirna_list_miranda, function(df) {
 })
 
 # Access each miRNA data frame by its name
-View(candidates_miranda[["aae-miR-34-3p"]])
+View(candidates_miranda[["aae-miR-34-5p"]])
 View(candidates_miranda[["aae-miR-5119-5p"]])
 
 # Also filter and sort dataframe with all the up-regulated miRNAs
@@ -86,10 +86,10 @@ aae_miranda_tx_names_sorted <- aae_miranda_tx_names %>%
 
 # ==== DATA SUMMARY ====
 # Count the number of unique UNIPROT IDS in the dataset
-length(unique(aae_miranda_tx_names_sorted$uniprot_id)) # 417
+length(unique(aae_miranda_tx_names_sorted$uniprot_id)) # 894
 
 # Count the number of unique transcripts (mRNA) in the dataset
-length(unique(aae_miranda_tx_names_sorted$mRNA)) # 272
+length(unique(aae_miranda_tx_names_sorted$mRNA)) # 669
 
 # Count the number of unique miRNAs in the dataset
 length(unique(aae_miranda_tx_names_sorted$microRNA)) # 2
