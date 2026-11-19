@@ -10,6 +10,7 @@ library(readxl)
 
 # ==== IMPORT DATA ====
 aae_mirbase23 <- read.csv("databases/00-mirbase-scrapping/aae-v23.csv")
+aae_mirbase22 <- read.csv("databases/00-mirbase-scrapping/aae-v22.csv")
 table_s1 <- read_excel("databases/00-mirbase-scrapping/table-s1.xlsx",
   sheet = "Aedes aegypti", range = "A1:L263"
 )
