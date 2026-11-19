@@ -34,3 +34,9 @@ aae_mirbase23_3p <- aae_mirbase23_clean |>
 
 # merge aae_mirbase23_5p and aae_mirbase23_3p by rows to get a longer dataframe
 aae_mirbase23_final <- bind_rows(aae_mirbase23_5p, aae_mirbase23_3p) |> drop_na()
+
+# ===== FILTER AND COMPARE ====
+# Filter DENV-2
+table_s1_denv <- table_s1_clean |>
+  filter(infection == "denv") |>
+  distinct(mirna_name, .keep_all = TRUE)
