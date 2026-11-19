@@ -5,6 +5,7 @@
 
 # ==== IMPORT LIBRARIES =====
 library(dplyr)
+library(tidyr)
 library(readxl)
 
 # ==== IMPORT DATA ====
