@@ -13,8 +13,10 @@ clean_seq <- function(x) {
   if_else(is.na(x) | x == "", NA_character_, x)
 }
 
-# "aae-miR-276-3p" -> "miR-276-3p"; "aal-let-7" -> "let-7"
-strip_species <- function(x) str_remove(x, "^[a-z]{3}-")
+# "aae-miR-276-3p" -> "miR-276-3p"; "aal-let-7" -> "let-7".
+# Only strips a 3-letter prefix that is followed by a miRNA name, so an
+# unprefixed "let-7" is left alone (it is not species "let").
+strip_species <- function(x) str_remove(x, "^[a-z]{3}-(?=(miR|mir|let|bantam|lin))")
 get_arm <- function(x) str_extract(x, "(?<=-)[35]p$")
 get_base <- function(x) str_remove(strip_species(x), "-[35]p$")
 

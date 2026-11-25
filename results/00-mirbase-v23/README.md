@@ -45,3 +45,41 @@ It reported 263 rows as "New in v23 (Not found in table_s1)". Checking them:
 Causes: it compared all of v23 against **only the DENV rows** of S1, it never
 compared against v22, it matched on accession or name but never on sequence,
 and it did not collapse precursors that share one mature miRNA.
+
+## Literature check against the DENV-2 papers (2026-11-25)
+
+Two more scripts, run after the three above:
+
+4. `05-literature-vs-v23.R`: every DENV-2 finding extracted from the papers in
+   the Zotero group *pasantia-upch*, matched to miRBase v23.1 by sequence and
+   then checked against Table S1 for the same study.
+5. `06-build-s1-literature-tab.R`: drafts the findings that are missing from
+   Table S1 as rows in the Table S1 column layout.
+
+Hand-curated input (one row per study x miRNA x condition, each with a page or
+figure locator):
+
+- `databases/00-mirbase-scrapping/literature/paper-de-extract.tsv`
+- `databases/00-mirbase-scrapping/literature/su2017-additional-file1-seqs.tsv`
+  (sequences from Su et al. 2017 Additional file 1, the Drive copy)
+
+| File | What it holds |
+|---|---|
+| `literature-denv2-vs-v23-vs-s1.csv` | 122 findings from 9 papers, each with its v23 match, whether that v23 miRNA is new, and whether Table S1 already has it |
+| `new-v23-mirnas-denv2-evidence.csv` | The reverse view: each of the 97 new or changed v23 mature products, with any DENV-2 evidence for it |
+| `s1-new-tab-denv2-literature.csv` | 53 draft rows in the Table S1 layout for findings S1 does not have, with `curation_status` ADD / CHECK / EXCLUDED and the review columns after the S1 columns |
+
+Headline: only **aae-miR-276-2-5p** is matched to a new v23 accession by a
+paper's own sequence. Twelve more new v23 arms are candidates where the paper
+named a locus but not the arm (miR-100-3p for Yan's "miR-100*" is the most
+likely). The other ~84 are new to miRBase, not to this literature.
+
+In the other direction, 33 distinct miRNAs (53 study rows) are differentially
+expressed under DENV-2 in a paper but absent from Table S1; most are Campbell
+2014 Table 1 entries and the Yan 2014 adult-female experiment.
+
+Seven papers were set aside with the reason recorded: Miesen 2016 (nothing
+significant after multiple-testing correction), Etebari 2015 (isomiR ratios,
+not differential expression), Azlan 2022 (DENV-1), She 2024 (Wolbachia),
+Hess 2011 (no miRNA DE list), Skalsky 2010 (no infection), Smith 2017 (human
+cells).
