@@ -166,7 +166,7 @@ write.csv(diff_v22_v23, file.path(out_dir, "aae-mirbase-v22-vs-v23.csv"),
 )
 
 # ==== PART 2: TABLE S1 (aae) vs miRBase v23.1 ====
-s1_raw <- read_excel(file.path(in_dir, "table-s1.xlsx"), sheet = "Aedes aegypti")
+s1_raw <- read_excel(file.path(in_dir, "table-s1.xlsx"), sheet = "Aedes aegypti", na = c("", "NA"))
 
 s1 <- s1_raw |>
   mutate(excel_row = row_number() + 1, s1_seq = clean_seq(mat_seq)) |>
@@ -260,7 +260,7 @@ write.csv(s1_denv_vs_v23, file.path(out_dir, "s1-aae-denv-vs-mirbase-v23.csv"),
 # ==== PART 3: TABLE S1 (aal) vs miRBase v23.1 aae (naming help only) ====
 # There is no A. albopictus in miRBase. An identical aae mature sequence is a
 # useful hint for the canonical name/arm, not proof of identity.
-s1_aal <- read_excel(file.path(in_dir, "table-s1.xlsx"), sheet = "Aedes albopictus") |>
+s1_aal <- read_excel(file.path(in_dir, "table-s1.xlsx"), sheet = "Aedes albopictus", na = c("", "NA")) |>
   mutate(excel_row = row_number() + 1, s1_seq = clean_seq(mat_seq)) |>
   group_by(name_s1 = mirna_name, s1_seq) |>
   summarise(
@@ -286,6 +286,53 @@ write.csv(s1_aal, file.path(out_dir, "s1-aal-vs-aae-mirbase-v23.csv"),
   row.names = FALSE
 )
 
+# ==== PART 4: EVERY v23.1 MATURE miRNA -> IS IT IN TABLE S1? ====
+# The reverse view, so every miRBase entry can be checked by hand.
+# S1 only lists miRNAs that a reviewed study reported as differentially
+# expressed, so most miRBase entries are expected to be absent from S1.
+s1_rows <- s1_raw |>
+  mutate(excel_row = row_number() + 1, s1_seq = clean_seq(mat_seq))
+
+v23_in_s1 <- v23 |>
+  mutate(
+    in_v22 = case_when(
+      paste(mat_acc, mat_seq) %in% paste(v22$mat_acc, v22$mat_seq) ~ "yes, same accession and sequence",
+      mat_acc %in% v22$mat_acc ~ "accession yes, sequence changed",
+      TRUE ~ "no, new in v23"
+    ),
+    s1_exact_rows = sapply(mat_seq, function(s) {
+      paste(s1_rows$excel_row[s1_rows$s1_seq %in% s], collapse = ",")
+    }),
+    s1_exact_names = sapply(mat_seq, function(s) {
+      paste(unique(s1_rows$mirna_name[s1_rows$s1_seq %in% s]), collapse = "; ")
+    }),
+    s1_isomir_names = sapply(mat_seq, function(s) {
+      hit <- !is.na(s1_rows$s1_seq) & s1_rows$s1_seq != s &
+        (str_detect(s1_rows$s1_seq, fixed(s)) | str_detect(s, fixed(coalesce(s1_rows$s1_seq, "X"))))
+      paste(unique(s1_rows$mirna_name[hit]), collapse = "; ")
+    }),
+    s1_acc_names = sapply(mat_acc, function(a) {
+      paste(unique(s1_rows$mirna_name[s1_rows$acc_mirb %in% a]), collapse = "; ")
+    }),
+    s1_denv = sapply(mat_seq, function(s) {
+      any(s1_rows$s1_seq %in% s & s1_rows$infection %in% "denv")
+    }),
+    in_s1 = case_when(
+      s1_exact_rows != "" ~ "yes, exact sequence",
+      s1_isomir_names != "" ~ "only as an isomiR (length variant)",
+      s1_acc_names != "" ~ "only by accession (different sequence)",
+      TRUE ~ "no"
+    )
+  ) |>
+  select(mat_acc, mat_name, mat_seq, in_v22, in_s1, s1_denv, s1_exact_names,
+    s1_exact_rows, s1_isomir_names, s1_acc_names, precursors
+  ) |>
+  arrange(in_s1, mat_name)
+
+write.csv(v23_in_s1, file.path(out_dir, "aae-mirbase-v23-in-s1.csv"),
+  row.names = FALSE
+)
+
 # ==== SUMMARY ====
 cat("\n== miRBase v22.1 -> v23.1 (aae mature miRNAs) ==\n")
 print(count(diff_v22_v23, status))
@@ -295,3 +342,5 @@ cat("\n== Table S1 aae DENV-2 entries vs v23.1 ==\n")
 print(count(s1_denv_vs_v23, status))
 cat("\n== Table S1 aal entries vs aae v23.1 ==\n")
 print(count(s1_aal, match_type, name_agrees))
+cat("\n== Every aae v23.1 mature miRNA: in miRBase v22.1? in Table S1? ==\n")
+print(count(v23_in_s1, in_v22, in_s1))

@@ -1,0 +1,4 @@
+name_s1,s1_seq,final_acc,final_name,final_seq,needs_liv_check,note
+miR-276-5p,AGCGAGGUAUAGAGUUCCUAC,MIMAT0014222,miR-276-5p,AGCGAGGUAUAGAGUUCCUAC,TRUE,"S1 had MIMAT0014223 (the 3p accession). Sequence belongs to MIMAT0014222. v23 scrape names it aae-miR-276-2-3p, which looks wrong for a 5p arm of mir-276-1: verify on miRBase website."
+miR-210-5p,UUGUGCGUGUGACAACGG,,miR-210-5p,UUGUGCGUGUGACAACGG,TRUE,"Campbell et al. 2014 sequence lies inside aae-miR-210-3p (MIMAT0014293) minus its first base; seed differs from miRBase. Kept as reported per 'paper gave own sequence' rule; check the arm name in the paper."
+miR-999-3p,GUUAACUGUAAGACUGUGUCUCG,MIMAT0014257,miR-999-3p,GUUAACUGUAAGACUGUGUCUCG,FALSE,"Campbell et al. 2014 reported its own sequence (1 nt shift vs miRBase). Kept as reported per 'paper gave own sequence' rule."
