@@ -14,6 +14,7 @@ accession and normalised name second. A mature product is the pair
 | `s1-aae-vs-mirbase-v23.csv` | Every distinct S1 aae entry (name + acc + sequence) mapped to v23, with a `status` to act on and the S1 Excel rows it came from |
 | `s1-aae-denv-vs-mirbase-v23.csv` | Same, only entries with DENV evidence (feeds target prediction) |
 | `s1-aal-vs-aae-mirbase-v23.csv` | aal S1 sequences vs aae v23 (naming hint only; no aal in miRBase) |
+| `aae-mirbase-v23-in-s1.csv` | Reverse view: every v23 mature miRNA, whether it was in v22, and whether (and in which S1 Excel rows) it appears in S1 |
 
 ## Status values in the S1 files
 
