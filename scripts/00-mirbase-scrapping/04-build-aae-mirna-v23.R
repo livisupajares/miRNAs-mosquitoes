@@ -11,9 +11,9 @@
 #   - Manual calls live in databases/00-mirbase-scrapping/v23-manual-decisions.csv
 #     (one row per decision, with a note), never in S1.
 #
-# Requires the output of 02-reconcile-v22-v23-s1.R. Run from the project root:
-#   Rscript scripts/00-mirbase-scrapping/02-reconcile-v22-v23-s1.R
-#   Rscript scripts/00-mirbase-scrapping/03-build-aae-mirna-v23.R
+# Requires the output of 03-reconcile-s1-v23.R. Run from the project root:
+#   Rscript scripts/00-mirbase-scrapping/03-reconcile-s1-v23.R
+#   Rscript scripts/00-mirbase-scrapping/04-build-aae-mirna-v23.R
 
 # ==== IMPORT LIBRARIES =====
 library(dplyr)

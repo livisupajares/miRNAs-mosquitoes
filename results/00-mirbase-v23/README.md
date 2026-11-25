@@ -1,7 +1,13 @@
 # miRBase v22.1 → v23.1 reconciliation
 
-Made by `scripts/00-mirbase-scrapping/02-reconcile-v22-v23-s1.R`. Table S1 is
-only read, never changed.
+Made by three scripts in `scripts/00-mirbase-scrapping/` (run from the
+project root, in this order). Table S1 is only read, never changed.
+
+1. `02-compare-mirbase-v22-v23.R`: miRBase v22.1 vs v23.1 only (no S1).
+2. `03-reconcile-s1-v23.R`: Table S1 vs miRBase v23.1.
+3. `04-build-aae-mirna-v23.R`: builds `databases/01-isolating-mature-sequences/aae-mirna-v23.csv`.
+
+Shared functions live in `mirbase-helpers.R`.
 
 Matching rule: **mature sequence first** (exact, then containment = isomiR),
 accession and normalised name second. A mature product is the pair
@@ -10,6 +16,7 @@ accession and normalised name second. A mature product is the pair
 
 | File | What it holds |
 |---|---|
+| `aae-mirbase-v22-vs-v23-precursors.csv` | Precursor (hairpin) level: unchanged, renamed, hairpin sequence changed, new, removed |
 | `aae-mirbase-v22-vs-v23.csv` | Every aae mature miRNA: unchanged, renamed, sequence changed (with seed flag), extra sequence on same accession, new in v23, removed |
 | `s1-aae-vs-mirbase-v23.csv` | Every distinct S1 aae entry (name + acc + sequence) mapped to v23, with a `status` to act on and the S1 Excel rows it came from |
 | `s1-aae-denv-vs-mirbase-v23.csv` | Same, only entries with DENV evidence (feeds target prediction) |
