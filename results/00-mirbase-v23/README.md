@@ -48,25 +48,37 @@ and it did not collapse precursors that share one mature miRNA.
 
 ## Literature check against the DENV-2 papers (2026-11-25)
 
-Two more scripts, run after the three above:
+Three more scripts, run after the three above (shared code for 06 and 07 is in
+`scripts/00-mirbase-scrapping/literature-helpers.R`):
 
 4. `05-literature-vs-v23.R`: every DENV-2 finding extracted from the papers in
    the Zotero group *pasantia-upch*, matched to miRBase v23.1 by sequence and
    then checked against Table S1 for the same study.
 5. `06-build-s1-literature-tab.R`: drafts the findings that are missing from
    Table S1 as rows in the Table S1 column layout.
+6. `07-build-literature-s1-combined.R`: one table with every finding, all
+   Table S1 columns filled in, and the study evidence (finding, exact quote,
+   locator, source coverage, support). Papers that were read but set aside get
+   one row each so the reason stays visible.
 
 Hand-curated input (one row per study x miRNA x condition, each with a page or
 figure locator):
 
 - `databases/00-mirbase-scrapping/literature/paper-de-extract.tsv`
 - `databases/00-mirbase-scrapping/literature/su2017-additional-file1-seqs.tsv`
-  (sequences from Su et al. 2017 Additional file 1, the Drive copy)
+  (sequences from Su et al. 2017 Additional file 1, the Drive copy; the subset
+  needed here, not the whole table)
+- `databases/00-mirbase-scrapping/literature/study-evidence.tsv` (one row per
+  paper: finding, exact quotation, locator, source coverage, support, whether
+  it was included or set aside, and what could not be checked)
 
 | File | What it holds |
 |---|---|
 | `literature-denv2-vs-v23-vs-s1.csv` | 122 findings from 9 papers, each with its v23 match, whether that v23 miRNA is new, and whether Table S1 already has it |
 | `new-v23-mirnas-denv2-evidence.csv` | The reverse view: each of the 97 new or changed v23 mature products, with any DENV-2 evidence for it |
+| `denv2-evidence-table.md` | Readable evidence table: each paper with its quote, locator, coverage and support, the visible gaps, and the Vancouver reference list |
+| `new-v23-vs-papers-summary.md` | Plain-language answer: which new v23 miRNAs the papers support, and what S1 is missing |
+| `literature-denv2-s1-combined.csv` | **The full table.** 122 findings + 7 set-aside papers. All Table S1 columns first, then `s1_status`, the v23 match, sequence source and coverage, and the study evidence |
 | `s1-new-tab-denv2-literature.csv` | 53 draft rows in the Table S1 layout for findings S1 does not have, with `curation_status` ADD / CHECK / EXCLUDED and the review columns after the S1 columns |
 
 Headline: only **aae-miR-276-2-5p** is matched to a new v23 accession by a
@@ -83,3 +95,21 @@ significant after multiple-testing correction), Etebari 2015 (isomiR ratios,
 not differential expression), Azlan 2022 (DENV-1), She 2024 (Wolbachia),
 Hess 2011 (no miRNA DE list), Skalsky 2010 (no infection), Smith 2017 (human
 cells).
+
+### Columns added after the Table S1 columns in `literature-denv2-s1-combined.csv`
+
+| Column | Meaning |
+|---|---|
+| `s1_status` | `IN S1`, `ONLY IN REMOVED`, `ADD` (missing and significant), `CHECK: …` (S1 has a close name), `EXCLUDED: …` (p > 0.05), `STUDY SET ASIDE` |
+| `s1_names` | The Table S1 name(s) and sheet that matched, if any |
+| `mirna_name_paper`, `direction`, `logFC`, `p` | As printed in the paper |
+| `v23_match`, `v23_relation` | `exact` / `isomiR` / `no match` / `name only`, and how the paper sequence differs from v23 |
+| `v23_new` | `yes` if the matched v23 miRNA is new in v23; `possible, arm not given (…)` when the paper named only the locus |
+| `seq_source`, `sequence_coverage` | Where `mat_seq` came from: `passage retrieved` (paper table), `passage retrieved (paper supplement)`, `guess (another paper's supplement)`, `unavailable` |
+| `finding`, `exact_quote`, `quote_locator` | Study-level evidence, quoted verbatim from the PDF |
+| `source_coverage` | `passage retrieved`, `abstract only` or `unavailable` |
+| `study_support`, `finding_support` | `supported`, `contradicted` or `uncertain` (finding-level is `uncertain` when the paper's own p > 0.05) |
+| `scope`, `coverage_gap` | `included` or `set aside`, and what could not be checked |
+
+Values from the paper (`exp_denv_value`, `logFC`) are copied as printed. Every
+Table S1 column with no information is the text `NA`, as in Table S1.

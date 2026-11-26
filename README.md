@@ -72,6 +72,22 @@ mamba env create -f environment.yml
 ### Running the Pipeline
 The workflow follows these main steps: 
 
+#### Step 0: miRBase v23.1 update and DENV-2 literature check
+
+Run from the project root, in this order (all R; Table S1 is only read):
+
+```bash
+Rscript scripts/00-mirbase-scrapping/02-compare-mirbase-v22-v23.R    # miRBase v22.1 vs v23.1
+Rscript scripts/00-mirbase-scrapping/03-reconcile-s1-v23.R          # Table S1 vs v23.1
+Rscript scripts/00-mirbase-scrapping/04-build-aae-mirna-v23.R       # aae-mirna-v23.csv
+Rscript scripts/00-mirbase-scrapping/05-literature-vs-v23.R         # paper findings vs v23.1 vs S1
+Rscript scripts/00-mirbase-scrapping/06-build-s1-literature-tab.R   # draft S1 rows for what S1 is missing
+Rscript scripts/00-mirbase-scrapping/07-build-literature-s1-combined.R  # one table: findings + S1 columns + evidence
+```
+
+Inputs, outputs, matching rules and status values are documented in
+[`results/00-mirbase-v23/README.md`](results/00-mirbase-v23/README.md).
+
 > ⚠️ Details and flowcharts for how each main step was done is included [here]() or in the `/docs` directory. Some steps have been done manually so we want to include how we did them.
 
 ## Data Availability
