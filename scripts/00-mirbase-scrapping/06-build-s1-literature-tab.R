@@ -53,8 +53,10 @@ rows <- build_s1_rows(cand)
 # Same column order as the "Aedes aegypti" sheet (the albopictus sheet is the
 # same minus exp_ZIKA / ZIKA_location), then the review columns.
 review_cols <- c("curation_status", "mirna_name_paper", "v23_match", "v23_relation",
-                 "seq_source", "evidence_locator", "new_v23_arms_at_locus")
+                 "seq_source", "evidence_locator", "new_v23_arms_at_locus",
+                 "s1_cell_notes")
 tab <- bind_rows(rows) |>
+  attach_s1_notes() |>
   select(all_of(s1_cols), all_of(review_cols)) |>
   mutate(across(everything(), ~ coalesce(as.character(.x), "NA"))) |>
   arrange(curation_status != "ADD", infection, species, citation_exp, mirna_name)

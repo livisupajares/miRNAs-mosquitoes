@@ -10,6 +10,15 @@ library(dplyr)
 library(stringr)
 library(readxl)
 
+# Table S1 and Liv's cell notes contain accented Spanish text. In a C/POSIX
+# locale R writes those characters as "<U+00E1>" escapes, so ask for a UTF-8
+# character type if the machine has one.
+if (!isTRUE(l10n_info()[["UTF-8"]])) {
+  for (loc in c("C.UTF-8", "en_US.UTF-8", "es_PE.UTF-8")) {
+    if (nzchar(suppressWarnings(Sys.setlocale("LC_CTYPE", loc)))) break
+  }
+}
+
 # ==== Which Table S1 columns belong to which infection ====
 # direction: the "exp_*" column holding up-/down-regulated
 # location : the per-infection location column
@@ -24,6 +33,58 @@ infection_cols <- list(
   wolbachia = list(direction = "exp_wolbachia", location = "wolbachia_location",
                    cell_line = "cell_line_wolbachia")
 )
+
+# ==== Table S1 cell notes (written by 09-extract-s1-notes.py) ====
+# Liv's hand-written notes on individual Table S1 cells. They are attached to
+# the outputs so a drafted row carries whatever she already wrote about that
+# study and miRNA. Notes are never used to overwrite a value: they are context
+# for the human reading the table.
+s1_notes_file <- "results/00-mirbase-v23/s1-cell-notes.csv"
+
+# "Saldaña et al., 2017" and "Saldana et al., 2017" are the same study.
+study_key <- function(x) {
+  x |>
+    as.character() |>
+    stringi::stri_trans_general("Latin-ASCII") |>
+    str_to_lower() |>
+    str_replace_all("[^a-z0-9]+", " ") |>
+    str_trim()
+}
+
+# study + miRNA, arm and species prefix dropped, so "aae-miR-276-3p",
+# "miR-276-5p" and "mir-276" share one key.
+note_key <- function(study, mirna) {
+  paste0(study_key(study), "|", str_to_lower(get_base(mirna)))
+}
+
+s1_notes <- if (file.exists(s1_notes_file)) {
+  read.csv(s1_notes_file, na.strings = c("", "NA"), encoding = "UTF-8") |>
+    filter(!is.na(note), note != "") |>
+    mutate(
+      key = note_key(citation_exp, mirna_name),
+      # A note that names a different miRNA than the row it sits on is usually
+      # a copy left behind by a sort; say so instead of quietly passing it on.
+      label = paste0(
+        if_else(row_mirna_in_note %in% "FALSE", "CHECK PLACEMENT ", ""),
+        "[", sheet, "!", cell, " ", column_name, "] ", str_squish(note)
+      )
+    ) |>
+    group_by(key) |>
+    summarise(s1_cell_notes = paste(unique(label), collapse = " || "),
+              .groups = "drop")
+} else {
+  message("NOTE: ", s1_notes_file, " not found; run 09-extract-s1-notes.py ",
+          "first to carry the Table S1 cell notes into the outputs.")
+  tibble(key = character(), s1_cell_notes = character())
+}
+
+# Add an s1_cell_notes column to any table that has citation_exp + mirna_name.
+attach_s1_notes <- function(df) {
+  df |>
+    mutate(.note_key = note_key(citation_exp, mirna_name)) |>
+    left_join(s1_notes, by = c(".note_key" = "key")) |>
+    select(-.note_key)
+}
 
 # ==== Table S1 templates (one row per study x infection) ====
 read_sheet <- function(sheet) {

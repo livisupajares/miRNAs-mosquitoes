@@ -90,11 +90,12 @@ set_aside <- evidence |>
             s1_status = "STUDY SET ASIDE", finding_support = support)
 
 out <- bind_rows(combined, set_aside) |>
+  attach_s1_notes() |>
   select(
     all_of(s1_cols),
     s1_status, s1_names, mirna_name_paper, direction, logFC, p,
     v23_match, v23_relation, v23_new, new_v23_arms_at_locus,
-    seq_source, sequence_coverage, evidence_locator,
+    seq_source, sequence_coverage, evidence_locator, s1_cell_notes,
     finding, exact_quote, quote_locator, source_coverage,
     study_support = support, finding_support, scope, coverage_gap, zotero_key
   ) |>

@@ -1,8 +1,9 @@
 # miRBase v22.1 → v23.1 reconciliation
 
-Made by three scripts in `scripts/00-mirbase-scrapping/` (run from the
+Made by four scripts in `scripts/00-mirbase-scrapping/` (run from the
 project root, in this order). Table S1 is only read, never changed.
 
+0. `01-diff-mirbasev22-v23.R`: v22.1 vs v23.1 at the **name** level only (no S1).
 1. `02-compare-mirbase-v22-v23.R`: miRBase v22.1 vs v23.1 only (no S1).
 2. `03-reconcile-s1-v23.R`: Table S1 vs miRBase v23.1.
 3. `04-build-aae-mirna-v23.R`: builds `databases/01-isolating-mature-sequences/aae-mirna-v23.csv`.
@@ -16,6 +17,7 @@ accession and normalised name second. A mature product is the pair
 
 | File | What it holds |
 |---|---|
+| `aae-mirbase-v22-vs-v23-names.csv` | Name level: which mature miRNA names are only in v22.1, only in v23.1, or in both, and whether a name that disappeared comes back under another name with the same sequence (script 01) |
 | `aae-mirbase-v22-vs-v23-precursors.csv` | Precursor (hairpin) level: unchanged, renamed, hairpin sequence changed, new, removed |
 | `aae-mirbase-v22-vs-v23.csv` | Every aae mature miRNA: unchanged, renamed, sequence changed (with seed flag), extra sequence on same accession, new in v23, removed |
 | `s1-aae-vs-mirbase-v23.csv` | Every distinct S1 aae entry (name + acc + sequence) mapped to v23, with a `status` to act on and the S1 Excel rows it came from |
@@ -33,18 +35,34 @@ accession and normalised name second. A mature product is the pair
   isomiR of the miRBase one. Needs a human look at the original paper.
 - `NOT IN miRBase v23` – study-only sequence; the update does not affect it.
 
-## Why the earlier test script (`01-diff-mirbasev22-v23.R`) over-reported "new"
+## Why the first version of `01-diff-mirbasev22-v23.R` over-reported "new"
 
-It reported 263 rows as "New in v23 (Not found in table_s1)". Checking them:
+The script as first written reported 263 rows as "New in v23 (Not found in
+table_s1)". Checking them:
 
 - 173 already existed in miRBase v22.1, so they are not new to miRBase at all.
 - 77 of those are in Table S1, just not under DENV infection.
 - Only 90 rows (79 distinct mature miRNAs after collapsing duplicate
   precursors) have accessions that are actually new in v23.
 
-Causes: it compared all of v23 against **only the DENV rows** of S1, it never
-compared against v22, it matched on accession or name but never on sequence,
-and it did not collapse precursors that share one mature miRNA.
+Causes: despite its name it never compared v22 against v23 (it built
+`aae_mirbase22_final` and then never used it), it compared all of v23 against
+**only the DENV rows** of Table S1, it matched on accession or name but never
+on sequence, and it did not collapse precursors that share one mature miRNA.
+
+It has since been rewritten so that the three questions live in three scripts
+and none of them can be mistaken for another:
+
+| Script | Question | Reads Table S1? |
+|---|---|---|
+| `01-diff-mirbasev22-v23.R` | which mature miRNA **names** are in v22.1, in v23.1, or in both | no |
+| `02-compare-mirbase-v22-v23.R` | what changed at the level of **accession + sequence**, and in the precursors | no |
+| `03-reconcile-s1-v23.R` | how **Table S1** (all infections) lines up with v23.1 | yes, read-only |
+
+`01` now writes `aae-mirbase-v22-vs-v23-names.csv`: 61 names unchanged, 11 with
+the same name but a different sequence, 92 names only in v22.1 and 169 only in
+v23.1 — of which 83 carry a sequence that already existed in v22.1 under
+another name, i.e. a rename (`let-7` -> `let-7-5p`), not a new miRNA.
 
 ## Literature check against the papers (DENV-2 2026-11-25; ZIKV, CHIKV, Wolbachia 2026-11-26)
 
@@ -134,6 +152,7 @@ while this table covered DENV-2 only; it is now included under wolbachia.
 | `v23_match`, `v23_relation` | `exact` / `isomiR` / `no match` / `name only`, and how the paper sequence differs from v23 |
 | `v23_new` | `yes` if the matched v23 miRNA is new in v23; `possible, arm not given (…)` when the paper named only the locus |
 | `seq_source`, `sequence_coverage` | Where `mat_seq` came from: `passage retrieved` (paper table), `passage retrieved (paper supplement)`, `guess (another paper's supplement)`, `unavailable` |
+| `s1_cell_notes` | Liv's own notes on the Table S1 cells for that study and miRNA, each prefixed with the sheet and cell it came from (script 09); `CHECK PLACEMENT` marks a note that names a different miRNA than the row it sits on |
 | `finding`, `exact_quote`, `quote_locator` | Study-level evidence, quoted verbatim from the PDF |
 | `source_coverage` | `passage retrieved`, `abstract only` or `unavailable` |
 | `study_support`, `finding_support` | `supported`, `contradicted` or `uncertain` (finding-level is `uncertain` when the paper's own p > 0.05) |
@@ -141,3 +160,70 @@ while this table covered DENV-2 only; it is now included under wolbachia.
 
 Values from the paper (`exp_denv_value`, `logFC`) are copied as printed. Every
 Table S1 column with no information is the text `NA`, as in Table S1.
+
+## Table S1 cell notes (`09-extract-s1-notes.py`, 2026-11-26)
+
+Table S1 carries hand-written notes on individual cells. They hold curation
+decisions that exist nowhere else, so they are pulled out into
+`s1-cell-notes.csv`, one row per note:
+
+| Column | Meaning |
+|---|---|
+| `sheet`, `cell`, `row`, `column_letter`, `column_name` | Where the note is |
+| `cell_value` | The value the note is attached to |
+| `mirna_name`, `acc_mirb`, `species`, `citation_exp`, `doi_exp`, `infection` | That row's context |
+| `row_mirna_in_note` | `TRUE` the note names the miRNA of its own row, `FALSE` it names a different one, `NA` it names none |
+| `mirnas_named_in_note` | The miRNA names the note text mentions |
+| `same_note_on_cells` | Other cells carrying exactly the same note text |
+| `note` | The note, verbatim |
+
+137 notes: 63 on the *Aedes albopictus* sheet, 34 on `Aedes aegypti_v23.1`,
+23 on *Aedes aegypti* and 17 on *Removed studies*. 75 of them sit on
+`mirna_name`, i.e. they are naming decisions.
+
+Source: an .xlsx export of the Google Sheet (`File > Download > Microsoft
+Excel`), kept as `databases/00-mirbase-scrapping/table-s1-sheet-export-2026-11-26.xlsx`
+so the CSV can be rebuilt. Google Sheets *notes* (the yellow corner) survive
+that export and are read here; *threaded comments*, the ones with replies, do
+not survive it and are not in this CSV.
+
+**17 notes do not name the miRNA of the row they sit on** (`row_mirna_in_note`
+= `FALSE`), and for 11 of them the identical note text is also on another cell.
+Four of those pairs look like a copy left behind when the sheet was sorted,
+because one of the two cells is the row the note is about:
+
+| Note is about | Sits correctly on | Also sits on |
+|---|---|---|
+| miR-2945-5p in Campbell 2014 | `Aedes aegypti!B46` (miR-2945-3p) | `B25` (miR-210-5p) |
+| miR-34-3p in Campbell 2014 | `B77` (miR-34-5p) | `B44` (miR-2945-3p) |
+| let-7 naming | `B182` (let-7) | `B105` (miR-1174-3p) |
+| "reported as miR-957 in the paper" | `Aedes albopictus!B162` (miR-957-3p) | `B125` (miR-2940-5p) |
+
+The notes are attached to `literature-s1-combined.csv` and
+`s1-new-tab-literature.csv` in an `s1_cell_notes` column, joined on study plus
+miRNA (arm and species prefix ignored). A note is never used to change a value:
+it is context for whoever reads the row, and a note whose placement is in doubt
+is prefixed `CHECK PLACEMENT`.
+
+### What the notes changed in this pass
+
+- **Maharaj et al., 2015 fold changes.** The note on `Aedes aegypti!X6`
+  ("As seen in Table 1: Fold Difference 3.0") pointed at a column of the paper
+  that was not being used here. Table 1 of Maharaj 2015 does print a *Fold
+  Difference* column, but it is library-size normalised (for aae-mir-125 it
+  prints 3.0 where the printed read counts give 2.68, a constant ~1.12x), and
+  in Tables 2 and 4 it is internally inconsistent (aae-mir-143, 13129 vs 4275
+  reads, is printed as 0.8; aal-mir-43a, 2253 vs 1200, as 0.88 while the text
+  calls it upregulated). The 161 Maharaj rows therefore keep
+  `log2(infected/uninfected)` of the printed read counts, and both the locator
+  and the study's `coverage_gap` now say why.
+- **Saldaña et al., 2017 miR-1-5p** (`Removed studies!AB4`, "Log2FC: 2.148,
+  p < 0.05 at 7 days post infection") agrees with the extracted row
+  (logFC 2.148), so that finding is confirmed from two directions.
+- **miR-927 / miR-2796 / mir-309.** Two notes (`Aedes albopictus!B118` on Liu
+  2015, `B76` on Shrinet 2014) record that the paper's "miR-927" was filed as
+  miR-2796-3p, and that Shrinet's only miR-2796 reference is to *Bombyx mori*
+  bmo-miR-2796. Sequence matching here independently put Shrinet's "miR-927a"
+  on the new v23 accession aae-miR-927-5p and Maharaj's novel "mir-309" on the
+  new aae-miR-2796-3p. The three names sit on two loci; which S1 entry each
+  belongs to is a call for Liv, not for a script.

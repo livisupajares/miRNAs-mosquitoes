@@ -74,9 +74,12 @@ The workflow follows these main steps:
 
 #### Step 0: miRBase v23.1 update and literature check (DENV-2, ZIKV, CHIKV, Wolbachia)
 
-Run from the project root, in this order (all R; Table S1 is only read):
+Run from the project root, in this order (Table S1 is only ever read, never
+written):
 
 ```bash
+python3 scripts/00-mirbase-scrapping/09-extract-s1-notes.py          # Table S1 cell notes -> CSV (run first: 06 and 07 pick the notes up)
+Rscript scripts/00-mirbase-scrapping/01-diff-mirbasev22-v23.R        # v22.1 vs v23.1, names only
 Rscript scripts/00-mirbase-scrapping/02-compare-mirbase-v22-v23.R    # miRBase v22.1 vs v23.1
 Rscript scripts/00-mirbase-scrapping/03-reconcile-s1-v23.R          # Table S1 vs v23.1
 Rscript scripts/00-mirbase-scrapping/04-build-aae-mirna-v23.R       # aae-mirna-v23.csv

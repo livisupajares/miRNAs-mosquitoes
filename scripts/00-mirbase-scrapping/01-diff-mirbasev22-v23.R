@@ -1,156 +1,103 @@
-# ~~~~~ DIFF CHECKER MIRBASE VERSIONS ~~~~~~ 
-# This script checks which miRNAs and sequences
-# are different between the previous miRBase version (22)
-# and the current one (23.1)
+# ~~~~~ DIFF CHECKER MIRBASE VERSIONS (NAME LEVEL) ~~~~~~
+# Which mature miRNA *names* exist in miRBase v22.1, in v23.1, or in both,
+# for Aedes aegypti. Nothing else: Table S1 is deliberately NOT read here, so
+# this script can never confuse "absent from Table S1" with "new in miRBase".
+#
+# This is the name-level view. The two other levels live in their own scripts:
+#   02-compare-mirbase-v22-v23.R  accession + sequence level (renamed, sequence
+#                                 changed, extra sequence on the same accession,
+#                                 new, removed) and the precursors
+#   03-reconcile-s1-v23.R         Table S1 (all infections) against v23.1
+#
+# Inputs : databases/00-mirbase-scrapping/aae-v22.csv, aae-v23.csv (scraped)
+# Output : results/00-mirbase-v23/aae-mirbase-v22-vs-v23-names.csv
+#
+# Run from the project root:
+#   Rscript scripts/00-mirbase-scrapping/01-diff-mirbasev22-v23.R
 
-# ==== IMPORT LIBRARIES =====
+# ==== IMPORT LIBRARIES & HELPERS =====
 library(dplyr)
 library(stringr)
 library(tidyr)
-library(readxl)
+source("scripts/00-mirbase-scrapping/mirbase-helpers.R")
+
+# ==== PATHS ====
+in_dir <- "databases/00-mirbase-scrapping"
+out_dir <- "results/00-mirbase-v23"
+dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 # ==== IMPORT DATA ====
-aae_mirbase23 <- read.csv("databases/00-mirbase-scrapping/aae-v23.csv")
-aae_mirbase22 <- read.csv("databases/00-mirbase-scrapping/aae-v22.csv")
-table_s1 <- read_excel("databases/00-mirbase-scrapping/table-s1.xlsx",
-  sheet = "Aedes aegypti", range = "A1:L263"
-)
+# mirbase_long() gives one row per mature product (accession + sequence),
+# with both arms of every precursor already unfolded into separate rows.
+v22 <- mirbase_long(file.path(in_dir, "aae-v22.csv"))
+v23 <- mirbase_long(file.path(in_dir, "aae-v23.csv"))
 
-# ==== CLEAN DATA ====
-# Kepp relevant columns for aae_mirbase23
-aae_mirbase23_clean <- aae_mirbase23 |> select(mat_acc_mirb1, mat_name_1, mat_seq_1, mat_acc_mirb2, mat_name_2, mat_seq_2)
+# ==== ONE ROW PER NAME ====
+# A name can carry more than one accession (paralogous loci), so collapse to
+# the name and keep the accessions and sequences behind it.
+by_name <- function(df, version) {
+  df |>
+    separate_longer_delim(mat_name, delim = "; ") |>
+    mutate(mat_name = str_trim(mat_name)) |>
+    group_by(mat_name) |>
+    summarise(
+      accs = paste(sort(unique(mat_acc)), collapse = "; "),
+      seqs = paste(sort(unique(mat_seq)), collapse = "; "),
+      n_products = n(),
+      .groups = "drop"
+    ) |>
+    rename_with(~ paste0(.x, "_", version), -mat_name)
+}
 
-# Kepp relevant columns for aae_mirbase22
-aae_mirbase22_clean <- aae_mirbase22 |> select(mat_acc_mirb1, mat_name_1, mat_seq_1, mat_acc_mirb2, mat_name_2, mat_seq_2)
+names_v22 <- by_name(v22, "v22")
+names_v23 <- by_name(v23, "v23")
 
-# Remove pre seq column for table_s1
-table_s1_clean <- table_s1 |>
-  select(!c(pre_seq, species:pbm_time_h)) #|>
-# distinct(mirna_name, .keep_all = TRUE)
-
-# Divide aae_mirbase23_clean and add extra rows
-aae_mirbase23_5p <- aae_mirbase23_clean |>
-  select(!(mat_acc_mirb2:mat_seq_2)) |>
-  rename(mat_acc_mirb = mat_acc_mirb1, mat_name = mat_name_1, mat_seq = mat_seq_1)
-
-aae_mirbase23_3p <- aae_mirbase23_clean |>
-  select(mat_acc_mirb2:mat_seq_2) |>
-  rename(mat_acc_mirb = mat_acc_mirb2, mat_name = mat_name_2, mat_seq = mat_seq_2)
-
-# merge aae_mirbase23_5p and aae_mirbase23_3p by rows to get a longer dataframe
-aae_mirbase23_final <- bind_rows(aae_mirbase23_5p, aae_mirbase23_3p) |> drop_na()
-
-# Divide aae_mirbase22_clean and add extra rows
-aae_mirbase22_5p <- aae_mirbase22_clean |>
-  select(!(mat_acc_mirb2:mat_seq_2)) |>
-  rename(mat_acc_mirb = mat_acc_mirb1, mat_name = mat_name_1, mat_seq = mat_seq_1)
-
-aae_mirbase22_3p <- aae_mirbase22_clean |>
-  select(mat_acc_mirb2:mat_seq_2) |>
-  rename(mat_acc_mirb = mat_acc_mirb2, mat_name = mat_name_2, mat_seq = mat_seq_2)
-
-# merge aae_mirbase23_5p and aae_mirbase23_3p by rows to get a longer dataframe
-aae_mirbase23_final <- bind_rows(aae_mirbase23_5p, aae_mirbase23_3p) |> drop_na()
-
-# merge aae_mirbase22_5p and aae_mirbase22_3p by rows to get a longer dataframe
-aae_mirbase22_final <- bind_rows(aae_mirbase22_5p, aae_mirbase22_3p) |> drop_na()
-
-# Filter DENV-2
-table_s1_denv <- table_s1_clean |>
-  filter(infection == "denv") |>
-  distinct(mirna_name, .keep_all = TRUE)
-
-# ==== COMPARE DENV-2 vs MIRNA V23.1 =====
-
-# ==== 1. CREATE MATCHING KEYS ====
-
-# ==== 1. PREPARE DATA ====
-df1_prep <- table_s1_denv %>%
+# ==== DIFF ====
+diff_names <- full_join(names_v22, names_v23, by = "mat_name") |>
   mutate(
-    core_name = str_remove(mirna_name, "-[35]p$"),
-    # Only consider MIMAT as a valid mature accession for Step 1
-    clean_acc = if_else(str_detect(acc_mirb, "^MIMAT"), acc_mirb, NA_character_),
-    id1 = row_number() # Add ID to track unmatched rows
-  )
-
-df2_prep <- aae_mirbase23_final %>%
-  mutate(
-    core_name = str_remove(str_remove(mat_name, "^aae-"), "-[35]p$"),
-    clean_acc = if_else(str_detect(mat_acc_mirb, "^MIMAT"), mat_acc_mirb, NA_character_),
-    id2 = row_number()
-  )
-
-# ==== 2. STEP 1: MATCH BY MIMAT ACCESSION ====
-df1_acc <- df1_prep %>% filter(!is.na(clean_acc))
-df2_acc <- df2_prep %>% filter(!is.na(clean_acc))
-
-matched_by_acc <- inner_join(
-  df1_acc, df2_acc,
-  by = c("clean_acc" = "clean_acc"),
-  suffix = c("_table_s1", "_v23"),
-  relationship = "many-to-many"
-) %>%
-  mutate(match_key = clean_acc, match_type = "Accession")
-
-# ==== 3. STEP 2: MATCH REMAINING BY CORE NAME ====
-# Get rows that were NOT matched by accession (this includes MI00 and NA)
-unmatched_id1 <- setdiff(df1_prep$id1, matched_by_acc$id1)
-unmatched_id2 <- setdiff(df2_prep$id2, matched_by_acc$id2)
-
-df1_rem <- df1_prep %>% filter(id1 %in% unmatched_id1)
-df2_rem <- df2_prep %>% filter(id2 %in% unmatched_id2)
-
-matched_by_name <- full_join(
-  df1_rem, df2_rem,
-  by = c("core_name" = "core_name"),
-  suffix = c("_table_s1", "_v23"),
-  relationship = "many-to-many"
-) %>%
-  mutate(match_key = core_name, match_type = "Core Name")
-
-# ==== 4. COMBINE AND CLEAN ====
-# Define the final column structure we want
-cols_to_keep <- c(
-  "match_key", "match_type", "acc_mirb_table_s1", "mirna_name_table_s1",
-  "mat_seq_table_s1", "mat_acc_mirb_v23", "mat_name_v23", "mat_seq_v23"
-)
-
-diff_combined <- bind_rows(
-  # For matched_by_acc: Rename the base columns to match our target structure
-  matched_by_acc %>%
-    rename(
-      acc_mirb_table_s1 = acc_mirb,
-      mirna_name_table_s1 = mirna_name,
-      mat_acc_mirb_v23 = mat_acc_mirb,
-      mat_name_v23 = mat_name
-    ) %>%
-    select(all_of(cols_to_keep)),
-
-  # For matched_by_name: Rename the base columns to match our target structure
-  matched_by_name %>%
-    rename(
-      acc_mirb_table_s1 = acc_mirb,
-      mirna_name_table_s1 = mirna_name,
-      mat_acc_mirb_v23 = mat_acc_mirb,
-      mat_name_v23 = mat_name
-    ) %>%
-    select(all_of(cols_to_keep))
-) %>%
-  # Arrange by match_key to keep similar miRNAs grouped together
-  arrange(match_key)
-
-# ==== 5. SEPARATE INTO MATCHED AND BRAND NEW ====
-# 5A. Matched miRNAs (Rows that successfully aligned between both datasets)
-matched_df <- diff_combined %>%
-  filter(!is.na(mirna_name_table_s1) & !is.na(mat_name_v23))
-
-# 5B. Brand New / Unmatched miRNAs
-brand_new <- diff_combined %>%
-  filter(is.na(mirna_name_table_s1) | is.na(mat_name_v23)) %>%
-  mutate(
-    # Label where the unmatched miRNA came from
-    origin_status = case_when(
-      is.na(mirna_name_table_s1) ~ "New in v23 (Not found in table_s1)",
-      is.na(mat_name_v23) ~ "In table_s1 (Missing in v23)"
+    status = case_when(
+      is.na(accs_v22) ~ "name only in v23",
+      is.na(accs_v23) ~ "name only in v22",
+      seqs_v22 != seqs_v23 ~ "same name, sequence(s) differ",
+      accs_v22 != accs_v23 ~ "same name, accession(s) differ",
+      TRUE ~ "unchanged"
+    ),
+    # A name that disappears from v22 and a name that appears in v23 are often
+    # the two halves of one rename: flag when the sequence is the same.
+    same_seq_elsewhere = case_when(
+      status == "name only in v23" ~ seqs_v23 %in% names_v22$seqs_v22,
+      status == "name only in v22" ~ seqs_v22 %in% names_v23$seqs_v23,
+      TRUE ~ NA
     )
-  )
+  ) |>
+  select(
+    status, mat_name, same_seq_elsewhere,
+    accs_v22, accs_v23, seqs_v22, seqs_v23, n_products_v22, n_products_v23
+  ) |>
+  arrange(factor(status, c(
+    "name only in v23", "name only in v22", "same name, sequence(s) differ",
+    "same name, accession(s) differ", "unchanged"
+  )), mat_name)
+
+write.csv(diff_names, file.path(out_dir, "aae-mirbase-v22-vs-v23-names.csv"),
+  row.names = FALSE
+)
+
+# ==== SUMMARY ====
+cat("\n== aae mature miRNA names, miRBase v22.1 -> v23.1 ==\n")
+print(count(diff_names, status))
+cat("\nNames in v22.1:", nrow(names_v22), " names in v23.1:", nrow(names_v23), "\n")
+renamed_in <- sum(diff_names$status == "name only in v23" &
+  diff_names$same_seq_elsewhere, na.rm = TRUE)
+renamed_out <- sum(diff_names$status == "name only in v22" &
+  diff_names$same_seq_elsewhere, na.rm = TRUE)
+cat(
+  "Of the ", sum(diff_names$status == "name only in v23"),
+  " names only in v23.1, ", renamed_in,
+  " carry a sequence that already existed in v22.1 under another name",
+  " (a rename, not a new miRNA).\n",
+  "Of the ", sum(diff_names$status == "name only in v22"),
+  " names only in v22.1, ", renamed_out,
+  " have their sequence back in v23.1 under a different name.\n",
+  sep = ""
+)
