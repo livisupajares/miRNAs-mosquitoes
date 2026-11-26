@@ -46,20 +46,29 @@ Causes: it compared all of v23 against **only the DENV rows** of S1, it never
 compared against v22, it matched on accession or name but never on sequence,
 and it did not collapse precursors that share one mature miRNA.
 
-## Literature check against the DENV-2 papers (2026-11-25)
+## Literature check against the papers (DENV-2 2026-11-25; ZIKV, CHIKV, Wolbachia 2026-11-26)
 
-Three more scripts, run after the three above (shared code for 06 and 07 is in
-`scripts/00-mirbase-scrapping/literature-helpers.R`):
+Four more scripts, run after the three above (shared code for 06 and 07 is in
+`scripts/00-mirbase-scrapping/literature-helpers.R`). They cover all four
+infections Table S1 uses: **denv, zika, chikv and wolbachia**. Each finding is
+checked against Table S1 for the same study *and the same infection*, and each
+drafted row fills its own infection's S1 columns (`exp_DENV` / `exp_ZIKA` /
+`exp_CHIKV` / `exp_wolbachia` with their location and cell-line columns). Only
+DENV has metric/value/validation columns in Table S1, so for the other three the
+paper's fold change and p value stay in the review columns.
 
-4. `05-literature-vs-v23.R`: every DENV-2 finding extracted from the papers in
+4. `05-literature-vs-v23.R`: every finding extracted from the papers in
    the Zotero group *pasantia-upch*, matched to miRBase v23.1 by sequence and
-   then checked against Table S1 for the same study.
+   then checked against Table S1 for the same study and infection.
 5. `06-build-s1-literature-tab.R`: drafts the findings that are missing from
    Table S1 as rows in the Table S1 column layout.
 6. `07-build-literature-s1-combined.R`: one table with every finding, all
    Table S1 columns filled in, and the study evidence (finding, exact quote,
    locator, source coverage, support). Papers that were read but set aside get
    one row each so the reason stays visible.
+7. `08-new-v23-vs-literature.R`: the reverse view, one row per new or changed
+   v23 mature product with any paper evidence for it (direct sequence match, or
+   candidate by name when the paper gave no arm).
 
 Hand-curated input (one row per study x miRNA x condition, each with a page or
 figure locator):
@@ -74,29 +83,48 @@ figure locator):
 
 | File | What it holds |
 |---|---|
-| `literature-denv2-vs-v23-vs-s1.csv` | 122 findings from 9 papers, each with its v23 match, whether that v23 miRNA is new, and whether Table S1 already has it |
-| `new-v23-mirnas-denv2-evidence.csv` | The reverse view: each of the 97 new or changed v23 mature products, with any DENV-2 evidence for it |
-| `denv2-evidence-table.md` | Readable evidence table: each paper with its quote, locator, coverage and support, the visible gaps, and the Vancouver reference list |
+| `literature-all-vs-v23-vs-s1.csv` | 462 findings from 22 papers across denv, zika, chikv and wolbachia, each with its v23 match, whether that v23 miRNA is new, and whether Table S1 already has it for that study and infection |
+| `new-v23-mirnas-literature-evidence.csv` | The reverse view: each of the 97 new or changed v23 mature products, with any paper evidence for it (script 08) |
+| `literature-evidence-table.md` | Readable evidence table: each paper with its quote, locator, coverage and support, the visible gaps, the Table S1 rows worth a second look, and the Vancouver reference list |
 | `new-v23-vs-papers-summary.md` | Plain-language answer: which new v23 miRNAs the papers support, and what S1 is missing |
-| `literature-denv2-s1-combined.csv` | **The full table.** 122 findings + 7 set-aside papers. All Table S1 columns first, then `s1_status`, the v23 match, sequence source and coverage, and the study evidence |
-| `s1-new-tab-denv2-literature.csv` | 53 draft rows in the Table S1 layout for findings S1 does not have, with `curation_status` ADD / CHECK / EXCLUDED and the review columns after the S1 columns |
+| `literature-s1-combined.csv` | **The full table.** 462 findings + 8 set-aside papers. All Table S1 columns first, then `s1_status`, the v23 match, sequence source and coverage, and the study evidence |
+| `s1-new-tab-literature.csv` | 204 draft rows in the Table S1 layout for findings S1 does not have, with `curation_status` ADD / CHECK / EXCLUDED and the review columns after the S1 columns |
 
-Headline: only **aae-miR-276-2-5p** is matched to a new v23 accession by a
-paper's own sequence. Twelve more new v23 arms are candidates where the paper
-named a locus but not the arm (miR-100-3p for Yan's "miR-100*" is the most
-likely). The other ~84 are new to miRBase, not to this literature.
+### Counts per infection (findings, script 07)
 
-In the other direction, 33 distinct miRNAs (53 study rows) are differentially
-expressed under DENV-2 in a paper but absent from Table S1; most are Campbell
-2014 Table 1 entries and the Yan 2014 adult-female experiment.
+| Infection | Papers | Findings | IN S1 | ONLY IN REMOVED | ADD | CHECK | EXCLUDED |
+|---|---|---|---|---|---|---|---|
+| denv | 9 | 122 | 52 | 15 | 44 | 10 | 1 |
+| chikv | 3 | 190 | 133 | 5 | 43 | 9 | 0 |
+| wolbachia | 9 | 127 | 40 | 0 | 82 | 5 | 0 |
+| zika | 1 | 23 | 12 | 1 | 8 | 2 | 0 |
 
-Seven papers were set aside with the reason recorded: Miesen 2016 (nothing
+ADD rows are missing from Table S1 and significant in the paper: 35 distinct
+miRNAs for denv, 41 for chikv, 72 for wolbachia and 6 for zika.
+
+Headline: with all four infections in, **three** accessions that are genuinely
+new in v23.1 are matched by a paper's own sequence - aae-miR-276-2-5p (Campbell
+2014, DENV-2), aae-miR-927-5p (Shrinet 2014, CHIKV) and aae-miR-2796-3p
+(Maharaj 2015, CHIKV) - plus six accessions whose sequence changed in v23.
+Another 48 new v23 arms are candidates where the paper named a locus but not
+the arm. The rest are new to miRBase, not to this literature.
+
+In the other direction, 177 study rows are differentially expressed in a paper
+but absent from Table S1 for that study and infection: 154 distinct
+miRNA-per-infection entries (35 denv, 41 chikv, 72 wolbachia, 6 zika). The
+biggest blocks are Bishop 2022 (44 Wolbachia miRNAs, a study Table S1 does not
+have at all), Maharaj 2015 (24 CHIKV saliva miRNAs) and Campbell 2014 (14
+DENV-2 miRNAs).
+
+Eight papers were set aside with the reason recorded: Miesen 2016 (nothing
 significant after multiple-testing correction), Etebari 2015 (isomiR ratios,
-not differential expression), Azlan 2022 (DENV-1), She 2024 (Wolbachia),
-Hess 2011 (no miRNA DE list), Skalsky 2010 (no infection), Smith 2017 (human
-cells).
+not differential expression), Azlan 2022 (DENV-1), Hess 2011 (no miRNA DE
+list), Skalsky 2010 (no infection), Smith 2017 (human cells), Dubey 2019 (no DE
+experiment of its own) and Fiorillo 2022 (no significant CHIKV change in saliva
+or salivary glands, which contradicts Maharaj 2015). She 2024 was set aside
+while this table covered DENV-2 only; it is now included under wolbachia.
 
-### Columns added after the Table S1 columns in `literature-denv2-s1-combined.csv`
+### Columns added after the Table S1 columns in `literature-s1-combined.csv`
 
 | Column | Meaning |
 |---|---|

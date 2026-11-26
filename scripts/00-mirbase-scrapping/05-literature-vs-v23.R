@@ -1,9 +1,10 @@
-# ~~~~~ DENV-2 PAPERS vs miRBase v23.1 vs TABLE S1 ~~~~~
-# Goal: for every miRNA a DENV-2 paper reports as up- or down-regulated,
+# ~~~~~ LITERATURE (DENV-2, ZIKV, CHIKV, WOLBACHIA) vs miRBase v23.1 vs TABLE S1 ~~~~~
+# Goal: for every miRNA a paper reports as up- or down-regulated under one of
+# the four infections Table S1 covers (denv, zika, chikv, wolbachia),
 #   (a) find the miRBase v23.1 mature miRNA it is (by SEQUENCE first),
 #   (b) say whether that v23 miRNA is new in v23 (absent from v22.1),
-#   (c) say whether Table S1 already has it for that study (active sheets or
-#       "Removed studies"), so missing ones are visible.
+#   (c) say whether Table S1 already has it for that study AND infection
+#       (active sheets or "Removed studies"), so missing ones are visible.
 #
 # Input (hand-curated from the papers, every row has a page/figure locator):
 #   databases/00-mirbase-scrapping/literature/paper-de-extract.tsv
@@ -103,15 +104,17 @@ res <- lit |>
 # ==== (c) Is it in Table S1 for the same study? ====
 read_s1 <- function(sheet) {
   read_excel(file.path(in_dir, "table-s1.xlsx"), sheet = sheet, na = c("", "NA")) |>
-    transmute(sheet = sheet, citation_exp, mirna_name, mat_seq_s1 = clean_seq(mat_seq),
-              exp_DENV, base = norm_base(mirna_name), arm = get_arm(mirna_name))
+    transmute(sheet = sheet, citation_exp, infection, mirna_name,
+              mat_seq_s1 = clean_seq(mat_seq),
+              base = norm_base(mirna_name), arm = get_arm(mirna_name))
 }
 s1 <- bind_rows(read_s1("Aedes aegypti"), read_s1("Aedes albopictus"),
                 read_s1("Removed studies"))
 
 s1_hit <- res |>
-  select(row_id, study, seq, base, arm) |>
-  inner_join(s1, by = c("study" = "citation_exp"), relationship = "many-to-many") |>
+  select(row_id, study, infection, seq, base, arm) |>
+  inner_join(s1, by = c("study" = "citation_exp", "infection"),
+             relationship = "many-to-many") |>
   mutate(by_seq = !is.na(seq) & !is.na(mat_seq_s1) &
            (seq == mat_seq_s1 | str_detect(seq, fixed(mat_seq_s1)) |
               str_detect(mat_seq_s1, fixed(seq))),
@@ -135,18 +138,18 @@ s1_hit <- res |>
 out <- res |>
   left_join(s1_hit, by = "row_id") |>
   mutate(in_s1 = coalesce(in_s1, "NO - missing from Table S1")) |>
-  select(study, species, system, comparison, mirna_reported, seq_reported, seq_source,
+  select(study, infection, species, system, comparison, mirna_reported, seq_reported, seq_source,
          direction, logFC, p, locator, v23_match, v23_name, v23_acc, v23_seq_pos,
          v23_relation, v23_new, name_candidates, new_arms, in_s1, s1_names)
 
-write.csv(out, file.path(out_dir, "literature-denv2-vs-v23-vs-s1.csv"), row.names = FALSE)
+write.csv(out, file.path(out_dir, "literature-all-vs-v23-vs-s1.csv"), row.names = FALSE)
 
 # ==== Console summary ====
 cat("Rows (study x miRNA x condition):", nrow(out), "\n")
-print(count(out, study, in_s1))
+print(count(out, infection, study, in_s1))
 cat("\nSequence matches to miRNAs NEW in v23:\n")
 print(out |> filter(v23_new %in% TRUE) |>
-        select(study, mirna_reported, direction, v23_match, v23_name, in_s1))
+        select(infection, study, mirna_reported, direction, v23_match, v23_name, in_s1))
 cat("\nName-only rows whose locus has a NEW v23 arm (arm unknown):\n")
 print(out |> filter(is.na(seq_reported), new_arms != "") |>
-        select(study, mirna_reported, direction, new_arms, in_s1))
+        select(infection, study, mirna_reported, direction, new_arms, in_s1))

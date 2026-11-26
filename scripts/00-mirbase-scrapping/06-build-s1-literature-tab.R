@@ -1,7 +1,9 @@
-# ~~~~~ DRAFT NEW TABLE S1 TAB: DENV-2 miRNAs MISSING FROM TABLE S1 ~~~~~
+# ~~~~~ DRAFT NEW TABLE S1 TAB: miRNAs MISSING FROM TABLE S1 ~~~~~
 # Takes the output of 05-literature-vs-v23.R and drafts rows in exactly the
 # Table S1 column layout (see the "metadata" tab), one row per paper miRNA
-# that is not yet in Table S1 for that study.
+# that is not yet in Table S1 for that study and infection. Covers all four
+# infections in Table S1: denv, zika, chikv and wolbachia; each row fills its
+# own infection's columns (exp_CHIKV / exp_ZIKA / exp_wolbachia / exp_DENV).
 #
 # Rules (Liv, 2026-11-25):
 #   * name: miRBase v23.1 name when the paper sequence matches v23
@@ -29,7 +31,7 @@ source("scripts/00-mirbase-scrapping/mirbase-helpers.R")
 in_dir <- "databases/00-mirbase-scrapping"
 out_dir <- "results/00-mirbase-v23"
 
-lit <- read.csv(file.path(out_dir, "literature-denv2-vs-v23-vs-s1.csv"),
+lit <- read.csv(file.path(out_dir, "literature-all-vs-v23-vs-s1.csv"),
                 na.strings = c("", "NA"))
 
 source("scripts/00-mirbase-scrapping/literature-helpers.R")
@@ -55,8 +57,9 @@ review_cols <- c("curation_status", "mirna_name_paper", "v23_match", "v23_relati
 tab <- bind_rows(rows) |>
   select(all_of(s1_cols), all_of(review_cols)) |>
   mutate(across(everything(), ~ coalesce(as.character(.x), "NA"))) |>
-  arrange(curation_status != "ADD", species, citation_exp, mirna_name)
+  arrange(curation_status != "ADD", infection, species, citation_exp, mirna_name)
 
-write.csv(tab, file.path(out_dir, "s1-new-tab-denv2-literature.csv"), row.names = FALSE)
+write.csv(tab, file.path(out_dir, "s1-new-tab-literature.csv"), row.names = FALSE)
 cat("Rows:", nrow(tab), "\n")
-print(count(tab, species, citation_exp, curation_status = str_sub(curation_status, 1, 8), exp_DENV))
+print(count(tab, infection, species, citation_exp,
+            curation_status = str_sub(curation_status, 1, 8)))

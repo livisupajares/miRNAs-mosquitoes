@@ -1,6 +1,7 @@
-# ~~~~~ ONE TABLE: EVERY DENV-2 FINDING, IN TABLE S1 COLUMNS, WITH ITS EVIDENCE ~~~~~
+# ~~~~~ ONE TABLE: EVERY FINDING, IN TABLE S1 COLUMNS, WITH ITS EVIDENCE ~~~~~
 # Joins three things into a single CSV, one row per study x miRNA x condition:
-#   1. every DENV-2 finding extracted from the papers (output of script 05),
+#   1. every finding extracted from the papers (output of script 05), for
+#      all four infections in Table S1: denv, zika, chikv and wolbachia,
 #   2. all Table S1 columns filled in (same rules as script 06: miRBase v23.1
 #      name, sequence as the paper reported it, "start - SEQ - end" when the
 #      sequence is miRBase's own, NA when unknown),
@@ -16,7 +17,7 @@
 #   ADD                   missing from S1 and significant in the paper
 #   CHECK: ...            S1 has a close name; a human must decide
 #   EXCLUDED: ...         missing from S1 but not significant in the paper
-#   STUDY SET ASIDE       paper read, no usable DENV-2 DE finding
+#   STUDY SET ASIDE       paper read, no usable DE finding
 #
 # Table S1 itself is not modified.
 #
@@ -33,7 +34,7 @@ lit_dir <- file.path(in_dir, "literature")
 out_dir <- "results/00-mirbase-v23"
 source("scripts/00-mirbase-scrapping/literature-helpers.R")
 
-lit <- read.csv(file.path(out_dir, "literature-denv2-vs-v23-vs-s1.csv"),
+lit <- read.csv(file.path(out_dir, "literature-all-vs-v23-vs-s1.csv"),
                 na.strings = c("", "NA"))
 evidence <- read.delim(file.path(lit_dir, "study-evidence.tsv"),
                        quote = "", na.strings = c("", "NA"), check.names = FALSE)
@@ -102,14 +103,15 @@ out <- bind_rows(combined, set_aside) |>
     s1_status == "ADD" ~ 1, str_starts(s1_status, "CHECK") ~ 2,
     str_starts(s1_status, "EXCLUDED") ~ 3, s1_status == "ONLY IN REMOVED" ~ 4,
     s1_status == "IN S1" ~ 5, TRUE ~ 6)) |>
-  arrange(scope != "included", species, citation_exp, status_rank, mirna_name) |>
+  arrange(scope != "included", infection, species, citation_exp, status_rank,
+          mirna_name) |>
   select(-status_rank)
 
-write.csv(out, file.path(out_dir, "literature-denv2-s1-combined.csv"), row.names = FALSE)
+write.csv(out, file.path(out_dir, "literature-s1-combined.csv"), row.names = FALSE)
 
 # ==== Console summary (the numbers used in the chat summary) ====
 inc <- out |> filter(scope == "included")
 cat("Rows:", nrow(out), " findings:", nrow(inc), " set-aside papers:", nrow(set_aside), "\n")
-print(count(inc, status = str_extract(s1_status, "^[A-Z ]+"), exp_DENV))
-print(count(inc, sequence_coverage))
+print(count(inc, infection, status = str_extract(s1_status, "^[A-Z ]+"), direction))
+print(count(inc, infection, sequence_coverage))
 print(count(inc, v23_new = str_extract(v23_new, "^[a-z]+")))
